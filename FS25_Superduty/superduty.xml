@@ -1,0 +1,1869 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="carFillable"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Superduty</name>
+        <specs>
+            <power>350</power>
+            <maxSpeed>90</maxSpeed>
+            <combination xmlFilename="beds/superdutyBed.xml"/>			
+        </specs>
+        <functions>
+            <function>$l10n_function_truck</function>
+        </functions>
+        <image>store_superduty.dds</image>
+        <price>42500</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>cars</category>
+        <shopTranslationOffset>0 0.074 0</shopTranslationOffset>
+        <shopRotationOffset>0.461 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>4975872</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1468416</indexBufferMemoryUsage>
+        <textureMemoryUsage>5242880</textureMemoryUsage>
+        <audioMemoryUsage>1843622</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_function_truck</typeDesc>
+        <filename>superduty.i3d</filename>
+        <sounds filename="sounds/superduty.xml" volumeFactor="0.2" />
+        <size width="2.5" length="7.2" height="2.3" lengthOffset="-0.08"/>
+		<components>
+            <component centerOfMass="0 0.4 0.25" solverIterationCount="10" mass="4535" />
+            <component solverIterationCount="20" mass="1200" />
+            <component solverIterationCount="20" mass="1200" />
+			
+			<joint component1="1" component2="2" node="component2_ref" transLimit="0 0 0" transLimitSpring="0 110 0" transLimitDampping="0 15 0" rotLimit="0 0 0" rotLimitSpring="0 0 110" rotLimitDamping="0 0 40" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+            <joint component1="1" component2="2" node="component2_ref" transLimit="0 0.06 0" transLimitSpring="0 550 0" transLimitDampping="0 35 0" rotLimit="0 0 7" rotLimitSpring="0 0 900" rotLimitDamping="0 0 40" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+            <joint component1="1" component2="2" node="component2_ref" transLimit="0 0.12 0" transLimitSpring="0 19000 0" transLimitDampping="0 300 0" rotLimit="0 0 10" rotLimitSpring="0 0 9000" rotLimitDamping="0 0 250" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+
+            <joint component1="1" component2="3" node="component3_ref" transLimit="0 0 0" transLimitSpring="0 110 0" transLimitDampping="0 15 0" rotLimit="0 0 0" rotLimitSpring="0 0 100" rotLimitDamping="0 0 6" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+            <joint component1="1" component2="3" node="component3_ref" transLimit="0 0.025 0" transLimitSpring="0 700 0" transLimitDampping="0 35 0" rotLimit="0 0 7" rotLimitSpring="0 0 700" rotLimitDamping="0 0 28" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+            <joint component1="1" component2="3" node="component3_ref" transLimit="0 0.05 0" transLimitSpring="0 19000 0" transLimitDampping="0 300 0" rotLimit="0 0 10" rotLimitSpring="0 0 9000" rotLimitDamping="0 0 2950" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 30" rotDriveDamping="0 0 30" breakable="false"/>
+		</components>
+        <schemaOverlay attacherJointPosition="0 0" name="CAR" />
+        <mapHotspot type="TRUCK" />
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_singles" price="0" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.015 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.015 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.131 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.131 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.03 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+            <wheelConfiguration name="$l10n_configuration_singlesLifted" price="250" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.015 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.015 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.131 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.131 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+            <wheelConfiguration name="$l10n_configuration_bubba" price="250" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.025 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.025 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.1 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.1 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.03 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_bubbaLifted" price="350" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.025 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.025 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.1 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.1 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.14 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>	
+           <wheelConfiguration name="$l10n_configuration_singles2" price="0" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.06" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.06" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.06" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="stock2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.06" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.025 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.025 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.1 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.1 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.03 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>				
+            <wheelConfiguration name="$l10n_configuration_bubba2" price="250" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.025 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.025 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.1 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.1 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_bubba2Lifted" price="350" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.35" initialCompression="20" suspTravel="0.1" spring="70" damper="50" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="bubba2" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="70" damper="50" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="-0.025 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="0.025 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.1 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.1 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.14 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>		
+            <wheelConfiguration name="$l10n_configuration_custom" price="550" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.04 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.04 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.152 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.152 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.05 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+            <wheelConfiguration name="$l10n_configuration_customLifted" price="800" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="custom" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.04 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.04 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.152 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.152 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.16 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>		
+            <wheelConfiguration name="$l10n_configuration_Lugged_Mudders" price="1250" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutySingle.xml" configId="mud" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="mud" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="mud" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                    <wheel filename="wheels/superdutySingle.xml" configId="mud" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.04 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.04 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="0.152 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="-0.152 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.16 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>								
+            <wheelConfiguration name="$l10n_configuration_steelMich" price="1050" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="SDA" offset="0.01"/>						
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="SDA" offset="0.01"/>						
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>	
+
+            <wheelConfiguration name="$l10n_configuration_steelMichLifted" price="1550" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="SDA" offset="0.01"/>						
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="SDR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="SDA" offset="0.01"/>						
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.16 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>				
+
+            <wheelConfiguration name="$l10n_configuration_alumMich" price="1250" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="ADA" offset="0.01"/>						
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="ADA" offset="0.01"/>						
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>	
+            <wheelConfiguration name="$l10n_configuration_alumMichLifted" price="1750" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="ADA" offset="0.01"/>						
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="ADR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="ADA" offset="0.01"/>						
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.16 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>				
+            <wheelConfiguration name="$l10n_configuration_customDual" price="1550" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDA" offset="0.04"/>						
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDA" offset="0.04"/>						
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+            <wheelConfiguration name="$l10n_configuration_customDualLifted" price="1800" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDA" offset="0.04"/>								
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDA" offset="0.04"/>								
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_customDualBubba" price="1800" brand="MICHELIN" saveId="MICHELIN_DEFAULT9">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDBF" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub" driveNode="DRW_LF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDBF" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7" />
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDBR" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDBA" offset="0.012"/>								
+                    </wheel>
+                    <wheel filename="wheels/superdutyDuals.xml" configId="CDBR" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="3" />
+                        <additionalWheel filename="wheels/superdutyDuals.xml" configId="CDBA" offset="0.012"/>								
+                    </wheel>
+                </wheels>
+                <objectChange node="DRW_LF" translationActive="0.013 0 0" translationInactive="0.013 0 0"/>	
+                <objectChange node="DRW_RF" translationActive="-0.013 0 0" translationInactive="-0.013 0 0"/>		
+                <objectChange node="drw_LR" translationActive="-0.03 0 0" translationInactive="0.035 0 0"/>	
+                <objectChange node="drw_RR" translationActive="0.03 0 0" translationInactive="-0.035 0 0"/>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+				
+            <wheelConfiguration name="$l10n_configuration_steel" price="500" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/265_70R19_5.xml" configId="fs" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub"  driveNode="DRW_LF"  mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="fs" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="ris" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR"  mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="2"/>
+                        <additionalWheel filename="wheels/265_70R19_5.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="ris" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="2"/>
+                        <additionalWheel filename="wheels/265_70R19_5.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                </wheels>		
+                <objectChange node="superdutyMain" translationActive="0 0 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_steelLifted" price="750" brand="CONTINENTAL" >
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel filename="wheels/265_70R19_5.xml" configId="fs" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="LF_SteeringHub"  driveNode="DRW_LF"  mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="fs" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="1.2" repr="RF_SteeringHub" driveNode="DRW_RF" mass="0.5" forcePointRatio="0.3" initialCompression="20" suspTravel="0.1" spring="55" damper="30" frictionScale="1.7"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="ris" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_LR"  mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="2"/>
+                        <additionalWheel filename="wheels/265_70R19_5.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                    <wheel filename="wheels/265_70R19_5.xml" configId="ris" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.5" repr="drw_RR" mass="0.5" forcePointRatio="0.3" initialCompression="17" suspTravel="0.1" spring="55" damper="30" frictionScale="2"/>
+                        <additionalWheel filename="wheels/265_70R19_5.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.1 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>		
+			<wheelConfiguration name="$l10n_configuration_alum" price="1000" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT2">
+				<wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel configId="fa"/>
+                    <wheel configId="fa"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                </wheels>		
+                <objectChange node="superdutyMain" translationActive="0 0 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_alumLifted" price="1250" brand="CONTINENTAL">
+				<wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel configId="fa"/>
+                    <wheel configId="fa"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.1 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+			<wheelConfiguration name="$l10n_configuration_alum2" price="1500" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT3">
+				<wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel configId="fas"/>
+                    <wheel configId="fas"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                </wheels>	
+                <objectChange node="superdutyMain" translationActive="0 0 0" translationInactive="0 0 0"/>					
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_alum2Lifted" price="1750" brand="CONTINENTAL">
+				<wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel configId="fas"/>
+                    <wheel configId="fas"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.1 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>		
+			
+			<wheelConfiguration name="$l10n_configuration_Osteel" price="1000" brand="LIZARD" saveId="LIZARD_DEFAULT">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="fs"/>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="fs"/>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="ris">
+                        <additionalWheel filename="wheels/315_80R22_5ORHDO.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="ris">
+                        <additionalWheel filename="wheels/315_80R22_5ORHDO.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.08 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_OsteelLifted" price="1250" brand="LIZARD">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="fs"/>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="fs"/>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="ris">
+                        <additionalWheel filename="wheels/315_80R22_5ORHDO.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                    <wheel filename="wheels/315_80R22_5ORHDO.xml" configId="ris">
+                        <additionalWheel filename="wheels/315_80R22_5ORHDO.xml" configId="ros" offset="-0.555"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+			<wheelConfiguration name="$l10n_configuration_Oalum" price="1500" brand="LIZARD" saveId="LIZARD_DEFAULT2">
+				<wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel configId="fa"/>
+                    <wheel configId="fa"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.08 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_OalumLifted" price="1750" brand="LIZARD">
+				<wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel configId="fa"/>
+                    <wheel configId="fa"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roa"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>			
+			<wheelConfiguration name="$l10n_configuration_Oalum2" price="2000" brand="LIZARD" saveId="LIZARD_DEFAULT3">
+				<wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel configId="fas"/>
+                    <wheel configId="fas"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.08 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>	
+			<wheelConfiguration name="$l10n_configuration_Oalum2Lifted" price="2250" brand="LIZARD" >
+				<wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel configId="fas"/>
+                    <wheel configId="fas"/>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                    <wheel configId="ria">
+                        <additionalWheel configId="roas"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="superdutyMain" translationActive="0 0.12 0" translationInactive="0 0 0"/>				
+            </wheelConfiguration>				
+        </wheelConfigurations>
+		<outerRimMaterial useDesignColorIndex="7">
+		</outerRimMaterial>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="90" rotMax="35" rotCenterWheel1="3" rotCenterWheel2="4" />
+        </ackermannSteeringConfigurations>
+    </wheels>
+	
+	
+    <ai>
+        <agent frontWheelNodes="DRW_LF DRW_RF"/>
+        <collisionTrigger useSize="true"/>
+    </ai>	
+	
+   <configurationSets title="$l10n_configuration_Attachers">	
+        <configurationSet name="$l10n_configuration_dropHitch" isDefault="true">	
+            <configuration name="design" index="1"/>		
+            <configuration name="attacherJoint" index="1"/>		
+            <configuration name="cylindered" index="1"/>					
+        </configurationSet>			
+        <configurationSet name="$l10n_configuration_adjustableHitch">	
+            <configuration name="design" index="2"/>		
+            <configuration name="attacherJoint" index="2"/>	
+            <configuration name="cylindered" index="2"/>				
+        </configurationSet>			
+    </configurationSets>	
+	
+    <designConfigurations title="$l10n_configuration_Attachers">
+        <designConfiguration name="$l10n_configuration_dropHitch" price="0">
+            <objectChange node="0>0|2|0|0|0|3" visibilityActive="true" visibilityInactive="false"/>			
+        </designConfiguration>	
+        <designConfiguration name="$l10n_configuration_adjustableHitch" price="125">
+            <objectChange node="0>0|2|0|0|0|0" visibilityActive="true" visibilityInactive="false"/>	
+        </designConfiguration>			
+    </designConfigurations>
+
+	<design2Configurations title="$l10n_configuration_grilleguard">
+		<design2Configuration name="$l10n_configuration_none" price="0">
+        </design2Configuration>	
+		<design2Configuration name="$l10n_configuration_grilleguard" price="500">
+			<objectChange node="0>0|0|2|0|2" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>			
+    </design2Configurations>
+
+    <design3Configurations title="$l10n_configuration_valance" isYesNoOption="true">
+        <design3Configuration name="$l10n_configuration_valueYes" isDefault="true"/>
+        <design3Configuration name="$l10n_configuration_valueNo" price="100">
+            <objectChange node="0>0|0|2|4|0" visibilityActive="false" visibilityInactive="true"/>
+        </design3Configuration>
+    </design3Configurations>
+	
+    <design4Configurations title="$l10n_configuration_strobes" isYesNoOption="true">
+        <design4Configuration name="$l10n_configuration_valueNo" isDefault="true"/>
+        <design4Configuration name="$l10n_configuration_valueYes" price="200">
+            <objectChange node="0>0|1|2" visibilityActive="true" visibilityInactive="false"/>
+        </design4Configuration>
+    </design4Configurations>	
+	
+    <design5Configurations title="$l10n_configuration_steps">
+        <design5Configuration name="$l10n_configuration_none" price="0">
+        </design5Configuration>
+        <design5Configuration name="$l10n_configuration_sidesteps" price="250">
+            <objectChange node="0>0|0|2|5|0" visibilityActive="true" visibilityInactive="false" />
+        </design5Configuration>
+    </design5Configurations>	
+
+    <design6Configurations title="$l10n_configuration_exhaust">
+        <design6Configuration name="$l10n_configuration_exhaustPipe1" price="0">
+            <objectChange node="0>0|0|2|2|0|0" visibilityActive="true" visibilityInactive="false"/>			
+        </design6Configuration>	
+        <design6Configuration name="$l10n_configuration_exhaustPipe2" price="50">
+            <objectChange node="0>0|0|2|2|0|1" visibilityActive="true" visibilityInactive="false"/>	
+        </design6Configuration>			
+    </design6Configurations>	
+	
+    <design7Configurations title="$l10n_configuration_windows">
+        <design7Configuration name="$l10n_configuration_valueDefault" price="0">
+            <material materialSlotName="frontWindow">
+                <textures diffuse="$data/shared/windowLightDark_diffuse.png"/>
+            </material>
+            <material materialSlotName="backWindow">
+                <textures diffuse="$data/shared/windowExtraDark_diffuse.png"/>
+            </material>
+	        <material materialSlotName="sideWindow">
+                <textures diffuse="$data/shared/windowLightDark_diffuse.png"/>
+            </material>	
+        </design7Configuration>	
+        <design7Configuration name="$l10n_configuration_valueTinted" price="0">
+            <material materialSlotName="frontWindow">
+                <textures diffuse="$data/shared/windowDark_diffuse.png"/>
+            </material>
+            <material materialSlotName="backWindow">
+                <textures diffuse="$data/shared/windowExtraDark_diffuse.png"/>
+            </material>
+	        <material materialSlotName="sideWindow">
+                <textures diffuse="$data/shared/windowExtraDark_diffuse.png"/>
+            </material>	
+        </design7Configuration>	
+    </design7Configurations>		
+	
+    <lights>
+        <states>
+            <state lightTypes="0"/>	
+            <state lightTypes="0 3"/>
+            <state lightTypes="0 1"/>			
+        </states>
+        <realLights>
+            <low>
+                <light node="frontLight_Lo" lightTypes="0" excludedLightTypes="3" />
+                <light node="frontLight_Fog" lightTypes="0" />
+                <light node="frontLight_Hi" lightTypes="3" />
+            </low>
+            <high>
+                <light node="frontLight_Lo" lightTypes="0" />
+                <light node="frontLight_Fog" lightTypes="0" />
+                <light node="frontLight_Hi" lightTypes="3" />
+                <light node="cabLight_Light" lightTypes="0" />
+                <light node="OrangeLightFront" lightTypes="0" />
+                <light node="orangeLight_MirrorLeft" lightTypes="0" />
+                <light node="orangeLight_MirrorRight" lightTypes="0" />
+
+                <turnLightLeft node="turnLightFrontLeft_003" />
+                <turnLightLeft node="turnLightFrontLeft" />
+                <turnLightRight node="turnLightFrontRight_003" />
+                <turnLightRight node="turnLightFrontRight" />
+            </high>
+        </realLights>
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="staticCompound_Truck" intensity="8" />
+                <node node="StaticCompoundGlass_Truck" intensity="3" />
+                <node node="TurnStatic_Headlights" intensity="15" />
+                <node node="MirrorLeft_StaticCompound" intensity="8" />
+                <node node="MirrorLeftLight_Glass" intensity="3" />
+                <node node="MirrorLeft_TurnL" intensity="15" />
+                <node node="MirrorRight_StaticCompound" intensity="8" />
+                <node node="MirrorRightLight_Glass" intensity="3" />
+                <node node="MirrorRight_TurnR" intensity="15" />
+            </staticLightCompound>
+        </staticLightCompounds>
+        <beaconLights>
+            <beaconLight realLight="0>0|1|2|0|0">
+                <staticLight node="0>0|1|2|0" intensity="30" multiBlink="true" multiBlinkParameters="4 6 50 0">
+                </staticLight>
+            </beaconLight>
+            <beaconLight realLight="0>0|1|2|1|0">
+                <staticLight node="0>0|1|2|1" intensity="30" multiBlink="true" multiBlinkParameters="4 6 50 35">
+                </staticLight>
+            </beaconLight>					
+        </beaconLights>			
+    </lights>
+	
+    <attacherJoints comboDuration="2">
+        <attacherJointConfigurations>
+            <attacherJointConfiguration name="1" price="0">
+                <attacherJoint node="BedAttacher" jointType="RMCBed" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>		
+                <attacherJoint node="0>0|2|0|0|0|3|0" jointType="trailerLow" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+                <attacherJoint node="0>0|2|0|0|0|3|1" jointType="trailer" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+                <attacherJoint node="0>0|2|0|0|0|3|0" jointType="trailerCar" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+				<attacherJoint node="plowAttacherJoint" jointType="82FrontJoint">
+					<schema position="1 0" rotation="0" invertX="true" />
+					<objectChange node="plowMount_Frame" visibilityActive="true" visibilityInactive="false" />
+					<objectChange node="valance" visibilityActive="false" visibilityInactive="true" />		
+					<objectChange node="0>0|1|0|3" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|4" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|5" visibilityActive="false" visibilityInactive="true" />						
+				</attacherJoint>
+				<attacherJoint node="plowAttacherJoint" jointType="implement">
+					<schema position="1 0" rotation="0" invertX="true" />
+					<objectChange node="plowMount_Frame" visibilityActive="true" visibilityInactive="false" />
+					<objectChange node="valance" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|3" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|4" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|5" visibilityActive="false" visibilityInactive="true" />						
+				</attacherJoint>
+                <attacherJoint node="BedAttacher" jointType="RMCBed2" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="electricTrailer" translationActive="0.144234 0.53645301 -3.49838996" translationInactive="0.184516 0.72576499 -3.37470007" />					
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>	
+                <attacherJoint node="BedAttacher" jointType="RMCDump" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="electricTrailer" translationActive="0.184516 0.65 -3.37470007" translationInactive="0.184516 0.72576499 -3.37470007" />							
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>						
+            </attacherJointConfiguration>
+            <attacherJointConfiguration name="2" price="0">
+                <attacherJoint node="BedAttacher" jointType="RMCBed" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>		
+                <attacherJoint node="attachTrailer" jointType="trailerLow" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+                <attacherJoint node="attachTrailer_002" jointType="trailer" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+                <attacherJoint node="attachTrailer_003" jointType="trailerCar" lowerRotLimit="10 90 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false">
+                    <schema position="1.5 0" rotation="0" invertX="false" />
+                    <objectChange node="cap" rotationActive="0 -90 0" rotationInactive="0 0 0" />
+                </attacherJoint>
+				<attacherJoint node="plowAttacherJoint" jointType="82FrontJoint">
+					<schema position="1 0" rotation="0" invertX="true" />
+					<objectChange node="plowMount_Frame" visibilityActive="true" visibilityInactive="false" />
+					<objectChange node="valance" visibilityActive="false" visibilityInactive="true" />		
+					<objectChange node="0>0|1|0|3" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|4" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|5" visibilityActive="false" visibilityInactive="true" />						
+				</attacherJoint>
+				<attacherJoint node="plowAttacherJoint" jointType="implement">
+					<schema position="1 0" rotation="0" invertX="true" />
+					<objectChange node="plowMount_Frame" visibilityActive="true" visibilityInactive="false" />
+					<objectChange node="valance" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|3" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|4" visibilityActive="false" visibilityInactive="true" />	
+					<objectChange node="0>0|1|0|5" visibilityActive="false" visibilityInactive="true" />						
+				</attacherJoint>
+                <attacherJoint node="BedAttacher" jointType="RMCBed2" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="electricTrailer" translationActive="0.144234 0.53645301 -3.49838996" translationInactive="0.184516 0.72576499 -3.37470007" />					
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>	
+                <attacherJoint node="BedAttacher" jointType="RMCDump" lowerRotLimit="0 0 0" upperRotationOffset="0" allowsJointLimitMovement="false" allowsLowering="false">
+                    <schema position="0.5 0" rotation="0" invertX="false" />
+                    <objectChange node="electricTrailer" visibilityActive="true" visibilityInactive="false" />
+                    <objectChange node="electricTrailer" translationActive="0.184516 0.65 -3.37470007" translationInactive="0.184516 0.72576499 -3.37470007" />							
+                    <objectChange node="0>0|2|0|7" visibilityActive="false" visibilityInactive="true" />					
+                </attacherJoint>						
+            </attacherJointConfiguration>			
+        </attacherJointConfigurations>
+    </attacherJoints>
+    <connectionHoses>
+        <target attacherJointNodes="attachTrailer attachTrailer_002 attachTrailer_003" type="electric" node="referencePoint" socket="electric" />
+    </connectionHoses>
+    <motorized statsType="truck">
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="140" fillType="diesel" />
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" wheelIndex1="1" wheelIndex2="2" />
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.6" wheelIndex1="3" wheelIndex2="4" />
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" differentialIndex1="1" differentialIndex2="2" />
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration name="SuperDuty" hp="350">
+                <motor torqueScale="1.083" minRpm="800" maxRpm="3000" maxForwardSpeed="92" maxBackwardSpeed="13" brakeForce="12" lowBrakeForceScale="0.1" dampingRateScale="0.4">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.50" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1.00"/>
+                    <torque normRpm="0.72" torque="1.00"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1.00" torque="0.72"/>
+                </motor>
+
+                <transmission autoGearChangeTime="0.3" gearChangeTime="0.3" name="$l10n_info_transmission_automatic" axleRatio="19" startGearThreshold="0.3">
+                    <directionChange useGear="true"/>
+                    <forwardGear gearRatio="3.10"/>
+                    <forwardGear gearRatio="1.81"/>
+                    <forwardGear gearRatio="1.41"/>
+                    <forwardGear gearRatio="1.00"/>
+                    <forwardGear gearRatio="0.71"/>
+                    <forwardGear gearRatio="0.61"/>
+                    <backwardGear gearRatio="4.49" name="R"/>
+                </transmission>
+            </motorConfiguration>		
+            <motorConfiguration name="SuperDuty_Tuned" price="1000" hp="902">
+			<motor torqueScale="2.30" minRpm="800" maxRpm="3600" maxForwardSpeed="170" maxBackwardSpeed="35" brakeForce="12" lowBrakeForceScale="0.1" dampingRateScale="0.45">
+				<torque normRpm="0.40" torque="0.92"/>
+				<torque normRpm="0.55" torque="1.00"/>
+				<torque normRpm="0.70" torque="1.00"/>
+				<torque normRpm="0.85" torque="0.90"/>
+				<torque normRpm="1.00" torque="0.75"/>
+			</motor>
+			<transmission name="$l10n_info_transmission_automatic" autoGearChangeTime="0.30" gearChangeTime="0.30" axleRatio="12.0" startGearThreshold="0.3">
+			<directionChange useGear="true"/>
+			<forwardGear gearRatio="4.70"/>
+			<forwardGear gearRatio="2.99"/>
+			<forwardGear gearRatio="2.15"/>
+			<forwardGear gearRatio="1.80"/>
+			<forwardGear gearRatio="1.52"/>
+			<forwardGear gearRatio="1.28"/>
+			<forwardGear gearRatio="1.00"/>
+			<forwardGear gearRatio="0.82"/>
+			<forwardGear gearRatio="0.68"/>
+			<forwardGear gearRatio="0.50"/>
+			<backwardGear gearRatio="4.57" name="R1"/>	
+			</transmission>
+		</motorConfiguration>	
+			</motorConfigurations>			
+        <motorStartDuration>3800</motorStartDuration>
+        <gearLevers>
+            <gearLever node="shifter" centerAxis="3" changeTime="0.3" handsOnDelay="0.2">
+                <state gear="-1" yRot="3" zRot="10" />
+                <state gear="1" yRot="3" zRot="34" />
+            </gearLever>
+            <gearLever node="0>0|0|3|0|1|1|1|0" centerAxis="1" changeTime="0.01">
+                <state gear="-1" yRot="1" zRot="-5" />
+                <state gear="1" yRot="1" zRot="0" />
+            </gearLever>			
+        </gearLevers>
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpm" minValueAnim="200" maxValueAnim="6000" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="ANIMATION" valueType="speed" animName="speed" minValueAnim="0" maxValueAnim="140" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="TEXT" valueType="speed" precision="0" node="numbersSpeed01" textColor="1 1 1 1" textSize="0.03" emissiveScale="1" textMask="000" font="GENERIC" textAlignment="CENTER" groups="MOTOR_ACTIVE" />				
+		</dashboards>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle1" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 0.3" maxRpmColor="0 0 0 9" minRpmScale="0.05" maxRpmScale="0.5" />
+            <exhaustEffect node="exhaustParticle2" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 0.3" maxRpmColor="0 0 0 9" minRpmScale="0.05" maxRpmScale="0.5" />
+        </exhaustEffects>
+    </motorized>
+    <speedRotatingParts>
+        <speedRotatingPart nodes="1>2|4|0 1>0|0|2|0" wheelNodes="DRW_LF" invertDirectionOnRotation="false" wheelScale="5"/>
+        <speedRotatingPart nodes="1>2|5|0 1>1|0|1|0" wheelNodes="DRW_RF" invertDirectionOnRotation="false" wheelScale="5"/>		
+        <speedRotatingPart nodes="0>0|2|0|1|1|0 1>2|3|0|0 1>2|2|0|0" wheelNodes="DRW_LF" wheelScale="5"/>		
+        <speedRotatingPart nodes="0>0|2|0|1|0|0 0>0|2|2|6|0|0 2>0|0|10|0 2>0|0|9|0|0" wheelNodes="drw_LR" wheelScale="5"/>		
+    </speedRotatingParts>	
+    <animations>
+        <animation name="enterAnimation">
+            <part node="leftFrontDOOR" startTime="0" endTime="0.5" startRot="0 0 0" endRot="0 -60 0" />
+            <part node="leftFrontDOOR" startTime="2" endTime="2.5" startRot="0 -60 0" endRot="0 0 0" />
+            <part node="playerRoot" startTime="01" endTime="1.01" visibility="false" />
+            <part node="playerRoot" startTime="1.01" endTime="1.02" visibility="true" />
+            <part node="interiorRealLight" startTime="0" endTime="0.01" visibility="false" />
+            <part node="interiorRealLight" startTime="0.01" endTime="4" visibility="true" />
+            <part node="interiorRealLight" startTime="4.01" endTime="4.02" visibility="false" />
+            <part node="interiorStaticLightON" startTime="0" endTime="0.01" visibility="false" />
+            <part node="interiorStaticLightON" startTime="0.01" endTime="4" visibility="true" />
+            <part node="interiorStaticLightON" startTime="4.01" endTime="4.02" visibility="false" />
+            <sound template="metalOpen" startTime="0" volumeScale="2.3" pitchScale="1" />
+            <sound template="metalClose" startTime="2.49" volumeScale="2.3" pitchScale="1" />
+					
+        </animation>		
+        <animation name="wiperAnim" isKeyframe="true">
+            <part node="WiperL" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 -77 0"/>
+            <part node="WiperR" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 -77 0"/>
+
+            <sound template="wiper1" startTime="0" endTime="1" direction="1"   volumeScale="1.0" pitchScale="0.9" fadeOut="0.1" linkNode="WiperL"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1"  volumeScale="1.0" pitchScale="0.9" fadeOut="0.1" linkNode="WiperL"/>
+        </animation>		
+        <animation name="rpm">
+            <part node="rpm1" startTime="0" endTime=".05" visibility="false" />
+            <part node="rpm1" startTime=".05" endTime=".1" visibility="true" />
+            <part node="rpm2" startTime=".1" endTime=".15" visibility="false" />
+            <part node="rpm2" startTime=".15" endTime=".2" visibility="true" />
+            <part node="rpm3" startTime=".2" endTime=".25" visibility="false" />
+            <part node="rpm3" startTime=".25" endTime=".3" visibility="true" />
+            <part node="rpm4" startTime=".3" endTime=".35" visibility="false" />
+            <part node="rpm4" startTime=".35" endTime=".4" visibility="true" />
+            <part node="rpm5" startTime=".4" endTime=".45" visibility="false" />
+            <part node="rpm5" startTime=".45" endTime=".5" visibility="true" />
+            <part node="rpm6" startTime=".5" endTime=".55" visibility="false" />
+            <part node="rpm6" startTime=".55" endTime=".6" visibility="true" />
+            <part node="rpm7" startTime=".7" endTime=".75" visibility="false" />
+            <part node="rpm7" startTime=".75" endTime=".8" visibility="true" />
+            <part node="rpm8" startTime=".8" endTime=".85" visibility="false" />
+            <part node="rpm8" startTime=".85" endTime=".9" visibility="true" />
+            <part node="rpm9" startTime="9" endTime=".95" visibility="false" />
+            <part node="rpm9" startTime=".95" endTime="1" visibility="true" />
+            <part node="rpm10" startTime="1" endTime="1.05" visibility="false" />
+            <part node="rpm10" startTime="1.05" endTime="1.1" visibility="true" />
+            <part node="rpm11" startTime="1.1" endTime="1.15" visibility="false" />
+            <part node="rpm11" startTime="1.15" endTime="1.2" visibility="true" />
+            <part node="rpm12" startTime="1.2" endTime="1.25" visibility="false" />
+            <part node="rpm12" startTime="1.25" endTime="1.3" visibility="true" />
+            <part node="rpm13" startTime="1.3" endTime="1.35" visibility="false" />
+            <part node="rpm13" startTime="1.35" endTime="1.4" visibility="true" />
+            <part node="rpm14" startTime="1.4" endTime="1.45" visibility="false" />
+            <part node="rpm14" startTime="1.45" endTime="1.5" visibility="true" />
+            <part node="rpm15" startTime="1.5" endTime="1.55" visibility="false" />
+            <part node="rpm15" startTime="1.55" endTime="1.6" visibility="true" />
+            <part node="rpm16" startTime="1.6" endTime="1.65" visibility="false" />
+            <part node="rpm16" startTime="1.65" endTime="1.7" visibility="true" />
+            <part node="rpm17" startTime="1.7" endTime="1.75" visibility="false" />
+            <part node="rpm17" startTime="1.75" endTime="1.8" visibility="true" />
+            <part node="rpm18" startTime="1.8" endTime="1.85" visibility="false" />
+            <part node="rpm18" startTime="1.85" endTime="1.9" visibility="true" />
+            <part node="rpm19" startTime="1.9" endTime="1.95" visibility="false" />
+            <part node="rpm19" startTime="1.95" endTime="2" visibility="true" />
+            <part node="rpm20" startTime="2" endTime="2.05" visibility="false" />
+            <part node="rpm20" startTime="2.05" endTime="2.1" visibility="true" />
+            <part node="rpm21" startTime="2.1" endTime="2.15" visibility="false" />
+            <part node="rpm21" startTime="2.15" endTime="2.2" visibility="true" />
+            <part node="rpm22" startTime="2.2" endTime="2.25" visibility="false" />
+            <part node="rpm22" startTime="2.25" endTime="2.3" visibility="true" />
+            <part node="rpm23" startTime="2.3" endTime="2.35" visibility="false" />
+            <part node="rpm23" startTime="2.35" endTime="2.4" visibility="true" />
+            <part node="rpm24" startTime="2.4" endTime="2.45" visibility="false" />
+            <part node="rpm24" startTime="2.45" endTime="2.5" visibility="true" />
+        </animation>
+        <animation name="speed">
+            <part node="speed1" startTime="0" endTime=".05" visibility="false" />
+            <part node="speed1" startTime=".05" endTime=".1" visibility="true" />
+            <part node="speed2" startTime=".1" endTime=".15" visibility="false" />
+            <part node="speed2" startTime=".15" endTime=".2" visibility="true" />
+            <part node="speed3" startTime=".2" endTime=".25" visibility="false" />
+            <part node="speed3" startTime=".25" endTime=".3" visibility="true" />
+            <part node="speed4" startTime=".3" endTime=".35" visibility="false" />
+            <part node="speed4" startTime=".35" endTime=".4" visibility="true" />
+            <part node="speed5" startTime=".4" endTime=".45" visibility="false" />
+            <part node="speed5" startTime=".45" endTime=".5" visibility="true" />
+            <part node="speed6" startTime=".5" endTime=".55" visibility="false" />
+            <part node="speed6" startTime=".55" endTime=".6" visibility="true" />
+            <part node="speed7" startTime=".7" endTime=".75" visibility="false" />
+            <part node="speed7" startTime=".75" endTime=".8" visibility="true" />
+            <part node="speed8" startTime=".8" endTime=".85" visibility="false" />
+            <part node="speed8" startTime=".85" endTime=".9" visibility="true" />
+            <part node="speed9" startTime="9" endTime=".95" visibility="false" />
+            <part node="speed9" startTime=".95" endTime="1" visibility="true" />
+            <part node="speed10" startTime="1" endTime="1.05" visibility="false" />
+            <part node="speed10" startTime="1.05" endTime="1.1" visibility="true" />
+            <part node="speed11" startTime="1.1" endTime="1.15" visibility="false" />
+            <part node="speed11" startTime="1.15" endTime="1.2" visibility="true" />
+            <part node="speed12" startTime="1.2" endTime="1.25" visibility="false" />
+            <part node="speed12" startTime="1.25" endTime="1.3" visibility="true" />
+            <part node="speed13" startTime="1.3" endTime="1.35" visibility="false" />
+            <part node="speed13" startTime="1.35" endTime="1.4" visibility="true" />
+            <part node="speed14" startTime="1.4" endTime="1.45" visibility="false" />
+            <part node="speed14" startTime="1.45" endTime="1.5" visibility="true" />
+            <part node="speed15" startTime="1.5" endTime="1.55" visibility="false" />
+            <part node="speed15" startTime="1.55" endTime="1.6" visibility="true" />
+            <part node="speed16" startTime="1.6" endTime="1.65" visibility="false" />
+            <part node="speed16" startTime="1.65" endTime="1.7" visibility="true" />
+            <part node="speed17" startTime="1.7" endTime="1.75" visibility="false" />
+            <part node="speed17" startTime="1.75" endTime="1.8" visibility="true" />
+            <part node="speed18" startTime="1.8" endTime="1.85" visibility="false" />
+            <part node="speed18" startTime="1.85" endTime="1.9" visibility="true" />
+            <part node="speed19" startTime="1.9" endTime="1.95" visibility="false" />
+            <part node="speed19" startTime="1.95" endTime="2" visibility="true" />
+            <part node="speed20" startTime="2" endTime="2.05" visibility="false" />
+            <part node="speed20" startTime="2.05" endTime="2.1" visibility="true" />
+            <part node="speed21" startTime="2.1" endTime="2.15" visibility="false" />
+            <part node="speed21" startTime="2.15" endTime="2.2" visibility="true" />
+            <part node="speed22" startTime="2.2" endTime="2.25" visibility="false" />
+            <part node="speed22" startTime="2.25" endTime="2.3" visibility="true" />
+            <part node="speed23" startTime="2.3" endTime="2.35" visibility="false" />
+            <part node="speed23" startTime="2.35" endTime="2.4" visibility="true" />
+            <part node="speed24" startTime="2.4" endTime="2.45" visibility="false" />
+            <part node="speed24" startTime="2.45" endTime="2.5" visibility="true" />
+        </animation>
+        <animation name="Hitch">
+            <part node="bumperHitch" startTime="0" endTime="3" endTrans="0 0.031 0" startTrans="0 -0.125 0" />
+        </animation>
+        <animation name="mirrorsArms" >
+            <part node="0>0|0|4|0" startTime="0" endTime="1" startRot="0 -65 0" endRot="0 0 0"/>
+            <part node="0>0|0|5|0" startTime="0" endTime="1" startRot="0 65 0" endRot="0 0 0"/>			
+        </animation>		
+    </animations>
+    <cylindered>
+		<cylinderedConfigurations>	
+			<cylinderedConfiguration name="1" >		
+				<movingTools>
+				<movingTool node="superdutyMain">
+					<attacherJoint jointIndices="1 2 3 4 5 6 7 8" />				
+				</movingTool>
+				<movingTool node="0>0|0|4|0">
+					<controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="0.5" />
+					<animation animSpeed="1" animAcceleration="1" animName="mirrorsArms" animStartTime="0" />
+				</movingTool>				
+				</movingTools>		
+			</cylinderedConfiguration>
+			<cylinderedConfiguration name="2" >		
+				<movingTools>
+				<movingTool node="superdutyMain">
+					<attacherJoint jointIndices="1 2 3 4 5 6 7 8" />				
+				</movingTool>
+				<movingTool node="bumperHitch">
+					<attacherJoint jointIndices="1 2 3 4" />
+					<controls axis="AXIS_CRANE_TOOL" invertAxis="true" mouseSpeedFactor="0.5" />
+					<animation animSpeed="1" animAcceleration="1" animName="Hitch" animStartTime="0.5" />
+				</movingTool>	
+				<movingTool node="0>0|0|4|0">
+					<controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="0.5" />
+					<animation animSpeed="1" animAcceleration="1" animName="mirrorsArms" animStartTime="0" />
+				</movingTool>				
+				</movingTools>		
+			</cylinderedConfiguration>			
+		</cylinderedConfigurations>		
+		
+        <movingParts>
+            <movingPart node="steeringBar1" referencePoint="SteeringRFRefPoint" referenceFrame="SteeringRFRefPoint" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="120"/>
+
+            <movingPart node="steeringLeft" referencePoint="steeringBarReftoRight" referenceFrame="steeringBarReftoRight" isActiveDirty="true" scaleZ="false" playSound="false" maxUpdateDistance="120"/>
+            <movingPart node="axleSupportBar" referencePoint="st1" referenceFrame="st1" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="80"/>
+
+			<movingPart node="1>2|0|7|0" referencePoint="0>0|2|0|1|2|1" referenceFrame="0>0|2|0|1|2|1" isActiveDirty="true"  maxUpdateDistance="80"/>			
+            <movingPart node="1>2|0|7|0|0|0" referencePoint="0>0|2|0|1|2|2" referenceFrame="0>0|2|0|1|2|2" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="20"/>
+		
+			<movingPart node="1>2|0|8|0" referencePoint="0>0|2|0|1|2|3" referenceFrame="0>0|2|0|1|2|3" isActiveDirty="true"  maxUpdateDistance="80"/>			
+            <movingPart node="1>2|0|8|0|0|0" referencePoint="0>0|2|0|1|2|4" referenceFrame="0>0|2|0|1|2|4" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="20"/>
+		
+            <movingPart node="leaf_LF" referencePoint="LF" referenceFrame="LF" isActiveDirty="true" scaleZ="true" playSound="false" invertZ="false" maxUpdateDistance="80" />
+            <movingPart node="leaf_RF" referencePoint="RF" referenceFrame="RF" isActiveDirty="true" scaleZ="true" playSound="false" invertZ="false" maxUpdateDistance="80" />
+            <movingPart node="leaf_LR" referencePoint="RL" referenceFrame="RL" isActiveDirty="true" scaleZ="true" playSound="false" invertZ="false" maxUpdateDistance="80" />
+            <movingPart node="leaf_RR" referencePoint="RR" referenceFrame="RR" isActiveDirty="true" scaleZ="true" playSound="false" invertZ="false" maxUpdateDistance="80" />
+
+			<movingPart node="0>0|2|0|1|3|0" referencePoint="2>0|0|8|0" referenceFrame="2>0|0|8|0" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80">
+            </movingPart>
+			<movingPart node="0>0|2|0|1|4|0" referencePoint="2>0|0|8|1" referenceFrame="2>0|0|8|1" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80">
+            </movingPart>
+			<movingPart node="2>0|0|8|2" referencePoint="0>0|2|0|1|3" referenceFrame="0>0|2|0|1|3" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80">
+            </movingPart>
+			<movingPart node="2>0|0|8|3" referencePoint="0>0|2|0|1|4" referenceFrame="0>0|2|0|1|4" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80">
+            </movingPart>
+
+			<movingPart node="1>2|3" referencePoint="0>0|2|1|7" referenceFrame="0>0|2|1|7" isActiveDirty="true" maxUpdateDistance="40"/>	
+			<movingPart node="0>0|2|2|6" referencePoint="2>0|0|9" referenceFrame="2>0|0|9" isActiveDirty="true" maxUpdateDistance="40"/>	
+			<movingPart node="2>0|0|9" referencePoint="0>0|2|2|6" referenceFrame="0>0|2|2|6" isActiveDirty="true" maxUpdateDistance="40"/>		
+
+            <movingPart node="0>0|2|0|2|1" referencePoint="1>2|6|0" referenceFrame="1>2|6|0" isActiveDirty="true" maxUpdateDistance="80" />
+            <movingPart node="0>0|2|0|2|1|0" referencePoint="1>2|6|0" referenceFrame="1>2|6|0" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="20" />
+            <movingPart node="0>0|2|0|2|2" referencePoint="1>2|6|1" referenceFrame="1>2|6|1" isActiveDirty="true" maxUpdateDistance="80" />
+            <movingPart node="0>0|2|0|2|2|0" referencePoint="1>2|6|1" referenceFrame="1>2|6|1" isActiveDirty="true" scaleZ="true" playSound="false" maxUpdateDistance="20" />			
+        </movingParts>
+
+    </cylindered>
+    <enterable isTabbable="true">
+        <enterReferenceNode node="superdutyMainComponent" />
+        <exitPoint node="exitPoint" />
+        <enterAnimation name="enterAnimation" />
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="6" transMax="40" translation="0 0 11" rotation="-19 180 0">
+                <raycastNode node="cameraRaycastNode1" />
+                <raycastNode node="cameraRaycastNode2" />
+                <raycastNode node="cameraRaycastNode3" />
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" rotation="0 180 0" />
+        </cameras>
+        <mirrors>
+            <mirror node="LF_Mirror" prio="1" />
+            <mirror node="RF_Mirror" prio="1" />
+            <mirror node="interiorMirror_002" prio="1" />	
+            <mirror node="0>0|0|3|0|1|1|1|0|0|0|0" cameraNode="0>0|0|3|0|1|5" prio="2" cameraFovY="90" nightReflectionScale="2"/>				
+        </mirrors>		
+        <characterNode node="player_skin" cameraMinDistance="0.5">
+            <target ikChain="rightFoot" targetNode="player_rightFoot" />
+            <target ikChain="leftFoot" targetNode="player_leftFoot" />
+            <target ikChain="rightArm" targetNode="rightArm" />
+            <target ikChain="leftArm" targetNode="leftArm" />
+        </characterNode>
+        <characterTargetNodeModifier node="player_skin" transitionTime="0.2">
+            <state node="playerSkinShift" referenceNode="0>0|0|3|0|4|0"/>
+        </characterTargetNodeModifier>		
+        <characterTargetNodeModifier node="rightArm" transitionTime="0.1">
+            <state node="playerRightHandTargetShift" referenceNode="0>0|0|3|0|4|0" poseId="narrowFingers" />
+        </characterTargetNodeModifier>
+        <characterTargetNodeModifier node="player_rightFoot" transitionTime="0.1">
+            <state node="playerRightFootTargetGas" referenceNode="0>0|0|3|0|2" />
+            <state node="playerRightFootTargetGas_002" referenceNode="0>0|0|3|0|3" />
+        </characterTargetNodeModifier>
+        <enterablePassengerConfigurations>
+            <enterablePassengerConfiguration>
+                <passengerSeat node="passengerSeatFrontRight" exitPoint="0>0|0|0|9|0|1" outdoorCameraIndex="1">
+                    <camera node="indoorCameraPassenger01" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="0>0|0|0|0|5" />
+                    <characterNode node="playerSkinPassenger01" cameraMinDistance="0.5">
+                        <target ikChain="leftArm" targetNode="playerLeftHandTargetPassenger01" poseId="flatFingers" />
+                        <target ikChain="rightArm" targetNode="playerRightHandTargetPassenger01" poseId="flatFingers" />
+                        <target ikChain="leftFoot" targetNode="playerLeftFootTargetPassenger01" />
+                        <target ikChain="rightFoot" targetNode="playerRightFootTargetPassenger01" />
+                    </characterNode>
+                </passengerSeat>
+                <passengerSeat node="passengerSeatBackLeft" exitPoint="0>0|0|0|9|1|1" outdoorCameraIndex="1">
+                    <camera node="indoorCameraPassenger02" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="0>0|0|0|0|5" />
+                    <characterNode node="playerSkinPassenger02" cameraMinDistance="0.5">
+                        <target ikChain="leftArm" targetNode="playerLeftHandTargetPassenger02" poseId="flatFingers" />
+                        <target ikChain="rightArm" targetNode="playerRightHandTargetPassenger02" poseId="flatFingers" />
+                        <target ikChain="leftFoot" targetNode="playerLeftFootTargetPassenger02" />
+                        <target ikChain="rightFoot" targetNode="playerRightFootTargetPassenger02" />
+                    </characterNode>
+                </passengerSeat>
+                <passengerSeat node="passengerSeatBackRight" exitPoint="0>0|0|0|9|2|1" outdoorCameraIndex="1">
+                    <camera node="indoorCameraPassenger03" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="0>0|0|0|0|5" />
+                    <characterNode node="playerSkinPassenger03" cameraMinDistance="0.5">
+                        <target ikChain="leftArm" targetNode="playerLeftHandTargetPassenger03" poseId="flatFingers" />
+                        <target ikChain="rightArm" targetNode="playerRightHandTargetPassenger03" poseId="flatFingers" />
+                        <target ikChain="leftFoot" targetNode="playerLeftFootTargetPassenger03" />
+                        <target ikChain="rightFoot" targetNode="playerRightFootTargetPassenger03" />
+                    </characterNode>
+                </passengerSeat>
+                <foliageBendingModifier index="1" minZ="-4.55" />
+            </enterablePassengerConfiguration>
+        </enterablePassengerConfigurations>
+    </enterable>
+    <drivable>
+        <steeringWheel node="SteeringRot" indoorRotation="720" outdoorRotation="150" />
+        <dashboards>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="gasPedal" minRot="0 0 0" maxRot="-18 0 0" doInterpolation="true" />
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="brakePedal" minRot="0 0 0" maxRot="-15 0 0" doInterpolation="true" />
+        </dashboards>
+    </drivable>
+    <wipers>
+        <wiper animName="wiperAnim">
+            <state animSpeed="0.6" animPause="2.0"/>
+            <state animSpeed="0.8" animPause="0.0"/>
+            <state animSpeed="1" animPause="0.0"/>
+        </wiper>
+    </wipers>	
+    <licensePlates defaultPlacement="BOTH">
+        <licensePlate node="licensePlateFront" position="FRONT" preferedType="SQUARISH" placementArea="0.06 0.27 0.1 0.27" />
+    </licensePlates>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="1">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="246">
+                        <dashboard displayType="TEXT" valueType="fillLevel" node="numbersFuelUsage" textColor="1 1 1 1" textSize="0.008" emissiveScale="2" textMask="000" font="DIGIT" textAlignment="CENTER" groups="MOTOR_ACTIVE" />
+                        <exactFillRootNode node="exactFillRootNodeFuel" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true" />
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true" />
+            <group name="MOTOR_RUNNING" isMotorStarting="false" isMotorRunning="true" />
+            <group name="MOTOR_OFF" isMotorStarting="false" isMotorRunning="false" />
+        </groups>
+        <default>
+            <dashboard displayType="VISIBILITY" node="screen1On" intensity="0.2" groups="MOTOR_RUNNING"/>
+            <dashboard displayType="VISIBILITY" node="screen2On" intensity="0.1" groups="MOTOR_RUNNING"/>			
+            <dashboard displayType="VISIBILITY" node="Guages" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="Dash_GenDiff" idleValue="0.05" intensity="0.5" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="intTextDiff_Steering" idleValue="0.05" intensity="0.5" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="intText_L_Door" idleValue="0.05" intensity="0.5" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="Int_Text_R_Door" idleValue="0.05" intensity="0.5" groups="MOTOR_ACTIVE" />
+        </default>
+        <dashboardLive>
+            <dashboard valueType="miniMap" cmd="map" node="dbl_mapPlane" displayType="VISIBILITY" groups="MOTOR_RUNNING"/>
+            <dashboard valueType="miniMap" cmd="posMarker" node="dbl_position" displayType="VISIBILITY" groups="MOTOR_RUNNING"/>
+            <dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="MOTOR_RUNNING" />
+        </dashboardLive>
+    </dashboard>
+    <foliageBending>
+		<bendingNode minX="-1.2" maxX="1.2" minZ="-2" maxZ="2.8" node="foilageBending" yOffset="0.4"/>
+    </foliageBending>
+    <baseColorConfigurations useDefaultColors="true">
+        <baseColorConfiguration materialTemplateName="VOLVO_RED1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_BLACK1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_PURPLE1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_BM_GREEN1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_YELLOW1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="mainPaint" />
+    </baseColorConfigurations>
+    <designColorConfigurations title="$l10n_configuration_twotone" useDefaultColors="true">
+        <designColorConfiguration materialTemplateName="VOLVO_BLACK1" />
+        <designColorConfiguration materialTemplateName="VOLVO_RED1" />
+        <designColorConfiguration materialTemplateName="VOLVO_PURPLE1" />
+        <designColorConfiguration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColorConfiguration materialTemplateName="VOLVO_YELLOW1" />
+        <designColorConfiguration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="twoTone" />
+    </designColorConfigurations>
+    <designColor2Configurations title="$l10n_configuration_Grille" useDefaultColors="true">
+        <designColor2Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor2Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor2Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor2Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor2Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor2Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor2Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="grille" />
+    </designColor2Configurations>
+    <designColor3Configurations title="$l10n_configuration_Bumper" useDefaultColors="true">
+        <designColor3Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor3Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor3Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor3Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor3Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor3Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor3Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="bumper" />
+    </designColor3Configurations>			
+    <designColor4Configurations title="$l10n_configuration_trim" useDefaultColors="true">
+        <designColor4Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />	
+        <designColor4Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor4Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor4Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor4Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor4Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor4Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="accent" />
+    </designColor4Configurations>
+    <designColor5Configurations title="$l10n_configuration_grilleguard" useDefaultColors="true">
+        <designColor5Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor5Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor5Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor5Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor5Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor5Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor5Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="guard" />
+    </designColor5Configurations>			
+    <designColor6Configurations title="$l10n_configuration_steps" useDefaultColors="true">
+        <designColor6Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor6Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor6Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor6Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor6Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor6Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor6Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="steps" />		
+    </designColor6Configurations>	
+    <designColor7Configurations title="$l10n_configuration_RimAccent" useDefaultColors="true">
+        <designColor7Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor7Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor7Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor7Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor7Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor7Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor7Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="rim_outer_mat" />		
+    </designColor7Configurations>	
+    <rimColorConfigurations useDefaultColors="true">
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_CHROME" price="1000" />
+        <rimColorConfiguration materialTemplateName="RIM_DEFAULT" />
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_WHITE" />
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+    </rimColorConfigurations>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2" />
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2" />
+	
+    <i3dMappings>
+        <i3dMapping id="superdutyMainComponent" node="0>" />
+        <i3dMapping id="superdutyMain" node="0>0" />
+        <i3dMapping id="cabin" node="0>0|0" />
+        <i3dMapping id="gamePlay" node="0>0|0|0" />
+        <i3dMapping id="cameras" node="0>0|0|0|0" />
+        <i3dMapping id="outdoorCameraTarget" node="0>0|0|0|0|0" />
+        <i3dMapping id="outdoorCamera" node="0>0|0|0|0|0|0" />
+        <i3dMapping id="indoorCamera" node="0>0|0|0|0|1" />
+        <i3dMapping id="cameraRaycastNode1" node="0>0|0|0|0|2" />
+        <i3dMapping id="cameraRaycastNode2" node="0>0|0|0|0|3" />
+        <i3dMapping id="cameraRaycastNode3" node="0>0|0|0|0|4" />
+        <i3dMapping id="shadowFocusBox" node="0>0|0|0|0|5" />
+        <i3dMapping id="exitPoint" node="0>0|0|0|1" />
+        <i3dMapping id="playerRoot" node="0>0|0|0|2" />
+        <i3dMapping id="player_skin" node="0>0|0|0|2|0" />
+        <i3dMapping id="player_rightFoot" node="0>0|0|0|2|1" />
+        <i3dMapping id="player_leftFoot" node="0>0|0|0|2|2" />
+        <i3dMapping id="playerSkinShift" node="0>0|0|0|2|3" />		
+        <i3dMapping id="Steering" node="0>0|0|0|3" />
+        <i3dMapping id="SteeringRot" node="0>0|0|0|3|0" />
+        <i3dMapping id="steeringWheel" node="0>0|0|0|3|0|0" />
+        <i3dMapping id="intTextDiff_Steering" node="0>0|0|0|3|0|0|0" />
+        <i3dMapping id="steeringWheelAccent" node="0>0|0|0|3|0|0|1" />
+        <i3dMapping id="steeringWheelPlastic" node="0>0|0|0|3|0|0|2" />
+        <i3dMapping id="steeringLogo" node="0>0|0|0|3|0|0|3" />
+        <i3dMapping id="steeringLogo_Decal" node="0>0|0|0|3|0|0|3|0" />
+        <i3dMapping id="leftArm" node="0>0|0|0|3|0|1" />
+        <i3dMapping id="rightArm" node="0>0|0|0|3|0|2" />
+        <i3dMapping id="wipers" node="0>0|0|0|4" />
+        <i3dMapping id="WiperLeft" node="0>0|0|0|4|0" />		
+        <i3dMapping id="WiperL" node="0>0|0|0|4|0|0" />
+        <i3dMapping id="WiperRight" node="0>0|0|0|4|1" />		
+        <i3dMapping id="WiperR" node="0>0|0|0|4|1|0" />
+        <i3dMapping id="attachers" node="0>0|0|0|5" />
+        <i3dMapping id="BedAttacher" node="0>0|0|0|5|0" />
+        <i3dMapping id="references" node="0>0|0|0|6" />
+        <i3dMapping id="fillUnit" node="0>0|0|0|7" />
+        <i3dMapping id="exactFillRootNodeFuel" node="0>0|0|0|7|0" />
+        <i3dMapping id="licensePlateFront" node="0>0|0|0|8" />
+        <i3dMapping id="Passengers" node="0>0|0|0|9" />
+        <i3dMapping id="passengerSeatFrontRight" node="0>0|0|0|9|0" />
+        <i3dMapping id="indoorCameraPassenger01" node="0>0|0|0|9|0|0" />
+        <i3dMapping id="exitPointPassenger01" node="0>0|0|0|9|0|1" />
+        <i3dMapping id="playerSkinPassenger01" node="0>0|0|0|9|0|2" />
+        <i3dMapping id="playerLeftHandTargetPassenger01" node="0>0|0|0|9|0|3" />
+        <i3dMapping id="playerRightHandTargetPassenger01" node="0>0|0|0|9|0|4" />
+        <i3dMapping id="playerLeftFootTargetPassenger01" node="0>0|0|0|9|0|5" />
+        <i3dMapping id="playerRightFootTargetPassenger01" node="0>0|0|0|9|0|6" />
+        <i3dMapping id="passengerSeatBackLeft" node="0>0|0|0|9|1" />
+        <i3dMapping id="indoorCameraPassenger02" node="0>0|0|0|9|1|0" />
+        <i3dMapping id="exitPointPassenger02" node="0>0|0|0|9|1|1" />
+        <i3dMapping id="playerSkinPassenger02" node="0>0|0|0|9|1|2" />
+        <i3dMapping id="playerLeftHandTargetPassenger02" node="0>0|0|0|9|1|3" />
+        <i3dMapping id="playerRightHandTargetPassenger02" node="0>0|0|0|9|1|4" />
+        <i3dMapping id="playerLeftFootTargetPassenger02" node="0>0|0|0|9|1|5" />
+        <i3dMapping id="playerRightFootTargetPassenger02" node="0>0|0|0|9|1|6" />
+        <i3dMapping id="passengerSeatBackRight" node="0>0|0|0|9|2" />
+        <i3dMapping id="indoorCameraPassenger03" node="0>0|0|0|9|2|0" />
+        <i3dMapping id="exitPointPassenger03" node="0>0|0|0|9|2|1" />
+        <i3dMapping id="playerSkinPassenger03" node="0>0|0|0|9|2|2" />
+        <i3dMapping id="playerLeftHandTargetPassenger03" node="0>0|0|0|9|2|3" />
+        <i3dMapping id="playerRightHandTargetPassenger03" node="0>0|0|0|9|2|4" />
+        <i3dMapping id="playerLeftFootTargetPassenger03" node="0>0|0|0|9|2|5" />
+        <i3dMapping id="playerRightFootTargetPassenger03" node="0>0|0|0|9|2|6" />
+        <i3dMapping id="cabExt" node="0>0|0|1" />
+        <i3dMapping id="Cab_parts" node="0>0|0|1|0" />
+        <i3dMapping id="frntBumper" node="0>0|0|1|1" />
+        <i3dMapping id="sideAccent" node="0>0|0|1|2" />
+        <i3dMapping id="cab_Windsheild" node="0>0|0|1|3" />
+        <i3dMapping id="windowBack" node="0>0|0|1|4" />
+        <i3dMapping id="hoodFill" node="0>0|0|1|5" />
+        <i3dMapping id="frontHooks" node="0>0|0|1|6" />
+        <i3dMapping id="sideVentBacker" node="0>0|0|1|7" />
+        <i3dMapping id="headlight_Housing" node="0>0|0|1|8" />
+        <i3dMapping id="headlightGlass_Noglow" node="0>0|0|1|9" />
+        <i3dMapping id="Options" node="0>0|0|2" />
+        <i3dMapping id="grillOptions" node="0>0|0|2|0" />
+        <i3dMapping id="Grille" node="0>0|0|2|0|0" />
+        <i3dMapping id="grillBacker1" node="0>0|0|2|0|0|0" />
+        <i3dMapping id="GrillBacker2" node="0>0|0|2|0|0|1" />
+        <i3dMapping id="Grille1" node="0>0|0|2|0|1" />
+        <i3dMapping id="fenderOptions" node="0>0|0|2|1" />
+        <i3dMapping id="frontFlare" node="0>0|0|2|1|0" />
+        <i3dMapping id="exhaustOptions" node="0>0|0|2|2" />
+        <i3dMapping id="exhaustMain" node="0>0|0|2|2|0" />
+        <i3dMapping id="exhaust1" node="0>0|0|2|2|0|0" />
+        <i3dMapping id="exhaustParticle1" node="0>0|0|2|2|0|0|0" />
+        <i3dMapping id="exhuast2" node="0>0|0|2|2|0|1" />
+        <i3dMapping id="exhaustParticle2" node="0>0|0|2|2|0|1|0" />		
+        <i3dMapping id="plowmount_grp" node="0>0|0|2|3" />
+        <i3dMapping id="plowMount_Frame" node="0>0|0|2|3|0" />
+        <i3dMapping id="plowAttacherJoint" node="0>0|0|2|3|0|0" />
+        <i3dMapping id="plowMount_Pins" node="0>0|0|2|3|0|1" />
+        <i3dMapping id="valance" node="0>0|0|2|4" />				
+        <i3dMapping id="interior" node="0>0|0|3" />
+        <i3dMapping id="interiorAnimate" node="0>0|0|3|0" />
+        <i3dMapping id="interiorLight" node="0>0|0|3|0|0" />
+        <i3dMapping id="interiorRealLight" node="0>0|0|3|0|0|0" />
+        <i3dMapping id="interiorRealLight2" node="0>0|0|3|0|0|0|0" />
+        <i3dMapping id="interiorStaticLightOFF" node="0>0|0|3|0|0|1" />
+        <i3dMapping id="interiorStaticLightON" node="0>0|0|3|0|0|2" />
+        <i3dMapping id="display" node="0>0|0|3|0|1" />
+        <i3dMapping id="screen1Off" node="0>0|0|3|0|1|0" />
+        <i3dMapping id="screen2Off" node="0>0|0|3|0|1|0|0" />
+        <i3dMapping id="screen1On" node="0>0|0|3|0|1|1" />
+        <i3dMapping id="screen2On" node="0>0|0|3|0|1|1|0" />
+        <i3dMapping id="Dash_GenDiff" node="0>0|0|3|0|1|2" />
+        <i3dMapping id="Dash_GenDiffNoGlow" node="0>0|0|3|0|1|3" />
+        <i3dMapping id="Guages" node="0>0|0|3|0|1|4" />
+        <i3dMapping id="MPH" node="0>0|0|3|0|1|4|0" />
+	  <i3dMapping id="speed1" node="0>0|0|3|0|1|4|0|0" />
+	  <i3dMapping id="speed2" node="0>0|0|3|0|1|4|0|1" />
+	  <i3dMapping id="speed3" node="0>0|0|3|0|1|4|0|2" />
+	  <i3dMapping id="speed4" node="0>0|0|3|0|1|4|0|3" />
+	  <i3dMapping id="speed5" node="0>0|0|3|0|1|4|0|4" />
+	  <i3dMapping id="speed6" node="0>0|0|3|0|1|4|0|5" />
+	  <i3dMapping id="speed7" node="0>0|0|3|0|1|4|0|6" />
+	  <i3dMapping id="speed8" node="0>0|0|3|0|1|4|0|7" />
+	  <i3dMapping id="speed9" node="0>0|0|3|0|1|4|0|8" />
+	  <i3dMapping id="speed10" node="0>0|0|3|0|1|4|0|9" />
+	  <i3dMapping id="speed11" node="0>0|0|3|0|1|4|0|10" />
+	  <i3dMapping id="speed12" node="0>0|0|3|0|1|4|0|11" />
+	  <i3dMapping id="speed13" node="0>0|0|3|0|1|4|0|12" />
+	  <i3dMapping id="speed14" node="0>0|0|3|0|1|4|0|13" />
+	  <i3dMapping id="speed15" node="0>0|0|3|0|1|4|0|14" />
+	  <i3dMapping id="speed16" node="0>0|0|3|0|1|4|0|15" />
+	  <i3dMapping id="speed17" node="0>0|0|3|0|1|4|0|16" />
+	  <i3dMapping id="speed18" node="0>0|0|3|0|1|4|0|17" />
+	  <i3dMapping id="speed19" node="0>0|0|3|0|1|4|0|18" />
+	  <i3dMapping id="speed20" node="0>0|0|3|0|1|4|0|19" />
+	  <i3dMapping id="speed21" node="0>0|0|3|0|1|4|0|20" />
+	  <i3dMapping id="speed22" node="0>0|0|3|0|1|4|0|21" />
+	  <i3dMapping id="speed23" node="0>0|0|3|0|1|4|0|22" />
+	  <i3dMapping id="speed24" node="0>0|0|3|0|1|4|0|23" />
+        <i3dMapping id="numbersSpeed01" node="0>0|0|3|0|1|4|0|24" />
+        <i3dMapping id="Temp" node="0>0|0|3|0|1|4|1" />
+        <i3dMapping id="Temp_002" node="0>0|0|3|0|1|4|1|0" />
+        <i3dMapping id="Temp.001" node="0>0|0|3|0|1|4|1|1" />
+        <i3dMapping id="Temp.002" node="0>0|0|3|0|1|4|1|2" />
+        <i3dMapping id="Temp.003" node="0>0|0|3|0|1|4|1|3" />
+        <i3dMapping id="Temp.004" node="0>0|0|3|0|1|4|1|4" />
+        <i3dMapping id="Temp.005" node="0>0|0|3|0|1|4|1|5" />
+        <i3dMapping id="Temp.006" node="0>0|0|3|0|1|4|1|6" />
+        <i3dMapping id="Temp.007" node="0>0|0|3|0|1|4|1|7" />
+        <i3dMapping id="Temp.008" node="0>0|0|3|0|1|4|1|8" />
+        <i3dMapping id="Temp.009" node="0>0|0|3|0|1|4|1|9" />
+        <i3dMapping id="Temp.010" node="0>0|0|3|0|1|4|1|10" />
+        <i3dMapping id="Temp.011" node="0>0|0|3|0|1|4|1|11" />
+        <i3dMapping id="Temp.012" node="0>0|0|3|0|1|4|1|12" />
+        <i3dMapping id="Temp.013" node="0>0|0|3|0|1|4|1|13" />
+        <i3dMapping id="Temp.014" node="0>0|0|3|0|1|4|1|14" />
+        <i3dMapping id="Temp.015" node="0>0|0|3|0|1|4|1|15" />
+        <i3dMapping id="Temp.016" node="0>0|0|3|0|1|4|1|16" />
+        <i3dMapping id="Temp.017" node="0>0|0|3|0|1|4|1|17" />
+        <i3dMapping id="Temp.018" node="0>0|0|3|0|1|4|1|18" />
+        <i3dMapping id="Temp.019" node="0>0|0|3|0|1|4|1|19" />
+        <i3dMapping id="Temp.020" node="0>0|0|3|0|1|4|1|20" />
+        <i3dMapping id="Temp.021" node="0>0|0|3|0|1|4|1|21" />
+        <i3dMapping id="Gear" node="0>0|0|3|0|1|4|2" />
+        <i3dMapping id="P" node="0>0|0|3|0|1|4|2|0" />
+        <i3dMapping id="R" node="0>0|0|3|0|1|4|2|1" />
+        <i3dMapping id="N" node="0>0|0|3|0|1|4|2|2" />
+        <i3dMapping id="D" node="0>0|0|3|0|1|4|2|3" />
+        <i3dMapping id="M" node="0>0|0|3|0|1|4|2|4" />
+        <i3dMapping id="1" node="0>0|0|3|0|1|4|2|5" />
+        <i3dMapping id="2" node="0>0|0|3|0|1|4|2|6" />
+        <i3dMapping id="3" node="0>0|0|3|0|1|4|2|7" />
+        <i3dMapping id="4" node="0>0|0|3|0|1|4|2|8" />
+        <i3dMapping id="5" node="0>0|0|3|0|1|4|2|9" />
+        <i3dMapping id="6" node="0>0|0|3|0|1|4|2|10" />
+        <i3dMapping id="7" node="0>0|0|3|0|1|4|2|11" />
+        <i3dMapping id="8" node="0>0|0|3|0|1|4|2|12" />
+        <i3dMapping id="9" node="0>0|0|3|0|1|4|2|13" />
+        <i3dMapping id="10" node="0>0|0|3|0|1|4|2|14" />
+        <i3dMapping id="Fuel" node="0>0|0|3|0|1|4|3" />
+        <i3dMapping id="Fuel_002" node="0>0|0|3|0|1|4|3|0" />
+        <i3dMapping id="Fuel.001" node="0>0|0|3|0|1|4|3|0|0" />
+        <i3dMapping id="Fuel.002" node="0>0|0|3|0|1|4|3|0|1" />
+        <i3dMapping id="Fuel.003" node="0>0|0|3|0|1|4|3|0|2" />
+        <i3dMapping id="Fuel.004" node="0>0|0|3|0|1|4|3|0|3" />
+        <i3dMapping id="Fuel.005" node="0>0|0|3|0|1|4|3|0|4" />
+        <i3dMapping id="Fuel.006" node="0>0|0|3|0|1|4|3|0|5" />
+        <i3dMapping id="Fuel.007" node="0>0|0|3|0|1|4|3|0|6" />
+        <i3dMapping id="Fuel.008" node="0>0|0|3|0|1|4|3|0|7" />
+        <i3dMapping id="Fuel.009" node="0>0|0|3|0|1|4|3|0|8" />
+        <i3dMapping id="Fuel.010" node="0>0|0|3|0|1|4|3|0|9" />
+        <i3dMapping id="Fuel.011" node="0>0|0|3|0|1|4|3|0|10" />
+        <i3dMapping id="Fuel.012" node="0>0|0|3|0|1|4|3|0|11" />
+        <i3dMapping id="Fuel.013" node="0>0|0|3|0|1|4|3|0|12" />
+        <i3dMapping id="Fuel.014" node="0>0|0|3|0|1|4|3|0|13" />
+        <i3dMapping id="Fuel.015" node="0>0|0|3|0|1|4|3|0|14" />
+        <i3dMapping id="Fuel.016" node="0>0|0|3|0|1|4|3|0|15" />
+        <i3dMapping id="Fuel.017" node="0>0|0|3|0|1|4|3|0|16" />
+        <i3dMapping id="Fuel.018" node="0>0|0|3|0|1|4|3|0|17" />
+        <i3dMapping id="Fuel.019" node="0>0|0|3|0|1|4|3|0|18" />
+        <i3dMapping id="Fuel.020" node="0>0|0|3|0|1|4|3|0|19" />
+        <i3dMapping id="Fuel.021" node="0>0|0|3|0|1|4|3|0|20" />
+        <i3dMapping id="numbersFuelUsage" node="0>0|0|3|0|1|4|3|1" />
+        <i3dMapping id="Oil" node="0>0|0|3|0|1|4|4" />
+        <i3dMapping id="Oil_002" node="0>0|0|3|0|1|4|4|0" />
+        <i3dMapping id="Oil.001" node="0>0|0|3|0|1|4|4|1" />
+        <i3dMapping id="Oil.002" node="0>0|0|3|0|1|4|4|2" />
+        <i3dMapping id="Oil.003" node="0>0|0|3|0|1|4|4|3" />
+        <i3dMapping id="Oil.004" node="0>0|0|3|0|1|4|4|4" />
+        <i3dMapping id="Oil.005" node="0>0|0|3|0|1|4|4|5" />
+        <i3dMapping id="Oil.006" node="0>0|0|3|0|1|4|4|6" />
+        <i3dMapping id="Oil.007" node="0>0|0|3|0|1|4|4|7" />
+        <i3dMapping id="Oil.008" node="0>0|0|3|0|1|4|4|8" />
+        <i3dMapping id="Oil.009" node="0>0|0|3|0|1|4|4|9" />
+        <i3dMapping id="Oil.010" node="0>0|0|3|0|1|4|4|10" />
+        <i3dMapping id="Oil.011" node="0>0|0|3|0|1|4|4|11" />
+        <i3dMapping id="Oil.012" node="0>0|0|3|0|1|4|4|12" />
+        <i3dMapping id="Oil.013" node="0>0|0|3|0|1|4|4|13" />
+        <i3dMapping id="Oil.014" node="0>0|0|3|0|1|4|4|14" />
+        <i3dMapping id="Oil.015" node="0>0|0|3|0|1|4|4|15" />
+        <i3dMapping id="Oil.016" node="0>0|0|3|0|1|4|4|16" />
+        <i3dMapping id="Oil.017" node="0>0|0|3|0|1|4|4|17" />
+        <i3dMapping id="Oil.018" node="0>0|0|3|0|1|4|4|18" />
+        <i3dMapping id="Oil.019" node="0>0|0|3|0|1|4|4|19" />
+        <i3dMapping id="Oil.020" node="0>0|0|3|0|1|4|4|20" />
+        <i3dMapping id="Oil.1" node="0>0|0|3|0|1|4|4|21" />
+        <i3dMapping id="RPM" node="0>0|0|3|0|1|4|5" />
+	  <i3dMapping id="rpm" node="0>0|0|3|0|1|4|5|0" />
+	  <i3dMapping id="rpm1" node="0>0|0|3|0|1|4|5|1" />
+	  <i3dMapping id="rpm2" node="0>0|0|3|0|1|4|5|2" />
+	  <i3dMapping id="rpm3" node="0>0|0|3|0|1|4|5|3" />
+	  <i3dMapping id="rpm4" node="0>0|0|3|0|1|4|5|4" />
+	  <i3dMapping id="rpm5" node="0>0|0|3|0|1|4|5|5" />
+	  <i3dMapping id="rpm6" node="0>0|0|3|0|1|4|5|6" />
+	  <i3dMapping id="rpm7" node="0>0|0|3|0|1|4|5|7" />
+	  <i3dMapping id="rpm8" node="0>0|0|3|0|1|4|5|8" />
+	  <i3dMapping id="rpm9" node="0>0|0|3|0|1|4|5|9" />
+	  <i3dMapping id="rpm10" node="0>0|0|3|0|1|4|5|10" />
+	  <i3dMapping id="rpm11" node="0>0|0|3|0|1|4|5|11" />
+	  <i3dMapping id="rpm12" node="0>0|0|3|0|1|4|5|12" />
+	  <i3dMapping id="rpm13" node="0>0|0|3|0|1|4|5|13" />
+	  <i3dMapping id="rpm14" node="0>0|0|3|0|1|4|5|14" />
+	  <i3dMapping id="rpm15" node="0>0|0|3|0|1|4|5|15" />
+	  <i3dMapping id="rpm16" node="0>0|0|3|0|1|4|5|16" />
+	  <i3dMapping id="rpm17" node="0>0|0|3|0|1|4|5|17" />
+	  <i3dMapping id="rpm18" node="0>0|0|3|0|1|4|5|18" />
+	  <i3dMapping id="rpm19" node="0>0|0|3|0|1|4|5|19" />
+	  <i3dMapping id="rpm20" node="0>0|0|3|0|1|4|5|20" />
+	  <i3dMapping id="rpm21" node="0>0|0|3|0|1|4|5|21" />
+	  <i3dMapping id="rpm22" node="0>0|0|3|0|1|4|5|22" />
+	  <i3dMapping id="rpm23" node="0>0|0|3|0|1|4|5|23" />
+	  <i3dMapping id="rpm24" node="0>0|0|3|0|1|4|5|24" />
+        <i3dMapping id="numbersRPM" node="0>0|0|3|0|1|4|5|25" />
+        <i3dMapping id="Water" node="0>0|0|3|0|1|4|6" />
+        <i3dMapping id="0water,00" node="0>0|0|3|0|1|4|6|0" />
+        <i3dMapping id="1water" node="0>0|0|3|0|1|4|6|1" />
+        <i3dMapping id="1water.0" node="0>0|0|3|0|1|4|6|2" />
+        <i3dMapping id="1water.001" node="0>0|0|3|0|1|4|6|3" />
+        <i3dMapping id="1water.003" node="0>0|0|3|0|1|4|6|4" />
+        <i3dMapping id="1water.004" node="0>0|0|3|0|1|4|6|5" />
+        <i3dMapping id="1water.005" node="0>0|0|3|0|1|4|6|6" />
+        <i3dMapping id="1water.006" node="0>0|0|3|0|1|4|6|7" />
+        <i3dMapping id="1water.007" node="0>0|0|3|0|1|4|6|8" />
+        <i3dMapping id="1water.008" node="0>0|0|3|0|1|4|6|9" />
+        <i3dMapping id="1water.009" node="0>0|0|3|0|1|4|6|10" />
+        <i3dMapping id="1water.010" node="0>0|0|3|0|1|4|6|11" />
+        <i3dMapping id="1water.011" node="0>0|0|3|0|1|4|6|12" />
+        <i3dMapping id="1water.012" node="0>0|0|3|0|1|4|6|13" />
+        <i3dMapping id="1water.013" node="0>0|0|3|0|1|4|6|14" />
+        <i3dMapping id="1water.014" node="0>0|0|3|0|1|4|6|15" />
+        <i3dMapping id="1water.015" node="0>0|0|3|0|1|4|6|16" />
+        <i3dMapping id="1water.016" node="0>0|0|3|0|1|4|6|17" />
+        <i3dMapping id="1water.017" node="0>0|0|3|0|1|4|6|18" />
+        <i3dMapping id="1water.018" node="0>0|0|3|0|1|4|6|19" />
+        <i3dMapping id="1water.019" node="0>0|0|3|0|1|4|6|20" />
+        <i3dMapping id="1water.020" node="0>0|0|3|0|1|4|6|21" />
+        <i3dMapping id="gasPedal" node="0>0|0|3|0|2" />
+        <i3dMapping id="Gas" node="0>0|0|3|0|2|0" />
+        <i3dMapping id="playerRightFootTargetGas" node="0>0|0|3|0|2|1" />
+        <i3dMapping id="brakePedal" node="0>0|0|3|0|3" />
+        <i3dMapping id="brake" node="0>0|0|3|0|3|0" />
+        <i3dMapping id="playerRightFootTargetGas_002" node="0>0|0|3|0|3|1" />
+        <i3dMapping id="shift" node="0>0|0|3|0|4" />
+        <i3dMapping id="shifter" node="0>0|0|3|0|4|0" />
+        <i3dMapping id="shiftArm" node="0>0|0|3|0|4|0|0" />
+        <i3dMapping id="ShifterBone" node="0>0|0|3|0|4|0|0|0" />
+        <i3dMapping id="playerRightHandTargetShift" node="0>0|0|3|0|4|0|0|1" />
+        <i3dMapping id="shifterBase" node="0>0|0|3|0|4|1" />
+        <i3dMapping id="shiftBoot" node="0>0|0|3|0|4|1|0" />
+        <i3dMapping id="shifterBaseBone" node="0>0|0|3|0|4|1|1" />
+        <i3dMapping id="TurnBase" node="0>0|0|3|0|5" />
+        <i3dMapping id="turnArm" node="0>0|0|3|0|5|0" />
+        <i3dMapping id="interiorMirror" node="0>0|0|3|1" />
+        <i3dMapping id="interiorMirror_002" node="0>0|0|3|1|0" />
+        <i3dMapping id="interiorSuperduty" node="0>0|0|3|2" />
+        <i3dMapping id="Int_DoorsInnerBody" node="0>0|0|3|3" />
+        <i3dMapping id="interiorDash1" node="0>0|0|3|4" />
+        <i3dMapping id="interiorDash2" node="0>0|0|3|5" />
+        <i3dMapping id="Interior_TextureBase" node="0>0|0|3|6" />
+        <i3dMapping id="seatLeather" node="0>0|0|3|7" />
+        <i3dMapping id="back_seat_reflection" node="0>0|0|3|8" />
+        <i3dMapping id="interior_symmetry_cloth" node="0>0|0|3|9" />
+        <i3dMapping id="interior_symmetry_plastic_2.002" node="0>0|0|3|10" />
+        <i3dMapping id="other_interior_objects_aluminum" node="0>0|0|3|11" />
+        <i3dMapping id="other_interior_objects_shadow" node="0>0|0|3|12" />
+        <i3dMapping id="symmetry_rubber" node="0>0|0|3|13" />
+        <i3dMapping id="symmetry_windows.003" node="0>0|0|3|14" />
+        <i3dMapping id="leftFrontDOOR" node="0>0|0|4" />
+        <i3dMapping id="LEFTMIRROR" node="0>0|0|4|0" />
+        <i3dMapping id="mirrorLeft_Lights" node="0>0|0|4|0|0" />
+        <i3dMapping id="realLights_MirrorLeft" node="0>0|0|4|0|0|0" />
+        <i3dMapping id="orangeLight_MirrorLeft" node="0>0|0|4|0|0|0|0" />
+        <i3dMapping id="orangeLight_MirrorLeft2" node="0>0|0|4|0|0|0|0|0" />
+        <i3dMapping id="turnLightFrontLeft" node="0>0|0|4|0|0|0|1" />
+        <i3dMapping id="turnLightFrontLeft_002" node="0>0|0|4|0|0|0|1|0" />
+        <i3dMapping id="staticLights_MirrorLeft" node="0>0|0|4|0|0|1" />
+        <i3dMapping id="MirrorLeft_StaticCompound" node="0>0|0|4|0|0|1|0" />
+        <i3dMapping id="MirrorLeftLight_Glass" node="0>0|0|4|0|0|1|1" />
+        <i3dMapping id="MirrorLeft_TurnL" node="0>0|0|4|0|0|1|2" />
+        <i3dMapping id="Mirror_HousingLeft" node="0>0|0|4|0|1" />
+        <i3dMapping id="LF_Mirror" node="0>0|0|4|0|2" />
+        <i3dMapping id="MirrorLeftLightBacking" node="0>0|0|4|0|3" />
+        <i3dMapping id="intText_L_Door" node="0>0|0|4|1" />
+        <i3dMapping id="LF_Door_Int" node="0>0|0|4|2" />
+        <i3dMapping id="LF_DOOR_INT.003" node="0>0|0|4|3" />
+        <i3dMapping id="FL_Door" node="0>0|0|4|4" />
+        <i3dMapping id="FL_Door2" node="0>0|0|4|5" />
+        <i3dMapping id="FL_Door_Window" node="0>0|0|4|6" />
+        <i3dMapping id="rightFrontDOOR" node="0>0|0|5" />
+        <i3dMapping id="RIGHTMIRROR" node="0>0|0|5|0" />
+        <i3dMapping id="mirrorRight_Lights" node="0>0|0|5|0|0" />
+        <i3dMapping id="realLights_MirrorRight" node="0>0|0|5|0|0|0" />
+        <i3dMapping id="orangeLight_MirrorRight" node="0>0|0|5|0|0|0|0" />
+        <i3dMapping id="orangeLight_MirrorRight2" node="0>0|0|5|0|0|0|0|0" />
+        <i3dMapping id="turnLightFrontRight" node="0>0|0|5|0|0|0|1" />
+        <i3dMapping id="turnLightFrontRight_002" node="0>0|0|5|0|0|0|1|0" />
+        <i3dMapping id="staticLights_MirrorRight" node="0>0|0|5|0|0|1" />
+        <i3dMapping id="MirrorRight_StaticCompound" node="0>0|0|5|0|0|1|0" />
+        <i3dMapping id="MirrorRightLight_Glass" node="0>0|0|5|0|0|1|1" />
+        <i3dMapping id="MirrorRight_TurnR" node="0>0|0|5|0|0|1|2" />
+        <i3dMapping id="Mirror_HousingRight" node="0>0|0|5|0|1" />
+        <i3dMapping id="RF_Mirror" node="0>0|0|5|0|2" />
+        <i3dMapping id="MirrorRightLightBacking" node="0>0|0|5|0|3" />
+        <i3dMapping id="Int_Text_R_Door" node="0>0|0|5|1" />
+        <i3dMapping id="RF_DOOR_INT" node="0>0|0|5|2" />
+        <i3dMapping id="RF_DOOR_INT.001" node="0>0|0|5|3" />
+        <i3dMapping id="FR_Door" node="0>0|0|5|4" />
+        <i3dMapping id="FR_Door2" node="0>0|0|5|5" />
+        <i3dMapping id="FR_Door_Window" node="0>0|0|5|6" />
+        <i3dMapping id="leftRearDOOR" node="0>0|0|6" />
+        <i3dMapping id="LR_Door_Int" node="0>0|0|6|0" />
+        <i3dMapping id="LR_Door_Int.001" node="0>0|0|6|1" />
+        <i3dMapping id="LR_Door" node="0>0|0|6|2" />
+        <i3dMapping id="LR_Door2" node="0>0|0|6|3" />
+        <i3dMapping id="LR_Door_Window" node="0>0|0|6|4" />
+        <i3dMapping id="rightRearDOOR" node="0>0|0|7" />
+        <i3dMapping id="RR_DOOR_Int" node="0>0|0|7|0" />
+        <i3dMapping id="LR_Door_Int.002" node="0>0|0|7|1" />
+        <i3dMapping id="RR_Door" node="0>0|0|7|2" />
+        <i3dMapping id="RR_Door2" node="0>0|0|7|3" />
+        <i3dMapping id="RR_DoorWindow" node="0>0|0|7|4" />
+        <i3dMapping id="lights_Cab" node="0>0|1" />
+        <i3dMapping id="realLights_Cab" node="0>0|1|0" />
+        <i3dMapping id="cabLight_Light" node="0>0|1|0|0" />
+        <i3dMapping id="cabLight_Light2" node="0>0|1|0|0|0" />
+        <i3dMapping id="cabLight_Light3" node="0>0|1|0|0|1" />
+        <i3dMapping id="cabLight_Light4" node="0>0|1|0|0|2" />
+        <i3dMapping id="cabLight_Light5" node="0>0|1|0|0|3" />
+        <i3dMapping id="OrangeLightFront" node="0>0|1|0|1" />
+        <i3dMapping id="OrangeLightFront2" node="0>0|1|0|1|0" />
+        <i3dMapping id="OrangeLightFront3" node="0>0|1|0|1|1" />
+        <i3dMapping id="OrangeLightFront4" node="0>0|1|0|1|2" />
+        <i3dMapping id="thirdLight_Lo" node="0>0|1|0|2" />
+
+        <i3dMapping id="frontLight_Lo" node="0>0|1|0|3|0" />
+        <i3dMapping id="frontLight_Lo2" node="0>0|1|0|3|0|0" />
+        <i3dMapping id="frontLight_Fog" node="0>0|1|0|4|0" />
+        <i3dMapping id="frontLight_Fog2" node="0>0|1|0|4|0|0" />
+        <i3dMapping id="frontLight_Hi" node="0>0|1|0|5|0" />
+        <i3dMapping id="frontLight_Hi2" node="0>0|1|0|5|0|0" />
+        <i3dMapping id="thirdLight_Hi" node="0>0|1|0|6" />
+
+        <i3dMapping id="turnLightFrontLeft_003" node="0>0|1|0|7" />
+        <i3dMapping id="turnLightFrontLeft2" node="0>0|1|0|7|0" />
+        <i3dMapping id="turnLightFrontRight_003" node="0>0|1|0|8" />
+        <i3dMapping id="turnLightFrontRight2" node="0>0|1|0|8|0" />
+        <i3dMapping id="staticLights_Cab" node="0>0|1|1" />
+        <i3dMapping id="staticCompound_Truck" node="0>0|1|1|0" />
+        <i3dMapping id="StaticCompoundGlass_Truck" node="0>0|1|1|1" />
+        <i3dMapping id="TurnStatic_Headlights" node="0>0|1|1|2" />
+        <i3dMapping id="frameMain" node="0>0|2" />
+        <i3dMapping id="superdutyFrame" node="0>0|2|0" />
+        <i3dMapping id="frameOptions" node="0>0|2|0|0" />
+        <i3dMapping id="hitchMount" node="0>0|2|0|0|0" />
+        <i3dMapping id="bumperHitchMain" node="0>0|2|0|0|0|0" />
+        <i3dMapping id="bumperHitch" node="0>0|2|0|0|0|0|0" />
+        <i3dMapping id="attachTrailer" node="0>0|2|0|0|0|0|0|0" />
+        <i3dMapping id="attachTrailer_002" node="0>0|2|0|0|0|0|0|1" />
+        <i3dMapping id="attachTrailer_003" node="0>0|2|0|0|0|0|0|2" />
+        <i3dMapping id="hitchPin" node="0>0|2|0|0|0|1" />
+        <i3dMapping id="electricTrailer" node="0>0|2|0|0|0|2" />
+        <i3dMapping id="referencePoint" node="0>0|2|0|0|0|2|0" />
+        <i3dMapping id="cap" node="0>0|2|0|0|0|2|1" />
+        <i3dMapping id="frameMovingParts" node="0>0|2|0|1" />
+        <i3dMapping id="driveShaft1" node="0>0|2|0|1|0" />
+        <i3dMapping id="driveShaft_F1" node="0>0|2|0|1|1" />
+        <i3dMapping id="foilageBending" node="0>0|3" />
+
+        <i3dMapping id="ShockL_Top" node="0>0|2|0|1|3" />
+        <i3dMapping id="shockLeft" node="0>0|2|0|1|3|0" />
+
+        <i3dMapping id="shockRight_TopBone" node="0>0|2|0|1|4" />
+        <i3dMapping id="shockRight" node="0>0|2|0|1|4|0" />
+
+        <i3dMapping id="steeringBar1" node="0>0|2|0|1|5" />
+        <i3dMapping id="steeringBar1Vis" node="0>0|2|0|1|5|0" />
+        <i3dMapping id="frameFront" node="0>0|2|0|2" />
+        <i3dMapping id="engineBayCover" node="0>0|2|0|2|0" />
+        <i3dMapping id="frameMid" node="0>0|2|0|3" />
+        <i3dMapping id="frameRear" node="0>0|2|0|4" />
+        <i3dMapping id="FrameHoses" node="0>0|2|0|5" />
+        <i3dMapping id="frameRearParts" node="0>0|2|0|6" />
+        <i3dMapping id="fuelSpout" node="0>0|2|0|7" />
+        <i3dMapping id="leafMounts" node="0>0|2|0|8" />
+        <i3dMapping id="frontaxlemovingparts" node="0>0|2|1" />
+        <i3dMapping id="Lspring" node="0>0|2|1|0" />
+        <i3dMapping id="Rspring" node="0>0|2|1|1" />
+        <i3dMapping id="frontshocks" node="0>0|2|1|2" />
+        <i3dMapping id="shockManifoldSet" node="0>0|2|1|2|0" />
+        <i3dMapping id="shockManifolds" node="0>0|2|1|2|0|0" />
+        <i3dMapping id="RRR" node="0>0|2|1|2|1" />
+        <i3dMapping id="st1" node="0>0|2|1|3" />
+        <i3dMapping id="axleSupportL_Ref" node="0>0|2|1|4" />
+        <i3dMapping id="axleSupportRRef" node="0>0|2|1|5" />
+        <i3dMapping id="frntAxleRef22" node="0>0|2|1|6" />
+        <i3dMapping id="frontAxleReference22" node="0>0|2|1|6|0" />
+
+
+        <i3dMapping id="rearmovingparts" node="0>0|2|2" />
+        <i3dMapping id="LF" node="0>0|2|2|0" />
+        <i3dMapping id="RF" node="0>0|2|2|1" />
+        <i3dMapping id="RL" node="0>0|2|2|2" />
+        <i3dMapping id="RR" node="0>0|2|2|3" />
+        <i3dMapping id="RearAxleReference1" node="0>0|2|2|4" />
+        <i3dMapping id="RearAxleReference2" node="0>0|2|2|5" />
+        <i3dMapping id="rearDriveShaft" node="0>0|2|2|6" />
+
+        <i3dMapping id="component2_ref" node="0>0|2|3" />
+        <i3dMapping id="component3_ref" node="0>0|2|4" />
+        <i3dMapping id="frameCol" node="0>0|2|5" />
+        <i3dMapping id="collisionRearFrame" node="0>0|2|5|0" />
+        <i3dMapping id="Front_component2" node="1>" />
+        <i3dMapping id="LEFTSTREF" node="1>0" />
+        <i3dMapping id="LF_SteeringHub" node="1>0|0" />
+        <i3dMapping id="LF_Rotor" node="1>0|0|0" />
+        <i3dMapping id="DRW_LF" node="1>0|0|0|0" />
+        <i3dMapping id="SRW_L" node="1>0|0|0|1" />
+        <i3dMapping id="LF_REF" node="1>0|0|1" />
+        <i3dMapping id="steeringBarReftoRight" node="1>0|0|1|0" />
+        <i3dMapping id="driveshaftL2" node="1>0|0|2" />
+
+        <i3dMapping id="RIGHTSTREF" node="1>1" />
+        <i3dMapping id="RF_SteeringHub" node="1>1|0" />
+        <i3dMapping id="RF_Rotor" node="1>1|0|0" />
+        <i3dMapping id="DRW_RF" node="1>1|0|0|0" />
+        <i3dMapping id="SRW_R" node="1>1|0|0|1" />
+        <i3dMapping id="RF_DriveShaft2" node="1>1|0|1" />
+        <i3dMapping id="SteeringRFHub" node="1>1|0|2" />
+        <i3dMapping id="SteeringRFRef" node="1>1|0|2|0" />
+        <i3dMapping id="SteeringRFRefPoint" node="1>1|0|2|0|0" />
+        <i3dMapping id="steeringLeft" node="1>1|0|3" />
+        <i3dMapping id="steeringBarLeft" node="1>1|0|3|0" />
+
+        <i3dMapping id="axleFront" node="1>2" />
+        <i3dMapping id="springsfront" node="1>2|0" />
+        <i3dMapping id="springLF" node="1>2|0|0" />
+        <i3dMapping id="springRF" node="1>2|0|1" />
+        <i3dMapping id="frontShocks" node="1>2|0|2" />
+        <i3dMapping id="LeftShock" node="1>2|0|2|0" />
+        <i3dMapping id="ShockLF" node="1>2|0|2|0|0" />
+        <i3dMapping id="shockLF_Bottom" node="1>2|0|2|0|0|0" />
+        <i3dMapping id="shockLF_Boot" node="1>2|0|2|0|0|0|0" />
+        <i3dMapping id="RightShock" node="1>2|0|2|1" />
+        <i3dMapping id="ShockRF" node="1>2|0|2|1|0" />
+        <i3dMapping id="shock_RFBottom" node="1>2|0|2|1|0|0" />
+        <i3dMapping id="shock_RF_Boot" node="1>2|0|2|1|0|0|0" />
+        <i3dMapping id="axleSupportBar" node="1>2|0|3" />
+        <i3dMapping id="axleSupportBar_002" node="1>2|0|3|0" />
+        <i3dMapping id="l" node="1>2|0|4" />
+        <i3dMapping id="r" node="1>2|0|5" />
+
+        <i3dMapping id="transform_002" node="1>2|0|9" />
+        <i3dMapping id="frontAxleParts" node="1>2|1" />
+        <i3dMapping id="Cylinder.003" node="1>2|1|0" />
+        <i3dMapping id="Cylinder.006" node="1>2|1|1" />
+
+        <i3dMapping id="frntAxleDriveShaft" node="1>2|2" />
+        <i3dMapping id="driveShaft_F3" node="1>2|2|0" />
+        <i3dMapping id="Rear_component3" node="2>" />
+        <i3dMapping id="transform_003" node="2>0" />
+        <i3dMapping id="rearAxle" node="2>0|0" />
+        <i3dMapping id="RLWheels" node="2>0|0|0" />
+        <i3dMapping id="drw_LR" node="2>0|0|0|0" />
+        <i3dMapping id="SRW_LR" node="2>0|0|0|1" />
+        <i3dMapping id="rearLeft_Rotor" node="2>0|0|0|2" />
+        <i3dMapping id="RRWheels" node="2>0|0|1" />
+        <i3dMapping id="drw_RR" node="2>0|0|1|0" />
+        <i3dMapping id="SRW_RR" node="2>0|0|1|1" />
+        <i3dMapping id="rearRight_Rotor" node="2>0|0|1|2" />
+        <i3dMapping id="LEAFREFLEFT" node="2>0|0|2" />
+        <i3dMapping id="leaf_LF" node="2>0|0|2|0" />
+        <i3dMapping id="LEAFREFRIGHT" node="2>0|0|3" />
+        <i3dMapping id="leaf_RF" node="2>0|0|3|0" />
+        <i3dMapping id="LEAFREFLEFT1" node="2>0|0|4" />
+        <i3dMapping id="leaf_LR" node="2>0|0|4|0" />
+        <i3dMapping id="LEAFREFRIGHT1" node="2>0|0|5" />
+        <i3dMapping id="leaf_RR" node="2>0|0|5|0" />
+        <i3dMapping id="l_002" node="2>0|0|6" />
+        <i3dMapping id="r_002" node="2>0|0|7" />
+        <i3dMapping id="shockReferences" node="2>0|0|8" />
+        <i3dMapping id="ShockL_Ref" node="2>0|0|8|0" />
+        <i3dMapping id="ShockR_Ref" node="2>0|0|8|1" />
+        <i3dMapping id="rearAxleDriveShaft" node="2>0|0|9" />
+        <i3dMapping id="driveShaft3" node="2>0|0|9|0" />
+        <i3dMapping id="dbl_mapPlane" node="0>0|0|3|15|1" />
+        <i3dMapping id="dbl_position" node="0>0|0|3|15|1|0" />
+        <i3dMapping id="dbl_compass" node="0>0|0|3|15|0" />
+    </i3dMappings>
+</vehicle>

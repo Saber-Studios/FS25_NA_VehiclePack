@@ -1,0 +1,1416 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="carFillable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Gator 6x4</name>
+        <specs>
+            <maxSpeed>50</maxSpeed>
+            <combination xmlFilename="3p.xml" />	
+            <combination xmlFilename="bale.xml" />	
+            <combination xmlFilename="BladeLeveler.xml" />	
+            <combination xmlFilename="BladeSnow.xml" />		
+            <combination xmlFilename="Ferti.xml" />	
+            <combination xmlFilename="Salt.xml" />	
+            <combination xmlFilename="Sprayer.xml" />	
+            <combination xmlFilename="Tipper.xml" />	
+            <combination xmlFilename="Tank.xml" />	
+            <combination xmlFilename="MobileTank.xml" />	
+            <combination xmlFilename="Sweeper.xml" />			
+        </specs>
+        <functions>
+            <function>$l10n_function_utv</function>
+        </functions>
+        <image>store_Gator.png</image>
+        <price>15000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>cars</category>
+        <vertexBufferMemoryUsage>5736448</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>894720</indexBufferMemoryUsage>
+        <textureMemoryUsage>4063232</textureMemoryUsage>
+        <audioMemoryUsage>387945</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>Gator.i3d</filename>
+        <size width="2.5" length="4" height="1.9" lengthOffset="0"/>
+        <sounds filename="sounds/Gator.xml" volumeFactor="1.12"/>		
+        <components count="1">
+            <component centerOfMass="0 0.5 0.55" solverIterationCount="10" mass="1000" />
+        </components>
+		<schemaOverlay name="GATOR_DEFAULT" attacherJointPosition="0 0"/>
+        <mapHotspot type="CAR" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels autoRotateBackSpeed="3">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                        <steering node="steeringBar" nodeMinTransX="0.08" nodeMaxTransX="-0.08" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.31" repr="wheelMiddleLeft"    forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.31" repr="wheelMiddleRight"   forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.31" repr="wheelBackLeft"    forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/320_55R15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.31" repr="wheelBackRight"   forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>					
+                </wheels>
+            </wheelConfiguration>			
+             <wheelConfiguration name="$l10n_configuration_valueDefault" price="1200" brand="JOHNDEERE" saveId="JOHNDEERE_DEFAULT">
+                <wheels autoRotateBackSpeed="3">
+                    <wheel filename="Wheels/250_Field.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.3" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                        <steering node="steeringBar" nodeMinTransX="0.08" nodeMaxTransX="-0.08" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Field.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.3" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Field.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelMiddleLeft"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Field.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelMiddleRight"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Field.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelBackLeft"  fforcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Field.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelBackRight"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>					
+
+				
+                </wheels>
+            </wheelConfiguration>			
+             <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1200" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
+                <wheels autoRotateBackSpeed="3">
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.3" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                        <steering node="steeringBar" nodeMinTransX="0.08" nodeMaxTransX="-0.08" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.3" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelMiddleLeft"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelMiddleRight"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelBackLeft"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Mich.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="0.3" repr="wheelBackRight"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.2" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>					
+
+				
+                </wheels>
+            </wheelConfiguration>
+             <wheelConfiguration name="$l10n_configuration_valueWheelCommunal" price="1200" brand="NOKIAN" saveId="NOKIAN_DEFAULT">
+                <wheels autoRotateBackSpeed="3">
+                    <wheel filename="Wheels/250_Road.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="2.4" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                        <steering node="steeringBar" nodeMinTransX="0.08" nodeMaxTransX="-0.08" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Road.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="2.4" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Road.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.6" repr="wheelMiddleLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Road.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.6" repr="wheelMiddleRight"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+                    <wheel filename="Wheels/250_Road.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.6" repr="wheelBackLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>
+					
+                    <wheel filename="Wheels/250_Road.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.6" repr="wheelBackRight"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="28" damper="40" transRatio="1" frictionScale="4" />
+                    </wheel>					
+
+				
+                </wheels>
+            </wheelConfiguration>			
+        </wheelConfigurations>
+
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="40" rotMax="45" rotCenterWheel1="3" rotCenterWheel2="4" />
+        </ackermannSteeringConfigurations>
+        <hubs>
+            <color0>SHARED_BLACK1</color0>
+            <hub linkNode="wheelFrontLeft"  filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="true"  scale="0.25 0.22 0.22" />
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="false" scale="0.25 0.22 0.22" />
+            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="true"  scale="0.15 0.22 0.22" />
+            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="false" scale="0.15 0.22 0.22" />
+            <hub linkNode="wheelBackLeft"  filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="false"  scale="0.15 0.22 0.22" />
+            <hub linkNode="wheelBackRight" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" offset="-0.04" isLeft="true" scale="0.15 0.22 0.22" />
+        </hubs>				
+         <rimColor>JOHNDEERE_YELLOW1</rimColor>   		
+	</wheels>		
+    <rimColorConfigurations  useDefaultColors="true" defaultColorIndex="8">
+    </rimColorConfigurations>			
+    <speedRotatingParts>
+        <speedRotatingPart shaderNode="chain01"         wheelIndex="1" wheelScale="0.5"    activationSpeed="0" useRotation="false" scrollScale="-8.103 0.0" foldMinLimit="0" foldMaxLimit="1.0" />
+        <speedRotatingPart shaderNode="chain02"         wheelIndex="1" wheelScale="0.5"    activationSpeed="0" useRotation="false" scrollScale="-8.103 0.0" foldMinLimit="0" foldMaxLimit="1.0" />
+    </speedRotatingParts>		
+
+    <lights>
+
+        <states>
+            <state lightTypes="0" />
+            <state lightTypes="0 1" />
+        </states>
+
+        <realLights>
+            <low>
+                <light node="frontLightLow"       lightTypes="0"/>
+                <light node="highBeamLow"       lightTypes="0"/>				
+            </low>
+            <high>
+                <light node="frontLightHigh"        lightTypes="0"/>
+                <light node="highBeamHigh"          lightTypes="1"/>
+                <light node="backLightsHigh1"       lightTypes="0 3"/>
+                <brakeLight node="backLightsHigh1" />
+                <turnLightLeft node="turnLightLeftFront" />
+                <turnLightRight node="turnLightRightFront" />
+            </high>
+        </realLights>
+
+        <defaultLights>
+            <defaultLight shaderNode="frontlightStatic" lightTypes="0 3" />
+            <defaultLight shaderNode="frontlightStatic2" lightTypes="0 3" />	
+            <defaultLight shaderNode="WorkLight01" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight02" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight03" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight04" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight05" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight06" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight07" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight08" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight09" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight10" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight11" lightTypes="1" />
+            <defaultLight shaderNode="WorkLight12" lightTypes="1" />
+        </defaultLights>
+
+        <brakeLights>
+			<brakeLight shaderNode="brakelightStatic"/>
+            <brakeLight shaderNode="brakelightStatic2"/>
+        </brakeLights>
+
+
+        <turnLights>
+            <turnLightLeft shaderNode="turnlightLeftFrontStatic" />
+            <turnLightLeft shaderNode="turnlightLeftBackStatic" />
+            <turnLightRight shaderNode="turnlightRightBackStatic" />
+            <turnLightRight shaderNode="turnlightRightFrontStatic" />
+        </turnLights>
+
+       <beaconLights>
+           <beaconLight node="beaconLight" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight07.xml" />
+           <beaconLight node="beaconLight01" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight07.xml" />		
+       </beaconLights>
+
+		<staticLightCompounds>
+			<staticLightCompound>
+			<node node="brakelightStatic" intensity="30" lightTypes="0" />
+			<node node="brakelightStatic2" intensity="30" lightTypes="0" />
+			</staticLightCompound>
+		</staticLightCompounds>
+
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="lightState" node="0>0|11|5" baseColor="GREY" emitColor="GREEN" idleValue="0" intensity="1" lightTypes="0" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightLeft"  node="0>0|11|2" baseColor="GREY" emitColor="GREEN" idleValue="0" intensity="1" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightRight" node="0>0|11|1" baseColor="GREY" emitColor="GREEN" idleValue="0" intensity="1" groups="MOTOR_ACTIVE"/>	
+           <dashboard displayType="EMITTER" valueType="beaconLight" node="0>0|11|4" baseColor="GREY" emitColor="ORANGE" intensity="1"/>			
+        </dashboards>
+	
+
+    </lights>
+
+	<cover>
+        <coverConfigurations title="$l10n_lights">
+            <coverConfiguration name="$l10n_ui_no" price="0">
+            <objectChange node="turnlightFront" visibilityActive="false" />
+            <objectChange node="RightBackStatic" visibilityActive="false" />
+            <objectChange node="LeftBackStatic" visibilityActive="false" />
+            <objectChange node="LightConf01" visibilityActive="false" />
+            <objectChange node="LightConf02" visibilityActive="false" />			
+            </coverConfiguration>
+			<coverConfiguration name="$l10n_ui_yes" price="150">
+            <objectChange node="turnlightFront" visibilityActive="true" />
+            <objectChange node="RightBackStatic" visibilityActive="true" />
+            <objectChange node="LeftBackStatic" visibilityActive="true" />
+            <objectChange node="LightConf01" visibilityActive="true" />
+            <objectChange node="LightConf02" visibilityActive="true" />
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>	
+	
+	
+     <attacherJoints comboDuration="2">
+        <attacherJointConfigurations title="$l10n_beacons">
+            <attacherJointConfiguration name="$l10n_ui_no" price="0">	
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+                <attacherJoint node="TRUCK_ATTACH_04" jointType="GatorLift" allowsLowering="false">
+                    <schema position="0.65 0.45" rotation="0" invertX="false" />				
+                </attacherJoint>		
+                <attacherJoint node="TRUCK_ATTACH_05" jointType="GatorFront" allowsLowering="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true"/>	
+            <objectChange node="Design10" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design20" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design30" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design40" visibilityActive="false" visibilityInactive="true" />	
+            <objectChange node="Design1000" visibilityActive="false" visibilityInactive="true" />			
+                </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />		
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />				
+        </attacherJoint>
+
+				
+            <objectChange node="beaconLight" visibilityActive="false" />
+            <objectChange node="beaconLight01" visibilityActive="false" />				
+            <objectChange node="beaconSupport01" visibilityActive="false"/>
+            <objectChange node="beaconSupport02" visibilityActive="false"/>	
+            <objectChange node="beaconSupport05" visibilityActive="false"/>
+            <objectChange node="beaconSupport06" visibilityActive="false"/>				
+            </attacherJointConfiguration>
+            <attacherJointConfiguration name="1X" price="50">		
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+                <attacherJoint node="TRUCK_ATTACH_04" jointType="GatorLift" allowsLowering="false">
+                    <schema position="0.65 0.45" rotation="0" invertX="false" />
+                </attacherJoint>		
+                <attacherJoint node="TRUCK_ATTACH_05" jointType="GatorFront" allowsLowering="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true"/>
+            <objectChange node="Design10" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design20" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design30" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design40" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design1000" visibilityActive="false" visibilityInactive="true" />			
+                </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />				
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />			
+        </attacherJoint>				
+            <objectChange node="beaconLight" visibilityActive="true" />
+            <objectChange node="beaconLight01" visibilityActive="false" />			
+            <objectChange node="beaconSupport01" visibilityActive="true"/>
+            <objectChange node="beaconSupport02" visibilityActive="true"/>
+            <objectChange node="beaconSupport05" visibilityActive="false"/>
+            <objectChange node="beaconSupport06" visibilityActive="false"/>			
+            </attacherJointConfiguration>
+            <attacherJointConfiguration name="2X" price="100">		
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.95 0.12" rotation="0" invertX="false" />
+        </attacherJoint>
+                <attacherJoint node="TRUCK_ATTACH_04" jointType="GatorLift" allowsLowering="false">
+                    <schema position="0.65 0.45" rotation="0" invertX="false" />
+                </attacherJoint>		
+                <attacherJoint node="TRUCK_ATTACH_05" jointType="GatorFront" allowsLowering="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true"/>
+            <objectChange node="Design10" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design20" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design30" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design40" visibilityActive="false" visibilityInactive="true" />
+            <objectChange node="Design1000" visibilityActive="false" visibilityInactive="true" />		
+                </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailer" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />				
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointFront" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="0.85 0.3" rotation="0" invertX="true" />				
+        </attacherJoint>				
+            <objectChange node="beaconLight" visibilityActive="true" />
+            <objectChange node="beaconLight01" visibilityActive="true" />			
+            <objectChange node="beaconSupport01" visibilityActive="true"/>
+            <objectChange node="beaconSupport02" visibilityActive="true"/>
+            <objectChange node="beaconSupport05" visibilityActive="true"/>
+            <objectChange node="beaconSupport06" visibilityActive="true"/>			
+            </attacherJointConfiguration>			
+        </attacherJointConfigurations>
+    </attacherJoints>
+    <powerTakeOffs>
+        <output attacherJointIndices="1 2" outputNode="PTO" />	
+    </powerTakeOffs>
+    <enterable isTabbable="true" >
+        <enterReferenceNode node="gator_main_component1"/>
+        <exitPoint node="exitPoint"/>
+
+        <cameras count="2">
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="2.3" transMax="15" translation="0 0 6" rotation="-24 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" useOutdoorSounds="true" positionSmoothingParameter="0"  shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+        <enterAnimation name="enterAnimation"/>
+        <characterNode node="playerSkin" cameraMinDistance="1.5" spineRotation="-90 0 90" >
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget" />
+            <target ikChain="leftFoot"  targetNode="playerLeftFootTarget" />
+            <target ikChain="rightArm"  targetNode="playerRightHandTarget"/>
+            <target ikChain="leftArm"   targetNode="playerLeftHandTarget"/>
+        </characterNode>
+
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1" >
+            <state node="player_rightFootGas"   referenceNode="gasPedal" directionReferenceNode="playerRightFootTargetGasRef"/>
+            <state node="player_rightFootBrake" referenceNode="brakePedal" directionReferenceNode="playerRightFootTargetBrakeRef"/>
+        </characterTargetNodeModifier>
+
+        <passengerSeats>
+            <passengerSeat node="passengerSeat01" exitPoint="passengerSeat01ExitPoint" outdoorCameraIndex="1">
+                <camera node="passengerSeat01Camera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+                <characterNode node="passengerSeat01PlayerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+                    <target ikChain="leftArm"   targetNode="passengerSeat01PlayerLeftHand" poseId="flatFingers"/>
+                    <target ikChain="rightArm"  targetNode="passengerSeat01PlayerRightHand" poseId="narrowFingers"/>
+                    <target ikChain="leftFoot"  targetNode="passengerSeat01PlayerLeftFoot" />
+                    <target ikChain="rightFoot" targetNode="passengerSeat01PlayerRightFoot" />
+                </characterNode>
+            </passengerSeat>
+        </passengerSeats>
+
+    </enterable>
+    <animations>
+        <animation name="enterAnimation">
+            <part node="joystickDirection2"       startTime="0.5"    endTime="1.1" endRot="0 0 0" startRot="-35 0 0" />
+        </animation>
+    </animations>
+    <drivable>
+        <steeringWheel node="steeringWheel" indoorRotation="540" outdoorRotation="40" />
+
+        <dashboards>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="gasPedal"   minRot="0 0 0" maxRot="-20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="brakePedal" minRot="0 0 0" maxRot="-10 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingDirection" node="joystickDirection" minRot="-35 0 0" maxRot="35 0 0" doInterpolation="true" interpolationSpeed="0.01" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="42" >
+                        <exactFillRootNode node="exactFillRootNodeFuel" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>		
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="13.0" fillType="diesel" /> <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>				
+        </consumerConfigurations>
+
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.3" wheelIndex1="3" wheelIndex2="4" /> <!-- middle -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.3" wheelIndex1="5" wheelIndex2="6" /> <!-- back -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.2" differentialIndex1="1" differentialIndex2="2" /> <!-- middle-back -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.3" wheelIndex1="1" wheelIndex2="2" /> <!-- front -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4"  differentialIndex1="3" differentialIndex2="4" /> <!-- middle-front -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+
+        <motorConfigurations>
+            <motorConfiguration name="Gator 6x4 25KPH" hp="68" price="0">
+                <motor torqueScale="0.32" minRpm="850" maxRpm="2200" maxForwardSpeed="25" maxBackwardSpeed="22" brakeForce="1.1" lowBrakeForceScale="0.15" dampingRateScale="0.2">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt" />							
+            </motorConfiguration>	
+            <motorConfiguration name="Gator 6x4 40KPH" hp="68" price="0">
+                <motor torqueScale="0.32" minRpm="850" maxRpm="2200" maxForwardSpeed="40" maxBackwardSpeed="22" brakeForce="1.1" lowBrakeForceScale="0.15" dampingRateScale="0.2">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt" />
+            </motorConfiguration>
+            <motorConfiguration name="Gator 6x4 50KPH" hp="68" price="0">
+                <motor torqueScale="0.32" minRpm="850" maxRpm="2800" maxForwardSpeed="50" maxBackwardSpeed="22" brakeForce="1.1" lowBrakeForceScale="0.15" dampingRateScale="0.2">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="12.3" maxForwardGearRatio="300" minBackwardGearRatio="32" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.02" maxRpmScale="0.25" />
+        </exhaustEffects>
+
+        <motorStartDuration>3200</motorStartDuration>
+         <animationNodes>
+         <animationNode class="ScrollingAnimation" node="Belt01"  scrollSpeed="-4.85" turnOnFadeTime="3" turnOffFadeTime="3"/>
+        </animationNodes>
+    </motorized>
+
+    <animations>
+    </animations>
+
+    <cylindered>
+        <movingTools>	
+        </movingTools>
+
+        <movingParts>		
+            <movingPart node="axisFrontArmBottomLeft" referencePoint="axisFrontArmBottomLeftRef" referenceFrame="axisFrontArmBottomLeftRef" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="80">
+                <dependentPart node="axisFrontArmTopLeft" />
+                <dependentPart node="axisFrontSteeringLeftHydraulic" />
+                <dependentPart node="axisFrontDamperLeft" />
+                <dependentPart node="axisFrontDamperPartLeft" />
+                <dependentPart node="axisFrontLeftSpring" />
+            </movingPart>
+            <movingPart node="axisFrontArmTopLeft" referencePoint="axisFrontArmTopLeftRef" referenceFrame="axisFrontArmTopLeftRef"  limitedAxis="1"/>
+            <movingPart node="axisFrontSteeringLeftHydraulic" referencePoint="axisFrontSteeringLeftHydraulicRef" referenceFrame="axisFrontSteeringLeftHydraulicRef" scaleZ="true" />
+            <movingPart node="axisFrontDamperLeft" referencePoint="axisFrontDamperLeftRef" referenceFrame="axisFrontDamperLeftRef" />
+            <movingPart node="axisFrontDamperPartLeft" referencePoint="axisFrontDamperPartLeftRef" referenceFrame="axisFrontDamperPartLeftRef" />
+            <movingPart node="axisFrontLeftSpring" referencePoint="axisFrontLeftSpringRef" referenceFrame="axisFrontLeftSpringRef" scaleZ="true" />
+
+            <movingPart node="axisFrontArmBottomRight" referencePoint="axisFrontArmBottomRightRef" referenceFrame="axisFrontArmBottomRightRef" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="80">
+                <dependentPart node="axisFrontArmTopRight" />
+                <dependentPart node="axisFrontSteeringRightHydraulic" />
+                <dependentPart node="axisFrontDamperRight" />
+                <dependentPart node="axisFrontDamperPartRight" />
+                <dependentPart node="axisFrontRightSpring" />
+            </movingPart>
+			
+			
+			
+            <movingPart node="axisFrontArmTopRight" referencePoint="axisFrontArmTopRightRef" referenceFrame="axisFrontArmTopRightRef"  limitedAxis="1"/>
+            <movingPart node="axisFrontSteeringRightHydraulic" referencePoint="axisFrontSteeringRightHydraulicRef" referenceFrame="axisFrontSteeringRightHydraulicRef" scaleZ="true" />
+            <movingPart node="axisFrontDamperRight" referencePoint="axisFrontDamperRightRef" referenceFrame="axisFrontDamperRightRef" />
+            <movingPart node="axisFrontDamperPartRight" referencePoint="axisFrontDamperPartRightRef" referenceFrame="axisFrontDamperPartRightRef" />
+            <movingPart node="axisFrontRightSpring" referencePoint="axisFrontRightSpringRef" referenceFrame="axisFrontRightSpringRef" scaleZ="true" />
+            <movingPart node="gasPedalRef" referencePoint="gasPedal2Ref" referenceFrame="gasPedal2Ref" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80" />			
+        </movingParts>
+
+    </cylindered>
+	
+
+
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>	
+        </groups>
+
+        <default>
+            <dashboard displayType="EMITTER" node="0>0|11|3"   baseColor="GREY" emitColor="RED" groups="MOTOR_ACTIVE" intensity="1"/>	
+            <dashboard displayType="EMITTER" node="0>0|11|6"   baseColor="GREY" emitColor="GREEN" groups="MOTOR_ACTIVE" intensity="0.1"/>	
+            <dashboard displayType="EMITTER" node="0>0|11|7"   baseColor="GREY" emitColor="RED" groups="MOTOR_ACTIVE" intensity="0"/>				
+            <dashboard displayType="EMITTER" node="0>0|11|8"   baseColor="GREY" emitColor="RED" groups="MOTOR_ACTIVE" intensity="0.1"/>				
+            <dashboard displayType="EMITTER" node="0>0|11|9"   baseColor="GREY" emitColor="GREEN" groups="MOTOR_ACTIVE" intensity="0.1"/>	
+            <dashboard displayType="EMITTER" node="0>0|11|10"   baseColor="GREY" emitColor="RED" groups="MOTOR_ACTIVE" intensity="0.1"/>		
+            <dashboard displayType="EMITTER" node="0>0|11|11"   baseColor="GREY" emitColor="GREEN" groups="MOTOR_ACTIVE" intensity="0.02"/>		
+        </default>
+
+        <dashboardLive>
+            <!-- MiniMap -->
+            <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="map" node="dbl_mapPlane" groups="MOTOR_ACTIVE PAGE2"/>
+            <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="posMarker" node="dbl_postion" groups="MOTOR_ACTIVE PAGE2"/>
+            <dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="MOTOR_ACTIVE PAGE2" />
+        </dashboardLive>
+
+    </dashboard>
+
+    <ai>
+        <agent width="1.75" length="3.35" height="2.15" lengthOffset="1.05" frontOffset="2.15" />
+        <collisionTrigger node="aiCollisionTrigger" width="2.2" height="2.2"/>
+    </ai>
+
+
+    <foliageBending>
+        <bendingNode minX="-0.85" maxX="0.85" minZ="-1.45" maxZ="1.5" yOffset="0.22" />
+    </foliageBending>
+	
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_valueDefault">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="false" />	
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_frontWeightX" params="600">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="true" />	
+            <objectChange node="Wheight1" visibilityActive="true" />	
+            <objectChange node="Wheight2" visibilityActive="true" />
+            <objectChange node="Wheight3" visibilityActive="false" />
+            <objectChange node="Wheight4" visibilityActive="false" />			
+            <objectChange node="Design4" visibilityActive="false" />
+            <objectChange node="gator_main_component1" massActive="1600" />
+            <objectChange node="gator_main_component1" centerOfMassActive="0 0.5 0.6" />	
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_frontWeightX" params="900">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="true" />	
+            <objectChange node="Wheight1" visibilityActive="true" />	
+            <objectChange node="Wheight2" visibilityActive="true" />
+            <objectChange node="Wheight3" visibilityActive="true" />
+            <objectChange node="Wheight4" visibilityActive="false" />			
+            <objectChange node="Design4" visibilityActive="false" />
+            <objectChange node="gator_main_component1" massActive="1900" />
+            <objectChange node="gator_main_component1" centerOfMassActive="0 0.5 0.65" />	
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_frontWeightX" params="1200">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="true" />	
+            <objectChange node="Wheight1" visibilityActive="true" />	
+            <objectChange node="Wheight2" visibilityActive="true" />
+            <objectChange node="Wheight3" visibilityActive="true" />
+            <objectChange node="Wheight4" visibilityActive="true" />			
+            <objectChange node="Design4" visibilityActive="false" />	
+            <objectChange node="gator_main_component1" massActive="2300" />
+            <objectChange node="gator_main_component1" centerOfMassActive="0 0.5 0.7" />	
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="Protection 1" price="200" >
+            <objectChange node="Design1" visibilityActive="true" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="false" />
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="Protection 2" price="400">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="false" />	
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="Protection 3" price="500">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="true" />	
+            <objectChange node="Design41" visibilityActive="false" />
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />			
+        </designConfiguration>		
+        <designConfiguration name="Protection 4" price="600">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="true" />	
+            <objectChange node="Design41" visibilityActive="true" />
+            <objectChange node="Design100" visibilityActive="false" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 -10.473 1.061" />				
+        </designConfiguration>
+        <designConfiguration name="Protection 5" price="250">
+            <objectChange node="Design1" visibilityActive="true" />
+            <objectChange node="Design2" visibilityActive="false" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="false" />
+            <objectChange node="Design100" visibilityActive="true" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 0.473 1.061" />				
+        </designConfiguration>	
+        <designConfiguration name="Protection 6" price="450">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="false" />
+            <objectChange node="Design100" visibilityActive="true" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 0.473 1.061" />			
+        </designConfiguration>
+        <designConfiguration name="Protection 7" price="550">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="true" />	
+            <objectChange node="Design41" visibilityActive="false" />
+            <objectChange node="Design100" visibilityActive="true" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 0.473 1.061" />				
+        </designConfiguration>		
+        <designConfiguration name="Protection 8" price="650">
+            <objectChange node="Design1" visibilityActive="false" />
+            <objectChange node="Design2" visibilityActive="true" />
+            <objectChange node="Design3" visibilityActive="false" />	
+            <objectChange node="Design4" visibilityActive="true" />	
+            <objectChange node="Design41" visibilityActive="true" />
+            <objectChange node="Design100" visibilityActive="true" />	
+            <objectChange node="trailerAttacherJointFront" translationActive="0 0.473 1.061" />				
+        </designConfiguration>		
+        </designConfigurations>	
+				
+		
+		
+		
+	<vehicleTypeConfigurations title="$l10n_Mudguards" >	
+	    <vehicleTypeConfiguration name="Model 1" price="0" >
+            <objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell02" visibilityActive="false" />			
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="true" />	
+            <objectChange node="beaconSupport04" visibilityActive="false" />
+            <objectChange node="beaconSupport07" visibilityActive="true" />	
+            <objectChange node="beaconSupport08" visibilityActive="false" />
+            <objectChange node="beaconLight01" translationActive="-0.514 1.833 -0.98" />		
+            <objectChange node="beaconLight" translationActive="0.514 1.833 -0.98" />	
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+	    <vehicleTypeConfiguration name="Model 2" price="100" >
+            <objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell01" visibilityActive="true" />	
+            <objectChange node="Modell02" visibilityActive="false" />			
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="true" />	
+            <objectChange node="beaconSupport04" visibilityActive="false" />
+            <objectChange node="beaconSupport07" visibilityActive="true" />	
+            <objectChange node="beaconSupport08" visibilityActive="false" />
+            <objectChange node="beaconLight01" translationActive="-0.514 1.833 -0.98" />				
+            <objectChange node="beaconLight" translationActive="0.514 1.833 -0.98" />	
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+
+		
+	    <vehicleTypeConfiguration name="Model 3" price="200" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell02" visibilityActive="false" />			
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />			
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+	    <vehicleTypeConfiguration name="Model 4" price="250" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="false" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="false" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />		
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 5" price="300" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="false" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />		
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 6" price="250" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell02" visibilityActive="false" />			
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="BarreTrans01" translationActive="0 2.013 0.704" />				
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 2.086 -0.25" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 2.058 -0.256" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />			
+            <objectChange node="Barre02" visibilityActive="false" />		
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>			
+	    <vehicleTypeConfiguration name="Model 7" price="300" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="false" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="false" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />			
+            <objectChange node="BarreTrans01" translationActive="0 2.013 0.704" />				
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 2.086 -0.25" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 2.058 -0.256" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />					
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 8" price="350" >
+            <objectChange node="Forestry1" visibilityActive="true" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="false" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="BarreTrans01" translationActive="0 2.013 0.704" />				
+            <objectChange node="Barre01" visibilityActive="true" />	
+            <objectChange node="highBeamLow" translationActive="0 2.086 -0.25" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 2.058 -0.256" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />					
+            <objectChange node="Barre02" visibilityActive="false" />		
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+		
+		
+		
+		
+		
+	    <vehicleTypeConfiguration name="Model 9" price="300" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />		
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+	
+	    <vehicleTypeConfiguration name="Model 10" price="350" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="false" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 11" price="400" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>		
+
+	    <vehicleTypeConfiguration name="Model 12" price="350" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="BarreTrans01" translationActive="0 1.804 1.031" />						
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />				
+            <objectChange node="Barre02" visibilityActive="false" />		
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+		
+	    <vehicleTypeConfiguration name="Model 13" price="400" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="false" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="BarreTrans01" translationActive="0 1.804 1.031" />				
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />				
+            <objectChange node="Barre02" visibilityActive="false" />		
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 14" price="450" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="BarreTrans01" translationActive="0 1.804 1.031" />			
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />				
+            <objectChange node="Barre02" visibilityActive="false" />				
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>		
+	    <vehicleTypeConfiguration name="Model 15" price="350" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />
+            <objectChange node="Modell03" visibilityActive="false" />				
+            <objectChange node="Modell04" visibilityActive="false" />			
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="true" />	
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>	
+	    <vehicleTypeConfiguration name="Model 16" price="400" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="false" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />	
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="true" />	
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+	    <vehicleTypeConfiguration name="Model 17" price="450" >
+            <objectChange node="Forestry2" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Design5" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />			
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />			
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="true" />	
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />			
+            <objectChange node="Doors" visibilityActive="false" />			
+        </vehicleTypeConfiguration>
+
+	    <vehicleTypeConfiguration name="Model 18" price="800" >
+            <objectChange node="Design5" visibilityActive="true" />
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="false" />
+            <objectChange node="Doors" visibilityActive="true" />			
+        </vehicleTypeConfiguration>		
+		
+	    <vehicleTypeConfiguration name="Model 19" price="850" >
+            <objectChange node="Design5" visibilityActive="true" />	
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />			
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />			
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />		
+            <objectChange node="Barre01" visibilityActive="false" />
+            <objectChange node="Barre02" visibilityActive="true" />	
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />				
+            <objectChange node="Doors" visibilityActive="true" />			
+        </vehicleTypeConfiguration>		
+	    <vehicleTypeConfiguration name="Model 20" price="850" >
+            <objectChange node="Design5" visibilityActive="true" />	
+			<objectChange node="Forestry1" visibilityActive="false" />
+			<objectChange node="Forestry2" visibilityActive="false" />
+            <objectChange node="Modell02" visibilityActive="true" />				
+            <objectChange node="Modell01" visibilityActive="false" />	
+            <objectChange node="Modell03" visibilityActive="true" />				
+            <objectChange node="Modell04" visibilityActive="true" />		
+            <objectChange node="beaconSupport03" visibilityActive="false" />	
+            <objectChange node="beaconSupport04" visibilityActive="true" />	
+            <objectChange node="beaconSupport07" visibilityActive="false" />	
+            <objectChange node="beaconSupport08" visibilityActive="true" />		
+            <objectChange node="beaconLight01" translationActive="-0.715 2.086 -0.756" />	
+            <objectChange node="beaconLight" translationActive="0.715 2.086 -0.756" />
+            <objectChange node="turnlightFront" translationActive="0 -0.006 0.256" />
+            <objectChange node="turnLightLeftFront" translationActive="0.638 1.07 0.672" />	
+            <objectChange node="turnLightLeftBack" translationActive="-0.106 -0.548 2.777" />			
+            <objectChange node="turnLightRightFront" translationActive="-0.638 1.07 0.672" />	
+            <objectChange node="turnLightRightBack" translationActive="0.106 -0.548 2.777" />	
+            <objectChange node="BarreTrans01" translationActive="0 1.804 1.031" />			
+            <objectChange node="Barre01" visibilityActive="true" />
+            <objectChange node="highBeamLow" translationActive="0 1.84 0.101" />	
+            <objectChange node="highBeamHigh" translationActive="-0.512 1.812 0.095" />	
+            <objectChange node="highBeamHigh02" translationActive="-1.033 -0.015 0.085" />				
+            <objectChange node="Barre02" visibilityActive="false" />	
+            <objectChange node="Doors" visibilityActive="true" />			
+        </vehicleTypeConfiguration>			
+        </vehicleTypeConfigurations>	
+    <licensePlates>
+        <licensePlate node="licensePlateBack"  position="BACK"  preferedType="SQUARISH" placementArea="0.08 0.13 0.1 0.13" />
+    </licensePlates>
+    <connectionHoses>
+        <target attacherJointIndices="1 2" type="airDoubleRed" node="airDoubleOrange" socket="air_red"/>
+        <target attacherJointIndices="1 2" type="airDoubleYellow" node="airDoubleYellow" socket="air_yellow"/>
+        <target attacherJointIndices="1 2" type="electric" node="electricBack" socket="electric"/>		
+        <target attacherJointIndices="1 2" type="hydraulicIn" node="hydraulic03_in" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2" type="hydraulicOut" node="hydraulic03_out" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2" type="hydraulicIn" node="hydraulic02_in" socket="hydraulic01"/>
+        <target attacherJointIndices="1 2" type="hydraulicOut" node="hydraulic02_out" socket="hydraulic01"/>		
+    </connectionHoses>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>			
+
+	<baseColorConfigurations useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="base_color_01" />
+    </baseColorConfigurations>
+	
+	<designColorConfigurations useDefaultColors="true" defaultColorIndex="8">
+		<material materialSlotName="base_color_02" />
+	</designColorConfigurations>
+	
+	<designColor2Configurations useDefaultColors="true" defaultColorIndex="26">
+		<material materialSlotName="decal_color" />
+	</designColor2Configurations>
+	
+	<designColor3Configurations useDefaultColors="true" defaultColorIndex="7">
+		<material materialSlotName="protection_color" />
+	</designColor3Configurations>
+	
+		
+    <i3dMappings>
+        <i3dMapping id="gator_main_component1" node="0>" />
+        <i3dMapping id="gator_vis" node="0>0" />
+        <i3dMapping id="gator_vis3" node="0>0|14" />
+        <i3dMapping id="gator_vis4" node="0>0|15|7|0|0" />		
+        <i3dMapping id="wheelMiddleRight" node="0>0|1|13" />		
+        <i3dMapping id="wheelMiddleLeft" node="0>0|1|12" />	
+        <i3dMapping id="wheelBackRight" node="0>0|1|14" />		
+        <i3dMapping id="wheelBackLeft" node="0>0|1|15" />		
+        <i3dMapping id="trailerAttacherJointBack" node="0>0|0|0" />
+        <i3dMapping id="trailerAttacherJointFront" node="0>0|0|4" />		
+        <i3dMapping id="steeringBar" node="0>0|1|0" />
+        <i3dMapping id="axisFrontSteeringLeftHydraulicRef" node="0>0|1|0|0" />
+        <i3dMapping id="axisFrontSteeringRightHydraulicRef" node="0>0|1|0|1" />
+        <i3dMapping id="axisFrontLeft" node="0>0|1|1" />
+        <i3dMapping id="axisFrontSteeringLeftHydraulic" node="0>0|1|1|0" />
+        <i3dMapping id="axisFrontArmTopLeftRef" node="0>0|1|1|1" />
+        <i3dMapping id="axisFrontArmBottomLeftRef" node="0>0|1|1|2" />
+        <i3dMapping id="Design1" node="0>0|15|0"/>	
+        <i3dMapping id="Design2" node="0>0|15|1"/>		
+        <i3dMapping id="Design3" node="0>0|15|2"/>		
+        <i3dMapping id="Design4" node="0>0|15|3"/>	
+        <i3dMapping id="Design10" node="0>0|15|0|0"/>	
+        <i3dMapping id="Design100" node="0>0|15|10|0"/>
+        <i3dMapping id="Design1000" node="0>0|15|10"/>		
+        <i3dMapping id="Design20" node="0>0|15|1|0"/>		
+        <i3dMapping id="Design30" node="0>0|15|2|0"/>		
+        <i3dMapping id="Design40" node="0>0|15|3|0"/>	
+        <i3dMapping id="Design41" node="0>0|15|3|0|0"/>	
+        <i3dMapping id="Design60" node="0>0|18"/>			
+        <i3dMapping id="Design5" node="0>0|15|4"/>		
+        <i3dMapping id="Wheight1" node="0>0|15|2|0|0"/>		
+        <i3dMapping id="Wheight2" node="0>0|15|2|0|1"/>
+        <i3dMapping id="Wheight3" node="0>0|15|2|0|2"/>	
+        <i3dMapping id="Wheight4" node="0>0|15|2|0|3"/>		
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|1|4" />
+        <i3dMapping id="axisFrontArmTopLeft" node="0>0|1|2|0" />
+        <i3dMapping id="axisFrontDamperLeft" node="0>0|1|2|0|0" />
+        <i3dMapping id="axisFrontLeftSpring" node="0>0|1|2|0|0|0" />
+        <i3dMapping id="axisFrontDamperPartLeftRef" node="0>0|1|2|0|1" />
+        <i3dMapping id="axisFrontArmBottomLeft" node="0>0|1|4|0" />
+        <i3dMapping id="axisFrontDamperPartLeft" node="0>0|1|5" />
+        <i3dMapping id="axisFrontDamperLeftRef" node="0>0|1|5|0" />
+        <i3dMapping id="axisFrontLeftSpringRef" node="0>0|1|5|1" />
+        <i3dMapping id="axisFrontRight" node="0>0|1|6" />
+        <i3dMapping id="axisFrontArmBottomRightRef" node="0>0|1|6|0" />
+        <i3dMapping id="axisFrontArmTopRightRef" node="0>0|1|6|2" />
+        <i3dMapping id="axisFrontSteeringRightHydraulic" node="0>0|1|6|3" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|6|4" />
+        <i3dMapping id="axisFrontArmTopRight" node="0>0|1|7|0" />
+        <i3dMapping id="axisFrontDamperRight" node="0>0|1|7|0|0" />
+        <i3dMapping id="axisFrontRightSpring" node="0>0|1|7|0|0|0" />
+        <i3dMapping id="axisFrontDamperPartRightRef" node="0>0|1|7|0|1" />
+        <i3dMapping id="axisFrontArmBottomRight" node="0>0|1|9|0" />
+        <i3dMapping id="axisFrontDamperPartRight" node="0>0|1|10" />
+        <i3dMapping id="axisFrontRightSpringRef" node="0>0|1|10|0" />
+        <i3dMapping id="axisFrontDamperRightRef" node="0>0|1|10|1" />
+        <i3dMapping id="turnlightRightFrontStatic" node="0>0|2|0|4|3" />
+        <i3dMapping id="turnlightLeftFrontStatic" node="0>0|2|0|4|1" />
+        <i3dMapping id="turnlightFront" node="0>0|2|0|4" />		
+        <i3dMapping id="frontlightStatic" node="0>0|2|0|0|0" />
+        <i3dMapping id="frontlightStatic2" node="0>0|2|0|1|0" />		
+        <i3dMapping id="frontLightHigh" node="0>0|2|1|0" />
+        <i3dMapping id="frontLightLow" node="0>0|2|1|1" />
+        <i3dMapping id="highBeamLow" node="0>0|2|1|2" />
+        <i3dMapping id="highBeamHigh" node="0>0|2|1|3" />
+        <i3dMapping id="highBeamHigh02" node="0>0|2|1|3|0" />		
+        <i3dMapping id="backLightsHigh1" node="0>0|2|3|0" />
+        <i3dMapping id="turnLightLeftFront" node="0>0|2|4|0" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|4|0|0" />
+        <i3dMapping id="turnLightRightFront" node="0>0|2|4|1" />
+        <i3dMapping id="turnLightRightBack" node="0>0|2|4|1|0" />		
+        <i3dMapping id="beaconLight" node="0>0|2|5" />
+        <i3dMapping id="beaconLight01" node="0>0|2|7" />		
+        <i3dMapping id="outdoorCameraTarget" node="0>0|3|0" />
+        <i3dMapping id="outdoorCamera1" node="0>0|3|0|0" />
+        <i3dMapping id="indoorCamera1" node="0>0|3|1" />
+        <!-- dashboard live -->
+        <i3dMapping id="dbl_mapPlane" node="0>0|11|12|0|0|2"/>
+        <i3dMapping id="dbl_position" node="0>0|11|12|0|0|2|0"/>
+        <i3dMapping id="dbl_compass" node="0>0|11|12|0|0|3" />
+        <!-- dashboard live -->
+        <i3dMapping id="cameraRaycastNode1" node="0>0|3|2" />
+        <i3dMapping id="cameraRaycastNode2" node="0>0|3|3" />
+        <i3dMapping id="cameraRaycastNode3" node="0>0|3|4" />
+        <i3dMapping id="shadowFocusBox" node="0>0|3|5" />
+        <i3dMapping id="steeringWheel" node="0>0|4|0" />
+        <i3dMapping id="playerLeftHandTarget" node="0>0|4|0|0" />
+        <i3dMapping id="playerRightHandTarget" node="0>0|4|0|1" />
+        <i3dMapping id="playerSkin" node="0>0|5|0" />
+        <i3dMapping id="playerRightFootTarget" node="0>0|5|1" />
+        <i3dMapping id="playerLeftFootTarget" node="0>0|5|2" />
+        <i3dMapping id="player_rightFootGas" node="0>0|5|3" />
+        <i3dMapping id="player_rightFootBrake" node="0>0|5|4" />
+        <i3dMapping id="exitPoint" node="0>0|6" />
+        <i3dMapping id="exhaustParticle" node="0>0|7" />		
+        <i3dMapping id="brakelightStatic" node="0>0|2|0|2|1" />
+        <i3dMapping id="brakelightStatic2" node="0>0|2|0|3|1" />		
+        <i3dMapping id="turnlightRightBackStatic" node="0>0|2|0|3|0" />
+        <i3dMapping id="turnlightLeftBackStatic" node="0>0|2|0|2|0" />
+        <i3dMapping id="LeftBackStatic" node="0>0|2|0|2" />
+        <i3dMapping id="RightBackStatic" node="0>0|2|0|3" />		
+        <i3dMapping id="mainToolHydraulicRef" node="0>0|9" />
+        <i3dMapping id="gasPedal" node="0>0|10|0" />
+        <i3dMapping id="gasPedalRef" node="0>0|10|4|0" />
+        <i3dMapping id="gasPedal2Ref" node="0>0|10|0|2" />		
+        <i3dMapping id="playerRightFootTargetGasRef" node="0>0|10|0|0" />
+        <i3dMapping id="brakePedal" node="0>0|10|1" />
+        <i3dMapping id="playerRightFootTargetBrakeRef" node="0>0|10|1|0" />
+        <i3dMapping id="joystickDirection" node="0>0|10|2" />
+        <i3dMapping id="joystickDirection2" node="0>0|10|3|0" />		
+        <i3dMapping id="player_joystickDirectionRef" node="0>0|10|2|0" />
+        <i3dMapping id="aiCollisionTrigger" node="0>0|12|0" />
+        <i3dMapping id="chain01" node="0>0|8|1" />		
+        <i3dMapping id="chain02" node="0>0|8|2" />	
+        <i3dMapping id="Belt01" node="0>0|8|3" />	
+        <i3dMapping id="TRUCK_ATTACH_04" node="0>0|0|1" />	
+        <i3dMapping id="TRUCK_ATTACH_05" node="0>0|0|2|0" />		
+        <i3dMapping id="beaconSupport01" node="0>0|16|0|0" />
+        <i3dMapping id="beaconSupport02" node="0>0|16|1|0" />
+        <i3dMapping id="beaconSupport03" node="0>0|16|0" />
+        <i3dMapping id="beaconSupport04" node="0>0|16|1" />
+        <i3dMapping id="beaconSupport05" node="0>0|16|2|0" />
+        <i3dMapping id="beaconSupport06" node="0>0|16|3|0" />
+        <i3dMapping id="beaconSupport07" node="0>0|16|2" />
+        <i3dMapping id="beaconSupport08" node="0>0|16|3" />		
+        <i3dMapping id="Modell01" node="0>0|15|5"/>
+        <i3dMapping id="Modell02" node="0>0|15|7"/>		
+        <i3dMapping id="Modell03" node="0>0|15|6"/>		
+        <i3dMapping id="Modell04" node="0>0|15|6|1|0"/>	
+        <i3dMapping id="LightConf01" node="0>0|2|3" />			
+        <i3dMapping id="LightConf02" node="0>0|2|4" />		
+        <i3dMapping id="airDoubleOrange" node="0>2|5" />
+        <i3dMapping id="airDoubleYellow" node="0>2|6" />
+        <i3dMapping id="electricBack" node="0>2|0" />
+        <i3dMapping id="hydraulic03_in" node="0>2|1" />
+        <i3dMapping id="hydraulic03_out" node="0>2|2" />
+        <i3dMapping id="hydraulic02_in" node="0>2|3" />		
+        <i3dMapping id="hydraulic02_out" node="0>2|4" />	
+        <i3dMapping id="PTO" node="0>0|0|3" />		
+        <i3dMapping id="Barre01" node="0>0|15|8" />	
+        <i3dMapping id="BarreTrans01" node="0>0|15|8|0" />			
+        <i3dMapping id="Barre02" node="0>0|15|9" />		
+        <i3dMapping id="WorkLight01" node="0>0|15|8|0|0|0"/>					
+        <i3dMapping id="WorkLight02" node="0>0|15|8|0|0|1"/>					
+        <i3dMapping id="WorkLight03" node="0>0|15|8|0|0|2"/>					
+        <i3dMapping id="WorkLight04" node="0>0|15|8|0|0|3"/>					
+        <i3dMapping id="WorkLight05" node="0>0|15|8|0|0|4"/>					
+        <i3dMapping id="WorkLight06" node="0>0|15|8|0|0|5"/>					
+        <i3dMapping id="WorkLight07" node="0>0|15|8|0|0|6"/>					
+        <i3dMapping id="WorkLight08" node="0>0|15|8|0|0|7"/>					
+        <i3dMapping id="WorkLight09" node="0>0|15|9|0|0|1"/>					
+        <i3dMapping id="WorkLight10" node="0>0|15|9|1|0|1"/>					
+        <i3dMapping id="WorkLight11" node="0>0|15|9|2|0|1"/>					
+        <i3dMapping id="WorkLight12" node="0>0|15|9|3|0|1"/>		
+        <i3dMapping id="Doors" node="0>0|15|7|0"/>	
+        <i3dMapping id="licensePlateBack" node="0>0|21"/>	
+        <i3dMapping id="passengerSeat01" node="0>0|22|0" />
+        <i3dMapping id="passengerSeat01Camera" node="0>0|22|0|0" />
+        <i3dMapping id="passengerSeat01PlayerSkin" node="0>0|22|0|1" />
+        <i3dMapping id="passengerSeat01PlayerLeftFoot" node="0>0|22|0|2" />
+        <i3dMapping id="passengerSeat01PlayerRightFoot" node="0>0|22|0|3" />
+        <i3dMapping id="passengerSeat01PlayerLeftHand" node="0>0|22|0|4" />
+        <i3dMapping id="passengerSeat01PlayerRightHand" node="0>0|22|0|5" />
+        <i3dMapping id="passengerSeat01ExitPoint" node="0>0|22|0|6" />
+        <i3dMapping id="exactFillRootNodeFuel" node="0>0|23|0" />
+		<i3dMapping id="Forestry1" node="0>0|15|11" />
+		<i3dMapping id="Forestry2" node="0>0|15|12" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="RMCBED" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+	
+    <storeData>
+        <name>
+			<en>Superduty Bed</en>
+			<de>Superduty Bett</de>
+        </name>
+        <functions>
+            <function>$l10n_function_forestryTransport</function>
+            <function>$l10n_function_semiTrailer</function>
+        </functions>
+        <image>beds/store_superdutyBed.dds</image>
+        <price>5000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>misc</category>
+        <shopTranslationOffset>0 0.4 1</shopTranslationOffset>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>2014720</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>633088</indexBufferMemoryUsage>
+        <textureMemoryUsage>2818048</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_trailer</typeDesc>
+        <filename>beds/superduty_Bed.i3d</filename>
+        <size width="2.5" length="2.8" height="3" lengthOffset="1"/>
+        <components count="1">
+            <component centerOfMass="0 1 0" solverIterationCount="10" mass="650"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.7"/>
+    </base>
+	
+     <lights>
+        <states>
+            <state lightTypes="0"/>				
+        </states>
+		
+		<sharedLight linkNode="0>5|3|0|1"			filename="$data/shared/assets/lights/lizard/rearLight26Red_left.xml" />
+		<sharedLight linkNode="0>5|3|0|2"			filename="$data/shared/assets/lights/lizard/rearLight26Red_right.xml" />
+		<sharedLight linkNode="0>5|3|0|3"			filename="lights/rearLight26_Superduty.xml" />
+		<sharedLight linkNode="0>5|3|0|4"			filename="lights/rearLight26_Superduty.xml" />
+		<sharedLight linkNode="0>5|3|0|5"			filename="$data/shared/assets/lights/lizard/rearLight26White_reverse.xml" />
+		<sharedLight linkNode="0>5|3|0|6"			filename="$data/shared/assets/lights/lizard/rearLight26White_reverse.xml" />	
+		<realLights>
+            <low>
+                <light node="0>1|0|0" lightTypes="0"/>
+                <light node="0>1|0|1" lightTypes="0"/>				
+                <light node="0>5|1|0|0|0" lightTypes="0"/>
+                <light node="0>5|1|0|0|1" lightTypes="0"/>
+                <light node="0>5|3|0|0|0" lightTypes="0"/>	
+					
+            </low>
+            <high>
+                <light node="0>1|0|0" lightTypes="0"/>
+                <light node="0>1|0|1" lightTypes="0"/>				
+                <light node="0>5|1|0|0|0" lightTypes="0"/>
+                <light node="0>5|1|0|0|1" lightTypes="0"/>
+                <light node="0>5|3|0|0|0" lightTypes="0"/>		
+					
+                <brakeLight node="0>1|0|2"/>				
+                <brakeLight node="0>5|3|0|0|1"/>
+				
+                <reverseLight node="0>1|0|3"/>	
+                <reverseLight node="0>5|3|0|0|2"/>	
+				
+                <turnLightLeft node="0>1|0|4"/>
+                <turnLightLeft node="0>5|3|0|0|3"/>			
+                <turnLightRight node="0>1|0|5"/>				
+                <turnLightRight node="0>5|3|0|0|4"/>			
+            </high>
+        </realLights>
+
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="0>1|1|0" intensity="8"/>
+                <node node="0>1|1|1" intensity="3"/>
+                <node node="0>5|1|0|1|0" intensity="8"/>
+                <node node="0>5|1|0|1|1" intensity="3"/>				
+            </staticLightCompound>
+        </staticLightCompounds>		
+
+        <beaconLights>
+            <beaconLight realLight="0>5|3|0|8|1|0|0">
+                <staticLight node="0>5|3|0|8|1|0" intensity="200" multiBlink="true" multiBlinkParameters="8 6 50 10">
+                </staticLight>
+            </beaconLight>
+            <beaconLight realLight="0>5|3|0|8|1|1|0">
+                <staticLight node="0>5|3|0|8|1|1" intensity="200" multiBlink="true" multiBlinkParameters="8 6 50 35">
+                </staticLight>
+            </beaconLight>	
+            <beaconLight realLight="0>1|1|2|0">
+                <staticLight node="0>1|1|2" intensity="50" multiBlink="true" multiBlinkParameters="8 6 50 10">
+                </staticLight>
+            </beaconLight>
+            <beaconLight realLight="0>1|1|3|0">
+                <staticLight node="0>1|1|3" intensity="50" multiBlink="true" multiBlinkParameters="8 6 50 35">
+                </staticLight>
+            </beaconLight>				
+        </beaconLights>			
+    </lights>
+	
+	<licensePlates>
+        <licensePlate node="0>6"  position="BACK"  preferedType="SQUARISH" placementArea="0.10 0.16 0.11 0.16"/>
+    </licensePlates>
+	
+   <configurationSets title="$l10n_configuration_Attachers">	
+        <configurationSet name="None" isDefault="true">	
+            <configuration name="design" index="1"/>		
+            <configuration name="attacherJoint" index="1"/>
+            <configuration name="tensionBelts" index="1"/>			
+        </configurationSet>			
+        <configurationSet name="$l10n_configuration_GooseNeck">	
+            <configuration name="design" index="2"/>		
+            <configuration name="attacherJoint" index="2"/>
+            <configuration name="tensionBelts" index="2"/>				
+        </configurationSet>	
+        <configurationSet name="$l10n_configuration_5thWheel">	
+            <configuration name="design" index="3"/>		
+            <configuration name="attacherJoint" index="3"/>
+            <configuration name="tensionBelts" index="2"/>				
+        </configurationSet>			
+    </configurationSets>
+
+    <designConfigurations>
+        <designConfiguration name="1" price="0">	
+        </designConfiguration>	
+        <designConfiguration name="2" price="150">
+            <objectChange node="0>5|2|0" visibilityActive="true" visibilityInactive="false"/>	
+            <objectChange node="0>5|2|2" visibilityActive="true" visibilityInactive="false"/>			
+        </designConfiguration>
+        <designConfiguration name="3" price="150">
+            <objectChange node="0>5|2|1" visibilityActive="true" visibilityInactive="false"/>	
+            <objectChange node="0>5|2|2" visibilityActive="true" visibilityInactive="false"/>			
+             <objectChange node="0>7|4" compoundChildActive="true" compoundChildInactive="false"/>			
+        </designConfiguration>		
+    </designConfigurations>
+		
+	<design2Configurations title="$l10n_configuration_Fenders">
+		<design2Configuration name="$l10n_configuration_SingleFender" price="0"> <!-- Not Working -->
+			<objectChange node="0>5|0" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>	
+		<design2Configuration name="$l10n_configuration_DualFender" price="500"> <!-- Not Working -->
+			<objectChange node="0>5|1" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>			
+    </design2Configurations>
+
+	<design3Configurations title="$l10n_configuration_BedAccessories">
+		<design3Configuration name="none" price="0">
+        </design3Configuration>
+		<design3Configuration name="$l10n_configuration_HeadacheRack" price="250">
+			<objectChange node="0>5|3" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>7|3" compoundChildActive="true" compoundChildInactive="false"/>	
+			<objectChange node="0>5|3|0|8" visibilityActive="false" visibilityInactive="true"/>			
+        </design3Configuration>	
+		<design3Configuration name="$l10n_configuration_HeadacheRackStrobes" price="300">
+			<objectChange node="0>5|3" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>7|3" compoundChildActive="true" compoundChildInactive="false"/>	
+			<objectChange node="0>5|3|0|8" visibilityActive="true" visibilityInactive="false"/>
+		
+        </design3Configuration>			
+		<design3Configuration name="$l10n_configuration_Toolbox" price="250"> <!-- Not Working -->
+			<objectChange node="0>5|4" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>5|4|1" compoundChildActive="true" compoundChildInactive="false"/>	
+            <objectChange node="0>5|4|2" compoundChildActive="true" compoundChildInactive="false"/>				
+        </design3Configuration>	
+		<design3Configuration name="$l10n_configuration_RackandBox" price="500">
+			<objectChange node="0>5|3" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>7|3" compoundChildActive="true" compoundChildInactive="false"/>		
+			<objectChange node="0>5|4" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>5|4|1" compoundChildActive="true" compoundChildInactive="false"/>	
+            <objectChange node="0>5|4|2" compoundChildActive="true" compoundChildInactive="false"/>	
+			<objectChange node="0>5|3|0|8" visibilityActive="false" visibilityInactive="true"/>			
+        </design3Configuration>		
+		<design3Configuration name="$l10n_configuration_RackandBoxStrobes" price="550">
+			<objectChange node="0>5|3" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>7|3" compoundChildActive="true" compoundChildInactive="false"/>		
+			<objectChange node="0>5|4" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>5|4|1" compoundChildActive="true" compoundChildInactive="false"/>	
+            <objectChange node="0>5|4|2" compoundChildActive="true" compoundChildInactive="false"/>	
+			<objectChange node="0>5|3|0|8" visibilityActive="true" visibilityInactive="false"/>
+		
+        </design3Configuration>			
+    </design3Configurations>
+	
+    <design4Configurations title="$l10n_configuration_strobes" isYesNoOption="true">
+        <design4Configuration name="$l10n_configuration_valueNo" isDefault="true"/>
+        <design4Configuration name="$l10n_configuration_valueYes" price="200" >
+            <objectChange node="0>1|1|2" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>1|1|3" visibilityActive="true" visibilityInactive="false"/>			
+        </design4Configuration>
+    </design4Configurations>		
+	
+	<foldable>
+        <foldingConfigurations>
+			<foldingConfiguration>
+				<foldingParts>
+					<foldingPart animationName="tailgateAnim" speedScale="1"/>
+				</foldingParts>
+			</foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+	
+	<connectionHoses>
+        <target attacherJointNodes="0>5|2|0|0 0>5|2|1|0" type="electric" node="0>5|2|2|0" socket="electric"/>		
+    </connectionHoses>
+	
+	<attachable>
+		<inputAttacherJointConfigurations>
+			<inputAttacherJointConfiguration>		
+				<inputAttacherJoint node="0>2|0" jointType="RMCBed" lowerRotLimitScale="0 0 0" upperRotLimitScale="0 0 0" upperRotationOffset="0" lowerTransLimitScale="0 0 0" upperTransLimitScale="0 0 0"/>				
+			</inputAttacherJointConfiguration>
+		</inputAttacherJointConfigurations>
+        <support animationName="moveSupport" delayedOnAttach="false" detachAnimationTime="0.5"/>
+    </attachable>
+
+	<attacherJoints>
+		<attacherJointConfigurations>
+			<attacherJointConfiguration name="1" price="0">
+				<attacherJoint node="0>2|1" jointType="RMCBedMount" lowerRotLimitScale="0 0 0" upperRotLimitScale="0 0 0" upperRotationOffset="0" lowerTransLimitScale="0 0 0" upperTransLimitScale="0 0 0">
+					<schema position="0 0.5" rotation="0" invertX="false" />
+				</attacherJoint>			
+			</attacherJointConfiguration>		
+			<attacherJointConfiguration name="2" price="0">		
+				<attacherJoint node="0>2|1" jointType="RMCBedMount" lowerRotLimitScale="0 0 0" upperRotLimitScale="0 0 0" upperRotationOffset="0" lowerTransLimitScale="0 0 0" upperTransLimitScale="0 0 0">
+					<schema position="0 0.5" rotation="0" invertX="false" />
+				</attacherJoint>			
+				<attacherJoint node="0>5|2|0|0" jointType="semitrailerCar" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="20 125 20">        
+					<schema position="1 0" rotation="0" invertX="false" />
+					<objectChange node="0>5|2|2|1" rotationActive="0 -178 0" rotationInactive="0 0 0"/>						
+				</attacherJoint>				
+			</attacherJointConfiguration>
+			<attacherJointConfiguration name="3" price="0">			
+				<attacherJoint node="0>5|2|1|0" jointType="semitrailer" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="15 125 15">
+					<schema position="1 0" rotation="0" invertX="false" />
+					<objectChange node="0>5|2|2|1" rotationActive="0 -178 0" rotationInactive="0 0 0"/>							
+				</attacherJoint>
+			</attacherJointConfiguration>			
+		</attacherJointConfigurations>
+    </attacherJoints>
+    
+   <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="None">	
+                <fillUnits>			
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" updateMass="false" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="0">
+                        <exactFillRootNode node="0>5|6|2|2"/>
+                    </fillUnit>		
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="$l10n_configuration_FuelTransferTank">	
+                <fillUnits>			
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" updateMass="false" showOnHud="true" showInShop="true" fillTypes="diesel" capacity="250">
+                        <exactFillRootNode node="0>5|6|2|2"/>
+                    </fillUnit>					
+                </fillUnits>
+							<objectChange node="0>5|4" translationActive="0 0 -0.28" translationInactive="0 0 0"/>	
+							<objectChange node="0>5|6" visibilityActive="true" visibilityInactive="false"/>
+							<objectChange node="0>5|6|1" compoundChildActive="true" compoundChildInactive="false"/>					
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillTriggerVehicle triggerNode="0>5|6|2|0" fillUnitIndex="1" litersPerSecond="30"/>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="0>5|6|2|1" emptySpeed="20" fillUnitIndex="1" allowAIDischarge="true">
+            <info width="1.0" length="0.5" zOffset="0.4" />
+            <trigger node="0>5|6|2|1" />
+        </dischargeNode>
+    </dischargeable>
+
+    <tipOccluder>
+        <occlusionArea start="0>5|6|2|3|0|0" width="0>5|6|2|3|0|1" height="0>5|6|2|3|0|2"/>
+        <occlusionArea start="0>5|6|2|3|1|0" width="0>5|6|2|3|1|1" height="0>5|6|2|3|1|2"/>
+        <occlusionArea start="0>5|6|2|3|2|0" width="0>5|6|2|3|2|1" height="0>5|6|2|3|2|2"/>
+    </tipOccluder>	
+
+	<animations>
+		<animation name="moveSupport">
+            <part node="0>9|0"  startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="0.85399997 0 0.25799999"/>	
+            <part node="0>9|1"  startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="-0.85399997 0 0.25799999"/>
+            <part node="0>9|2"  startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="0.85399997 0 -0.071"/>
+            <part node="0>9|3"  startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="-0.85399997 0 -0.071"/>			
+            <part node="0>9"  startTime="0.1" endTime="2" startTrans="0 0 0" endTrans="0 -0.847 0"/>		
+			<part node="0>0"   	startTime="1.98" endTime="1.99" visibility="false" />
+            <part node="0>0"    startTime="1.99" endTime="2" visibility="true" />			
+        </animation>
+		
+		<animation name="tailgateAnim">	
+			<part node="0>4" startTime="0" endTime="1" startRot="0 0 0" endRot="-90 0 0" />
+
+            <sound template="metalClose"    startTime="0.15"  direction="-1" volumeScale="1.4" pitchScale="1.4"  linkNode="0>4"/>
+            <sound template="metalOpen"     startTime="0.15"  direction="1"  volumeScale="1.6" pitchScale="0.8"  linkNode="0>4"/>
+            <sound template="hingeMedium"   startTime="0.90"  direction="-1"  volumeScale="0.8" pitchScale="1.1" linkNode="0>4"/>
+        </animation>
+    </animations>
+
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="0>5|5" jointNode="0>" width="0.05" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="0>5|5|5">
+                    <tensionBelt startNode="0>5|5|0" endNode="0>5|5|0|2">
+                        <intersectionNode node="0>5|5|0|0"/>
+                        <intersectionNode node="0>5|5|0|1"/>					
+                    </tensionBelt>					
+                    <tensionBelt startNode="0>5|5|1" endNode="0>5|5|1|2">
+                        <intersectionNode node="0>5|5|1|0"/>
+                        <intersectionNode node="0>5|5|1|1"/>						
+                    </tensionBelt>					
+                    <tensionBelt startNode="0>5|5|2" endNode="0>5|5|2|2">
+                        <intersectionNode node="0>5|5|2|0"/>
+                        <intersectionNode node="0>5|5|2|1"/>					
+                    </tensionBelt>										
+                    <tensionBelt startNode="0>5|5|3" endNode="0>5|5|3|2">
+                        <intersectionNode node="0>5|5|3|0"/>
+                        <intersectionNode node="0>5|5|3|1"/>					
+                    </tensionBelt>					
+                    <tensionBelt startNode="0>5|5|4" endNode="0>5|5|4|2">
+                        <intersectionNode node="0>5|5|4|0"/>
+                        <intersectionNode node="0>5|5|4|1"/>						
+                    </tensionBelt>					
+                    <sounds>
+                        <addBelt template="beltOpen" volumeScale="1.5"/>
+                        <removeBelt template="beltClose" volumeScale="1.5"/>
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="0>5|5" jointNode="0>" width="0.05" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="0>5|5|5">
+                    <tensionBelt startNode="0>5|5|0" endNode="0>5|5|0|2">
+                        <intersectionNode node="0>5|5|0|0"/>
+                        <intersectionNode node="0>5|5|0|1"/>					
+                    </tensionBelt>					
+                    <tensionBelt startNode="0>5|5|1" endNode="0>5|5|1|2">
+                        <intersectionNode node="0>5|5|1|0"/>
+                        <intersectionNode node="0>5|5|1|1"/>						
+                    </tensionBelt>									
+                    <tensionBelt startNode="0>5|5|4" endNode="0>5|5|4|2">
+                        <intersectionNode node="0>5|5|4|0"/>
+                        <intersectionNode node="0>5|5|4|1"/>						
+                    </tensionBelt>					
+                    <sounds>
+                        <addBelt template="beltOpen" volumeScale="1.5"/>
+                        <removeBelt template="beltClose" volumeScale="1.5"/>
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>			
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+    <baseColorConfigurations useDefaultColors="true">
+        <baseColorConfiguration materialTemplateName="VOLVO_RED1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_BLACK1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_PURPLE1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_BM_GREEN1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_YELLOW1" />
+        <baseColorConfiguration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="mainPaint" />
+    </baseColorConfigurations>
+    <designColorConfigurations title="$l10n_configuration_twotone" useDefaultColors="true">
+        <designColorConfiguration materialTemplateName="VOLVO_BLACK1" />
+        <designColorConfiguration materialTemplateName="VOLVO_RED1" />
+        <designColorConfiguration materialTemplateName="VOLVO_PURPLE1" />
+        <designColorConfiguration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColorConfiguration materialTemplateName="VOLVO_YELLOW1" />
+        <designColorConfiguration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="twoTone" />
+    </designColorConfigurations>
+    <designColor2Configurations title="$l10n_configuration_trim" useDefaultColors="true">
+        <designColor2Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor2Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor2Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor2Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor2Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor2Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor2Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="accent" />
+    </designColor2Configurations>
+    <designColor3Configurations title="$l10n_configuration_Bumper" useDefaultColors="true">
+        <designColor3Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor3Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor3Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor3Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor3Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor3Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor3Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="bumper" />
+    </designColor3Configurations>		
+    <designColor4Configurations title="$l10n_configuration_decals" useDefaultColors="true">
+        <designColor4Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />	
+        <designColor4Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor4Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor4Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor4Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor4Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor4Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="decal" />
+    </designColor4Configurations>	
+    <designColor5Configurations title="$l10n_configuration_BedStuff" useDefaultColors="true">
+        <designColor5Configuration materialTemplateName="VOLVO_BLACK1" />
+        <designColor5Configuration materialTemplateName="chrome" name="$l10n_ui_colorChrome" />
+        <designColor5Configuration materialTemplateName="SHARED_SILVERROPE1"/>	
+        <designColor5Configuration materialTemplateName="SHARED_SILVER"/>	
+        <designColor5Configuration materialTemplateName="HUB_BOLT_DEFAULT"/>	
+        <designColor5Configuration materialTemplateName="RIM_DEFAULT"/>	
+        <designColor5Configuration materialTemplateName="RIM_BOLT_DEFAULT"/>			
+        <designColor5Configuration materialTemplateName="VOLVO_RED1" />
+        <designColor5Configuration materialTemplateName="VOLVO_PURPLE1" />
+        <designColor5Configuration materialTemplateName="VOLVO_BM_GREEN1" />
+        <designColor5Configuration materialTemplateName="VOLVO_YELLOW1" />
+        <designColor5Configuration materialTemplateName="VOLVO_GREY1" />
+        <material materialSlotName="bedStuff" />
+    </designColor5Configurations>	
+
+	<ai>
+        <agentAttachment jointNode="0>" width="2.7" height="3" length="6" lengthOffset="1"/>
+    </ai>
+	
+    <foliageBending>
+        <bendingNode minX="-1.1" maxX="1.1" minZ="-1.5" maxZ="1.3" yOffset="1.2"/>
+    </foliageBending>
+	
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>	
+
+
+
+</vehicle>

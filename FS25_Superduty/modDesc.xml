@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="104">
+    <author>Roughneck Modding Crew</author>
+    <version>1.3.0.0</version>
+    <title>
+        <en>Superduty Pickup THQ</en>
+    </title>	
+<description>
+<en><![CDATA[The 2024 Lizard Superduty is a robust and highly versatile pickup truck designed for
+a wide range of heavy-duty tasks. It features advanced attachers for various implements, including
+beds, plows, bumper pull trailers, and goosenecks, providing exceptional utility for both work and
+recreation. The truck’s detachable bed comes with a connection point, allowing for seamless
+interchangeability of different bed types to suit various needs.
+
+With a choice of body colors, two-tone finishes, wheel configurations, and trim options, the 2024
+Lizard Superduty offers a high level of customization to meet individual preferences. Additionally,
+the truck offers options for both single and dually wheels to maximize stability and performance under load.
+
+Whether you're hauling heavy equipment or handling tough terrains, the 2024 Lizard Superduty combines
+strength, style, and versatility, making it the ultimate tool for any demanding job.
+
+The Superduty Bed is an attachable part of the vehicle used for transporting goods and pallets as well as
+connecting to multiple trailer types with its optional attachers.  With a choice of body colors, two-tone finishes
+and trim options it can match the Superduty pickup. The Bed also has a wide variety of options including rack,
+strobe lights, toolbox, tension belts, and different attachers for gooseneck and 5th wheel type trailers. The Superduty
+Bed also has an optional fuel tank for transporting and refueling your equipment and vehicles. 
+
+Changelog v1.1.0.0:
+Fixed:
+- Adjusted steering and suspension
+- Repaired lines showing in dual fender
+Added:
+- Custom wheel set
+- Fuel transfer tank option for the bed
+
+Changelog v1.2.0.0:
+Fixed:
+- Adjusted steering and suspension
+- Adjusted attachers and visuals for bedpack compatibility 
+Added:
+- Custom dual wheel set
+- Bed attachers for bedpack
+
+Changelog v1.3.0.0:
+Added:
+- Added more wheel configuration options for enhanced customization
+- Introduced motion control functionality for side mirrors
+- Integrated bed flashing lights within the taillights
+- Expanded color configuration options for both the truck and bed
+- Added shop selection for the front valance
+- Added motor configurations
+Fixed:
+- Fixed various bed accessory texture issues
+- Adjusted plow attachment alignment and behavior
+- Updated suspension settings for improved handling
+- Corrected front fender flare alignment
+- Adjusted door scaling to resolve water droplet size inconsistencies
+- Adjusted motor config to be smoother.
+
+Lizard Superduty
+Category: Cars
+Power: 740HP
+Max: 115 kph
+Price 42500 $
+
+Superduty Bed
+Category: Misc
+Capacity; 0-250L
+Price: 5000
+]]>
+</en>
+<de><![CDATA[Der 2024 Lizard Superduty ist ein robuster und äußerst vielseitiger Pickup, der für eine breite
+Palette an Schwerlastaufgaben entwickelt wurde. Er verfügt über fortschrittliche Anbaugeräte für verschiedene
+Arbeitsgeräte, einschließlich Ladeflächen, Pflüge, Anhänger mit Stoßstange und Goosenecks, und bietet
+außergewöhnlichen Nutzen sowohl für die Arbeit als auch für Freizeitaktivitäten. Die abnehmbare
+Ladefläche des Fahrzeugs verfügt über einen Anschlusspunkt, der einen nahtlosen Austausch verschiedener
+Ladeflächentypen ermöglicht, um unterschiedlichen Bedürfnissen gerecht zu werden.
+
+Mit einer Auswahl an Karosseriefarben, zweifarbigen Lackierungen, Radkonfigurationen und Ausstattungsoptionen
+bietet der 2024 Lizard Superduty ein hohes Maß an Anpassungsmöglichkeiten, um den individuellen Vorlieben gerecht
+zu werden. Darüber hinaus bietet das Fahrzeug Optionen für sowohl Einzel- als auch Doppellaufräder, um Stabilität
+und Leistung unter Last zu maximieren.
+
+Egal, ob Sie schwere Ausrüstungen transportieren oder schwieriges Gelände meistern, der 2024 Lizard Superduty
+kombiniert Stärke, Stil und Vielseitigkeit und macht ihn zum ultimativen Werkzeug für jede anspruchsvolle Aufgabe.
+
+Die Superduty Ladefläche ist ein Anbauteil des Fahrzeugs und dient zum Transport von Gütern und Paletten sowie zur
+Anbindung an verschiedene Anhängertypen mit optionalen Anbaugeräten. Mit verschiedenen Karosseriefarben, zweifarbigen
+Lackierungen und Ausstattungsoptionen passt sie perfekt zum Superduty Pickup. Die Ladefläche bietet außerdem zahlreiche
+Optionen, darunter Gepäckträger, Blitzleuchten, Werkzeugkasten, Spanngurte und verschiedene Anbaugeräte für
+Schwanenhals- und Sattelauflieger. Die Superduty Ladefläche verfügt außerdem über einen optionalen Kraftstofftank für den
+Transport und die Betankung Ihrer Ausrüstung und Fahrzeuge.
+
+Changelog v1.1.0.0:
+Behoben:
+- Lenkung und Aufhängung angepasst
+- Linien im Doppelkotflügel gefixt
+Hinzugefügt:
+- Benutzerdefinierter Radsatz
+- Optionaler Kraftstofftank für die Ladefläche
+
+Changelog v1.3.0.0:
+Hinzugefügt:
+- Mehr Radkonfigurationsoptionen für eine erweiterte Individualisierung hinzugefügt
+- Bewegungssteuerung für die Seitenspiegel integriert
+- Bett-Blinkleuchten in die Rückleuchten integriert
+- Erweiterte Farbkonfigurationsoptionen für Lkw und Ladefläche hinzugefügt
+- Shop-Auswahl für die Frontschürze hinzugefügt
+- Motorkonfigurationen hinzugefügt
+Behoben:
+- Verschiedene Texturprobleme bei Bettzubehör behoben
+- Pfluganbau-Ausrichtung und Verhalten angepasst
+- Fahrwerkseinstellungen für besseres Handling aktualisiert
+- Ausrichtung der vorderen Kotflügelverbreiterungen korrigiert
+- Skalierung der Türen angepasst, um die Größe der Wassertropfen zu korrigieren
+- Die Motorkonfiguration wurde angepasst, um einen reibungsloseren Betrieb zu gewährleisten.
+
+
+Lizard Superduty
+Kategorie: cars
+Leistung: 740 PS
+Max: 115 km/h
+Preis 42500 €
+
+Superduty Ladefläche
+Kategorie: misc
+Kapazität: 0-250l
+Preis: 5000 €
+]]>
+</de>
+</description>
+
+	<multiplayer supported="true"/>
+
+    <iconFilename>icon_superduty.dds</iconFilename>
+	
+    <storeItems>	
+        <storeItem xmlFilename="superduty.xml"/>	
+        <storeItem xmlFilename="beds/superdutyBed.xml"/>			
+    </storeItems>
+
+	<jointTypes>
+        <jointType name="RMCBed"/>
+        <jointType name="RMCBed2"/>		
+        <jointType name="RMCBedMount"/>			
+		<jointType name="82FrontJoint"/>	
+        <jointType name="RMCDump"/>			
+    </jointTypes>	
+	
+	<vehicleTypes>	
+		<type name="RMCBED" parent="fuelTrailer" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+			<specialization name="tensionBelts" />										
+		</type>			
+	</vehicleTypes>		
+	<l10n>
+		<text name="configuration_singles">
+            <en>Superduty Rims</en>
+            <de>Superduty Felgen</de>
+        </text>
+		<text name="configuration_singlesLifted">
+            <en>Lifted Superduty Rims</en>
+            <de>Angehoben Superduty Felgen</de>
+        </text>		
+		<text name="configuration_singles2">
+            <en>Stock Rims</en>
+            <de>Serienfelgen</de>
+        </text>
+		<text name="configuration_bubba">
+            <en>Superduty Big Tires</en>
+            <de>Superduty-Großreifen</de>
+        </text>
+		<text name="configuration_bubbaLifted">
+            <en>Lifted Superduty Big Tires</en>
+            <de>Angehoben Superduty-Großreifen</de>
+        </text>	
+		<text name="configuration_bubba2">
+            <en>Stock Rims Big Tires</en>
+            <de>Serienfelgen große Reifen</de>
+        </text>
+		<text name="configuration_bubba2Lifted">
+            <en>Lifted Stock Rims Big Tires</en>
+            <de>Angehoben Serienfelgen große Reifen</de>
+        </text>	
+		<text name="configuration_Lugged_Mudders">
+            <en>Military Mud Tire</en>
+            <de>Militär-Schlammreifen</de>
+        </text>		
+
+		<text name="configuration_steelMich">
+            <en>Steels Big Tires</en>
+            <de>Stahlfelgen Große Reifen</de>
+        </text>
+		<text name="configuration_steelMichLifted">
+            <en>Lifted Steels Big Tires</en>
+            <de>Erhöhte Stahlfelgen Große Reifen</de>
+        </text>	
+		<text name="configuration_alumMich">
+            <en>Aluminium Rim Big Tire</en>
+            <de>Aluminiumfelge Großer Reifen</de>
+        </text>
+		<text name="configuration_alumMichLifted">
+            <en>Lifted Aluminium Rim Big Tire</en>
+            <de>Höhergelegte Aluminiumfelgen, große Reifen</de>
+        </text>			
+		
+		<text name="configuration_custom">
+            <en>Custom Rims</en>
+            <de>Brauch Felgen</de>
+        </text>
+		<text name="configuration_customLifted">
+            <en>Lifted Custom Rims</en>
+            <de>Angehoben Brauch Felgen</de>
+        </text>		
+		<text name="configuration_customDual">
+            <en>Custom Dual Rims</en>
+            <de>Brauch Dual Felgen</de>
+        </text>
+		<text name="configuration_customDualLifted">
+            <en>Lifted Custom Dual Rims</en>
+            <de>Angehoben Brauch Dual Felgen</de>
+        </text>		
+		<text name="configuration_customDualBubba">
+            <en>Custom Duals Big Tire</en>
+            <de>Brauch Dual Felgen Großer Reifen</de>
+        </text>				
+		<text name="configuration_steel">
+            <en>Steel Duals</en>
+            <de>Stahl Duals</de>
+        </text>
+		<text name="configuration_steelLifted">
+            <en>Lifted Steel Duals</en>
+            <de>Angehoben Stahl Duals</de>
+        </text>		
+		<text name="configuration_alum">
+            <en>Aluminum Duals</en>
+            <de>Aluminium Duals</de>
+        </text>
+		<text name="configuration_alumLifted">
+            <en>Lifted Aluminum Duals</en>
+            <de>Angehoben Aluminium Duals</de>
+        </text>		
+		<text name="configuration_alum2">
+            <en>Aluminum Duals with Covers</en>
+            <de>Aluminium Duals mit Abdeckungen</de>
+        </text>
+		<text name="configuration_alum2Lifted">
+            <en>Lifed Aluminum Duals with Covers</en>
+            <de>Angehoben Aluminium Duals mit Abdeckungen</de>
+        </text>
+		<text name="configuration_Osteel">
+            <en>Offroad Steel Duals</en>
+            <de>Gelände Stahl Duals</de>
+        </text>
+		<text name="configuration_OsteelLifted">
+            <en>Offroad Lifted Steel Duals</en>
+            <de>Gelände Angehoben Stahl Duals</de>
+        </text>		
+		<text name="configuration_Oalum">
+            <en>Offroad Aluminum Duals</en>
+            <de>Gelände Aluminium Duals</de>
+        </text>
+		<text name="configuration_OalumLifted">
+            <en>Offroad Lifted Aluminum Duals</en>
+            <de>Gelände Angehoben Aluminium Duals</de>
+        </text>		
+		<text name="configuration_Oalum2">
+            <en>Offroad Aluminum Duals with Covers</en>
+            <de>Gelände Aluminium Duals mit Abdeckungen</de>
+        </text>
+		<text name="configuration_Oalum2Lifted">
+            <en>Offroad Lifed Aluminum Duals with Covers</en>
+            <de>Gelände Angehoben Aluminium Duals mit Abdeckungen</de>
+        </text>				
+		<text name="configuration_exhaust">
+            <en>Exhaust Pipe</en>
+            <de>Auspuffrohr</de>
+        </text>
+		<text name="configuration_exhaustPipe1">
+            <en>Stock Exhaust</en>
+            <de>Serienauspuff</de>
+        </text>		
+		<text name="configuration_exhaustPipe2">
+            <en>Axle Dump</en>
+            <de>Achsabsenkung</de>
+        </text>				
+		<text name="configuration_grilleguard">
+            <en>Grille Guard</en>
+            <de>Kühlergrillschutz</de>
+        </text>
+		<text name="configuration_valance">
+            <en>Front Valance</en>
+            <de>Frontvolant</de>
+        </text>		
+		<text name="configuration_none">
+            <en>None</en>
+            <de>Keiner</de>
+        </text>	
+		<text name="configuration_twotone">
+            <en>Two Tone</en>
+            <de>Zweifarbig</de>
+        </text>			
+		<text name="configuration_trim">
+            <en>Trim</en>
+            <de>Trimmen</de>
+        </text>		
+		<text name="configuration_decals">
+            <en>Decals</en>
+            <de>Aufkleber</de>
+        </text>			
+		<text name="configuration_BedStuff">
+            <en>Bed Accessories</en>
+            <de>Bettzubehör</de>
+        </text>				
+		<text name="configuration_RimAccent">
+            <en>Rim Accent</en>
+            <de>Felgenakzent</de>
+        </text>			
+		<text name="configuration_Grille">
+            <en>Grille</en>
+            <de>Grille</de>
+        </text>		
+		<text name="configuration_Bumper">
+            <en>Bumper</en>
+            <de>Stoßstange</de>
+        </text>		
+		<text name="configuration_steps">
+            <en>Steps</en>
+            <de>Schritte</de>
+        </text>
+		<text name="configuration_sidesteps">
+            <en>Side Steps</en>
+            <de>Seitliche Schritte</de>
+        </text>
+		<text name="configuration_tubesteps">
+            <en>Tube Steps</en>
+            <de>Rohrstufen</de>
+        </text>		
+		<text name="configuration_Attachers">
+            <en>Attachers</en>
+            <de>Anhanger</de>
+        </text>	
+		<text name="configuration_dropHitch">
+            <en>Drop Hitch</en>
+            <de>Anhängerkupplung</de>
+        </text>	
+		<text name="configuration_adjustableHitch">
+            <en>Adjustable Hitch</en>
+            <de>Verstellbare Anhängerkupplung</de>
+        </text>			
+		<text name="configuration_GooseNeck">
+            <en>Gooseneck</en>
+            <de>Schwanenhals</de>
+        </text>	
+		<text name="configuration_5thWheel">
+            <en>5th Wheel</en>
+            <de>5. Rad</de>
+        </text>	
+		<text name="configuration_Fenders">
+            <en>Fenders</en>
+            <de>Kotflügel</de>
+        </text>
+		<text name="configuration_SingleFender">
+            <en>Single Fenders</en>
+            <de>Einzelne Fender</de>
+        </text>	
+		<text name="configuration_DualFender">
+            <en>Dual Fenders</en>
+            <de>Doppelkotflügel</de>
+        </text>	
+		<text name="configuration_BedAccessories">
+            <en>Bed Accessories</en>
+            <de>Bettzubehör</de>
+        </text>	
+		<text name="configuration_HeadacheRack">
+            <en>Headache Rack</en>
+            <de>Kopfschmerzregal</de>
+        </text>	
+		<text name="configuration_HeadacheRackStrobes">
+            <en>Headache Rack Strobes</en>
+            <de>Kopfschmerz-Rack-Blitzgeräte</de>
+        </text>	
+		<text name="configuration_strobes">
+            <en>Strobes</en>
+            <de>Blitze</de>
+        </text>			
+		<text name="configuration_Toolbox">
+            <en>Toolbox</en>
+            <de>Werkzeugkasten</de>
+        </text>
+		<text name="configuration_RackandBox">
+            <en>Headache Rack and Toolbox</en>
+            <de>Kopfschmerzständer und Werkzeugkasten</de>
+        </text>	
+		<text name="configuration_RackandBoxStrobes">
+            <en>ALL</en>
+            <de>ALLE</de>
+        </text>	
+		<text name="configuration_FuelTransferTank">
+            <en>Fuel Transfer Tank</en>
+            <de>Kraftstofftransfertank</de>
+        </text>	
+    </l10n>	
+</modDesc>

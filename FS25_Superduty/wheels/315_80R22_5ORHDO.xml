@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <metadata brand="LIZARD" category="CAR"/>
+    <default>
+        <physics radius="0.435" width="0.2794" mass="0.111" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/lizard/truck/_235_85R16.i3d" scale="1 1.12 1.12" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.024" tireTrackAtlasIndex="4" hasMudMesh="true" />
+        <outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="8.5 21"/>
+        <innerRim filename="wheels/wheels.i3d" nodeLeft="1|0" nodeRight="1|1" widthAndDiam="8.5 21"/>
+    </default>
+    <configurations>
+		<configuration id="fa">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="1|0" nodeRight="1|1" widthAndDiam="9.35 21.2"/>
+			<additional filename="wheels/wheels.i3d" nodeLeft="6|0" nodeRight="6|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+        <configuration id="fas">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="1|0" nodeRight="1|1" widthAndDiam="9.35 21.2"/>
+			<additional filename="wheels/wheels.i3d" nodeLeft="7|0" nodeRight="7|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+        <configuration id="fs">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="9.35 21.2"/>
+			<additional filename="wheels/wheels.i3d" nodeLeft="6|0" nodeRight="6|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+        <configuration id="roa">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+			<innerRim filename="wheels/wheels.i3d" nodeLeft="1|1" nodeRight="1|0" widthAndDiam="9.35 21.2"/>	
+			<additional filename="wheels/wheels.i3d" nodeLeft="4|0" nodeRight="4|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+        <configuration id="roas">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="1|1" nodeRight="1|0" widthAndDiam="9.35 21.2"/>
+			<additional filename="wheels/wheels.i3d" nodeLeft="5|0" nodeRight="5|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+        <configuration id="ros">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="2|1" nodeRight="2|0" widthAndDiam="9.35 21.2"/>
+			<additional filename="wheels/wheels.i3d" nodeLeft="4|0" nodeRight="4|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+		<configuration id="ria">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+			<innerRim filename="wheels/wheels.i3d" nodeLeft="1|0" nodeRight="1|1" widthAndDiam="9.35 21.2"/>	
+        </configuration>
+        <configuration id="ris">
+			<outerRim filename="wheels/wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="9.35 21.2"/>
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="9.35 21.2"/>
+        </configuration>
+    </configurations>
+</wheel>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Salt.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="23" filename="$data/maps/textures/shared/assetLibraryDecals_diffuse.dds"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="24" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
+    <File fileId="19" filename="$data/shared/default_normal.dds"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/calibrated/grainSmall_specular.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="33" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="32" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="31" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="29" filename="Textures/Gator_Added_normal.dds"/>
+    <File fileId="30" filename="Textures/Gator_Added_vmask.dds"/>
+    <File fileId="3" filename="Textures/Gator_snow_normal.dds"/>
+    <File fileId="4" filename="Textures/Gator_snow_vmask.dds"/>
+    <File fileId="18" filename="Textures/Salt_decals_diffuse.dds"/>
+    <File fileId="20" filename="Textures/Salt_decals_vmask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="decalMat" materialId="5" specularColor="0.6 1 0" customShaderId="5">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+    </Material>
+    <Material name="decalMat" materialId="6" customShaderId="5">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="22"/>
+    </Material>
+    <Material name="default_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="19"/>
+    </Material>
+    <Material name="fillVolume_mat" materialId="8" diffuseColor="1 1 1 1" specularColor="0.2 1 0.2">
+    </Material>
+    <Material name="Gator_calibratedGlossPaint_mat" materialId="9" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.024 0.213 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="gator_calibratedGlossPaint_mat" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.024 0.213 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="Gator_mat_metalPaintedBlack_mat" materialId="11" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Gator_mat_silverScratched_mat" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+    </Material>
+    <Material name="Gator_mat_silverScratched_mat" materialId="13" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+    </Material>
+    <Material name="gator_metalPainted_mat" materialId="180" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="1 1 0.094"/>
+    </Material>
+    <Material name="Gator_rubberBlack_mat" materialId="15" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="detailSpecular" fileId="31"/>
+      <Custommap name="detailNormal" fileId="32"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+      <CustomParameter name="colorScale" value="0.001 0.001 0.001"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="lambert1" materialId="16" diffuseColor="0.466667 0.466667 0.466667 1">
+    </Material>
+    <Material name="lambert1" materialId="17" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Salt.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="Salt_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" objectMask="0xffff" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16">
+      <TransformGroup name="Base" nodeId="41">
+        <Shape name="SaltVis" translation="0 0.117 0.686" shapeId="2" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="180,11,10,13">
+          <TransformGroup name="collisions" translation="-3.05176e-07 0.0618052 1.03" nodeId="43">
+            <Shape name="colPart4" translation="0 0 -0.0307963" shapeId="3" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+            <Shape name="colPart5" translation="0 0.0404987 0.00546512" rotation="-90 0 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+          </TransformGroup>
+          <TransformGroup name="groundReference" translation="0 0.3 -1.45967" nodeId="46"/>
+          <TransformGroup name="Work" translation="4.81417e-08 0.35467 -1.18413" nodeId="47">
+            <TransformGroup name="workAreaStart" translation="0 0 -0.225771" nodeId="48"/>
+            <TransformGroup name="workAreaWidth" translation="2.5 -0.272481 -3.03041" nodeId="49"/>
+            <TransformGroup name="workAreaHeight" translation="-2.5 -0.272481 -3.03041" nodeId="50"/>
+          </TransformGroup>
+          <Shape name="Rotor1" translation="0 0.729592 -1.46342" shapeId="5" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="11">
+            <Shape name="g2_group" shapeId="6" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          </Shape>
+          <TransformGroup name="aiMarker" translation="4.81417e-08 0.698 -1.18413" nodeId="53">
+            <TransformGroup name="workAreaStart" translation="0 0 -3.6937" nodeId="54"/>
+            <TransformGroup name="workAreaWidth" translation="2.5 0 -3.03041" nodeId="55"/>
+            <TransformGroup name="workAreaHeight" translation="-2.5 0 -3.03041" nodeId="56"/>
+          </TransformGroup>
+          <Shape name="Decals" shapeId="7" clipDistance="50" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="6">
+            <Shape name="rivet02B_decal" translation="0.733804 1.20386 -1.09637" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 1.20386 -1.151" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 0.909 -1.096" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 1.204 -0.11" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 1.204 -0.165" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 0.909 -0.11" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 0.909 -0.165" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 0.909 -1.151" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.733804 0.909 -0.165" rotation="0 -0 -90" shapeId="8" clipDistance="30" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 1.204 -1.096" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 1.204 -1.151" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 0.909 -1.096" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 0.909 -1.151" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 0.909 -1.151" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 1.204 -0.11" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 1.204 -0.165" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 0.909 -0.11" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.734 0.909 -0.165" rotation="0 -0 90" shapeId="9" clipDistance="30" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.290624 0.864355 -1.27909" rotation="-90 -0 0" shapeId="10" clipDistance="30" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.290624 0.8 -1.279" rotation="-90 -0 0" shapeId="10" clipDistance="30" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.291 0.8 -1.279" rotation="-90 -0 0" shapeId="10" clipDistance="30" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.291 0.864 -1.279" rotation="-90 -0 0" shapeId="10" clipDistance="30" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.165 0.863 -1.349" rotation="0 -0 90" shapeId="10" clipDistance="30" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.165 0.831 -1.349" rotation="0 -0 90" shapeId="10" clipDistance="30" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.165 0.831 -1.349" rotation="0 -0 -90" shapeId="10" clipDistance="30" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.165 0.863 -1.349" rotation="0 -0 -90" shapeId="10" clipDistance="30" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.032 1.006 -0.76" rotation="-18.738 -0 0" shapeId="10" clipDistance="30" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.042 1.006 -0.76" rotation="-18.738 -0 0" shapeId="10" clipDistance="30" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.042 0.968 -0.871" rotation="-18.738 -0 0" shapeId="10" clipDistance="30" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.042 0.968 -0.871" rotation="-18.738 -0 0" shapeId="10" clipDistance="30" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.405 1.026 -1.147" rotation="0 -0 -43.184" shapeId="10" clipDistance="30" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.436 0.994 -1.147" rotation="0 -0 136.629" shapeId="10" clipDistance="30" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.433 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.661 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.54 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.719 0.891 -0.996" shapeId="10" clipDistance="30" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.719 0.891 -0.788" shapeId="10" clipDistance="30" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.719 0.891 -0.534" shapeId="10" clipDistance="30" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.719 0.891 -0.241" shapeId="10" clipDistance="30" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.636 0.889 -0.602" shapeId="10" clipDistance="30" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="-0.38 0.889 -0.602" shapeId="10" clipDistance="30" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.433 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.661 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.54 0.891 -1.176" shapeId="10" clipDistance="30" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.719 0.891 -0.996" shapeId="10" clipDistance="30" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.719 0.891 -0.788" shapeId="10" clipDistance="30" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.719 0.891 -0.534" shapeId="10" clipDistance="30" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.719 0.891 -0.241" shapeId="10" clipDistance="30" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.636 0.889 -0.602" shapeId="10" clipDistance="30" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="rivet02B_decal" translation="0.38 0.889 -0.602" shapeId="10" clipDistance="30" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+          <TransformGroup name="aiMarker" translation="4.81417e-08 0.698 -1.184" nodeId="108">
+            <TransformGroup name="workAreaStart" translation="0 0 -0.549567" nodeId="109"/>
+            <TransformGroup name="workAreaWidth" translation="0.401 0 -0.163" nodeId="110"/>
+            <TransformGroup name="workAreaHeight" translation="-0.401 0 -0.163" nodeId="111"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="attacherJoint" translation="0 0.841 -0.077" rotation="0 90 0" nodeId="112">
+          <TransformGroup name="attacherJoint" nodeId="113"/>
+        </TransformGroup>
+        <TransformGroup name="Decals" translation="0 1.637 4.09314" rotation="0 90 0" nodeId="114"/>
+        <TransformGroup name="tensionBelts" nodeId="115"/>
+        <TransformGroup name="fillUnit" translation="-4.81417e-08 0.882 0.073" clipDistance="300" nodeId="116">
+          <Shape name="exactFillRootNode" translation="-9.73934e-09 0.594241 -0.157128" shapeId="11" visibility="false" kinematic="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="fillVolume" translation="0 -0.882 -0.073" shapeId="12" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+          <TransformGroup name="UnloadInfo" translation="0 -0.392226 -1.12917" nodeId="119"/>
+        </TransformGroup>
+        <TransformGroup name="aiMarkerSingleSalt" translation="4.81417e-08 0 0" nodeId="120"/>
+        <TransformGroup name="effects" nodeId="121">
+          <TransformGroup name="fertilizerEffectLeft" translation="0.144 0.877 -0.868" scale="0.24 0.5 0.3" nodeId="122"/>
+          <TransformGroup name="fertilizerEffectRight" translation="-0.144 0.877 -0.868" scale="0.24 0.5 0.3" nodeId="123"/>
+          <Shape name="unloadMesh" translation="0 0.770007 -0.619856" scale="0.2 0.3 0.4" shapeId="13" clipDistance="300" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <TransformGroup name="fertilizerEffectLeft" translation="0.144 0.877 -0.868" scale="1.1 1 1" nodeId="125"/>
+          <TransformGroup name="fertilizerEffectRight" translation="-0.144 0.877 -0.868" scale="1.1 1 1" nodeId="126"/>
+        </TransformGroup>
+        <Shape name="colPart1" shapeId="14" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="127" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="16"/>
+        <TransformGroup name="ai" translation="0 0.56638 0" nodeId="128">
+          <TransformGroup name="areaMarker" nodeId="129">
+            <TransformGroup name="areaMarkerLeft" translation="5 0 -3" nodeId="130"/>
+            <TransformGroup name="areaMarkerRight" translation="-5 0 -3" nodeId="131"/>
+            <TransformGroup name="areaMarkerBack" translation="0 0 -4" nodeId="132"/>
+          </TransformGroup>
+          <TransformGroup name="sizeMarker" nodeId="133">
+            <TransformGroup name="sizeMarkerLeft" translation="0.803 0 0.57" nodeId="134"/>
+            <TransformGroup name="sizeMarkerRight" translation="-0.803 0 0.57" nodeId="135"/>
+            <TransformGroup name="sizeMarkerBack" translation="0 0 -0.797449" nodeId="136"/>
+          </TransformGroup>
+          <TransformGroup name="aiCollisionNode" translation="0 0 0.600566" nodeId="137"/>
+        </TransformGroup>
+        <TransformGroup name="workArea" translation="0 0.56638 0" nodeId="138">
+          <TransformGroup name="workAreaStart" translation="0 0 -0.6" nodeId="139"/>
+          <TransformGroup name="workAreaWidth" translation="-2.5 0 -2.3127" nodeId="140"/>
+          <TransformGroup name="workAreaHeight" translation="2.5 0 -2.313" nodeId="141"/>
+          <TransformGroup name="sections" translation="0 0 -2.4118" nodeId="142">
+            <TransformGroup name="section01" translation="1 0 0" nodeId="143"/>
+            <TransformGroup name="section02" translation="2 0 0" nodeId="144"/>
+            <TransformGroup name="section03" translation="3 0 0" nodeId="145"/>
+            <TransformGroup name="section04" translation="4 0 0" nodeId="146"/>
+            <TransformGroup name="section05" translation="5 0 0" nodeId="147"/>
+            <TransformGroup name="section06" translation="-1 0 0" nodeId="148"/>
+            <TransformGroup name="section08" translation="-2 0 0" nodeId="149"/>
+            <TransformGroup name="section09" translation="-3 0 0" nodeId="150"/>
+            <TransformGroup name="section10" translation="-4 0 0" nodeId="151"/>
+            <TransformGroup name="section11" translation="-5 0 0" nodeId="152"/>
+          </TransformGroup>
+          <TransformGroup name="workAreaStart" translation="0 0 -0.6" nodeId="153"/>
+          <TransformGroup name="workAreaWidth" translation="-5 0 -2.96" nodeId="154"/>
+          <TransformGroup name="workAreaHeight" translation="5 0 -2.96" nodeId="155"/>
+        </TransformGroup>
+        <Shape name="Added2x4" translation="0 0.837 -0.437" shapeId="15" visibility="false" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="moveSupport" nodeId="157">
+        <TransformGroup name="moveSupport1" translation="0.962 0.14 -0.01" nodeId="158">
+          <Shape name="supportCol" rotation="-0.335718 0 0" shapeId="16" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="159" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+        </TransformGroup>
+        <TransformGroup name="moveSupport2" translation="-0.962 0.140043 -0.0104919" nodeId="160">
+          <Shape name="supportCol2" shapeId="17" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="161" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+        </TransformGroup>
+        <TransformGroup name="Support" translation="0 0.0780728 0" scale="1 0.927 1" nodeId="162">
+          <Shape name="Support3" translation="0 0 -0.517" scale="1 1 1.07875" shapeId="18" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="9,15,12"/>
+          <Shape name="Support1" translation="7.10543e-15 0 0.51681" scale="1 1 1.07875" shapeId="19" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="9,15,12"/>
+          <Shape name="Support2" translation="0 0 0.517" rotation="-180 -5.00896e-06 -180" scale="1 1 1.07875" shapeId="20" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="9,15,12"/>
+          <Shape name="Support4" translation="0 0 -0.517" rotation="-180 -5.00896e-06 -180" scale="1 1 1.07875" shapeId="21" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="9,15,12"/>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineSmall" file="sounds/Gator_loop.gls" volumeScale="1.5"/>
+            <motor template="indoorCabinRumble" />
+            <gearbox template="transmissionSmall" file="sounds/GatorTransmissionLoop.wav" pitchScale="0.8" volumeScale="0.45" />
+            <gearLeverStart template="gearDisengaged"/>
+            <gearLeverEnd template="gearEngaged"/>
+            <gearGroupLeverStart template="gearDisengaged"/>
+            <gearGroupLeverEnd template="gearEngaged"/>
+        </sounds>
+    </motorized>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="attach01" />
+            <hydraulic template="hydraulicOpen01" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound template="hornDefault" volumeScale="1.5" linkNodeOffset="0 1 1.5"/>
+    </honk>
+</sounds>

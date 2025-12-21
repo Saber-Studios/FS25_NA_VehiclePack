@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="waterTrailer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>
+            <en>Liquid tanks</en>
+            <de>Flüssigkeitstanks</de>
+            <fr>Réservoirs à liquide</fr>
+        </name>
+        <functions>
+            <function>$l10n_function_tank</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="Gator.xml" />	
+            <combination xmlFilename="Gator2x4.xml" />	
+        </specs>		
+        <image>store_Tank.dds</image>
+        <price>1500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>barrels</category>
+        <vertexBufferMemoryUsage>1061376</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>118784</indexBufferMemoryUsage>
+        <textureMemoryUsage>983040</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>	
+	
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_waterTrailer</typeDesc>
+    <filename>Tank.i3d</filename>
+        <size width="3.5" length="8" height="1.9" lengthOffset="0"/>
+        <components>
+            <component centerOfMass="0 0.2 0.45" solverIterationCount="10" mass="500"/>		
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>	
+	
+    <wheels>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift" upperRotationOffset="0"/>
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift4x2" upperRotationOffset="0">		
+            <objectChange node="Added2x4" visibilityActive="true" visibilityInactive="false" />				
+        </inputAttacherJoint>			
+        </inputAttacherJoints>
+        <support animationName="moveSupport" delayedOnAttach="false"/>	
+        <brakeForce force="0.5"/>
+    </attachable>
+		
+    <animations>
+		<!-- backtipping -->						
+        <!-- move support wheel down/up -->
+        <animation name="moveSupport">
+            <part node="supportCol1" startTime="0.0" endTime="0.001" startTrans="0.194 0.7 0.329" endTrans="0 0.7 0"/>
+            <part node="supportCol1" startTime="0.001" endTime="0.01" startTrans="0 0.7 0" endTrans="0 0.0 0"/>			
+            <part node="supportCol" startTime="0.0" endTime="0.001" startTrans="-0.194 0.7 0.329" endTrans="0 0.7 0"/>
+            <part node="supportCol" startTime="0.001" endTime="0.01" startTrans="0 0.7 0" endTrans="0 0.0 0"/>							
+            <part node="support" startTime="0" endTime="0.05" visibility="false"/>
+            <part node="support" startTime="0.05" endTime="0.1" visibility="true"/>
+            <part node="movingTool1" startTime="0" endTime="0.05" visibility="true"/>
+            <part node="movingTool1" startTime="0.05" endTime="0.1" visibility="false"/>	
+            <sound template="clackVar1"   startTime="0.4"  direction="1"  volumeScale="1.5" pitchScale="1.5" linkNode="attacherJoint"/>
+            <sound template="metalClose"  startTime="0.1"  direction="-1" volumeScale="1.2" pitchScale="2"   linkNode="attacherJoint"/>
+            <sound template="latchSmall"  startTime="0.49"                volumeScale="0.2" pitchScale="1.4" linkNode="attacherJoint"/>				
+        </animation>
+    </animations>		
+    <cylindered>
+    <movingTools>		
+		<!-- backTipping -->	
+        <movingTool node="attacherJoint">
+            <inputAttacherJoint value="true" />
+            <dependentPart node="movingTool1" />			
+        </movingTool>				
+    </movingTools>
+    <movingParts>  		
+        </movingParts>
+    </cylindered>
+    <foldable>
+    </foldable>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
+                <fillUnits>
+                     <fillUnit fillTypeCategories="LIQUID" capacity="2000" allowAILoading="true">
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable>
+        <dischargeNode node="dischargeNode" emptySpeed="300" fillUnitIndex="1" canDischargeToGround="false" allowAIDischarge="true">
+            <info width="1.0" length="0.5" zOffset="0" />
+            <trigger node="dischargeTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+    <fillTriggerVehicle triggerNode="waterTrigger" fillUnitIndex="1" litersPerSecond="300"/>
+
+    <waterTrailer fillUnitIndex="1" fillLitersPerSecond="300" fillNode="Bale_main_component1">
+        <sounds>
+            <refill template="defaultRefuelSound" linkNode="0>" />
+        </sounds>
+    </waterTrailer>
+
+
+	
+    <ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="9"/>
+        <agentAttachment width="1" height="1.0" length="0.6" lengthOffset="-0.15"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-0.85" maxX="0.85" minZ="-0.5" maxZ="0.8" yOffset="0.22" />
+    </foliageBending>		
+
+    <baseColorConfigurations useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="base_color_01" />
+    </baseColorConfigurations>	
+	<designColorConfigurations useDefaultColors="true" defaultColorIndex="8">
+		<material materialSlotName="base_color_02" />
+	</designColorConfigurations>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>	
+    <i3dMappings>
+        <i3dMapping id="Bale_main_component1" node="0>" />	
+        <i3dMapping id="attacherMove" node="0>0|1" />		
+        <i3dMapping id="moveSupport" node="0>1"/>
+        <i3dMapping id="moveSupport1" node="0>1|0"/>
+        <i3dMapping id="supportCol" node="0>1|0|0"/>
+        <i3dMapping id="moveSupport2" node="0>1|1"/>
+        <i3dMapping id="supportCol1" node="0>1|1|0"/>
+        <i3dMapping id="support" node="0>1|2"/>		
+        <i3dMapping id="attacherJoint" node="0>0|1|0" />		
+        <i3dMapping id="movingTool1" node="0>0|4"/>
+        <i3dMapping id="movingTool2" node="0>0|0"/>
+        <i3dMapping id="movingTool3" node="0>0|0|1"/>		
+        <i3dMapping id="movingPart1" node="0>0|4|0" />	
+        <i3dMapping id="Added2x4" node="0>0|0|5" />	
+        <i3dMapping id="dischargeNode" node="0>0|0|8|0" />
+        <i3dMapping id="dischargeTrigger" node="0>0|0|8|1" />
+        <i3dMapping id="waterTrigger" node="0>0|0|9" />
+        <i3dMapping id="exactFillRootNode" node="0>0|0|10" />
+        <i3dMapping id="Tank" node="0>0|0|7" />		
+    </i3dMappings>
+</vehicle>	

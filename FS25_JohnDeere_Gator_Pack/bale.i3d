@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bale.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="Textures/Gator_Added_normal.dds"/>
+    <File fileId="4" filename="Textures/Gator_Added_vmask.dds"/>
+    <File fileId="17" filename="Textures/Gator_normal.dds"/>
+    <File fileId="18" filename="Textures/Gator_vmask.dds"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="25" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="24" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="gator_calibratedGlossPaint_mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="Gator_calibratedGlossPaint_mat" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.024 0.213 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="gator_calibratedGlossPaint_mat" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="Gator_mat_chrome_mat" materialId="8" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0" customShaderId="5">
+      <Custommap name="detailSpecular" fileId="22"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+    </Material>
+    <Material name="Gator_mat_metalPaintedBlack_mat" materialId="9" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Gator_mat_silverScratched_mat" materialId="10" diffuseColor="0.8 0.8 0.8 1" specularColor="0.501961 1 0" customShaderId="5">
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+    </Material>
+    <Material name="Gator_mat_silverScratched_mat" materialId="11" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+    </Material>
+    <Material name="Gator_rubberBlack_mat" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="24"/>
+      <Custommap name="detailNormal" fileId="25"/>
+      <Custommap name="detailDiffuse" fileId="26"/>
+      <CustomParameter name="colorScale" value="0.001 0.001 0.001"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.466667 0.466667 0.466667 1">
+    </Material>
+    <Material name="lambert1" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bale.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="Bale_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" objectMask="0xffff" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13">
+      <TransformGroup name="Base" nodeId="35">
+        <Shape name="Tipper_vis" translation="0 0.84 -0.441" shapeId="2" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="added" translation="0 0 0.0630955" shapeId="3" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <TransformGroup name="refPoint" translation="0 0.0243772 0.252719" rotation="108.931 -0 0" nodeId="38"/>
+          <TransformGroup name="tensionBelts" translation="-3.05176e-07 0.570741 0.256829" nodeId="39">
+            <TransformGroup name="tensionBeltStart1" translation="0.77851 -0.435387 0.545393" rotation="0 -90 0" nodeId="40">
+              <TransformGroup name="tensionBeltEnd1" translation="-1.18573e-16 0 1.55762" nodeId="41"/>
+            </TransformGroup>
+            <TransformGroup name="tensionBeltStart1" translation="0.77851 -0.435387 -0.234343" rotation="0 -90 0" nodeId="42">
+              <TransformGroup name="tensionBeltEnd1" translation="-1.18573e-16 0 1.55762" nodeId="43"/>
+            </TransformGroup>
+            <Shape name="beltActivationTrigger" translation="0 0.313212 1.72346" shapeId="4" visibility="false" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+          </TransformGroup>
+          <TransformGroup name="collisions" translation="-3.05176e-07 -0.660662 2.129" nodeId="45">
+            <Shape name="colPart4" shapeId="5" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+            <Shape name="colPart4" translation="0 0.0404987 -1.77025e-09" rotation="-90 -0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13"/>
+          </TransformGroup>
+          <Shape name="added" translation="0 0 0.843833" shapeId="7" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <Shape name="Added2x4" translation="0 -0.84 0.441" rotation="90 -0 0" shapeId="8" visibility="false" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="backAdd" translation="0 -0.00203413 -0.00562075" shapeId="9" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+        <TransformGroup name="attacherJoint" translation="0 0.841 -0.077" rotation="0 90 0" nodeId="51">
+          <TransformGroup name="attacherJoint" nodeId="52"/>
+        </TransformGroup>
+        <TransformGroup name="Decals" translation="0 1.637 4.09314" rotation="0 90 0" clipDistance="50" nodeId="53"/>
+        <TransformGroup name="tensionBelts" nodeId="54"/>
+        <Shape name="Cylinder" translation="0.000608075 0.531656 -0.301" rotation="-71.187 -0 0" shapeId="10" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="7,10">
+          <Shape name="Axe" translation="0 7.45058e-09 -0.272711" shapeId="11" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7,8"/>
+        </Shape>
+        <TransformGroup name="fillAutoAimTargetNode" translation="0 1.31134 -0.0588807" nodeId="57"/>
+        <Shape name="exactFillRootNode" translation="0 1.25199 -0.0588807" shapeId="12" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+      </TransformGroup>
+      <TransformGroup name="moveSupport" nodeId="59">
+        <TransformGroup name="moveSupport1" translation="0.962 0.14 -0.01" nodeId="60">
+          <Shape name="supportCol" shapeId="13" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </TransformGroup>
+        <TransformGroup name="moveSupport2" translation="-0.962 0.140043 -0.0104919" nodeId="62">
+          <Shape name="supportCol2" shapeId="14" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="14"/>
+        </TransformGroup>
+        <TransformGroup name="Support" translation="0 0.0780728 0" scale="1 0.927 1" nodeId="64">
+          <Shape name="Support1" translation="7.10543e-15 0 0.51681" scale="1 1 1.07875" shapeId="15" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6,12,11"/>
+          <Shape name="Support2" translation="0 0 0.517" rotation="180 -5.00896e-06 180" scale="1 1 1.07875" shapeId="16" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6,12,11"/>
+          <Shape name="Support3" translation="0 0 -0.517" scale="1 1 1.07875" shapeId="17" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="6,12,11"/>
+          <Shape name="Support4" translation="0 0 -0.517" rotation="180 -5.00896e-06 180" scale="1 1 1.07875" shapeId="18" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="6,12,11"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="dischargeNodes" translation="0 1.02854e-14 0" nodeId="69">
+        <TransformGroup name="dischargeNodeBack" translation="0 0.927935 -0.769524" nodeId="70"/>
+        <TransformGroup name="dischargeNodeGrainDoor" translation="0 0.92911 -0.829861" nodeId="71"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

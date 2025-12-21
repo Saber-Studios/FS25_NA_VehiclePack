@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="carFillable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>Gator CX</en></name>
+        <specs>
+            <power>23</power>
+            <maxSpeed>48</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_car</function>
+        </functions>
+        <image>store_JohnDeereCX.dds</image>
+        <price>3560</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>cars</category>
+        <vertexBufferMemoryUsage>625408</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>198144</indexBufferMemoryUsage>
+        <textureMemoryUsage>3801088</textureMemoryUsage>
+        <audioMemoryUsage>1650748</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>JohnDeereCX.i3d</filename>
+        <sounds filename="$data/vehicles/kubota/rtvxG850/sounds/rtvxg850.xml" volumeFactor="0.75"/>
+        <size width="1.4" length="2.5" height="1.8" lengthOffset="-0.2"/>
+        <components>
+            <component centerOfMass="0 0.3 -0.2" solverIterationCount="10" mass="650"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="CAR"/>
+        <mapHotspot type="CAR"/>
+    </base>
+
+    <designConfigurations title="$l10n_configuration_beacon" isYesNoOption="true">
+        <designConfiguration name="$l10n_ui_no" price="0">
+            <objectChange node="support_beacon" visibilityActive="false" />
+        </designConfiguration>
+        <designConfiguration name="$l10n_ui_yes" price="10">
+            <objectChange node="support_beacon" visibilityActive="true" />
+        </designConfiguration>
+    </designConfigurations>
+
+    <design2Configurations title="$l10n_configuration_cabin" >
+        <design2Configuration name="$l10n_ui_no" price="0">
+            <objectChange node="cageCabin" visibilityActive="false" />
+            <objectChange node="colPart_01_cage"     compoundChildActive="false" compoundChildInactive="true"/>
+            <objectChange node="colPart_02_cage"     compoundChildActive="false" compoundChildInactive="true"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_valueDefault" price="20">
+            <objectChange node="support_beacon_visual" visibilityActive="true" />
+            <objectChange node="cageCabin" visibilityActive="true" />
+            <objectChange node="colPart_01_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart_02_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_roof" price="40">
+            <objectChange node="support_beacon_visual" visibilityActive="false" />
+            <objectChange node="cageCabin" visibilityActive="true" />
+            <objectChange node="roof" visibilityActive="true" />
+            <objectChange node="colPart_01_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart_02_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_roofWindowSmall" price="50">
+            <objectChange node="support_beacon_visual" visibilityActive="false" />
+            <objectChange node="cageCabin" visibilityActive="true" />
+            <objectChange node="roof" visibilityActive="true" />
+            <objectChange node="window_small" visibilityActive="true" />
+            <objectChange node="support_windowSmall" visibilityActive="true" />
+            <objectChange node="colPart_01_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart_02_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+        </design2Configuration>
+        <design2Configuration name="$l10n_configuration_roofWindowBig" price="50">
+            <objectChange node="support_beacon_visual" visibilityActive="false" />
+            <objectChange node="cageCabin" visibilityActive="true" />
+            <objectChange node="roof" visibilityActive="true" />
+            <objectChange node="window_big" visibilityActive="true" />
+            <objectChange node="support_windowSmall" visibilityActive="true" />
+            <objectChange node="support_windowBig" visibilityActive="true" />
+            <objectChange node="colPart_01_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="colPart_02_cage"     compoundChildActive="true" compoundChildInactive="false"/>
+        </design2Configuration>
+    </design2Configurations>
+
+    <design3Configurations title="$l10n_configuration_bumper" isYesNoOption="true">
+        <design3Configuration name="$l10n_ui_no" price="0">
+            <objectChange node="front_bumper" visibilityActive="false" />
+            <objectChange node="colPart_03_bumper"     compoundChildActive="false" compoundChildInactive="true"/>
+        </design3Configuration>
+        <design3Configuration name="$l10n_configuration_valueDefault" price="20">
+            <objectChange node="front_bumper" visibilityActive="true" />
+            <objectChange node="colPart_03_bumper"     compoundChildActive="true" compoundChildInactive="false"/>
+        </design3Configuration>
+    </design3Configurations>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD" saveId="LIZARD_DEFAULT">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_00.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefaultCustom" price="0" brand="LIZARD" saveId="LIZARD_NEWRIM1">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_00.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_00.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_utvTire" price="0" brand="LIZARD" saveId="LIZARD_UTV1">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_01.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_utvTireCustom" price="0" brand="LIZARD" saveId="LIZARD_NEWRIM2">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_01.xml"  configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_01.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_tractorTire" price="0" brand="LIZARD" saveId="LIZARD_UTV2">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_02.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_tractorTireCustom" price="0" brand="LIZARD" saveId="LIZARD_NEWRIM3">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_02.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_02.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_streetTire" price="0" brand="LIZARD" saveId="LIZARD_UTV3">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_03.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_streetTireRimCustom" price="0" brand="LIZARD" saveId="LIZARD_NEWRIM4">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="wheels/_utv_tire_03.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelLeftRot"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                        <steering node="steeringBar" nodeMinTransX="0.04" nodeMaxTransX="-0.04" />
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="0.24" repr="supportWheelRightRot" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.4" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" configId="newRim" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="wheels/_utv_tire_03.xml" configId="newRim" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="2.27" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.23" spring="4.9" damper="3" transRatio="1" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="45" rotMax="35" rotCenterWheel1="3" rotCenterWheel2="4"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+        </states>
+
+        <realLights>
+            <low>
+                <light node="frontLightLow" lightTypes="0"/>
+            </low>
+            <high>
+                <light node="frontLightHigh" lightTypes="0" />
+                <light node="backLightsHigh1" lightTypes="0"/>
+                <brakeLight node="backLightsHigh1"/>
+                <turnLightLeft node="turnLightLeftFront"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightFront"/>
+                <turnLightRight node="turnLightRightBack"/>
+            </high>
+        </realLights>
+
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="staticLight_frontal" intensity="5"/>
+                <node node="windowFrontLights" intensity="1"/>
+
+                <node node="turnLights_static" intensity="5"/>
+                <node node="windowTurnLights_front" intensity="1"/>
+
+                <node node="brakeLight" intensity="20"/>
+                <node node="windowTurnLights_back" intensity="30"/>
+            </staticLightCompound>
+        </staticLightCompounds>
+
+        <beaconLights>
+            <beaconLight node="beaconLight12_shared" filename="$data/shared/assets/beaconLights/lizard/beaconLight12.xml" mountType="SURFACE" variationName="BLINK"/>
+            <beaconLight node="beaconLight04_shared" filename="$data/shared/assets/beaconLights/lizard/beaconLight04.xml" mountType="POLE" variationName="BLINK"/>
+        </beaconLights>
+
+        <dashboards>
+            <dashboard displayType="ROT"     valueType="lightState" node="button_light"        lightTypes="0" minRot="-90 -20 90" maxRot="-90 -30 90" />
+
+            <dashboard displayType="ROT"     valueType="turnLight" node="button_turn"          minRot="-70 -15 -6" maxRot="-70 15 6"  doInterpolation="true"/>
+        </dashboards>
+    </lights>
+
+    <attacherJoints>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="25 50 50" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <steeringBars forceUsage="false"/>
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailerLow" lowerRotLimit="25 50 50" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <steeringBars forceUsage="false"/>
+        </attacherJoint>
+    </attacherJoints>
+
+    <enterable isTabbable="true">
+        <enterReferenceNode node="johnDeereCX_main_component"/>
+        <exitPoint node="exitPoint"/>
+        <enterAnimation name="enterAnimation"/>
+        <cameras>
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="2.4" transMax="15" translation="0 0 3.5" rotation="-24 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" useOutdoorSounds="true" shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+        <characterNode node="playerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget"/>
+            <target ikChain="leftFoot" targetNode="playerLeftFootTarget"/>
+            <target ikChain="rightArm" targetNode="player_joystickDirectionRef"/>
+            <target ikChain="leftArm" targetNode="playerLeftHandTarget"/>
+        </characterNode>
+
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1">
+            <state node="player_rightFootGas" referenceNode="gasPedal" directionReferenceNode="playerRightFootTargetGasRef"/>
+            <state node="player_rightFootBrake" referenceNode="brakePedal" directionReferenceNode="playerRightFootTargetBrakeRef"/>
+        </characterTargetNodeModifier>
+
+        <passengerSeats>
+            <passengerSeat node="passengerSeat01" exitPoint="passengerSeat01ExitPoint" outdoorCameraIndex="1">
+                <camera node="passengerSeat01Camera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+                <characterNode node="passengerSeat01PlayerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+                    <target ikChain="leftArm"   targetNode="passengerSeat01PlayerLeftHand" poseId="flatFingers"/>
+                    <target ikChain="rightArm"  targetNode="passengerSeat01PlayerRightHand" poseId="flatFingers"/>
+                    <target ikChain="leftFoot"  targetNode="passengerSeat01PlayerLeftFoot" />
+                    <target ikChain="rightFoot" targetNode="passengerSeat01PlayerRightFoot" />
+                </characterNode>
+            </passengerSeat>
+        </passengerSeats>
+
+    </enterable>
+
+    <drivable>
+        <steeringWheel node="steeringWheel" indoorRotation="540" outdoorRotation="40"/>
+        <dashboards>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="gasPedal" minRot="0 0 0" maxRot="-10 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="brakePedal" minRot="0 0 0" maxRot="20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="movingDirection" animName="movingDirection" doInterpolation="true" interpolationSpeed="0.01" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+
+    <licensePlates>
+        <licensePlate node="licensePlateFront" position="FRONT" preferedType="SQUARISH" placementArea="0.12 0.2 0.15 0.2" />
+        <licensePlate node="licensePlateBack"  position="BACK"  preferedType="SQUARISH" placementArea="0.08 0.13 0.1 0.13" />
+    </licensePlates>
+
+    <motorized statsType="car">
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="2" usage="13.0" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.7" wheelIndex1="3" wheelIndex2="4" /> <!-- back left-right -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+
+        <motorConfigurations>
+            <motorConfiguration name="GATOR CX" hp="23" price="0">
+                <motor torqueScale="0.1" minRpm="850" maxRpm="2200" maxForwardSpeed="48" maxBackwardSpeed="22" brakeForce="0.4" lowBrakeForceScale="0.15" dampingRateScale="0.2">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="15.5" maxForwardGearRatio="290" minBackwardGearRatio="37.2" maxBackwardGearRatio="290" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.05" maxRpmColor="0.1 0.1 0.1 0.05" minRpmScale="0.001" maxRpmScale="0.15"/>
+        </exhaustEffects>
+
+        <animationNodes>
+            <animationNode node="pulley01" rotSpeed="1200" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="pulley02" rotSpeed="1200" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="belt"      rotSpeed="300" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+        </animationNodes>
+
+        <motorStartDuration>3200</motorStartDuration>
+
+        <dashboards>
+            <dashboard displayType="MULTI_STATE" valueType="ignitionState" node="key" doInterpolation="true" groups="MOTOR_ACTIVE">
+                <state value="0" rotation="0 0 0"/>
+                <state value="1" rotation="0 -90 0"/>
+                <state value="2" rotation="0 -45 0"/>
+            </dashboard>
+        </dashboards>
+    </motorized>
+
+    <animations>
+        <animation name="tipAnimationBack">
+            <part node="mainTool" startTime="1" endTime="3" startRot="0 0 0" endRot="-37 0 0"/>
+
+            <sound template="metalLowVar2" startTime="1.01" direction="-1" volumeScale="3.0" pitchScale="0.9" linkNode="mainTool"/>
+            <sound template="clackVar4" startTime="1.01" direction="-1" volumeScale="0.7" pitchScale="0.9" linkNode="mainTool"/>
+        </animation>
+
+        <animation name="backDoorAnim">
+            <part node="backDoor" startTime="0" endTime="0.1" startTrans="0.17 0.102 -0.197" endTrans="0.17 0.131 -0.197"/>
+            <part node="backDoor" startTime="0.1" endTime="0.5" startTrans="0.17 0.131 -0.197" endTrans="0.17 0.102 -0.197"/>
+            <part node="backDoor" startTime="0.1" endTime="0.5" startRot="0 0 0" endRot="-90 0 0"/>
+	
+            <sound template="metalClose" startTime="0.01" direction="-1" volumeScale="1.4" pitchScale="1.4" linkNode="backDoor"/>
+            <sound template="metalOpen" startTime="0.01" direction="1" volumeScale="1.6" pitchScale="1.2" linkNode="backDoor"/>
+        </animation>
+
+        <animation name="enterAnimation">
+            <part node="brakePark"       startTime="0.1"    endTime="0.5" startTrans="0.087 0.711 0.406" endTrans="0.087 0.711 0.423"/>
+
+            <sound file="sounds/handBrake.wav"    startTime="0.3"  direction="-1" volumeScale="0.5" pitchScale="1"  linkNode="brakePark"/>
+        </animation>
+
+        <animation name="movingDirection">
+            <part node="joystickDirection" startTime="0" endTime="0.2" startRot="-20 0 1" endRot="0 0 0"/>
+            <part node="joystickDirection" startTime="0.2" endTime="0.5" startRot="0 0 0" endRot="0 0 -12.9"/>
+            <part node="joystickDirection" startTime="0.5" endTime="2" startRot="0 0 -12.9" endRot="20 0 -15"/>
+            <part node="playerSkin" startTime="0.5" endTime="1" startRot="6 0 0" endRot="16 0 5"/>
+            <part node="playerSkin" startTime="1" endTime="2" startRot="16 0 5" endRot="6 0 0"/>
+            <part node="player_joystickDirectionRef" startTime="1" endTime="2" startTrans="0 0.265 0.018" endTrans="0.018 0.41 -0.172"/>
+            <part node="player_joystickDirectionRef" startTime="1" endTime="2" startRot="36.957 40.439 72.676" endRot="70.808 80 100.659"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="backDoor" playSound="false" fillUnitIndex="1" minFillLevel="0" maxFillLevel="0">
+                <controls axis="AXIS_DOOR" invertAxis="true" mouseSpeedFactor="0.5" iconName="TOP_DOOR_ROTATE"/>
+                <animation animSpeed="1" animAcceleration="20" animName="backDoorAnim"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+                    <!-- support wheel front left -->
+            <movingPart node="supportWheelLeft" referencePoint="suspensionBarFrontLeftRef" referenceFrame="suspensionBarFrontLeftRot" isActiveDirty="true" maxUpdateDistance="40"/>
+            <movingPart node="hydraulicFrontLeft" referencePoint="hydraulicFrontLeftRef" referenceFrame="hydraulicFrontLeftRef" isActiveDirty="true" maxUpdateDistance="50">
+                <translatingPart node="hydraulicPunchFrontLeft"/>
+            </movingPart>
+            <movingPart node="axisFrontLeftSpring" referencePoint="hydraulicFrontLeftRef" referenceFrame="hydraulicFrontLeftRef" isActiveDirty="true" scaleZ="true" maxUpdateDistance="40"/>
+                    <!-- support wheel front right -->
+            <movingPart node="supportWheelRight" referencePoint="suspensionBarFrontRighttRef" referenceFrame="suspensionBarFrontRightRot" isActiveDirty="true" maxUpdateDistance="40"/>
+            <movingPart node="hydraulicFrontRight" referencePoint="hydraulicFrontRightRef" referenceFrame="hydraulicFrontRightRef" isActiveDirty="true" maxUpdateDistance="50">
+                <translatingPart node="hydraulicPunchFrontRight"/>
+            </movingPart>
+            <movingPart node="axisFrontRightSpring" referencePoint="hydraulicFrontRightRef" referenceFrame="hydraulicFrontRightRef" isActiveDirty="true" scaleZ="true" maxUpdateDistance="40"/>
+
+            <movingPart node="steeringBarRefLeft" referencePoint="steeringBarRefLeftRef" referenceFrame="steeringBarRefLeftRef" isActiveDirty="true" maxUpdateDistance="40"/>
+            <movingPart node="steeringBarRefRight" referencePoint="steeringBarRefRightRef" referenceFrame="steeringBarRefRightRef" isActiveDirty="true" maxUpdateDistance="40"/>
+        </movingParts>
+
+        <sounds>
+            <actionSound template="metalClose" volumeScale="1.4" pitchScale="1.4" linkNode="backDoor" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="backDoor"/>
+            <actionSound template="metalOpen" volumeScale="1.6" pitchScale="1.2" linkNode="backDoor" actionNames="TOOL_MOVE_START_POS_LIMIT" nodes="backDoor"/>
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="bulk" capacity="450" fillAnimation="backDoorAnim" fillAnimationLoadTime="0">
+                        <exactFillRootNode node="exactFillRootNode"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="25">
+                        <exactFillRootNode node="exactFillRootNodeFuel" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxDelta="0.23" maxAllowedHeapAngle="18" fillUnitIndex="1"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadInfo" width="0.4" length="0.4"/>
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <trailer>
+        <trailerConfigurations>
+            <trailerConfiguration>
+                <trailer>
+                    <tipSide name="$l10n_info_tipSideBack" dischargeNodeIndex="1">
+                        <animation name="tipAnimationBack" speedScale="3" />
+                        <doorAnimation name="backDoorAnim" speedScale="3" startTipTime="0.01" delayedClosing="true"/>
+                    </tipSide>
+                </trailer>
+            </trailerConfiguration>
+        </trailerConfigurations>
+    </trailer>
+
+    <dischargeable>
+        <dischargeNode node="dischargeNodeBack" emptySpeed="115" fillUnitIndex="1" unloadInfoIndex="1" >
+            <info width="1.0" length="0.5" />
+            <effects>
+                <effectNode effectNode="effectGrainBack" materialType="unloading" fadeTime="0.5" />
+                <effectNode effectNode="effectSmokeBack" materialType="unloadingSmoke"     fadeTime="0.5" />
+            </effects>
+        </dischargeNode>
+    </dischargeable>
+
+    <suspensions>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+
+	<tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="0>" width="0.05" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.13" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="tensionBeltStart1" endNode="tensionBeltEnd1" />
+                    <tensionBelt startNode="tensionBeltStart2" endNode="tensionBeltEnd2" />
+
+                    <sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+
+        </default>
+
+        <dashboardLive>
+            <!-- MiniMap -->
+            <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="map" node="dbl_mapPlane" groups="MOTOR_ACTIVE PAGE2"/>
+            <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="posMarker" node="dbl_postion" groups="MOTOR_ACTIVE PAGE2"/>
+            <dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="MOTOR_ACTIVE PAGE2" />
+        </dashboardLive>
+
+    </dashboard>
+
+    <ai>
+        <agent width="1.45" length="2.5" height="1.97" lengthOffset="0.7" frontOffset="1.98"/>
+        <collisionTrigger node="aiCollisionNode" width="2" height="2"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-0.6" maxX="0.6" minZ="-1.4" maxZ="1.05" yOffset="0.05"/>
+    </foliageBending>
+
+    <baseColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="true" defaultColorIndex="26">
+
+        <baseColorConfiguration materialTemplateName="VALTRA_BLUE1" />
+        <baseColorConfiguration materialTemplateName="SKODA_ENERGY_BLUE"/>
+        <baseColorConfiguration materialTemplateName="SKODA_RACE_BLUE_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="LANDINI_BLUE2"/>
+        <baseColorConfiguration materialTemplateName="ISEKI_BLUE1"/>
+
+        <baseColorConfiguration materialTemplateName="VALTRA_RED1" />
+        <baseColorConfiguration materialTemplateName="VALTRA_RED2" />
+        <baseColorConfiguration color="VOLVO_RED1"/>
+        <baseColorConfiguration materialTemplateName="SKODA_VELVET_RED_METALLIC" />
+        <baseColorConfiguration materialTemplateName="MCCORMICK_RED2"/>
+
+        <baseColorConfiguration materialTemplateName="VALTRA_GOLD1" />
+        <baseColorConfiguration materialTemplateName="SKODA_GOLD_BRONZE" />
+        <baseColorConfiguration materialTemplateName="RIGITRAC_YELLOW" />
+        <baseColorConfiguration color="VOLVO_YELLOW1" />
+        <baseColorConfiguration materialTemplateName="INTERNATIONAL_BEIGE1"/>
+
+        <baseColorConfiguration color="VOLVO_GREEN1" />
+        <baseColorConfiguration color="VOLVO_BM_GREEN1"/>
+        <baseColorConfiguration materialTemplateName="VALTRA_OLIVE" />
+
+        <baseColorConfiguration color="VOLVO_PURPLE1"/>
+
+        <baseColorConfiguration materialTemplateName="VALTRA_BLACK2" />
+        <baseColorConfiguration materialTemplateName="VALTRA_BLACK1" />
+        <baseColorConfiguration color="metalPaintedBlack"/>
+        <baseColorConfiguration materialTemplateName="SKODA_BLACK_MAGIC"/>
+        <baseColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+
+        <baseColorConfiguration materialTemplateName="VALTRA_WHITE" />
+        <baseColorConfiguration color="VOLVO_GREY1"/>
+        <baseColorConfiguration materialTemplateName="SKODA_STEEL_GREY"/>
+        <baseColorConfiguration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_MOON_WHITE" />
+
+        <material materialSlotName="1_johnDeereColor01"/>
+    </baseColorConfigurations>
+
+    <designColorConfigurations title="$l10n_configuration_mainTools" useDefaultColors="true" defaultColorIndex="26">
+
+        <designColorConfiguration materialTemplateName="VALTRA_BLUE1" />
+        <designColorConfiguration materialTemplateName="SKODA_ENERGY_BLUE"/>
+        <designColorConfiguration materialTemplateName="SKODA_RACE_BLUE_METALLIC"/>
+        <designColorConfiguration materialTemplateName="LANDINI_BLUE2"/>
+        <designColorConfiguration materialTemplateName="ISEKI_BLUE1"/>
+
+        <designColorConfiguration materialTemplateName="VALTRA_RED1" />
+        <designColorConfiguration materialTemplateName="VALTRA_RED2" />
+        <designColorConfiguration color="VOLVO_RED1"/>
+        <designColorConfiguration materialTemplateName="SKODA_VELVET_RED_METALLIC" />
+        <designColorConfiguration materialTemplateName="MCCORMICK_RED2"/>
+
+        <designColorConfiguration materialTemplateName="VALTRA_GOLD1" />
+        <designColorConfiguration materialTemplateName="SKODA_GOLD_BRONZE" />
+        <designColorConfiguration materialTemplateName="RIGITRAC_YELLOW" />
+        <designColorConfiguration color="VOLVO_YELLOW1"/>
+        <designColorConfiguration materialTemplateName="INTERNATIONAL_BEIGE1"/>
+
+        <designColorConfiguration color="VOLVO_GREEN1" />
+        <designColorConfiguration color="VOLVO_BM_GREEN1"/>
+        <designColorConfiguration materialTemplateName="VALTRA_OLIVE" />
+
+        <designColorConfiguration color="VOLVO_PURPLE1"/>
+
+        <designColorConfiguration materialTemplateName="VALTRA_BLACK2" />
+        <designColorConfiguration materialTemplateName="VALTRA_BLACK1" />
+        <designColorConfiguration color="metalPaintedBlack"/>
+        <designColorConfiguration materialTemplateName="SKODA_BLACK_MAGIC"/>
+        <designColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+
+        <designColorConfiguration materialTemplateName="VALTRA_WHITE" />
+        <designColorConfiguration color="VOLVO_GREY1"/>
+        <designColorConfiguration materialTemplateName="SKODA_STEEL_GREY"/>
+        <designColorConfiguration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC"/>
+        <designColorConfiguration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC"/>
+        <designColorConfiguration materialTemplateName="SKODA_MOON_WHITE" />
+
+        <material materialSlotName="1_johnDeereColor02"/>
+    </designColorConfigurations>
+
+    <designColor2Configurations title="$l10n_configuration_seat" useDefaultColors="true" defaultColorIndex="8">
+
+        <designColor2Configuration materialTemplateName="VALTRA_BLUE1" />
+        <designColor2Configuration materialTemplateName="SKODA_ENERGY_BLUE"/>
+        <designColor2Configuration materialTemplateName="SKODA_RACE_BLUE_METALLIC"/>
+        <designColor2Configuration materialTemplateName="LANDINI_BLUE2"/>
+        <designColor2Configuration materialTemplateName="ISEKI_BLUE1"/>
+
+        <designColor2Configuration materialTemplateName="VALTRA_RED1" />
+        <designColor2Configuration materialTemplateName="VALTRA_RED2" />
+        <designColor2Configuration color="VOLVO_RED1"/>
+        <designColor2Configuration materialTemplateName="SKODA_VELVET_RED_METALLIC" />
+        <designColor2Configuration materialTemplateName="MCCORMICK_RED2"/>
+
+        <designColor2Configuration materialTemplateName="VALTRA_GOLD1" />
+        <designColor2Configuration materialTemplateName="SKODA_GOLD_BRONZE" />
+        <designColor2Configuration materialTemplateName="RIGITRAC_YELLOW" />
+        <designColor2Configuration color="VOLVO_YELLOW1"/>
+        <designColor2Configuration materialTemplateName="INTERNATIONAL_BEIGE1"/>
+
+        <designColor2Configuration color="VOLVO_GREEN1" />
+        <designColor2Configuration color="VOLVO_BM_GREEN1"/>
+        <designColor2Configuration materialTemplateName="VALTRA_OLIVE" />
+
+        <designColor2Configuration color="VOLVO_PURPLE1"/>
+
+        <designColor2Configuration materialTemplateName="VALTRA_BLACK2" />
+        <designColor2Configuration materialTemplateName="VALTRA_BLACK1" />
+        <designColor2Configuration color="metalPaintedBlack"/>
+        <designColor2Configuration materialTemplateName="SKODA_BLACK_MAGIC"/>
+        <designColor2Configuration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+
+        <designColor2Configuration materialTemplateName="VALTRA_WHITE" />
+        <designColor2Configuration color="VOLVO_GREY1"/>
+        <designColor2Configuration materialTemplateName="SKODA_STEEL_GREY"/>
+        <designColor2Configuration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC"/>
+        <designColor2Configuration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC"/>
+        <designColor2Configuration materialTemplateName="SKODA_MOON_WHITE" />
+        <designColor2Configuration materialTemplateName="silverScratched" />
+
+        <material materialSlotName="1_johnDeereSeatColor" materialTemplateUseColorOnly="true"/>
+    </designColor2Configurations>
+
+    <rimColorConfigurations useDefaultColors="true" defaultColorIndex="8">
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_CHROME" price="1000"/>
+        <rimColorConfiguration materialTemplateName="RIM_DEFAULT"/>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_WHITE"/>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK"/>
+        <rimColorConfiguration materialTemplateName="silverScratched" />
+
+        <rimColorConfiguration materialTemplateName="VALTRA_BLUE1" />
+        <rimColorConfiguration materialTemplateName="SKODA_ENERGY_BLUE"/>
+        <rimColorConfiguration materialTemplateName="SKODA_RACE_BLUE_METALLIC"/>
+        <rimColorConfiguration materialTemplateName="LANDINI_BLUE2"/>
+        <rimColorConfiguration materialTemplateName="ISEKI_BLUE1"/>
+
+        <rimColorConfiguration materialTemplateName="VALTRA_RED1" />
+        <rimColorConfiguration materialTemplateName="VALTRA_RED2" />
+        <rimColorConfiguration color="VOLVO_RED1"/>
+        <rimColorConfiguration materialTemplateName="SKODA_VELVET_RED_METALLIC" />
+        <rimColorConfiguration materialTemplateName="MCCORMICK_RED2"/>
+
+        <rimColorConfiguration materialTemplateName="VALTRA_GOLD1" />
+        <rimColorConfiguration materialTemplateName="SKODA_GOLD_BRONZE" />
+        <rimColorConfiguration materialTemplateName="RIGITRAC_YELLOW" />
+        <rimColorConfiguration color="VOLVO_YELLOW1"/>
+        <rimColorConfiguration materialTemplateName="INTERNATIONAL_BEIGE1"/>
+
+        <rimColorConfiguration color="VOLVO_GREEN1" />
+        <rimColorConfiguration color="VOLVO_BM_GREEN1"/>
+        <rimColorConfiguration materialTemplateName="VALTRA_OLIVE" />
+
+        <rimColorConfiguration color="VOLVO_PURPLE1"/>
+
+        <rimColorConfiguration materialTemplateName="VALTRA_BLACK2" />
+        <rimColorConfiguration materialTemplateName="VALTRA_BLACK1" />
+        <rimColorConfiguration color="metalPaintedBlack"/>
+        <rimColorConfiguration materialTemplateName="SKODA_BLACK_MAGIC"/>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+
+        <rimColorConfiguration materialTemplateName="VALTRA_WHITE" />
+        <rimColorConfiguration color="VOLVO_GREY1"/>
+        <rimColorConfiguration materialTemplateName="SKODA_STEEL_GREY"/>
+        <rimColorConfiguration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC" />
+        <rimColorConfiguration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC"/>
+        <rimColorConfiguration materialTemplateName="SKODA_MOON_WHITE" />
+    </rimColorConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+<i3dMappings>
+  <i3dMapping id="johnDeereCX_main_component" node="0>" />
+  <i3dMapping id="johnDeereGatorCS2_vis" node="0>0" />
+  <i3dMapping id="wheels" node="0>0|0" />
+  <i3dMapping id="axisFrontLeftRot" node="0>0|0|0" />
+  <i3dMapping id="supportWheelLeftRot" node="0>0|0|0|0" />
+  <i3dMapping id="wheelFrontLeft" node="0>0|0|0|0|0" />
+  <i3dMapping id="suspensionBarFrontLeftRef" node="0>0|0|0|0|1" />
+  <i3dMapping id="steeringBarRefLeft" node="0>0|0|0|0|2" />
+  <i3dMapping id="suspensionBarFrontLeftRot" node="0>0|0|0|1" />
+  <i3dMapping id="supportWheelLeft" node="0>0|0|0|1|0" />
+  <i3dMapping id="hydraulicFrontLeft" node="0>0|0|0|1|0|0" />
+  <i3dMapping id="hydraulicPunchFrontLeft" node="0>0|0|0|1|0|0|0" />
+  <i3dMapping id="axisFrontLeftSpring" node="0>0|0|0|1|0|0|1" />
+  <i3dMapping id="axisFrontRightRot" node="0>0|0|1" />
+  <i3dMapping id="supportWheelRightRot" node="0>0|0|1|0" />
+  <i3dMapping id="wheelFrontRight" node="0>0|0|1|0|0" />
+  <i3dMapping id="suspensionBarFrontRighttRef" node="0>0|0|1|0|1" />
+  <i3dMapping id="steeringBarRefRight" node="0>0|0|1|0|2" />
+  <i3dMapping id="suspensionBarFrontRightRot" node="0>0|0|1|1" />
+  <i3dMapping id="supportWheelRight" node="0>0|0|1|1|0" />
+  <i3dMapping id="hydraulicFrontRight" node="0>0|0|1|1|0|0" />
+  <i3dMapping id="hydraulicPunchFrontRight" node="0>0|0|1|1|0|0|0" />
+  <i3dMapping id="axisFrontRightSpring" node="0>0|0|1|1|0|0|1" />
+  <i3dMapping id="wheelBackLeft" node="0>0|0|2" />
+  <i3dMapping id="wheelBackRight" node="0>0|0|3" />
+  <i3dMapping id="steeringBar" node="0>0|0|4" />
+  <i3dMapping id="steeringBarRefLeftRef" node="0>0|0|4|0" />
+  <i3dMapping id="steeringBarRefRightRef" node="0>0|0|4|1" />
+  <i3dMapping id="lights" node="0>0|1" />
+  <i3dMapping id="staticLights" node="0>0|1|0" />
+  <i3dMapping id="windowFrontLights" node="0>0|1|0|0" />
+  <i3dMapping id="windowTurnLights_front" node="0>0|1|0|1" />
+  <i3dMapping id="staticLight_frontal" node="0>0|1|0|2" />
+  <i3dMapping id="turnLights_static" node="0>0|1|0|3" />
+  <i3dMapping id="defaultLights" node="0>0|1|1" />
+  <i3dMapping id="frontLightLow" node="0>0|1|1|0" />
+  <i3dMapping id="frontLightHigh" node="0>0|1|1|1" />
+  <i3dMapping id="frontLightHigh1" node="0>0|1|1|1|0" />
+  <i3dMapping id="turnLights" node="0>0|1|2" />
+  <i3dMapping id="turnLightLeftFront" node="0>0|1|2|0" />
+  <i3dMapping id="turnLightRightFront" node="0>0|1|2|1" />
+  <i3dMapping id="cameras" node="0>0|2" />
+  <i3dMapping id="outdoorCameraTarget" node="0>0|2|0" />
+  <i3dMapping id="outdoorCamera1" node="0>0|2|0|0" />
+  <i3dMapping id="indoorCamera1" node="0>0|2|1" />
+  <i3dMapping id="cameraRaycastNode1" node="0>0|2|2" />
+  <i3dMapping id="cameraRaycastNode2" node="0>0|2|3" />
+  <i3dMapping id="cameraRaycastNode3" node="0>0|2|4" />
+  <i3dMapping id="shadowFocusBox" node="0>0|2|5" />
+  <i3dMapping id="steeringBase" node="0>0|3" />
+  <i3dMapping id="steeringWheel" node="0>0|3|0" />
+  <i3dMapping id="playerLeftHandTarget" node="0>0|3|0|0" />
+  <i3dMapping id="playerRightHandTarget" node="0>0|3|0|1" />
+  <i3dMapping id="playerRoot" node="0>0|4" />
+  <i3dMapping id="player_skin_suspension" node="0>0|4|0" />
+  <i3dMapping id="playerSkin" node="0>0|4|0|0" />
+  <i3dMapping id="playerRightFootTarget" node="0>0|4|1" />
+  <i3dMapping id="playerLeftFootTarget" node="0>0|4|2" />
+  <i3dMapping id="player_rightFootGas" node="0>0|4|3" />
+  <i3dMapping id="player_rightFootBrake" node="0>0|4|4" />
+  <i3dMapping id="licensePlateFront" node="0>0|5" />
+  <i3dMapping id="licensePlateBack" node="0>0|6" />
+  <i3dMapping id="exitPoint" node="0>0|7" />
+  <i3dMapping id="exactFillRootNodeFuel" node="0>0|8" />
+  <i3dMapping id="exhaustParticle" node="0>0|9" />
+  <i3dMapping id="attacherJoints" node="0>0|10" />
+  <i3dMapping id="attacher" node="0>0|10|0" />
+  <i3dMapping id="trailerAttacherJointBack" node="0>0|10|0|0" />
+  <i3dMapping id="colPart02" node="0>0|10|0|1" />
+  <i3dMapping id="movingParts" node="0>0|11" />
+  <i3dMapping id="mainTool" node="0>0|11|0" />
+  <i3dMapping id="backDoor" node="0>0|11|0|0" />
+  <i3dMapping id="visualsBackDoor" node="0>0|11|0|0|0" />
+  <i3dMapping id="doorMainPart" node="0>0|11|0|0|0|0" />
+  <i3dMapping id="decals_door" node="0>0|11|0|0|0|1" />
+  <i3dMapping id="colPart_door" node="0>0|11|0|0|1" />
+  <i3dMapping id="fillUnit" node="0>0|11|0|1" />
+  <i3dMapping id="unloadInfo" node="0>0|11|0|1|0" />
+  <i3dMapping id="fillVolume" node="0>0|11|0|1|1" />
+  <i3dMapping id="exactFillRootNode" node="0>0|11|0|1|2" />
+  <i3dMapping id="dischargeNodeBack" node="0>0|11|0|1|3" />
+  <i3dMapping id="effectNodesBack" node="0>0|11|0|1|4" />
+  <i3dMapping id="effectGrainBack" node="0>0|11|0|1|4|0" />
+  <i3dMapping id="effectSmokeBack" node="0>0|11|0|1|4|1" />
+  <i3dMapping id="tensionBelts" node="0>0|11|0|2" />
+  <i3dMapping id="tensionBeltStart1" node="0>0|11|0|2|0" />
+  <i3dMapping id="tensionBeltEnd1" node="0>0|11|0|2|0|0" />
+  <i3dMapping id="tensionBeltStart2" node="0>0|11|0|2|1" />
+  <i3dMapping id="tensionBeltEnd2" node="0>0|11|0|2|1|0" />
+  <i3dMapping id="beltActivationTrigger" node="0>0|11|0|2|2" />
+  <i3dMapping id="lightsMainTool" node="0>0|11|0|3" />
+  <i3dMapping id="backLightsMainTool" node="0>0|11|0|3|0" />
+  <i3dMapping id="backLightsHigh1" node="0>0|11|0|3|0|0" />
+  <i3dMapping id="backLightsHigh2" node="0>0|11|0|3|0|0|0" />
+  <i3dMapping id="turnLightsMainTool" node="0>0|11|0|3|1" />
+  <i3dMapping id="turnLightLeftBack" node="0>0|11|0|3|1|0" />
+  <i3dMapping id="turnLightRightBack" node="0>0|11|0|3|1|1" />
+  <i3dMapping id="staticLightsMainTool" node="0>0|11|0|3|2" />
+  <i3dMapping id="brakeLight" node="0>0|11|0|3|2|0" />
+  <i3dMapping id="windowTurnLights_back" node="0>0|11|0|3|2|1" />
+  <i3dMapping id="movingMainTool" node="0>0|11|0|4" />
+  <i3dMapping id="visualsMainTool" node="0>0|11|0|5" />
+  <i3dMapping id="decals_mainpart" node="0>0|11|0|5|0" />
+  <i3dMapping id="collisions" node="0>0|11|0|6" />
+  <i3dMapping id="colPart_mainPart01" node="0>0|11|0|6|0" />
+  <i3dMapping id="colPart_mainPart02" node="0>0|11|0|6|1" />
+  <i3dMapping id="colPart_mainPart03" node="0>0|11|0|6|2" />
+  <i3dMapping id="colPart_mainPart04" node="0>0|11|0|6|3" />
+  <i3dMapping id="engineRot" node="0>0|11|1" />
+  <i3dMapping id="pulley01" node="0>0|11|1|0" />
+  <i3dMapping id="pulley02" node="0>0|11|1|1" />
+  <i3dMapping id="belt" node="0>0|11|1|2" />
+  <i3dMapping id="hydraulicFrontLeftRef" node="0>0|11|2" />
+  <i3dMapping id="hydraulicFrontRightRef" node="0>0|11|3" />
+  <i3dMapping id="cabinParts" node="0>0|12" />
+  <i3dMapping id="gasPedal" node="0>0|12|0" />
+  <i3dMapping id="playerRightFootTargetGasRef" node="0>0|12|0|0" />
+  <i3dMapping id="brakePedal" node="0>0|12|1" />
+  <i3dMapping id="playerRightFootTargetBrakeRef" node="0>0|12|1|0" />
+  <i3dMapping id="joystickDirection" node="0>0|12|2" />
+  <i3dMapping id="player_joystickDirectionRef" node="0>0|12|2|0" />
+  <i3dMapping id="configurations" node="0>0|13" />
+  <i3dMapping id="cageConfigurations" node="0>0|13|0" />
+  <i3dMapping id="cageCabin" node="0>0|13|0|0" />
+  <i3dMapping id="roof" node="0>0|13|0|1" />
+  <i3dMapping id="beaconLight12_shared" node="0>0|13|0|1|0" />
+  <i3dMapping id="front_bumper" node="0>0|13|1" />
+  <i3dMapping id="windowCage" node="0>0|13|2" />
+  <i3dMapping id="window_small" node="0>0|13|2|0" />
+  <i3dMapping id="window_big" node="0>0|13|2|1" />
+  <i3dMapping id="support_windowBig" node="0>0|13|2|2" />
+  <i3dMapping id="support_windowSmall" node="0>0|13|2|3" />
+  <i3dMapping id="support_beacon_visual" node="0>0|13|3" />
+  <i3dMapping id="support_beacon" node="0>0|13|3|0" />
+  <i3dMapping id="beaconLight04_shared" node="0>0|13|3|0|0" />
+  <i3dMapping id="dashborards" node="0>0|14" />
+  <i3dMapping id="keyRot" node="0>0|14|0" />
+  <i3dMapping id="key" node="0>0|14|0|0" />
+  <i3dMapping id="button_turn" node="0>0|14|1" />
+  <i3dMapping id="decal_turn" node="0>0|14|1|0" />
+  <i3dMapping id="button_light" node="0>0|14|2" />
+  <i3dMapping id="decal_light" node="0>0|14|2|0" />
+    <!-- dashboard live -->
+  <i3dMapping id="dbl_mapPlane" node="0>0|16|4|0|0|1"/>
+  <i3dMapping id="dbl_position" node="0>0|16|4|0|0|1|0"/>
+    <i3dMapping id="dbl_compass" node="0>0|16|4|0|0|0" />
+  <i3dMapping id="brakePark" node="0>0|14|3" />
+  <i3dMapping id="ai" node="0>0|15" />
+  <i3dMapping id="aiCollisionNode" node="0>0|15|0" />
+  <i3dMapping id="visuals" node="0>0|16" />
+  <i3dMapping id="decals_" node="0>0|16|0" />
+  <i3dMapping id="interiorParts" node="0>0|16|1" />
+  <i3dMapping id="hoses" node="0>0|16|2" />
+  <i3dMapping id="plastic_parts" node="0>0|16|3" />
+  <i3dMapping id="passengerSeats" node="0>0|17" />
+  <i3dMapping id="passengerSeat01" node="0>0|17|0" />
+  <i3dMapping id="passengerSeat01Camera" node="0>0|17|0|0" />
+  <i3dMapping id="passengerSeat01PlayerSkin" node="0>0|17|0|1" />
+  <i3dMapping id="passengerSeat01PlayerLeftFoot" node="0>0|17|0|2" />
+  <i3dMapping id="passengerSeat01PlayerRightFoot" node="0>0|17|0|3" />
+  <i3dMapping id="passengerSeat01PlayerLeftHand" node="0>0|17|0|4" />
+  <i3dMapping id="passengerSeat01PlayerRightHand" node="0>0|17|0|5" />
+  <i3dMapping id="passengerSeat01ExitPoint" node="0>0|17|0|6" />
+  <i3dMapping id="collision" node="0>1" />
+  <i3dMapping id="colPart01" node="0>1|0" />
+  <i3dMapping id="colPart_01_cage" node="0>1|1" />
+  <i3dMapping id="colPart_02_cage" node="0>1|2" />
+  <i3dMapping id="colPart_03_bumper" node="0>1|3" />
+</i3dMappings>
+</vehicle>

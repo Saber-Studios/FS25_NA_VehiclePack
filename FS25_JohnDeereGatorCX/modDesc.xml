@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Dumpy</author>
+
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>John Deere Gator THQ</en>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[The John Deere Gator CX is a small vehicle specifically designed for garden work or for large farms that require agility in movement.
+
+Configurations:
+- Various colors
+- Tires
+- Rims
+- Cabin
+- Bumper
+- Signal lights
+- Passenger
+
+Maximum speed: 48 km/h
+Capacity: 450 l
+Price: $ 3,560]]>
+        </en>
+        <de>
+            <![CDATA[Der John Deere Gator CX ist ein kleines Fahrzeug speziell für die Arbeit in Gärten oder für große landwirtschaftliche Betriebe, die eine agile Bewegung erfordern.
+
+Einstellungen:
+- Verschiedene Farben
+- Reifen
+- Reifen
+- Kabine
+- Stoßstange
+- Signalleuchten
+- Passagier
+
+Höchstgeschwindigkeit: 48 km/h
+Fassungsvermögen: 450 l
+Preis: 3.560 €]]>
+        </de>
+        <fr>
+            <![CDATA[Le John Deere Gator CX est un petit véhicule spécialement conçu pour les travaux dans les jardins ou pour les grandes fermes qui ont besoin d'agilité dans leurs mouvements.
+
+Paramètres:
+- Diverses couleurs
+- Pneus
+- Cerceaux
+- Cabine
+- Pare-chocs
+- Feux de signalisation
+- Passager
+
+Vitesse maximale : 48 km/h
+Capacité : 450 litres
+Prix : 3.560 €]]>
+        </fr>
+        <br>
+            <![CDATA[O John Deere Gator CX é um veiculo de pequeno porte específico pra trabalhos em jardins ou pra grandes fazendas que precisam de agilidade em locomoção.
+
+Configurações:
+- Diversar cores
+- Pneus
+- Aros
+- Cabine
+- Parachoque
+- Luzes de sinalização
+- Passageiro
+
+Velocidade máxima: 48 Km/h
+Capacidade: 450 l
+Preço: 3.560 $]]>
+        </br>
+    </description>
+
+    <iconFilename>icon_JohnDeereCX.png</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="JohnDeereCX.xml"/>
+    </storeItems>
+
+    <l10n>
+        <text name="configuration_cabin"><br>Cabine</br><en>Cabin</en><de>Kabine</de><fr>Cabine</fr></text>
+        <text name="configuration_roofWindowSmall"><br>Cabine com vidro pequeno</br><en>Cabin with small glass</en><de>Kabine mit kleinem Glas</de><fr>Cabine avec petite vitre</fr></text>
+        <text name="configuration_roofWindowBig"><br>Cabine com vidro grande</br><en>Cabin with large glass</en><de>Kabine mit großem Glas</de><fr>Cabine avec grande vitre</fr></text>
+        <text name="configuration_bumper"><br>Parachoque</br><en>Bumper</en><de>Stoßstange</de><fr>Pare-chocs</fr></text>
+        <text name="configuration_valueDefaultCustom"><br>Padrão com aro custom</br><en>Standard with custom rim</en><de>Standardmäßig mit kundenspezifischer Felge</de><fr>Standard avec jante personnalisée</fr></text>
+        <text name="configuration_utvTire"><br>UTV</br><en>UTV</en><de>UTV</de><fr>UTV</fr></text>
+        <text name="configuration_utvTireCustom"><br>UTV aro custom</br><en>UTV custom rim</en><de>UTV-Custom-Felge</de><fr>Jante personnalisée UTV</fr></text>
+        <text name="configuration_tractorTire"><br>Estilo trator</br><en>Tractor style</en><de>Traktorstil</de><fr>Style tracteur</fr></text>
+        <text name="configuration_tractorTireCustom"><br>Estilo trator aro custom</br><en>Tractor style custom rim</en><de>Kundenspezifischer Felgentraktor-Stil</de><fr>Style de tracteur à jante personnalisé</fr></text>
+        <text name="configuration_streetTire"><br>Pneus de rua</br><en>Street tires</en><de>Straßenreifen</de><fr>Pneus routiers</fr></text>
+        <text name="configuration_streetTireRimCustom"><br>Pneus de rua com aro custom</br><en>Street tires with custom rims</en><de>Straßenreifen mit kundenspezifischen Felgen</de><fr>Pneus routiers avec jantes personnalisées</fr></text>
+        <text name="configuration_mainTools"><br>Carroceria</br><en>Main Tools</en><de>Körper</de><fr>Corps</fr></text>
+        <text name="configuration_seat"><br>Bancos</br><en>Seat</en><de>Sitz</de><fr>Siège</fr></text>
+    </l10n>
+
+</modDesc>

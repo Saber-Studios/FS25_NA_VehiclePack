@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="implement">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>3P LIFTER</name>
+        <functions>
+            <function>$l10n_function_trailedLifter</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="Gator.xml" />	
+            <combination xmlFilename="Gator2x4.xml" />	
+            <combination xmlFilename="BladeLeveler.xml" />	
+            <combination xmlFilename="BladeSnow.xml" />					
+        </specs>		
+        <image>store_3p.dds</image>
+        <price>1000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>misc</category>
+        <vertexBufferMemoryUsage>1659648</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>183296</indexBufferMemoryUsage>
+        <textureMemoryUsage>983040</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>	
+	
+	
+    <base>
+        <typeDesc>3P LIFTER</typeDesc>
+    <filename>3p.i3d</filename>
+        <size width="3.5" length="8" height="1.1" lengthOffset="0"/>
+        <components>
+            <component centerOfMass="0 0.2 0.35" solverIterationCount="10" mass="500"/>		
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>	
+	
+    <wheels>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift" upperRotationOffset="0"/>
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift4x2" upperRotationOffset="0">		
+            <objectChange node="Added2x4" visibilityActive="true" visibilityInactive="false" />				
+        </inputAttacherJoint>			
+        </inputAttacherJoints>
+        <support animationName="moveSupport" delayedOnAttach="false"/>	
+        <brakeForce force="0.5"/>
+    </attachable>
+
+    <attacherJoints comboDuration="2">
+        <attacherJoint node="attacherJointFront" upperRotationOffset="-0.16" moveTime="2.5" comboTime="0">
+            <distanceToGround lower="0.33" upper="1.00"/>
+            <rotationNode node="attacherJointFrontRot" lowerRotation="20 0 0" upperRotation="-30 0 0"/>
+            <rotationNode2 node="attacherJointFrontRot2"/>
+            <bottomArm rotationNode="attacherJointFrontArmBottom" translationNode="bottomArmFront" referenceNode="referencePointFrontBottom" zScale="1" startRotation="-30 0 0" categoryRange="2"/>
+            <topArm baseNode="attacherJointFrontArmTop" filename="$data/shared/assets/upperLinks/johnDeereUpperlink.xml" zScale="1" materialTemplateName="SHARED_BLACK2"/>
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <objectChange node="3p_main_component1" massActive="1000" massInactive="500"/>	
+            <objectChange node="3p_main_component1" centerOfMassActive="0 0.2 1.0" centerOfMassInactive="0 0.2 0.35"/>	
+        <sounds>
+            <attach template="ATTACH_01" linkNode="0>" />
+        </sounds>			
+        </attacherJoint>
+    </attacherJoints>
+    <powerTakeOffs>
+        <output attacherJointIndices="1" outputNode="ptoBack"/>
+    </powerTakeOffs>		
+    <animations>						
+        <!-- move support wheel down/up -->
+        <animation name="moveSupport">
+            <part node="supportCol1" startTime="0.0" endTime="0.001" startTrans="0.194 0.7 0.329" endTrans="0 0.7 0"/>
+            <part node="supportCol1" startTime="0.001" endTime="0.01" startTrans="0 0.7 0" endTrans="0 0.0 0"/>			
+            <part node="supportCol" startTime="0.0" endTime="0.001" startTrans="-0.194 0.7 0.329" endTrans="0 0.7 0"/>
+            <part node="supportCol" startTime="0.001" endTime="0.01" startTrans="0 0.7 0" endTrans="0 0.0 0"/>							
+            <part node="support" startTime="0" endTime="0.05" visibility="false"/>
+            <part node="support" startTime="0.05" endTime="0.1" visibility="true"/>		
+
+            <sound template="palletsFillPlastic" startTime="0.49" direction="1"  volumeScale="4"   pitchScale="1.4" linkNode="attacherJoint"/>
+            <sound template="clackVar5"          startTime="0.2"  direction="1"  volumeScale="1"   pitchScale="1.3" linkNode="attacherJoint"/>
+            <sound template="clackVar4"          startTime="0.01" direction="-1" volumeScale="1.6" pitchScale="1.4" linkNode="attacherJoint"/>
+            <sound template="clackVar6"          startTime="0.24" direction="-1" volumeScale="0.7" pitchScale="1.2" linkNode="attacherJoint"/>			
+        </animation>
+    </animations>		
+    <cylindered>
+    <movingTools>			
+        <movingTool node="attacherJoint">
+            <inputAttacherJoint value="true" />		
+        </movingTool>		
+            <movingTool node="attacherJointFrontArmBottom">
+                <dependentPart node="bottomLinkHydraulic"/>
+            </movingTool>	
+    </movingTools>
+    <movingParts>  		
+            <movingPart node="bottomLinkHydraulic" referencePoint="bottomLinkHydraulicRef" referenceFrame="bottomLinkHydraulicRef">
+                <translatingPart node="bottomLinkHydraulicPunch"/>
+            </movingPart>		
+        </movingParts>
+    </cylindered>
+    <connectionHoses>
+        <target attacherJointIndices="1" type="airDoubleRed" node="airDoubleOrange" socket="air_red"/>
+        <target attacherJointIndices="1" type="airDoubleYellow" node="airDoubleYellow" socket="air_yellow"/>
+        <target attacherJointIndices="1" type="electric" node="electricBack" socket="electric"/>		
+        <target attacherJointIndices="1" type="hydraulicIn" node="hydraulic03_in" socket="hydraulic01"/>
+        <target attacherJointIndices="1" type="hydraulicOut" node="hydraulic03_out" socket="hydraulic01"/>
+        <target attacherJointIndices="1" type="hydraulicIn" node="hydraulic02_in" socket="hydraulic01"/>
+        <target attacherJointIndices="1" type="hydraulicOut" node="hydraulic02_out" socket="hydraulic01"/>		
+    </connectionHoses>
+
+	
+    <ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="9"/>
+        <agentAttachment width="1" height="1.0" length="0.6" lengthOffset="-0.15"/>
+    </ai>
+
+
+    <foliageBending>
+        <bendingNode minX="-0.85" maxX="0.85" minZ="-0.5" maxZ="0.8" yOffset="0.22" />
+    </foliageBending>
+    <baseColorConfigurations useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="base_color_01" />
+    </baseColorConfigurations>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>	
+    <i3dMappings>
+        <i3dMapping id="3p_main_component1" node="0>" />	
+        <i3dMapping id="attacherMove" node="0>0|1" />		
+        <i3dMapping id="moveSupport" node="0>1"/>
+        <i3dMapping id="moveSupport1" node="0>1|0"/>
+        <i3dMapping id="supportCol" node="0>1|0|0"/>
+        <i3dMapping id="moveSupport2" node="0>1|1"/>
+        <i3dMapping id="supportCol1" node="0>1|1|0"/>
+        <i3dMapping id="support" node="0>1|2"/>		
+        <i3dMapping id="attacherJoint" node="0>0|1|0" />	
+        <i3dMapping id="tensionBelts" node="0>0|0|2" />
+        <i3dMapping id="tensionBeltStart1" node="0>0|0|2|0" />
+        <i3dMapping id="tensionBeltEnd1" node="0>0|0|2|0|0" />
+        <i3dMapping id="tensionBeltStart2" node="0>0|0|2|1" />
+        <i3dMapping id="tensionBeltEnd2" node="0>0|0|2|1|0" />	
+        <i3dMapping id="attacherJointFrontRot" node="0>3|0|0"/>
+        <i3dMapping id="attacherJointFrontRot2" node="0>3|0|0|0"/>
+        <i3dMapping id="attacherJointFront" node="0>3|0|0|0|0"/>
+        <i3dMapping id="attacherJointFrontArmBottom" node="0>3|0|1"/>
+        <i3dMapping id="bottomArmFront" node="0>3|0|1|0"/>
+        <i3dMapping id="referencePointFrontBottom" node="0>3|0|1|0|0"/>
+        <i3dMapping id="bottomLinkHydraulicRef" node="0>3|0|1|0|1"/>
+        <i3dMapping id="attacherJointFrontArmTop" node="0>3|0|2"/>
+        <i3dMapping id="bottomLinkHydraulic" node="0>0|0|5|0"/>
+        <i3dMapping id="bottomLinkHydraulicPunch" node="0>0|0|5|0|0"/>	
+        <i3dMapping id="movingTool1" node="0>3|0|1|0|2"/>	
+        <i3dMapping id="ptoBack" node="0>3|1"/>	
+        <i3dMapping id="mainTool" node="0>0|0"/>
+        <i3dMapping id="airDoubleOrange" node="0>0|4|5" />
+        <i3dMapping id="airDoubleYellow" node="0>0|4|6" />
+        <i3dMapping id="electricBack" node="0>0|4|0" />
+        <i3dMapping id="hydraulic03_in" node="0>0|4|1" />
+        <i3dMapping id="hydraulic03_out" node="0>0|4|2" />
+        <i3dMapping id="hydraulic02_in" node="0>0|4|3" />		
+        <i3dMapping id="hydraulic02_out" node="0>0|4|4" />	
+        <i3dMapping id="Added2x4" node="0>0|5" />		
+    </i3dMappings>
+</vehicle>	

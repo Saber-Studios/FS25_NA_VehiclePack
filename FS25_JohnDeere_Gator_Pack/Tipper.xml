@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/fs22/vehicle.xsd" type="trailer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>
+            <en>Skip</en>
+            <de>Mulde</de>
+            <fr>Container</fr>
+        </name>
+        <functions>
+            <function>$l10n_function_tipper</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="Gator.xml" />	
+            <combination xmlFilename="Gator2x4.xml" />	
+            <combination xmlFilename="BladeLeveler.xml" />	
+            <combination xmlFilename="BladeSnow.xml" />	
+        </specs>		
+        <image>store_Tipper.dds</image>
+        <price>2000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>trailers</category>
+        <vertexBufferMemoryUsage>1235200</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>148736</indexBufferMemoryUsage>
+        <textureMemoryUsage>2162688</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>	
+	
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_tipper</typeDesc>
+    <filename>Tipper.i3d</filename>
+        <size width="3.5" length="8" height="1.8" lengthOffset="0"/>
+        <sounds volumeFactor="1.3"/>		
+        <components>
+            <component centerOfMass="0 0.2 0.45" solverIterationCount="10" mass="500"/>		
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
+    </base>	
+	
+    <wheels>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift" upperRotationOffset="0">
+            <objectChange node="Tipper6x4" visibilityActive="true" visibilityInactive="true" />
+            <objectChange node="Tipper4x2" visibilityActive="false" visibilityInactive="false" />		
+            <objectChange node="Decals6x4" visibilityActive="true" visibilityInactive="true" />	
+            <objectChange node="Decals4x2" visibilityActive="false" visibilityInactive="false" />				
+        </inputAttacherJoint>	
+            <inputAttacherJoint node="attacherJoint" jointType="GatorLift4x2" upperRotationOffset="0">
+            <objectChange node="Tipper6x4" visibilityActive="false" visibilityInactive="true" />		
+            <objectChange node="Tipper4x2" visibilityActive="true" visibilityInactive="false" />			
+            <objectChange node="Decals6x4" visibilityActive="false" visibilityInactive="true" />		
+            <objectChange node="Decals4x2" visibilityActive="true" visibilityInactive="false" />					
+        </inputAttacherJoint>		
+        </inputAttacherJoints>
+        <support animationName="moveSupport" delayedOnAttach="false"/>	
+        <airConsumer usage="0.5" />
+    </attachable>
+		
+    <animations>
+		<!-- backtipping -->
+        <animation name="tipAnimationBack">
+            <part node="movingTool2"      startTime="1" endTime="5"   startRot="0 0 0"   endRot="-50 0 0" />
+            <sound template="hydraulicOpen01" startTime="1" endTime="5" volumeScale="1.0" pitchScale="0.7"/>				
+        </animation>		
+		
+		
+        <animation name="backDoorAnim">
+            <part node="backDoor"      startTime="0" endTime="1"   startRot="0 0 0"   endRot="-90 0 0" />		
+            <sound template="metalClose"  startTime="0"  direction="-1" volumeScale="1.2" pitchScale="2"   linkNode="attacherJoint"/>
+            <sound template="metalOpen"  startTime="0.1"  direction="-1" volumeScale="1.2" pitchScale="2"   linkNode="attacherJoint"/>			
+        </animation>				
+        <!-- move support wheel down/up -->
+        <animation name="moveSupport">
+            <part node="supportCol1" startTime="0.0" endTime="0.001" startTrans="0.194 0.875 0" endTrans="0 0.875 0"/>
+            <part node="supportCol1" startTime="0.001" endTime="0.01" startTrans="0 0.875 0" endTrans="0 0.0 0"/>			
+            <part node="supportCol" startTime="0.0" endTime="0.001" startTrans="-0.194 0.875 0" endTrans="0 0.875 0"/>
+            <part node="supportCol" startTime="0.001" endTime="0.01" startTrans="0 0.875 0" endTrans="0 0.0 0"/>							
+            <part node="support" startTime="0" endTime="0.05" visibility="false"/>
+            <part node="support" startTime="0.05" endTime="0.1" visibility="true"/>
+            <part node="movingTool1" startTime="0" endTime="0.05" visibility="true"/>
+            <part node="movingTool1" startTime="0.05" endTime="0.1" visibility="false"/>		
+
+            <sound template="clackVar1"   startTime="0.4"  direction="1"  volumeScale="1.5" pitchScale="1.5" linkNode="attacherJoint"/>
+            <sound template="metalClose"  startTime="0.1"  direction="-1" volumeScale="1.2" pitchScale="2"   linkNode="attacherJoint"/>
+            <sound template="latchSmall"  startTime="0.49"                volumeScale="0.2" pitchScale="1.4" linkNode="attacherJoint"/>			
+        </animation>
+    </animations>		
+    <cylindered>
+    <movingTools>		
+		<!-- backTipping -->
+        <movingTool node="movingTool2" playSound="true" >	
+            <inputAttacherJoint value="true" />		
+                <rotation detachingRotMinLimit="0" />	
+            <dependentPart node="movingTool1" />				
+        </movingTool>		
+        <movingTool node="attacherJoint">
+            <inputAttacherJoint value="true" />
+            <dependentPart node="movingTool1" />			
+        </movingTool>		
+        <movingTool node="attacherMove">
+            <inputAttacherJoint value="true" />
+        </movingTool>
+            <movingTool node="backDoor" playSound="true" fillUnitIndex="1" minFillLevel="0" maxFillLevel="0">
+                <controls axis="AXIS_DOOR" invertAxis="true" mouseSpeedFactor="0.5" iconName="TOP_DOOR_ROTATE"/>
+                <animation animSpeed="1" animAcceleration="5" animName="backDoorAnim" />
+            </movingTool>
+		
+    </movingTools>
+    <movingParts>  		
+		<movingPart node="movingTool1" referencePoint="movingTool3" referenceFrame="movingTool3" lockAxis="3">
+            <translatingPart node="movingPart1" />
+        </movingPart>
+            <movingPart node="effectJointAnim" referenceFrame="0>" isActiveDirty="true"  maxUpdateDistance="80" />
+        </movingParts>
+        <sounds>
+            <actionSound template="metalClose"      volumeScale="1.4" pitchScale="1.4"  linkNode="backDoor" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="backDoor"/>
+            <actionSound template="metalOpen"       volumeScale="1.6" pitchScale="1.2"  linkNode="backDoor" actionNames="TOOL_MOVE_START_POS_LIMIT" nodes="backDoor"/>
+        </sounds>
+    </cylindered>
+			
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="800" allowAILoading="true"  fillAnimation="backDoorAnim" fillAnimationLoadTime="0">
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+
+
+		
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="volume" maxDelta="0.40" maxAllowedHeapAngle="8" fillUnitIndex="1" />								
+                </volumes>
+            </fillVolumeConfiguration>			
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo fillVolumeIndex="1" >
+                <node node="fillVolume1" width="0.4" length="0.4" />			
+            </unloadInfo>			
+        </unloadInfos>
+
+    </fillVolume>
+    <dischargeable>
+        <dischargeNode node="dischargeable" emptySpeed="450" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
+            <info width="1.0" length="0.5" />
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="effectParticleBack" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                    <effectNode effectNode="effectGrainBack" materialType="unloading" fadeTime="0.5"/>
+                </effectNode>
+                <effectNode effectNode="effectSmokeBack" materialType="unloadingSmoke" fadeTime="0.5" />
+            </effects>
+        </dischargeNode>
+    </dischargeable>	
+	
+    <trailer>
+        <trailerConfigurations>
+            <trailerConfiguration>
+                <trailer>
+                    <tipSide name="$l10n_info_tipSideBack" dischargeNodeIndex="1">
+                        <animation name="tipAnimationBack" speedScale="1.0" />
+                        <doorAnimation name="backDoorAnim" speedScale="1.0" startTipTime="1" delayedClosing="true"/>						
+                    </tipSide>
+                </trailer>
+            </trailerConfiguration>
+        </trailerConfigurations>
+    </trailer>		
+	<ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="9"/>	
+        <agentAttachment width="1" height="1.0" length="0.6" lengthOffset="-0.15"/>
+    </ai>	
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="0>" width="0.055" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" >
+                    <tensionBelt startNode="tensionBeltStart1" endNode="tensionBeltEnd1" offsetLeft="0.2" />
+                    <tensionBelt startNode="tensionBeltStart2" endNode="tensionBeltEnd2" />
+                    <sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>	
+	
+    <foliageBending>
+        <bendingNode minX="-0.85" maxX="0.85" minZ="-0.5" maxZ="0.8" yOffset="0.22" />
+    </foliageBending>		
+    
+	<baseColorConfigurations useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="base_color_01" />
+    </baseColorConfigurations>
+	
+	<designConfigurations title="$l10n_configuration_valueForestry">
+        <designConfiguration name="$l10n_ui_no" price="0">
+            <objectChange node="Design1" visibilityActive="false" />
+			<objectChange node="Object01" compoundChildActive="false" compoundChildInactive="true"/>
+			<objectChange node="Object02" compoundChildActive="false" compoundChildInactive="true"/>	
+			<objectChange node="Object03" compoundChildActive="false" compoundChildInactive="true"/>			
+        </designConfiguration>	
+        <designConfiguration name="$l10n_ui_yes" price="200">
+            <objectChange node="Design1" visibilityActive="true" />			
+			<objectChange node="Object01" compoundChildActive="true" compoundChildInactive="false"/>
+			<objectChange node="Object02" compoundChildActive="true" compoundChildInactive="false"/>	
+			<objectChange node="Object03" compoundChildActive="true" compoundChildInactive="false"/>				
+        </designConfiguration>			
+	</designConfigurations>
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>	
+    <i3dMappings>
+        <i3dMapping id="ManTipper_main_component1" node="0>" />	
+        <i3dMapping id="attacherMove" node="0>0|1" />		
+        <i3dMapping id="moveSupport" node="0>1"/>
+        <i3dMapping id="moveSupport1" node="0>1|0"/>
+        <i3dMapping id="supportCol" node="0>1|0|0"/>
+        <i3dMapping id="moveSupport2" node="0>1|1"/>
+        <i3dMapping id="supportCol1" node="0>1|1|0"/>
+        <i3dMapping id="support" node="0>1|2"/>		
+        <i3dMapping id="attacherJoint" node="0>0|1|0" />	
+        <i3dMapping id="exactFillRootNode" node="0>0|0|3|2"/>	
+        <i3dMapping id="fillAutoAimTarget" node="0>0|5"/>		
+        <i3dMapping id="backDoor" node="0>0|0|0"/>
+        <i3dMapping id="movingTool1" node="0>0|4"/>
+        <i3dMapping id="movingTool2" node="0>0|0"/>
+        <i3dMapping id="movingTool3" node="0>0|0|1"/>		
+        <i3dMapping id="movingPart1" node="0>0|4|0" />
+        <i3dMapping id="volume" node="0>0|0|3|0"/>
+        <i3dMapping id="fillVolume1" node="0>0|0|3|1"/>
+        <i3dMapping id="dischargeable" node="0>0|0|4"/>
+        <i3dMapping id="effectGrainBack" node="0>0|0|2|0|0" />
+        <i3dMapping id="effectSmokeBack" node="0>0|0|2|0|1" />
+        <i3dMapping id="effectJointAnim" node="0>0|0|2|0|3" />	
+        <i3dMapping id="tensionBelts" node="0>0|0|5" />
+        <i3dMapping id="tensionBeltStart1" node="0>0|0|5|0" />
+        <i3dMapping id="tensionBeltEnd1" node="0>0|0|5|0|0" />
+        <i3dMapping id="tensionBeltStart2" node="0>0|0|5|1" />
+        <i3dMapping id="tensionBeltEnd2" node="0>0|0|5|1|0" />	
+        <i3dMapping id="Design1" node="0>0|0|9" />	
+        <i3dMapping id="Object01" node="0>0|0|9|1|0" />	
+        <i3dMapping id="Object02" node="0>0|0|9|1|1" />	
+        <i3dMapping id="Object03" node="0>0|0|9|1|2" />	
+        <i3dMapping id="Tipper6x4" node="0>0|0|7" />	
+        <i3dMapping id="Tipper4x2" node="0>0|0|8" />	
+        <i3dMapping id="Decals6x4" node="0>0|0|0|2" />	
+        <i3dMapping id="Decals4x2" node="0>0|0|0|3" />	
+        <i3dMapping id="beltActivationTrigger" node="0>0|0|5|2" />	
+        <i3dMapping id="effectParticleBack" node="0>0|0|2|1|0" />			
+    </i3dMappings>
+</vehicle>	

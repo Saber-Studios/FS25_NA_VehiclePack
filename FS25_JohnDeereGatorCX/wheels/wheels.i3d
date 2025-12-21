@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wheels.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/shaders/tireMudShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.dds"/>
+    <File fileId="25" filename="$data/shared/detailLibrary/metallic/clear_specular.dds"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.dds"/>
+    <File fileId="10" filename="$data/shared/detailLibrary/nonMetallic/dirt_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/dirt_specular.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedOld_diffuse.dds"/>
+    <File fileId="24" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.dds"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/mud_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.dds"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.dds"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.dds"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="17" filename="../textures/HW_Tire_20_Normal.dds"/>
+    <File fileId="18" filename="../textures/HW_Tire_20_Specular.dds"/>
+    <File fileId="21" filename="../textures/johnDeere_CX_newRims_normal.dds"/>
+    <File fileId="22" filename="../textures/johnDeere_CX_newRims_specularvmask.dds"/>
+    <File fileId="14" filename="../textures/lizard_tire_normal.dds"/>
+    <File fileId="15" filename="../textures/lizard_tire_specularvmask.dds"/>
+    <File fileId="2" filename="../textures/lizard_utility_normal.dds"/>
+    <File fileId="3" filename="../textures/lizard_utility_specularvmask.dds"/>
+    <File fileId="19" filename="../textures/tireStreet_normal.dds"/>
+    <File fileId="20" filename="../textures/tireStreet_specularvmask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="1_johnDeereYellow" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="23"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+      <CustomParameter name="colorScale" value="1 0.74 0"/>
+      <CustomParameter name="clearCoatIntensity" value="0.8"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="1_rimChrome" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="24"/>
+    </Material>
+    <Material name="1_rimMetalColor" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+    </Material>
+    <Material name="1_rubber" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+    <Material name="1_rubber" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+    <Material name="1_rubber" materialId="10" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Texture fileId="1"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="morphPos" value="-0.16 -0.915 0.5 0.1"/>
+    </Material>
+    <Material name="HW_Tire_20_mat" materialId="11" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Texture fileId="1"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="morphPos" value="-0.16 -1.795 0.5 0.17"/>
+    </Material>
+    <Material name="mud_mat" materialId="12" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="morphPos" value="-0.228 -0.379 0.5 0.05"/>
+    </Material>
+    <Material name="mud_mat" materialId="13" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="morphPos" value="-0.07 -0.915 0.5 0.1"/>
+    </Material>
+    <Material name="tire_smallClaw_mat" materialId="14" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Texture fileId="1"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="morphPos" value="-0.17 -1.545 0.48 0.12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wheels.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_01_" nodeId="24">
+      <Shape name="lizard_utily_tire" scale="0.988565 0.980453 0.980453" shapeId="1" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="9">
+        <Shape name="mudMesh" scale="1.87386 1.23003 1.23003" shapeId="2" clipDistance="35" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </Shape>
+      <Shape name="lizard_smallClaws_back" scale="0.964928 0.84222 0.84222" shapeId="3" clipDistance="300" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="14">
+        <Shape name="mudMesh" scale="1.90826 1.44779 1.44779" shapeId="2" clipDistance="35" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </Shape>
+      <Shape name="tire_27_12_12_new" rotation="-6.83019e-06 -0 0" scale="0.711847 0.835294 0.835294" shapeId="4" clipDistance="300" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="11">
+        <Shape name="mudMesh" rotation="6.83019e-06 -0 0" scale="2.32146 1.45339 1.45339" shapeId="2" clipDistance="35" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </Shape>
+      <Shape name="tireStreet_frontal" scale="1.46995 0.971308 0.971308" shapeId="5" clipDistance="300" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="10">
+        <Shape name="mudMesh" scale="0.655909 0.937988 0.937988" shapeId="6" clipDistance="35" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="13"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="_02_" nodeId="33">
+      <Shape name="rim_frontalL" shapeId="7" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5,8"/>
+      <Shape name="rim_frontalR" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="5,8"/>
+      <Shape name="rim_customL" shapeId="8" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6,5,7"/>
+      <Shape name="rim_customR" rotation="0 180 0" shapeId="8" clipDistance="300" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="6,5,7"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

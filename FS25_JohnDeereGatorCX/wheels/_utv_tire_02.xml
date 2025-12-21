@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <metadata brand="LIZARD" name="UTV" category="TRACTOR" />
+    <default>
+        <physics radius="0.26" width="0.21" mass="0.034" tireType="offRoad" frictionScale="1.10" maxLongStiffness="0.01" maxLatStiffness="35" maxLatStiffnessLoad="0.8" />
+        <tire filename="wheels/wheels.i3d" nodeLeft="0|2" nodeRight="0|2" maxDeformation="0.02" sideDeformOffset="0.944" isCareWheel="true" tireTrackAtlasIndex="12" />
+        <outerRim filename="wheels/wheels.i3d" nodeLeft="1|0" nodeRight="1|1" scale="1.05 1.05 1.05"/>
+        <innerRim />
+    </default>
+    <configurations>
+        <configuration id="newRim">
+            <outerRim filename="wheels/wheels.i3d" nodeLeft="1|2" nodeRight="1|3" scale="1.05 1.05 1.05"/>
+            <innerRim />
+        </configuration>
+    </configurations>
+</wheel>
