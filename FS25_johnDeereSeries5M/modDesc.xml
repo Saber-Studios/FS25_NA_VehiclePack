@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="100">
+    <author>Dumpy</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere 5M Series THQ</en>
+    </title>
+    <description>
+        <en><![CDATA[This pack includes the powerful John Deere 5M Series, along with the John Deere 603R front loader.
+
+- Available animations (controlled via mouse or the Interactive Control mod):
+* Left and right doors
+* Rear window
+* Sunroof
+* Engine hood
+* Steering wheel
+* Mirrors
+
+- Available configurations:
+* Wheels 
+* Animation selection
+* Front loader
+* Rear PTO cover
+* Beacon light
+
+John Deere 5M Series
+- Category : Small tractor
+- Prix : 77.500 $
+- Power : 94 - 120 hp
+- Max speed : 40 kph
+
+John Deere 603R
+- Category : Frontloader
+- Price : 9.500 $
+
+]]></en>
+        <de><![CDATA[Dieses Paket enthält den leistungsstarken John Deere 5M Series sowie den John Deere Frontlader 603R.
+
+- Verfügbare Animationen (steuerbar mit der Maus oder dem Interactive Control Mod):
+* Linke und rechte Tür
+* Heckscheibe
+* Schiebedach
+* Motorhaube
+* Lenkrad
+* Spiegel
+
+- Verfügbare Konfigurationen:
+* Reifen 
+* Animationsauswahl
+* Frontlader
+* Hintere Zapfwellenabdeckung
+* Rundumleuchte
+
+John Deere 5M Series
+- Shopkategorie: Kompakttraktoren
+- Preis : 77.500 €
+- Leistung : 94 - 120 PS
+- Höchstgeschwindigkeit : 40 km/h
+
+John Deere 603R
+- Shopkategorie: Frontlader
+- Preis : 9.500 €
+]]></de>
+        <fr><![CDATA[Ce pack contient le redoutable John Deere 5M Series, accompagné du chargeur frontal John Deere 603R.
+
+- Animations disponibles (contrôlées via la souris ou le mod Interactive Control):
+* Portes gauche et droite
+* Lunette arrière
+* Toit ouvrant
+* Capot
+* Volant
+* Rétroviseurs
+
+- Configurations disponibles:
+* Roues 
+* Choix d’animations
+* Chargeur frontal
+* Couvercle de prise de force arrière
+* Gyrophare
+
+- Catégorie : Petit tracteur
+- Prix : 77.500 €
+- Puissance : 94 - 120 cv
+- Vitesse maximale : 40 km/h
+
+* John Deere Frontloader 603R
+
+- Catégorie : Chargeur frontal
+- Prix : 9.500 €
+]]></fr>
+    </description>
+    <iconFilename>icon_series5M.png</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="series5M.xml"/>
+		<storeItem xmlFilename="frontloader603R.xml"/>
+    </storeItems>
+	
+	<l10n>
+		<text name="configuration_Animations"> <en>Animations</en> <de>Animationen</de> <fr>Animations</fr> </text>
+		<text name="configuration_simpleAnimation"> <en>Basic animations</en> <de>Einfache Animationen</de> <fr>Animations simples</fr> </text>
+		<text name="configuration_fullAnimation"> <en>Full animations</en> <de>Alle Animationen</de> <fr>Animations complètes</fr> </text>
+		
+		<text name="controlGroup_a"> <en>Doors - Rear window - Sun roof</en> <de>Türen - Heckscheibe - Glasdach</de> <fr>Portes - Lunette arrière - Toit ouvrant</fr> </text>
+		<text name="controlGroup_b"> <en>SteeringWheel - Mirrors - Passenger seat</en> <de>Lenkrad - Spiegel - Beifahrersitz</de> <fr>Volant - Retroviseurs - Siege passager</fr> </text>
+		
+		<text name="configuration_pto"> <en>Rear Cover Pto</en> <de>Zapfwelle hinten</de> <fr>Couvercle de la prise de force arrière</fr> </text>
+	</l10n>
+</modDesc>
