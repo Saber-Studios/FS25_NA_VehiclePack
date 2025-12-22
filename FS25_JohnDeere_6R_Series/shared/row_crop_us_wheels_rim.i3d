@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="row_crop_us_wheels_rim.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="15" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.dds"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.dds"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="18" filename="$data/shared/wheels/hubs/hub020_normal.png"/>
+    <File fileId="19" filename="$data/shared/wheels/hubs/hub020_vmask.png"/>
+    <File fileId="16" filename="$data/shared/wheels/rims/rim001_vmask.png"/>
+    <File fileId="2" filename="$data/shared/wheels/rims/rim006_normal.dds"/>
+    <File fileId="3" filename="$data/shared/wheels/rims/rim006_vmask.dds"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hub_bolt_mat24" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.6456 0.6456 0.6456"/>
+    </Material>
+    <Material name="hub_new_bolt" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="detailSpecular" fileId="22"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+    </Material>
+    <Material name="hub_yellow" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="hub_yellow" materialId="49" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="1 0.743 0"/>
+    </Material>
+    <Material name="rim_bolt_mat" materialId="9" customShaderId="4" customShaderVariation="rim_numberOfStatics">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.98 0.98 0.98"/>
+      <CustomParameter name="numberOfStatics" value="24"/>
+    </Material>
+    <Material name="rim_inner_mat" materialId="10" customShaderId="4" customShaderVariation="rim_numberOfStatics">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.723 0"/>
+    </Material>
+    <Material name="rim_inner_mat" materialId="11" customShaderId="4" customShaderVariation="rim_numberOfStatics">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="1 0.723 0"/>
+      <CustomParameter name="numberOfStatics" value="24"/>
+    </Material>
+    <Material name="rim_outer_mat" materialId="12" customShaderId="4" customShaderVariation="rim">
+      <Texture fileId="1"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="17"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.723 0"/>
+      <CustomParameter name="widthAndDiam" value="16 38 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="row_crop_us_wheels_rim.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="front_wheels" nodeId="23">
+      <Shape name="30_rim_L" translation="0.0949126 -8.71e-10 2.19903e-07" scale="1 1.2 1.2" shapeId="1" clipDistance="300" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="10,9,11"/>
+      <Shape name="30_rim_R" translation="-0.096541 -8.71e-10 1.60383e-07" scale="1 1.2 1.2" shapeId="2" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="10,9,11"/>
+      <Shape name="30_rim_L" scale="1.05 1.12 1.12" shapeId="3" clipDistance="300" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="30_rim_R" scale="1.05 1.12 1.12" shapeId="3" clipDistance="300" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="right_hub_new" translation="0 2.38122e-08 -2.25291e-08" shapeId="4" clipDistance="300" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="8,7"/>
+      <Shape name="right_hub_new" translation="0 2.38122e-08 -2.25291e-08" shapeId="5" clipDistance="300" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="8,7"/>
+    </TransformGroup>
+    <TransformGroup name="rearDual_wheels" nodeId="30"/>
+    <TransformGroup name="BACK" nodeId="31"/>
+    <TransformGroup name="hub_row_narrow" nodeId="32">
+      <Shape name="left" shapeId="6" clipDistance="300" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="8,7"/>
+      <Shape name="right_hub_new" shapeId="7" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="49,7"/>
+    </TransformGroup>
+    <TransformGroup name="hub" nodeId="35">
+      <Shape name="left" shapeId="8" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="49,5"/>
+      <Shape name="right" shapeId="9" clipDistance="300" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="49,5"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Çıkartmalar"/>
+    <text name="carpet" text="Halı"/>
+    <text name="curtain" text="Perde"/>
+    <text name="olen" text="Amblem John Deere"/>
+    <text name="configuration_exhaust" text="Egzoz sistemi"/>
+    <!-- Turkish -->
+    <text name="collection_decals" text="Koleksiyon çıkartmaları"/>
+    <text name="configuration_WindowDemister" text="Arka cam buz çözücü"/>
+    <text name="snow_dax_krilo" text="Tavanda ve çamurluklarda kar"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30 inç ROW CROP ikiz tekerlekler"/>
+    <text name="configuration_RC30" text="ROW CROP 30 inç"/>
+    <text name="configuration_RC_hub" text="Göbekler 30 inç ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Nesneyi gizle"/>
+    <text name="unvis" text="Nesneyi göster"/>
+    <text name="carpet_curtain" text="Perde+Halı"/>
+    <text name="Black_Edition" text="Siyah Sürüm"/>
+    <text name="Gray_Edition" text="Gri Sürüm"/>
+    <text name="actionIC_Animation" text="Fare kontrolü"/>
+    <text name="actionIC_IC" text="Etkileşimli kontrol"/>
+    <text name="actionIC_pto_off_front" text="IC: Ön PTO'yu kapat"/>
+    <text name="actionIC_pto_on_front" text="IC: Ön PTO'yu aç"/>
+    <text name="actionIC_pto_off_back" text="IC: Arka PTO'yu kapat"/>
+    <text name="actionIC_pto_on_back" text="IC: Arka PTO'yu aç"/>
+    <text name="actionIC_liftImplement_front" text="IC: Ön ekipmanı kaldır"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Ön ekipmanı indir"/>
+    <text name="actionIC_liftImplement_back" text="IC: Arka ekipmanı kaldır"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Arka ekipmanı indir"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Ön ekipmanı aç"/>
+    <text name="actionIC_foldImplement_front" text="IC: Ön ekipmanı kapat"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Arka ekipmanı aç"/>
+    <text name="actionIC_foldImplement_back" text="IC: Arka ekipmanı kapat"/>
+    <text name="configuration_valueDesign10" text="Tasarım 10"/>
+    <text name="configuration_valueDesign11" text="Tasarım 11"/>
+    <text name="configuration_valueDesign12" text="Tasarım 12"/>
+    <text name="configuration_valueDesign13" text="Tasarım 13"/>
+    <text name="configuration_valueDesign14" text="Tasarım 13"/>
+    <text name="rear_decals" text="Rear Window Sticker"/>
+    <text name="front_decals" text="Front Window Sticker"/>
+    <text name="stickersOnHood" text="Stickers on the hood"/>
+    <text name="decals_on_glass" text="Decals on glass"/>
+    <text name="leather" text="Leather"/>
+    <text name="mat_seat" text="Seat material"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop geniş USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Balast Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="Anten"/>
+    <text name="antenna2" text="Anten 2"/>
+    <text name="antenna_horn" text="Anten + Kornа"/>
+    <text name="antenna_horn2" text="Anten 2 + Kornа"/>
+    <text name="actionIC_fold_ob" text="IC: Katla"/>
+    <text name="actionIC_unfold_ob" text="IC: Aç"/>
+    <text name="configuration_tre_car" text="Araç hava spreyi"/>
+    <text name="seat" text="Seat"/>
+    <text name="marker_lights" text="Park lambaları"/>
+    <text name="light" text="Işık"/>
+    <text name="wth_adblue" text="AdBlue olmadan"/>
+  </texts>
+</l10n>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Наклейки"/>
+    <text name="carpet" text="Коврик"/>
+    <text name="curtain" text="Штора"/>
+    <text name="olen" text="Эмблема John Deere"/>
+    <text name="configuration_exhaust" text="Выхлопная система"/>
+    <text name="collection_decals" text="Коллекционные наклейки"/>
+    <text name="configuration_WindowDemister" text="Обогреватель заднего стекла"/>
+    <text name="snow_dax_krilo" text="Снег на крыше и крыльях"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30-дюймовая ROW CROP сдвоенные колеса"/>
+    <text name="configuration_RC30" text="ROW CROP 30 дюймов"/>
+    <text name="configuration_RC_hub" text="Ступицы 30-дюймовая ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Скрыть объект"/>
+    <text name="unvis" text="Показать объект"/>
+    <text name="carpet_curtain" text="Штора+Коврик"/>
+    <text name="Black_Edition" text="Черное издание"/>
+    <text name="Gray_Edition" text="Серое издание"/>
+    <text name="actionIC_Animation" text="Управление мышью"/>
+    <text name="actionIC_IC" text="Интерактивное управление"/>
+    <text name="actionIC_pto_off_front" text="IC: Выключить передний ВОМ"/>
+    <text name="actionIC_pto_on_front" text="IC: Включить передний ВОМ"/>
+    <text name="actionIC_pto_off_back" text="IC: Выключить задний ВОМ"/>
+    <text name="actionIC_pto_on_back" text="IC: Включить задний ВОМ"/>
+    <text name="actionIC_liftImplement_front" text="IC: Поднять переднее оборудование"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Опустить переднее оборудование"/>
+    <text name="actionIC_liftImplement_back" text="IC: Поднять заднее оборудование"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Опустить заднее оборудование"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Развернуть переднее оборудование"/>
+    <text name="actionIC_foldImplement_front" text="IC: Сложить переднее оборудование"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Развернуть заднее оборудование"/>
+    <text name="actionIC_foldImplement_back" text="IC: Сложить заднее оборудование"/>
+    <text name="configuration_valueDesign10" text="Дизайн 10"/>
+    <text name="configuration_valueDesign11" text="Дизайн 11"/>
+    <text name="configuration_valueDesign12" text="Дизайн 12"/>
+    <text name="configuration_valueDesign13" text="Дизайн 13"/>
+    <text name="configuration_valueDesign14" text="Дизайн 13"/>
+    <text name="rear_decals" text="Наклейка на заднем стекле"/>
+    <text name="front_decals" text="Наклейка на лобовом стекле"/>
+    <text name="stickersOnHood" text="Наклейки на капоте"/>
+    <text name="decals_on_glass" text="Наклейки на стекле"/>
+    <text name="leather" text="Кожа"/>
+    <text name="mat_seat" text="Материал сиденья"/>
+    <text name="seat" text="Сиденье"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop широкий USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Балласт Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="Антенна"/>
+    <text name="antenna2" text="Антенна 2"/>
+    <text name="antenna_horn" text="Антенна + Сигнал"/>
+    <text name="antenna_horn2" text="Антенна 2 + Сигнал"/>
+    <text name="actionIC_fold_ob" text="IC: Сложить"/>
+    <text name="actionIC_unfold_ob" text="IC: Развернуть"/>
+    <text name="configuration_tre_car" text="Ароматизатор для автомобиля"/>
+    <text name="marker_lights" text="Габаритные огни"/>
+    <text name="light" text="Свет"/>
+    <text name="wth_adblue" text="Без AdBlue"/>
+  </texts>
+</l10n>

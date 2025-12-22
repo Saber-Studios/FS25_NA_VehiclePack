@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="104">
+    <author>Dumpy</author>
+    <version>1.0.0.4</version>	
+    <title>
+        <en>John Deere 6R Series Pack THQ</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[John Deere 6R Series 2022-2025 North America and European version
+
+John Deere 6R Extra Large Frame (230-250)
+Category: Medium Tractors
+Price: $255,000-274,000
+Power: 281-301 hp
+Max. speed: 40/50 kph
+Capacity: 410/470 L
+ 
+John Deere 6R Large Frame (175-215)
+Category: Medium Tractors
+Price: $205,000-228,000
+Power: 223-259 hp
+Max. speed: 40/50 kph
+Capacity: 324/421 L
+
+John Deere 6R Medium Frame (145-185)
+Category: Medium Tractors
+Price: $175,000-208,000
+Power: 192-234 hp
+Max. speed: 40/50 kph
+Capacity: 280/322 L
+
+Features:
+- EU/US type tires
+- New sounds
+- Enhanced character hand interaction with the steering wheel (outdoor camera)
+- 2 passengers
+- Improved 3d model 6R175-215 and new details
+- Interactive control support (Requires 'FS25_interactiveControl')
+- Dashboard Live support (Requires 'FS25_DashboardLive' 'FS25_DashboardLive_VanillaVehicles')
+- Prepared for Precision Farming DLC
+- New Wheel Weights (EU Version)
+– Real values
+- Support for EZ Ballast Laforge 1700kg (6R 230-250)
+
+Configurations:
+- Model and transmission version (AutoPowr™ 40/50 km)
+- ECU Tuning (6R 230-250, 6R215): Improving performance by tuning the ECU and removing EGR/DPF/AdBlue
+- Wheel Weights
+- Tire configurations: brand, wide, narrow, medium, duals, Row Crop
+- US/EU, Black, Gray version
+- Premium, Ultimate Edition
+- Chrome exhaust pipe
+- Deer on the hood
+- Glass tint colour
+- Collectible and window stickers
+- UK specs
+- Engine sound for 6R 230-250 (standard improved sounds or sounds from FD, Vassili_k98 - ECU Tuning)
+- Air horn, Window Demister
+- Panoramic window
+- Carpet, curtain
+- Fenders, Warning Signs
+- Attachments for front loader
+- Lights
+- Main, Interior, Rim color
+
+Animation:
+* Left door
+* Back window, Roof window
+* Warning Signs
+* The frontAxle can be moved up/down with the mouse wheel (6R 175-215,230-250)
+* The indoor camera can be moved forward/backward using the mouse wheel
+* The seat can be rotated to the right using the mouse wheel
+* You can hide/display fenders and warning signs via IC 
+* and other features
+
+Laforge EZ 1700 (6R230-250)
+Category: Weights
+Price: $5,000
+Configurations: Color
+
+Front Loader Tools Pack
+Consists:
+- Front Loader John Deere 663R-683R
+- BIG BAG LIFTER
+- Universal Bucket
+- Round bale Fork
+- Pallet Fork
+
+Category: Front Loader Tools
+Price: $700-9,500
+Configurations: Color, Sticker design for Front Loader JD 663R-683R
+
+John Deere PickUp 900-1800
+Category: Weights
+Price: $1,550-3,050
+Configurations: Color
+
+Changelog (1.0.0.1):
+- Crossplay compatibility
+- Improving the visual appearance of wheel weights
+
+Changelog (1.0.0.2):
+- Improved interaction with the front loader without the need to change control groups
+To activate additional animation, you now need to change control group 1 or 2
+- Fixed an issue with saving the color for the curtain
+- Fixed the configuration of warning signs for 6R145-185
+- Other visual changes
+]]>
+        </en>
+        <de>
+<![CDATA[John Deere 6R Serie 2022-2025 Nordamerika und Europa Version
+
+John Deere 6R Extra Großer Rahmen (230-250)
+Kategorie: Mittlere Traktoren
+Preis: 255.000-274.000€
+Leistung: 281-301 PS
+Max. Geschwindigkeit: 40/50 km/h
+Kapazität: 410/470 L
+
+John Deere 6R Großer Rahmen (175-215)
+Kategorie: Mittlere Traktoren
+Preis: 205.000-228.000€
+Leistung: 223-259 PS
+Max. Geschwindigkeit: 40/50 km/h
+Kapazität: 324/421 L
+
+John Deere 6R Mittlerer Rahmen (145-185)
+Kategorie: Mittlere Traktoren
+Preis: 175.000-208.000€
+Leistung: 192-234 PS
+Max. Geschwindigkeit: 40/50 km/h
+Kapazität: 280/322 L
+
+Merkmale:
+- EU/US Reifen
+- Neue Sounds
+- Verbesserte Handinteraktion mit Lenkrad (Außenkamera)
+- 2 Passagiere
+- Verbessertes 3D-Modell 6R175-215 und neue Details
+- Interactive Control Unterstützung (benötigt 'FS25_interactiveControl')
+- Dashboard Live Unterstützung (erfordert 'FS25_DashboardLive' 'FS25_DashboardLive_VanillaVehicles')
+- Vorbereitet für Precision Farming DLC
+- Neue Radgewichte (EU Version)
+- Reale Werte
+- Unterstützung für EZ Ballast Laforge 1700 kg (6R 230-250)
+
+Konfigurationen:
+- Modell- und Getriebeversion (AutoPowr™ 40/50 km)
+- ECU-Tuning (6R 230-250, 6R215): Leistungssteigerung durch Anpassung der ECU und Entfernung von EGR/DPF/AdBlue.
+- Radgewichte
+- Reifen: Marke, breit, schmal, mittel, Zwillingsreifen, Row Crop
+- US/EU, Schwarz, Grau Version
+- Premium, Ultimate Edition
+- Chrom Auspuffrohr
+- Hirsch auf der Motorhaube
+- Glas-Tönung
+- Sammelaufkleber, Aufkleber für Glas
+- UK Spezifikationen
+- Motorsound für 6R 230-250 (Standard verbessert oder von FD, Vassili_k98 - ECU Tuning)
+- Luftdruckhorn, Fensterenteiser
+- Panoramafenster
+- Teppich, Vorhang
+- Kotflügel, Warnzeichen
+- Frontlader-Anbau
+- Lichter
+- Haupt-, Innen-, Felgenfarbe
+
+Animation:
+* Linke Tür
+* Heckfenster, Dachfenster
+* Warntafeln
+* Vorderachse höhenverstellbar mit Mausrad (6R 175-215,230-250)
+* Innenkamera vor/zurück mit Mausrad
+* Sitz drehbar nach rechts mit Mausrad
+* Kotflügel und Warnzeichen per IC ein-/ausblenden
+* und weitere Funktionen
+
+Laforge EZ 1700 (6R230-250)
+Kategorie: Gewichte
+Preis: 5.000€
+Konfiguration: Farbe
+
+Frontlader Werkzeuge Pack
+Besteht aus:
+- John Deere 663R-683R
+- Big Bag Lifter
+- Universalschaufel
+- Rundballengabel
+- Palettengabel
+
+Kategorie: Frontlader-Werkzeuge
+Preis: 700-9.500€
+Konfiguration: Farbe, Aufkleberdesign für Frontlader JD 663R-683R
+
+John Deere PickUp 900-1800
+Shopkategorie: Gewichte
+Preis: 1.550-3.050€
+Konfiguration: Farbe
+
+Changelog (1.0.0.1):
+- Crossplay-Kompatibilität
+- Verbesserung des optischen Erscheinungsbildes der Radgewichte
+
+Changelog (1.0.0.2):
+- Verbesserte Interaktion mit dem Frontlader, ohne dass die Steuerungsgruppen geändert werden müssen
+Um zusätzliche Animationen zu aktivieren, müssen Sie nun die Steuerungsgruppe 1 oder 2 ändern
+- Problem beim Speichern der Farbe für die Vorhänge behoben
+- Korrektur der Konfiguration der Warnschilder für 6R145-185
+- Weitere visuelle Änderungen
+]]>
+        </de>
+        <fr>
+<![CDATA[John Deere Série 6R 2022-2025 Version Amérique du Nord et Europe
+
+John Deere 6R Châssis Très Grand (230-250)
+Catégorie: Tracteurs moyens
+Prix: 255.000-274.000€
+Puissance: 281-301 ch
+Vitesse max.: 40/50 km/h
+Capacité: 410/470 L
+
+John Deere 6R Grand Châssis (175-215)
+Catégorie: Tracteurs moyens
+Prix: 205.000-228.000€
+Puissance: 223-259 ch
+Vitesse max.: 40/50 km/h
+Capacité: 324/421 L
+
+John Deere 6R Châssis Moyen (145-185)
+Catégorie: Tracteurs moyens
+Prix: 175.000-208.000€
+Puissance: 192-234 ch
+Vitesse max.: 40/50 km/h
+Capacité: 280/322 L
+
+Caractéristiques:
+- Pneus EU/US
+- Nouveaux sons
+- Interaction améliorée avec le volant (caméra extérieure)
+- 2 passagers
+- Modèle 3D amélioré 6R175-215 et nouveaux détails
+- Support du contrôle interactif (nécessite 'FS25_interactiveControl')
+- Prise en charge Dashboard Live (nécessite 'FS25_DashboardLive' 'FS25_DashboardLive_VanillaVehicles')
+- Préparé pour le DLC Precision Farming
+- Nouveaux poids de roues (Version EU)
+- Valeurs réelles
+- Support EZ Ballast Laforge 1700 kg (6R 230-250)
+
+Configurations:
+- Version modèle et transmission (AutoPowr™ 40/50 km)
+- ECU-Tuning (6R 230-250, 6R215) : Amélioration des performances en ajustant l’ECU et en supprimant l’EGR/DPF/AdBlue.
+- Poids de roues
+- Pneus: marque, larges, étroits, moyens, jumelés, Row Crop
+- Version US/EU, Noire, Grise
+- Premium, Ultimate Edition
+- Tuyau d'échappement chromé
+- Cerf sur le capot
+- Couleur du verre
+- Autocollant de pare-brise, stickers de collection
+- Spécifications UK
+- Son moteur pour 6R 230-250 (standard amélioré ou FD, Vassili_k98 - ECU Tuning)
+- Klaxon à air, Dégivreur de vitre
+- Fenêtre panoramique
+- Tapis, rideau
+- Ailes, Panneaux d'avertissement
+- Outils de chargeur frontal
+- Lumières
+- Couleur principale, intérieure, jantes
+
+Animation:
+* Porte gauche
+* Fenêtre arrière, Fenêtre de toit
+* Panneaux de signalisation
+* Essieu avant réglable avec molette (6R 175-215,230-250)
+* Caméra intérieure avant/arrière avec molette
+* Siège pivotant à droite avec molette
+* Ailes et panneaux via IC affichables/masquables
+* et autres fonctionnalités
+
+Laforge EZ 1700 (6R230-250)
+Catégorie: Poids
+Prix: 5.000€
+Configurations: Couleur
+
+Pack Outils Chargeur Frontal
+Comprend:
+- John Deere 663R-683R
+- Big Bag Lifter
+- Godet Universel
+- Fourche à balles rondes
+- Fourche à palettes
+
+Catégorie: Outils de chargeur frontal
+Prix: 700-9.500€
+Configurations: Couleur, Conception d’autocollants pour chargeur frontal JD 663R-683R
+
+John Deere PickUp 900-1800
+Catégorie: Contrepoids
+Prix: 1.550-3.050€
+Configurations: Couleur
+
+Changelog (1.0.0.1):
+- Compatibilité crossplay
+- Amélioration de l'aspect visuel des masses d'équilibrage
+
+Changelog (1.0.0.2):
+- Amélioration de l'interaction avec le chargeur frontal sans avoir à modifier les groupes de contrôle
+Pour activer des animations supplémentaires, vous devez désormais modifier le groupe de contrôle 1 ou 2
+- Correction d’un problème d’enregistrement de la couleur des rideaux
+- Correction de la configuration des panneaux d'avertissement pour 6R145-185
+- Autres modifications visuelles
+]]>
+        </fr>
+        <pl>
+<![CDATA[John Deere Seria 6R 2022-2025 Ameryka Północna i Europa
+
+John Deere 6R Bardzo Duża Rama (230-250)
+Kategoria: Średnie ciągniki
+Cena: 255.000-274.000€
+Moc: 281-301 KM
+Maks. prędkość: 40/50 km/h
+Pojemność: 410/470 L
+
+John Deere 6R Duża Rama (175-215)
+Kategoria: Średnie ciągniki
+Cena: 205.000-228.000€
+Moc: 223-259 KM
+Maks. prędkość: 40/50 km/h
+Pojemność: 324/421 L
+
+John Deere 6R Średnia Rama (145-185)
+Kategoria: Średnie ciągniki
+Cena: 175.000-208.000€
+Moc: 192-234 KM
+Maks. prędkość: 40/50 km/h
+Pojemność: 280/322 L
+
+Cechy:
+- EU/US opony
+- Nowe dźwięki
+- Ulepszona interakcja z kierownicą (kamera zewnętrzna)
+- 2 pasażerów
+- Ulepszony model 3D 6R175-215 i nowe detale
+- Obsługa Interactive Control (wymaga 'FS25_interactiveControl')
+- Obsługa Dashboard Live (wymaga 'FS25_DashboardLive' 'FS25_DashboardLive_VanillaVehicles')
+- Przygotowany pod Precision Farming DLC
+- Nowe obciążniki kół (wersja EU)
+- Realne wartości
+- Obsługa EZ Ballast Laforge 1700 kg (6R 230-250)
+
+Konfiguracje:
+- Wersja modelu i skrzyni (AutoPowr™ 40/50 km)
+- ECU-Tuning (6R 230-250, 6R215): Poprawa wydajności poprzez dostosowanie ECU i usunięcie EGR/DPF/AdBlue.
+- Obciążniki kół
+- Opony: marka, szerokie, wąskie, średnie, podwójne, Row Crop
+- Wersja US/EU, Czarna, Szara
+- Premium, Ultimate Edition
+- Chromowana rura wydechowa
+- Jeleń na masce
+- Kolor szyb
+- Naklejki kolekcjonerskie i na szybę
+- Specyfikacje UK
+- Dźwięk silnika 6R 230-250 (standard ulepszony lub FD, Vassili_k98 - ECU Tuning)
+- Klakson pneumatyczny, Ogrzewanie szyby
+- Okno panoramiczne
+- Dywan, zasłona
+- Błotniki, Znaki ostrzegawcze
+- Osprzęt do ładowacza
+- Światła
+- Kolor główny, wnętrza, felg
+
+Animacja:
+* Lewe drzwi
+* Tylna szyba, Okno dachowe
+* Oznaczenia ostrzegawcze
+* Przednia oś regulowana kółkiem myszy (6R 175-215,230-250)
+* Kamera wewnętrzna przód/tył kółkiem myszy
+* Fotel obrotowy w prawo kółkiem myszy
+* Błotniki i znaki przez IC widoczne/ukrywane
+* i inne funkcje
+
+Laforge EZ 1700 (6R230-250)
+Kategoria: Obciążniki
+Cena: 5.000€
+Konfiguracje: Kolor
+
+Pakiet Narzędzi Ładowacza Czołowego
+Zawiera:
+- John Deere 663R-683R
+- Big Bag Lifter
+- Uniwersalna łyżka
+- Widły do bel okrągłych
+- Widły do palet
+
+Kategoria: Narzędzia do ładowacza
+Cena: 700-9.500€
+Konfiguracje: Kolor, Naklejki do ładowacza czołowego JD 663R-683R
+
+John Deere PickUp 900-1800
+Kategoria: Przeciwwagi
+Cena: 1.550-3.050€
+Konfiguracje: Kolor
+
+Changelog (1.0.0.1):
+- Kompatybilność crossplay
+- Poprawa wyglądu wizualnego obciążników kół
+
+Changelog (1.0.0.2):
+- Ulepszona interakcja z ładowaczem czołowym bez konieczności zmiany grup sterujących
+Aby aktywować dodatkową animację, należy teraz zmienić grupę sterującą 1 lub 2
+- Naprawiono problem z zapisywaniem koloru zasłon
+- Naprawiono konfigurację znaków ostrzegawczych dla 6R145-185
+- Inne zmiany wizualne
+]]>
+        </pl>
+        <uk>
+<![CDATA[John Deere Серія 6R 2022-2025 Північна Америка та Європа
+
+John Deere 6R Надвелика Рама (230-250)
+Категорія: Середні трактори
+Ціна: 255.000-274.000€
+Потужність: 281-301 к.с.
+Макс. швидкість: 40/50 км/год
+Місткість: 410/470 л
+
+John Deere 6R Велика Рама (175-215)
+Категорія: Середні трактори
+Ціна: 205.000-228.000€
+Потужність: 223-259 к.с.
+Макс. швидкість: 40/50 км/год
+Місткість: 324/421 л
+
+John Deere 6R Середня Рама (145-185)
+Категорія: Середні трактори
+Ціна: 175.000-208.000€
+Потужність: 192-234 к.с.
+Макс. швидкість: 40/50 км/год
+Місткість: 280/322 л
+
+Особливості:
+- EU/US шини
+- Нові звуки
+- Покращена взаємодія з кермом (зовнішня камера)
+- 2 пасажири
+- Покращена 3D-модель 6R175-215 та нові деталі
+- Підтримка інтерактивного контролю (потрібен 'FS25_interactiveControl')
+- Підтримка Dashboard Live (потрібна програма 'FS25_DashboardLive' 'FS25_DashboardLive_VanillaVehicles')
+- Підготовлено для DLC 'Точне землеробство'
+- Нові ваги для коліс (EU версія)
+- Реальні значення
+- Підтримка EZ Ballast Laforge 1700 кг (6R 230-250)
+
+Конфігурації:
+- Версія моделі та трансмісії (AutoPowr™ 40/50 км)
+- ECU-Tuning (6R 230-250, 6R215): Підвищення продуктивності шляхом коригування ECU та видалення систем EGR/DPF/AdBlue.
+- Вантажі для коліс
+- Шини: бренд, широкі, вузькі, середні, подвійні, Row Crop
+- Версія US/EU, Чорна, Сіра
+- Premium, Ultimate Edition
+- Хромована вихлопна труба
+- Олень на капоті
+- Тонування скла
+- Наклейки колекційні та на скло
+- Британська специфікація
+- Звук двигуна 6R 230-250 (покращений стандартний або від FD, Vassili_k98 - ECU Tuning)
+- Повітряний сигнал, обігрів скла
+- Панорамне вікно
+- Килим, штори
+- Крила, попереджувальні знаки
+- Кріплення для фронтального навантажувача
+- Світло
+- Колір основний, салону, дисків
+
+Анімація:
+* Ліві двері
+* Заднє вікно, Вікно на даху
+* Попереджувальні знаки
+* Передня вісь регулюється колесиком миші (6R 175-215,230-250)
+* Камера всередині вперед/назад колесиком миші
+* Сидіння повертається вправо колесиком миші
+* Крила і знаки можна приховати/показати через IC
+* та інші можливості
+
+Laforge EZ 1700 (6R230-250)
+Категорія: Ваги
+Ціна: 5.000€
+Конфігурації: Колір
+
+Пакет інструментів для фронтального навантажувача
+Складається з:
+- John Deere 663R-683R
+- Big Bag Lifter
+- Універсальний ковш
+- Вила для круглих тюків
+- Вила для палет
+
+Категорія: Інструменти для фронтального навантажувача
+Ціна: 700-9.500€
+Конфігурації: Колір, наклейки для фронтального навантажувача JD 663R-683R
+
+John Deere PickUp 900-1800
+Категорія: Противаги
+Ціна: 1.550-3.050€
+Конфігурації: Колір
+
+Changelog (1.0.0.1):
+- Підтримка crossplay
+- Поліпшення візуального вигляду балансувальних вантажів коліс
+
+Changelog (1.0.0.2):
+- Покращена взаємодія з фронтальним навантажувачем без необхідності зміни груп управління
+Щоб активувати додаткову анімацію тепер потрібно змінити контрольну групу 1 або 2
+- Виправлено проблему із збереженням кольору штор
+- Виправлено конфігурацію попереджувальних знаків для 6R145-185
+- Інші візуальні зміни
+]]>
+        </uk>		
+    </description>
+    <iconFilename>icon_jd6r_pack.dds</iconFilename>
+	<multiplayer supported="true"/>
+    <l10n filenamePrefix="translations/l10n" />	
+    <storeItems>
+        <storeItem xmlFilename="xml/series6RExtraLarge.xml" />		
+        <storeItem xmlFilename="xml/series6RLarge175_215.xml" />	
+        <storeItem xmlFilename="xml/series6RLarge.xml" />
+        <storeItem xmlFilename="xml/laforgeEZ.xml" />
+        <storeItem xmlFilename="xml/frontloader663RBlack.xml" />
+        <storeItem xmlFilename="xml/frontloader683R.xml" />		
+        <storeItem xmlFilename="xml/frontloaderShovel.xml" />		
+        <storeItem xmlFilename="xml/frontloaderPalletFork.xml" />
+        <storeItem xmlFilename="xml/frontloaderRoundBaleFork.xml" />
+        <storeItem xmlFilename="xml/bagLifter.xml" />						
+        <storeItem xmlFilename="xml/pickUp900.xml" />	
+        <storeItem xmlFilename="xml/pickUp1150.xml" />		
+        <storeItem xmlFilename="xml/pickUp1800.xml" />		
+    </storeItems>
+    <axisIcons>
+		<icon name="ROT_DOOR" filename="icons/door_mouse.dds"/>
+		<icon name="ROT_DOOR2" filename="icons/door_mouse2.dds"/>		
+		<icon name="ROT_CAM" filename="icons/rot_cam.dds"/>		
+	</axisIcons>		
+</modDesc>

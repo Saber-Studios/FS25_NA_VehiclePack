@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Matricák"/>
+    <text name="carpet" text="Szőnyeg"/>
+    <text name="curtain" text="Függöny"/>
+    <text name="olen" text="Embléma John Deere"/>
+    <text name="configuration_exhaust" text="Kipufogórendszer"/>
+    <!-- Hungarian -->
+    <text name="collection_decals" text="Gyűjteményi matricák"/>
+    <text name="configuration_WindowDemister" text="Hátsó szélvédő párátlanító"/>
+    <text name="snow_dax_krilo" text="Hó a tetőn és a sárvédőkön"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30 hüvelykes ROW CROP ikerkerekek"/>
+    <text name="configuration_RC30" text="ROW CROP 30 hüvelyk"/>
+    <text name="configuration_RC_hub" text="Agyrészek 30 hüvelykes ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Objektum elrejtése"/>
+    <text name="unvis" text="Objektum megjelenítése"/>
+    <text name="carpet_curtain" text="Függöny+Szőnyeg"/>
+    <text name="Black_Edition" text="Black Edition"/>
+    <text name="Gray_Edition" text="Gray Edition"/>
+    <text name="actionIC_Animation" text="Egérvezérlés"/>
+    <text name="actionIC_IC" text="Interaktív vezérlés"/>
+    <text name="actionIC_pto_off_front" text="IC: Első TLT kikapcsolása"/>
+    <text name="actionIC_pto_on_front" text="IC: Első TLT bekapcsolása"/>
+    <text name="actionIC_pto_off_back" text="IC: Hátsó TLT kikapcsolása"/>
+    <text name="actionIC_pto_on_back" text="IC: Hátsó TLT bekapcsolása"/>
+    <text name="actionIC_liftImplement_front" text="IC: Első munkagép felemelése"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Első munkagép leengedése"/>
+    <text name="actionIC_liftImplement_back" text="IC: Hátsó munkagép felemelése"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Hátsó munkagép leengedése"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Első munkagép kihajtása"/>
+    <text name="actionIC_foldImplement_front" text="IC: Első munkagép behajtása"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Hátsó munkagép kihajtása"/>
+    <text name="actionIC_foldImplement_back" text="IC: Hátsó munkagép behajtása"/>
+    <text name="configuration_valueDesign10" text="Design 10"/>
+    <text name="configuration_valueDesign11" text="Design 11"/>
+    <text name="configuration_valueDesign12" text="Design 12"/>
+    <text name="configuration_valueDesign13" text="Design 13"/>
+    <text name="configuration_valueDesign14" text="Design 13"/>
+    <text name="rear_decals" text="Matrica a hátsó ablakon"/>
+    <text name="front_decals" text="Matrica a szélvédőn"/>
+    <text name="stickersOnHood" text="Matrica a motorháztetőn"/>
+    <text name="decals_on_glass" text="Matrica az üvegen"/>
+    <text name="leather" text="Bőr"/>
+    <text name="mat_seat" text="Ülés anyaga"/>
+    <text name="seat" text="Ülés"/>	
+    <text name="200kg" text="EU 200KG"/>				
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop széles USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Ballaszt Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>	
+    <text name="antenna" text="Antenna"/>
+    <text name="antenna2" text="Antenna 2"/>
+    <text name="antenna_horn" text="Antenna + Kürt"/>
+    <text name="antenna_horn2" text="Antenna 2 + Kürt"/>
+    <text name="actionIC_fold_ob" text="IC: Behajt"/>
+    <text name="actionIC_unfold_ob" text="IC: Kihajt"/>
+    <text name="configuration_tre_car" text="Autó légfrissítő"/>
+      <text name="marker_lights" text="Helyzetjelző lámpák"/>
+      <text name="light" text="Fény"/>
+      <text name="wth_adblue" text="AdBlue nélkül"/>
+  </texts>
+</l10n>

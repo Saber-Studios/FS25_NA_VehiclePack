@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="ステッカー"/>
+    <text name="carpet" text="カーペット"/>
+    <text name="curtain" text="カーテン"/>
+    <text name="olen" text="エンブレム John Deere"/>
+    <text name="configuration_exhaust" text="排気システム"/>
+    <text name="collection_decals" text="コレクションデカール"/>
+    <!-- Japanese -->
+    <text name="configuration_WindowDemister" text="リアウィンドウデフロスター"/>
+    <text name="snow_dax_krilo" text="屋根とフェンダーの雪"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30インチ ROW CROP ツインホイール"/>
+    <text name="configuration_RC30" text="ROW CROP 30インチ"/>
+    <text name="configuration_RC_hub" text="30インチ ROW CROP ハブ"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="オブジェクトを非表示"/>
+    <text name="unvis" text="オブジェクトを表示"/>
+    <text name="carpet_curtain" text="カーテン+カーペット"/>
+    <text name="Black_Edition" text="ブラックエディション"/>
+    <text name="Gray_Edition" text="グレーエディション"/>
+    <text name="actionIC_Animation" text="マウス操作"/>
+    <text name="actionIC_IC" text="インタラクティブ操作"/>
+    <text name="actionIC_pto_off_front" text="IC: フロントPTOシャフトをオフ"/>
+    <text name="actionIC_pto_on_front" text="IC: フロントPTOシャフトをオン"/>
+    <text name="actionIC_pto_off_back" text="IC: リアPTOシャフトをオフ"/>
+    <text name="actionIC_pto_on_back" text="IC: リアPTOシャフトをオン"/>
+    <text name="actionIC_liftImplement_front" text="IC: フロントアタッチメントを上げる"/>
+    <text name="actionIC_lowerImplement_front" text="IC: フロントアタッチメントを下げる"/>
+    <text name="actionIC_liftImplement_back" text="IC: リアアタッチメントを上げる"/>
+    <text name="actionIC_lowerImplement_back" text="IC: リアアタッチメントを下げる"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: フロントアタッチメントを展開"/>
+    <text name="actionIC_foldImplement_front" text="IC: フロントアタッチメントを折りたたむ"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: リアアタッチメントを展開"/>
+    <text name="actionIC_foldImplement_back" text="IC: リアアタッチメントを折りたたむ"/>
+    <text name="configuration_valueDesign10" text="デザイン 10"/>
+    <text name="configuration_valueDesign11" text="デザイン 11"/>
+    <text name="configuration_valueDesign12" text="デザイン 12"/>
+    <text name="configuration_valueDesign13" text="デザイン 13"/>
+    <text name="configuration_valueDesign14" text="デザイン 13"/>
+    <text name="rear_decals" text="リアウィンドウステッカー"/>
+    <text name="front_decals" text="フロントウィンドウステッカー"/>
+    <text name="stickersOnHood" text="ボンネットのステッカー"/>
+    <text name="decals_on_glass" text="ガラスのデカール"/>
+    <text name="leather" text="レザー"/>
+    <text name="mat_seat" text="シート素材"/>
+    <text name="seat" text="シート"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop ワイド USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ バラスト Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="アンテナ"/>
+    <text name="antenna2" text="アンテナ 2"/>
+    <text name="antenna_horn" text="アンテナ + ホーン"/>
+    <text name="antenna_horn2" text="アンテナ 2 + ホーン"/>
+    <text name="actionIC_fold_ob" text="IC: 折りたたむ"/>
+    <text name="actionIC_unfold_ob" text="IC: 展開"/>
+    <text name="configuration_tre_car" text="車用芳香剤"/>
+    <text name="marker_lights" text="マーカーライト"/>
+    <text name="light" text="ライト"/>
+    <text name="wth_adblue" text="AdBlueなし"/>
+  </texts>
+</l10n>

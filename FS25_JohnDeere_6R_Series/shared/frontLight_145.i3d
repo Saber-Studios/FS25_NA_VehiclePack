@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="frontLight_145.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="20" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.dds"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.dds"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.dds"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.dds"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="12" filename="$data/vehicles/johnDeere/series6R/lights02White_emissive.png"/>
+    <File fileId="2" filename="$data/vehicles/johnDeere/series6R/lights02White_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/johnDeere/series6R/lights02White_vmask.png"/>
+    <File fileId="15" filename="$data/vehicles/johnDeere/series6R/series6RLights_emissive.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lights02White_chrome_01_mat" materialId="5" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+    </Material>
+    <Material name="lights02White_chrome_02_mat" materialId="6" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="colorScale" value="0.96 0.91 0.1"/>
+    </Material>
+    <Material name="lights02White_glassClear03_mat" materialId="7" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="20"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="lights02White_metalPaintedBlack_mat" materialId="8" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <Custommap name="lightsIntensity" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="lights02White_plasticGraniteGrainSmallBlack_mat" materialId="9" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <Custommap name="lightsIntensity" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="lights02White_plasticPaintedBlack_mat" materialId="10" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <Custommap name="lightsIntensity" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="frontLight_145.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="LED_US_EU" translation="0 -0.78 -0.505" nodeId="14">
+      <Shape name="series6RLightsCabinUS02_static" translation="6.1e-05 0.812 1.869" shapeId="1" clipDistance="75" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="6,5,10,9,8">
+        <Shape name="series6RLightsGlassCabinUS02_static" shapeId="2" clipDistance="75" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="laforgeEZ.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="15" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="3" filename="$data/vehicles/johnDeere/laforgeEZ/laforgeEZ_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/johnDeere/laforgeEZ/laforgeEZ_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chrome" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+    </Material>
+    <Material name="green_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+    </Material>
+    <Material name="laforgeEZ_silverScratched_02_mat" materialId="7" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="18"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="laforgeEZ.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="laforge_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+      <Shape name="laforge_vis" shapeId="2" clipDistance="300" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="6,5">
+        <TransformGroup name="attacherJoint" translation="0.000407 0.105094 -0.013967" nodeId="16"/>
+        <Shape name="screw_decals" translation="0 0.136485 0.035892" shapeId="3" clipDistance="30" nodeId="17" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+      </Shape>
+      <TransformGroup name="collisions" nodeId="18">
+        <Shape name="colPart" translation="0 0.109484 0.538986" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

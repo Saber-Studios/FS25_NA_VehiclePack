@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>BIG BAG LIFTER - SINGLE</name>
+        <specs>
+            <combination filterCategory="frontLoaders"/>
+            <combination filterCategory="frontLoaderVehicles"/>
+            <combination xmlFilename="xml/series6RExtraLarge.xml"/>
+            <combination xmlFilename="xml/series6RLarge175_215.xml"/>
+            <combination xmlFilename="xml/series6RLarge.xml"/>			
+        </specs>
+        <functions>
+            <function>$l10n_function_bigBagLifter</function>
+        </functions>
+        <image>stores/store_bagLifter.png</image>
+        <price>700</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>QUICKE</brand>
+        <category>frontLoaderTools</category>
+        <shopHeight>2</shopHeight>
+        <shopTranslationOffset>0 -0.007 0</shopTranslationOffset>
+        <shopRotationOffset>5.089 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>74496</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>23552</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_frontloaderTool</typeDesc>
+        <filename>i3d/bagLifter.i3d</filename>
+        <size width="1.35" length="1.2" height="1.85" lengthOffset="0.37"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="30" mass="150" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
+    </base>
+
+	<designColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="true">	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColorConfiguration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+       	<material materialSlotName="bagLifter_QUICKE_BLACK1_mat"/>
+    </designColorConfigurations>
+
+	<designColor2Configurations title="$l10n_configuration_baseColor" useDefaultColors="true">	
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColor2Configuration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+	    <designColor2Configuration name="$l10n_ui_colorGreen"  color="0.144 0.440 0.159" />					
+       	<material materialSlotName="bagLifter_QUICKE_ORANGE1_mat"/>		
+    </designColor2Configurations>
+  
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="frontloader">
+                <objectChange node="bagLifter_main_component1" centerOfMassActive="0 0.7 0.2" centerOfMassInactive="0 0.1 0"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <attacherJoints>
+        <attacherJoint node="bigBagJoint" jointType="bigBag" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="5 5 90" upperRotLimit="5 5 90" upperTransLimit="0 0 0" lowerTransLimit="0 0 0" rotLimitSpring="7500 7500 7500" rotLimitDamping="1 1 1" transLimitSpring="7500 7500 7500" transLimitDamping="1 1 1">
+            <schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+        <sounds>
+            <attach template="attachBigBag" volumeScale="1" pitchScale="0.8"/>
+        </sounds>
+    </attacherJoints>
+
+    <ai>
+        <agentAttachment width="1.1" height="1.85" length="1.1" lengthOffset="0.4"/>
+    </ai>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltMesh01"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <foliageBending>
+        <bendingNode minX="-0.7" maxX="0.7" minZ="-0.1" maxZ="0.2" yOffset="0.05" />
+        <bendingNode minX="-0.4" maxX="-0.55" minZ="0.2" maxZ="0.55" yOffset="0.05" />
+        <bendingNode minX="0.4" maxX="0.55" minZ="0.2" maxZ="0.55" yOffset="0.05" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90"  workMultiplier="6" fieldMultiplier="2" washDuration="1"/>
+
+    <i3dMappings>
+        <i3dMapping id="bagLifter_main_component1" node="0>" />
+        <i3dMapping id="bagLifter_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="bigBagJoint" node="0>0|0|1" />
+        <i3dMapping id="tensionBeltMesh01" node="0>1|3" />
+    </i3dMappings>
+</vehicle>
