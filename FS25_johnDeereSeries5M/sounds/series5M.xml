@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../bin/shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineMedium" file="sounds/series5M_Engine_loop.gls" linkNodeOffset="0 1.5 1" pitchScale="1" volumeScale="3.0" >
+                <volume outdoor="1.0" indoor="0.70"/>
+            </motor>
+            <motor template="engineMedium" file="sounds/series5M_Exhaust_loop.gls" linkNodeOffset="-0.70 2.5 0.15" pitchScale="1" volumeScale="2.5" >
+                <volume outdoor="1.0" indoor="0.80">
+                    <modifier type="MOTOR_RPM_REAL" value="0000" modifiedValue="0.90" />
+                    <modifier type="MOTOR_RPM_REAL" value="1800" modifiedValue="0.80" />
+                    <modifier type="MOTOR_RPM_REAL" value="2000" modifiedValue="0.80" />
+                </volume>
+            </motor>
+            <motor  file="sounds/Fan_loop.gls" linkNodeOffset="0 1.2 1.5" volumeScale="4" innerRadius="0.5" outerRadius="50" fadeIn="0.6" >
+                <lowpassGain indoor="0.45" outdoor="1.00" />
+                <lowpassCutoffFrequency indoor="100" outdoor="15000"/>
+                <lowpassResonance indoor="0" outdoor="0"/>
+                <volume indoor="0.70" outdoor="1.00" >
+                    <modifier type="SPEED" value="0.00" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="25.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.20" />
+
+                    <modifier type="MOTOR_LOAD" value="0.00"   modifiedValue="0.70" />
+                    <modifier type="MOTOR_LOAD" value="35.00"  modifiedValue="0.95" />
+                    <modifier type="MOTOR_LOAD" value="75.00"  modifiedValue="1.40" />
+                    <modifier type="MOTOR_LOAD" value="100.00" modifiedValue="1.80" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="0.9" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="1.1" />
+                </pitch>
+            </motor>
+            <gearbox file="sounds/Transmission_loop.gls" linkNodeOffset="0.8 0.8 -1.4" pitchScale="1.0" volumeScale="3.3" innerRadius="1" outerRadius="40">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="0.5" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+                <volume indoor="0.35" outdoor="1" >
+                    <modifier type="SPEED" value="0.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="1.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="5.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="1.10" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.20" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.30"  modifiedValue="1.2" />
+                    <modifier type="MOTOR_LOAD" value="0.45"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80"  modifiedValue="0.75" />
+                    <modifier type="MOTOR_LOAD" value="1.00"  modifiedValue="0.65" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.07" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="1.08" />
+                </pitch>
+            </gearbox>
+            <gearbox file="sounds/Transmission_loop.gls" linkNodeOffset="-0.8 0.8 -1.4" pitchScale="0.75" fadeIn="1" volumeScale="3.5" innerRadius="1" outerRadius="40">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="0.5" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+                <volume indoor="0.35" outdoor="1" >
+                    <modifier type="SPEED" value="0.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="1.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="5.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="1.10" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.20" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.30"  modifiedValue="1.2" />
+                    <modifier type="MOTOR_LOAD" value="0.45"  modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80"  modifiedValue="0.75" />
+                    <modifier type="MOTOR_LOAD" value="1.00"  modifiedValue="0.65" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.07" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="1.08" />
+                </pitch>
+            </gearbox>
+
+            <gearbox file="sounds/Cabin_loop.gls" linkNodeOffset="0.65 2.0 -0.8" volumeScale="2.2" pitchScale="1.0" innerRadius="0.8" supportsReverb="false">
+                <volume indoor="1" outdoor="0" >
+                    <modifier type="SPEED" value="0.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="25.0" modifiedValue="1.05" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="1.10" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.15" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.08" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.00" />
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="0.96" />
+                    <modifier type="SUSPENSION" value="0.08"  modifiedValue="0.93" />
+                </pitch>
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="0.5" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+            </gearbox>
+            <gearbox file="sounds/Cabin_loop.gls" linkNodeOffset="-0.65 2.0 -0.8" volumeScale="2.2" pitchScale="1.2" innerRadius="0.8" supportsReverb="false">
+                <volume indoor="1" outdoor="0" >
+                    <modifier type="SPEED" value="0.0"  modifiedValue="1.00" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="1.00" />
+                    <modifier type="SPEED" value="25.0" modifiedValue="1.05" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="1.10" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.15" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.08" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.00"/>
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="0.96" />
+                    <modifier type="SUSPENSION" value="0.08"  modifiedValue="0.93" />
+                </pitch>
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="20.0" modifiedValue="0.5" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+            </gearbox>
+            <gearGroupLeverStart template="gearDisengaged" innerRadius="0.1" volumeScale="0.5" linkNodeOffset="-0.5 1.5 -0.5"/>
+            <gearGroupLeverEnd   template="gearEngaged"    innerRadius="0.1" volumeScale="0.5" linkNodeOffset="-0.5 1.5 -0.5"/>
+            <motor template="indoorCabinRumble" volumeScale="38" pitchScale="1.0" linkNodeOffset="0 1.5 -0.5"/>
+            <motor file="sounds/John_Deere_5110M_CabinBeep.wav" volumeScale="1.5" pitchScale="1.0" linkNodeOffset="0 1.8 -0.5" loops="1">
+                <volume indoor="1" outdoor="0"/>
+            </motor>
+            <compressedAir template="compressedAir" volumeScale="1.6"/>
+            <airCompressorRun template="brakeCompressorMedium" linkNodeOffset="0 1.5 1.1" volumeScale="3.5"/>
+            <airCompressorStop template="compressedAir" volumeScale="1.9"/>
+        </sounds>
+    </motorized>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlightJD" volumeScale="1.5"/>
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="attach01" />
+            <hydraulic template="hydraulicOpen02" pitchScale="1.1" volumeScale="3" linkNodeOffset="0 1 -2" fadeIn="0.1" fadeOut="0.1"/>
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <honk>
+        <sound template="honkJohnDeere6250R" volumeScale="4" linkNodeOffset="0 1 1.5"/>
+    </honk>
+</sounds>
