@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineMedium" file="$data/vehicles/johnDeere/series3650/sounds/series3650.gls" linkNodeOffset="0 1.8 1.2" pitchScale="1" volumeScale="1.2" >
+                <volume outdoor="1.0" indoor="0.65"/>
+            </motor>
+            <motor template="cabinTractor_01" volumeScale="1.1" pitchScale="1.1" linkNodeOffset="0.5 2.5 -1" />
+            <motor template="cabinTractor_01" volumeScale="1.1" pitchScale="1.0" linkNodeOffset="-0.5 2.5 -1" />
+            <motor template="transmissionModern_04" volumeScale="1.0" pitchScale="1" linkNode="wheelBackLeft" isLocalSound="true"/>
+            <motor template="transmissionModern_04" volumeScale="1.0" pitchScale="1.2" linkNode="wheelBackRight"/>
+            <motor  template="attacherClanks" linkNodeOffset="0 0.7 -2.2" volumeScale="1.3" pitchScale="0.7" innerRadius="2.5" outerRadius="40" />
+
+            <motor template="indoorCabinRumble" volumeScale="11" pitchScale="1.3" linkNodeOffset="0.5 2 -1"/>
+            <motor template="indoorCabinRumble" volumeScale="11" pitchScale="1.1" linkNodeOffset="-0.5 2 -1"/>
+
+            <gearGroupLeverStart template="gearDisengaged" volumeScale="3" />
+            <gearGroupLeverEnd template="gearEngaged" volumeScale="3"/>
+            <compressedAir template="compressedAir" volumeScale="1.9"/>
+            <airCompressorRun template="brakeCompressorMedium" linkNodeOffset="0 1.7 1.7" volumeScale="2.5"/>
+            <airCompressorStop template="compressedAir" volumeScale="1.9"/>
+        </sounds>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle"  linkNodeOffset="0 2 -1">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+            <hail template="hailInVehicle" linkNodeOffset="0 2 -1" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="40.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="40" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="40" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="attach01" />
+            <hydraulic template="hydraulicOpen02" volumeScale="3.5" pitchScale="0.6"/>
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <ai>
+        <automaticSteering>
+            <sounds>
+                <engage template="gpsEngageJohnDeere"/>
+                <disengage template="gpsDisengageJohnDeere"/>
+                <lineEnd template="gpsLineEndJohnDeere"/>
+            </sounds>
+        </automaticSteering>
+    </ai>
+
+    <honk>
+        <sound template="hornDefault" />
+    </honk>
+</sounds>

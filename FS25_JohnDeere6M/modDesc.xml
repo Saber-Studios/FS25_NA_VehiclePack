@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="99">
+    <author>JTHQ</author>
+    <version>1.0.0.1</version>
+    <title>
+	<en>John Deere 6M Series THQ</en>
+	<de>John Deere 6M Traktor THQ</de>
+	</title>
+ <description>
+<en>
+<![CDATA[
+This tractor, converted from FS22 and fully redesigned, has been crafted to meet the modern graphical standards of FS25.
+Equipped with numerous features, it includes a fully functional digital dashboard displaying essential information such as:
+- Engine RPM
+- Speed
+- Transmission
+- Engine temperature
+
+Its main screen also features a slider showing instant fuel consumption, along with other useful data to enhance your gameplay experience.
+
+Additionally, it comes with a variety of animations, all controlled via the mouse. The available animations include:
+
+* Opening the left and right doors
+* Opening of the rear window
+* Adjusting the mirrors
+* Moving the steering wheel
+* Opening the engine hood
+* Folding and unfolding of the passenger seat
+* Adjustment of the main screen
+* Operating the roof
+
+Combining elegant design, advanced technology, and enhanced interactivity, this model will significantly enrich your gaming experience and bring a new dimension to your FS25 sessions.
+
+- Shop category: Small tractors
+- Price: 109,500 $
+- Power: 130-140 hp
+- Maximum Speed: 40 kph
+
+Changelog V1.0.0.1
+- Fixed dirt effect spreading in the middle of the windows
+- Added Interactive Control
+- Added Player Skin animation when folding/unfolding the passenger seat
+]]>
+</en>
+<de>
+<![CDATA[
+Dieser Traktor, der von FS22 konvertiert und vollständig überarbeitet wurde, wurde entwickelt, um die modernen grafischen Standards von FS25 zu erfüllen.
+
+Ausgestattet mit zahlreichen Funktionen verfügt er über ein voll funktionsfähiges digitales Armaturenbrett, das wesentliche Informationen anzeigt, wie:
+- Motordrehzahl
+- Geschwindigkeit
+- Getriebe
+- Motortemperatur
+
+Sein Hauptbildschirm zeigt außerdem einen Schieberegler, der den sofortigen Kraftstoffverbrauch anzeigt, zusammen mit anderen nützlichen Daten, um Ihr Spielerlebnis zu optimieren.
+
+Darüber hinaus bietet er eine Vielzahl von Animationen, die alle mit der Maus gesteuert werden können. Zu den verfügbaren Animationen gehören:
+
+* Öffnen der linken und rechten Türen
+* Öffnen des Heckfensters
+* Einstellen der Spiegel
+* Bewegen des Lenkrads
+* Öffnen der Motorhaube
+* Klappen und Entklappen des Beifahrersitzes
+* Einstellung des Hauptbildschirms
+* Bedienen des Dachs
+
+Mit einer Kombination aus elegantem Design, fortschrittlicher Technologie und verbesserter Interaktivität wird dieses Modell Ihr Spielerlebnis erheblich bereichern und eine neue Dimension in Ihre FS25-Sessions bringen.
+
+- Shopkategorie: Kleine Traktoren
+- Preis: 109.500€
+- Leistung: 130-140 PS
+- Höchstgeschwindigkeit: 40 km/h
+
+Changelog V1.0.0.1
+- Korrektur des Schmutzeffekts, der sich in der Mitte der Fenster ausbreitete
+- Interaktive Steuerung hinzugefügt
+- Spieler-Skin-Animation beim Ein- und Ausklappen des Beifahrersitzes hinzugefügt
+]]>
+</de>
+<fr>
+<![CDATA[
+Je vous présente ce tracteur John Deere 6M Serie, converti depuis FS22 et bénéficiant d’un restylage pour répondre aux exigences graphiques de FS25.
+Doté de nombreuses fonctionnalités, il embarque un compteur numérique entièrement fonctionnel, affichant des données essentielles telles que :
+- Le régime moteur
+- La vitesse
+- La transmission
+- La température du moteur
+
+Son écran principal propose également un curseur indiquant la consommation instantanée de carburant, accompagné d'autres informations utiles pour optimiser votre expérience en jeu.
+
+De plus, il est équipé de nombreuses animations, toutes contrôlées via la souris. Les animations disponibles incluent :
+
+- Ouverture des portes gauche et droite
+- Ouverture de la lunette arrière
+- Réglage des rétroviseurs
+- Ajustement du volant
+- Ouverture du capot moteur
+- Pliage et dépliage du siege passager
+- Ajustement de l’écran principal
+- Manipulation du toit
+
+Alliant design élégant, fonctionnalités avancées, et interactivité poussée, ce modèle enrichira considérablement votre expérience de jeu et apportera une nouvelle dimension à vos sessions dans FS25.
+
+- Catégorie : Petits tracteurs
+- Prix : 109 500 €
+- Puissance : 130-140 PS
+- Vitesse maximale : 40 km/h
+
+Changelog V1.0.0.1
+- Correction de l’effet de salissure qui s'étalait au milieu des vitres
+- Ajout du Interactive Control
+- Ajout de l’animation du Player Skin lors du pliage/dépliage du siège passage
+]]>
+</fr>
+</description>
+
+    <iconFilename>icon_series6M.dds</iconFilename>
+	<multiplayer supported="true" />
+	<l10n>
+		<text name="configuration_decal">
+			<en>Decal</en>
+			<de>Aufkleber</de>
+		</text>
+        <text name="configuration_cam">
+			<en>Camera (MB-DLC)</en>
+			<de>Kamera (MB-DLC)</de>
+		</text>   
+        <text name="input_AXIS_SCREEN_CAM_1"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_1">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="input_AXIS_SCREEN_CAM_2"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_2">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="configuration_valueNo_MB_DLC">
+            <en>MB-DLC NO</en>	    
+            <de>MB-DLC Nein</de>  
+        </text>
+        <text name="actionIC_beaconLightsOn"> 
+            <en>IC: Beaconlights on</en> 
+            <de>IC: Rundumleuchten anschalten</de> 
+        </text>
+        <text name="actionIC_beaconLightsOff"> 
+            <en>IC: Beaconlight off</en>
+            <de>IC: Rundumleuchten ausschalten</de>
+        </text>   
+	</l10n>
+	<vehicleTypes>
+        <type name="Serie6M" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="foldable"/>
+        </type>
+	</vehicleTypes>
+
+    <storeItems>
+        <storeItem xmlFilename="series6M.xml"/>
+    </storeItems>
+
+
+
+</modDesc>
