@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="104" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Saber Studios</author>
+    <version>1.0.0.2</version>
+    <title>
+        <en>John Deere 7810 THQ</en>
+    </title>
+
+    <description>
+<en><![CDATA[
+Category: Medium Tractors
+Price: $68,000
+Power: 175 hp
+Max. speed: 40 kph
+
+Changelog Version 1.0.0.2:
+- Added 1.5m narrow wheel configurations
+- Fixed side engine grid color
+
+Changelog Version 1.0.0.1:
+- Improved dashboard
+- Improved animation performance
+- Various visual adjustments
+]]></en>
+<de><![CDATA[
+Shopkategorie: Mittelgroße Traktoren
+Preis: 68.000€
+Leistung: 175 PS
+Höchstgeschwindigkeit: 40 km/h
+
+Changelog Version 1.0.0.1:
+- Dashboard verbessert
+- Verbesserte Performance der Animationen
+- Verschiedene visuelle Anpassungen
+
+Changelog Version 1.0.0.2:
+- Schmale 1,5 m Radkonfiguration hinzugefügt
+- Farbe des seitlichen Motorengitters korrigiert
+]]></de>
+<fr><![CDATA[
+Catégorie: Tracteurs moyens
+Prix: 68 000€
+Puissance: 175 CV
+Vitesse max.: 40 km/h
+
+Changelog Version 1.0.0.1:
+- Amélioration du tableau de bord
+- Amélioration des performances d'animation
+- Divers ajustements visuels
+
+Changelog Version 1.0.0.2:
+- Ajout de configurations de roues étroites de 1,5 m
+- Couleur de la grille du moteur latéral corrigée
+]]></fr>
+    </description>
+
+    <iconFilename>icon_series7810.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="series7810.xml"/>
+    </storeItems>
+</modDesc>
