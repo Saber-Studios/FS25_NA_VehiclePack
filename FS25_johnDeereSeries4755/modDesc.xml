@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="104" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Saber Studios</author>
+    <version>1.0.0.2</version>
+    <title>
+        <en>John Deere 4755 THQ</en>
+    </title>
+
+    <description>
+<en><![CDATA[
+Category: Medium Tractors
+Price: $74,000
+Power: 190 hp
+Max. speed: 35 kph
+
+Changelog Version 1.0.0.1:
+- Updated dashboard parameters
+
+Changelog Version 1.0.0.2:
+- Added 1.5m narrow wheel configurations
+]]></en>
+<de><![CDATA[
+Shopkategorie: Mittelgroße Traktoren
+Preis: 74.000€
+Leistung: 190 PS
+Höchstgeschwindigkeit: 35 km/h
+
+Changelog Version 1.0.0.1:
+- Dashboard parameter aktualisiert
+
+Changelog Version 1.0.0.2:
+- Schmale 1,5 m Radkonfiguration hinzugefügt
+]]></de>
+<fr><![CDATA[
+Catégorie: Tracteurs moyens
+Prix: 74 000€
+Puissance: 190 CV
+Vitesse max.: 35 km/h
+
+Changelog Version 1.0.0.1:
+- Paramètres du tableau de bord mis à jour
+
+Changelog Version 1.0.0.2:
+- Ajout de configurations de roues étroites de 1,5 m
+]]></fr>
+    </description>
+
+    <iconFilename>icon_series4755.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="series4755.xml"/>
+    </storeItems>
+</modDesc>
