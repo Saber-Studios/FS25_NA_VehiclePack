@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hubs.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="2" filename="$data/shared/wheels/hubs/hub003_normal.png"/>
+    <File fileId="3" filename="$data/shared/wheels/hubs/hub003_vmask.png"/>
+    <File fileId="14" filename="$data/shared/wheels/hubs/hub004_normal.png"/>
+    <File fileId="15" filename="$data/shared/wheels/hubs/hub004_vmask.png"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hub_bolt_mat2" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.6456 0.6456 0.6456"/>
+      <CustomParameter name="smoothnessScale" value="0.6"/>
+    </Material>
+    <Material name="hub_bolt_mat3" materialId="407" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.6456 0.6456 0.6456"/>
+      <CustomParameter name="smoothnessScale" value="0.6"/>
+    </Material>
+    <Material name="hub_main_mat3" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="hub_main_mat3" materialId="390" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0.743 0"/>
+    </Material>
+    <Material name="hub_main_mat4" materialId="399" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0.743 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hubs.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_17_" clipDistance="150" nodeId="10">
+      <Shape name="left" shapeId="1" clipDistance="150" nodeId="11" castsShadows="true" receiveShadows="true" materialIds="5,390"/>
+      <Shape name="right" shapeId="2" clipDistance="150" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="5,6"/>
+    </TransformGroup>
+    <TransformGroup name="_14_" nodeId="276">
+      <Shape name="left" shapeId="3" clipDistance="150" nodeId="277" castsShadows="true" receiveShadows="true" materialIds="399,407"/>
+      <Shape name="right" shapeId="4" clipDistance="150" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="399,407"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="chrome_exhuast.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/clear_specular.dds"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="2" filename="$data/vehicles/johnDeere/series6R/series6R_normal.dds"/>
+    <File fileId="3" filename="$data/vehicles/johnDeere/series6R/series6R_vmask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="brassScratched" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.9647 0.7913 0.3095"/>
+    </Material>
+    <Material name="CHROME_EXHUAST" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+    </Material>
+    <Material name="CHROME_EXHUAST" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+    </Material>
+    <Material name="series6R_silverScratched_mat" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+    <Material name="series6R_silverScratched_mat" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="14"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chrome_exhuast.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="chrome" nodeId="14">
+      <TransformGroup name="chrome" nodeId="15">
+        <Shape name="chrome33" translation="-0.959629 2.056 0.281619" rotation="-2.50448e-06 -0 0" scale="1.002 1.002 1.002" shapeId="1" clipDistance="300" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="chrome3" translation="-0.963 2.43282 0.280395" rotation="-2.50448e-06 -0 0" scale="1.018 1 1.015" shapeId="2" clipDistance="300" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="silvershiny" nodeId="18">
+      <TransformGroup name="silvershiny" nodeId="19">
+        <Shape name="chrome2" translation="-0.961063 2.43282 0.280395" rotation="-2.50448e-06 -0 0" scale="1.018 1 1.015" shapeId="2" clipDistance="300" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="chrome22" translation="-0.959629 2.056 0.281619" rotation="-2.50448e-06 -0 0" scale="1.002 1.002 1.002" shapeId="1" clipDistance="300" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="top" nodeId="22">
+      <TransformGroup name="transform" nodeId="23">
+        <TransformGroup name="top" translation="-0.959 2.571 0.326" clipDistance="300" nodeId="24">
+          <Shape name="brass" translation="-0.007 0.386 0.02684" rotation="-2.50448e-06 -0 0" scale="1.02 1.00485 1.01277" shapeId="3" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="top_SILVER" nodeId="26">
+      <TransformGroup name="transform" nodeId="27">
+        <TransformGroup name="top" translation="-0.959 2.571 0.326" clipDistance="300" nodeId="28">
+          <Shape name="brass" translation="-0.007 0.386 0.02684" rotation="-2.50448e-06 -0 0" scale="1.02 1.00485 1.01277" shapeId="3" clipDistance="300" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="top_chrome" nodeId="30">
+      <TransformGroup name="transform" nodeId="31">
+        <TransformGroup name="top" translation="-0.959 2.571 0.326" clipDistance="300" nodeId="32">
+          <Shape name="brass" translation="-0.007 0.386 0.02684" rotation="-2.50448e-06 -0 0" scale="1.02 1.00485 1.01277" shapeId="3" clipDistance="300" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

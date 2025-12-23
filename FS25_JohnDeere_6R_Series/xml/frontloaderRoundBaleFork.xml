@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="dynamicMountAttacherShovel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_shopItem_frontloaderRoundBaleFork</name>
+        <specs>
+            <combination filterCategory="frontLoaders"/>
+            <combination filterCategory="frontLoaderVehicles"/>
+            <combination xmlFilename="xml/series6RExtraLarge.xml"/>
+            <combination xmlFilename="xml/series6RLarge175_215.xml"/>
+            <combination xmlFilename="xml/series6RLarge.xml"/>	
+			</specs>
+        <functions>
+            <function>$l10n_function_frontloaderRoundBaleFork</function>
+        </functions>
+        <image>stores/store_albuttFrontloaderRoundBaleFork.png</image>
+        <price>1600</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>ALBUTT</brand>
+        <category>frontLoaderTools</category>
+        <shopHeight>1</shopHeight>
+        <shopTranslationOffset>0 -0.007 0</shopTranslationOffset>
+        <shopRotationOffset>1.236 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>157440</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>45312</indexBufferMemoryUsage>
+        <textureMemoryUsage>720896</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_frontloaderTool</typeDesc>
+        <filename>i3d/frontloaderRoundBaleFork.i3d</filename>
+        <size width="1.6" length="1.6" height="0.9" lengthOffset="-0.1"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="195" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
+    </base>
+
+	<designColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="true">	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColorConfiguration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+       	<material materialSlotName="frontloaderRoundBaleFork_ALBUTT_BLUE1_mat"/>		
+    </designColorConfigurations>
+  
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="frontloader" />
+        </inputAttacherJoints>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn01" adapterNode="hydraulicIn01_connector" length="0.05" diameter="0.015" straighteningFactor="1" isTwoPointHose="true">
+           <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" adapterNode="hydraulicOut01_connector" length="0.05" diameter="0.015" straighteningFactor="2" isTwoPointHose="true">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="grabLeft">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" invertAxis="false" mouseSpeedFactor="0.2" iconName="WORKING_WIDTH_TRANSLATE_X" />
+                <dependentMovingTool node="grabRight" speedScale="-1"/>
+                <rotation rotationAxis="3" rotSpeed="40" rotAcceleration="500" rotMin="-49" rotMax="3"/>
+                <dependentPart node="grabHydraulic"/>
+            </movingTool>
+
+            <movingTool node="grabRight">
+                <rotation rotationAxis="3" rotSpeed="40" rotAcceleration="500" rotMin="-3" rotMax="49"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="grabHydraulic" referencePoint="grabHydraulicRef" referenceFrame="grabHydraulicRef" isActiveDirty="true" maxUpdateDistance="50">
+              <translatingPart node="grabHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+
+        <sounds>
+            <actionSound template="hydraulicClose03"    pitchScale="1.3" volumeScale="2"   linkNode="grabLeft" actionNames="TOOL_MOVE_POS" nodes="grabLeft" fadeIn="0.1" fadeOut="0.1">
+                <pitch dropOffFactor="1.02" dropOffTime="0.05" />
+            </actionSound>
+            <actionSound template="hydraulicSoftOpen02" pitchScale="1.1" volumeScale="2"   linkNode="grabLeft" actionNames="TOOL_MOVE_NEG" nodes="grabLeft" fadeIn="0.1" fadeOut="0.1">
+                <pitch dropOffFactor="0.95" dropOffTime="0.05" />
+            </actionSound>
+            <actionSound template="metalImpHigh01"      pitchScale="1.2" volumeScale="0.75" linkNode="grabLeft" actionNames="TOOL_MOVE_END_POS_LIMIT"     nodes="grabLeft"/>
+            <actionSound template="metalImpHigh01"      pitchScale="1.1" volumeScale="0.75" linkNode="grabLeft" actionNames="TOOL_MOVE_END_NEG_LIMIT"     nodes="grabLeft"/>
+        </sounds>
+    </cylindered>
+
+    <designConfigurations>
+        <designConfiguration name="$l10n_shopItem_telehandlerBaleGrab" price="500" isDefault="true">
+            <objectChange node="spikesRoundBaleLeft"      visibilityActive="true"     visibilityInactive="false" />
+            <objectChange node="spikesRoundBaleRight"     visibilityActive="true"     visibilityInactive="false" />
+            <objectChange node="spikesRoundBaleLeftPart"  rotationActive="0 0 0"      rotationInactive="0 0 0" />
+            <objectChange node="spikesRoundBaleRightPart" rotationActive="0 0 0"      rotationInactive="0 0 0" />
+            <objectChange node="colPartBaleSpikeLeft01"   compoundChildActive="true"  compoundChildInactive="false" />
+            <objectChange node="colPartBaleSpikeRight01"  compoundChildActive="true"  compoundChildInactive="false" />
+            <objectChange node="colPartRoundBaleLeft01"   compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRoundBaleRight01"  compoundChildActive="false" compoundChildInactive="true" />
+        </designConfiguration>
+        <designConfiguration name="$l10n_shopItem_frontloaderBaleFork" price="0">
+            <objectChange node="spikesRoundBaleLeft"      visibilityActive="false"    visibilityInactive="true" />
+            <objectChange node="spikesRoundBaleRight"     visibilityActive="false"    visibilityInactive="true" />
+            <objectChange node="spikesRoundBaleLeftPart"  rotationActive="0 0 90"     rotationInactive="0 0 0" />
+            <objectChange node="spikesRoundBaleRightPart" rotationActive="0 0 -90"    rotationInactive="0 0 0" />
+            <objectChange node="colPartBaleSpikeLeft01"   compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartBaleSpikeRight01"  compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRoundBaleLeft01"   compoundChildActive="true"  compoundChildInactive="false" />
+            <objectChange node="colPartRoundBaleRight01"  compoundChildActive="true"  compoundChildInactive="false" />
+        </designConfiguration>
+    </designConfigurations>
+
+    <dynamicMountAttacher node="frontloaderRoundBaleFork_main_component1">
+        <fork node="colPartRoundBaleLeft01" />
+        <fork node="colPartRoundBaleRight01" />
+    </dynamicMountAttacher>
+
+    <ai>
+        <agentAttachment width="1.6" height="0.75" length="1.5" lengthOffset="-0.05"/>
+    </ai>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltMesh01"/>
+            <meshNode node="tensionBeltMesh02"/>
+            <meshNode node="tensionBeltMesh03"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <foliageBending>
+        <bendingNode minX="-0.85" maxX="0.85" minZ="-0.8" maxZ="-0.45" yOffset="0.05" />
+        <bendingNode minX="0.2" maxX="0.38" minZ="0.15" maxZ="1.25" yOffset="-0.4" node="grabLeft" />
+        <bendingNode minX="-0.2" maxX="-0.38" minZ="0.15" maxZ="1.25" yOffset="-0.4" node="grabRight" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90"  workMultiplier="6" fieldMultiplier="2" washDuration="1"/>
+
+    <i3dMappings>
+        <i3dMapping id="frontloaderRoundBaleFork_main_component1" node="0>" />
+        <i3dMapping id="frontloaderRoundBaleFork_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="grabLeft" node="0>0|1" />
+        <i3dMapping id="spikesRoundBaleLeft" node="0>0|1|0" />
+        <i3dMapping id="spikesRoundBaleLeftPart" node="0>0|1|1|0" />
+        <i3dMapping id="grabHydraulic" node="0>0|1|2" />
+        <i3dMapping id="grabHydraulicPunch" node="0>0|1|2|0" />
+        <i3dMapping id="hydraulicIn01" node="0>0|1|2|1" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|1|2|1|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|1|2|1|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|1|2|2" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|1|2|2|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|1|2|2|0|0" />
+        <i3dMapping id="colPartBaleSpikeLeft01" node="0>0|1|4|1" />
+        <i3dMapping id="colPartRoundBaleLeft01" node="0>0|1|4|2" />
+        <i3dMapping id="tensionBeltMesh02" node="0>0|1|5" />
+        <i3dMapping id="grabRight" node="0>0|2" />
+        <i3dMapping id="spikesRoundBaleRight" node="0>0|2|0" />
+        <i3dMapping id="spikesRoundBaleRightPart" node="0>0|2|1|0" />
+        <i3dMapping id="grabHydraulicRef" node="0>0|2|2" />
+        <i3dMapping id="colPartBaleSpikeRight01" node="0>0|2|4|1" />
+        <i3dMapping id="colPartRoundBaleRight01" node="0>0|2|4|2" />
+        <i3dMapping id="tensionBeltMesh03" node="0>0|2|5" />
+        <i3dMapping id="tensionBeltMesh01" node="0>0|3" />
+    </i3dMappings>
+</vehicle>

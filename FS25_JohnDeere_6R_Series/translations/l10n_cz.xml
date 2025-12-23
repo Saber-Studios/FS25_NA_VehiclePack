@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Samolepky"/>
+    <text name="carpet" text="Koberec"/>
+    <text name="curtain" text="Závěs"/>
+    <text name="olen" text="Emblém John Deere"/>
+    <text name="configuration_exhaust" text="Výfukový systém"/>
+    <text name="collection_decals" text="Sběratelské nálepky"/>
+    <text name="configuration_WindowDemister" text="Vyhřívání zadního skla"/>
+    <text name="snow_dax_krilo" text="Sníh na střeše a blatnících"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30palcová ROW CROP dvojitá kola"/>
+    <text name="configuration_RC30" text="ROW CROP 30 palců"/>
+    <text name="configuration_RC_hub" text="Náboje 30palcová ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Skrýt objekt"/>
+    <text name="unvis" text="Zobrazit objekt"/>
+    <text name="carpet_curtain" text="Závěs+Koberec"/>
+    <text name="Black_Edition" text="Black Edition"/>
+    <text name="Gray_Edition" text="Gray Edition"/>
+    <text name="actionIC_Animation" text="Ovládání myší"/>
+    <text name="actionIC_IC" text="Interaktivní ovládání"/>
+    <text name="actionIC_pto_off_front" text="IC: Vypnout přední vývodový hřídel"/>
+    <text name="actionIC_pto_on_front" text="IC: Zapnout přední vývodový hřídel"/>
+    <text name="actionIC_pto_off_back" text="IC: Vypnout zadní vývodový hřídel"/>
+    <text name="actionIC_pto_on_back" text="IC: Zapnout zadní vývodový hřídel"/>
+    <text name="actionIC_liftImplement_front" text="IC: Zvednout přední nářadí"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Spustit přední nářadí"/>
+    <text name="actionIC_liftImplement_back" text="IC: Zvednout zadní nářadí"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Spustit zadní nářadí"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Rozložit přední nářadí"/>
+    <text name="actionIC_foldImplement_front" text="IC: Složit přední nářadí"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Rozložit zadní nářadí"/>
+    <text name="actionIC_foldImplement_back" text="IC: Složit zadní nářadí"/>
+    <text name="configuration_valueDesign10" text="Design 10"/>
+    <text name="configuration_valueDesign11" text="Design 11"/>
+    <text name="configuration_valueDesign12" text="Design 12"/>
+    <text name="configuration_valueDesign13" text="Design 13"/>
+    <text name="configuration_valueDesign14" text="Design 13"/>
+    <text name="rear_decals" text="Nálepka na zadním okně"/>
+    <text name="front_decals" text="Nálepka na čelním skle"/>
+    <text name="stickersOnHood" text="Nálepky na kapotě"/>
+    <text name="decals_on_glass" text="Nálepky na skle"/>
+    <text name="leather" text="Kůže"/>
+    <text name="mat_seat" text="Materiál sedadla"/>
+    <text name="seat" text="Sedadlo"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop široký USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Balast Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="Anténa"/>
+    <text name="antenna2" text="Anténa 2"/>
+    <text name="antenna_horn" text="Anténa + Klakson"/>
+    <text name="antenna_horn2" text="Anténa 2 + Klakson"/>
+    <text name="actionIC_fold_ob" text="IC: Složit"/>
+    <text name="actionIC_unfold_ob" text="IC: Rozložit"/>
+    <text name="configuration_tre_car" text="Osvěžovač vzduchu do auta"/>
+    <text name="marker_lights" text="Polohová světla"/>
+    <text name="light" text="Světlo"/>
+    <text name="wth_adblue" text="Bez AdBlue"/>
+  </texts>
+</l10n>

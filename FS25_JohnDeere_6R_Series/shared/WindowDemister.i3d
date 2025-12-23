@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="WindowDemister.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="2" filename="$data/shared/default_normal.png"/>
+        <File fileId="3" filename="$data/shared/default_vmask.png"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="1" filename="$data/vehicles/oxbo/shared/rasterPattern_diffuse.dds"/>
+    </Files>
+    <Materials>
+        <Material name="raster_mat" materialId="49" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailDiffuse" fileId="7"/>
+            <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="WindowDemister.i3d.shapes"/>
+    <Scene>
+        <Shape name="WindowDemister" rotation="-2.50448e-06 -0 0" shapeId="1" clipDistance="70" nodeId="655" castsShadows="true" receiveShadows="true" materialIds="49"/>
+    </Scene>
+</i3D>

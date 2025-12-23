@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ic_clickIcons.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.8"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="1" filename="ic_clickIcons_emissive.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="ic_mat" materialId="5" alphaBlending="true" customShaderId="4" customShaderVariation="additive_colorScale">
+      <Texture fileId="1"/>
+      <CustomParameter name="lightControl" value="1.0"/>
+      <CustomParameter name="pulseSpeed" value="3"/>	  
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ic_clickIcons.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="RADIO" shapeId="1" clipDistance="15" nodeId="23" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="GPS" shapeId="2" clipDistance="15" nodeId="24" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="KEY" shapeId="3" clipDistance="15" nodeId="25" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="ENTER" shapeId="4" clipDistance="15" nodeId="26" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="UNLOAD" shapeId="5" clipDistance="15" nodeId="27" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="BRAKE" shapeId="6" clipDistance="15" nodeId="28" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="STEERING" shapeId="7" clipDistance="15" nodeId="29" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="EXIT" shapeId="8" clipDistance="15" nodeId="30" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="PIPE" shapeId="9" clipDistance="15" nodeId="31" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="HAZARD" shapeId="10" clipDistance="15" nodeId="32" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="RADIO_LEFT" shapeId="11" clipDistance="15" nodeId="33" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="RADIO_RIGHT" shapeId="12" clipDistance="15" nodeId="34" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="DOWN" shapeId="13" clipDistance="15" nodeId="35" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="UP" shapeId="14" clipDistance="15" nodeId="36" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="RIGHT" shapeId="15" clipDistance="15" nodeId="37" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+    <Shape name="LEFT" shapeId="16" clipDistance="15" nodeId="38" castsShadows="false" receiveShadows="true" decalLayer="0" materialIds="5"/>
+  </Scene>
+
+</i3D>

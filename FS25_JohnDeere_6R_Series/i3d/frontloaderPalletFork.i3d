@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="frontloaderPalletFork.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="3" filename="$data/vehicles/albutt/frontloaderPalletFork/frontloaderPalletFork_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/albutt/frontloaderPalletFork/frontloaderPalletFork_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="frontloaderPalletFork_metalPaintedBlack_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+      <CustomParameter name="colorScale" value="0.05 0.05 0.05"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="frontloaderPalletFork_silverScratched_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="frontloaderPalletFork.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="frontloaderPalletFork_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="16" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+      <Shape name="frontloaderPalletFork_vis" shapeId="2" clipDistance="300" nodeId="17" castsShadows="true" receiveShadows="true" skinBindNodeIds="17 20 24" materialIds="6,5">
+        <TransformGroup name="attacherJoint" translation="0 0.63125 -0.662314" rotation="-90 261.108 89.8575" nodeId="18"/>
+        <TransformGroup name="movingParts" nodeId="19">
+          <TransformGroup name="forkLeft" translation="0.317 0.387 -0.5257" clipDistance="300" nodeId="20">
+            <Shape name="forkCollision01" translation="0.00018 -0.358999 0.425848" shapeId="3" compoundChild="true" collisionFilterGroup="0x20000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="forkLeftTopColPart" translation="8e-05 -0.258324 -0.018339" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="tensionBeltMesh02" translation="0.001 0.000599 0.606973" shapeId="5" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          </TransformGroup>
+          <TransformGroup name="forkRight" translation="-0.3169 0.3869 -0.5257" clipDistance="300" nodeId="24">
+            <Shape name="forkCollision02" translation="0 -0.358999 0.425848" shapeId="6" compoundChild="true" collisionFilterGroup="0x20000" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="forkRightTopColPart" translation="-0.0001 -0.258224 -0.018339" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="tensionBeltMesh03" translation="-0.000755 0.000699 0.606973" shapeId="5" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="jointNode" translation="0 0.056734 -0.000634" nodeId="28"/>
+        <Shape name="tensionBeltMesh01" translation="0 0.359042 -0.561854" shapeId="7" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/sharedLight.xsd">
+    <filename>shared/145reflector.i3d</filename>
+    <rootNode node="0|1"/>
+    <staticLightCompound>
+        <node node="0|1|0|0" intensity="14"/>	
+        <node node="0|1|0|1" intensity="14"/>	
+        <node node="0|1|1|0" intensity="14"/>	
+        <node node="0|1|1|1" intensity="14"/>		
+    </staticLightCompound>
+</light>

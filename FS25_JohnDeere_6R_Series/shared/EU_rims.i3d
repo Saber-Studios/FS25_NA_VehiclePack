@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="EU_rims.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="17" filename="$data/shared/default_normal.dds"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="22" filename="$data/shared/licensePlates/licensePlatesUSBody_vmask.dds"/>
+    <File fileId="14" filename="$data/shared/wheels/rims/rim005_normal.dds"/>
+    <File fileId="15" filename="$data/shared/wheels/rims/rim005_vmask.dds"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="21" filename="$data/vehicles/bednar/mm7000/mm7000Hoses_normal.dds"/>
+    <File fileId="2" filename="../textures/2rim_old_normal.png"/>
+    <File fileId="3" filename="../textures/2rim_old_specular.dds"/>
+    <File fileId="23" filename="../textures/rim_normal.png"/>
+    <File fileId="18" filename="../textures/rim_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chrome" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="19"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="20"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="CHROME.004" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="chrome2" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="19"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="20"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="chrome_bolt" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="RIM_JD" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="RIM_JD" materialId="10" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="RIM_PACK2" materialId="11" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="RIM_PACK3" materialId="12" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="13" diffuseColor="0.0117647 0.0117647 0.0117647 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="EU_rims.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="hubs" nodeId="37">
+      <Shape name="hub_left" shapeId="1" clipDistance="300" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="11,6">
+        <Shape name="BOLT" translation="0.0504757 0.134246 -0.0646331" shapeId="2" clipDistance="80" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="plane" translation="0.00378851 0 0" shapeId="3" clipDistance="25" nodeId="40" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="13"/>
+      </Shape>
+      <Shape name="hub_right" shapeId="4" clipDistance="300" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="11,6">
+        <Shape name="BOLT.001" translation="-0.0504757 0.134246 0.0646331" shapeId="5" clipDistance="80" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="plane" translation="-0.00419471 0 0" shapeId="6" clipDistance="25" nodeId="43" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="13"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="Rims" nodeId="44">
+      <Shape name="Rims_L" shapeId="7" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="Rims_R" shapeId="8" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="RimFrontLeft" translation="0 7.10131e-08 0" shapeId="9" clipDistance="300" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="RimFrontRight" translation="0 7.10131e-08 0" shapeId="10" clipDistance="300" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="RimFrontLeft_round" shapeId="11" clipDistance="300" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="RimFrontRight_round" shapeId="12" clipDistance="300" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <Shape name="FRONT_L" shapeId="13" clipDistance="300" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      <TransformGroup name="transform" nodeId="52"/>
+      <TransformGroup name="transform" nodeId="53"/>
+      <TransformGroup name="transform" nodeId="54"/>
+      <TransformGroup name="transform" nodeId="55"/>
+    </TransformGroup>
+    <TransformGroup name="RIMS_HUB" nodeId="56">
+      <Shape name="Rims_L" translation="0 -9.32173e-09 0" shapeId="14" clipDistance="300" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      <Shape name="Rims_R" translation="0 -9.32173e-09 0" shapeId="15" clipDistance="300" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="10"/>
+    </TransformGroup>
+    <TransformGroup name="old" nodeId="59">
+      <Shape name="hubBackR" shapeId="16" visibility="false" clipDistance="300" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="10,5,7">
+        <Shape name="plane" shapeId="17" nodeId="61" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="13"/>
+      </Shape>
+      <Shape name="hubBackL" shapeId="18" visibility="false" clipDistance="300" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="10,5,7">
+        <Shape name="plane" shapeId="19" nodeId="63" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="13"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="hubs" nodeId="64"/>
+    <TransformGroup name="rim" nodeId="65"/>
+    <TransformGroup name="rims_new" nodeId="66">
+      <Shape name="rim_front_LEFT" shapeId="20" clipDistance="300" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="rim_front_RIGHT" shapeId="21" clipDistance="300" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="rim_front_LEFT2" shapeId="22" clipDistance="300" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      <Shape name="rim_front_RIGHT2" shapeId="23" clipDistance="300" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="9"/>
+    </TransformGroup>
+    <TransformGroup name="rims_back_new" nodeId="71">
+      <Shape name="Rims_L" shapeId="7" clipDistance="300" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      <Shape name="Rims_R" shapeId="8" clipDistance="300" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="11"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
