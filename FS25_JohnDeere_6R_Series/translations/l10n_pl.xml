@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Naklejki"/>
+    <text name="carpet" text="Dywan"/>
+    <text name="curtain" text="Zasłona"/>
+    <text name="olen" text="Emblemat John Deere"/>
+    <text name="configuration_exhaust" text="Układ wydechowy"/>
+    <text name="collection_decals" text="Naklejki kolekcjonerskie"/>
+    <text name="configuration_WindowDemister" text="Podgrzewana tylna szyba"/>
+    <text name="snow_dax_krilo" text="Śnieg na dachu i błotnikach"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30 cali ROW CROP podwójne koła"/>
+    <text name="configuration_RC30" text="ROW CROP 30 cali"/>
+    <text name="configuration_RC_hub" text="Piasty 30-calowa ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Ukryj obiekt"/>
+    <text name="unvis" text="Pokaż obiekt"/>
+    <text name="carpet_curtain" text="Zasłona+Dywan"/>
+    <text name="Black_Edition" text="Czarna Edycja"/>
+    <text name="Gray_Edition" text="Szara Edycja"/>
+    <text name="actionIC_Animation" text="Sterowanie myszką"/>
+    <text name="actionIC_IC" text="Sterowanie interaktywne"/>
+    <text name="actionIC_pto_off_front" text="IC: Wyłącz przedni wał odbioru mocy"/>
+    <text name="actionIC_pto_on_front" text="IC: Włącz przedni wał odbioru mocy"/>
+    <text name="actionIC_pto_off_back" text="IC: Wyłącz tylny wał odbioru mocy"/>
+    <text name="actionIC_pto_on_back" text="IC: Włącz tylny wał odbioru mocy"/>
+    <text name="actionIC_liftImplement_front" text="IC: Podnieś przedni osprzęt"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Opuść przedni osprzęt"/>
+    <text name="actionIC_liftImplement_back" text="IC: Podnieś tylny osprzęt"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Opuść tylny osprzęt"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Rozłóż przedni osprzęt"/>
+    <text name="actionIC_foldImplement_front" text="IC: Złóż przedni osprzęt"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Rozłóż tylny osprzęt"/>
+    <text name="actionIC_foldImplement_back" text="IC: Złóż tylny osprzęt"/>
+    <text name="configuration_valueDesign10" text="Projekt 10"/>
+    <text name="configuration_valueDesign11" text="Projekt 11"/>
+    <text name="configuration_valueDesign12" text="Projekt 12"/>
+    <text name="configuration_valueDesign13" text="Projekt 13"/>
+    <text name="configuration_valueDesign14" text="Projekt 13"/>
+    <text name="rear_decals" text="Naklejka na tylną szybę"/>
+    <text name="front_decals" text="Naklejka na przednią szybę"/>
+    <text name="stickersOnHood" text="Naklejki na masce"/>
+    <text name="decals_on_glass" text="Naklejki na szybie"/>
+    <text name="leather" text="Skóra"/>
+    <text name="mat_seat" text="Materiał siedzenia"/>
+    <text name="200kg" text="EU 200KG"/>				
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop szeroki USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Balast Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>	
+    <text name="antenna" text="Antena"/>
+    <text name="antenna2" text="Antena 2"/>
+    <text name="antenna_horn" text="Antena + Klakson"/>
+    <text name="antenna_horn2" text="Antena 2 + Klakson"/>
+    <text name="actionIC_fold_ob" text="IC: Złóż"/>
+    <text name="actionIC_unfold_ob" text="IC: Rozłóż"/>
+    <text name="configuration_tre_car" text="Odświeżacz powietrza do samochodu"/>
+    <text name="seat" text="Siedzenie"/>		  
+    <text name="marker_lights" text="Światła pozycyjne"/>
+    <text name="light" text="Światło"/>
+      <text name="wth_adblue" text="Bez AdBlue"/>
+  </texts>
+</l10n>

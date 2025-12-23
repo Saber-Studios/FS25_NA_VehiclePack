@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Adesivi"/>
+    <text name="carpet" text="Tappeto"/>
+    <text name="curtain" text="Tenda"/>
+    <text name="olen" text="Emblema John Deere"/>
+    <text name="configuration_exhaust" text="Sistema di scarico"/>
+    <text name="collection_decals" text="Adesivi della collezione"/>
+    <text name="configuration_WindowDemister" text="Sbrinatore lunotto"/>
+    <text name="snow_dax_krilo" text="Neve sul tetto e sui parafanghi"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30 pollici ROW CROP ruote gemellate"/>
+    <text name="configuration_RC30" text="ROW CROP 30 pollici"/>
+    <text name="configuration_RC_hub" text="Mozzi ROW CROP da 30 pollici"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="EU_Black_Edition" text="EU Black Edition"/>
+    <text name="US_Black_Edition" text="US Black Edition"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Nascondi oggetto"/>
+    <text name="unvis" text="Mostra oggetto"/>
+    <text name="carpet_curtain" text="Tenda+Tappeto"/>
+    <text name="Black_Edition" text="Black Edition"/>
+    <text name="Gray_Edition" text="Gray Edition"/>
+    <text name="actionIC_Animation" text="Controllo mouse"/>
+    <text name="actionIC_IC" text="Controllo interattivo"/>
+    <text name="actionIC_pto_off_front" text="IC: Spegni la presa di forza anteriore"/>
+    <text name="actionIC_pto_on_front" text="IC: Accendi la presa di forza anteriore"/>
+    <text name="actionIC_pto_off_back" text="IC: Spegni la presa di forza posteriore"/>
+    <text name="actionIC_pto_on_back" text="IC: Accendi la presa di forza posteriore"/>
+    <text name="actionIC_liftImplement_front" text="IC: Solleva l'attrezzo anteriore"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Abbassa l'attrezzo anteriore"/>
+    <text name="actionIC_liftImplement_back" text="IC: Solleva l'attrezzo posteriore"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Abbassa l'attrezzo posteriore"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Apri l'attrezzo anteriore"/>
+    <text name="actionIC_foldImplement_front" text="IC: Chiudi l'attrezzo anteriore"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Apri l'attrezzo posteriore"/>
+    <text name="actionIC_foldImplement_back" text="IC: Chiudi l'attrezzo posteriore"/>
+    <text name="configuration_valueDesign10" text="Design 10"/>
+    <text name="configuration_valueDesign11" text="Design 11"/>
+    <text name="configuration_valueDesign12" text="Design 12"/>
+    <text name="configuration_valueDesign13" text="Design 13"/>
+    <text name="configuration_valueDesign14" text="Design 13"/>
+    <text name="rear_decals" text="Adesivo sul lunotto posteriore"/>
+    <text name="front_decals" text="Adesivo sul parabrezza"/>
+    <text name="stickersOnHood" text="Adesivi sul cofano"/>
+    <text name="decals_on_glass" text="Adesivi sul vetro"/>
+    <text name="leather" text="Pelle"/>
+    <text name="mat_seat" text="Materiale del sedile"/>
+    <text name="seat" text="Sedile"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop largo USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Zavorra Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="Antenna"/>
+    <text name="antenna2" text="Antenna 2"/>
+    <text name="antenna_horn" text="Antenna + Clacson"/>
+    <text name="antenna_horn2" text="Antenna 2 + Clacson"/>
+    <text name="actionIC_fold_ob" text="IC: Chiudi"/>
+    <text name="actionIC_unfold_ob" text="IC: Apri"/>
+    <text name="configuration_tre_car" text="Profumatore per auto"/>
+    <text name="marker_lights" text="Luci di posizione"/>
+    <text name="light" text="Luce"/>
+    <text name="wth_adblue" text="Senza AdBlue"/>
+  </texts>
+</l10n>

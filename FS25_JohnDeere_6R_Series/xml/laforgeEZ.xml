@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Laforge EZ 1700 (6R 230-250)</name>
+        <functions>
+            <function>$l10n_function_weight</function>
+        </functions>
+        <specs>
+            <combination xmlFilename="xml/series6RExtraLarge.xml"/>
+            <combination xmlFilename="xml/series6RLarge175_215.xml"/>
+            <combination xmlFilename="xml/series6RLarge.xml"/>			
+        </specs>
+        <rotation>0</rotation>
+        <image>$data/vehicles/johnDeere/laforgeEZ/store_laforgeEZ.png</image>
+        <price>5000</price>
+        <lifetime>600</lifetime>
+        <brand>JOHNDEERE</brand>
+        <category>weights</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <vertexBufferMemoryUsage>153600</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>16384</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_weight</typeDesc>
+        <filename>i3d/laforgeEZ.i3d</filename>
+        <size width="2" length="1.9" height="0.3"/>
+        <components>
+            <component centerOfMass="0 0.05 0" solverIterationCount="10" mass="1700" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="OTHER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" needsLowering="false" allowsLowering="false">
+                <distanceToGround lower="0.4" upper="0.4" />
+                <subType name="laforgeEZ" showWarning="false"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+	<designColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="false">	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColorConfiguration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+       	<material materialSlotName="green_mat"/>		
+    </designColorConfigurations>
+  
+    <ai>
+        <agentAttachment width="2.0" height="0.25" length="1.9" lengthOffset="0"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.1" maxX="1.1" minZ="0.2" maxZ="0.85" yOffset="0.02" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2" showOnHud="false"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="laforge_main_component1" node="0>" />
+        <i3dMapping id="laforge_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+    </i3dMappings>
+</vehicle>

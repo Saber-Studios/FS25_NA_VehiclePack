@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="145reflector.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="12" filename="$data/shared/assets/lights/lizard/rearLight19Orange_emissive.png"/>
+    <File fileId="13" filename="$data/shared/assets/lights/lizard/rearLight19Red_emissive.png"/>
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rearLight19_normal.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/rearLight19_vmask.png"/>
+    <File fileId="1" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="rearLight19_glassClear03_mat" materialId="5" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="colorScale" value="1 0.4167 0"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="rearLight19_glassClear03_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="145reflector.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="reflector_145" nodeId="20">
+      <TransformGroup name="Orange" nodeId="21">
+        <TransformGroup name="rearLight19Orange" rotation="-10.0019 18.6766 -1.12286" nodeId="22">
+          <Shape name="rearLightGlass" rotation="-6.20219 -0 -8.53774e-07" shapeId="1" clipDistance="75" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rearLightGlass" rotation="-5.01069 -0 -8.53774e-07" shapeId="2" clipDistance="75" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="rearLight19Orange" rotation="-2.35497 -23.6747 -14.2824" nodeId="25">
+          <Shape name="rearLightGlass" rotation="-6.65545 -6.83019e-06 2.7214e-06" shapeId="3" clipDistance="75" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rearLightGlass" rotation="-10.1657 -6.83019e-06 2.7214e-06" shapeId="4" clipDistance="75" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="rearLight19Orange" rotation="-10.0019 18.6766 -1.12286" nodeId="28">
+          <Shape name="rearLightGlass" rotation="18.0548 -12.1853 -2.24227" shapeId="5" clipDistance="75" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rearLightGlass" rotation="19.7839 -17.6136 -4.23351" shapeId="6" clipDistance="75" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rearLightGlass" rotation="26.999 -15.0628 -3.73908" shapeId="7" clipDistance="75" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="rearLightGlass" rotation="21.9293 -12.1853 -2.24227" shapeId="8" clipDistance="75" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Red" nodeId="33">
+        <TransformGroup name="rearLight19Red2" rotation="-15.7537 -5.97771 -0.0291314" nodeId="34">
+          <Shape name="rearLightGlass" rotation="-1.33685 6.57987 -5.37147e-08" shapeId="9" clipDistance="75" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="rearLightGlass" rotation="-2.09316 5.26366 3.59032e-06" shapeId="10" clipDistance="75" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="rearLight19Red" rotation="-15.8382 -5.74472 0.798751" nodeId="37">
+          <Shape name="rearLightGlass" rotation="0 -3.74449 -3.2085e-06" shapeId="11" clipDistance="75" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="rearLightGlass" shapeId="12" clipDistance="75" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

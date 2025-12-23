@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implementDynamicMountAttacher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_shopItem_frontloaderPalletFork</name>
+        <specs>
+            <combination filterCategory="frontLoaders"/>
+            <combination filterCategory="frontLoaderVehicles"/>
+            <combination xmlFilename="xml/series6RExtraLarge.xml"/>
+            <combination xmlFilename="xml/series6RLarge175_215.xml"/>
+            <combination xmlFilename="xml/series6RLarge.xml"/>	
+			</specs>
+        <functions>
+            <function>$l10n_function_frontloaderPalletFork</function>
+        </functions>
+        <image>stores/store_frontloaderPalletFork.png</image>
+        <price>1700</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>ALBUTT</brand>
+        <category>frontLoaderTools</category>
+        <shopTranslationOffset>0 -0.005 0</shopTranslationOffset>
+        <shopRotationOffset>0.388 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>28416</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>6912</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_frontloaderTool</typeDesc>
+        <filename>i3d/frontloaderPalletFork.i3d</filename>
+        <size width="1.35" length="1.5" height="0.8" lengthOffset="-0.02"/>
+        <components>
+            <component centerOfMass="0 0.2 0" solverIterationCount="20" mass="250" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
+    </base>
+
+	<designColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="true">	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColorConfiguration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+       	<material materialSlotName="frontloaderPalletFork_metalPaintedBlack_mat"/>		
+    </designColorConfigurations>
+  
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="frontloader" />
+        </inputAttacherJoints>
+    </attachable>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="forkLeft">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" invertAxis="false" mouseSpeedFactor="0.15" iconName="WORKING_WIDTH_TRANSLATE_X" />
+                <dependentMovingTool node="forkRight" speedScale="-1"/>
+                <translation translationAxis="1" transSpeed="0.25" transAcceleration="50" transMin="0.19" transMax="0.570"/>
+            </movingTool>
+            <movingTool node="forkRight">
+                <translation translationAxis="1" transSpeed="0.25" transAcceleration="50" transMin="-0.570" transMax="-0.19"/>
+            </movingTool>
+        </movingTools>
+
+        <sounds>
+            <actionSound template="metalScrape" volumeScale="0.65" pitchScale="1"   actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="forkLeft" fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="grabImp"     volumeScale="4.8"  pitchScale="1.1" actionNames="TOOL_MOVE_END_NEG_LIMIT TOOL_MOVE_END_POS_LIMIT" nodes="forkLeft" />
+        </sounds>
+    </cylindered>
+
+    <dynamicMountAttacher node="jointNode">
+        <fork node="forkCollision01" />
+        <fork node="forkCollision02" />
+    </dynamicMountAttacher>
+
+    <ai>
+        <agentAttachment width="1.3" height="0.8" length="1.4"/>
+    </ai>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltMesh01"/>
+            <meshNode node="tensionBeltMesh02"/>
+            <meshNode node="tensionBeltMesh03"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <foliageBending>
+        <bendingNode minX="-0.65" maxX="0.65" minZ="-0.7" maxZ="-0.53" yOffset="0.2" />
+        <bendingNode minX="-0.07" maxX="0.07" minZ="-0.05" maxZ="1.25" yOffset="-0.36" node="forkLeft" />
+        <bendingNode minX="-0.07" maxX="0.07" minZ="-0.05" maxZ="1.25" yOffset="-0.36" node="forkRight" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90"  workMultiplier="2" fieldMultiplier="2" washDuration="1"/>
+
+    <i3dMappings>
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="forkLeft" node="0>0|1|0" />
+        <i3dMapping id="forkCollision01" node="0>0|1|0|0" />
+        <i3dMapping id="tensionBeltMesh02" node="0>0|1|0|2" />
+        <i3dMapping id="forkRight" node="0>0|1|1" />
+        <i3dMapping id="forkCollision02" node="0>0|1|1|0" />
+        <i3dMapping id="tensionBeltMesh03" node="0>0|1|1|2" />
+        <i3dMapping id="jointNode" node="0>0|2" />
+        <i3dMapping id="tensionBeltMesh01" node="0>0|3" />
+    </i3dMappings>
+</vehicle>

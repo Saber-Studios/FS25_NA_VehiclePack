@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bagLifter.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/calibrated/grainClearSmall_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/calibrated/grainSmall_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="3" filename="$data/vehicles/quicke/bagLifter/bagLifter_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/quicke/bagLifter/bagLifter_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bagLifter_QUICKE_BLACK1_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.107 0.1051 0.1063"/>
+      <CustomParameter name="smoothnessScale" value="0.7039"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+    </Material>
+    <Material name="bagLifter_QUICKE_ORANGE1_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="1 0.2142 0"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="bagLifter_silverScratched_mat" materialId="7" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="14"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bagLifter.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="bagLifter_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+      <Shape name="bagLifter_vis" shapeId="2" clipDistance="300" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="6,7,5">
+        <TransformGroup name="attachable" nodeId="20">
+          <TransformGroup name="attacherJoint" translation="0 0.416977 -0.132976" rotation="90 -81.1694 -90" nodeId="21"/>
+          <TransformGroup name="bigBagJoint" translation="0.01579 1.66513 0.846814" rotation="90.5043 0 -90" nodeId="22"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="collisions" nodeId="24">
+        <Shape name="colPart01" translation="0 1.154 0.364965" shapeId="3" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="colPart02" translation="0.45953 0.246184 0.359927" rotation="0 16.4679 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="colPart03" translation="-0.457365 0.246184 0.360567" rotation="0 -16.4679 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="tensionBeltMesh01" translation="0 0.530042 0.259903" shapeId="6" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

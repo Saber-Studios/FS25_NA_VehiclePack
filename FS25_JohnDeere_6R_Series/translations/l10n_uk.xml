@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<l10n>
+  <texts>
+    <text name="stickers" text="Наклейки"/>
+    <text name="carpet" text="Коврик"/>
+    <text name="curtain" text="Штора"/>
+    <text name="olen" text="Емблема John Deere"/>
+    <text name="configuration_exhaust" text="Вихлопна система"/>
+    <text name="collection_decals" text="Колекційні наклейки"/>
+    <text name="configuration_WindowDemister" text="Обігрівач заднього скла"/>
+    <text name="snow_dax_krilo" text="Сніг на даху та крилі"/>
+    <text name="Row_crop" text="ROW CROP"/>
+    <text name="configuration_valueDesign10" text="Дизайн 10"/>
+    <text name="configuration_valueDesign11" text="Дизайн 11"/>
+    <text name="configuration_valueDesign12" text="Дизайн 12"/>
+    <text name="configuration_valueDesign13" text="Дизайн 13"/>
+    <text name="configuration_valueDesign14" text="Дизайн 13"/>
+    <text name="Row_crop2" text="ROW CROP"/>
+    <text name="configuration_RC_30_dual" text="30-дюймова ROW CROP здвоєні колеса"/>
+    <text name="configuration_RC30" text="ROW CROP 30 дюймів"/>
+    <text name="configuration_RC_hub" text="Ступиці 30-дюймова ROW CROP"/>
+    <text name="EU_TYPE" text="EU"/>
+    <text name="US_TYPE" text="US"/>
+    <text name="EU_TYPE2" text="EU"/>
+    <text name="US_TYPE2" text="US"/>
+    <text name="Premium_Edition" text="Premium Edition"/>
+    <text name="Ultimate_Edition" text="Ultimate Edition"/>
+    <text name="vis" text="Приховати об'єкт"/>
+    <text name="unvis" text="Відобразити об'єкт"/>
+    <text name="carpet_curtain" text="Штора+Килимок"/>
+    <text name="Black_Edition" text="Black Edition"/>
+    <text name="Gray_Edition" text="Gray Edition"/>
+    <text name="actionIC_Animation" text="Керування мишею"/>
+    <text name="actionIC_IC" text="Інтерактивне керування"/>
+    <text name="actionIC_pto_off_front" text="IC: Вимкнути передній ВВП"/>
+    <text name="actionIC_pto_on_front" text="IC: Увімкнути передній ВВП"/>
+    <text name="actionIC_pto_off_back" text="IC: Вимкнути задній ВВП"/>
+    <text name="actionIC_pto_on_back" text="IC: Увімкнути задній ВВП"/>
+    <text name="actionIC_liftImplement_front" text="IC: Підняти переднє обладнання"/>
+    <text name="actionIC_lowerImplement_front" text="IC: Опустити переднє обладнання"/>
+    <text name="actionIC_liftImplement_back" text="IC: Підняти заднє обладнання"/>
+    <text name="actionIC_lowerImplement_back" text="IC: Опустити заднє обладнання"/>
+    <text name="actionIC_unfoldImplement_front" text="IC: Розкласти переднє обладнання"/>
+    <text name="actionIC_foldImplement_front" text="IC: Скласти переднє обладнання"/>
+    <text name="actionIC_unfoldImplement_back" text="IC: Розкласти заднє обладнання"/>
+    <text name="actionIC_foldImplement_back" text="IC: Скласти заднє обладнання"/>
+    <text name="rear_decals" text="Наклейка на задньому склі"/>
+    <text name="front_decals" text="Наклейка на передньому склі"/>
+    <text name="stickersOnHood" text="Наклейки на капоті"/>
+    <text name="decals_on_glass" text="Наклейки на склі"/>
+    <text name="leather" text="Шкіра"/>
+    <text name="mat_seat" text="Матеріал сидіння"/>
+    <text name="seat" text="сидіння"/>
+    <text name="200kg" text="EU 200KG"/>
+    <text name="500kg" text="EU 500KG"/>
+    <text name="600kg" text="EU 600KG"/>
+    <text name="1000kg" text="EU 1000KG"/>
+    <text name="usa_600kg" text="USA 550 kg/1213 lbs"/>
+    <text name="usa1t" text="USA 960 kg/2117 lbs"/>
+    <text name="usa1510" text="Row Crop широкий USA 1510 kg/3330 lbs"/>
+    <text name="Laforge" text="EZ Баласт Laforge"/>
+    <text name="ukspecs" text="UK Specs"/>
+    <text name="km_mi" text="Km/Mi"/>
+    <text name="700kg" text="EU 700KG"/>
+    <text name="antenna" text="Антена"/>
+    <text name="antenna2" text="Антена 2"/>
+    <text name="antenna_horn" text="Антена + Сигнал"/>
+    <text name="antenna_horn2" text="Антена 2 + Сигнал"/>
+    <text name="actionIC_fold_ob" text="IC: Скласти"/>
+    <text name="actionIC_unfold_ob" text="IC: Розкласти"/>
+    <text name="configuration_tre_car" text="Ароматизатор для авто"/>
+    <text name="marker_lights" text="Габаритні вогні"/>
+    <text name="light" text="Світло"/>
+    <text name="wth_adblue" text="Без AdBlue"/>
+  </texts>
+</l10n>

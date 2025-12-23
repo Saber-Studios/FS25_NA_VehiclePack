@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="lightCases.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="14" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.dds"/>
+        <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+        <File fileId="2" filename="$data/vehicles/johnDeere/series6R/lights01White_normal.png"/>
+        <File fileId="3" filename="$data/vehicles/johnDeere/series6R/lights01White_vmask.png"/>
+        <File fileId="12" filename="$data/vehicles/johnDeere/series6R/series6RLights_emissive.dds"/>
+    </Files>
+    <Materials>
+        <Material name="lights01White_plasticPaintedBlack_mat" materialId="1376" customShaderId="4" customShaderVariation="staticLight">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailDiffuse" fileId="7"/>
+            <Custommap name="lightsIntensity" fileId="12"/>
+            <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+        </Material>
+        <Material name="lights01White_silverScratched_mat" materialId="1377" customShaderId="4" customShaderVariation="staticLight">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailDiffuse" fileId="14"/>
+            <Custommap name="lightsIntensity" fileId="12"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="lightCases.i3d.shapes"/>
+    <Scene>
+        <Shape name="lightCases" translation="-2.5e-05 0 0" shapeId="1" clipDistance="75" nodeId="1380" castsShadows="true" receiveShadows="true" materialIds="1376,1377"/>
+    </Scene>
+</i3D>

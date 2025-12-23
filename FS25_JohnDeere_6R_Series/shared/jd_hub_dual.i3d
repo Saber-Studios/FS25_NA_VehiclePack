@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="jd_hub_dual.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.7"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="14" filename="$data/shared/wheels/hubs/dual003_normal.dds"/>
+    <File fileId="15" filename="$data/shared/wheels/hubs/dual003_vmask.dds"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="16" filename="$data/vehicles/johnDeere/series6R/series6RDecals_diffuse.dds"/>
+    <File fileId="17" filename="$data/vehicles/johnDeere/series6R/series6RDecals_normal.dds"/>
+    <File fileId="18" filename="$data/vehicles/johnDeere/series6R/series6R_vmask.dds"/>
+    <File fileId="2" filename="../textures/3hub_usa_normal.dds"/>
+    <File fileId="3" filename="../textures/3hub_usa_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="BOLT" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="chrome_silv" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="decals2" materialId="7" customShaderId="4" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="smoothnessScale" value="0.8"/>
+    </Material>
+    <Material name="rim_hub" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="jd_hub_dual.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="dual_175-230" nodeId="195">
+      <Shape name="dual_175-230L" shapeId="1" clipDistance="300" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="6,8">
+        <TransformGroup name="bolt" nodeId="197">
+          <TransformGroup name="bolt" translation="0.000903244 0 0" nodeId="198">
+            <TransformGroup name="bolt" nodeId="199">
+              <Shape name="BOLT" translation="0.0475203 0.134986 0.0318999" shapeId="2" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="0.00190115 0 0" shapeId="3" clipDistance="30" nodeId="201" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.134792 0.0412483" shapeId="4" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="5" clipDistance="30" nodeId="203" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" nodeId="204">
+              <Shape name="BOLT" translation="0.0475203 0.133647 0.0485277" shapeId="6" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="7" clipDistance="30" nodeId="206" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.130782 0.0176272" shapeId="8" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="9" clipDistance="30" nodeId="208" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000245245 -0.00220591" nodeId="209">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="10" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="11" clipDistance="30" nodeId="211" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" nodeId="212">
+              <Shape name="BOLT" translation="0.0475203 0.141385 0.0281351" shapeId="12" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="13" clipDistance="30" nodeId="214" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -2.93037e-05 0.001543" nodeId="215">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="14" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="15" clipDistance="30" nodeId="217" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -0.000258323 0.002441" nodeId="218">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="16" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="17" clipDistance="30" nodeId="220" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000103071 -0.000479716" nodeId="221">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="18" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="19" clipDistance="30" nodeId="223" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.00208034 0.000379916" nodeId="224">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="20" nodeId="225" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.009 -1.2837e-16 -1.40621e-23" shapeId="21" clipDistance="30" nodeId="226" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="227">
+            <Shape name="BOLT" translation="0.0653681 0.0939164 0.0375972" shapeId="22" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="23" clipDistance="30" nodeId="229" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0653681 0.0997518 -0.0115916" shapeId="24" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="25" clipDistance="30" nodeId="231" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="232">
+            <Shape name="BOLT" translation="0.0653681 0.0885791 -0.0522043" shapeId="26" nodeId="233" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="27" clipDistance="30" nodeId="234" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="235">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="28" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="29" clipDistance="30" nodeId="237" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="238">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="30" nodeId="239" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="31" clipDistance="30" nodeId="240" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="241">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="32" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="33" clipDistance="30" nodeId="243" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="244">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="34" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="35" clipDistance="30" nodeId="246" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="247">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="36" nodeId="248" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="37" clipDistance="30" nodeId="249" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="250">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="38" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="39" clipDistance="30" nodeId="252" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="253">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="40" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="41" clipDistance="30" nodeId="255" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="256">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="42" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="43" clipDistance="30" nodeId="258" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="259">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="44" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="45" clipDistance="30" nodeId="261" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+      <Shape name="dual_175-230R" shapeId="46" clipDistance="300" nodeId="262" castsShadows="true" receiveShadows="true" materialIds="6,8">
+        <TransformGroup name="bolt" nodeId="263">
+          <TransformGroup name="bolt" translation="0.000903244 0 0" nodeId="264">
+            <TransformGroup name="bolt" nodeId="265">
+              <Shape name="BOLT" translation="0.0475203 0.134986 0.0318999" shapeId="47" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.00159133 0 0" shapeId="48" clipDistance="30" nodeId="267" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.134792 0.0412483" shapeId="49" nodeId="268" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="50" clipDistance="30" nodeId="269" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" nodeId="270">
+              <Shape name="BOLT" translation="0.0475203 0.133647 0.0485277" shapeId="51" nodeId="271" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="52" clipDistance="30" nodeId="272" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.130782 0.0176272" shapeId="53" nodeId="273" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="54" clipDistance="30" nodeId="274" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000245245 -0.00220591" nodeId="275">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="55" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="56" clipDistance="30" nodeId="277" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" nodeId="278">
+              <Shape name="BOLT" translation="0.0475203 0.141385 0.0281351" shapeId="57" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="58" clipDistance="30" nodeId="280" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -2.93037e-05 0.001543" nodeId="281">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="59" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="60" clipDistance="30" nodeId="283" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -0.000258323 0.002441" nodeId="284">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="61" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="62" clipDistance="30" nodeId="286" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000103071 -0.000479716" nodeId="287">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="63" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="64" clipDistance="30" nodeId="289" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.00208034 0.000379916" nodeId="290">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="65" nodeId="291" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.009 -1.2837e-16 -1.40621e-23" shapeId="66" clipDistance="30" nodeId="292" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="293">
+            <Shape name="BOLT" translation="0.0653681 0.0939164 0.0375972" shapeId="67" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="68" clipDistance="30" nodeId="295" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0653681 0.0997518 -0.0115916" shapeId="69" nodeId="296" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="70" clipDistance="30" nodeId="297" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="298">
+            <Shape name="BOLT" translation="0.0653681 0.0885791 -0.0522043" shapeId="71" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="72" clipDistance="30" nodeId="300" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="301">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="73" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="74" clipDistance="30" nodeId="303" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="304">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="75" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="76" clipDistance="30" nodeId="306" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="307">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="77" nodeId="308" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="78" clipDistance="30" nodeId="309" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="310">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="79" nodeId="311" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="80" clipDistance="30" nodeId="312" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="313">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="81" nodeId="314" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="82" clipDistance="30" nodeId="315" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="316">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="83" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="84" clipDistance="30" nodeId="318" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="319">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="85" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="86" clipDistance="30" nodeId="321" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="322">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="87" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="88" clipDistance="30" nodeId="324" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="325">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="89" nodeId="326" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="90" clipDistance="30" nodeId="327" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="dual_145" nodeId="328">
+      <Shape name="dual_145L" shapeId="91" clipDistance="300" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="6,8">
+        <TransformGroup name="bolt" translation="-0.0271793 0 0" nodeId="330">
+          <TransformGroup name="bolt" nodeId="331">
+            <Shape name="BOLT" translation="0.0653681 0.0939164 0.0411866" shapeId="92" nodeId="332" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="93" clipDistance="30" nodeId="333" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0653681 0.0955483 -0.0115916" shapeId="94" nodeId="334" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="95" clipDistance="30" nodeId="335" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 -0.00543065 -0.00641861" nodeId="336">
+            <Shape name="BOLT" translation="0.0653681 0.0885791 -0.0522043" shapeId="96" nodeId="337" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="97" clipDistance="30" nodeId="338" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 -0.00745266" nodeId="339">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="98" nodeId="340" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="99" clipDistance="30" nodeId="341" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00496707 -0.00621035" nodeId="342">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="100" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="101" clipDistance="30" nodeId="344" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00559706 -0.0024851" nodeId="345">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="102" nodeId="346" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="103" clipDistance="30" nodeId="347" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00621648 -0.00248465" nodeId="348">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="104" nodeId="349" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="105" clipDistance="30" nodeId="350" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00610734 0" nodeId="351">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="106" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="107" clipDistance="30" nodeId="353" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00498378 0.00329828" nodeId="354">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="108" nodeId="355" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="109" clipDistance="30" nodeId="356" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 0.00660032" nodeId="357">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="110" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="111" clipDistance="30" nodeId="359" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00275424 0.00934928" nodeId="360">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="112" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="113" clipDistance="30" nodeId="362" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 0.00605048" nodeId="363">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="114" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="115" clipDistance="30" nodeId="365" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 -0.00745266" nodeId="366">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="116" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="117" clipDistance="30" nodeId="368" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="bolt" translation="0.025 0 0" nodeId="369">
+          <TransformGroup name="bolt" nodeId="370">
+            <Shape name="BOLT" translation="0.0475203 0.138925 0.0318999" shapeId="118" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="0.002 0 0" shapeId="119" clipDistance="30" nodeId="372" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0475203 -0.137197 0.0412483" shapeId="120" nodeId="373" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -2.18576e-16 -1.12704e-23" shapeId="121" clipDistance="30" nodeId="374" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" nodeId="375">
+            <Shape name="BOLT" translation="0.0475203 0.134825 0.0485277" shapeId="122" nodeId="376" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.00563845 -1.2837e-16 -1.40621e-23" shapeId="123" clipDistance="30" nodeId="377" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0475203 -0.135562 0.0176272" shapeId="124" nodeId="378" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="125" clipDistance="30" nodeId="379" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.000245245 0.004" nodeId="380">
+            <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="126" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="127" clipDistance="30" nodeId="382" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 -0.004" nodeId="383">
+            <Shape name="BOLT" translation="0.0475203 0.141385 0.0281351" shapeId="128" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="129" clipDistance="30" nodeId="385" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 -2.93037e-05 -0.004" nodeId="386">
+            <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="130" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="131" clipDistance="30" nodeId="388" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 -0.000258323 -0.004" nodeId="389">
+            <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="132" nodeId="390" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="133" clipDistance="30" nodeId="391" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.000103071 0.004" nodeId="392">
+            <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="134" nodeId="393" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="135" clipDistance="30" nodeId="394" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00208034 0.004" nodeId="395">
+            <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="136" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.006 -1.2837e-16 -1.40621e-23" shapeId="137" clipDistance="30" nodeId="397" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="SPLINT" translation="0.067 -1.04343e-09 0.00154302" scale="0.99 0.99 0.99" shapeId="138" clipDistance="300" nodeId="398" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </Shape>
+      <Shape name="dual_145R" shapeId="139" clipDistance="300" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="6,8">
+        <TransformGroup name="bolt" translation="-0.0271793 0 0" nodeId="400">
+          <TransformGroup name="bolt" nodeId="401">
+            <Shape name="BOLT" translation="0.0653681 0.0939164 0.0411866" shapeId="140" nodeId="402" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="141" clipDistance="30" nodeId="403" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+            <Shape name="BOLT" translation="0.0653681 0.0955483 -0.0115916" shapeId="142" nodeId="404" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="143" clipDistance="30" nodeId="405" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 -0.00543065 -0.00641861" nodeId="406">
+            <Shape name="BOLT" translation="0.0653681 0.0885791 -0.0522043" shapeId="144" nodeId="407" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="145" clipDistance="30" nodeId="408" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 -0.00745266" nodeId="409">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="146" nodeId="410" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="147" clipDistance="30" nodeId="411" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00496707 -0.00621035" nodeId="412">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="148" nodeId="413" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="149" clipDistance="30" nodeId="414" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00559706 -0.0024851" nodeId="415">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="150" nodeId="416" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="151" clipDistance="30" nodeId="417" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00621648 -0.00248465" nodeId="418">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="152" nodeId="419" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="153" clipDistance="30" nodeId="420" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00610734 0" nodeId="421">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="154" nodeId="422" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="155" clipDistance="30" nodeId="423" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00498378 0.00329828" nodeId="424">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="156" nodeId="425" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="157" clipDistance="30" nodeId="426" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 0.00660032" nodeId="427">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="158" nodeId="428" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="159" clipDistance="30" nodeId="429" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0.00275424 0.00934928" nodeId="430">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="160" nodeId="431" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="161" clipDistance="30" nodeId="432" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 0.00605048" nodeId="433">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="162" nodeId="434" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="163" clipDistance="30" nodeId="435" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0 0 -0.00745266" nodeId="436">
+            <Shape name="BOLT" translation="0.0653681 0.0904253 -0.0440606" shapeId="164" nodeId="437" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="shaiba" translation="-0.008 -2.18576e-16 -1.12704e-23" shapeId="165" clipDistance="30" nodeId="438" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="bolt" translation="0.002 0 0" nodeId="439">
+            <TransformGroup name="bolt" nodeId="440">
+              <Shape name="BOLT" translation="0.0475203 0.138925 0.0318999" shapeId="166" nodeId="441" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="0.00193348 0 0" shapeId="167" clipDistance="30" nodeId="442" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.137197 0.0412483" shapeId="168" nodeId="443" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -2.18576e-16 -1.12704e-23" shapeId="169" clipDistance="30" nodeId="444" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" nodeId="445">
+              <Shape name="BOLT" translation="0.0475203 0.134825 0.0485277" shapeId="170" nodeId="446" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.00606735 -1.2837e-16 -1.40621e-23" shapeId="171" clipDistance="30" nodeId="447" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+              <Shape name="BOLT" translation="0.0475203 -0.135562 0.0176272" shapeId="172" nodeId="448" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="173" clipDistance="30" nodeId="449" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000245245 0.004" nodeId="450">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="174" nodeId="451" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="175" clipDistance="30" nodeId="452" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0 -0.004" nodeId="453">
+              <Shape name="BOLT" translation="0.0475203 0.141385 0.0281351" shapeId="176" nodeId="454" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="177" clipDistance="30" nodeId="455" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -2.93037e-05 -0.004" nodeId="456">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="178" nodeId="457" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="179" clipDistance="30" nodeId="458" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 -0.000258323 -0.004" nodeId="459">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="180" nodeId="460" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="181" clipDistance="30" nodeId="461" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.000103071 0.004" nodeId="462">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="182" nodeId="463" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.007 -1.2837e-16 -1.40621e-23" shapeId="183" clipDistance="30" nodeId="464" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="bolt" translation="0 0.00208034 0.004" nodeId="465">
+              <Shape name="BOLT" translation="0.0475203 0.138516 0.0302979" shapeId="184" nodeId="466" castsShadows="true" receiveShadows="true" materialIds="5">
+                <Shape name="shaiba" translation="-0.008 -1.2837e-16 -1.40621e-23" shapeId="185" clipDistance="30" nodeId="467" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="SPLINT" translation="-0.067 -1.04343e-09 0.00154302" scale="0.99 0.99 0.99" shapeId="186" clipDistance="300" nodeId="468" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

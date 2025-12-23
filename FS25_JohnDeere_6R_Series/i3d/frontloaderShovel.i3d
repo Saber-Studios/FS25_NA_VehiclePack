@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="frontloaderShovel.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="13" filename="$data/shared/default_normal.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="3" filename="$data/vehicles/albutt/frontloaderShovel/frontloaderShovel_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/albutt/frontloaderShovel/frontloaderShovel_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1" specularColor="0.501961 1 0.501961">
+      <Normalmap fileId="13"/>
+    </Material>
+    <Material name="frontloaderShovel_metalPaintedBlack_mat" materialId="9" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.05 0.05 0.05"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="unloadMap_mat" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1" alphaBlending="true">
+      <Normalmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="frontloaderShovel.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="frontloaderShovel_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="frontloaderShovel_vis" shapeId="2" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="9">
+        <TransformGroup name="attacherJoint" translation="0 0.511617 -0.410505" rotation="90 294.277 -90" nodeId="26"/>
+        <TransformGroup name="fillUnit" nodeId="27">
+          <Shape name="exactFillRootNode" translation="0 0.367036 0.042226" shapeId="3" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <Shape name="fillVolume" translation="0 0.127188 -0.396911" rotation="51.5597 0 3e-06" shapeId="4" clipDistance="300" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="fillVolumeLoadNode" translation="0 0.022712 0.479614" nodeId="30"/>
+          <TransformGroup name="fillVolumeUnloadNode" translation="0 0.738879 0.060109" nodeId="31"/>
+          <TransformGroup name="dischargeNode" translation="0 0.022712 0.583996" nodeId="32"/>
+          <TransformGroup name="shovelNode" translation="0 0.002712 0.614081" nodeId="33"/>
+          <TransformGroup name="levelerNode" translation="0 0.002712 0.614081" nodeId="34"/>
+        </TransformGroup>
+        <TransformGroup name="effects" translation="0 0.046367 0.586176" nodeId="35">
+          <Shape name="grainEffect" translation="0 -0.03835 0.022862" shapeId="5" visibility="false" clipDistance="100" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <Shape name="smokeEffect" translation="0 -0.018327 0.113663" shapeId="6" visibility="false" clipDistance="100" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="emitterShape" translation="0 0.098726 -0.427552" shapeId="7" clipDistance="300" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="collisions" nodeId="40">
+        <Shape name="colPart01" translation="0 0.10182 -0.389805" shapeId="8" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart02" translation="0 0.338722 -0.363695" shapeId="9" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart03" translation="0.950258 0.411989 0.07319" shapeId="10" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart04" translation="-0.95 0.411989 0.07319" shapeId="11" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="tensionBeltMesh01" translation="0 0.508952 0.029763" shapeId="12" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

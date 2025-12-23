@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>PickUp 1150</name>
+        <functions>
+            <function>$l10n_function_weight</function>
+        </functions>
+        <rotation>0</rotation>
+        <image>$data/vehicles/johnDeere/pickUp1150/store_pickUp1150.png</image>
+        <price>1950</price>
+        <lifetime>600</lifetime>
+        <brand>JOHNDEERE</brand>
+        <category>weights</category>
+        <shopLoadingDelay initial="0.2"/>
+        <vertexBufferMemoryUsage>57344</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18176</indexBufferMemoryUsage>
+        <textureMemoryUsage>851968</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_weight</typeDesc>
+        <filename>i3d/pickUp1150.i3d</filename>
+        <size width="1" length="0.55" height="0.95"/>
+        <components>
+            <component centerOfMass="0 0.15 0" solverIterationCount="10" mass="1150"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="OTHER"/>
+    </base>
+
+    <attacherJoints>
+        <attacherJoint node="trailerAttacherJoint" jointType="trailer" lowerRotLimit="25 60 50" allowsJointLimitMovement="false">
+            <schema position="1 0" rotation="0" invertX="false"/>
+        </attacherJoint>
+        <sounds>
+            <attach template="attach01" linkNode="0>"/>
+        </sounds>
+    </attacherJoints>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" lowerRotLimitScale="0 0 0" upperRotationOffset="3" lowerRotationOffset="0" needsLowering="false">
+                <distanceToGround lower="0.4" upper="0.9"/>
+                <bottomArm categories="2" ballType="2"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <ai>
+        <agentAttachment width="0.85" height="0.95" length="0.55"/>
+    </ai>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltMesh01"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <foliageBending>
+        <bendingNode minX="-0.38" maxX="0.38" minZ="-0.27" maxZ="0.25" yOffset="0.01"/>
+    </foliageBending>
+
+	<designColorConfigurations title="$l10n_configuration_baseColor" useDefaultColors="false">	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="JOHNDEERE_GREEN1" isDefault="true" />	
+	    <designColorConfiguration name="$l10n_ui_colorBlack"  color="JOHNDEERE_BLACK1" />						
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.044 0.250 0.020" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.041 0.292 0.067" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.063 0.314 0.022" />	
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.011 0.283 0.072" />		
+	    <designColorConfiguration name="$l10n_ui_colorGreen"  color="0.009 0.270 0.031" />		
+       	<material materialSlotName="weightSet_JOHNDEERE_GREEN1_mat"/>		
+    </designColorConfigurations>
+  
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2" showOnHud="false"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="weight_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="topReferenceNode" node="0>0|1" />
+        <i3dMapping id="trailerAttacherJoint" node="0>0|2" />
+        <i3dMapping id="tensionBeltMesh01" node="0>0|3|1" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="airhorn.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="12" filename="$data/shared/assets/airHorn.i3d"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+        <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+        <File fileId="1" filename="$data/shared/white_diffuse.dds"/>
+        <File fileId="2" filename="$data/vehicles/volvo/fh16/fh16FrontProtections_normal.png"/>
+        <File fileId="3" filename="$data/vehicles/volvo/fh16/fh16FrontProtections_vmask.png"/>
+    </Files>
+    <Materials>
+        <Material name="fh16FrontProtections_metalPaintedBlack_mat" materialId="1224" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailDiffuse" fileId="7"/>
+            <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+        </Material>
+        <Material name="fh16FrontProtections_rubberBlackHoses_mat" materialId="1225" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="colorScale" value="0.01 0.01 0.01"/>
+            <CustomParameter name="porosity" value="0.5"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="airhorn.i3d.shapes"/>
+    <Scene>
+        <Shape name="airHornMount" shapeId="1" clipDistance="60" nodeId="1240" castsShadows="true" receiveShadows="true" materialIds="1224">
+            <ReferenceNode name="airHorn" translation="0.637 0.053062 0.060721" referenceId="12" nodeId="1241"/>
+            <ReferenceNode name="airHorn_02" translation="-0.636726 0.053062 0.060721" referenceId="12" nodeId="1242"/>
+            <Shape name="cablesAirHorn" shapeId="2" clipDistance="60" nodeId="1243" castsShadows="true" receiveShadows="true" materialIds="1225"/>
+        </Shape>
+    </Scene>
+</i3D>
