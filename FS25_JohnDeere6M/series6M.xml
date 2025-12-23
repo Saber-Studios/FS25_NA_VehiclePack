@@ -1366,8 +1366,12 @@
             <group name="MOTOR_RUNNING" electronicsRunning="true"/>
 			<group name="BACK_ATTACHMENT" attacherJointNodes="attacherJointFront attacherJointBack trailerAttacherJointBack trailerAttacherJointBackLow"/>
 			<group name="LIGHT_ENABLED" lightTypes="0"/>
+			
         </groups>
-
+		<compounds>
+			<compound linkNode="0>0|8|4|14" filename="utils/MEMuellerElektronikTankControl/prefabXML.xml" name="MEMuellerElektronikDisplay" configIds="TRAILER1"/>
+			<compound linkNode="0>0|8|4|15" filename="utils/MEMuellerElektronikTankControl/prefabXML.xml" name="MEMuellerElektronikDisplay" configIds="TRAILER2"/>
+		</compounds>
         <default>
         <dashboard displayType="EMITTER" node="0>0|8|4|5|1|11" intensity="0.3" hideInactive="true" groups="MOTOR_STARTING"/>
 		<dashboard displayType="EMITTER" node="0>0|8|4|5|1|9" baseColor="0 0 0" emitColor="0.680 0.716 1.000 1" intensity="0.5" hideInactive="true" groups="MOTOR_STARTING"/>
@@ -1384,18 +1388,20 @@
         <dashboard displayType="EMITTER" node="0>0|8|7|2|0|2|1|1" idleValue="-1" intensity="0.3" groups="MOTOR_STARTING"/>
 		<!-- cameras -->
 		<dashboard displayType="VISIBILITY" node="monitor_off" groups="MOTOR_ACTIVE"/>
-
+						
         </default>
-
+		
         <dashboardLive>
+	
         <!-- MiniMap -->
             <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="map" node="dbl_mapPlane" groups="MOTOR_RUNNING PAGE2"/>
             <dashboard displayType="VISIBILITY" valueType="miniMap" cmd="posMarker" node="dbl_postion" groups="MOTOR_RUNNING PAGE2"/>
 			<dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="MOTOR_RUNNING PAGE2" />
-        </dashboardLive>
-
+						
+		</dashboardLive>
+		
     </dashboard>
-
+	
     <ai>
 		<automaticSteering>
             <dashboards>
@@ -1419,7 +1425,6 @@
         <wetnessIgnoreNode node="no_cam"/>
     </washable>
     
-
     <i3dMappings>
         <i3dMapping id="series6M_main_component1" node="0>" />
         <i3dMapping id="series6M_vis" node="0>0" />
@@ -1580,6 +1585,8 @@
         <i3dMapping id="Cam"                             node="0>0|8|4|12" />
 		<i3dMapping id="IC_CAM"                          node="0>0|8|4|12|0|0|0|3"/>
         <i3dMapping id="IC_Group"                        node="0>0|8|4|12|0|0|0|4"/>
+		<!-- digital fill scales -->
+		
 
         <i3dMapping id="playerRightFootTarget" node="0>0|8|5|0" />
         <i3dMapping id="playerLeftFootTarget" node="0>0|8|5|1" />
