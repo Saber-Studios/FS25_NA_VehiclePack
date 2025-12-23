@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineMediumVintage" file="sounds/series4755_loop.gls" volumeScale="1.1"/>
+            <motor template="transmissionModern_04" volumeScale="0.5" pitchScale="1" linkNode="wheelBackLeft"/>
+            <motor template="transmissionModern_04" volumeScale="0.5" pitchScale="1.2" linkNode="wheelBackRight"/>
+            <motor template="cabinTractor_01" volumeScale="1.2" pitchScale="0.8" linkNodeOffset="-0.5 2.5 -0.5" />
+            <motor template="cabinTractor_01" volumeScale="1.2" pitchScale="0.9" linkNodeOffset="0.5 2.5 -0.5" />
+            <compressedAir template="compressedAir"/>
+            <airCompressorRun template="brakeCompressorMedium" />
+            <airCompressorStop template="compressedAir"/>
+            <gearLeverStart template="gearDisengaged" volumeScale="2.2"/>
+            <gearLeverEnd template="gearEngaged" volumeScale="2.2"/>
+        </sounds>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle"  linkNodeOffset="0 2.5 0"  >
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+
+            <hail template="hailInVehicle"   linkNodeOffset="0 2.5 0" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="attach01" />
+            <hydraulic template="hydraulicSoftOpen02" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" />
+        </sounds>
+    </drivable>
+
+    <ai>
+        <automaticSteering>
+            <sounds>
+                <engage template="gpsEngageJohnDeere"/>
+                <disengage template="gpsDisengageJohnDeere"/>
+                <lineEnd template="gpsLineEndJohnDeere"/>
+            </sounds>
+        </automaticSteering>
+    </ai>
+
+    <honk>
+        <sound template="honkJohnDeere6250R" />
+    </honk>
+</sounds>
