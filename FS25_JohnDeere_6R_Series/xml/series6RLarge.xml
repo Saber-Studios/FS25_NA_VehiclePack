@@ -1709,6 +1709,13 @@
             <compound linkNode="radioDisplayLinkNode" filename="$data/vehicles/johnDeere/shared/displays/g4Displays.xml" name="JOHNDEERE_RADIODISPLAY"/>			
             <compound linkNode="aPillarDisplay" filename="$data/vehicles/johnDeere/shared/displays/g4Displays.xml" name="JOHNDEERE_G4_APILLAR_DISPLAY" configIds="PTO_FRONT_BACK"/>
         </compounds>
+
+        <dashboardLive>
+            <dashboard valueType="miniMap" cmd="map" node="dbl_mapPlane" displayType="VISIBILITY" groups="MOTOR_ACTIVE"/>
+            <dashboard valueType="miniMap" cmd="posMarker" node="dbl_position" displayType="VISIBILITY" groups="MOTOR_ACTIVE"/>
+            <dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="MOTOR_ACTIVE" />
+        </dashboardLive>
+        
     </dashboard>
 
     <ai>
@@ -2903,8 +2910,11 @@
         <i3dMapping id="treeIT" node="0>0|6|15|6" />			
         <i3dMapping id="tree_BLUE" node="0>0|6|15|7" />	
         <i3dMapping id="tree_GREEN" node="0>0|6|15|8" />	
-        <i3dMapping id="tree_RED" node="0>0|6|15|9" />		
-	
+        <i3dMapping id="tree_RED" node="0>0|6|15|9" />
+
+        <i3dMapping id="dbl_mapPlane" node="0>0|6|3|5|0|0|0|4" />
+        <i3dMapping id="dbl_position" node="0>0|6|3|5|0|0|0|4|1" />
+        <i3dMapping id="dbl_compass" node="0>0|6|3|5|0|0|0|4|0" />
       </i3dMappings>
 </vehicle> 
  
