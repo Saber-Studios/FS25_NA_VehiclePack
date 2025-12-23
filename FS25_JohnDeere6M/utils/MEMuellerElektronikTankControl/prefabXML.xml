@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<dashboardCompounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--Standard-->
+	<group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true" />
+	<!--DBL-->
+	<group name="PAGESC1" dbl="page" group="1" page="1" />
+	<group name="PAGESC2" dbl="page" group="1" page="2" />
+	
+	<dashboardCompound name="MEMuellerElektronikDisplay" filename="utils/MEMuellerElektronikTankControl/MEMuellerElektronik.i3d" node="MEMuellerElektronikVis">
+        <dashboard displayType="EMITTER" node="DisplayBackStatic" idleValue="-1" intensity="0.5" groups="MOTOR_ACTIVE"/>
+		
+		<configuration id="TRAILER1">		<!--configId TRAILER1-->
+			<dashboard valueType="base" cmd="fillLevel" option="abs" jointSide="back" trailer="1" factor="1" jointTypes="trailer trailerLow semitrailer trailerSaddled semitrailerCar trailerCar" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000000" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC1"/>
+			<dashboard valueType="base" cmd="fillLevel" option="percent" jointSide="back" trailer="1" factor="100" jointTypes="trailer trailerLow semitrailer trailerSaddled semitrailerCar trailerCar" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000%" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC2"/>
+        </configuration>
+		<configuration id="TRAILER2">		<!--configId TRAILER2-->
+			<dashboard valueType="base" cmd="fillLevel" option="abs" jointSide="back" trailer="2" factor="1" jointTypes="trailer trailerLow semitrailer trailerSaddled semitrailerCar trailerCar" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000000" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC1"/>
+			<dashboard valueType="base" cmd="fillLevel" option="percent" jointSide="back" trailer="2" factor="100" jointTypes="trailer trailerLow semitrailer trailerSaddled semitrailerCar trailerCar" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000%" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC2"/>
+        </configuration>
+		<configuration id="IMPLEMENTFRONT">	<!--configId IMPLEMENTFRONT-->
+			<dashboard valueType="base" cmd="fillLevel" option="abs" jointSide="front" factor="1" jointTypes="implement" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000000" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC1"/>
+			<dashboard valueType="base" cmd="fillLevel" option="percent" jointSide="front" factor="100" jointTypes="implement" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000%" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC2"/>
+        </configuration>
+		<configuration id="IMPLEMENTBACK">	<!--configId IMPLEMENTBACK-->
+			<dashboard valueType="base" cmd="fillLevel" option="abs" jointSide="back" factor="1" jointTypes="implement" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000000" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC1"/>
+			<dashboard valueType="base" cmd="fillLevel" option="percent" jointSide="back" factor="100" jointTypes="implement" displayType="TEXT" node="DBL_DisplayNode"  textColor="0.01 0.01 0.01 1" textSize="0.375" textMask="000%" font="DIGIT" textAlignment="RIGHT" groups="MOTOR_ACTIVE PAGESC2"/>
+        </configuration>
+	</dashboardCompound>
+	
+	<i3dMappings>
+        <i3dMapping id="MEMuellerElektronikVis" node="0>" />
+        <i3dMapping id="DisplayBackStatic" node="0>0" />
+        <i3dMapping id="DBL_DisplayNode" node="0>1" />
+    </i3dMappings>
+</dashboardCompounds>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="MEMuellerElektronik.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.10"/>
+  </Asset>
+
+  <Files>
+    <File fileId="24" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="13" filename="$data/shared/assets/assetLibraryDecals_diffuse.dds"/>
+    <File fileId="14" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
+    <File fileId="15" filename="$data/shared/assets/assetLibraryDecals_vmask.dds"/>
+    <File fileId="1" filename="$data/shared/default_normal.dds"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/metallic/glass/glassClear02_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="11" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png"/>
+    <File fileId="4" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png"/>
+    <File fileId="19" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="18" filename="textures/MEMuellerElektronik_diffuse.dds"/>
+    <File fileId="2" filename="textures/NoDirt_vmask.dds"/>
+    <File fileId="22" filename="textures/buttons_tankControl_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="DecalMat" materialId="70" alphaBlending="true" customShaderId="3">
+      <Texture fileId="22"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="4"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="6"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.5"/>
+    </Material>
+    <Material name="DisplayBackStatic" materialId="81" diffuseColor="0.172549 0.235294 0.0666667 1" customShaderId="24">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <CustomParameter name="lightControl" value="0.5"/>
+    </Material>
+    <Material name="GlasPane" materialId="46" alphaBlending="true" customShaderId="3">
+      <Texture fileId="19"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="clearCoatIntensity" value="1"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="Grey" materialId="31" customShaderId="3">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="4"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="6"/>
+      <CustomParameter name="colorScale" value="0.25 0.25 0.25"/>
+    </Material>
+    <Material name="LightGrey" materialId="50" customShaderId="3">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="12"/>
+      <CustomParameter name="colorScale" value="0.703518 0.703518 0.703518"/>
+    </Material>
+    <Material name="MEMuellerElektronik" materialId="42" alphaBlending="true" customShaderId="3">
+      <Texture fileId="18"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="4"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="6"/>
+      <CustomParameter name="clearCoatIntensity" value="0.5"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.5"/>
+    </Material>
+    <Material name="Red" materialId="35" customShaderId="3">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="detailSpecular" fileId="11"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="12"/>
+      <CustomParameter name="colorScale" value="0.333 0.012 0.012"/>
+    </Material>
+    <Material name="Screw" materialId="12" customShaderId="3">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="5"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="MEMuellerElektronik.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="MEMuellerElektronikVis" translation="0 0.2 0" rotation="90 0 180" scale="0.04 0.04 0.04" shapeId="1" clipDistance="300" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="31,35,12,42,46,50,70">
+      <Shape name="DisplayBackStatic" translation="0.684024 0.62184 5.97993e-08" rotation="180 5.00896e-06 180" scale="1.86552 6.2184 0.93276" shapeId="2" clipDistance="300" nodeId="17" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="81"/>
+      <TransformGroup name="DBLNode" translation="-0.0903609 0.62184 -0.201796" rotation="-90 180 0" nodeId="18"/>
+      <TransformGroup name="Cable1" translation="0.443392 -0.201284 -1.36864" rotation="180 5.00896e-06 180" scale="6.2184 6.2184 6.2184" nodeId="19"/>
+      <TransformGroup name="Cable2" translation="-0.368356 -0.201284 -1.36864" rotation="180 5.00896e-06 180" scale="6.2184 6.2184 6.2184" nodeId="20"/>
+    </Shape>
+  </Scene>
+
+</i3D>
