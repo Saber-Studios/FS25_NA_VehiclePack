@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="105" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+	<author>Saber Studios</author>
+	<version>1.0.0.8</version>
+	<title>
+		<en>John Deere 8R THQ</en>
+	</title>
+	<description>
+		<en>
+<![CDATA[
+This tractor delivers a perfect blend of performance, flexibility, and modern equipment. With an engine output ranging from 92 to 200 hp, a top speed of 40–50 km/h, and a competitive base price of €45,000, this machine is ideal for small to medium-sized farming operations.
+
+Key Features:
+
+-Version configuration: Choose between multiple model variants
+-Engine configuration: Several engine options ranging from 92–200 hp
+-Tire configuration: Various tire brands and types
+-Beacon light configuration: Different beacon setups available
+-GPS configuration: Optional or integrated GPS system
+-Decoration configuration: Additional visual customization options
+-Exhaust configuration: Multiple exhaust styles
+-Front configuration: Various front modules and hitch options
+-Front loader configuration: Optional front loader compatibility
+
+Additional Features & Compatibility:
+
+-Isaria Pro Compact – fully compatible with Precision Farming
+-Prepared for the Interactive Control Script (FS25_interactiveControl)
+Enables interactive vehicle functions directly from within the game.
+
+Changelog 1.0.0.8:
+-vehicle customization
+]]></en>
+		<de>
+<![CDATA[
+Dieser Traktor vereint Leistung, Flexibilität und moderne Ausstattung zu einem hervorragenden Gesamtpaket. Mit einer Motorleistung von 92 bis 200 PS, einer Höchstgeschwindigkeit von 40–50 km/h und einem attraktiven Basispreis von 45.000 € eignet sich dieses Modell ideal für kleine bis mittelgroße Landwirtschaftsbetriebe.
+
+Hauptmerkmale:
+
+-Versionskonfiguration: Wähle zwischen verschiedenen Modellvarianten
+-Motorkonfiguration: Mehrere Leistungsstufen von 92–200 PS
+-Reifenkonfiguration: Verschiedene Reifenhersteller und Reifentypen
+-Rundumleuchtekonfiguration: Unterschiedliche Beacon-Optionen
+-GPS-Konfiguration: GPS-Paket optional oder integriert
+-Dekokonfiguration: Zusätzliche optische Ausstattungsdetails
+-Auspuffkonfiguration: Anpassbare Auspuffvarianten
+-Frontkonfiguration: Verschiedene Frontmodule und Kupplungsvarianten
+-Frontladerkonfiguration: Optional mit Frontladerkompatibilität
+
+Zusätzliche Funktionen & Kompatibilität:
+
+-Isaria Pro Compact – vollständig kompatibel mit Precision Farming
+-Vorbereitet für das Interactive Control Script (FS25_interactiveControl)
+Ermöglicht interaktive Fahrzeugbedienung direkt im Spiel.
+
+Changelog 1.0.0.8:
+-Fahrzeuganpassung
+]]></de>
+	</description>
+	<iconFilename>store/icon_series9R.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<brands>
+		<brand name="JOHNDEERE" title="John Deere" />
+	</brands>
+	<storeItems>
+		<storeItem xmlFilename="xml/series9R.xml" />
+		<storeItem xmlFilename="xml/series9RX.xml" />
+		<storeItem xmlFilename="xml/series9RX830.xml" />
+	</storeItems>
+</modDesc>
