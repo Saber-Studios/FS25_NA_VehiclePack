@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="Serie6M" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
     <storeData>
-        <name>6M Series THQ</name>
+        <name>6M THQ</name>
         <specs>
             <power>130</power>
             <maxSpeed>40</maxSpeed>
@@ -1176,7 +1175,7 @@
 
         </movingTools>
 
-		<!- cameras ->
+		<!-- cameras -->
 		<cylinderedConfigurations>    
         <cylinderedConfiguration/>
         <cylinderedConfiguration>     
