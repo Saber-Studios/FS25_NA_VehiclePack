@@ -64,6 +64,8 @@ Changelog 1.0.0.8:
 	</brands>
 	<storeItems>
 		<storeItem xmlFilename="xml/series8R.xml"/>
+		<storeItem xmlFilename="xml/series8RT.xml"/>
+		<storeItem xmlFilename="xml/series8RX.xml"/>
 		
 	</storeItems>
 </modDesc>
