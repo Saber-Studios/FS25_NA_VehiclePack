@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="MarkierungsleuchtenOrange.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="12" filename="$data/shared/assets/lights/lizard/rearLight23Orange_emissive.dds"/>
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rearLight23_normal.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/rearLight23_vmask.png"/>
+    <File fileId="15" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="clearPlastic_glassClear03_02_mat" materialId="36" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="15"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="colorScale" value="0.5 0.5 0.5"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0.5"/>
+    </Material>
+    <Material name="rearLight23_chrome_mat" materialId="6" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+    </Material>
+    <Material name="rearLight23_plasticGraniteGrainSmall_mat" materialId="7" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="colorScale" value="1 1 0.999"/>
+    </Material>
+    <Material name="rearLight23_plasticGraniteGrainSmallBlack_02_mat" materialId="8" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <Custommap name="lightsIntensity" fileId="12"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="MarkierungsleuchtenOrange.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="rearLight23Orange" shapeId="1" clipDistance="300" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="7,6,8">
+      <Shape name="rearLightGlass" translation="-1e-06 0.019979 -3e-06" shapeId="2" clipDistance="300" nodeId="13" castsShadows="true" receiveShadows="true" materialIds="36"/>
+    </Shape>
+  </Scene>
+
+</i3D>
