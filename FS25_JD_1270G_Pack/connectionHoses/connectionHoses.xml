@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<connectionHoses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/connectionHoses.xsd">
+    <basicHoses>
+        <basicHose filename="connectionHoses/hosesHRFF.i3d" node="0|0" length="1" realLength="1" diameter="0.501" startStraightening="0.5" endStraightening="0.5" minCenterPointAngle="100"/>
+        <basicHose filename="connectionHoses/hosesHRFF.i3d" node="0|1" length="2" realLength="2" diameter="0.501" startStraightening="1.0" endStraightening="1.0" minCenterPointAngle="100"/>
+        <basicHose filename="connectionHoses/hosesHRFF.i3d" node="0|2" length="3" realLength="3" diameter="0.501" startStraightening="1.5" endStraightening="1.5" minCenterPointAngle="100"/>
+    </basicHoses>
+	<connectionHoseTypes>
+		<connectionHoseType name="HRFF_BUNDLE">
+            <material name="SEIL" filename="connectionHoses/hoseMaterialHolder.i3d" materialNode="0"  materialTemplateName="silverScratched"/>  <!-- uvOffset="0 0.406" uvScale="1.6 3" -->
+			<material name="CABLE_HRFF" filename="connectionHoses/hoseMaterialHolder.i3d" materialNode="1" uvMinMax="0.636719 0.730957" uvLengthScale="0.5" />
+        </connectionHoseType>
+    </connectionHoseTypes>
+</connectionHoses>

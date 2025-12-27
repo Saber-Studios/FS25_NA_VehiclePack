@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="101">
+    <author>Saber Studios</author>
+	
+    <version>1.0.0.1</version>
+	
+    <iconFilename>icon_JD_1270G_Pack.dds</iconFilename>
+	
+	<title>
+        <en>John Deere 1270G THQ Pack</en>
+    </title>
+
+	<description>
+        <en><![CDATA[John Deere 1270G Pack
+
+These include:
+- 1270G 6w
+Category: Harvesters
+Price: $435,500
+Power: 272 hp
+Max. speed: 20 kph
+
+- 1270G 8W
+Category: Harvesters
+Price: $450,500
+Power: 272 hp
+Max. speed: 20 kph
+
+What has changed:
+- Crane control changed including shopoption for Easy Arm Controls
+- Wheelsets expanded and corrected
+- Cabin turning L/R 90°
+- Window tinting
+- window frames fixed
+- Chainsawholder
+- Cutting length up to 25 meters in 0.5 increments
+- Additional indoor camera for the steep slope, follows the harvester head and tilts forward
+- The set cutting length is now shown on the display
+- Manual gripping
+- Real Steering
+- License plate in the right window for e.g. the driver name
+- Fixed missing lamps on the crane
+- Corrected colors on the entire vehicle
+- Vehicle physics adjusted
+- Additional headlights selectable at the bottom of the cabin
+- Rear cage selectable
+- 20 KM/h sticker selectable
+- Position lights selectable
+- Trailer hitch added
+- Entry animation expanded
+- Various changes
+- Window Protection added
+- Additional protection added to the crane
+- Color choices for: Cabine, Vehicle, Harvesterhead, Hose protection, Olofsfors, Rims
+
+Changelog: 1.0.0.1
+- Fixes after patch 1.11.. after the cabins and cranes no longer tilt
+]]>
+        </en>
+        <de><![CDATA[John Deere 1270G Pack
+
+Dabei sind:
+- 1270G 6w
+Shopkategorie: Holzvollernter
+Preis: 435.500 €
+Leistung: 272 PS
+Höchstgeschwindigkeit: 20 km/h
+
+- 1270G 8W
+Shopkategorie: Holzvollernter
+Preis: 450.500 €
+Leistung: 272 PS
+Höchstgeschwindigkeit: 20 km/h
+
+Was wurde geändert:
+- Kransteuerung geändert incl. option für Vereinfachte Kransteuerung
+- Radsätze erweitert und Korrigiert
+- Kabinendrehen L/R 90°
+- Scheibentönung
+- Scheibenumrandung gefixt
+- Kettensägenhalter
+- Schnittlänge bis zu 25 meter in 0.5er Schritten
+- Zusätzliche Innenkamera für den Steilhang, Folgt dem Harvesterkopf, und neigt sich nach vorne
+- Eingestellte Schnittlänge im Display
+- Manuelles Greifen
+- Reale Lenkung
+- Kennzeichen im Rechten Fenster für z.b. den Fahrernamen
+- Fehlende Lampen am Kran gefixt
+- Korrigierte Farben am gesamten Fahrzeug
+- Fahrzeug Physik angepasst
+- Zusatzscheinwerfer Unten an der Kabine wählbar
+- Heck Käfig Wählbar
+- 20 KM/h Aufkleber Wählbar
+- Positionsleuchten Wählbar
+- Anhängerkupplung hinzugefügt
+- Einstiegsanimation erweitert
+- Diverse Anpassugen
+- Scheibengitter hinzugefügt
+- Zusätzlicher Schutz am Kran hinzugefügt
+- Farbwahlen für: Kabine, Fahrzeug, Harvesterkopf, Schlauchschutz, Olofsfors, Felgen
+
+Changelog: 1.0.0.1
+- Fixes nach Patch 1.11.. nachdem sich die Kabinen und Kräne nicht mehr Tilten
+]]>
+        </de>
+    </description>
+	
+	<multiplayer supported="true"/>
+
+	<storeItems>
+		<storeItem xmlFilename="xml/harvester1270G_6W.xml"/>
+		<storeItem xmlFilename="xml/harvester1270G_8W.xml"/>
+    </storeItems>
+
+	<vehicleTypes>
+		<type name="WoodharvesterHRFF" parent="woodHarvester" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">	
+			<specialization name="cover" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="aiLoadable" />
+			<specialization name="aiDischargeable" />
+			<specialization name="trailer" />
+			<specialization name="tensionBelts" />
+			<specialization name="workArea"/>
+            <specialization name="workMode"/>
+            <specialization name="groundReference"/>
+		</type>
+	</vehicleTypes>
+
+	<connectionHoses>
+        <connectionHose xmlFilename="connectionHoses/connectionHoses.xml"/>
+    </connectionHoses>
+
+	<l10n>
+		<text name="LampenTrager">			<en>Additional Cabin Lighting</en>	<de>Kabinen Zusatzbeleuchtung</de>	</text>
+		<text name="Streifen">				<en>Reflector Strips </en>			<de>Reflektorstreifen</de>			</text>
+		<text name="20erDecal">				<en>Speed ​​sticker</en>				<de>Geschwindigkeitsaufkleber</de>	</text>
+		<text name="PosiCab">				<en>Position Lights</en>			<de>Positionsleuchten</de>			</text>
+		<text name="InteriorDeco">			<en>Interior Deco</en>				<de>Interieur Deko</de>				</text>
+		<text name="HoseColor"  >			<en>Hose protection Color</en>		<de>Schlauchschutzfarbe</de>		</text>
+		<text name="Wheelchock">			<en>Deco Wheelchocks</en>			<de>Deko Unterlegkeile</de>			</text>
+		<text name="ChainsawHolder">		<en>Chainsaw Holder</en>			<de>Kettensägenhalter</de>			</text>
+		<text name="ZusatzFunktionNo">		<en>None</en>						<de>Keine</de>						</text>
+		<text name="ZusatzFunktion">		<en>Additional function</en>		<de>Zusatzfunktion</de>				</text>
+		<text name="ZusatzFunktionCab">		<en>Cabin rotation 90° L/R</en>		<de>Kabinen Rotation 90° L/R</de>	</text>	
+		<text name="extraExtinguisher">		<en>Extra Extinguisher</en>			<de>Zusätzlicher Feuerlöscher</de>	</text>
+		<text name="CabNormal" > 			<en>Cabin alignment front</en> 		<de>Kabinenausrichtung Vorne</de> 	</text>
+		<text name="CabLinks" > 			<en>Cabin alignment left</en> 		<de>Kabinenausrichtung Links</de> 	</text>
+		<text name="CabRechts" > 			<en>Cabin alignment right</en> 		<de>Kabinenausrichtung Rechts</de> 	</text>
+		<text name="StreetLight" > 			<en>Road equipment</en> 			<de>Straßenausrüstung</de> 			</text>
+		<text name="Kafig" > 				<en>Rear Cage</en> 					<de>Heckkäfig</de> 					</text>
+		<text name="Exhaust" > 				<en>Exhaust Guard</en> 				<de>Auspuffschutz</de> 				</text>
+		<text name="Hood" > 				<en>Hood Protection</en> 			<de>Haubenschutz</de> 				</text>
+		<text name="PHead" > 				<en>Processorhead Color</en> 		<de>Harvesterkopffarbe</de> 		</text>
+		<text name="PHead1" > 				<en>Processorhead Color 1</en> 		<de>Harvesterkopffarbe 1</de> 		</text>
+		<text name="PHead2" > 				<en>Processorhead Color 2</en> 		<de>Harvesterkopffarbe 2</de> 		</text>
+		<text name="Zange" > 				<en>Claw Color</en> 				<de>Zangenfarbe</de> 				</text>
+		<text name="CabColor" > 			<en>Cabin Color</en> 				<de>Kabinenfarbe</de> 				</text>
+		<text name="TransportstellungOn"> 	<en>Transporting position Activate</en> 	<de>Transportstellung Aktivieren</de>		</text>
+		<text name="TransportstellungOff"> 	<en>Transporting position Deactivate</en> 	<de>Transportstellung Deaktivieren</de>		</text>
+		<text name="olofsforsColor"> 		<en>Olofsfors Color</en>			<de>Olofsforsfarbe</de>				</text>
+		<text name="ScheibenSchutz">		<en>Window Protection</en>			<de>Scheibenschutz</de>				</text>
+		<text name="ArmSchutz" > 			<en>Crane additional protection</en> <de>Kran Zusatzschutz</de> 		</text>
+		<!--Farben-->
+		<text name="SPECIALBLUE1" >			<en>Special Blue 1</en>				<de>Spezial Blau 1</de>				</text>
+		<text name="SPECIALBLUE2" >			<en>Special Blue 2</en>				<de>Spezial Blau 2</de>				</text>
+		<text name="SPECIALYELLOW" >		<en>Special Yellow</en>				<de>Spezial Gelb</de>				</text>
+		<text name="SPECIALGREEN" >			<en>Special Green</en>				<de>Spezial Grün</de>				</text>
+		<text name="MANRED" >				<en>MAN Red</en>					<de>MAN Rot</de>					</text>
+		<text name="MANOLDGREEN" >			<en>MAN Oldgreen</en>				<de>MAN Altgrün</de>				</text>
+		<text name="MANBEIGE" >				<en>MAN Beige</en>					<de>MAN Beige</de>					</text>
+		<text name="BLACK" >				<en>Black</en>						<de>Schwarz</de>					</text>
+		<text name="TATRAGREEN" >			<en>Tatra Green</en>				<de>Tatra Grün</de>					</text>
+		<text name="BROWN2" >				<en>Dark Brown</en>					<de>Dunkel Braun</de>				</text>
+		<text name="BLUE1" >				<en>Blue 1</en>						<de>Blau 1</de>						</text>
+		<text name="BLUE2" >				<en>Blue 2</en>						<de>Blau 2</de>						</text>
+		<text name="BLUE3" >				<en>Blue 3</en>						<de>Blau 3</de>						</text>
+		<text name="GREEN1" >				<en>Green 1</en>					<de>Grün 1</de>						</text>
+		<text name="GREEN2" >				<en>Green 2</en>					<de>Grün 2</de>						</text>
+		<text name="GREEN3" >				<en>Green 3</en>					<de>Grün 3</de>						</text>
+		<text name="GREEN4" >				<en>Green 4</en>					<de>Grün 4</de>						</text>
+		<text name="PINK"  >				<en>Light Pink</en>					<de>Rosa</de>						</text>
+		<text name="PINKRED" >				<en>Pink/Red</en>					<de>Pink/Rot</de>					</text>
+		<text name="BERRY" >				<en>Berry</en>						<de>Beere</de>						</text>
+		<text name="WHITE" >				<en>White</en>						<de>Weiß</de>						</text>
+		<text name="ORANGE" >				<en>Orange</en>						<de>Orange</de>						</text>
+		<text name="DARKGRAY" >				<en>Darkgray</en>					<de>Dunkelgrau</de>					</text>
+		<text name="YELLOW1" >				<en>Yellow 1</en>					<de>Gelb 1</de>						</text>
+		<text name="YELLOW2" >				<en>Yellow 2</en>					<de>Gelb 2</de>						</text>
+		<text name="YELLOW3" >				<en>Yellow 3</en>					<de>Gelb 3</de>						</text>
+		<text name="VIOLET1" >				<en>Violet 1</en>					<de>Violet 1</de>					</text>
+		<text name="VIOLET2" >				<en>Violet 2</en>					<de>Violet 2</de>					</text>
+		<text name="NAVY" >					<en>Navy</en>						<de>Navy</de>						</text>
+		<text name="SPECIALBLUE1METAL" >	<en>Special Blue 1 Metallic</en>	<de>Spezial Blau 1 Metallic</de>	</text>
+		<text name="SPECIALBLUE2METAL" >	<en>Special Blue 2 Metallic</en>	<de>Spezial Blau 2 Metallic</de>	</text>
+		<text name="SPECIALYELLOWMETAL" >	<en>Special Yellow Metallic</en>	<de>Spezial Gelb Metallic</de>		</text>
+		<text name="SPECIALGREENMETAL" >	<en>Special Green Metallic</en>		<de>Spezial Grün Metallic</de>		</text>
+		<text name="MANREDMETAL" >			<en>MAN Red Metallic</en>			<de>MAN Rot Metallic</de>			</text>
+		<text name="MANOLDGREENMETAL" >		<en>MAN Oldgreen Metallic</en>		<de>MAN Altgrün Metallic</de>		</text>
+		<text name="MANBEIGEMETAL" >		<en>MAN Beige Metallic</en>			<de>MAN Beige Metallic</de>			</text>
+		<text name="BLACKMETAL" >			<en>Black Metallic</en>				<de>Schwarz Metallic</de>			</text>
+		<text name="TATRAGREENMETAL" >		<en>Tatra Green Metallic</en>		<de>Tatra Grün Metallic</de>		</text>
+		<text name="BROWN2METAL" >			<en>Dark Brown Metallic</en>		<de>Dunkel Braun Metallic</de>		</text>
+		<text name="BLUE1METAL" >			<en>Blue 1 Metallic</en>			<de>Blau 1 Metallic</de>			</text>
+		<text name="BLUE2METAL" >			<en>Blue 2 Metallic</en>			<de>Blau 2 Metallic</de>			</text>
+		<text name="BLUE3METAL" >			<en>Blue 3 Metallic</en>			<de>Blau 3 Metallic</de>			</text>
+		<text name="GREEN1METAL" >			<en>Green 1 Metallic</en>			<de>Grün 1 Metallic</de>			</text>
+		<text name="GREEN2METAL" >			<en>Green 2 Metallic</en>			<de>Grün 2 Metallic</de>			</text>
+		<text name="GREEN3METAL" >			<en>Green 3 Metallic</en>			<de>Grün 3 Metallic</de>			</text>
+		<text name="GREEN4METAL" >			<en>Green 4 Metallic</en>			<de>Grün 4 Metallic</de>			</text>
+		<text name="PINKMETAL"  >			<en>Light Pink Metallic</en>		<de>Rosa Metallic</de>				</text>
+		<text name="PINKREDMETAL" >			<en>Pink/Red Metallic</en>			<de>Pink/Rot Metallic</de>			</text>
+		<text name="BERRYMETAL" >			<en>Berry Metallic</en>				<de>Beere Metallic</de>				</text>
+		<text name="WHITEMETAL" >			<en>White Metallic</en>				<de>Weiß Metallic</de>				</text>
+		<text name="ORANGEMETAL" >			<en>Orange Metallic</en>			<de>Orange Metallic</de>			</text>
+		<text name="DARKGRAYMETAL" >		<en>Darkgray Metallic</en>			<de>Dunkelgrau Metallic</de>		</text>
+		<text name="YELLOW1METAL" >			<en>Yellow 1 Metallic</en>			<de>Gelb 1 Metallic</de>			</text>
+		<text name="YELLOW2METAL" >			<en>Yellow 2 Metallic</en>			<de>Gelb 2 Metallic</de>			</text>
+		<text name="YELLOW3METAL" >			<en>Yellow 3 Metallic</en>			<de>Gelb 3 Metallic</de>			</text>
+		<text name="VIOLET1METAL" >			<en>Violet 1 Metallic</en>			<de>Violet 1 Metallic</de>			</text>
+		<text name="VIOLET2METAL" >			<en>Violet 2 Metallic</en>			<de>Violet 2 Metallic</de>			</text>
+		<text name="NAVYMETAL" >			<en>Navy Metallic</en>				<de>Navy Metallic</de>				</text>
+		<text name="SPECIALBLUE1MATT" >		<en>Special Blue 1 Mat</en>			<de>Spezial Blau 1 Matt</de>		</text>
+		<text name="SPECIALBLUE2MATT" >		<en>Special Blue 2 Mat</en>			<de>Spezial Blau 2 Matt</de>		</text>
+		<text name="SPECIALYELLOWMATT" >	<en>Special Yellow Mat</en>			<de>Spezial Gelb Matt</de>			</text>
+		<text name="SPECIALGREENMATT" >		<en>Special Green Mat</en>			<de>Spezial Grün Matt</de>			</text>
+		<text name="MANREDMATT" >			<en>MAN Red Mat</en>				<de>MAN Rot Matt</de>				</text>
+		<text name="MANOLDGREENMATT" >		<en>MAN Oldgreen Mat</en>			<de>MAN Altgrün Matt</de>			</text>
+		<text name="MANBEIGEMATT" >			<en>MAN Beige Mat</en>				<de>MAN Beige Matt</de>				</text>
+		<text name="BLACKMATT" >			<en>Black Mat</en>					<de>Schwarz Matt</de>				</text>
+		<text name="TATRAGREENMATT" >		<en>Tatra Green Mat</en>			<de>Tatra Grün Matt</de>			</text>
+		<text name="BROWN2MATT" >			<en>Dark Brown Mat</en>				<de>Dunkel Braun Matt</de>			</text>
+		<text name="BLUE1MATT" >			<en>Blue 1 Mat</en>					<de>Blau 1 Matt</de>				</text>
+		<text name="BLUE2MATT" >			<en>Blue 2 Mat</en>					<de>Blau 2 Matt</de>				</text>
+		<text name="BLUE3MATT" >			<en>Blue 3 Mat</en>					<de>Blau 3 Matt</de>				</text>
+		<text name="GREEN1MATT" >			<en>Green 1 Mat</en>				<de>Grün 1 Matt</de>				</text>
+		<text name="GREEN2MATT" >			<en>Green 2 Mat</en>				<de>Grün 2 Matt</de>				</text>
+		<text name="GREEN3MATT" >			<en>Green 3 Mat</en>				<de>Grün 3 Matt</de>				</text>
+		<text name="GREEN4MATT" >			<en>Green 4 Mat</en>				<de>Grün 4 Matt</de>				</text>
+		<text name="PINKMATT"  >			<en>Light Pink Mat</en>				<de>Rosa Matt</de>					</text>
+		<text name="PINKREDMATT" >			<en>Pink/Red Mat</en>				<de>Pink/Rot Matt</de>				</text>
+		<text name="BERRYMATT" >			<en>Berry Mat</en>					<de>Beere Matt</de>					</text>
+		<text name="WHITEMATT" >			<en>White Mat</en>					<de>Weiß Matt</de>					</text>
+		<text name="ORANGEMATT" >			<en>Orange Mat</en>					<de>Orange Matt</de>				</text>
+		<text name="DARKGRAYMATT" >			<en>Darkgray Mat</en>				<de>Dunkelgrau Matt</de>			</text>
+		<text name="YELLOW1MATT" >			<en>Yellow 1 Mat</en>				<de>Gelb 1 Matt</de>				</text>
+		<text name="YELLOW2MATT" >			<en>Yellow 2 Mat</en>				<de>Gelb 2 Matt</de>				</text>
+		<text name="YELLOW3MATT" >			<en>Yellow 3 Mat</en>				<de>Gelb 3 Matt</de>				</text>
+		<text name="VIOLET1MATT" >			<en>Violet 1 Mat</en>				<de>Violet 1 Matt</de>				</text>
+		<text name="VIOLET2MATT" >			<en>Violet 2 Mat</en>				<de>Violet 2 Matt</de>				</text>
+		<text name="NAVYMATT" >				<en>Navy Mat</en>					<de>Navy Matt</de>					</text>
+	</l10n>
+	<materialTemplates>
+		<template name="SPECIALBLUE1" 	title="$l10n_SPECIALBLUE1" 		colorScale="0 0.09 0.09" 			parentTemplate="calibratedPaint"/>
+		<template name="SPECIALBLUE2" 	title="$l10n_SPECIALBLUE2" 		colorScale="0 0 1" 					parentTemplate="calibratedPaint"/>
+		<template name="SPECIALYELLOW" 	title="$l10n_SPECIALYELLOW" 	colorScale="1.0000 0.7231 0.0000" 	parentTemplate="calibratedPaint"/>
+		<template name="SPECIALGREEN" 	title="$l10n_SPECIALGREEN" 		colorScale="0.488 0.687 0.027" 		parentTemplate="calibratedPaint"/>
+		<template name="MANRED" 		title="$l10n_MANRED" 			colorScale="0.5605 0.0037 0.0037" 	parentTemplate="calibratedPaint"/>
+		<template name="MANOLDGREEN" 	title="$l10n_MANOLDGREEN" 		colorScale="0.1878 0.3006 0.2159" 	parentTemplate="calibratedPaint"/>
+		<template name="MANBEIGE" 		title="$l10n_MANBEIGE" 			colorScale="0.3021 0.2549 0.1734" 	parentTemplate="calibratedPaint"/>
+		<template name="BLACK" 			title="$l10n_BLACK" 			colorScale="0 0 0" 					parentTemplate="calibratedPaint"/>
+		<template name="TATRAGREEN" 	title="$l10n_TATRAGREEN" 		colorScale="0.0200 0.2800 0.1900" 	parentTemplate="calibratedPaint"/>
+		<template name="BROWN2"			title="$l10n_BROWN2" 			colorScale="0.0886 0.0203 0.0012" 	parentTemplate="calibratedPaint"/>
+		<template name="BLUE1" 			title="$l10n_BLUE1" 			colorScale="0.0000 0.4047 0.7519" 	parentTemplate="calibratedPaint"/>
+		<template name="BLUE2" 			title="$l10n_BLUE2" 			colorScale="0.0055 0.0170 0.0265" 	parentTemplate="calibratedPaint"/>
+		<template name="BLUE3" 			title="$l10n_BLUE3" 			colorScale="0.0019 0.0059 0.0090" 	parentTemplate="calibratedPaint"/>
+		<template name="GREEN1" 		title="$l10n_GREEN1" 			colorScale="0.1070 0.2086 0.2462" 	parentTemplate="calibratedPaint"/>
+		<template name="GREEN2" 		title="$l10n_GREEN2" 			colorScale="0.0265 0.6592 0.3204" 	parentTemplate="calibratedPaint"/>
+		<template name="GREEN3" 		title="$l10n_GREEN3" 			colorScale="0.0072 0.2758 0.0528" 	parentTemplate="calibratedPaint"/>
+		<template name="GREEN4" 		title="$l10n_GREEN4" 			colorScale="0.0000 1.0000 0.0415" 	parentTemplate="calibratedPaint"/>
+		<template name="PINK" 			title="$l10n_PINK" 				colorScale="0.5924 0.1871 0.3723" 	parentTemplate="calibratedPaint"/>
+		<template name="PINKRED" 		title="$l10n_PINKRED" 			colorScale="0.8751 0.0017 0.0303" 	parentTemplate="calibratedPaint"/>
+		<template name="BERRY" 			title="$l10n_BERRY" 			colorScale="0.1087 0.0210 0.0370" 	parentTemplate="calibratedPaint"/>
+		<template name="WHITE" 			title="$l10n_WHITE" 			colorScale="1.0000 1.0000 1.0000" 	parentTemplate="calibratedPaint"/>
+		<template name="ORANGE" 		title="$l10n_ORANGE" 			colorScale="0.9157 0.1220 0.0066" 	parentTemplate="calibratedPaint"/>
+		<template name="DARKGRAY" 		title="$l10n_DARKGRAY" 			colorScale="0.1220 0.1199 0.1199" 	parentTemplate="calibratedPaint"/>
+		<template name="YELLOW1" 		title="$l10n_YELLOW1" 			colorScale="0.8913 0.6456 0.2120" 	parentTemplate="calibratedPaint"/>
+		<template name="YELLOW2" 		title="$l10n_YELLOW2" 			colorScale="0.5054 0.3066 0.0231" 	parentTemplate="calibratedPaint"/>
+		<template name="YELLOW3" 		title="$l10n_YELLOW3" 			colorScale="0.8227 0.9131 0.0000" 	parentTemplate="calibratedPaint"/>
+		<template name="VIOLET1" 		title="$l10n_VIOLET1" 			colorScale="0.0802 0.0513 0.7231" 	parentTemplate="calibratedPaint"/>
+		<template name="VIOLET2" 		title="$l10n_VIOLET2" 			colorScale="0.0090 0.0014 0.0619" 	parentTemplate="calibratedPaint"/>
+		<template name="NAVY"			title="$l10n_NAVY" 				colorScale="0.0529 0.0865 0.0242" 	parentTemplate="calibratedPaint"/>
+		<template name="SPECIALBLUE1METAL" 	title="$l10n_SPECIALBLUE1METAL" 	colorScale="0 0.09 0.09"			parentTemplate="calibratedMetallicPaint"/>
+		<template name="SPECIALBLUE2METAL" 	title="$l10n_SPECIALBLUE2METAL" 	colorScale="0 0 1" 					parentTemplate="calibratedMetallicPaint"/>
+		<template name="SPECIALYELLOWMETAL" title="$l10n_SPECIALYELLOWMETAL" 	colorScale="1.0000 0.7231 0.0000" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="SPECIALGREENMETAL" 	title="$l10n_SPECIALGREENMETAL" 	colorScale="0.488 0.687 0.027" 		parentTemplate="calibratedMetallicPaint"/>
+		<template name="MANREDMETAL" 		title="$l10n_MANREDMETAL" 			colorScale="0.5605 0.0037 0.0037" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="MANOLDGREENMETAL" 	title="$l10n_MANOLDGREENMETAL" 		colorScale="0.1878 0.3006 0.2159" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="MANBEIGEMETAL" 		title="$l10n_MANBEIGEMETAL" 		colorScale="0.3021 0.2549 0.1734" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BLACKMETAL" 		title="$l10n_BLACKMETAL" 			colorScale="0 0 0" 					parentTemplate="calibratedMetallicPaint"/>
+		<template name="TATRAGREENMETAL" 	title="$l10n_TATRAGREENMETAL" 		colorScale="0.0200 0.2800 0.1900" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BROWN2METAL" 		title="$l10n_BROWN2METAL" 			colorScale="0.0886 0.0203 0.0012" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BLUE1METAL" 		title="$l10n_BLUE1METAL" 			colorScale="0.0000 0.4047 0.7519" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BLUE2METAL" 		title="$l10n_BLUE2METAL" 			colorScale="0.0055 0.0170 0.0265" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BLUE3METAL" 		title="$l10n_BLUE3METAL" 			colorScale="0.0019 0.0059 0.0090" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="GREEN1METAL" 		title="$l10n_GREEN1METAL" 			colorScale="0.1070 0.2086 0.2462" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="GREEN2METAL" 		title="$l10n_GREEN2METAL" 			colorScale="0.0265 0.6592 0.3204" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="GREEN3METAL" 		title="$l10n_GREEN3METAL" 			colorScale="0.0072 0.2758 0.0528" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="GREEN4METAL" 		title="$l10n_GREEN4METAL" 			colorScale="0.0000 1.0000 0.0415" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="PINKMETAL" 			title="$l10n_PINKMETAL" 			colorScale="0.5924 0.1871 0.3723" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="PINKREDMETAL" 		title="$l10n_PINKREDMETAL" 		colorScale="0.8751 0.0017 0.0303" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="BERRYMETAL" 		title="$l10n_BERRYMETAL" 			colorScale="0.1087 0.0210 0.0370" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="WHITEMETAL" 		title="$l10n_WHITEMETAL" 			colorScale="1.0000 1.0000 1.0000" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="ORANGEMETAL" 		title="$l10n_ORANGEMETAL" 			colorScale="0.9157 0.1220 0.0066" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="DARKGRAYMETAL" 		title="$l10n_DARKGRAYMETAL" 		colorScale="0.1220 0.1199 0.1199" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="YELLOW1METAL" 		title="$l10n_YELLOW1METAL" 			colorScale="0.8913 0.6456 0.2120" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="YELLOW2METAL" 		title="$l10n_YELLOW2METAL" 			colorScale="0.5054 0.3066 0.0231" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="YELLOW3METAL" 		title="$l10n_YELLOW3METAL" 			colorScale="0.8227 0.9131 0.0000" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="VIOLET1METAL" 		title="$l10n_VIOLET1METAL" 			colorScale="0.0802 0.0513 0.7231" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="VIOLET2METAL" 		title="$l10n_VIOLET2METAL" 			colorScale="0.0090 0.0014 0.0619" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="NAVYMETAL" 			title="$l10n_NAVYMETAL" 			colorScale="0.0529 0.0865 0.0242" 	parentTemplate="calibratedMetallicPaint"/>
+		<template name="SPECIALBLUE1MATT" 	title="$l10n_SPECIALBLUE1MATT" 		colorScale="0 0.09 0.09"			parentTemplate="glassClear01"/>
+		<template name="SPECIALBLUE2MATT" 	title="$l10n_SPECIALBLUE2MATT" 		colorScale="0 0 1" 					parentTemplate="glassClear01"/>
+		<template name="SPECIALYELLOWMATT" 	title="$l10n_SPECIALYELLOWMATT" 	colorScale="1.0000 0.7231 0.0000" 	parentTemplate="glassClear01"/>
+		<template name="SPECIALGREENMATT" 	title="$l10n_SPECIALGREENMATT" 		colorScale="0.488 0.687 0.027" 		parentTemplate="glassClear01"/>
+		<template name="MANREDMATT" 		title="$l10n_MANREDMATT" 			colorScale="0.5605 0.0037 0.0037" 	parentTemplate="glassClear01"/>
+		<template name="MANOLDGREENMATT" 	title="$l10n_MANOLDGREENMATT" 		colorScale="0.1878 0.3006 0.2159" 	parentTemplate="glassClear01"/>
+		<template name="MANBEIGEMATT" 		title="$l10n_MANBEIGEMATT" 			colorScale="0.3021 0.2549 0.1734" 	parentTemplate="glassClear01"/>
+		<template name="BLACKMATT" 			title="$l10n_BLACKMATT" 			colorScale="0 0 0" 					parentTemplate="glassClear01"/>
+		<template name="TATRAGREENMATT" 	title="$l10n_TATRAGREENMATT" 		colorScale="0.0200 0.2800 0.1900" 	parentTemplate="glassClear01"/>
+		<template name="BROWN2MATT" 		title="$l10n_BROWN2MATT" 			colorScale="0.0886 0.0203 0.0012" 	parentTemplate="glassClear01"/>
+		<template name="BLUE1MATT" 			title="$l10n_BLUE1MATT" 			colorScale="0.0000 0.4047 0.7519" 	parentTemplate="glassClear01"/>
+		<template name="BLUE2MATT" 			title="$l10n_BLUE2MATT" 			colorScale="0.0055 0.0170 0.0265" 	parentTemplate="glassClear01"/>
+		<template name="BLUE3MATT" 			title="$l10n_BLUE3MATT" 			colorScale="0.0019 0.0059 0.0090" 	parentTemplate="glassClear01"/>
+		<template name="GREEN1MATT" 		title="$l10n_GREEN1MATT" 			colorScale="0.1070 0.2086 0.2462" 	parentTemplate="glassClear01"/>
+		<template name="GREEN2MATT" 		title="$l10n_GREEN2MATT" 			colorScale="0.0265 0.6592 0.3204" 	parentTemplate="glassClear01"/>
+		<template name="GREEN3MATT" 		title="$l10n_GREEN3MATT" 			colorScale="0.0072 0.2758 0.0528" 	parentTemplate="glassClear01"/>
+		<template name="GREEN4MATT" 		title="$l10n_GREEN4MATT" 			colorScale="0.0000 1.0000 0.0415" 	parentTemplate="glassClear01"/>
+		<template name="PINKMATT" 			title="$l10n_PINKMATT" 				colorScale="0.5924 0.1871 0.3723" 	parentTemplate="glassClear01"/>
+		<template name="PINKREDMATT" 		title="$l10n_PINKREDMATT" 			colorScale="0.8751 0.0017 0.0303" 	parentTemplate="glassClear01"/>
+		<template name="BERRYMATT" 			title="$l10n_BERRYMATT" 			colorScale="0.1087 0.0210 0.0370" 	parentTemplate="glassClear01"/>
+		<template name="WHITEMATT" 			title="$l10n_WHITEMATT" 			colorScale="1.0000 1.0000 1.0000" 	parentTemplate="glassClear01"/>
+		<template name="ORANGEMATT" 		title="$l10n_ORANGEMATT" 			colorScale="0.9157 0.1220 0.0066" 	parentTemplate="glassClear01"/>
+		<template name="DARKGRAYMATT" 		title="$l10n_DARKGRAYMATT" 			colorScale="0.1220 0.1199 0.1199" 	parentTemplate="glassClear01"/>
+		<template name="YELLOW1MATT" 		title="$l10n_YELLOW1MATT" 			colorScale="0.8913 0.6456 0.2120" 	parentTemplate="glassClear01"/>
+		<template name="YELLOW2MATT" 		title="$l10n_YELLOW2MATT" 			colorScale="0.5054 0.3066 0.0231" 	parentTemplate="glassClear01"/>
+		<template name="YELLOW3MATT" 		title="$l10n_YELLOW3MATT" 			colorScale="0.8227 0.9131 0.0000" 	parentTemplate="glassClear01"/>
+		<template name="VIOLET1MATT" 		title="$l10n_VIOLET1MATT" 			colorScale="0.0802 0.0513 0.7231" 	parentTemplate="glassClear01"/>
+		<template name="VIOLET2MATT" 		title="$l10n_VIOLET2MATT" 			colorScale="0.0090 0.0014 0.0619" 	parentTemplate="glassClear01"/>
+		<template name="NAVYMATT" 			title="$l10n_NAVYMATT" 				colorScale="0.0529 0.0865 0.0242" 	parentTemplate="glassClear01"/>
+		<template name="DEFAULTRED" 		title="$l10n_ui_colorRed" 			colorScale="1.0000 0.0000 0.0000" 	parentTemplate="calibratedPaint"/>
+		<template name="DEFAULTGREY" 		title="$l10n_ui_colorGrey" 			colorScale="0.4000 0.4000 0.4000" 	parentTemplate="calibratedPaint"/>
+	</materialTemplates>
+</modDesc>

@@ -1,0 +1,2543 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="WoodharvesterHRFF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>            
+			<en>1270G 6W</en>
+        </name>
+        <specs>
+            <power>272</power>
+            <maxSpeed>20</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_forestryCutter</function>
+        </functions>
+        <image>store/store_harvester1270G_6W.dds</image>
+        <price>435500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>forestryHarvesters</category>
+        <shopLoadingDelay initial="0.3"/>
+        <shopTranslationOffset>0 0.013 0</shopTranslationOffset>
+        <shopRotationOffset>1.922 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>11360000</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1893632</indexBufferMemoryUsage>
+        <textureMemoryUsage>7602176</textureMemoryUsage>
+        <audioMemoryUsage>640852</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_woodHarvester</typeDesc>
+        <filename>i3d/harvester1270G.i3d</filename>
+        <sounds filename="$data/vehicles/johnDeere/harvester1270G/sounds/harvester1270G.xml" volumeFactor="0.8"/>
+        <size width="3" length="12.6" height="3.85" lengthOffset="2.13"/>
+		<componentConfigurations>
+            <componentConfiguration numComponents="8" isSelectable="false">
+                <component centerOfMass="0 -0.5 2.3" solverIterationCount="40" mass="4500"/>
+				<component centerOfMass="0 -1.3 -0.9" solverIterationCount="40" mass="2500"/>
+				<component centerOfMass="0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 4 4"/>
+				<component centerOfMass="-0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 4 4"/>
+				<component centerOfMass="0 -0.8 0.15" solverIterationCount="20" mass="260"/>
+				<component centerOfMass="0 0 0.25" solverIterationCount="20" mass="210"/>
+				<component centerOfMass="0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 4 4"/>
+				<component centerOfMass="-0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 4 4"/>
+				<joint component1="1" component2="2" node="frontBackJoint" rotLimit="0 0 25" transLimit="0 0 0" rotLimitSpring="0 0 4000" rotLimitDamping="0 0 300"/>
+				<joint component1="1" component2="3" node="frontLeftBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<joint component1="1" component2="4" node="frontRightBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<joint component1="1" component2="5" node="cutterHolderColJoint" nodeActor1="cutterRotJoint" rotLimit="0 70 160" transLimit="0 0 0" zRotationNode="cutterHolderColJointZRot" rotDriveVelocity="0 0 0" maxRotDriveForce="0.5 0.5 0.5" rotLimitSpring="0 3 3" rotLimitDamping="0 5 5" transLimitSpring="600 600 600" transLimitDamping="10 10 10" enableCollision="true"/>
+				<joint component1="5" component2="6" node="cutterJoint" rotLimit="0 0 0" transLimit="0 0 0"/>
+				<joint component1="2" component2="7" node="backLeftBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<joint component1="2" component2="8" node="backRightBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<collisionPair component1="1" component2="5" enabled="false"/>
+				<collisionPair component1="1" component2="6" enabled="false"/>
+				<collisionPair component1="3" component2="6" enabled="false"/>
+				<collisionPair component1="4" component2="6" enabled="false"/>
+				<material materialSlotName="DisplayTausch">
+					<textures diffuse="textures/harvester1270G_6W_LCD_diffuse.dds"/>
+				</material>
+            </componentConfiguration>
+            <componentConfiguration numComponents="6">
+                <component centerOfMass="0 -0.5 2.3" solverIterationCount="40" mass="4500"/>
+				<component centerOfMass="0 -1.3 -0.9" solverIterationCount="40" mass="7400"/>
+				<component centerOfMass="0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 1 6"/>
+				<component centerOfMass="-0.5 -0.2 0" solverIterationCount="20" mass="4200" inertiaScale="4 1 6"/>
+				<component centerOfMass="0 -0.8 0.15" solverIterationCount="20" mass="260"/>
+				<component centerOfMass="0 0 0.25" solverIterationCount="20" mass="210"/>
+				<joint component1="1" component2="2" node="frontBackJoint" rotLimit="0 0 25" transLimit="0 0 0" rotLimitSpring="0 0 4000" rotLimitDamping="0 0 300"/>
+				<joint component1="1" component2="3" node="frontLeftBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<joint component1="1" component2="4" node="frontRightBoggieJoint" rotLimit="20 0 0" transLimit="0 0 0"/>
+				<joint component1="1" component2="5" node="cutterHolderColJoint" nodeActor1="cutterRotJoint" rotLimit="0 70 160" transLimit="0 0 0" zRotationNode="cutterHolderColJointZRot" rotDriveVelocity="0 0 0" maxRotDriveForce="0.5 0.5 0.5" rotLimitSpring="0 3 3" rotLimitDamping="0 5 5" transLimitSpring="600 600 600" transLimitDamping="10 10 10" enableCollision="true"/>
+				<joint component1="5" component2="6" node="cutterJoint" rotLimit="0 0 0" transLimit="0 0 0"/>
+				<collisionPair component1="1" component2="5" enabled="false"/>
+				<collisionPair component1="1" component2="6" enabled="false"/>
+				<collisionPair component1="3" component2="6" enabled="false"/>
+				<collisionPair component1="4" component2="6" enabled="false"/>
+				<material materialSlotName="DisplayTausch">
+					<textures diffuse="textures/harvester1270G_6W_LCD_diffuse.dds"/>
+				</material>
+            </componentConfiguration>
+        </componentConfigurations>
+        <schemaOverlay attacherJointPosition="0 0" name="VEHICLE"/>
+        <mapHotspot type="WOOD_HARVESTER"/>
+        <objectChanges>
+            <objectChange node="tilt" rotationActive="-1.941 0 0"/>
+            <objectChange node="tiltDummy" rotationActive="-1.941 0 0"/>
+			<objectChange node="8W" visibilityActive="false" />
+			<objectChange node="colPart02" translationActive="0 -0.095 -2.41"/>
+			<objectChange node="BackLed" translationActive="0 0 0.25"/>
+			<objectChange node="AttacherJointTrans" translationActive="0 0 0.25"/>
+			<objectChange node="colPart018W" compoundChildActive="false" visibilityActive="false" />
+			<objectChange node="colPart8W" compoundChildActive="false" visibilityActive="false" />
+        </objectChanges>
+    </base>
+	
+    <wheels>
+        <wheelConfigurations>
+			<wheelConfiguration name="%s %s" params="Forest King F2|$l10n_configuration_valueDefault" price="0" brand="NOKIAN" saveId="NOKIAN_DEFAULT">
+                <wheels autoRotateBackSpeed="1.6">
+					<wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true" rimOffset="0.22">
+                        <physics rotSpeed="1" restLoad="2.3" repr="frontLeftBoggieFrontWheel" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="70" damper="150" transRatio="1.0" frictionScale="2" yOffset="0.03"/>
+					</wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" rimOffset="0.22">
+                        <physics rotSpeed="1" restLoad="2.6" repr="frontLeftBoggieBackWheel" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="70" damper="150" transRatio="1.0" frictionScale="2" yOffset="0.03"/>
+					</wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false" rimOffset="0.22">
+                        <physics rotSpeed="1" restLoad="2.6" repr="frontRightBoggieFrontWheel" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="70" damper="150" transRatio="1.0" frictionScale="2" yOffset="0.03"/>
+					</wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" rimOffset="0.22">
+                        <physics rotSpeed="1" restLoad="2.3" repr="frontRightBoggieBackWheel" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="70" damper="150" transRatio="1.0" frictionScale="2" yOffset="0.03"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_55R34.xml" isLeft="true"  hasTireTracks="true" hasParticles="true"  rimOffset="0.12">
+                        <physics rotSpeed="0" restLoad="6.7" repr="6WbackLeftWheel" forcePointRatio="0.25" showSteeringAngle="false" initialCompression="30" suspTravel="0.12" spring="170" damper="65" transRatio="1.0" frictionScale="2"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_55R34.xml" isLeft="false" hasTireTracks="true" hasParticles="true"  rimOffset="0.12">
+                        <physics rotSpeed="0" restLoad="6.7" repr="6WbackRightWheel" forcePointRatio="0.25" showSteeringAngle="false" initialCompression="30" suspTravel="0.12" spring="170" damper="65" transRatio="1.0" frictionScale="2"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="%s %s" params="Forest King F2|$l10n_configuration_valueWheelBroad" price="4000" brand="NOKIAN" saveId="NOKIAN_BROAD">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/800_40__26_5.xml" isLeft="true">
+                    </wheel>					
+					<wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/800_40__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+ 					<wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/800_40__26_5.xml" isLeft="false">
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/800_40__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="%s %s" params="Forest King TRS 2|$l10n_configuration_valueDefault" price="4000" brand="NOKIAN" saveId="NOKIAN_TRS">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="wheels/TRS/TRS2710_26_5.xml" isLeft="true">
+                    </wheel>					
+					<wheel filename="wheels/TRS/TRS2710_26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+ 					<wheel filename="wheels/TRS/TRS2710_26_5.xml" isLeft="false">
+                    </wheel>
+					<wheel filename="wheels/TRS/TRS2710_26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="Forestech" price="4000" brand="BKT" saveId="BKT_FORESTECH">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="$data/shared/wheels/tires/bkt/forestech/710_45__26_5.xml" isLeft="true">
+                    </wheel>					
+					<wheel filename="$data/shared/wheels/tires/bkt/forestech/710_45__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+ 					<wheel filename="$data/shared/wheels/tires/bkt/forestech/710_45__26_5.xml" isLeft="false">
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/bkt/forestech/710_45__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="TR678" price="4000" brand="BKT" saveId="BKT_T678">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="wheels/BKT/TR678.xml" isLeft="true">
+                    </wheel>					
+					<wheel filename="wheels/BKT/TR678.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+ 					<wheel filename="wheels/BKT/TR678.xml" isLeft="false">
+                    </wheel>
+					<wheel filename="wheels/BKT/TR678.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="428SB" price="4000" brand="TRELLEBORG" saveId="TRELLEBORG_428">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true">
+                    </wheel>					
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+ 					<wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false">
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="422SB" price="4000" brand="TRELLEBORG" saveId="TRELLEBORG_422">
+                <wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_45R26_5.xml" isLeft="true">
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_45R26_5.xml" isLeft="false">
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+                    <wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="T2000 Special" price="4000" brand="TRELLEBORG" saveId="TRELLEBORG_T2000">
+				<wheels baseConfig="NOKIAN_DEFAULT" >
+                    <wheel filename="wheels/TM2000/710_50R26.xml" isLeft="true">
+                    </wheel>
+                    <wheel filename="wheels/TM2000/710_50R26.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+                    <wheel filename="wheels/TM2000/710_50R26.xml" isLeft="false">
+                    </wheel>
+                    <wheel filename="wheels/TM2000/710_50R26.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    </wheel>
+                    <wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<!--VorneBänder-->
+			<wheelConfiguration name="ProGripF/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_GripF2">
+                <wheels baseConfig="NOKIAN_DEFAULT" autoRotateBackSpeed="1.6">
+                    <wheel>
+						<physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                   <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+                    <crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontLeftBoggieFrontWheel" isLeft="true" offset="0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontLeftBoggieBackWheel" isLeft="true" offset="0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontRightBoggieFrontWheel" isLeft="false" offset="-0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontRightBoggieBackWheel" isLeft="false" offset="-0.22 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+			<wheelConfiguration name="ECO-TRACK/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK2">
+                <wheels baseConfig="NOKIAN_DEFAULT" autoRotateBackSpeed="1.6">
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ecoTrack.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ecoTrack.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EVO-BALTIC/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTI2">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK2" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_evoBaltic.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_evoBaltic.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EX2">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK2" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ex.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ex.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX2">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK2" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_kovaX.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_kovaX.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM/V" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM2">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK2" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+					<wheel>
+                    </wheel>
+					<wheel>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_magnum.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_magnum.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+                </crawlers>
+            </wheelConfiguration>
+			<!--VorneBänder HintenKette-->
+			<wheelConfiguration name="ProGripF/ProGripF" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_GripF22">
+                <wheels baseConfig="NOKIAN_DEFAULT" autoRotateBackSpeed="1.6">
+                    <wheel>
+						<physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+                   <wheel>
+                        <physics radius="0.695" width="0.86" tireType="crawler" frictionScale="2.5"/>
+                        <tire tireTrackAtlasIndex="15" maxDeformation="0" sideDeformOffset="0"/>
+                    </wheel>
+					<wheel>
+                        <physics radius="0.850" width="0.86" tireType="crawler" />
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.850" width="0.86" tireType="crawler" />
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                </wheels>
+                <crawlers>
+                    <crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontLeftBoggieFrontWheel" isLeft="true" offset="0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontLeftBoggieBackWheel" isLeft="true" offset="0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontRightBoggieFrontWheel" isLeft="false" offset="-0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_45R26_5_proGripF.xml" linkNode="frontRightBoggieBackWheel" isLeft="false" offset="-0.22 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+			<wheelConfiguration name="ECO-TRACK/ProGripF" price="4000" brand="OLOFSFORS" saveId="GripFEco3">
+                <wheels baseConfig="NOKIAN_DEFAULT" autoRotateBackSpeed="1.6">
+					<wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.73"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+					<wheel>
+                        <physics radius="0.850" width="0.86" tireType="crawler" />
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.850" width="0.86" tireType="crawler" />
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ecoTrack.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ecoTrack.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EVO-BALTIC/ProGripF" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTI3">
+                <wheels baseConfig="GripFEco3" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_evoBaltic.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_evoBaltic.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>	
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX/ProGripF" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EX3">
+                <wheels baseConfig="GripFEco3" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ex.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_ex.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX/ProGripF" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX3">
+                <wheels baseConfig="GripFEco3" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_kovaX.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_kovaX.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM/ProGripF" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM3">
+                <wheels baseConfig="GripFEco3" autoRotateBackSpeed="1.6">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+					<crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_magnum.xml" linkWheelNodes="frontLeftBoggieBackWheel frontLeftBoggieFrontWheel" isLeft="true" offset="0 0 0.75"/>
+                    <crawler filename="wheels/olofsfors/1270Gtrack710_45R26_5_magnum.xml" linkWheelNodes="frontRightBoggieBackWheel frontRightBoggieFrontWheel" isLeft="false" offset="0 0 0.75"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackLeftWheel" isLeft="true" offset="0.12 0 0"/>
+					<crawler filename="wheels/olofsfors/1270Gwheel710_50R34_proGripF.xml" linkNode="6WbackRightWheel" isLeft="true" offset="-0.12 0 0"/>
+                </crawlers>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <hub linkNode="frontLeftBoggieFrontWheel" filename="wheels/hub/hub.xml" isLeft="true" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+			<hub linkNode="frontLeftBoggieBackWheel" filename="wheels/hub/hub.xml" isLeft="true" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+			<hub linkNode="frontRightBoggieFrontWheel" filename="wheels/hub/hub.xml" isLeft="false" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+			<hub linkNode="frontRightBoggieBackWheel" filename="wheels/hub/hub.xml" isLeft="false" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+			<hub linkNode="6WbackLeftWheel" filename="wheels/hub/hub.xml" isLeft="true" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+			<hub linkNode="6WbackRightWheel" filename="wheels/hub/hub.xml" isLeft="false" scale="0.45 0.48 0.48" offset="0.012">
+				<material useRimColor="true" />
+			</hub>
+        </hubs>
+		<hubMaterial useDesignColorIndex="16"/>
+		<hubBoltMaterial useDesignColorIndex="15"/>
+		<ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="25" rotMax="5" rotCenter="0 -0.3"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+	
+    <articulatedAxis rotNode="frontBackJoint" componentJointIndex="1" anchorActor="0" rotSpeed="-35" rotMax="44" rotMin="-44" customWheelIndices1="1 2 3 4" customWheelIndices2="5 6">
+        <sounds>
+            <steering template="hydraulicClose01" pitchScale="0.3" linkNodeOffset="0 0.7 1" innerRadius="15" outerRadius="25" fadeIn="0.1" fadeOut="0.1">
+                <volume indoor="0.5" outdoor="2.0"/>
+                <lowpassGain indoor="0.6" outdoor="1"/>
+            </steering>
+        </sounds>
+    </articulatedAxis>
+
+	<powerConsumer ptoRpm="350" neededMinPtoPower="5" neededMaxPtoPower="40" useTurnOnState="false"/>
+	
+	<attacherJoints>
+        <attacherJoint node="trailerAttacherJointBack" jointType="trailer" rootNode="harvester1270G_back_component2" lowerRotLimit="20 75 50" canTurnOnImplement="false">
+            <schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+    </attacherJoints>
+	
+    <speedRotatingParts>
+        <speedRotatingPart nodes="pto01 pto02" wheelIndex="1" wheelScale="5"/>
+    </speedRotatingParts>
+	
+    <enterable isTabbable="true">
+        <enterReferenceNode node="harvester1270G_main_component1"/>
+        <exitPoint node="exitPoint"/>
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="6" transMax="40" translation="0 0 8.45" rotation="-18.5 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" isInside="true" useMirror="true" shadowFocusBox="shadowFocusBox" useDefaultPositionSmoothing="false" suspensionNodeIndex="1"/>
+            <camera node="indoorCamera1SH" rotatable="false" useWorldXZRotation="false" isInside="true" allowHeadTracking="true" useMirror="true" />
+			<camera node="craneCamera" rotatable="false" useWorldXZRotation="false" allowHeadTracking="true"/>
+        </cameras>
+        <characterNode node="playerSkin" cameraMinDistance="0.5">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget"/>
+            <target ikChain="leftFoot" targetNode="playerLeftFootTarget"/>
+            <target ikChain="rightArm" targetNode="playerRightHandTarget"/>
+            <target ikChain="leftArm" targetNode="playerLeftHandTargetSteering" poseId="flatFingers"/>
+        </characterNode>
+        <characterTargetNodeModifier node="playerLeftHandTargetSteering" transitionTime="0.1" poseId="flatFingers">
+            <state node="playerLeftHandTarget" referenceNode="joystickLeft" poseId="narrowFingers"/>
+        </characterTargetNodeModifier>
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1">
+            <state node="playerRightFootTargetGas" referenceNode="pedalGas" directionReferenceNode="playerRightFootTargetGasRef"/>
+        </characterTargetNodeModifier>
+        <mirrors>
+            <mirror node="mirrorDecal" prio="1"/>
+        </mirrors>
+        <enterAnimation name="enterAnimation"/>
+        <dashboards>
+            <dashboard displayType="TEXT" valueType="time" node="numbersTime" textColor="0.8 0.8 0.8" textSize="0.004" textMask="00:00" emissiveScale="0.5" font="GENERIC" textAlignment="CENTER" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="operatingTime" node="numbersOperatingTime" textColor="0.8 0.8 0.8" emissiveScale="0.5" textSize="0.004" textMask="0000.0h" font="GENERIC" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="outsideTemperature" node="numbersOutsideTemperature" textColor="0.8 0.8 0.8" emissiveScale="0.5" textSize="0.004" textMask="00" font="GENERIC" textAlignment="LEFT" groups="ELECTRONICS_ACTIVE"/>
+        </dashboards>
+    </enterable>
+	
+    <connectionHoses>
+        <localHose>
+            <hose type="HRFF_BUNDLE" hoseType="CABLE_HRFF" node="localHose01Start" length="2.3" diameter="1" straighteningFactor="5" isWorldSpaceHose="false" isTwoPointHose="true"/>
+            <target type="HRFF_BUNDLE" node="localHose01End" straighteningFactor="5.1"/>
+        </localHose>
+        <localHose>
+            <hose type="HRFF_BUNDLE" hoseType="CABLE_HRFF" node="localHose02Start" length="2.7" diameter="0.75" minCenterPointAngle="5" straighteningFactor="1" isWorldSpaceHose="false" centerPointDropFactor="0.25" centerPointTension="0.6" minCenterPointOffset="0 0 0.6" maxCenterPointOffset="0 0 10"/>
+            <target type="HRFF_BUNDLE" node="localHose02End" straighteningFactor="0.5"/>
+        </localHose>
+        <localHose>
+            <hose type="HRFF_BUNDLE" hoseType="CABLE_HRFF" node="localHose03Start" length="0.8" diameter="0.75" minCenterPointAngle="5" straighteningFactor="1" isWorldSpaceHose="false" isTwoPointHose="false" minCenterPointOffset="0.07 0 0" maxCenterPointOffset="0.07 0 0"/>
+            <target type="HRFF_BUNDLE" node="localHose03End" straighteningFactor="1"/>
+        </localHose>
+        <localHose>
+            <hose type="HRFF_BUNDLE" hoseType="CABLE_HRFF" node="localHose04Start" length="0.8" diameter="0.75" minCenterPointAngle="5" straighteningFactor="1" isWorldSpaceHose="false" isTwoPointHose="false" minCenterPointOffset="-0.03 0 0" maxCenterPointOffset="-0.03 0 0"/>
+            <target type="HRFF_BUNDLE" node="localHose04End" straighteningFactor="1"/>
+        </localHose>
+        <localHose>
+            <hose type="HRFF_BUNDLE" hoseType="CABLE_HRFF" node="localHose05Start" length="0.8" diameter="0.55" minCenterPointAngle="5" straighteningFactor="1" isWorldSpaceHose="false" isTwoPointHose="false"/>
+            <target type="HRFF_BUNDLE" node="localHose05End" straighteningFactor="1"/>
+        </localHose>
+    </connectionHoses>
+	
+    <drivable>
+        <steeringWheel node="steeringWheel" indoorRotation="-14" outdoorRotation="-14"/>
+        <dashboards>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="pedalGas" minRot="0 0 0" maxRot="0 -14 0" doInterpolation="true" groups="ELECTRONICS_ACTIVE"/>
+        </dashboards>
+    </drivable>
+	
+    <lights>
+		<sharedLight linkNode="workingLight36_static1" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<sharedLight linkNode="workingLight36_static5" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<sharedLight linkNode="workingLight36_static2" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<sharedLight linkNode="workingLight36_static" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<sharedLight linkNode="workingLight36_static3" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<sharedLight linkNode="workingLight36_static4" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static6" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static7" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static8" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static9" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static10" lightTypes="0" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static11" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static12" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static13" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static14" lightTypes="0" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static15" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static16" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static17" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static18" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static19" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static20" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static21" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static22" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static23" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static24" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static25" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static25" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static26" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static27" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static28" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+        <sharedLight linkNode="workingLight36_static35" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight36.xml"/>
+		<!--CabinLED-->
+		<sharedLight linkNode="LedCab_01" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_02" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_03" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_04" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_05" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_06" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_07" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedCab_08" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<!--BackLED-->
+		<sharedLight linkNode="LedBack_01" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack_02" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack_03" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack_04" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<!--SeiteLED-->
+		<sharedLight linkNode="LedBack6W_01" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack6W_02" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack6W_03" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="LedBack6W_04" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<!--KäfigLED-->
+		<sharedLight linkNode="Led6WKafig_01" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_02" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_03" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_04" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_05" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_06" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_07" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_08" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_09" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_10" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_11" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_12" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_13" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_14" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_15" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_16" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_17" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_18" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_19" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_20" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_21" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_22" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_23" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_24" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_25" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_26" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_27" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+		<sharedLight linkNode="Led6WKafig_28" lightTypes="0" filename="HRFFLicht/Markierungsleuchten/MarkierungsleuchtenOrange.xml"/>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 2"/>
+            <state lightTypes="0 2 1"/>
+        </states>
+        <realLights>
+            <low>
+                <light node="frontLightLow" lightTypes="0" excludedLightTypes="2"/>
+                <light node="workLightFrontLow" lightTypes="2"/>
+                <light node="workLightBackLow" lightTypes="1"/>
+            </low>
+            <high>
+                <light node="frontLightHigh" lightTypes="0" excludedLightTypes="2"/>
+                <light node="workLightFrontHigh" lightTypes="2"/>
+				<light node="workLightFrontHigh2" lightTypes="2"/>
+                <light node="workLightBackHigh" lightTypes="1"/>
+                <light node="workLightSideHigh3" lightTypes="1"/>
+                <light node="workLightSideHigh4" lightTypes="1"/>
+                <light node="workLightCraneHigh" lightTypes="2"/>
+                <light node="workLightTiltHigh" lightTypes="2"/>
+                <interiorLight node="interiorScreenLight"/>
+            </high>
+        </realLights>
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="lightState" node="seatDecalsLit" lightTypes="0" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="worklightBackDecalsLit" lightTypes="1" intensity="0.2" groups="ELECTRONICS_ACTIVE" emitColor="GREEN" inactiveGroups="LIGHT_ENABLED" inactiveIntensity="0.2" inactiveColor="ORANGE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="worklightBackDecals2Lit" lightTypes="1" intensity="0.2" groups="ELECTRONICS_ACTIVE" emitColor="GREEN"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="worklightFrontDecalsLit" lightTypes="2" intensity="0.2" groups="ELECTRONICS_ACTIVE" emitColor="GREEN" inactiveGroups="LIGHT_ENABLED" inactiveIntensity="0.2" inactiveColor="ORANGE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="worklightFrontDecals2Lit" lightTypes="2" intensity="0.2" groups="ELECTRONICS_ACTIVE" emitColor="GREEN"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="highBeamDecalsLit" emitColor="BLUE" lightTypes="3" intensity="0.2" groups="ELECTRONICS_ACTIVE" inactiveGroups="LIGHT_ENABLED" inactiveIntensity="0.2" inactiveColor="WHITE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="highBeamDecals2Lit" emitColor="BLUE" lightTypes="3" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightLeft" node="turnlightLeftDecalsLit" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightRight" node="turnlightRightDecalsLit" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightHazard" node="turnlightHazardDecalsLit" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightLeft" node="turnlightLeftDecals2Lit" emitColor="GREEN" intensity="0.1" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightRight" node="turnlightRightDecals2Lit" emitColor="GREEN" intensity="0.1" groups="ELECTRONICS_ACTIVE"/>
+        </dashboards>
+    </lights>
+	
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="390">
+                        <exactFillRootNode node="exactFillRootNodeFuel"/>
+                        <dashboard displayType="TEXT" valueType="fillLevelPct" node="numbersFuelPct" textColor="0.8 0.8 0.8" emissiveScale="0.5" textMask="00%" textSize="0.004" textAlignment="CENTER" font="GENERIC" groups="ELECTRONICS_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="def" capacity="23"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="108" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="6.3" fillType="def"/>
+                <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.2" wheelIndex1="1" wheelIndex2="2"/>
+                    <!-- front left-left -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.2" wheelIndex1="3" wheelIndex2="4"/>
+                    <!-- front right-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" wheelIndex1="5" wheelIndex2="6"/>
+                    <!-- back right-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" differentialIndex1="1" differentialIndex2="2"/>
+                    <!-- front-left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" differentialIndex1="3" differentialIndex2="4"/>
+                    <!-- back-left-right -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration name="1270G 6W" hp="272" price="0">
+                <motor torqueScale="1.149" minRpm="850" maxRpm="2200" maxForwardSpeed="23" maxBackwardSpeed="23" brakeForce="17" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1">  <!-- dampingRateScale="1.6"  -->
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="31" maxForwardGearRatio="350" minBackwardGearRatio="31" maxBackwardGearRatio="350" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5"/>
+        </exhaustEffects>
+        <motorStartDuration>3800</motorStartDuration>
+        <dashboards>
+            <dashboard displayType="TEXT" valueType="motorTemperature" node="numbersTemp" textColor="0.8 0.8 0.8" emissiveScale="0.5" textMask="000" textSize="0.004" textAlignment="CENTER" font="GENERIC" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="motorTemperature" node="numbersTemp1" textColor="0.8 0.8 0.8" emissiveScale="0.5" textMask="000" textSize="0.004" textAlignment="CENTER" font="GENERIC" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="battery" node="numbersBattery" textColor="0.8 0.8 0.8" emissiveScale="0.5" textMask="00V" textSize="0.004" textAlignment="CENTER" font="GENERIC" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="directionNeutral" node="brakeDecalsLit" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="VISIBILITY" valueType="directionNeutral" node="brakeDecalsLit" intensity="0.2" groups="ELECTRONICS_ACTIVE"/>
+        </dashboards>
+    </motorized>
+	
+	<licensePlates defaultPlacement="BACK_ONLY">
+        <licensePlate frame="false" node="Kennzeichen" position="ANY" preferedType="ELONGATED" placementArea="0.06 0.26 0.07 0.26"/>
+    </licensePlates>
+	
+    <wipers>
+        <wiper animName="wiperFrontAnimation">
+            <state animSpeed="0.75" animPause="2.0"/>
+            <state animSpeed="0.75" animPause="0.0"/>
+            <state animSpeed="1.10" animPause="0.0"/>
+        </wiper>
+        <wiper animName="wiperSideAnimation">
+            <state animSpeed="0.75" animPause="4.0"/>
+            <state animSpeed="0.75" animPause="2.0"/>
+            <state animSpeed="1.10" animPause="0.0"/>
+        </wiper>
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="state" node="wiperDecalLit" emitColor="GREEN" intensity="0.2" groups="ELECTRONICS_ACTIVE" inactiveGroups="LIGHT_ENABLED" inactiveIntensity="0.2" inactiveColor="WHITE"/>
+        </dashboards>
+    </wipers>
+	
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" foldInputButton="IMPLEMENT_EXTRA4" turnOnFoldMaxLimit="0">
+                    <foldingPart animationName="folding" speedScale="1"/>
+                    <toggleFolding minLimit="0.5" maxLimit="1" blockedDirection="-1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+	
+	<workModes>
+        <workModeConfigurations title="$l10n_ZusatzFunktionCab" isYesNoOption="true">
+			<workModeConfiguration name="$l10n_ui_no"/>
+            <workModeConfiguration name="$l10n_ui_yes">
+                <workMode name="$l10n_CabNormal">
+                </workMode>
+                <workMode name="$l10n_CabLinks">
+                    <animation name="CabLinks" speed="1"/>
+                </workMode>
+				<workMode name="$l10n_CabNormal">
+                </workMode>
+				<workMode name="$l10n_CabRechts">
+                    <animation name="CabRechts" speed="1"/>
+                </workMode>
+            </workModeConfiguration>
+        </workModeConfigurations>
+    </workModes>
+	
+    <animations>
+		<animation name="CabLinks">
+            <part node="cabinReverse"      startTime="0.0" endTime="2" startRot="0 0 0" endRot="0 90 0" />
+        </animation>
+		<animation name="CabRechts">
+            <part node="cabinReverse"      startTime="0.0" endTime="2" startRot="0 0 0" endRot="0 -90 0" />
+        </animation>
+        <animation name="mainArmMiddleArmAnimation">
+            <part node="mainArmMiddleArmDummy" startTime="0.0" endTime="0.5" startRot="67.5 0 0" endRot="0 0 0"/>
+            <part node="mainArmMiddleArmDummy" startTime="0.5" endTime="1" startRot="0 0 0" endRot="-67.5 0 0"/>
+        </animation>
+        <animation name="enterAnimation">
+            <part node="ladder" startTime="2" endTime="3" startRot="0 0 0" endRot="0 0 146.8"/>
+			<part node="doorRot" startTime="0" endTime="1" startRot="0 0 0" endRot="0 75 0"/>
+			<part node="doorRot" startTime="1" endTime="2" startRot="0 75 0" endRot="0 0 0"/>
+            <sound template="clackVar6" startTime="2.99" direction="1" volumeScale="0.6" pitchScale="1" linkNode="ladder"/>
+            <sound template="sheetImp02" startTime="2.99" direction="1" volumeScale="0.9" pitchScale="1.5" linkNode="ladder"/>
+            <sound template="clackVar6" startTime="2.01" direction="-1" volumeScale="0.6" pitchScale="1" linkNode="ladder"/>
+            <sound template="sheetImp02" startTime="2.01" direction="-1" volumeScale="0.9" pitchScale="1.5" linkNode="ladder"/>
+        </animation>
+        <animation name="cutAnimation">
+            <part node="cuttingBlade" startTime="0" duration="0.9" startRot="0 0 0" endRot="0 105 0"/>
+            <part node="cuttingBlade" startTime="0.9" duration="0.4" startRot="0 105 0" endRot="0 0 0"/>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_sawCut.wav" startTime="0.01" direction="1" pitchScale="1" innerRadius="10" outerRadius="50" linkNode="cuttingBlade">
+                <volume indoor="0.6" outdoor="3"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_woodGrab.wav" startTime="0.9" direction="1" pitchScale="1" innerRadius="10" outerRadius="50" linkNode="cuttingBlade">
+                <volume indoor="0.6" outdoor="4"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+        </animation>
+        <animation name="cutterHoseArmAnimation">
+            <part node="cutterHoseArm" startTime="0.0" endTime="0.5" startRot="0 60 0" endRot="0 0 0"/>
+            <part node="cutterHoseArm" startTime="0.5" endTime="1" startRot="0 0 0" endRot="0 -60 0"/>
+        </animation>
+        <animation name="grabberAnimation">
+            <part node="leftUpperGrab" startTime="0" endTime="0.85" startRot="0 0 100" endRot="0 0 -5"/>
+            <part node="rightUpperGrab" startTime="0" endTime="0.85" startRot="0 0 -100" endRot="0 0 5"/>
+            <part node="leftLowerGrab" startTime="0" endTime="1" startRot="0 0 90" endRot="0 0 -5"/>
+            <part node="rightLowerGrab" startTime="0" endTime="1" startRot="0 0 -90" endRot="0 0 5"/>
+            <part node="leftGrab" startTime="0" endTime="0.9" startRot="0 0 75" endRot="0 0 -5"/>
+            <part node="rightGrab" startTime="0" endTime="0.9" startRot="0 0 -75" endRot="0 0 5"/>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_open.wav" startTime="0.7" direction="1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/manitou/m504/sounds/forkDown.wav" startTime="0.01" endTime="0.99" volumeScale="0.4" pitchScale="1.4" direction="0" fadeIn="0.05" fadeOut="0.1" linkNode="leftGrab"/>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_close.wav" startTime="0.99" direction="-1" pitchScale="0.8" innerRadius="3" outerRadius="35" linkNode="leftGrab">
+                <volume indoor="0.6" outdoor="3"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_open.wav" startTime="0.1" direction="-1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/komatsu/harvester951/sounds/951_toolOpen.wav" startTime="0.40" direction="1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound template="compressedAir" startTime="0.01" volumeScale="2" pitchScale="0.7" direction="1" linkNode="leftGrab"/>
+            <sound template="compressedAir" startTime="0.99" volumeScale="2" pitchScale="0.7" direction="-1" linkNode="leftGrab"/>
+        </animation>
+		<animation name="grabberAnimation2">
+            <part node="leftUpperGrab" startTime="0" endTime="0.85" startRot="0 0 100" endRot="0 0 -5"/>
+            <part node="rightUpperGrab" startTime="0" endTime="0.85" startRot="0 0 -100" endRot="0 0 5"/>
+            <part node="leftLowerGrab" startTime="0" endTime="0.9" startRot="0 0 90" endRot="0 0 -5"/>
+            <part node="rightLowerGrab" startTime="0" endTime="0.9" startRot="0 0 -90" endRot="0 0 5"/>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_open.wav" startTime="0.7" direction="1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftUpperGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/manitou/m504/sounds/forkDown.wav" startTime="0.01" endTime="0.99" volumeScale="0.4" pitchScale="1.4" direction="0" fadeIn="0.05" fadeOut="0.1" linkNode="leftUpperGrab"/>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_close.wav" startTime="0.99" direction="-1" pitchScale="0.8" innerRadius="3" outerRadius="35" linkNode="leftUpperGrab">
+                <volume indoor="0.6" outdoor="3"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_frontTool_open.wav" startTime="0.1" direction="-1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftUpperGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound file="$data/vehicles/komatsu/harvester951/sounds/951_toolOpen.wav" startTime="0.40" direction="1" pitchScale="1" innerRadius="3" outerRadius="35" linkNode="leftUpperGrab">
+                <volume indoor="0.9" outdoor="4.2"/>
+                <lowpassCutoffFrequency indoor="4000" outdoor="20000"/>
+                <lowpassGain indoor="0.3" outdoor="1"/>
+            </sound>
+            <sound template="compressedAir" startTime="0.01" volumeScale="2" pitchScale="0.7" direction="1" linkNode="leftUpperGrab"/>
+            <sound template="compressedAir" startTime="0.99" volumeScale="2" pitchScale="0.7" direction="-1" linkNode="leftUpperGrab"/>
+        </animation>
+        <animation name="headerTiltAnimation" soundVolumeFactor="0.6">
+            <part node="cutterJoint" startTime="0" endTime="1" startRot="0 0 0" endRot="95 0 0"/>
+			<part node="localHose01End" startTime="0" endTime="1" startRot="0 0 0" endRot="-75 0 0" startTrans="0.001 -0.065 -0.471" endTrans="0.001 -0.086 -0.443"/>
+            <sound template="hydraulicSoftOpen02" startTime="0.01" endTime="0.99" volumeScale="6" pitchScale="1.3" linkNode="cutterJoint"/>
+            <sound template="grabImp" startTime="0.01" direction="-1" volumeScale="1.3" pitchScale="1.3" linkNode="cutterJoint"/>
+            <sound template="metalImpLayer01" startTime="0.01" direction="-1" volumeScale="1.3" pitchScale="1.3" linkNode="cutterJoint"/>
+            <sound template="grabImp" startTime="0.99" direction="1" volumeScale="1.3" pitchScale="1.4" linkNode="cutterJoint"/>
+            <sound template="metalImpLayer02" startTime="0.99" direction="1" volumeScale="1.3" pitchScale="1.4" linkNode="cutterJoint"/>
+        </animation>
+        <animation name="folding" resetOnStart="false">
+            <part node="craneYRotDummy" startTime="0" endTime="4" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="mainArmDummy" startTime="0" endTime="4" startRot="-30 0 0" endRot="-47 0 0"/>
+            <part node="tilt" startTime="1" endTime="4" startRot="-1.941 0 0" endRot="-1.941 0 0"/>
+            <part node="tiltDummy" startTime="1" endTime="4" startRot="-1.941 0 0" endRot="-1.941 0 0"/>
+            <part node="heightControlArmDummy" startTime="0" endTime="4" startRot="15 0 0" endRot="0 0 0"/>
+            <part node="translateArmDummy" startTime="0" endTime="4" startTrans="0 0 -1.29" endTrans="0 0 -1.29"/>
+            <part node="cutterRotJoint" startTime="0" endTime="4" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="heightControlArmDummy" startTime="4" endTime="10" startRot="0 0 0" endRot="30 0 0"/>
+            <part node="tilt" startTime="5" endTime="10" startRot="-1.941 0 0" endRot="30 0 0"/>
+            <part node="tiltDummy" startTime="5" endTime="10" startRot="-1.941 0 0" endRot="30 0 0"/>
+            <part node="localHose01Start" startTime="3" endTime="5" startRot="21 0 0" endRot="-40 0 0"/>
+            <part node="cutterHolderColJointRot" startTime="3" endTime="5" startRot="0 0 0" endRot="0 0 -1"/>
+            <part componentJointIndex="4" startTime="3" endTime="5" startRotLimit="0 70 160" endRotLimit="0 0 0"/>
+            <part componentJointIndex="4" startTime="3" endTime="3.1" startRotLimitSpring="0 3 3" startRotLimitDamping="0 5 5" endRotLimitSpring="0 0 0" endRotLimitDamping="1 1 1"/>
+            <part node="cabinFold" startTime="8" endTime="10" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="cabinRot" startTime="8" endTime="10" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="foldingLockChain" startTime="0" endTime="4.99" visibility="false"/>
+            <part node="foldingLockChain" startTime="4.99" endTime="10" visibility="true"/>
+            <part node="foldingLockChain2" startTime="0" endTime="4.99" visibility="false"/>
+            <part node="foldingLockChain2" startTime="4.99" endTime="10" visibility="true"/>
+            <sound template="hydraulicOpen06" startTime="5" endTime="10" direction="-1" volumeScale="1.2" pitchScale="0.78" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicClose03" startTime="5" endTime="10" direction="-1" volumeScale="3.2" pitchScale="1.2" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicSmallClose" startTime="5" endTime="10" direction="-1" volumeScale="1.2" pitchScale="0.8" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicClose02" startTime="5" endTime="10" direction="-1" volumeScale="3.4" pitchScale="1.1" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicOpen07" startTime="0.1" endTime="4" direction="-1" volumeScale="1.3" pitchScale="0.8" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicClose03" startTime="0.1" endTime="4" direction="-1" volumeScale="3.2" pitchScale="1.1" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicSmallOpen" startTime="0.1" endTime="4" direction="-1" volumeScale="1.3" pitchScale="0.8" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicClose02" startTime="0.1" endTime="4" direction="-1" volumeScale="3.4" pitchScale="1.1" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicClose01" startTime="0.1" endTime="4" direction="1" volumeScale="3.1" pitchScale="0.9" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicSmallClose" startTime="0.1" endTime="4" direction="1" volumeScale="1.8" pitchScale="0.86" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicClose03" startTime="0.1" endTime="4" direction="1" volumeScale="3.0" pitchScale="1.3" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicSoftOpen02" startTime="0.1" endTime="4" direction="1" volumeScale="2.1" pitchScale="0.77" fadeIn="0.1" fadeOut="0.1" linkNode="tiltDummy"/>
+            <sound template="hydraulicClose02" startTime="5" endTime="10" direction="1" volumeScale="3.3" pitchScale="0.9" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicSmallClose" startTime="5" endTime="10" direction="1" volumeScale="2.0" pitchScale="0.86" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicClose03" startTime="5" endTime="10" direction="1" volumeScale="3.0" pitchScale="1.3" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="hydraulicSoftOpen02" startTime="5" endTime="10" direction="1" volumeScale="2.0" pitchScale="0.77" fadeIn="0.1" fadeOut="0.1" linkNode="mainArmDummy"/>
+            <sound template="metalImpLayer01" startTime="5" direction="-1" volumeScale="1.8" pitchScale="0.9" linkNode="mainArmDummy"/>
+            <sound template="metalImpMechanic" startTime="5" direction="-1" volumeScale="1.2" pitchScale="0.7" linkNode="mainArmDummy"/>
+            <sound template="metalImpHigh02" startTime="0.1" direction="-1" volumeScale="1.7" pitchScale="0.78" linkNode="mainArmDummy"/>
+            <sound template="metalImpLayer03" startTime="0.1" direction="-1" volumeScale="1.9" pitchScale="0.89" linkNode="mainArmDummy"/>
+            <sound template="metalImpMechanic" startTime="0.1" direction="-1" volumeScale="1.2" pitchScale="0.77" linkNode="mainArmDummy"/>
+            <sound template="grabImp" startTime="0.1" direction="-1" volumeScale="1.9" pitchScale="1.1" linkNode="mainArmDummy"/>
+            <sound template="metalImpHigh02" startTime="5" direction="1" volumeScale="1.7" pitchScale="0.78" linkNode="mainArmDummy"/>
+            <sound template="metalImpLayer04" startTime="5" direction="1" volumeScale="1.8" pitchScale="0.8" linkNode="mainArmDummy"/>
+            <sound template="metalImpMechanic" startTime="5" direction="1" volumeScale="1.2" pitchScale="0.84" linkNode="mainArmDummy"/>
+            <sound template="grabImp" startTime="5" direction="1" volumeScale="1.9" pitchScale="1.2" linkNode="mainArmDummy"/>
+            <sound template="metalImpHigh01" startTime="9.99" direction="1" volumeScale="1.7" pitchScale="0.81" linkNode="mainArmDummy"/>
+            <sound template="metalImpLayer01" startTime="9.99" direction="1" volumeScale="1.8" pitchScale="0.94" linkNode="mainArmDummy"/>
+            <sound template="metalImpMechanic" startTime="9.99" direction="1" volumeScale="1.2" pitchScale="0.88" linkNode="mainArmDummy"/>
+            <sound template="grabImp" startTime="9.99" direction="1" volumeScale="1.9" pitchScale="1.2" linkNode="mainArmDummy"/>
+            <sound template="vibratingImp" startTime="4" direction="1" volumeScale="1.7" pitchScale="1.2" linkNode="mainArmDummy"/>
+            <sound template="clackVar4" startTime="4" direction="1" volumeScale="3.1" pitchScale="0.6" linkNode="mainArmDummy"/>
+            <sound template="foldStartMed02" startTime="4" direction="1" volumeScale="4.1" pitchScale="1.2" linkNode="mainArmDummy"/>
+            <sound template="hydraulicOpen05" startTime="4" endTime="5" direction="1" volumeScale="3.3" pitchScale="1.5" linkNode="mainArmDummy" fadeIn="0.1" fadeOut="0.1"/>
+        </animation>
+        <!-- dummy animation to reset the chain visibility state while loading -->
+        <animation name="dummyAnimation">
+            <part node="foldingLockChain" startTime="0.00" endTime="0.01" visibility="false"/>
+            <part node="foldingLockChain2" startTime="0.00" endTime="0.01" visibility="false"/>
+        </animation>
+        <animation name="wiperFrontAnimation" isKeyframe="true">
+            <part node="wiperFront" startTime="0.0" endTime="0.5" startRot="16.805 180.918 0.163" endRot="21.944 182.079 24.814"/>
+            <part node="wiperFront" startTime="0.5" endTime="1.0" startRot="21.944 182.079 24.814" endRot="15.907 183.24 49.465"/>
+            <part node="wiperFrontArm01" startTime="0.0" endTime="0.5" startRot="-10.046 -0.012 -0.0" endRot="-8.25 -3.863 -24.904"/>
+            <part node="wiperFrontArm01" startTime="0.5" endTime="1.0" startRot="-8.25 -3.863 -24.904" endRot="-6.455 -7.714 -49.807"/>
+            <part node="wiperFrontArm02" startTime="0.0" endTime="0.5" startRot="-10.045 -0.012 0.0" endRot="-8.25 -3.863 -24.904"/>
+            <part node="wiperFrontArm02" startTime="0.5" endTime="1.0" startRot="-8.25 -3.863 -24.904" endRot="-6.454 -7.714 -49.807"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1" volumeScale="1" pitchScale="0.6" fadeOut="0.1" linkNode="wiperFront"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="1" pitchScale="0.6" fadeOut="0.1" linkNode="wiperFront"/>
+        </animation>
+        <animation name="wiperSideAnimation" isKeyframe="true">
+            <part node="wiperRight" startTime="0.0" endTime="0.5" startRot="12.71 -80.201 0.0" endRot="73.115 -44.588 -62.894"/>
+            <part node="wiperRight" startTime="0.5" endTime="1.0" startRot="73.115 -44.588 -62.894" endRot="93.902 10.931 -80.6"/>
+            <part node="wiperRightPart" startTime="0.0" endTime="0.5" startRot="-19.776 -7.887 0.656" endRot="-15.834 -7.887 0.656"/>
+            <part node="wiperRightPart" startTime="0.5" endTime="1.0" startRot="-15.834 -7.887 0.656" endRot="-15.477 -7.887 0.656"/>
+            <part node="wiperLeft" startTime="0.0" endTime="0.5" startRot="0.0 0.0 0.0" endRot="46.941 -9.799 3.372"/>
+            <part node="wiperLeft" startTime="0.5" endTime="1.0" startRot="46.941 -9.799 3.372" endRot="94.922 -11.338 -0.97"/>
+            <part node="wiperLeftPart" startTime="0.0" endTime="0.5" startRot="-92.081 -0.844 97.13" endRot="-92.052 4.7 94.739"/>
+            <part node="wiperLeftPart" startTime="0.5" endTime="1.0" startRot="-92.052 4.7 94.739" endRot="-92.01 -1.001 92.751"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1" volumeScale="0.9" pitchScale="0.8" fadeOut="0.1" linkNode="wiperLeft"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="0.9" pitchScale="0.8" fadeOut="0.1" linkNode="wiperLeft"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1" volumeScale="0.9" pitchScale="0.78" fadeOut="0.1" linkNode="wiperRight"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="0.9" pitchScale="0.78" fadeOut="0.1" linkNode="wiperRight"/>
+        </animation>
+        <!-- <animation name="craneCamSideAnim" isKeyframe="true">
+            <part node="craneCameraRot" startTime="0.00" endTime="0.40" startTrans="-1 0 0" endTrans="-1 0 0"/>
+            <part node="craneCameraRot" startTime="0.40" endTime="0.50" startTrans="-1 0 0" endTrans="-1 0 0"/>
+            <part node="craneCameraRot" startTime="0.50" endTime="0.60" startTrans="-1 0 0" endTrans="1 0 0"/>
+            <part node="craneCameraRot" startTime="0.60" endTime="1.00" startTrans="1 0 0" endTrans="1 0 0"/>
+        </animation> -->
+    </animations>
+	
+	<cylindered loadMovingToolStatesAfterFolding="true" loadMovingToolStatesFoldTime="0">
+		<movingTools powerConsumingActiveTimeOffset="0.5">
+		</movingTools>
+		<cylinderedConfigurations isYesNoOption="true" title="$l10n_setting_easyArmControl">
+			<cylinderedConfiguration name="$l10n_ui_no" >
+				<movingTools powerConsumingActiveTimeOffset="0.5">
+					<!-- crane -->
+					<movingTool node="craneYRotDummy" delayedNode="craneYRot" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM" invertAxis="true" mouseSpeedFactor="0.3" iconName="CRANE_ARM1_ROTATE_Y"/>
+						<rotation rotSpeed="40" rotAcceleration="40" rotMax="125" rotMin="-125" startRot="0" rotationAxis="2"/>
+						<componentJoint index="4" anchorActor="0"/>
+						<dependentPart node="cabinRot"/>
+						<!-- <dependentAnimation name="craneCamSideAnim" rotationAxis="2" minValue="-125" maxValue="125"/> -->
+					</movingTool>
+					<movingTool node="heightControlArmDummy" delayedNode="heightControlArm" playSound="true" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.3" iconName="CRANE_EC_TRANSLATE_Y"/>
+						<rotation rotSpeed="20" rotAcceleration="40" rotMax="50" rotMin="-35" startRot="0" rotationAxis="1" rotSendNumBits="9"/>
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="heightControlArm">
+						<dependentPart node="heightControlArmHydraulic"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="mainArmDummy" delayedNode="mainArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="0.3" iconName="CRANE_EC_TRANSLATE_Z"/>
+						<rotation rotSpeed="20" rotAcceleration="50" rotMax="22" rotMin="-55" startRot="-55" rotationAxis="1" rotSendNumBits="10"/>
+						<componentJoint index="4" anchorActor="0"/>
+						<dependentAnimation name="mainArmMiddleArmAnimation" rotationAxis="1" minValue="-55" maxValue="55"/>
+					</movingTool>
+					<movingTool node="mainArm">
+						<dependentPart node="mainArmHydraulic"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="mainArmMiddleArmDummy" delayedNode="mainArmMiddleArm">
+						<dependentPart node="secondArmDummy"/>
+					</movingTool>
+					<movingTool node="mainArmMiddleArm">
+						<dependentPart node="secondArm"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="translateArmDummy" delayedNode="translateArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.3" iconName="CRANE_ARM2_TRANSLATE"/>
+						<translation transSpeed="1.0" transAcceleration="80" transMax="0.9" transMin="-1.29" startTrans="-1.29" translationAxis="3"/>
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="cutterRotJoint" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="0.3" iconName="GRABBER_ROTATE_Y"/>
+						<rotation rotSpeed="60" rotAcceleration="160" rotMax="170" rotMin="-170" rotationAxis="1"/>
+						<componentJoint index="4" anchorActor="1"/>
+						<dependentAnimation name="cutterHoseArmAnimation" rotationAxis="1" minValue="-170" maxValue="170"/>
+					</movingTool>
+					<movingTool node="cabinFold" playSound="true" foldMinLimit="1" foldMaxLimit="1" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL3" invertAxis="true" mouseSpeedFactor="0.3" iconName="GRABBER_ROTATE_Y"/>
+						<rotation rotSpeed="10" rotAcceleration="50" rotMax="0" rotMin="-12" startRot="0" rotationAxis="1"/>
+						<dependentPart node="cabinHydraulicLeft"/>
+						<dependentPart node="cabinHydraulicRight"/>
+					</movingTool>
+					<movingTool node="cutterHolderColJointRot">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="cutterJoint">
+						<componentJoint index="5" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="leftUpperGrab" playSound="true" foldMaxLimit="0" isConsumingPower="true" >
+						<controls axis="AXIS_CRANE_TOOL" invertAxis="true" mouseSpeedFactor="1" iconName="GRABBER_OPEN_CLOSE"/>
+						<animation animName="grabberAnimation2" animAcceleration="5" animSpeed="-1" />
+						<dependentPart node="leftUpperGrabHydraulic"/>
+						<dependentPart node="leftUpperGrabPhy"/>
+					</movingTool>
+					<movingTool node="leftLowerGrab" playSound="true">
+						<dependentPart node="leftLowerGrabHydraulic"/>
+						<dependentPart node="leftLowerGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightUpperGrab">
+						<dependentPart node="rightUpperGrabHydraulic"/>
+						<dependentPart node="rightUpperGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightLowerGrab" playSound="true">
+						<dependentPart node="rightLowerGrabHydraulic"/>
+						<dependentPart node="rightLowerGrabPhy"/>
+					</movingTool>
+					<movingTool node="leftGrab" playSound="true">
+						<dependentPart node="leftGrabHydraulic"/>
+						<dependentPart node="leftGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightGrab" playSound="true">
+						<dependentPart node="rightGrabHydraulic"/>
+						<dependentPart node="rightGrabPhy"/>
+					</movingTool>
+					<movingTool node="cutter" playSound="true">
+						<dependentPart node="cutterHydraulic"/>
+					</movingTool>
+					<movingTool node="delimbRoll05Arm" playSound="true">
+						<dependentPart node="delimbRoll05ArmHydraulic"/>
+					</movingTool>
+					<movingTool node="localHose01End">
+						<connectionHoses localHoseIndices="1"/>
+					</movingTool>
+				</movingTools>
+				<movingParts>
+					<movingPart node="SHCamRot" referencePoint="craneCameraDirRef" referenceFrame="cabinRotY" isActiveDirty="true" invertZ="true"  maxUpdateDistance="50"/>
+					<movingPart node="craneCameraDir" referencePoint="craneCameraDirRef" referenceFrame="craneCameraDirRefFrame" isActiveDirty="true" maxUpdateDistance="35"/>
+					<!-- folding -->
+					<movingPart node="foldingLockChain" referencePoint="foldingLockChainRef" referenceFrame="foldingLockChainRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="foldingLockChainPunch"/>
+						<dependentPart node="chain"/>
+					</movingPart>
+					<movingPart node="chain" referencePoint="chainRef" referenceFrame="chainRef" scaleZ="true"/>
+					<movingPart node="foldingLockChain2" referencePoint="foldingLockChain2Ref" referenceFrame="foldingLockChain2Ref" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="foldingLockChain2Punch"/>
+						<dependentPart node="chain2"/>
+					</movingPart>
+					<movingPart node="chain2" referencePoint="chain2Ref" referenceFrame="chain2Ref" scaleZ="true"/>
+					<!-- main parts -->
+					<movingPart node="connectionPart" referencePoint="connectionPartRef" referenceFrame="harvester1270G_main_component1" isActiveDirty="true" maxUpdateDistance="300"/>
+					<movingPart node="steeringLeftHydraulic" referencePoint="steeringLeftHydraulicRef" referenceFrame="steeringLeftHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="steeringLeftHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="steeringRightHydraulic" referencePoint="steeringRightHydraulicRef" referenceFrame="steeringRightHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="steeringRightHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="pto03" referencePoint="pto03Ref" referenceFrame="pto03Ref" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="pto03Punch"/>
+					</movingPart>
+					<!-- tilt -->
+					<movingPart node="tiltDummy" referenceFrame="tiltRefFrame" limitedAxis="1" minRot="-15" maxRot="28" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionTime="1" directionThreshold="0.03" maxUpdateDistance="-">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingPart>
+					<movingPart node="tilt" referenceFrame="tiltRefFrame" limitedAxis="1" minRot="-15" maxRot="28" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionTime="1" directionThreshold="0.03" maxUpdateDistance="-">
+						<dependentPart node="tiltHydraulic"/>
+					</movingPart>
+					<movingPart node="tiltHydraulic" referencePoint="tiltHydraulicRef" referenceFrame="tiltHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="tiltHydraulicPunch"/>
+					</movingPart>
+					<!-- crane -->
+					<movingPart node="secondArm" localReferencePoint="secondArmPart" referencePoint="secondArmRef" referenceFrame="secondArmRefFrame">
+						<dependentPart node="secondArmPart"/>
+						<dependentPart node="cutterJoint1"/>
+						<dependentPart node="foldingLockChain"/>
+						<dependentPart node="foldingLockChain2"/>
+					</movingPart>
+					<movingPart node="secondArmPart" referencePoint="secondArmRef" referenceFrame="secondArmRef">
+						<dependentPart node="topParallelArm01"/>
+					</movingPart>
+					<movingPart node="topParallelArm01" localReferencePoint="topParallelArm01Part" referencePoint="topParallelArm01Ref" referenceFrame="topParallelArm01RefFrame">
+						<dependentPart node="topParallelArm01Part"/>
+						<dependentPart node="topParallelArm02"/>
+					</movingPart>
+					<movingPart node="topParallelArm01Part" referencePoint="topParallelArm01Ref" referenceFrame="topParallelArm01Ref"/>
+					<movingPart node="topParallelArm02" referencePoint="topParallelArm02Ref" referenceFrame="topParallelArm02Ref" scaleZ="true"/>
+					<movingPart node="mainArmHydraulic" referencePoint="mainArmHydraulicRef" referenceFrame="mainArmHydraulicRef">
+						<translatingPart node="mainArmHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="heightControlArmHydraulic" referencePoint="heightControlArmHydraulicRef" referenceFrame="heightControlArmHydraulicRefFrame">
+						<translatingPart node="heightControlArmHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="secondArmDummy" localReferencePoint="secondArmDummyLocalRef" referencePoint="secondArmDummyRef" referenceFrame="secondArmDummyRefFrame">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingPart>
+					<!-- component alignment -->
+					<movingPart node="cutterJoint1" referencePoint="cutterJoint1Ref" referenceFrame="cutterJoint1RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="120">
+						<dependentPart node="cutterJoint2"/>
+					</movingPart>
+					<movingPart node="cutterJoint2" referencePoint="cutterJoint2Ref" referenceFrame="cutterJoint2RefFrame" limitedAxis="1">
+						<dependentPart node="cutterJoint3"/>
+					</movingPart>
+					<movingPart node="cutterJoint3" referencePoint="cutterJoint3Ref" referenceFrame="cutterJoint3RefFrame" limitedAxis="2">
+						<dependentPart node="cutter"/>
+					</movingPart>
+					<movingPart node="cutter" referencePoint="cutterRef" referenceFrame="cutterRefFrame" limitedAxis="1">
+						<dependentPart node="cutterHydraulic"/>
+					</movingPart>
+					<!-- cutter -->
+					<movingPart node="leftUpperGrabHydraulic" referencePoint="leftUpperGrabHydraulicRef" referenceFrame="leftUpperGrabHydraulicRef">
+						<translatingPart node="leftUpperGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightUpperGrabHydraulic" referencePoint="rightUpperGrabHydraulicRef" referenceFrame="rightUpperGrabHydraulicRef">
+						<translatingPart node="rightUpperGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="leftLowerGrabHydraulic" referencePoint="leftLowerGrabHydraulicRef" referenceFrame="leftLowerGrabHydraulicRef">
+						<translatingPart node="leftLowerGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightLowerGrabHydraulic" referencePoint="rightLowerGrabHydraulicRef" referenceFrame="rightLowerGrabHydraulicRef">
+						<translatingPart node="rightLowerGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="leftGrabHydraulic" referencePoint="leftGrabHydraulicRef" referenceFrame="leftGrabHydraulicRef">
+						<translatingPart node="leftGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightGrabHydraulic" referencePoint="rightGrabHydraulicRef" referenceFrame="rightGrabHydraulicRef">
+						<translatingPart node="rightGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="cutterHydraulic" referencePoint="cutterHydraulicRef" referenceFrame="cutterHydraulicRefFrame">
+						<translatingPart node="cutterHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="delimbRoll05ArmHydraulic" referencePoint="delimbRoll05ArmHydraulicRef" referenceFrame="delimbRoll05ArmHydraulicRef">
+						<translatingPart node="delimbRoll05ArmHydraulicPunch"/>
+					</movingPart>
+					<!-- cutter collisions -->
+					<movingPart node="leftGrabPhy" referenceFrame="leftGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightGrabPhy" referenceFrame="rightGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="leftUpperGrabPhy" referenceFrame="leftUpperGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightUpperGrabPhy" referenceFrame="rightUpperGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="leftLowerGrabPhy" referenceFrame="leftLowerGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightLowerGrabPhy" referenceFrame="rightLowerGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<!-- cabin -->
+					<movingPart node="cabinRotZ" referenceFrame="cabinRotZRefFrame" limitedAxis="1" minRot="-11" maxRot="11" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" directionThreshold="0.03" maxUpdateDistance="-">
+						<dependentPart node="cabinRotX"/>
+						<dependentPart node="cabinRot"/>
+						<dependentPart node="cabinAlignment"/>
+						<dependentPart node="cabinHydraulicLeft"/>
+						<dependentPart node="cabinHydraulicRight"/>
+					</movingPart>
+					<movingPart node="cabinRotX" referenceFrame="cabinRotXRefFrame" limitedAxis="1" minRot="-5" maxRot="15" alignToWorldY="true" foldMinLimit="0" foldMaxLimit="0" directionThreshold="0.03" maxUpdateDistance="-"/>
+					<movingPart node="cabinRot" referencePoint="cabinRotYRef" referenceFrame="cabinRotYRefFrame" limitedAxis="2" minRot="-125" maxRot="125" directionThreshold="0.03"/>
+					<movingPart node="cabinAlignment" localReferencePoint="cabinStabilizer" referencePoint="cabinStabilizerRef" referenceFrame="cabinAlignmentRefFrame" foldMinLimit="0" foldMaxLimit="0" maxUpdateDistance="-" limitedAxis="1">
+						<dependentPart node="cabinStabilizer"/>
+					</movingPart>
+					<movingPart node="cabinStabilizer" referencePoint="cabinStabilizerRef" referenceFrame="cabinStabilizerRef"/>
+					<movingPart node="cabinHydraulicLeft" referencePoint="cabinHydraulicLeftRef" referenceFrame="cabinHydraulicLeftRef">
+						<translatingPart node="cabinHydraulicLeftPunch"/>
+					</movingPart>
+					<movingPart node="cabinHydraulicRight" referencePoint="cabinHydraulicRightRef" referenceFrame="cabinHydraulicRightRef">
+						<translatingPart node="cabinHydraulicRightPunch"/>
+					</movingPart>
+					<movingPart node="interiorZylinderDoorAussen" referencePoint="ZylinderDoorInnenRef" referenceFrame="ZylinderDoorInnenRef" isActiveDirty="true" maxUpdateDistance="50">
+						<translatingPart node="interiorZylinderDoorInnen"/>
+					</movingPart>
+				</movingParts>
+				<dashboards>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="1" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM3" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="3" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="1" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM2" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM4" doInterpolation="true"/>
+				</dashboards>
+				<sounds>
+					<actionSound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_hydraulic.wav" pitchScale="1.0" volumeScale="1.0" linkNode="mainArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="mainArmDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1"/>
+					</actionSound>
+					<actionSound template="hydraulicOpen02" pitchScale="1.3" volumeScale="3.5" linkNode="craneYRotDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="craneYRotDummy" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_hydraulic.wav" pitchScale="1.2" linkNode="translateArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="translateArmDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1"/>
+					</actionSound>
+					<actionSound template="hydraulicOpen02" pitchScale="1.8" volumeScale="2.5" linkNode="heightControlArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="heightControlArmDummy" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="hydraulicSmallClose" pitchScale="1.4" volumeScale="3.0" linkNode="cutterRotJoint" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="cutterRotJoint" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="hydraulicClose02" pitchScale="1.1" volumeScale="4.5" linkNode="cabinFold" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="cabinFold" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="clackVar6" pitchScale="0.8" volumeScale="2.5" linkNode="cabinFold" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="cabinFold"/>
+					<actionSound template="cylinderPunch" pitchScale="0.8" volumeScale="0.8" linkNode="cabinFold" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="cabinFold"/>
+					<actionSound template="clackVar6" pitchScale="0.5" volumeScale="1.5" linkNode="cabinFold" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="cabinFold"/>
+					<actionSound template="hingeImp" pitchScale="0.9" volumeScale="0.5" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="vibratingImp" pitchScale="0.9" volumeScale="0.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="clackVar6" pitchScale="0.9" volumeScale="1.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="vibratingImp" pitchScale="1.1" volumeScale="0.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="translateArmDummy"/>
+				</sounds>
+			</cylinderedConfiguration>
+			<cylinderedConfiguration name="$l10n_ui_yes" >
+				<movingTools powerConsumingActiveTimeOffset="0.5">
+					<!-- crane -->
+					<movingTool node="craneYRotDummy" delayedNode="craneYRot" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM" invertAxis="true" mouseSpeedFactor="0.3" iconName="CRANE_ARM1_ROTATE_Y"/>
+						<rotation rotSpeed="40" rotAcceleration="40" rotMax="125" rotMin="-125" startRot="0" rotationAxis="2"/>
+						<componentJoint index="4" anchorActor="0"/>
+						<dependentPart node="cabinRot"/>
+						<!-- <dependentAnimation name="craneCamSideAnim" rotationAxis="2" minValue="-125" maxValue="125"/> -->
+					</movingTool>
+					<movingTool node="heightControlArmDummy" delayedNode="heightControlArm" playSound="true" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM3" invertAxis="true" mouseSpeedFactor="0.3" iconName="CRANE_EC_TRANSLATE_Y"/>
+						<rotation rotSpeed="20" rotAcceleration="40" rotMax="50" rotMin="-35" startRot="0" rotationAxis="1" rotSendNumBits="9"/>
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="heightControlArm">
+						<dependentPart node="heightControlArmHydraulic"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="mainArmDummy" delayedNode="mainArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.3" iconName="CRANE_EC_TRANSLATE_Z"/>
+						<rotation rotSpeed="20" rotAcceleration="50" rotMax="22" rotMin="-55" startRot="-55" rotationAxis="1" rotSendNumBits="10"/>
+						<componentJoint index="4" anchorActor="0"/>
+						<dependentAnimation name="mainArmMiddleArmAnimation" rotationAxis="1" minValue="-55" maxValue="55"/>
+					</movingTool>
+					<movingTool node="mainArm">
+						<dependentPart node="mainArmHydraulic"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="mainArmMiddleArmDummy" delayedNode="mainArmMiddleArm">
+						<dependentPart node="secondArmDummy"/>
+					</movingTool>
+					<movingTool node="mainArmMiddleArm">
+						<dependentPart node="secondArm"/>
+						<dependentPart node="cutterJoint1"/>
+					</movingTool>
+					<movingTool node="translateArmDummy" delayedNode="translateArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.3" iconName="CRANE_ARM2_TRANSLATE"/>
+						<translation transSpeed="1.0" transAcceleration="80" transMax="0.9" transMin="-1.29" startTrans="-1.29" translationAxis="3"/>
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="cutterRotJoint" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="0.3" iconName="GRABBER_ROTATE_Y"/>
+						<rotation rotSpeed="60" rotAcceleration="160" rotMax="170" rotMin="-170" rotationAxis="1"/>
+						<componentJoint index="4" anchorActor="1"/>
+						<dependentAnimation name="cutterHoseArmAnimation" rotationAxis="1" minValue="-170" maxValue="170"/>
+					</movingTool>
+					<movingTool node="cabinFold" playSound="true" foldMinLimit="1" foldMaxLimit="1" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL3" invertAxis="true" mouseSpeedFactor="0.3" iconName="GRABBER_ROTATE_Y"/>
+						<rotation rotSpeed="10" rotAcceleration="50" rotMax="0" rotMin="-12" startRot="0" rotationAxis="1"/>
+						<dependentPart node="cabinHydraulicLeft"/>
+						<dependentPart node="cabinHydraulicRight"/>
+					</movingTool>
+					<movingTool node="cutterHolderColJointRot">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="cutterJoint">
+						<componentJoint index="5" anchorActor="0"/>
+					</movingTool>
+					<movingTool node="leftUpperGrab" playSound="true" foldMinLimit="1" foldMaxLimit="1" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL" invertAxis="true" mouseSpeedFactor="1" iconName="GRABBER_OPEN_CLOSE"/>
+						<animation animName="grabberAnimation2" animAcceleration="5" animSpeed="-1" />
+						<dependentPart node="leftUpperGrabHydraulic"/>
+						<dependentPart node="leftUpperGrabPhy"/>
+					</movingTool>
+					<movingTool node="leftLowerGrab" playSound="true">
+						<dependentPart node="leftLowerGrabHydraulic"/>
+						<dependentPart node="leftLowerGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightUpperGrab">
+						<dependentPart node="rightUpperGrabHydraulic"/>
+						<dependentPart node="rightUpperGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightLowerGrab" playSound="true">
+						<dependentPart node="rightLowerGrabHydraulic"/>
+						<dependentPart node="rightLowerGrabPhy"/>
+					</movingTool>
+					<movingTool node="leftGrab" playSound="true">
+						<dependentPart node="leftGrabHydraulic"/>
+						<dependentPart node="leftGrabPhy"/>
+					</movingTool>
+					<movingTool node="rightGrab" playSound="true">
+						<dependentPart node="rightGrabHydraulic"/>
+						<dependentPart node="rightGrabPhy"/>
+					</movingTool>
+					<movingTool node="cutter" playSound="true">
+						<dependentPart node="cutterHydraulic"/>
+					</movingTool>
+					<movingTool node="delimbRoll05Arm" playSound="true">
+						<dependentPart node="delimbRoll05ArmHydraulic"/>
+					</movingTool>
+					<movingTool node="localHose01End">
+						<connectionHoses localHoseIndices="1"/>
+					</movingTool>
+				</movingTools>
+				<movingParts>
+					<movingPart node="SHCamRot" referencePoint="craneCameraDirRef" referenceFrame="cabinRotY" isActiveDirty="true" invertZ="true"  maxUpdateDistance="50"/>
+					<movingPart node="craneCameraDir" referencePoint="craneCameraDirRef" referenceFrame="craneCameraDirRefFrame" isActiveDirty="true" maxUpdateDistance="35"/>
+					<!-- folding -->
+					<movingPart node="foldingLockChain" referencePoint="foldingLockChainRef" referenceFrame="foldingLockChainRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="foldingLockChainPunch"/>
+						<dependentPart node="chain"/>
+					</movingPart>
+					<movingPart node="chain" referencePoint="chainRef" referenceFrame="chainRef" scaleZ="true"/>
+					<movingPart node="foldingLockChain2" referencePoint="foldingLockChain2Ref" referenceFrame="foldingLockChain2Ref" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="foldingLockChain2Punch"/>
+						<dependentPart node="chain2"/>
+					</movingPart>
+					<movingPart node="chain2" referencePoint="chain2Ref" referenceFrame="chain2Ref" scaleZ="true"/>
+					<!-- main parts -->
+					<movingPart node="connectionPart" referencePoint="connectionPartRef" referenceFrame="harvester1270G_main_component1" isActiveDirty="true" maxUpdateDistance="300"/>
+					<movingPart node="steeringLeftHydraulic" referencePoint="steeringLeftHydraulicRef" referenceFrame="steeringLeftHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="steeringLeftHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="steeringRightHydraulic" referencePoint="steeringRightHydraulicRef" referenceFrame="steeringRightHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="steeringRightHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="pto03" referencePoint="pto03Ref" referenceFrame="pto03Ref" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="pto03Punch"/>
+					</movingPart>
+					<!-- tilt -->
+					<movingPart node="tiltDummy" referenceFrame="tiltRefFrame" limitedAxis="1" minRot="-15" maxRot="28" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionTime="1" directionThreshold="0.03" maxUpdateDistance="-">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingPart>
+					<movingPart node="tilt" referenceFrame="tiltRefFrame" limitedAxis="1" minRot="-15" maxRot="28" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionTime="1" directionThreshold="0.03" maxUpdateDistance="-">
+						<dependentPart node="tiltHydraulic"/>
+					</movingPart>
+					<movingPart node="tiltHydraulic" referencePoint="tiltHydraulicRef" referenceFrame="tiltHydraulicRef" isActiveDirty="true" maxUpdateDistance="150">
+						<translatingPart node="tiltHydraulicPunch"/>
+					</movingPart>
+					<!-- crane -->
+					<movingPart node="secondArm" localReferencePoint="secondArmPart" referencePoint="secondArmRef" referenceFrame="secondArmRefFrame">
+						<dependentPart node="secondArmPart"/>
+						<dependentPart node="cutterJoint1"/>
+						<dependentPart node="foldingLockChain"/>
+						<dependentPart node="foldingLockChain2"/>
+					</movingPart>
+					<movingPart node="secondArmPart" referencePoint="secondArmRef" referenceFrame="secondArmRef">
+						<dependentPart node="topParallelArm01"/>
+					</movingPart>
+					<movingPart node="topParallelArm01" localReferencePoint="topParallelArm01Part" referencePoint="topParallelArm01Ref" referenceFrame="topParallelArm01RefFrame">
+						<dependentPart node="topParallelArm01Part"/>
+						<dependentPart node="topParallelArm02"/>
+					</movingPart>
+					<movingPart node="topParallelArm01Part" referencePoint="topParallelArm01Ref" referenceFrame="topParallelArm01Ref"/>
+					<movingPart node="topParallelArm02" referencePoint="topParallelArm02Ref" referenceFrame="topParallelArm02Ref" scaleZ="true"/>
+					<movingPart node="mainArmHydraulic" referencePoint="mainArmHydraulicRef" referenceFrame="mainArmHydraulicRef">
+						<translatingPart node="mainArmHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="heightControlArmHydraulic" referencePoint="heightControlArmHydraulicRef" referenceFrame="heightControlArmHydraulicRefFrame">
+						<translatingPart node="heightControlArmHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="secondArmDummy" localReferencePoint="secondArmDummyLocalRef" referencePoint="secondArmDummyRef" referenceFrame="secondArmDummyRefFrame">
+						<componentJoint index="4" anchorActor="0"/>
+					</movingPart>
+					<!-- component alignment -->
+					<movingPart node="cutterJoint1" referencePoint="cutterJoint1Ref" referenceFrame="cutterJoint1RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="120">
+						<dependentPart node="cutterJoint2"/>
+					</movingPart>
+					<movingPart node="cutterJoint2" referencePoint="cutterJoint2Ref" referenceFrame="cutterJoint2RefFrame" limitedAxis="1">
+						<dependentPart node="cutterJoint3"/>
+					</movingPart>
+					<movingPart node="cutterJoint3" referencePoint="cutterJoint3Ref" referenceFrame="cutterJoint3RefFrame" limitedAxis="2">
+						<dependentPart node="cutter"/>
+					</movingPart>
+					<movingPart node="cutter" referencePoint="cutterRef" referenceFrame="cutterRefFrame" limitedAxis="1">
+						<dependentPart node="cutterHydraulic"/>
+					</movingPart>
+					<!-- cutter -->
+					<movingPart node="leftUpperGrabHydraulic" referencePoint="leftUpperGrabHydraulicRef" referenceFrame="leftUpperGrabHydraulicRef">
+						<translatingPart node="leftUpperGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightUpperGrabHydraulic" referencePoint="rightUpperGrabHydraulicRef" referenceFrame="rightUpperGrabHydraulicRef">
+						<translatingPart node="rightUpperGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="leftLowerGrabHydraulic" referencePoint="leftLowerGrabHydraulicRef" referenceFrame="leftLowerGrabHydraulicRef">
+						<translatingPart node="leftLowerGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightLowerGrabHydraulic" referencePoint="rightLowerGrabHydraulicRef" referenceFrame="rightLowerGrabHydraulicRef">
+						<translatingPart node="rightLowerGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="leftGrabHydraulic" referencePoint="leftGrabHydraulicRef" referenceFrame="leftGrabHydraulicRef">
+						<translatingPart node="leftGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="rightGrabHydraulic" referencePoint="rightGrabHydraulicRef" referenceFrame="rightGrabHydraulicRef">
+						<translatingPart node="rightGrabHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="cutterHydraulic" referencePoint="cutterHydraulicRef" referenceFrame="cutterHydraulicRefFrame">
+						<translatingPart node="cutterHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="delimbRoll05ArmHydraulic" referencePoint="delimbRoll05ArmHydraulicRef" referenceFrame="delimbRoll05ArmHydraulicRef">
+						<translatingPart node="delimbRoll05ArmHydraulicPunch"/>
+					</movingPart>
+					<!-- cutter collisions -->
+					<movingPart node="leftGrabPhy" referenceFrame="leftGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightGrabPhy" referenceFrame="rightGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="leftUpperGrabPhy" referenceFrame="leftUpperGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightUpperGrabPhy" referenceFrame="rightUpperGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="leftLowerGrabPhy" referenceFrame="leftLowerGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<movingPart node="rightLowerGrabPhy" referenceFrame="rightLowerGrab" doDirectionAlignment="false" moveToReferenceFrame="false" doRotationAlignment="true" rotMultiplier="1"/>
+					<!-- cabin -->
+					<movingPart node="cabinRotZ" referenceFrame="cabinRotZRefFrame" limitedAxis="1" minRot="-11" maxRot="11" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" directionThreshold="0.03" maxUpdateDistance="-">
+						<dependentPart node="cabinRotX"/>
+						<dependentPart node="cabinRot"/>
+						<dependentPart node="cabinAlignment"/>
+						<dependentPart node="cabinHydraulicLeft"/>
+						<dependentPart node="cabinHydraulicRight"/>
+					</movingPart>
+					<movingPart node="cabinRotX" referenceFrame="cabinRotXRefFrame" limitedAxis="1" minRot="-5" maxRot="15" alignToWorldY="true" foldMinLimit="0" foldMaxLimit="0" directionThreshold="0.03" maxUpdateDistance="-"/>
+					<movingPart node="cabinRot" referencePoint="cabinRotYRef" referenceFrame="cabinRotYRefFrame" limitedAxis="2" minRot="-125" maxRot="125" directionThreshold="0.03"/>
+					<movingPart node="cabinAlignment" localReferencePoint="cabinStabilizer" referencePoint="cabinStabilizerRef" referenceFrame="cabinAlignmentRefFrame" foldMinLimit="0" foldMaxLimit="0" maxUpdateDistance="-" limitedAxis="1">
+						<dependentPart node="cabinStabilizer"/>
+					</movingPart>
+					<movingPart node="cabinStabilizer" referencePoint="cabinStabilizerRef" referenceFrame="cabinStabilizerRef"/>
+					<movingPart node="cabinHydraulicLeft" referencePoint="cabinHydraulicLeftRef" referenceFrame="cabinHydraulicLeftRef">
+						<translatingPart node="cabinHydraulicLeftPunch"/>
+					</movingPart>
+					<movingPart node="cabinHydraulicRight" referencePoint="cabinHydraulicRightRef" referenceFrame="cabinHydraulicRightRef">
+						<translatingPart node="cabinHydraulicRightPunch"/>
+					</movingPart>
+					<movingPart node="interiorZylinderDoorAussen" referencePoint="ZylinderDoorInnenRef" referenceFrame="ZylinderDoorInnenRef" isActiveDirty="true" maxUpdateDistance="50">
+						<translatingPart node="interiorZylinderDoorInnen"/>
+					</movingPart>
+				</movingParts>
+				<dashboards>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="1" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM3" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="3" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="1" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM2" doInterpolation="true"/>
+					<dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM4" doInterpolation="true"/>
+				</dashboards>
+				<sounds>
+					<actionSound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_hydraulic.wav" pitchScale="1.0" volumeScale="1.0" linkNode="mainArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="mainArmDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1.5"/>
+					</actionSound>
+					<actionSound template="hydraulicOpen02" pitchScale="1.3" volumeScale="3.5" linkNode="craneYRotDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="craneYRotDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1.5"/>
+					</actionSound>
+					<actionSound file="$data/vehicles/johnDeere/harvester1270G/sounds/1270G_hydraulic.wav" pitchScale="1.2" linkNode="translateArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="translateArmDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1.5"/>
+					</actionSound>
+					<actionSound template="hydraulicOpen02" pitchScale="1.8" volumeScale="2.5" linkNode="heightControlArmDummy" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="heightControlArmDummy" fadeIn="0.1" fadeOut="0.1">
+						<volume indoor="0.4" outdoor="1.5"/>
+					</actionSound>
+					<actionSound template="hydraulicSmallClose" pitchScale="1.4" volumeScale="3.0" linkNode="cutterRotJoint" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="cutterRotJoint" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="hydraulicClose02" pitchScale="1.1" volumeScale="4.5" linkNode="cabinFold" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="cabinFold" fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="clackVar6" pitchScale="0.8" volumeScale="2.5" linkNode="cabinFold" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="cabinFold"/>
+					<actionSound template="cylinderPunch" pitchScale="0.8" volumeScale="0.8" linkNode="cabinFold" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="cabinFold"/>
+					<actionSound template="clackVar6" pitchScale="0.5" volumeScale="1.5" linkNode="cabinFold" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="cabinFold"/>
+					<actionSound template="hingeImp" pitchScale="0.9" volumeScale="0.5" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="vibratingImp" pitchScale="0.9" volumeScale="0.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="clackVar6" pitchScale="0.9" volumeScale="1.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="translateArmDummy"/>
+					<actionSound template="vibratingImp" pitchScale="1.1" volumeScale="0.7" linkNode="translateArmDummy" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="translateArmDummy"/>
+				</sounds>
+			</cylinderedConfiguration>
+		</cylinderedConfigurations>
+    </cylindered>    
+	
+    <woodHarvester>
+        <cutNode node="cutNode" attachNode="harvester1270G_cutter_component8" attachReferenceNode="attachReference" sizeY="1.2" sizeZ="1.5" maxRadius="0.355" releasedComponentJointIndex="5" releasedComponentJoint2Index="4"/>
+        <headerJointTilt animationName="headerTiltAnimation" speedFactor="1" foldMinLimit="0" foldMaxLimit="0"/>
+        <cutLengths min="1" max="25" step="0.5" />
+        <delimbNode node="delimbNode" sizeX="0.1" sizeY="1.3" sizeZ="1.5" delimbOnCut="true" />
+        <cutAnimation name="cutAnimation" speedScale="1" cutTime="0.5"/>
+        <grabAnimation name="grabberAnimation" speedScale="1"/>
+        <treeSizeMeasure node="treeSizeMeasure" rotMaxRadius="0.35" rotMaxAnimTime="0.8"/>
+        <delimbEffects>
+            <effectNode effectClass="ParticleEffect" effectNode="particlesChips01" particleType="CRUSHER_WOOD" emitCountScale="15"/>
+            <effectNode effectClass="ParticleEffect" effectNode="effectParticleDust" particleType="SMOKE" materialType="smokeParticle" emitCountScale="1"/>
+        </delimbEffects>
+        <cutEffects>
+            <effectNode effectClass="ParticleEffect" effectNode="particlesChips03" particleType="CRUSHER_WOOD" emitCountScale="150"/>
+            <effectNode effectClass="ParticleEffect" effectNode="particlesDust03"  particleType="SMOKE" emitCountScale="1"/>
+        </cutEffects>
+        <forwardingNodes>
+            <animationNode node="delimbRoll01" rotAxis="3" rotSpeed="-700" turnOnFadeTime="0" turnOffFadeTime="0"/>
+            <animationNode node="delimbRoll02" rotAxis="3" rotSpeed="700" turnOnFadeTime="0" turnOffFadeTime="0"/>
+            <animationNode node="delimbRoll03" rotAxis="3" rotSpeed="500" turnOnFadeTime="0" turnOffFadeTime="0"/>
+            <animationNode node="delimbRoll04" rotAxis="3" rotSpeed="-500" turnOnFadeTime="0" turnOffFadeTime="0"/>
+            <animationNode node="delimbRoll05" rotAxis="1" rotSpeed="-300" turnOnFadeTime="0" turnOffFadeTime="0"/>
+        </forwardingNodes>
+        <dashboards>
+            <dashboard displayType="TEXT" valueType="cutLength" node="numbersCutLength" textColor="0.8 0.8 0.8" emissiveScale="0.5" textSize="0.018" textMask="0000" font="GENERIC" textAlignment="CENTER" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="curCutLength" node="numbersLength" textColor="0.8 0.8 0.8" emissiveScale="0.5" textSize="0.022" textMask="000" font="GENERIC" textAlignment="CENTER" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="diameter" node="numbersDiameter" textColor="0.8 0.8 0.8" emissiveScale="0.5" textSize="0.022" textMask="0000" font="GENERIC" textAlignment="CENTER" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="diameter" node="delimbRoll05Arm" rotAxis="1" minRot="-10" maxRot="16" minValueRot="0" maxValueRot="0.7" groups="ELECTRONICS_ACTIVE"/>
+        </dashboards>
+    </woodHarvester>
+	
+    <automaticArmControlHarvester requiresEasyArmControl="false" foldMinLimit="0" foldMaxLimit="0">
+        <treeDetectionNode node="treeAutoDetectionNode" minRadius="4.5" maxRadius="8" maxAngle="75" cutHeight="0.5"/>
+        <xAlignment movingToolNode="craneYRotDummy" speedScale="1" referenceNode="cutterHolderColJoint"/>
+        <yAlignment movingToolNode="heightControlArmDummy" speedScale="-0.5" referenceNode="treeAutoYReferenceNode"/>
+        <zAlignment movingToolNode="mainArmDummy" speedScale="0.25" referenceNode="treeAutoZReferenceNode" moveBackDistance="2.0"/>
+        <alignmentNode movingToolNode="cutterRotJoint" rotation="0" speedScale="10" isPrerequisite="true"/>
+        <alignmentNode movingToolNode="translateArmDummy" translation="0" speedScale="10" isPrerequisite="true"/>
+        <treeMarker width="0.3" offset="0.04" color="0 2 0" targetColor="2 2 0"/>
+    </automaticArmControlHarvester>
+	
+	<handToolHolders>
+        <handToolHolderConfigurations title="$l10n_ChainsawHolder" isYesNoOption="true">
+			<handToolHolderConfiguration name="$l10n_ui_no" price="0" >	
+			</handToolHolderConfiguration>
+            <handToolHolderConfiguration name="$l10n_ui_yes" price="150" >
+                <handToolHolder>
+                    <holder type="CHAINSAW" node="chainsawHolderNode" dummyFilename="$data/shared/visualization/dummyChainsaw.i3d" />
+                    <trigger node="playerTrigger" />
+                </handToolHolder>
+				<objectChange node="kettensagenHalter" visibilityActive="true" visibilityInactive="false"/>
+            </handToolHolderConfiguration>
+        </handToolHolderConfigurations>
+    </handToolHolders>
+	
+    <suspensions>
+        <suspension node="seat" weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4"/>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+	
+    <dashboard>
+        <groups>
+            <group name="ELECTRONICS_STARTING_SHORT" electronicsStarting="true"/>
+            <group name="ELECTRONICS_STARTING" electronicsStarting="true" electronicsStartingTime="4"/>
+            <group name="ELECTRONICS_ACTIVE" electronicsStarting="true" electronicsRunning="true"/>
+            <group name="ELECTRONICS_RUNNING" electronicsStarting="false" electronicsRunning="true"/>
+            <group name="ELECTRONICS_RUNNING_DASHBOARD" electronicsStarting="false" electronicsRunning="true" electronicsStartingTime="4"/>
+            <group name="LIGHT_ENABLED" lightTypes="0"/>
+        </groups>
+        <default>
+            <dashboard displayType="VISIBILITY" node="dashboardNumbers" groups="ELECTRONICS_RUNNING_DASHBOARD"/>
+            <dashboard displayType="VISIBILITY" node="dashboardDisplay" groups="ELECTRONICS_RUNNING"/>
+            <dashboard displayType="EMITTER" node="dashboardDisplay" intensity="0.15" groups="ELECTRONICS_RUNNING"/>
+            <dashboard displayType="EMITTER" node="radioDisplay" intensity="0.15" groups="ELECTRONICS_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="defaultActiveIconsLit" emitColor="GREEN" intensity="0.2" groups="ELECTRONICS_RUNNING"/>
+            <dashboard displayType="EMITTER" node="temperatureDecalLit" intensity="0.15" groups="ELECTRONICS_RUNNING"/>
+            <dashboard displayType="VISIBILITY" node="startingScreen" groups="ELECTRONICS_STARTING"/>
+            <dashboard displayType="EMITTER" node="startingScreen" intensity="0.15" groups="ELECTRONICS_STARTING"/>
+            <dashboard displayType="VISIBILITY" node="startingScreenBig" groups="ELECTRONICS_STARTING_SHORT"/>
+            <dashboard displayType="EMITTER" node="startingScreenBig" intensity="0.15" groups="ELECTRONICS_STARTING_SHORT"/>
+        </default>
+
+        <dashboardLive>
+            <dashboard valueType="miniMap" cmd="map" node="dbl_mapPlane" displayType="VISIBILITY" groups="ELECTRONICS_RUNNING"/>
+            <dashboard valueType="miniMap" cmd="posMarker" node="dbl_position" displayType="VISIBILITY" groups="ELECTRONICS_RUNNING"/>
+            <dashboard valueType="base" cmd="headingText2" displayType="TEXT" node="dbl_compass" textMask="00" textColor="BLACK" textColorDarkMode="0 0 1 1" textSize="0.018" fontThickness="2" font="DIGIT" textAlignment="CENTER" groups="ELECTRONICS_RUNNING" />
+        </dashboardLive>
+
+    </dashboard>
+	
+    <turnOnVehicle turnOffIfNotAllowed="true">
+        <sounds>
+            <start file="$data/vehicles/johnDeere/harvester1270G/sounds/fanStart.wav" pitchScale="1.2" linkNodeOffset="0 1 -2">
+                <volume indoor="0.5" outdoor="2"/>
+            </start>
+            <work file="$data/vehicles/johnDeere/harvester1270G/sounds/fanLoop.wav" pitchScale="1.2" linkNodeOffset="0 1 -2">
+                <volume indoor="0.5" outdoor="2"/>
+            </work>
+            <stop file="$data/vehicles/johnDeere/harvester1270G/sounds/fanStop.wav" pitchScale="1.2" linkNodeOffset="0 1 -2">
+                <volume indoor="0.5" outdoor="2"/>
+            </stop>
+        </sounds>
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="turnedOn" node="turnOnDecalLit" emitColor="GREEN" intensity="0.2" groups="ELECTRONICS_ACTIVE" inactiveGroups="LIGHT_ENABLED" inactiveIntensity="0.2" inactiveColor="WHITE"/>
+        </dashboards>
+    </turnOnVehicle>
+	
+    <ai>
+        <agent frontWheelNodes="frontLeftBoggieFrontWheel frontRightBoggieFrontWheel"/>
+    </ai>
+	
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="0" maxZ="3.85" yOffset="0.5"/>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-1.6" maxZ="1.91" yOffset="-1.29" node="1>"/>
+        <bendingNode minX="-1.1" maxX="1.1" minZ="-2.3" maxZ="-1.6" yOffset="-0.9" node="1>"/>
+        <bendingNode minX="-0.6" maxX="0.7" minZ="-0.3" maxZ="0.7" yOffset="-0.6" node="harvester1270G_cutter_component8"/>
+    </foliageBending>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+	
+	<rimColorConfigurations useDefaultColors="true" defaultColorIndex="0" price="1000" defaultColorMaterialTemplateName="calibratedPaint">
+		<rimColorConfiguration materialTemplateName="JOHNDEERE_YELLOW1" price="0"/>
+		<rimColorConfiguration materialTemplateName="JOHNDEERE_GREEN1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALBLUE1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALBLUE2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALYELLOW" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALGREEN" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANRED" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANOLDGREEN" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANBEIGE" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLACK" price="1000"/>
+		<rimColorConfiguration materialTemplateName="TATRAGREEN" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BROWN2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE3" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN3" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN4" price="1000"/>
+		<rimColorConfiguration materialTemplateName="PINK" price="1000"/>
+		<rimColorConfiguration materialTemplateName="PINKRED" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BERRY" price="1000"/>
+		<rimColorConfiguration materialTemplateName="WHITE" price="1000"/>
+		<rimColorConfiguration materialTemplateName="ORANGE" price="1000"/>
+		<rimColorConfiguration materialTemplateName="DARKGRAY" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW3" price="1000"/>
+		<rimColorConfiguration materialTemplateName="VIOLET1" price="1000"/>
+		<rimColorConfiguration materialTemplateName="VIOLET2" price="1000"/>
+		<rimColorConfiguration materialTemplateName="NAVY" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALBLUE1MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALBLUE2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALYELLOWMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="SPECIALGREENMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANREDMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANOLDGREENMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="MANBEIGEMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLACKMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="TATRAGREENMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BROWN2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE1MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BLUE3MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN1MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN3MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="GREEN4MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="PINKMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="PINKREDMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="BERRYMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="WHITEMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="ORANGEMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="DARKGRAYMATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW1MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="YELLOW3MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="VIOLET1MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="VIOLET2MATT" price="1000"/>
+		<rimColorConfiguration materialTemplateName="NAVYMATT" price="1000"/>
+    </rimColorConfigurations>
+	
+	<designColor15Configurations price="500" useDefaultColors="true" defaultColorIndex="0" defaultColorMaterialTemplateName="rubber" title="$l10n_HoseColor">
+		<designColor15Configuration color="JOHNDEERE_GREEN1" price="500"/>
+		<designColor15Configuration color="JOHNDEERE_YELLOW1" price="500"/>
+		<designColor15Configuration color="SPECIALBLUE1" price="500"/>
+		<designColor15Configuration color="SPECIALBLUE2" price="500"/>
+		<designColor15Configuration color="SPECIALYELLOW" price="500"/>
+		<designColor15Configuration color="SPECIALGREEN" price="500"/>
+		<designColor15Configuration color="metalPaintedBlack" price="500"/>
+		<designColor15Configuration color="MANRED" price="500"/>
+		<designColor15Configuration color="MANOLDGREEN" price="500"/>
+		<designColor15Configuration color="MANBEIGE" price="500"/>
+		<designColor15Configuration color="BLACK" price="500"/>
+		<designColor15Configuration color="TATRAGREEN" price="500"/>
+		<designColor15Configuration color="BROWN2" price="500"/>
+		<designColor15Configuration color="BLUE1" price="500"/>
+		<designColor15Configuration color="BLUE2" price="500"/>
+		<designColor15Configuration color="BLUE3" price="500"/>
+		<designColor15Configuration color="GREEN1" price="500"/>
+		<designColor15Configuration color="GREEN2" price="500"/>
+		<designColor15Configuration color="GREEN3" price="500"/>
+		<designColor15Configuration color="GREEN4" price="500"/>
+		<designColor15Configuration color="PINK" price="500"/>
+		<designColor15Configuration color="PINKRED" price="500"/>
+		<designColor15Configuration color="BERRY" price="500"/>
+		<designColor15Configuration color="WHITE" price="500"/>
+		<designColor15Configuration color="ORANGE" price="500"/>
+		<designColor15Configuration color="DARKGRAY" price="500"/>
+		<designColor15Configuration color="YELLOW1" price="500"/>
+		<designColor15Configuration color="YELLOW2" price="500"/>
+		<designColor15Configuration color="YELLOW3" price="500"/>
+		<designColor15Configuration color="VIOLET1" price="500"/>
+		<designColor15Configuration color="VIOLET2" price="500"/>
+		<designColor15Configuration color="NAVY" price="500"/>
+    </designColor15Configurations>
+	
+	<designColor16Configurations price="1500" useDefaultColors="true" defaultColorIndex="0" defaultColorMaterialTemplateName="calibratedPaint" title="$l10n_olofsforsColor">
+		<designColor16Configuration materialTemplateName="OLOFSFORS_BLUE1" price="0"/>
+		<designColor16Configuration materialTemplateName="RIM_BOLT_DEFAULT" price="1500"/>
+		<designColor16Configuration materialTemplateName="JOHNDEERE_YELLOW1" price="1500"/>
+		<designColor16Configuration materialTemplateName="JOHNDEERE_GREEN1" price="1500"/>
+		<designColor16Configuration materialTemplateName="SPECIALBLUE1" price="1500"/>
+		<designColor16Configuration materialTemplateName="SPECIALBLUE2" price="1500"/>
+		<designColor16Configuration materialTemplateName="SPECIALYELLOW" price="1500"/>
+		<designColor16Configuration materialTemplateName="SPECIALGREEN" price="1500"/>
+		<designColor16Configuration materialTemplateName="metalPaintedBlack" price="1500"/>
+		<designColor16Configuration materialTemplateName="MANRED" price="1500"/>
+		<designColor16Configuration materialTemplateName="MANOLDGREEN" price="1500"/>
+		<designColor16Configuration materialTemplateName="MANBEIGE" price="1500"/>
+		<designColor16Configuration materialTemplateName="BLACK" price="1500"/>
+		<designColor16Configuration materialTemplateName="TATRAGREEN" price="1500"/>
+		<designColor16Configuration materialTemplateName="BROWN2" price="1500"/>
+		<designColor16Configuration materialTemplateName="BLUE1" price="1500"/>
+		<designColor16Configuration materialTemplateName="BLUE2" price="1500"/>
+		<designColor16Configuration materialTemplateName="BLUE3" price="1500"/>
+		<designColor16Configuration materialTemplateName="GREEN1" price="1500"/>
+		<designColor16Configuration materialTemplateName="GREEN2" price="1500"/>
+		<designColor16Configuration materialTemplateName="GREEN3" price="1500"/>
+		<designColor16Configuration materialTemplateName="GREEN4" price="1500"/>
+		<designColor16Configuration materialTemplateName="PINK" price="1500"/>
+		<designColor16Configuration materialTemplateName="PINKRED" price="1500"/>
+		<designColor16Configuration materialTemplateName="BERRY" price="1500"/>
+		<designColor16Configuration materialTemplateName="WHITE" price="1500"/>
+		<designColor16Configuration materialTemplateName="ORANGE" price="1500"/>
+		<designColor16Configuration materialTemplateName="DARKGRAY" price="1500"/>
+		<designColor16Configuration materialTemplateName="YELLOW1" price="1500"/>
+		<designColor16Configuration materialTemplateName="YELLOW2" price="1500"/>
+		<designColor16Configuration materialTemplateName="YELLOW3" price="1500"/>
+		<designColor16Configuration materialTemplateName="VIOLET1" price="1500"/>
+		<designColor16Configuration materialTemplateName="VIOLET2" price="1500"/>
+		<designColor16Configuration materialTemplateName="NAVY" price="1500"/>
+    </designColor16Configurations>
+	
+	<baseColorConfigurations useDefaultColors="true" price="2000" defaultColorIndex="0" defaultColorMaterialTemplateName="calibratedPaint">
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_GREEN1" price="0"/>
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_YELLOW1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALYELLOW" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALGREEN" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANRED" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANOLDGREEN" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANBEIGE" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLACK" price="2000"/>
+		<baseColorConfiguration materialTemplateName="TATRAGREEN" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BROWN2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE3" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN3" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN4" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINK" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINKRED" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BERRY" price="2000"/>
+		<baseColorConfiguration materialTemplateName="WHITE" price="2000"/>
+		<baseColorConfiguration materialTemplateName="ORANGE" price="2000"/>
+		<baseColorConfiguration materialTemplateName="DARKGRAY" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW3" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET1" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET2" price="2000"/>
+		<baseColorConfiguration materialTemplateName="NAVY" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE1METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALYELLOWMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALGREENMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANREDMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANOLDGREENMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANBEIGEMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLACKMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="TATRAGREENMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BROWN2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE1METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE3METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN1METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN3METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN4METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINKMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINKREDMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BERRYMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="WHITEMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="ORANGEMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="DARKGRAYMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW1METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW3METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET1METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET2METAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="NAVYMETAL" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE1MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALBLUE2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALYELLOWMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="SPECIALGREENMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANREDMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANOLDGREENMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="MANBEIGEMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLACKMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="TATRAGREENMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BROWN2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE1MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BLUE3MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN1MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN3MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="GREEN4MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINKMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="PINKREDMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="BERRYMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="WHITEMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="ORANGEMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="DARKGRAYMATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW1MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="YELLOW3MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET1MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="VIOLET2MATT" price="2000"/>
+		<baseColorConfiguration materialTemplateName="NAVYMATT" price="2000"/>
+		<material materialSlotName="1270G_Green_FW"/>
+    </baseColorConfigurations>
+	
+	<designColorConfigurations useDefaultColors="true" price="1200" defaultColorIndex="0" defaultColorMaterialTemplateName="calibratedPaint" title="$l10n_CabColor">
+		<designColorConfiguration materialTemplateName="JOHNDEERE_GREEN1" price="0"/>
+		<designColorConfiguration materialTemplateName="JOHNDEERE_YELLOW1" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE1" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE2" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALYELLOW" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALGREEN" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANRED" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANOLDGREEN" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANBEIGE" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLACK" price="1200"/>
+		<designColorConfiguration materialTemplateName="TATRAGREEN" price="1200"/>
+		<designColorConfiguration materialTemplateName="BROWN2" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE1" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE2" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE3" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN1" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN2" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN3" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN4" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINK" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINKRED" price="1200"/>
+		<designColorConfiguration materialTemplateName="BERRY" price="1200"/>
+		<designColorConfiguration materialTemplateName="WHITE" price="1200"/>
+		<designColorConfiguration materialTemplateName="ORANGE" price="1200"/>
+		<designColorConfiguration materialTemplateName="DARKGRAY" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW1" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW2" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW3" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET1" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET2" price="1200"/>
+		<designColorConfiguration materialTemplateName="NAVY" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE1METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALYELLOWMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALGREENMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANREDMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANOLDGREENMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANBEIGEMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLACKMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="TATRAGREENMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BROWN2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE1METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE3METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN1METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN3METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN4METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINKMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINKREDMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="BERRYMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="WHITEMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="ORANGEMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="DARKGRAYMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW1METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW3METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET1METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET2METAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="NAVYMETAL" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE1MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALBLUE2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALYELLOWMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="SPECIALGREENMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANREDMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANOLDGREENMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="MANBEIGEMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLACKMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="TATRAGREENMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BROWN2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE1MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BLUE3MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN1MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN3MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="GREEN4MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINKMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="PINKREDMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="BERRYMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="WHITEMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="ORANGEMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="DARKGRAYMATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW1MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="YELLOW3MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET1MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="VIOLET2MATT" price="1200"/>
+		<designColorConfiguration materialTemplateName="NAVYMATT" price="1200"/>
+		<material materialSlotName="1270G_Cab_FW"/>
+    </designColorConfigurations>
+	
+	<designColor2Configurations useDefaultColors="true" price="500" defaultColorIndex="0" defaultColorMaterialTemplateName="calibratedPaint" title="$l10n_PHead">
+		<designColor2Configuration materialTemplateName="JOHNDEERE_YELLOW1" price="0"/>
+		<designColor2Configuration materialTemplateName="JOHNDEERE_GREEN1" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE1" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE2" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALYELLOW" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALGREEN" price="500"/>
+		<designColor2Configuration materialTemplateName="MANRED" price="500"/>
+		<designColor2Configuration materialTemplateName="MANOLDGREEN" price="500"/>
+		<designColor2Configuration materialTemplateName="MANBEIGE" price="500"/>
+		<designColor2Configuration materialTemplateName="BLACK" price="500"/>
+		<designColor2Configuration materialTemplateName="TATRAGREEN" price="500"/>
+		<designColor2Configuration materialTemplateName="BROWN2" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE1" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE2" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE3" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN1" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN2" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN3" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN4" price="500"/>
+		<designColor2Configuration materialTemplateName="PINK" price="500"/>
+		<designColor2Configuration materialTemplateName="PINKRED" price="500"/>
+		<designColor2Configuration materialTemplateName="BERRY" price="500"/>
+		<designColor2Configuration materialTemplateName="WHITE" price="500"/>
+		<designColor2Configuration materialTemplateName="ORANGE" price="500"/>
+		<designColor2Configuration materialTemplateName="DARKGRAY" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW1" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW2" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW3" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET1" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET2" price="500"/>
+		<designColor2Configuration materialTemplateName="NAVY" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE1METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALYELLOWMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALGREENMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="MANREDMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="MANOLDGREENMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="MANBEIGEMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BLACKMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="TATRAGREENMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BROWN2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE1METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE3METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN1METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN3METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN4METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="PINKMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="PINKREDMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="BERRYMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="WHITEMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="ORANGEMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="DARKGRAYMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW1METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW3METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET1METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET2METAL" price="500"/>
+		<designColor2Configuration materialTemplateName="NAVYMETAL" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE1MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALBLUE2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALYELLOWMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="SPECIALGREENMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="MANREDMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="MANOLDGREENMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="MANBEIGEMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BLACKMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="TATRAGREENMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BROWN2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE1MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BLUE3MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN1MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN3MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="GREEN4MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="PINKMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="PINKREDMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="BERRYMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="WHITEMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="ORANGEMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="DARKGRAYMATT" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW1MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="YELLOW3MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET1MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="VIOLET2MATT" price="500"/>
+		<designColor2Configuration materialTemplateName="NAVYMATT" price="500"/>
+		<material materialSlotName="1270G_Kopf_FW"/>
+    </designColor2Configurations>
+	
+	<designConfigurations title="$l10n_configuration_windows" >
+        <designConfiguration name="$l10n_configuration_valueDefault" price="0"/>
+        <designConfiguration name="%s %s" params="$l10n_configuration_valueTinted|1" price="500">
+            <material materialSlotName="Window_FW">
+                <textures diffuse="$data/shared/windowDark_diffuse.dds"/>
+            </material>
+        </designConfiguration>
+		<designConfiguration name="%s %s" params="$l10n_configuration_valueTinted|2" price="500">
+            <material materialSlotName="Window_FW">
+                <textures diffuse="textures/windowdark_diffuse.dds"/>
+            </material>
+        </designConfiguration>
+    </designConfigurations>
+	
+	<design2Configurations title="$l10n_20erDecal" isYesNoOption="true">
+		<design2Configuration name="$l10n_ui_no" >
+        </design2Configuration>
+        <design2Configuration name="$l10n_ui_yes" >
+			<objectChange node="stickers_decal2" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="decal_20" visibilityActive="true" visibilityInactive="false"/>
+        </design2Configuration>
+    </design2Configurations>
+	
+	<design3Configurations title="$l10n_Kafig" isYesNoOption="true">
+		<design3Configuration name="$l10n_ui_no" price="0" />
+		<design3Configuration name="$l10n_ui_yes" price="2000">
+			<objectChange node="6Wkafig" visibilityActive="true" visibilityInactive="false"/>
+		</design3Configuration>
+    </design3Configurations>
+	
+	<design4Configurations title="$l10n_PosiCab" isYesNoOption="true">
+		<design4Configuration name="$l10n_ui_no" price="0" >
+		</design4Configuration>
+        <design4Configuration name="$l10n_ui_yes" price="500" >
+			<objectChange node="CabLED" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="BackLed" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="SideLED6W" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Led6WKafig" visibilityActive="true" visibilityInactive="false"/>
+		</design4Configuration>
+    </design4Configurations>
+	
+	<design5Configurations title="$l10n_LampenTrager" isYesNoOption="true">
+		<design5Configuration name="$l10n_ui_no" price="0" >
+		</design5Configuration>
+        <design5Configuration name="$l10n_ui_yes" price="1500" >
+			<objectChange node="LampenTrager" visibilityActive="true" visibilityInactive="false"/>
+		</design5Configuration>
+    </design5Configurations>
+	
+	<design6Configurations title="$l10n_InteriorDeco" isYesNoOption="true">
+		<design6Configuration name="$l10n_ui_no" price="0" >
+		</design6Configuration>
+        <design6Configuration name="$l10n_ui_yes" price="150" >
+			<objectChange node="interiorKisten" visibilityActive="true" visibilityInactive="false"/>
+		</design6Configuration>
+    </design6Configurations>
+	
+	<design7Configurations title="$l10n_ScheibenSchutz" isYesNoOption="true">
+		<design7Configuration name="$l10n_ui_no" price="0" >
+		</design7Configuration>
+        <design7Configuration name="$l10n_ui_yes" price="1500" >
+			<objectChange node="Scheibenkafig" visibilityActive="true" visibilityInactive="false"/>
+		</design7Configuration>
+    </design7Configurations>
+	
+	<design8Configurations title="$l10n_ArmSchutz" isYesNoOption="true">
+		<design8Configuration name="$l10n_ui_no" price="0" >
+		</design8Configuration>
+        <design8Configuration name="$l10n_ui_yes" price="500" >
+			<objectChange node="ArmSchutz" visibilityActive="true" visibilityInactive="false"/>
+		</design8Configuration>
+    </design8Configurations>
+	
+	<design9Configurations title="$l10n_Streifen" isYesNoOption="true">
+		<design9Configuration name="$l10n_ui_no" price="0" >
+		</design9Configuration>
+        <design9Configuration name="$l10n_ui_yes" price="150" >
+			<objectChange node="stickers_decal11" visibilityActive="true" visibilityInactive="false"/>
+		</design9Configuration>
+    </design9Configurations>
+	
+    <i3dMappings>
+        <i3dMapping id="harvester1270G_main_component1" node="0>"/>
+		<i3dMapping id="stickers_decal11" node="0>0|1|0|0|0|0|0|0|0|0|2"/>
+        <i3dMapping id="outdoorCameraTarget" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|1"/>
+        <i3dMapping id="outdoorCamera" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|1|0"/>
+        <i3dMapping id="cameraRaycastNode1" node="0>0|0|0"/>
+        <i3dMapping id="cameraRaycastNode2" node="0>0|0|1"/>
+        <i3dMapping id="cameraRaycastNode3" node="0>0|0|2"/>
+        <i3dMapping id="shadowFocusBox" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|2"/>
+        <i3dMapping id="tiltRefFrame" node="0>0|1|0"/>
+        <i3dMapping id="tilt" node="0>0|1|0|0"/>
+        <i3dMapping id="craneYRot" node="0>0|1|0|0|0|0"/>
+        <i3dMapping id="heightControlArm" node="0>0|1|0|0|0|0|0|0"/>
+        <i3dMapping id="mainArm" node="0>0|1|0|0|0|0|0|0|0"/>
+        <i3dMapping id="secondArm" node="0>0|1|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="secondArmPart" node="0>0|1|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="topParallelArm01RefFrame" node="0>0|1|0|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="topParallelArm01" node="0>0|1|0|0|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="topParallelArm01Part" node="0>0|1|0|0|0|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="topParallelArm02" node="0>0|1|0|0|0|0|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="mainArmHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|0|0|0|0|1"/>
+        <i3dMapping id="translateArm" node="0>0|1|0|0|0|0|0|0|0|0|1|0"/>
+        <i3dMapping id="cutterJoint1RefFrame" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0"/>
+        <i3dMapping id="cutterJoint1" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0"/>
+        <i3dMapping id="cutterJoint2RefFrame" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0"/>
+        <i3dMapping id="cutterJoint2" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0"/>
+        <i3dMapping id="cutterJoint3RefFrame" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0"/>
+        <i3dMapping id="cutterJoint3" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0"/>
+        <i3dMapping id="cutter" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="treeSizeMeasure" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="cuttingBlade" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0"/>
+        <i3dMapping id="rightUpperGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|2|0"/>
+        <i3dMapping id="rightUpperGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|2|0|0"/>
+        <i3dMapping id="leftUpperGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|3|0"/>
+        <i3dMapping id="leftUpperGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|3|0|0"/>
+        <i3dMapping id="rightLowerGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|4|0"/>
+        <i3dMapping id="rightLowerGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|4|0|0"/>
+        <i3dMapping id="leftLowerGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|5|0"/>
+        <i3dMapping id="leftLowerGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|5|0|0"/>
+        <i3dMapping id="leftGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|6|0"/>
+        <i3dMapping id="delimbRoll01" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|6|0|0|0"/>
+        <i3dMapping id="leftGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|6|0|1"/>
+        <i3dMapping id="rightGrab" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|7|0"/>
+        <i3dMapping id="delimbRoll02" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|7|0|0|0"/>
+        <i3dMapping id="rightGrabHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|7|0|1"/>
+        <i3dMapping id="delimbRoll03" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|8|0"/>
+        <i3dMapping id="delimbRoll04" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|9|0"/>
+        <i3dMapping id="delimbRoll05Arm" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|10|0"/>
+        <i3dMapping id="delimbRoll05" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|10|0|0"/>
+        <i3dMapping id="delimbRoll05ArmHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|10|0|1"/>
+        <i3dMapping id="delimbRoll05ArmHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|11"/>
+        <i3dMapping id="delimbRoll05ArmHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|11|0"/>
+        <i3dMapping id="cutterHydraulicRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|12"/>
+        <i3dMapping id="leftUpperGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|13"/>
+        <i3dMapping id="leftUpperGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|13|0"/>
+        <i3dMapping id="rightUpperGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|14"/>
+        <i3dMapping id="rightUpperGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|14|0"/>
+        <i3dMapping id="leftLowerGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|15"/>
+        <i3dMapping id="leftLowerGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|15|0"/>
+        <i3dMapping id="rightLowerGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|16"/>
+        <i3dMapping id="rightLowerGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|16|0"/>
+        <i3dMapping id="leftGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|17"/>
+        <i3dMapping id="leftGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|17|0"/>
+        <i3dMapping id="rightGrabHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|18"/>
+        <i3dMapping id="rightGrabHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|18|0"/>
+        <i3dMapping id="particlesChips02" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|21"/>
+        <i3dMapping id="particlesDust02" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|22"/>
+        <i3dMapping id="particlesChips01" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|23"/>
+        <i3dMapping id="effectParticleDust" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|24"/>
+        <i3dMapping id="localHose01End" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|26"/>
+        <i3dMapping id="foldingLockChainRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|1"/>
+        <i3dMapping id="foldingLockChain2Ref" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|2"/>
+        <i3dMapping id="cutterHydraulicRefFrame" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|3"/>
+        <i3dMapping id="cutterHydraulic" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|3|0"/>
+        <i3dMapping id="cutterHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|3|0|0"/>
+        <i3dMapping id="craneCameraDirRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|2"/>
+        <i3dMapping id="cabinRotYRef" node="0>0|1|0|0|0|0|0|0|0|0|1|0|1"/>
+        <i3dMapping id="cutterHoseArm" node="0>0|1|0|0|0|0|0|0|0|0|1|0|2|0|0"/>
+        <i3dMapping id="localHose01Start" node="0>0|1|0|0|0|0|0|0|0|0|1|0|2|0|0|1"/>
+        <i3dMapping id="localHose02End" node="0>0|1|0|0|0|0|0|0|0|0|1|0|2|0|0|2"/>
+        <i3dMapping id="localHose02Start" node="0>0|1|0|0|0|0|0|0|0|0|5"/>
+        <i3dMapping id="mainArmMiddleArm" node="0>0|1|0|0|0|0|0|0|0|1|0"/>
+        <i3dMapping id="secondArmRef" node="0>0|1|0|0|0|0|0|0|0|1|0|0"/>
+        <i3dMapping id="secondArmRefFrame" node="0>0|1|0|0|0|0|0|0|0|2"/>
+        <i3dMapping id="topParallelArm01Ref" node="0>0|1|0|0|0|0|0|0|0|3"/>
+        <i3dMapping id="mainArmHydraulic" node="0>0|1|0|0|0|0|0|0|0|4"/>
+        <i3dMapping id="mainArmHydraulicPunch" node="0>0|1|0|0|0|0|0|0|0|4|0"/>
+        <i3dMapping id="foldingLockChain" node="0>0|1|0|0|0|0|0|0|0|5"/>
+        <i3dMapping id="foldingLockChainPunch" node="0>0|1|0|0|0|0|0|0|0|5|0"/>
+        <i3dMapping id="chainRef" node="0>0|1|0|0|0|0|0|0|0|5|0|0"/>
+        <i3dMapping id="chain" node="0>0|1|0|0|0|0|0|0|0|5|1"/>
+        <i3dMapping id="foldingLockChain2" node="0>0|1|0|0|0|0|0|0|0|6"/>
+        <i3dMapping id="foldingLockChain2Punch" node="0>0|1|0|0|0|0|0|0|0|6|0"/>
+        <i3dMapping id="chain2Ref" node="0>0|1|0|0|0|0|0|0|0|6|0|0"/>
+        <i3dMapping id="chain2" node="0>0|1|0|0|0|0|0|0|0|6|1"/>
+        <i3dMapping id="workingLight36_static6" node="0>0|1|0|0|0|0|0|0|0|7|0"/>
+        <i3dMapping id="workingLight36_static8" node="0>0|1|0|0|0|0|0|0|0|7|1"/>
+        <i3dMapping id="workingLight36_static9" node="0>0|1|0|0|0|0|0|0|0|7|2"/>
+        <i3dMapping id="workingLight36_static7" node="0>0|1|0|0|0|0|0|0|0|7|3"/>
+        <i3dMapping id="workLightCraneHigh" node="0>0|1|0|0|0|0|0|0|0|10"/>
+        <i3dMapping id="craneCameraDirRefFrame" node="0>0|1|0|0|0|0|0|0|0|11"/>
+        <i3dMapping id="craneCameraDir" node="0>0|1|0|0|0|0|0|0|0|11|0"/>
+        <i3dMapping id="craneCameraRot" node="0>0|1|0|0|0|0|0|0|0|11|0|0"/>
+        <i3dMapping id="craneCamera" node="0>0|1|0|0|0|0|0|0|0|11|0|0|0"/>
+        <i3dMapping id="localHose03End" node="0>0|1|0|0|0|0|0|0|0|13"/>
+        <i3dMapping id="localHose04End" node="0>0|1|0|0|0|0|0|0|0|14"/>
+        <i3dMapping id="localHose05End" node="0>0|1|0|0|0|0|0|0|0|15"/>
+        <i3dMapping id="topParallelArm02Ref" node="0>0|1|0|0|0|0|0|0|1"/>
+        <i3dMapping id="heightControlArmHydraulicRef" node="0>0|1|0|0|0|0|0|0|2"/>
+        <i3dMapping id="heightControlArmHydraulicRefFrame" node="0>0|1|0|0|0|0|1"/>
+        <i3dMapping id="heightControlArmHydraulic" node="0>0|1|0|0|0|0|1|0"/>
+        <i3dMapping id="heightControlArmHydraulicPunch" node="0>0|1|0|0|0|0|1|0|0"/>
+        <i3dMapping id="tiltHydraulicRef" node="0>0|1|0|0|2"/>
+        <i3dMapping id="localHose03Start" node="0>0|1|0|0|5"/>
+        <i3dMapping id="localHose04Start" node="0>0|1|0|0|6"/>
+        <i3dMapping id="localHose05Start" node="0>0|1|0|0|7"/>
+        <i3dMapping id="tiltDummy" node="0>0|1|1|0"/>
+        <i3dMapping id="craneYRotDummy" node="0>0|1|1|0|0|0"/>
+        <i3dMapping id="heightControlArmDummy" node="0>0|1|1|0|0|0|0|0"/>
+        <i3dMapping id="mainArmDummy" node="0>0|1|1|0|0|0|0|0|0|0"/>
+        <i3dMapping id="mainArmMiddleArmDummy" node="0>0|1|1|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="secondArmDummyRef" node="0>0|1|1|0|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="secondArmDummy" node="0>0|1|1|0|0|0|0|0|0|0|1"/>
+        <i3dMapping id="secondArmDummyLocalRef" node="0>0|1|1|0|0|0|0|0|0|0|1|0"/>
+        <i3dMapping id="translateArmDummy" node="0>0|1|1|0|0|0|0|0|0|0|1|1|0"/>
+        <i3dMapping id="cutterHolderColJointRot" node="0>0|1|1|0|0|0|0|0|0|0|1|1|0|0|0"/>
+        <i3dMapping id="cutterHolderColJoint" node="0>0|1|1|0|0|0|0|0|0|0|1|1|0|0|0|0"/>
+        <i3dMapping id="cutterHolderColJointZRot" node="0>0|1|1|0|0|0|0|0|0|0|1|1|0|0|0|0|0"/>
+        <i3dMapping id="secondArmDummyRefFrame" node="0>0|1|1|0|0|0|0|0|0|0|2"/>
+        <i3dMapping id="treeAutoDetectionNode" node="0>0|1|1|0|1"/>
+        <i3dMapping id="tiltHydraulicRefFrame" node="0>0|1|2"/>
+        <i3dMapping id="tiltHydraulic" node="0>0|1|2|0"/>
+        <i3dMapping id="tiltHydraulicPunch" node="0>0|1|2|0|0"/>
+        <i3dMapping id="steeringLeftHydraulic" node="0>0|1|3"/>
+        <i3dMapping id="steeringLeftHydraulicPunch" node="0>0|1|3|0"/>
+        <i3dMapping id="steeringRightHydraulic" node="0>0|1|4"/>
+        <i3dMapping id="steeringRightHydraulicPunch" node="0>0|1|4|0"/>
+        <i3dMapping id="cabinFold" node="0>0|1|5|0"/>
+        <i3dMapping id="cabinRotX" node="0>0|1|5|0|0|0"/>
+        <i3dMapping id="cabinRotZ" node="0>0|1|5|0|0|0|0|0"/>
+        <i3dMapping id="cabinRotY" node="0>0|1|5|0|0|0|0|0|0|0"/>
+        <i3dMapping id="cabinAlignmentRefFrame" node="0>0|1|5|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="cabinAlignment" node="0>0|1|5|0|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="cabinStabilizer" node="0>0|1|5|0|0|0|0|0|0|0|0|0|0"/>
+		<i3dMapping id="cabinRot" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0"/>
+        <i3dMapping id="cabinReverse" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0"/>
+        <i3dMapping id="indoorCamera" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|0"/>
+        <i3dMapping id="playerRightFootTarget" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|1|0"/>
+        <i3dMapping id="playerLeftFootTarget" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|1|1"/>
+        <i3dMapping id="playerRightFootTargetGas" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|1|2"/>
+        <i3dMapping id="workingLight36_static10" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|0"/>
+		<i3dMapping id="workingLight36_static11" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|1"/>
+		<i3dMapping id="workingLight36_static12" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|2"/>
+		<i3dMapping id="workingLight36_static13" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|3"/>
+		<i3dMapping id="workingLight36_static14" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|4"/>
+		<i3dMapping id="workingLight36_static15" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|5"/>
+		<i3dMapping id="workingLight36_static16" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|6"/>
+		<i3dMapping id="workingLight36_static17" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|7"/>
+		<i3dMapping id="workingLight36_static18" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|8"/>
+		<i3dMapping id="workingLight36_static19" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|9"/>
+		<i3dMapping id="workingLight36_static20" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|10"/>
+		<i3dMapping id="workingLight36_static21" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|11"/>
+		<i3dMapping id="workingLight36_static22" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|12"/>
+		<i3dMapping id="workingLight36_static23" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|0|13"/>
+		<i3dMapping id="interiorKisten" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|7|6"/>
+		<i3dMapping id="LampenTrager" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10"/>
+		<i3dMapping id="Kennzeichen" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|12"/>
+		<i3dMapping id="workingLight36_static24" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|0"/>
+		<i3dMapping id="workingLight36_static25" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|1"/>
+		<i3dMapping id="workingLight36_static26" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|2"/>
+		<i3dMapping id="workingLight36_static27" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|3"/>
+		<i3dMapping id="workingLight36_static28" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|4"/>
+		<i3dMapping id="workingLight36_static35" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|1|5"/>
+		<i3dMapping id="workLightFrontHigh2" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|10|2|0"/>
+		<i3dMapping id="workingLight36_static1" node="0>0|1|0|0|1|0|0"/>
+		<i3dMapping id="workingLight36_static5" node="0>0|1|0|0|1|0|1"/>
+		<i3dMapping id="workingLight36_static2" node="0>0|1|0|0|1|0|2"/>
+		<i3dMapping id="workingLight36_static" node="0>0|1|0|0|1|0|3"/>
+		<i3dMapping id="workingLight36_static3" node="0>0|1|0|0|1|0|4"/>
+		<i3dMapping id="workingLight36_static4" node="0>0|1|0|0|1|0|5"/>
+        <i3dMapping id="frontLightLow" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|1|0"/>
+		<i3dMapping id="frontLightHigh" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|1|1"/>
+		<i3dMapping id="interiorScreenLight" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|1|2"/>
+        <i3dMapping id="workLightFrontLow" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|0"/>
+		<i3dMapping id="workLightFrontHigh" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|1"/>
+		<i3dMapping id="workLightBackLow" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|2"/>
+		<i3dMapping id="workLightBackHigh" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|3"/>
+		<i3dMapping id="workLightSideHigh4" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|4"/>
+		<i3dMapping id="workLightSideHigh3" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|2|5"/>
+		<i3dMapping id="workLightTiltHigh" node="0>0|1|0|0|1|1|0"/>
+        <i3dMapping id="seat" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3"/>
+        <i3dMapping id="playerSkin" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|0|0"/>
+        <i3dMapping id="joystickLeft" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|0"/>
+        <i3dMapping id="playerLeftHandTarget" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|0|0"/>
+        <i3dMapping id="joystickRight" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|1"/>
+        <i3dMapping id="playerRightHandTarget" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|1|0"/>
+        <i3dMapping id="steeringWheel" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|2|0"/>
+        <i3dMapping id="playerLeftHandTargetSteering" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|2|0|0"/>
+        <i3dMapping id="seatDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|3"/>
+        <i3dMapping id="turnlightHazardDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|4"/>
+        <i3dMapping id="highBeamDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|5"/>
+		<i3dMapping id="wiperDecalLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|6"/>
+		<i3dMapping id="turnOnDecalLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|7"/>
+		<i3dMapping id="turnlightLeftDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|8"/>
+		<i3dMapping id="turnlightRightDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|9"/>
+		<i3dMapping id="worklightFrontDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|10"/>
+		<i3dMapping id="worklightBackDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|11"/>
+		<i3dMapping id="defaultActiveIconsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|3|1|12"/>
+        <i3dMapping id="mirrorDecal" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|4"/>
+        <i3dMapping id="pedalGas" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|0|0"/>
+        <i3dMapping id="playerRightFootTargetGasRef" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|0|0|0"/>
+        <i3dMapping id="startingScreen" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|1"/>
+		<i3dMapping id="startingScreenBig" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|2"/>
+		<i3dMapping id="dashboardDisplay" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3"/>
+		<i3dMapping id="dashboardNumbers" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0"/>
+		<i3dMapping id="numbersDiameter" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|0"/>
+		<i3dMapping id="numbersLength" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|1"/>
+		<i3dMapping id="numbersCutLength" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|2"/>
+		<i3dMapping id="numbersTemp" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|3"/>
+		<i3dMapping id="numbersTemp1" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|4"/>
+		<i3dMapping id="numbersBattery" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|5"/>
+		<i3dMapping id="numbersFuelPct" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|6"/>
+		<i3dMapping id="numbersTime" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|7"/>
+		<i3dMapping id="numbersOperatingTime" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|8"/>
+		<i3dMapping id="numbersOutsideTemperature" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|9"/>
+		<i3dMapping id="brakeDecalsLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|10"/>
+		<i3dMapping id="turnlightLeftDecals2Lit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|11"/>
+		<i3dMapping id="turnlightRightDecals2Lit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|12"/>
+		<i3dMapping id="highBeamDecals2Lit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|13"/>
+		<i3dMapping id="worklightFrontDecals2Lit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|14"/>
+		<i3dMapping id="worklightBackDecals2Lit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|15"/>
+		<i3dMapping id="temperatureDecalLit" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|3|0|16"/>
+		<i3dMapping id="radioDisplay" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|5|4"/>
+        <i3dMapping id="wiperFrontArm02" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|6|0"/>
+        <i3dMapping id="wiperFrontArm01" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|6|1"/>
+        <i3dMapping id="wiperFront" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|6|1|0"/>
+        <i3dMapping id="wiperRight" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|6|2"/>
+        <i3dMapping id="wiperRightPart" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|6|2|0"/>
+		<i3dMapping id="interiorZylinderDoorAussen" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|8|0"/>
+		<i3dMapping id="interiorZylinderDoorInnen" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|8|0|0"/>
+		<i3dMapping id="doorRot" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|9|0"/>
+		<i3dMapping id="wiperLeft" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|9|0|2"/>
+		<i3dMapping id="wiperLeftPart" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|9|0|2|0"/>
+		<i3dMapping id="ZylinderDoorInnenRef" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|9|0|0"/>
+        <i3dMapping id="cabinHydraulicLeftRef" node="0>0|1|5|0|0|0|0|0|0|0|0|0|2"/>
+        <i3dMapping id="cabinHydraulicRightRef" node="0>0|1|5|0|0|0|0|0|0|0|0|0|3"/>
+        <i3dMapping id="cabinRotYRefFrame" node="0>0|1|5|0|0|0|0|0|0|1"/>
+        <i3dMapping id="cabinRotZRefFrame" node="0>0|1|5|0|0|0|1"/>
+        <i3dMapping id="cabinHydraulicLeft" node="0>0|1|6"/>
+        <i3dMapping id="cabinHydraulicLeftPunch" node="0>0|1|6|0"/>
+        <i3dMapping id="cabinHydraulicRight" node="0>0|1|7"/>
+        <i3dMapping id="cabinHydraulicRightPunch" node="0>0|1|7|0"/>
+        <i3dMapping id="cabinStabilizerRef" node="0>0|1|8"/>
+        <i3dMapping id="ladder" node="0>0|1|9"/>
+        <i3dMapping id="cabinRotXRefFrame" node="0>0|1|10"/>
+        <i3dMapping id="pto02" node="0>0|1|11|0"/>
+        <i3dMapping id="pto03" node="0>0|1|11|0|0"/>
+        <i3dMapping id="pto03Punch" node="0>0|1|11|0|0|0"/>
+        <i3dMapping id="exitPoint" node="0>0|2"/>
+        <i3dMapping id="frontBackJoint" node="0>0|3"/>
+        <i3dMapping id="frontLeftBoggieJoint" node="0>0|4"/>
+        <i3dMapping id="frontRightBoggieJoint" node="0>0|5"/>
+		<i3dMapping id="stickers_decal2" node="0>0|6|0"/>
+		<i3dMapping id="harvester1270G_back_component2" node="1>"/>
+		<i3dMapping id="decal_20" node="1>0|5|3"/>
+        <i3dMapping id="exactFillRootNodeFuel" node="1>0|0"/>
+        <i3dMapping id="connectionPartRef" node="1>0|1"/>
+        <i3dMapping id="connectionPart" node="1>0|2"/>
+        <i3dMapping id="steeringLeftHydraulicRef" node="1>0|2|1"/>
+        <i3dMapping id="steeringRightHydraulicRef" node="1>0|2|2"/>
+        <i3dMapping id="exhaustParticle" node="1>0|3"/>
+        <i3dMapping id="pto01" node="1>0|4|0"/>
+        <i3dMapping id="pto03Ref" node="1>0|4|0|1"/>
+        <i3dMapping id="backRightBoggieJoint" node="1>0|6|0"/>
+        <i3dMapping id="backLeftBoggieJoint" node="1>0|6|1"/>
+		<i3dMapping id="8W" node="1>0|8"/>
+		<i3dMapping id="8Wkafig" node="1>0|8|1"/>
+		<i3dMapping id="6W" node="1>0|9"/>
+		<i3dMapping id="6Wkafig" node="1>0|9|1"/>
+		<i3dMapping id="6WbackLeftWheel" node="1>0|9|2"/>
+		<i3dMapping id="6WbackRightWheel" node="1>0|9|3"/>
+		<i3dMapping id="colPart02" node="1>1|1"/>
+		<i3dMapping id="colPart016W" node="1>1|2"/>
+		<i3dMapping id="colPart018W" node="1>1|3"/>
+		<i3dMapping id="colPart6W" node="1>1|4"/>
+		<i3dMapping id="colPart8W" node="1>1|5"/>
+		<i3dMapping id="kettensagenHalter" node="1>0|11"/>
+		<i3dMapping id="chainsawHolder" node="1>0|11|0|0"/>
+		<i3dMapping id="chainsawHolderNode" node="1>0|11|0|0|0"/>
+		<i3dMapping id="playerTrigger" node="1>0|11|1"/>
+        <i3dMapping id="frontLeftBoggieFrontWheel" node="2>0"/>
+        <i3dMapping id="frontLeftBoggieBackWheel" node="2>1"/>
+        <i3dMapping id="frontRightBoggieFrontWheel" node="3>0"/>
+        <i3dMapping id="frontRightBoggieBackWheel" node="3>1"/>
+        <i3dMapping id="cutterJoint1Ref" node="4>0"/>
+        <i3dMapping id="cutterJoint2Ref" node="4>1"/>
+        <i3dMapping id="cutterJoint3Ref" node="4>2"/>
+        <i3dMapping id="cutterRotJoint" node="4>3|0"/>
+        <i3dMapping id="cutterJoint" node="4>4"/>
+        <i3dMapping id="harvester1270G_cutter_component8" node="5>"/>
+        <i3dMapping id="cutNode" node="5>0"/>
+        <i3dMapping id="delimbNode" node="5>1"/>
+        <i3dMapping id="attachReference" node="5>2"/>
+        <i3dMapping id="cutterRef" node="5>3"/>
+        <i3dMapping id="treeAutoYReferenceNode" node="5>4"/>
+        <i3dMapping id="treeAutoZReferenceNode" node="5>5"/>
+        <i3dMapping id="leftGrabPhy" node="5>7|0"/>
+        <i3dMapping id="rightGrabPhy" node="5>8|0"/>
+        <i3dMapping id="leftUpperGrabPhy" node="5>9|0"/>
+        <i3dMapping id="rightUpperGrabPhy" node="5>10|0"/>
+        <i3dMapping id="leftLowerGrabPhy" node="5>11|0"/>
+        <i3dMapping id="rightLowerGrabPhy" node="5>12|0"/>
+        <i3dMapping id="cutterRefFrame" node="5>13"/>
+		<i3dMapping id="backLeftBoggieFrontWheel" node="6>0"/>
+        <i3dMapping id="backLeftBoggieBackWheel" node="6>1"/>
+        <i3dMapping id="backRightBoggieFrontWheel" node="7>0"/>
+        <i3dMapping id="backRightBoggieBackWheel" node="7>1"/>
+		<i3dMapping id="SHCamRot" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|3"/>
+		<i3dMapping id="indoorCamera1SH" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|0|3|0"/>
+		<i3dMapping id="CabLED" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3"/>
+		<i3dMapping id="LedCab_01" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|0"/>
+		<i3dMapping id="LedCab_02" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|1"/>
+		<i3dMapping id="LedCab_03" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|2"/>
+		<i3dMapping id="LedCab_04" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|3"/>
+		<i3dMapping id="LedCab_05" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|4"/>
+		<i3dMapping id="LedCab_06" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|5"/>
+		<i3dMapping id="LedCab_07" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|6"/>
+		<i3dMapping id="LedCab_08" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|2|3|7"/>
+		<i3dMapping id="particlesChips03" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|2|0"/>
+		<i3dMapping id="particlesDust03" node="0>0|1|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|2|1"/>
+		<i3dMapping id="BackLed" node="1>0|7|0"/>
+		<i3dMapping id="LedBack_01" node="1>0|7|0|0"/>
+		<i3dMapping id="LedBack_02" node="1>0|7|0|1"/>
+		<i3dMapping id="LedBack_03" node="1>0|7|0|2"/>
+		<i3dMapping id="LedBack_04" node="1>0|7|0|3"/>
+		<i3dMapping id="SideLED6W" node="1>0|9|4|0"/>
+		<i3dMapping id="LedBack6W_01" node="1>0|9|4|0|0"/>
+		<i3dMapping id="LedBack6W_02" node="1>0|9|4|0|1"/>
+		<i3dMapping id="LedBack6W_03" node="1>0|9|4|0|2"/>
+		<i3dMapping id="LedBack6W_04" node="1>0|9|4|0|3"/>
+		<i3dMapping id="Led6WKafig" node="1>0|9|1|2"/>
+		<i3dMapping id="Led6WKafig_01" node="1>0|9|1|2|0"/>
+		<i3dMapping id="Led6WKafig_02" node="1>0|9|1|2|1"/>
+		<i3dMapping id="Led6WKafig_03" node="1>0|9|1|2|2"/>
+		<i3dMapping id="Led6WKafig_04" node="1>0|9|1|2|3"/>
+		<i3dMapping id="Led6WKafig_05" node="1>0|9|1|2|4"/>
+		<i3dMapping id="Led6WKafig_06" node="1>0|9|1|2|5"/>
+		<i3dMapping id="Led6WKafig_07" node="1>0|9|1|2|6"/>
+		<i3dMapping id="Led6WKafig_08" node="1>0|9|1|2|7"/>
+		<i3dMapping id="Led6WKafig_09" node="1>0|9|1|2|8"/>
+		<i3dMapping id="Led6WKafig_10" node="1>0|9|1|2|9"/>
+		<i3dMapping id="Led6WKafig_11" node="1>0|9|1|2|10"/>
+		<i3dMapping id="Led6WKafig_12" node="1>0|9|1|2|11"/>
+		<i3dMapping id="Led6WKafig_13" node="1>0|9|1|2|12"/>
+		<i3dMapping id="Led6WKafig_14" node="1>0|9|1|2|13"/>
+		<i3dMapping id="Led6WKafig_15" node="1>0|9|1|2|14"/>
+		<i3dMapping id="Led6WKafig_16" node="1>0|9|1|2|15"/>
+		<i3dMapping id="Led6WKafig_17" node="1>0|9|1|2|16"/>
+		<i3dMapping id="Led6WKafig_18" node="1>0|9|1|2|17"/>
+		<i3dMapping id="Led6WKafig_19" node="1>0|9|1|2|18"/>
+		<i3dMapping id="Led6WKafig_20" node="1>0|9|1|2|19"/>
+		<i3dMapping id="Led6WKafig_21" node="1>0|9|1|2|20"/>
+		<i3dMapping id="Led6WKafig_22" node="1>0|9|1|2|21"/>
+		<i3dMapping id="Led6WKafig_23" node="1>0|9|1|2|22"/>
+		<i3dMapping id="Led6WKafig_24" node="1>0|9|1|2|23"/>
+		<i3dMapping id="Led6WKafig_25" node="1>0|9|1|2|24"/>
+		<i3dMapping id="Led6WKafig_26" node="1>0|9|1|2|25"/>
+		<i3dMapping id="Led6WKafig_27" node="1>0|9|1|2|26"/>
+		<i3dMapping id="Led6WKafig_28" node="1>0|9|1|2|27"/>
+		<i3dMapping id="ArmSchutz" node="0>0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|1"/>
+		<i3dMapping id="Scheibenkafig" node="0>0|1|5|0|0|0|0|0|0|0|0|0|1|0|0|11"/>
+		<i3dMapping id="AttacherJointTrans" node="1>0|10"/>
+		<i3dMapping id="trailerAttacherJointBack" node="1>0|10|0"/>
+        <i3dMapping id="dbl_mapPlane" node="0>0|6|3|0|0|0|2"/>
+        <i3dMapping id="dbl_compass" node="0>0|6|3|0|0|0|2|0"/>
+        <i3dMapping id="dbl_position" node="0>0|6|3|0|0|0|2|1"/>
+    </i3dMappings>
+</vehicle>
