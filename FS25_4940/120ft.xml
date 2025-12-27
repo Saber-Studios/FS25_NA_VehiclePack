@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="sprayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+	<annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved</annotation>
+	<storeData>
+	    <name>
+	      <en>120-foot boom</en>
+	      <de>120-Fuß-Ausleger</de>
+	    </name>
+		<specs>
+			<workingWidth>36.5</workingWidth>
+  			<combination xmlFilename="4940.xml"/>
+		</specs>
+		<functions>
+			<function>$l10n_function_fertilizer</function>
+		</functions>
+		<image>store_120.dds</image>
+		<price>84990</price>
+		<lifetime>600</lifetime>
+		<rotation>0</rotation>
+		<brand>JOHNDEERE</brand>
+		<category>sprayers</category>
+        <shopTranslationOffset>0 0.18 0</shopTranslationOffset>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>6281216</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1443072</indexBufferMemoryUsage>
+        <textureMemoryUsage>2621440</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+	</storeData>
+	<base>
+		<typeDesc>$l10n_typeDesc_sprayer</typeDesc>
+		<filename>120ft.i3d</filename>
+    	<size width="7.0" length="8.0"/>
+		<speedLimit value="25"/>
+		<components>
+			<component centerOfMass="0.00 2.76 0.00" solverIterationCount="10" mass="2000"/>
+		</components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.3" />
+	</base>
+	
+	<attachable>
+		<inputAttacherJoints>
+			<inputAttacherJoint node="attacheJoint" jointType="implement" upperRotationOffset="0" lowerRotationOffset="0">
+				<distanceToGround lower="0" upper="0"/>
+				<objectChange node="loadCommand" visibilityActive="true" visibilityInactive="false"/>
+			</inputAttacherJoint>
+		</inputAttacherJoints>
+		<support animationName="moveSupport"/>
+	</attachable>
+	<powerConsumer ptoRpm="450" neededMaxPtoPower="10"/>
+
+	<designConfigurations title="$l10n_configuration_command">  
+		<designConfiguration name="$l10n_configuration_valueNo" price="0">
+		</designConfiguration>
+		<designConfiguration name="$l10n_configuration_valueYes" price="12990">
+			<objectChange node="loadCommandVis" visibilityActive="true" visibilityInactive="false"/>
+		</designConfiguration>
+	</designConfigurations>
+
+	<lights>
+
+		<states>
+			<state lightTypes="0"/>
+			<state lightTypes="0 1"/>
+		</states>
+		<sharedLight linkNode="bigTriangle"       filename="$data/shared/assets/reflectors/lizard/bigTriangle.xml" />
+
+		<realLights>
+			<high>
+				<light node="backLightsHigh1"        lightTypes="0 1"/>
+				<brakeLight node="backLightsHigh1" />
+				<turnLightLeft  node="turnLightLeftBack" />
+				<turnLightRight node="turnLightRightBack" />
+				
+				<light node="sideLightLeft" lightTypes="1" />
+			</high>
+		</realLights>
+
+		<defaultLights>
+			<defaultLight shaderNode="rearBreakVisRight" lightTypes="0"/>
+			<defaultLight shaderNode="rearBreakVisLeft" lightTypes="0"/>
+			<defaultLight shaderNode="workLightCabLowRight" lightTypes="1" intensity="45"/>
+		</defaultLights>
+
+		<brakeLights>
+			<brakeLight shaderNode="rearBreakVisRight"/>
+			<brakeLight shaderNode="rearBreakVisLeft"/>
+		</brakeLights>
+
+		<turnLights>
+			<turnLightLeft shaderNode="blinkerLeft" />
+			<turnLightRight shaderNode="blinkerRight" />
+		</turnLights>
+	</lights>
+
+	<workAreas>
+        <!--Left Work Areas -->
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_0" widthNode="workAreaWidth_0" heightNode="workAreaHeight_0" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_1" widthNode="workAreaWidth_1" heightNode="workAreaHeight_1" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_2" widthNode="workAreaWidth_2" heightNode="workAreaHeight_2" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_3" widthNode="workAreaWidth_3" heightNode="workAreaHeight_3" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_4" widthNode="workAreaWidth_4" heightNode="workAreaHeight_4" />
+        </workArea>
+
+        <!--Middle Work Areas-->
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_10" widthNode="workAreaWidth_10" heightNode="workAreaHeight_10" />
+        </workArea>
+
+        <!--Right Work Areas -->
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_9" widthNode="workAreaWidth_9" heightNode="workAreaHeight_9" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_8" widthNode="workAreaWidth_8" heightNode="workAreaHeight_8" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_7" widthNode="workAreaWidth_7" heightNode="workAreaHeight_7" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_6" widthNode="workAreaWidth_6" heightNode="workAreaHeight_6" />
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea" disableBackwards="false" requiresGroundContact="false" >
+            <area startNode="workAreaStart_5" widthNode="workAreaWidth_5" heightNode="workAreaHeight_5" />
+        </workArea>
+    </workAreas>
+
+	<sprayer fillUnitIndex="1">
+		<usageScales workingWidth="36.6" scale="1"/>
+		<effects>
+			<!-- Left Outer Boom Smoke-->
+            <effectNode effectNode="effectSmoke_0" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_1" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_2" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_3" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+
+			<!-- Left Middle Boom Smoke-->
+            <effectNode effectNode="effectSmoke_4" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_5" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_6" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+
+			<!-- Left Boom Smoke-->
+            <effectNode effectNode="effectSmoke_7" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_8" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_9" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_10" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_11" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_12" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_13" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_14" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_15" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+
+			<!-- Right Outer Boom Smoke-->
+            <effectNode effectNode="effectSmoke_30" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_31" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_32" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_33" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+
+			<!-- Right Middle Boom Smoke-->
+            <effectNode effectNode="effectSmoke_27" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_28" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_29" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+			
+			<!-- Right Boom Smoke-->
+            <effectNode effectNode="effectSmoke_18" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_19" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_20" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_21" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_22" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_23" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_24" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_25" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_26" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+			
+			<!-- Center Boom Smoke-->
+            <effectNode effectNode="effectSmoke_16" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+            <effectNode effectNode="effectSmoke_17" delay="0" effectClass="ParticleEffect" particleType="WASHER_WATER" emitCountScale="5" worldSpace="true"/>
+		</effects>
+	</sprayer>
+
+
+
+    <weedSpotSpray>
+        <weedSpotSprayConfigurations >
+            <weedSpotSprayConfiguration name="$l10n_configuration_valueNo" price="0"/>
+            <weedSpotSprayConfiguration name="$l10n_configuration_valueYes" price="39000" >
+                <objectChange node="leftOuterCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="leftMiddleCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="leftCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="centerCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="rightCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="rightMiddleCams" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="rightOuterCams" visibilityActive="true" visibilityInactive="false"/>
+            </weedSpotSprayConfiguration>
+        </weedSpotSprayConfigurations>
+
+        <nozzles foldingConfigurationIndex="1">
+			<!-- Left Outer Boom -->
+            <nozzle node="nozzle_0" sectionIndex="1"/>
+            <nozzle node="nozzle_1" sectionIndex="1"/>
+            <nozzle node="nozzle_2" sectionIndex="2"/>
+            <nozzle node="nozzle_3" sectionIndex="2"/>
+            <nozzle node="nozzle_4" sectionIndex="3"/>
+            <nozzle node="nozzle_5" sectionIndex="3"/>
+            <nozzle node="nozzle_6" sectionIndex="4"/>
+            <nozzle node="nozzle_7" sectionIndex="4"/>
+
+			<!-- Left Middle Boom -->
+            <nozzle node="nozzle_8" sectionIndex="5"/>
+            <nozzle node="nozzle_9" sectionIndex="5"/>
+            <nozzle node="nozzle_10" sectionIndex="5"/>
+            <nozzle node="nozzle_11" sectionIndex="6"/>
+            <nozzle node="nozzle_12" sectionIndex="7"/>
+            <nozzle node="nozzle_13" sectionIndex="7"/>
+            <nozzle node="nozzle_14" sectionIndex="7"/>
+
+			<!-- Left Boom -->
+            <nozzle node="nozzle_15" sectionIndex="8"/>
+            <nozzle node="nozzle_16" sectionIndex="8"/>
+            <nozzle node="nozzle_17" sectionIndex="9"/>
+            <nozzle node="nozzle_18" sectionIndex="9"/>
+            <nozzle node="nozzle_19" sectionIndex="10"/>
+            <nozzle node="nozzle_20" sectionIndex="10"/>
+            <nozzle node="nozzle_21" sectionIndex="11"/>
+            <nozzle node="nozzle_22" sectionIndex="11"/>
+            <nozzle node="nozzle_23" sectionIndex="12"/>
+            <nozzle node="nozzle_24" sectionIndex="12"/>
+            <nozzle node="nozzle_25" sectionIndex="13"/>
+            <nozzle node="nozzle_26" sectionIndex="13"/>
+            <nozzle node="nozzle_27" sectionIndex="14"/>
+            <nozzle node="nozzle_28" sectionIndex="14"/>
+            <nozzle node="nozzle_29" sectionIndex="15"/>
+            <nozzle node="nozzle_30" sectionIndex="15"/>
+            <nozzle node="nozzle_31" sectionIndex="16"/>
+            <nozzle node="nozzle_32" sectionIndex="16"/>
+
+			<!-- Right Outer Boom -->
+            <nozzle node="nozzle_33" sectionIndex="17"/>
+            <nozzle node="nozzle_34" sectionIndex="17"/>
+            <nozzle node="nozzle_35" sectionIndex="18"/>
+            <nozzle node="nozzle_36" sectionIndex="18"/>
+            <nozzle node="nozzle_37" sectionIndex="19"/>
+            <nozzle node="nozzle_38" sectionIndex="19"/>
+            <nozzle node="nozzle_39" sectionIndex="20"/>
+            <nozzle node="nozzle_40" sectionIndex="20"/>
+
+			<!-- Right Middle Boom -->
+            <nozzle node="nozzle_41" sectionIndex="21"/>
+            <nozzle node="nozzle_42" sectionIndex="21"/>
+            <nozzle node="nozzle_43" sectionIndex="21"/>
+            <nozzle node="nozzle_44" sectionIndex="22"/>
+            <nozzle node="nozzle_45" sectionIndex="23"/>
+            <nozzle node="nozzle_46" sectionIndex="23"/>
+            <nozzle node="nozzle_47" sectionIndex="23"/>
+
+			<!-- Right Boom -->
+            <nozzle node="nozzle_48" sectionIndex="24"/>
+            <nozzle node="nozzle_49" sectionIndex="24"/>
+            <nozzle node="nozzle_50" sectionIndex="25"/>
+            <nozzle node="nozzle_51" sectionIndex="25"/>
+            <nozzle node="nozzle_52" sectionIndex="26"/>
+            <nozzle node="nozzle_53" sectionIndex="26"/>
+            <nozzle node="nozzle_54" sectionIndex="27"/>
+            <nozzle node="nozzle_55" sectionIndex="27"/>
+            <nozzle node="nozzle_56" sectionIndex="28"/>
+            <nozzle node="nozzle_57" sectionIndex="28"/>
+            <nozzle node="nozzle_58" sectionIndex="29"/>
+            <nozzle node="nozzle_59" sectionIndex="29"/>
+            <nozzle node="nozzle_60" sectionIndex="30"/>
+            <nozzle node="nozzle_61" sectionIndex="30"/>
+            <nozzle node="nozzle_62" sectionIndex="31"/>
+            <nozzle node="nozzle_63" sectionIndex="31"/>
+            <nozzle node="nozzle_64" sectionIndex="32"/>
+            <nozzle node="nozzle_65" sectionIndex="32"/>
+
+			<!-- Center Boom -->
+            <nozzle node="nozzle_66" sectionIndex="33"/>
+            <nozzle node="nozzle_67" sectionIndex="33"/>
+            <nozzle node="nozzle_68" sectionIndex="33"/>
+            <nozzle node="nozzle_69" sectionIndex="34"/>
+            <nozzle node="nozzle_70" sectionIndex="34"/>
+            <nozzle node="nozzle_71" sectionIndex="34"/>
+        </nozzles>
+    </weedSpotSpray>
+
+	<foldable>
+        <foldingConfigurations>
+            <foldingConfiguration >
+				<foldingParts startMoveDirection="0" turnOnFoldMinLimit="0.99" turnOnFoldMaxLimit="1">
+					<foldingPart animationName="rightFold" speedScale="0.7"/>
+					<foldingPart animationName="leftFold" speedScale="0.69"/>
+				</foldingParts>
+			</foldingConfiguration>
+		</foldingConfigurations>
+	</foldable>
+
+	<animations>
+		<animation name="moveSupport">
+			<part node="base_support" startTime="0.0" endTime="0.1" visibility="false"/>
+			<part node="base_support" startTime="0.1" endTime="0.2" visibility="true"/>
+			<part node="supportVis" startTime="0.5" endTime="1.0" startTrans="0 0.45 0" endTrans="0 0 0"/>
+
+			<part node="leg_COL" startTime="0.5" endTime="1.0" startTrans="-0.248 1.3 0.885" endTrans="-3.248 0.167 0.885"/>
+		    <part node="leg_COL" startTime="0.0" endTime="0.5" startTrans="-0.248 1.3 0.885" endTrans="-3.248 0.167 0.885"/>
+		    <part node="leg_COL2" startTime="0.5" endTime="1.0" startTrans="0.248 1.3 0.885" endTrans="3.248 0.167 0.885"/>
+		    <part node="leg_COL2" startTime="0.0" endTime="0.5" startTrans="0.248 1.3 0.885" endTrans="3.248 0.167 0.885"/>
+		    <part node="leg_COL3" startTime="0.5" endTime="1.0" startTrans="0.248 1.3 -1.1" endTrans="3.248 0.167 -1.1"/>
+		    <part node="leg_COL3" startTime="0.0" endTime="0.5" startTrans="0.248 1.3 -1.1" endTrans="3.248 0.167 -1.1"/>
+		    <part node="leg_COL4" startTime="0.5" endTime="1.0" startTrans="-0.248 1.3 -1.1" endTrans="-3.248 0.167 -1.1"/>
+		    <part node="leg_COL4" startTime="0.0" endTime="0.5" startTrans="-0.248 1.3 -1.1" endTrans="-3.248 0.167 -1.1"/>
+		</animation>
+
+		<animation name="leftFold">
+			<part node="centerFramehighMov" startTime="9" endTime="16.99" startRot="31 0 0" endRot="31 0 0"/>
+			<part node="leftArm" startTime="1" endTime="7" startRot="0 -90 0" endRot="0 0 0"/>
+			<part node="LeftMiddleArm" startTime="7" endTime="12" startRot="0 0 177" endRot="0 0 0"/>
+			<part node="LeftRotatePart" startTime="7" endTime="12" startRot="0 0 -126.509" endRot="0 0 0"/>
+			<part node="LeftFinalArm" startTime="12" endTime="17" startRot="-10 180 0" endRot="0 0 0"/>
+
+			<part node="Rotate_0" startTime="12" endTime="17" startRot="-5 120 0" endRot="0 180 0"/>
+
+			<part node="joint25_0" startTime="7" endTime="12" startTrans="9.075 -0.173 -0.031" endTrans="8.633 -0.267 -0.031" startRot="0 0 86" endRot="0 0 0"/>
+			<part node="joint27_0" startTime="1" endTime="7" direction="-1" startRot="2 0 0" endRot="0 0 0"/>
+
+			<part node="frontJoint" startTime="0" endTime="0.1" startTrans="-0.001 2.419 0.39" endTrans="-0.001 2.419 0.39"/>
+			<part node="centerJoint" startTime="0" endTime="0.1" startTrans="-0.441 0.104 -0.484" endTrans="-0.441 0.104 -0.484"/>            
+
+            <sound template="hydraulicOpen02" startTime="7" endTime="12" volumeScale="0.6" pitchScale="1.1" direction="0" fadeIn="0.1" linkNode="Rotate_3"/>
+			<sound template="hydraulicOpen01"    startTime="7" endTime="12" volumeScale="0.3" pitchScale="0.5" fadeIn="0.1"/>
+            <sound template="hydraulicOpen03"   startTime="7" endTime="12" volumeScale="0.7" pitchScale="0.5" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen02" startTime="12" endTime="17" volumeScale="0.6" pitchScale="1.1" direction="0" fadeIn="0.1" linkNode="Rotate_1"/>
+            <sound template="hydraulicOpen02"   startTime="12" endTime="17" volumeScale="1.1" pitchScale="1.0" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen03"   startTime="12" endTime="17" volumeScale="0.2" pitchScale="0.4" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen02" startTime="1" endTime="7" volumeScale="0.6" pitchScale="1.1" direction="0" fadeIn="0.1" linkNode="leftPiston"/>
+            <sound template="metalClose"   startTime="16.5" direction="1" volumeScale="3.2" pitchScale="0.5" fadeIn="0.05"/>
+            <sound template="clackVar5"    startTime="17" direction="1" volumeScale="1.0" pitchScale="0.9"/>
+            <sound template="clackVar6"    startTime="14.5" direction="1" volumeScale="1.1" pitchScale="0.20"/>
+            <sound template="metalClose"   startTime="14.5" direction="1" volumeScale="2.1" pitchScale="0.40"/>
+            <sound template="clackVar6"    startTime="14" direction="1" volumeScale="1.1" pitchScale="0.21"/>
+            <sound template="metalClose"   startTime="14" direction="1" volumeScale="2.2" pitchScale="0.30"/>
+            <sound template="metalOpen"    startTime="15" direction="-1" volumeScale="3.2" pitchScale="0.30"/>
+            <sound template="clackVar5"    startTime="15" direction="1" volumeScale="2.2" pitchScale="0.80"/>
+            <sound template="clackVar6"    startTime="16" direction="1" volumeScale="1.4" pitchScale="0.2" />
+            <sound template="metalLowVar2" startTime="16" direction="1" volumeScale="4.0" pitchScale="0.7"/>
+            <sound template="clackVar5"    startTime="16" direction="1" volumeScale="1.0" pitchScale="1.3"/>
+            <sound template="clackVar6"    startTime="7" direction="1" volumeScale="0.6" pitchScale="0.51" linkNode="boomLeftSection"/>
+            <sound template="metalClose"   startTime="7" direction="1" volumeScale="1.0" pitchScale="0.80" linkNode="boomLeftSection"/>
+		</animation>
+
+		<animation name="rightFold">
+			<part node="rightArm" startTime="1" endTime="7" startRot="0 90 0" endRot="0 0 0"/>
+			<part node="RightMiddleArm" startTime="7" endTime="12" startRot="0 0 -177" endRot="0 0 0"/>
+			<part node="RightRotatePart" startTime="7" endTime="12" startRot="0 0 126.509" endRot="0 0 0"/>
+			<part node="RightFinalArm" startTime="12" endTime="17" startRot="-10 -180 0" endRot="0 0 0"/>
+
+			<part node="Rotate_4" startTime="12" endTime="17" startRot="5 120 180" endRot="0 180 180"/>
+
+			<part node="joint25_1" startTime="7" endTime="12" startTrans="-9.075 -0.173 0.199" endTrans="-8.633 -0.267 0.199" startRot="0 0 -86" endRot="0 0 0"/>
+			<part node="joint27_1" startTime="1" endTime="7" direction="-1" startRot="-2 0 0" endRot="0 0 0"/>
+
+            <sound template="hydraulicOpen02" startTime="7" endTime="12" volumeScale="0.6" pitchScale="1.3" direction="0" fadeIn="0.1" linkNode="Rotate_7"/>
+			<sound template="hydraulicOpen01"    startTime="7" endTime="12" volumeScale="0.3" pitchScale="0.5" fadeIn="0.1"/>
+            <sound template="hydraulicOpen03"   startTime="7" endTime="12" volumeScale="0.7" pitchScale="0.5" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen02" startTime="12" endTime="17" volumeScale="0.6" pitchScale="1.3" direction="0" fadeIn="0.1" linkNode="Rotate_5"/>
+            <sound template="hydraulicOpen02"   startTime="12" endTime="17" volumeScale="1.1" pitchScale="1.0" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen03"   startTime="12" endTime="17" volumeScale="0.2" pitchScale="0.4" direction="0" fadeIn="0.1"/>
+            <sound template="hydraulicOpen02" startTime="1" endTime="7" volumeScale="0.6" pitchScale="1.3" direction="0" fadeIn="0.1" linkNode="rightPiston"/>
+            <sound template="metalClose"   startTime="16.5" direction="1" volumeScale="3.2" pitchScale="0.5" fadeIn="0.05"/>
+            <sound template="clackVar5"    startTime="17" direction="1" volumeScale="1.0" pitchScale="0.9"/>
+            <sound template="clackVar6"    startTime="14.5" direction="1" volumeScale="1.1" pitchScale="0.20"/>
+            <sound template="metalClose"   startTime="14.5" direction="1" volumeScale="2.1" pitchScale="0.40"/>
+            <sound template="clackVar6"    startTime="14" direction="1" volumeScale="1.1" pitchScale="0.21"/>
+            <sound template="metalClose"   startTime="14" direction="1" volumeScale="2.2" pitchScale="0.30"/>
+            <sound template="metalOpen"    startTime="15" direction="-1" volumeScale="3.2" pitchScale="0.30"/>
+            <sound template="clackVar5"    startTime="15" direction="1" volumeScale="2.2" pitchScale="0.80"/>
+            <sound template="clackVar6"    startTime="16" direction="1" volumeScale="1.4" pitchScale="0.2" />
+            <sound template="metalLowVar2" startTime="16" direction="1" volumeScale="4.0" pitchScale="0.7"/>
+            <sound template="clackVar5"    startTime="16" direction="1" volumeScale="1.0" pitchScale="1.3"/>
+            <sound template="clackVar6"    startTime="7" direction="1" volumeScale="0.6" pitchScale="0.51" linkNode="boomRightSection"/>
+            <sound template="metalClose"   startTime="7" direction="1" volumeScale="1.0" pitchScale="0.80" linkNode="boomRightSection"/>
+		</animation>
+	</animations>
+
+	<cylindered>
+		<movingTools>
+			<movingTool node="centerFramehighMov" playSound="true" foldMinLimit="0.99" foldMaxLimit="1">
+				<controls axis="AXIS_CRANE_TOOL" invertAxis="false" mouseSpeedFactor="2.5" iconName="SPRAYER_ARM_TRANSLATE_Y" />
+				<rotation rotSpeed="30" rotAcceleration="80" rotMax="31" rotMin="-25" rotationAxis="1" startRot="31"/>
+				<dependentPart node="movingParts"/>                
+				<dependentPart node="frameLow"/>
+			</movingTool>
+
+			<movingTool node="leftArm" playSound="true" foldMinLimit="0.7" foldMaxLimit="1">
+				<controls axis="AXIS_SPRAYER_ARM" invertAxis="true" mouseSpeedFactor="2.5" iconName="SPRAYER_ARM_TRANSLATE_Y" />
+				<rotation rotSpeed="30" rotAcceleration="80" rotMax="9" rotMin="-3" rotationAxis="3" startRot="0" syncMaxRotLimits="true"/>
+			</movingTool>
+			<movingTool node="rightArm" playSound="true" foldMinLimit="0.7" foldMaxLimit="1">
+				<controls axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="2.5" iconName="SPRAYER_ARM_TRANSLATE_Y" />
+				<rotation rotSpeed="30" rotAcceleration="80" rotMax="3" rotMin="-9" rotationAxis="3" startRot="0" syncMaxRotLimits="true"/>
+			</movingTool>
+		</movingTools>
+
+		<movingParts>
+			<movingPart node="frameLow" referencePoint="joint_0" referenceFrame="modelVis"/>
+
+			<movingPart node="leftPiston" referencePoint="Joint_4" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="translate_0"/>
+			</movingPart>
+			<movingPart node="rightPiston" referencePoint="Joint_9" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="translate_1"/>
+			</movingPart>
+
+			<movingPart node="Rotate_1" referencePoint="Joint_0" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="Translate_0"/>
+			</movingPart>
+			<movingPart node="Rotate_5" referencePoint="Joint_5" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="Translate_2"/>
+			</movingPart>
+
+			<movingPart node="Rotate_3" referencePoint="Joint_1" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="Translate_1"/>
+			</movingPart>
+			<movingPart node="Rotate_7" referencePoint="Joint_6" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="Translate_3"/>
+			</movingPart>
+
+			<movingPart node="upperLeftPiston" referencePoint="upperLeftJoint" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="leftPistonTranslate"/>
+			</movingPart>
+			<movingPart node="upperRightPiston" referencePoint="upperRightJoint" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20">
+				<translatingPart node="rightPistonTranslate"/>
+			</movingPart>
+
+			<movingPart node="movingParts" referenceFrame="modelVis"/>
+
+			<movingPart node="Rotate_2" referencePoint="Joint_0" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20" scaleZ="true"/>
+			<movingPart node="Rotate_6" referencePoint="Joint_5" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20" scaleZ="true"/>
+
+			<movingPart node="leftMiddleSectionPiece" referencePoint="Joint_2" referenceFrame="LeftMiddleArm" isActiveDirty="true" maxUpdateDistance="20"/>
+			<movingPart node="rightMiddleSectionPiece" referencePoint="Joint_7" referenceFrame="RightMiddleArm" isActiveDirty="true" maxUpdateDistance="20"/>
+
+			<movingPart node="mainHydraulic" referencePoint="joint_1" referenceFrame="modelVis" isActiveDirty="true" maxUpdateDistance="20" scaleZ="true"/>
+		</movingParts>
+
+		<sounds>
+            <actionSound template="hydraulicOpen02" pitchScale="0.4" volumeScale="2.0" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="centerFramehighMov leftPiston rightPiston" fadeIn="0.01" fadeOut="0.01" />
+            <actionSound template="clackVar6"             pitchScale="0.8" volumeScale="1"   linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_POS_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+            <actionSound template="sheetImp02"            pitchScale="1.3" volumeScale="1.4" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_POS_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+            <actionSound template="cylinderPunch"         pitchScale="1.8" volumeScale="0.2" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_POS_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+            <actionSound template="clackVar6"             pitchScale="0.8" volumeScale="1.2" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_NEG_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+            <actionSound template="metalClose"            pitchScale="1.5" volumeScale="0.3" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_NEG_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+            <actionSound template="sheetImp02"            pitchScale="0.8" volumeScale="1.4" linkNode="centerFramehighMov" actionNames="TOOL_MOVE_END_NEG_LIMIT"     nodes="centerFramehighMov leftPiston rightPiston" />
+        </sounds>
+	</cylindered>
+
+	<fillUnit>
+		<fillUnitConfigurations>
+			<fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
+				<fillUnits>
+					<unloading width="13" offset="0 0 0"/>
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="4542">
+                    	<exactFillRootNode node="exactFillRootNode"/>
+					</fillUnit>
+				</fillUnits>
+			</fillUnitConfiguration>
+
+			<fillUnitConfiguration name="$l10n_configuration_valueDefault" price="7490" >
+				<fillUnits>
+					<unloading width="13" offset="0 0 0"/>
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="4712">
+                    	<exactFillRootNode node="exactFillRootNode"/>
+					</fillUnit>  
+				</fillUnits>
+				<objectChange node="tankOpt" visibilityActive="true" visibilityInactive="false"/>
+			</fillUnitConfiguration>
+		</fillUnitConfigurations>
+	</fillUnit>
+
+	<configurationSets title="$l10n_configuration_tank2">
+		<configurationSet name="$l10n_ui_no">
+			<configuration name="fillUnit"     index="1" />
+		</configurationSet>
+		<configurationSet name="$l10n_ui_yes">
+			<configuration name="fillUnit"     index="2" />
+		</configurationSet>
+	</configurationSets>
+
+	<turnOnVehicle turnOffIfNotAllowed="true" >
+		<sounds>
+			<work template="defaultSprayer" linkNode="0>"/>
+		</sounds>
+	</turnOnVehicle>   
+
+    <foliageBending>
+        <bendingNode minX="-1" maxX="1" minZ="-3.3" maxZ="1" yOffset="1.75" />
+        <bendingNode minX="0" maxX="16.6" minZ="-0.1" maxZ="0.1" yOffset="-0.223" node="leftArm"/>
+        <bendingNode minX="-16.6" maxX="0" minZ="-0.1" maxZ="0.1" yOffset="-0.223" node="rightArm"/>
+    </foliageBending>
+
+	<realDirtColor useSimpleMode="true" />
+
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+	<washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeTrigger" emptySpeed="200" fillUnitIndex="1" allowAIDischarge="true">
+            <info width="1.0" length="0.5" zOffset="0.4" />
+            <trigger node="dischargeTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+	<ai>
+		<areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+		<sizeMarkers leftNode="sizeLeft" rightNode="sizeRight" backNode="sizeBack"/>
+        <collisionTrigger node="aiCollisionNode" width="36.5" height="4.4"/>
+	    <needsLowering value="false"/>
+	    <agentAttachment width="3" height="2.0" length="3" lengthOffset="0"/>
+	</ai>     
+	
+<i3dMappings>
+  <i3dMapping id="120ft_main_component1" node="0>" />
+  <i3dMapping id="120ft_vis" node="0>0" />
+  <i3dMapping id="attacheJoint" node="0>0|0" />
+  <i3dMapping id="lights" node="0>0|1" />
+  <i3dMapping id="staticLights" node="0>0|1|0" />
+  <i3dMapping id="leftBlink" node="0>0|1|0|0" />
+  <i3dMapping id="sideMarker23Orange_0" node="0>0|1|0|0|0" />
+  <i3dMapping id="blinkerLeft" node="0>0|1|0|0|0|0" />
+  <i3dMapping id="rightBlink" node="0>0|1|0|1" />
+  <i3dMapping id="sideMarker23Orange_1" node="0>0|1|0|1|0" />
+  <i3dMapping id="blinkerRight" node="0>0|1|0|1|0|0" />
+  <i3dMapping id="rearRed" node="0>0|1|0|2" />
+  <i3dMapping id="sideMarker23Orange_2" node="0>0|1|0|2|0" />
+  <i3dMapping id="rearBreakVisLeft" node="0>0|1|0|2|0|0" />
+  <i3dMapping id="sideMarker23Orange_3" node="0>0|1|0|2|1" />
+  <i3dMapping id="rearBreakVisRight" node="0>0|1|0|2|1|0" />
+  <i3dMapping id="whiteLights" node="0>0|1|0|3" />
+  <i3dMapping id="workLightCabLowRight" node="0>0|1|0|3|0" />
+  <i3dMapping id="innerLights" node="0>0|1|1" />
+  <i3dMapping id="innerBlinkLightsLeft" node="0>0|1|1|0" />
+  <i3dMapping id="innerBreakLightsLeft" node="0>0|1|1|1" />
+  <i3dMapping id="innerBlinkLightsRight" node="0>0|1|1|2" />
+  <i3dMapping id="innerBreakLightsRight" node="0>0|1|1|3" />
+  <i3dMapping id="innerLightsVis" node="0>0|1|1|4" />
+  <i3dMapping id="turnLightLeftBack" node="0>0|1|2" />
+  <i3dMapping id="turnLightRightBack" node="0>0|1|3" />
+  <i3dMapping id="backLightsHigh1" node="0>0|1|4" />
+  <i3dMapping id="backLightsHigh2" node="0>0|1|4|0" />
+  <i3dMapping id="sideLightLeft" node="0>0|1|5" />
+  <i3dMapping id="workArea_0" node="0>0|2" />
+  <i3dMapping id="areaStart" node="0>0|2|0" />
+  <i3dMapping id="areaWidth" node="0>0|2|1" />
+  <i3dMapping id="areaHeight" node="0>0|2|2" />
+  <i3dMapping id="ai" node="0>0|3" />
+  <i3dMapping id="aiMarker" node="0>0|3|0" />
+  <i3dMapping id="aiMarkerLeft" node="0>0|3|0|0" />
+  <i3dMapping id="aiMarkerRight" node="0>0|3|0|1" />
+  <i3dMapping id="aiMarkerBack" node="0>0|3|0|2" />
+  <i3dMapping id="aiSize" node="0>0|3|1" />
+  <i3dMapping id="sizeLeft" node="0>0|3|1|0" />
+  <i3dMapping id="sizeRight" node="0>0|3|1|1" />
+  <i3dMapping id="sizeBack" node="0>0|3|1|2" />
+  <i3dMapping id="aiCollisionNode" node="0>0|3|2" />
+  <i3dMapping id="supportGroup" node="0>0|4" />
+  <i3dMapping id="base_support" node="0>0|4|0" />
+  <i3dMapping id="supportVis" node="0>0|4|0|0" />
+  <i3dMapping id="supportCOL" node="0>0|4|1" />
+  <i3dMapping id="leg_COL" node="0>0|4|1|0" />
+  <i3dMapping id="leg_COL2" node="0>0|4|1|1" />
+  <i3dMapping id="leg_COL3" node="0>0|4|1|2" />
+  <i3dMapping id="leg_COL4" node="0>0|4|1|3" />
+  <i3dMapping id="modelVis" node="0>0|5" />
+  <i3dMapping id="centerFramehighMov" node="0>0|5|0" />
+  <i3dMapping id="movingParts" node="0>0|5|0|0" />
+  <i3dMapping id="leftArm" node="0>0|5|0|0|0" />
+  <i3dMapping id="boomLeftSection" node="0>0|5|0|0|0|0" />
+  <i3dMapping id="LeftMiddleArm" node="0>0|5|0|0|0|0|0" />
+  <i3dMapping id="LeftFinalArm" node="0>0|5|0|0|0|0|0|0" />
+  <i3dMapping id="Rotate_0" node="0>0|5|0|0|0|0|0|0|0" />
+  <i3dMapping id="rightFinalSectionPiece1.001_0" node="0>0|5|0|0|0|0|0|0|0|0" />
+  <i3dMapping id="Joint_0" node="0>0|5|0|0|0|0|0|0|0|0|0" />
+  <i3dMapping id="rightFinalSectionPiece1.001_vis_0" node="0>0|5|0|0|0|0|0|0|0|0|1" />
+  <i3dMapping id="Pieces_0" node="0>0|5|0|0|0|0|0|0|1" />
+  <i3dMapping id="LeftFinalArmDecal" node="0>0|5|0|0|0|0|0|0|1|0" />
+  <i3dMapping id="leftOuterCams" node="0>0|5|0|0|0|0|0|0|1|1" />
+  <i3dMapping id="Spray_0" node="0>0|5|0|0|0|0|0|0|2" />
+  <i3dMapping id="leftOuterArmEffect_0" node="0>0|5|0|0|0|0|0|0|2|0" />
+  <i3dMapping id="workArea_1" node="0>0|5|0|0|0|0|0|0|2|0|0" />
+  <i3dMapping id="workAreaStart_0" node="0>0|5|0|0|0|0|0|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_0" node="0>0|5|0|0|0|0|0|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_0" node="0>0|5|0|0|0|0|0|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_0" node="0>0|5|0|0|0|0|0|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_0" node="0>0|5|0|0|0|0|0|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_0" node="0>0|5|0|0|0|0|0|0|2|0|1" />
+  <i3dMapping id="effectSmoke_1" node="0>0|5|0|0|0|0|0|0|2|0|2" />
+  <i3dMapping id="effectSmoke_2" node="0>0|5|0|0|0|0|0|0|2|0|3" />
+  <i3dMapping id="effectSmoke_3" node="0>0|5|0|0|0|0|0|0|2|0|4" />
+  <i3dMapping id="leftFinalJoints" node="0>0|5|0|0|0|0|0|0|3" />
+  <i3dMapping id="joint29_0" node="0>0|5|0|0|0|0|0|0|3|0" />
+  <i3dMapping id="leftOuterNozzle" node="0>0|5|0|0|0|0|0|0|4" />
+  <i3dMapping id="nozzle_0" node="0>0|5|0|0|0|0|0|0|4|0" />
+  <i3dMapping id="nozzle_1" node="0>0|5|0|0|0|0|0|0|4|1" />
+  <i3dMapping id="nozzle_2" node="0>0|5|0|0|0|0|0|0|4|2" />
+  <i3dMapping id="nozzle_3" node="0>0|5|0|0|0|0|0|0|4|3" />
+  <i3dMapping id="nozzle_4" node="0>0|5|0|0|0|0|0|0|4|4" />
+  <i3dMapping id="nozzle_5" node="0>0|5|0|0|0|0|0|0|4|5" />
+  <i3dMapping id="nozzle_6" node="0>0|5|0|0|0|0|0|0|4|6" />
+  <i3dMapping id="nozzle_7" node="0>0|5|0|0|0|0|0|0|4|7" />
+  <i3dMapping id="LeftFinalArm_vis" node="0>0|5|0|0|0|0|0|0|5" />
+  <i3dMapping id="Pieces_1" node="0>0|5|0|0|0|0|0|1" />
+  <i3dMapping id="leftMiddleCams" node="0>0|5|0|0|0|0|0|1|0" />
+  <i3dMapping id="Spray_1" node="0>0|5|0|0|0|0|0|2" />
+  <i3dMapping id="leftOuterArmEffect_1" node="0>0|5|0|0|0|0|0|2|0" />
+  <i3dMapping id="workArea_2" node="0>0|5|0|0|0|0|0|2|0|0" />
+  <i3dMapping id="workAreaStart_1" node="0>0|5|0|0|0|0|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_1" node="0>0|5|0|0|0|0|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_1" node="0>0|5|0|0|0|0|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_1" node="0>0|5|0|0|0|0|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_1" node="0>0|5|0|0|0|0|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_4" node="0>0|5|0|0|0|0|0|2|0|1" />
+  <i3dMapping id="effectSmoke_5" node="0>0|5|0|0|0|0|0|2|0|2" />
+  <i3dMapping id="effectSmoke_6" node="0>0|5|0|0|0|0|0|2|0|3" />
+  <i3dMapping id="Rotate_1" node="0>0|5|0|0|0|0|0|3" />
+  <i3dMapping id="Translate_0" node="0>0|5|0|0|0|0|0|3|0" />
+  <i3dMapping id="rightMidleSpringPistonChrome.001" node="0>0|5|0|0|0|0|0|3|0|0" />
+  <i3dMapping id="LeftPiston" node="0>0|5|0|0|0|0|0|3|1" />
+  <i3dMapping id="LeftRotatePart" node="0>0|5|0|0|0|0|0|4" />
+  <i3dMapping id="Joint_1" node="0>0|5|0|0|0|0|0|4|0" />
+  <i3dMapping id="Joint_2" node="0>0|5|0|0|0|0|0|4|1" />
+  <i3dMapping id="LeftRotatePart_vis" node="0>0|5|0|0|0|0|0|4|2" />
+  <i3dMapping id="Rotate_2" node="0>0|5|0|0|0|0|0|5" />
+  <i3dMapping id="rightFinalSectionPiece.001_0" node="0>0|5|0|0|0|0|0|5|0" />
+  <i3dMapping id="Joint_3" node="0>0|5|0|0|0|0|0|5|1" />
+  <i3dMapping id="leftMiddleJoints" node="0>0|5|0|0|0|0|0|6" />
+  <i3dMapping id="joint27_0" node="0>0|5|0|0|0|0|0|6|0" />
+  <i3dMapping id="colPart04" node="0>0|5|0|0|0|0|0|7" />
+  <i3dMapping id="leftMiddleNozzle" node="0>0|5|0|0|0|0|0|8" />
+  <i3dMapping id="nozzle_8" node="0>0|5|0|0|0|0|0|8|0" />
+  <i3dMapping id="nozzle_9" node="0>0|5|0|0|0|0|0|8|1" />
+  <i3dMapping id="nozzle_10" node="0>0|5|0|0|0|0|0|8|2" />
+  <i3dMapping id="nozzle_11" node="0>0|5|0|0|0|0|0|8|3" />
+  <i3dMapping id="nozzle_12" node="0>0|5|0|0|0|0|0|8|4" />
+  <i3dMapping id="nozzle_13" node="0>0|5|0|0|0|0|0|8|5" />
+  <i3dMapping id="nozzle_14" node="0>0|5|0|0|0|0|0|8|6" />
+  <i3dMapping id="LeftMiddleArm_vis" node="0>0|5|0|0|0|0|0|9" />
+  <i3dMapping id="Pieces_2" node="0>0|5|0|0|0|0|1" />
+  <i3dMapping id="LeftMiddleArmDecal" node="0>0|5|0|0|0|0|1|0" />
+  <i3dMapping id="mirrorLeftWing" node="0>0|5|0|0|0|0|1|1" />
+  <i3dMapping id="mirrorLeftWingExterior_0" node="0>0|5|0|0|0|0|1|2" />
+  <i3dMapping id="leftCams" node="0>0|5|0|0|0|0|1|3" />
+  <i3dMapping id="Spray_2" node="0>0|5|0|0|0|0|2" />
+  <i3dMapping id="leftOuterArmEffect_2" node="0>0|5|0|0|0|0|2|0" />
+  <i3dMapping id="workArea_3" node="0>0|5|0|0|0|0|2|0|0" />
+  <i3dMapping id="workAreaStart_2" node="0>0|5|0|0|0|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_2" node="0>0|5|0|0|0|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_2" node="0>0|5|0|0|0|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_2" node="0>0|5|0|0|0|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_2" node="0>0|5|0|0|0|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_7" node="0>0|5|0|0|0|0|2|0|1" />
+  <i3dMapping id="effectSmoke_8" node="0>0|5|0|0|0|0|2|0|2" />
+  <i3dMapping id="effectSmoke_9" node="0>0|5|0|0|0|0|2|0|3" />
+  <i3dMapping id="leftOuterArmEffect_3" node="0>0|5|0|0|0|0|2|1" />
+  <i3dMapping id="workArea_4" node="0>0|5|0|0|0|0|2|1|0" />
+  <i3dMapping id="workAreaStart_3" node="0>0|5|0|0|0|0|2|1|0|0" />
+  <i3dMapping id="workAreaWidth_3" node="0>0|5|0|0|0|0|2|1|0|1" />
+  <i3dMapping id="workAreaHeight_3" node="0>0|5|0|0|0|0|2|1|0|2" />
+  <i3dMapping id="testAreaStart_3" node="0>0|5|0|0|0|0|2|1|0|3" />
+  <i3dMapping id="testAreaWidth_3" node="0>0|5|0|0|0|0|2|1|0|4" />
+  <i3dMapping id="effectSmoke_10" node="0>0|5|0|0|0|0|2|1|1" />
+  <i3dMapping id="effectSmoke_11" node="0>0|5|0|0|0|0|2|1|2" />
+  <i3dMapping id="effectSmoke_12" node="0>0|5|0|0|0|0|2|1|3" />
+  <i3dMapping id="leftOuterArmEffect_4" node="0>0|5|0|0|0|0|2|2" />
+  <i3dMapping id="workArea_5" node="0>0|5|0|0|0|0|2|2|0" />
+  <i3dMapping id="workAreaStart_4" node="0>0|5|0|0|0|0|2|2|0|0" />
+  <i3dMapping id="workAreaWidth_4" node="0>0|5|0|0|0|0|2|2|0|1" />
+  <i3dMapping id="workAreaHeight_4" node="0>0|5|0|0|0|0|2|2|0|2" />
+  <i3dMapping id="testAreaStart_4" node="0>0|5|0|0|0|0|2|2|0|3" />
+  <i3dMapping id="testAreaWidth_4" node="0>0|5|0|0|0|0|2|2|0|4" />
+  <i3dMapping id="effectSmoke_13" node="0>0|5|0|0|0|0|2|2|1" />
+  <i3dMapping id="effectSmoke_14" node="0>0|5|0|0|0|0|2|2|2" />
+  <i3dMapping id="effectSmoke_15" node="0>0|5|0|0|0|0|2|2|3" />
+  <i3dMapping id="Rotate_3" node="0>0|5|0|0|0|0|3" />
+  <i3dMapping id="Translate_1" node="0>0|5|0|0|0|0|3|0" />
+  <i3dMapping id="rightMidlePistonChrome_001" node="0>0|5|0|0|0|0|3|0|0" />
+  <i3dMapping id="rightMidlePistonHead_001" node="0>0|5|0|0|0|0|3|0|0|0" />
+  <i3dMapping id="rightMidlePistonMirror_001" node="0>0|5|0|0|0|0|3|1" />
+  <i3dMapping id="leftMiddleSectionPiece" node="0>0|5|0|0|0|0|4" />
+  <i3dMapping id="leftMiddleSectionPiece_vis" node="0>0|5|0|0|0|0|4|0" />
+  <i3dMapping id="Joint_4" node="0>0|5|0|0|0|0|5" />
+  <i3dMapping id="leftNozzle" node="0>0|5|0|0|0|0|6" />
+  <i3dMapping id="nozzle_15" node="0>0|5|0|0|0|0|6|0" />
+  <i3dMapping id="nozzle_16" node="0>0|5|0|0|0|0|6|1" />
+  <i3dMapping id="nozzle_17" node="0>0|5|0|0|0|0|6|2" />
+  <i3dMapping id="nozzle_18" node="0>0|5|0|0|0|0|6|3" />
+  <i3dMapping id="nozzle_19" node="0>0|5|0|0|0|0|6|4" />
+  <i3dMapping id="nozzle_20" node="0>0|5|0|0|0|0|6|5" />
+  <i3dMapping id="nozzle_21" node="0>0|5|0|0|0|0|6|6" />
+  <i3dMapping id="nozzle_22" node="0>0|5|0|0|0|0|6|7" />
+  <i3dMapping id="nozzle_23" node="0>0|5|0|0|0|0|6|8" />
+  <i3dMapping id="nozzle_24" node="0>0|5|0|0|0|0|6|9" />
+  <i3dMapping id="nozzle_25" node="0>0|5|0|0|0|0|6|10" />
+  <i3dMapping id="nozzle_26" node="0>0|5|0|0|0|0|6|11" />
+  <i3dMapping id="nozzle_27" node="0>0|5|0|0|0|0|6|12" />
+  <i3dMapping id="nozzle_28" node="0>0|5|0|0|0|0|6|13" />
+  <i3dMapping id="nozzle_29" node="0>0|5|0|0|0|0|6|14" />
+  <i3dMapping id="nozzle_30" node="0>0|5|0|0|0|0|6|15" />
+  <i3dMapping id="nozzle_31" node="0>0|5|0|0|0|0|6|16" />
+  <i3dMapping id="nozzle_32" node="0>0|5|0|0|0|0|6|17" />
+  <i3dMapping id="boomLeftSection_vis" node="0>0|5|0|0|0|0|7" />
+  <i3dMapping id="leftJoints" node="0>0|5|0|0|0|1" />
+  <i3dMapping id="joint25_0" node="0>0|5|0|0|0|1|0" />
+  <i3dMapping id="upperLeftJoint" node="0>0|5|0|0|0|2" />
+  <i3dMapping id="colPart03" node="0>0|5|0|0|0|3" />
+  <i3dMapping id="rightArm" node="0>0|5|0|0|1" />
+  <i3dMapping id="boomRightSection" node="0>0|5|0|0|1|0" />
+  <i3dMapping id="RightMiddleArm" node="0>0|5|0|0|1|0|0" />
+  <i3dMapping id="RightFinalArm" node="0>0|5|0|0|1|0|0|0" />
+  <i3dMapping id="Rotate_4" node="0>0|5|0|0|1|0|0|0|0" />
+  <i3dMapping id="rightFinalSectionPiece1.001_1" node="0>0|5|0|0|1|0|0|0|0|0" />
+  <i3dMapping id="Joint_5" node="0>0|5|0|0|1|0|0|0|0|0|0" />
+  <i3dMapping id="rightFinalSectionPiece1.001_vis_1" node="0>0|5|0|0|1|0|0|0|0|0|1" />
+  <i3dMapping id="Pieces_3" node="0>0|5|0|0|1|0|0|0|1" />
+  <i3dMapping id="RightFinalArmDecal" node="0>0|5|0|0|1|0|0|0|1|0" />
+  <i3dMapping id="rightOuterCams" node="0>0|5|0|0|1|0|0|0|1|1" />
+  <i3dMapping id="Spray_3" node="0>0|5|0|0|1|0|0|0|2" />
+  <i3dMapping id="rightOuterArmEffect_0" node="0>0|5|0|0|1|0|0|0|2|0" />
+  <i3dMapping id="workArea_6" node="0>0|5|0|0|1|0|0|0|2|0|0" />
+  <i3dMapping id="workAreaStart_5" node="0>0|5|0|0|1|0|0|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_5" node="0>0|5|0|0|1|0|0|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_5" node="0>0|5|0|0|1|0|0|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_5" node="0>0|5|0|0|1|0|0|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_5" node="0>0|5|0|0|1|0|0|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_16" node="0>0|5|0|0|1|0|0|0|2|0|1" />
+  <i3dMapping id="effectSmoke_17" node="0>0|5|0|0|1|0|0|0|2|0|2" />
+  <i3dMapping id="effectSmoke_18" node="0>0|5|0|0|1|0|0|0|2|0|3" />
+  <i3dMapping id="effectSmoke_19" node="0>0|5|0|0|1|0|0|0|2|0|4" />
+  <i3dMapping id="rightFinalJoints" node="0>0|5|0|0|1|0|0|0|3" />
+  <i3dMapping id="joint29_1" node="0>0|5|0|0|1|0|0|0|3|0" />
+  <i3dMapping id="rightOuterNozzle" node="0>0|5|0|0|1|0|0|0|4" />
+  <i3dMapping id="nozzle_33" node="0>0|5|0|0|1|0|0|0|4|0" />
+  <i3dMapping id="nozzle_34" node="0>0|5|0|0|1|0|0|0|4|1" />
+  <i3dMapping id="nozzle_35" node="0>0|5|0|0|1|0|0|0|4|2" />
+  <i3dMapping id="nozzle_36" node="0>0|5|0|0|1|0|0|0|4|3" />
+  <i3dMapping id="nozzle_37" node="0>0|5|0|0|1|0|0|0|4|4" />
+  <i3dMapping id="nozzle_38" node="0>0|5|0|0|1|0|0|0|4|5" />
+  <i3dMapping id="nozzle_39" node="0>0|5|0|0|1|0|0|0|4|6" />
+  <i3dMapping id="nozzle_40" node="0>0|5|0|0|1|0|0|0|4|7" />
+  <i3dMapping id="RightFinalArm_vis" node="0>0|5|0|0|1|0|0|0|5" />
+  <i3dMapping id="Pieces_4" node="0>0|5|0|0|1|0|0|1" />
+  <i3dMapping id="rightMiddleCams" node="0>0|5|0|0|1|0|0|1|0" />
+  <i3dMapping id="Spray_4" node="0>0|5|0|0|1|0|0|2" />
+  <i3dMapping id="rightOuterArmEffect_1" node="0>0|5|0|0|1|0|0|2|0" />
+  <i3dMapping id="workArea_7" node="0>0|5|0|0|1|0|0|2|0|0" />
+  <i3dMapping id="workAreaStart_6" node="0>0|5|0|0|1|0|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_6" node="0>0|5|0|0|1|0|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_6" node="0>0|5|0|0|1|0|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_6" node="0>0|5|0|0|1|0|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_6" node="0>0|5|0|0|1|0|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_20" node="0>0|5|0|0|1|0|0|2|0|1" />
+  <i3dMapping id="effectSmoke_21" node="0>0|5|0|0|1|0|0|2|0|2" />
+  <i3dMapping id="effectSmoke_22" node="0>0|5|0|0|1|0|0|2|0|3" />
+  <i3dMapping id="Rotate_5" node="0>0|5|0|0|1|0|0|3" />
+  <i3dMapping id="Translate_2" node="0>0|5|0|0|1|0|0|3|0" />
+  <i3dMapping id="rightMidleSpringPistonChrome" node="0>0|5|0|0|1|0|0|3|0|0" />
+  <i3dMapping id="RightPiston" node="0>0|5|0|0|1|0|0|3|1" />
+  <i3dMapping id="RightRotatePart" node="0>0|5|0|0|1|0|0|4" />
+  <i3dMapping id="Joint_6" node="0>0|5|0|0|1|0|0|4|0" />
+  <i3dMapping id="Joint_7" node="0>0|5|0|0|1|0|0|4|1" />
+  <i3dMapping id="RightRotatePart_vis" node="0>0|5|0|0|1|0|0|4|2" />
+  <i3dMapping id="Rotate_6" node="0>0|5|0|0|1|0|0|5" />
+  <i3dMapping id="rightFinalSectionPiece.001_1" node="0>0|5|0|0|1|0|0|5|0" />
+  <i3dMapping id="Joint_8" node="0>0|5|0|0|1|0|0|5|1" />
+  <i3dMapping id="rightMiddleJoints" node="0>0|5|0|0|1|0|0|6" />
+  <i3dMapping id="joint27_1" node="0>0|5|0|0|1|0|0|6|0" />
+  <i3dMapping id="colPart05" node="0>0|5|0|0|1|0|0|7" />
+  <i3dMapping id="rightMiddleNozzle" node="0>0|5|0|0|1|0|0|8" />
+  <i3dMapping id="nozzle_41" node="0>0|5|0|0|1|0|0|8|0" />
+  <i3dMapping id="nozzle_42" node="0>0|5|0|0|1|0|0|8|1" />
+  <i3dMapping id="nozzle_43" node="0>0|5|0|0|1|0|0|8|2" />
+  <i3dMapping id="nozzle_44" node="0>0|5|0|0|1|0|0|8|3" />
+  <i3dMapping id="nozzle_45" node="0>0|5|0|0|1|0|0|8|4" />
+  <i3dMapping id="nozzle_46" node="0>0|5|0|0|1|0|0|8|5" />
+  <i3dMapping id="nozzle_47" node="0>0|5|0|0|1|0|0|8|6" />
+  <i3dMapping id="RightMiddleArm_vis" node="0>0|5|0|0|1|0|0|9" />
+  <i3dMapping id="Pieces_5" node="0>0|5|0|0|1|0|1" />
+  <i3dMapping id="boomRightSectionDecal" node="0>0|5|0|0|1|0|1|0" />
+  <i3dMapping id="mirrorRightWing" node="0>0|5|0|0|1|0|1|1" />
+  <i3dMapping id="mirrorLeftWingExterior_1" node="0>0|5|0|0|1|0|1|2" />
+  <i3dMapping id="rightCams" node="0>0|5|0|0|1|0|1|3" />
+  <i3dMapping id="Spray_5" node="0>0|5|0|0|1|0|2" />
+  <i3dMapping id="rightOuterArmEffect_2" node="0>0|5|0|0|1|0|2|0" />
+  <i3dMapping id="workArea_8" node="0>0|5|0|0|1|0|2|0|0" />
+  <i3dMapping id="workAreaStart_7" node="0>0|5|0|0|1|0|2|0|0|0" />
+  <i3dMapping id="workAreaWidth_7" node="0>0|5|0|0|1|0|2|0|0|1" />
+  <i3dMapping id="workAreaHeight_7" node="0>0|5|0|0|1|0|2|0|0|2" />
+  <i3dMapping id="testAreaStart_7" node="0>0|5|0|0|1|0|2|0|0|3" />
+  <i3dMapping id="testAreaWidth_7" node="0>0|5|0|0|1|0|2|0|0|4" />
+  <i3dMapping id="effectSmoke_23" node="0>0|5|0|0|1|0|2|0|1" />
+  <i3dMapping id="effectSmoke_24" node="0>0|5|0|0|1|0|2|0|2" />
+  <i3dMapping id="effectSmoke_25" node="0>0|5|0|0|1|0|2|0|3" />
+  <i3dMapping id="rightOuterArmEffect_3" node="0>0|5|0|0|1|0|2|1" />
+  <i3dMapping id="workArea_9" node="0>0|5|0|0|1|0|2|1|0" />
+  <i3dMapping id="workAreaStart_8" node="0>0|5|0|0|1|0|2|1|0|0" />
+  <i3dMapping id="workAreaWidth_8" node="0>0|5|0|0|1|0|2|1|0|1" />
+  <i3dMapping id="workAreaHeight_8" node="0>0|5|0|0|1|0|2|1|0|2" />
+  <i3dMapping id="testAreaStart_8" node="0>0|5|0|0|1|0|2|1|0|3" />
+  <i3dMapping id="testAreaWidth_8" node="0>0|5|0|0|1|0|2|1|0|4" />
+  <i3dMapping id="effectSmoke_26" node="0>0|5|0|0|1|0|2|1|1" />
+  <i3dMapping id="effectSmoke_27" node="0>0|5|0|0|1|0|2|1|2" />
+  <i3dMapping id="effectSmoke_28" node="0>0|5|0|0|1|0|2|1|3" />
+  <i3dMapping id="rightOuterArmEffect_4" node="0>0|5|0|0|1|0|2|2" />
+  <i3dMapping id="workArea_10" node="0>0|5|0|0|1|0|2|2|0" />
+  <i3dMapping id="workAreaStart_9" node="0>0|5|0|0|1|0|2|2|0|0" />
+  <i3dMapping id="workAreaWidth_9" node="0>0|5|0|0|1|0|2|2|0|1" />
+  <i3dMapping id="workAreaHeight_9" node="0>0|5|0|0|1|0|2|2|0|2" />
+  <i3dMapping id="testAreaStart_9" node="0>0|5|0|0|1|0|2|2|0|3" />
+  <i3dMapping id="testAreaWidth_9" node="0>0|5|0|0|1|0|2|2|0|4" />
+  <i3dMapping id="effectSmoke_29" node="0>0|5|0|0|1|0|2|2|1" />
+  <i3dMapping id="effectSmoke_30" node="0>0|5|0|0|1|0|2|2|2" />
+  <i3dMapping id="effectSmoke_31" node="0>0|5|0|0|1|0|2|2|3" />
+  <i3dMapping id="Rotate_7" node="0>0|5|0|0|1|0|3" />
+  <i3dMapping id="Translate_3" node="0>0|5|0|0|1|0|3|0" />
+  <i3dMapping id="rightMidlePistonChrome" node="0>0|5|0|0|1|0|3|0|0" />
+  <i3dMapping id="rightMidlePistonMirror" node="0>0|5|0|0|1|0|3|1" />
+  <i3dMapping id="rightMiddleSectionPiece" node="0>0|5|0|0|1|0|4" />
+  <i3dMapping id="rightMiddleSectionPiece_vis" node="0>0|5|0|0|1|0|4|0" />
+  <i3dMapping id="Joint_9" node="0>0|5|0|0|1|0|5" />
+  <i3dMapping id="rightNozzle" node="0>0|5|0|0|1|0|6" />
+  <i3dMapping id="nozzle_48" node="0>0|5|0|0|1|0|6|0" />
+  <i3dMapping id="nozzle_49" node="0>0|5|0|0|1|0|6|1" />
+  <i3dMapping id="nozzle_50" node="0>0|5|0|0|1|0|6|2" />
+  <i3dMapping id="nozzle_51" node="0>0|5|0|0|1|0|6|3" />
+  <i3dMapping id="nozzle_52" node="0>0|5|0|0|1|0|6|4" />
+  <i3dMapping id="nozzle_53" node="0>0|5|0|0|1|0|6|5" />
+  <i3dMapping id="nozzle_54" node="0>0|5|0|0|1|0|6|6" />
+  <i3dMapping id="nozzle_55" node="0>0|5|0|0|1|0|6|7" />
+  <i3dMapping id="nozzle_56" node="0>0|5|0|0|1|0|6|8" />
+  <i3dMapping id="nozzle_57" node="0>0|5|0|0|1|0|6|9" />
+  <i3dMapping id="nozzle_58" node="0>0|5|0|0|1|0|6|10" />
+  <i3dMapping id="nozzle_59" node="0>0|5|0|0|1|0|6|11" />
+  <i3dMapping id="nozzle_60" node="0>0|5|0|0|1|0|6|12" />
+  <i3dMapping id="nozzle_61" node="0>0|5|0|0|1|0|6|13" />
+  <i3dMapping id="nozzle_62" node="0>0|5|0|0|1|0|6|14" />
+  <i3dMapping id="nozzle_63" node="0>0|5|0|0|1|0|6|15" />
+  <i3dMapping id="nozzle_64" node="0>0|5|0|0|1|0|6|16" />
+  <i3dMapping id="nozzle_65" node="0>0|5|0|0|1|0|6|17" />
+  <i3dMapping id="boomRightSection_vis" node="0>0|5|0|0|1|0|7" />
+  <i3dMapping id="rightJoint" node="0>0|5|0|0|1|1" />
+  <i3dMapping id="joint25_1" node="0>0|5|0|0|1|1|0" />
+  <i3dMapping id="upperRightJoint" node="0>0|5|0|0|1|2" />
+  <i3dMapping id="colPart06" node="0>0|5|0|0|1|3" />
+  <i3dMapping id="joint_0" node="0>0|5|0|0|2" />
+  <i3dMapping id="spray1" node="0>0|5|0|0|3" />
+  <i3dMapping id="middleEffect" node="0>0|5|0|0|3|0" />
+  <i3dMapping id="workArea_11" node="0>0|5|0|0|3|0|0" />
+  <i3dMapping id="workAreaStart_10" node="0>0|5|0|0|3|0|0|0" />
+  <i3dMapping id="workAreaWidth_10" node="0>0|5|0|0|3|0|0|1" />
+  <i3dMapping id="workAreaHeight_10" node="0>0|5|0|0|3|0|0|2" />
+  <i3dMapping id="testAreaStart_10" node="0>0|5|0|0|3|0|0|3" />
+  <i3dMapping id="testAreaWidth_10" node="0>0|5|0|0|3|0|0|4" />
+  <i3dMapping id="effectSmoke_32" node="0>0|5|0|0|3|0|1" />
+  <i3dMapping id="effectSmoke_33" node="0>0|5|0|0|3|0|2" />
+  <i3dMapping id="frame_0" node="0>0|5|0|0|4" />
+  <i3dMapping id="parts1" node="0>0|5|0|0|4|0" />
+  <i3dMapping id="centerBoomBlackPart" node="0>0|5|0|0|4|0|0" />
+  <i3dMapping id="partsDecal" node="0>0|5|0|0|4|0|1" />
+  <i3dMapping id="upperLeftPiston" node="0>0|5|0|0|4|1" />
+  <i3dMapping id="leftPistonTranslate" node="0>0|5|0|0|4|1|0" />
+  <i3dMapping id="centerBoomChrome_002" node="0>0|5|0|0|4|1|0|0" />
+  <i3dMapping id="centerBoomBlackPart_006" node="0>0|5|0|0|4|1|1" />
+  <i3dMapping id="upperRightPiston" node="0>0|5|0|0|4|2" />
+  <i3dMapping id="rightPistonTranslate" node="0>0|5|0|0|4|2|0" />
+  <i3dMapping id="centerBoomChrome_001" node="0>0|5|0|0|4|2|0|0" />
+  <i3dMapping id="centerBoomBlackPart_008" node="0>0|5|0|0|4|2|1" />
+  <i3dMapping id="lowDecal" node="0>0|5|0|0|4|3" />
+  <i3dMapping id="centerNozzle" node="0>0|5|0|0|4|4" />
+  <i3dMapping id="nozzle_66" node="0>0|5|0|0|4|4|0" />
+  <i3dMapping id="nozzle_67" node="0>0|5|0|0|4|4|1" />
+  <i3dMapping id="nozzle_68" node="0>0|5|0|0|4|4|2" />
+  <i3dMapping id="nozzle_69" node="0>0|5|0|0|4|4|3" />
+  <i3dMapping id="nozzle_70" node="0>0|5|0|0|4|4|4" />
+  <i3dMapping id="nozzle_71" node="0>0|5|0|0|4|4|5" />
+  <i3dMapping id="leftPiston" node="0>0|5|0|0|5" />
+  <i3dMapping id="translate_0" node="0>0|5|0|0|5|0" />
+  <i3dMapping id="rightCenterPiston_0" node="0>0|5|0|0|5|0|0" />
+  <i3dMapping id="centerBoomLeftPiston" node="0>0|5|0|0|5|1" />
+  <i3dMapping id="rightPiston" node="0>0|5|0|0|6" />
+  <i3dMapping id="translate_1" node="0>0|5|0|0|6|0" />
+  <i3dMapping id="rightCenterPiston_1" node="0>0|5|0|0|6|0|0" />
+  <i3dMapping id="centerBoomRightPiston" node="0>0|5|0|0|6|1" />
+  <i3dMapping id="joint_1" node="0>0|5|0|0|7" />
+  <i3dMapping id="backJoint" node="0>0|5|0|0|8" />
+  <i3dMapping id="colPart02" node="0>0|5|0|0|9" />
+  <i3dMapping id="centerJoint" node="0>0|5|0|1" />
+  <i3dMapping id="centerFramehighDecal" node="0>0|5|0|2" />
+  <i3dMapping id="colPart01" node="0>0|5|0|3" />
+  <i3dMapping id="centerFramehighMov_vis" node="0>0|5|0|4" />
+  <i3dMapping id="frameLow" node="0>0|5|1" />
+  <i3dMapping id="centerFramelowMov" node="0>0|5|1|0" />
+  <i3dMapping id="centerFramelowMov_vis" node="0>0|5|1|0|0" />
+  <i3dMapping id="centerFramelowDecal" node="0>0|5|1|0|0|0" />
+  <i3dMapping id="mainHydraulic" node="0>0|5|2" />
+  <i3dMapping id="centerPistons" node="0>0|5|2|0" />
+  <i3dMapping id="centerPistonsChrome" node="0>0|5|2|0|0" />
+  <i3dMapping id="centerPistonsChrome_vis" node="0>0|5|2|0|0|0" />
+  <i3dMapping id="centerPistons_vis" node="0>0|5|2|0|1" />
+  <i3dMapping id="parts" node="0>0|5|3" />
+  <i3dMapping id="frame_1" node="0>0|5|3|0" />
+  <i3dMapping id="frameSprayer" node="0>0|5|3|0|0" />
+  <i3dMapping id="reflectorRed" node="0>0|5|3|0|1" />
+  <i3dMapping id="reflectorOrange" node="0>0|5|3|0|2" />
+  <i3dMapping id="bigTriangle" node="0>0|5|3|0|3" />
+  <i3dMapping id="frameTankDecal" node="0>0|5|3|0|4" />
+  <i3dMapping id="reguaTank" node="0>0|5|3|0|5" />
+  <i3dMapping id="decalSub" node="0>0|5|3|0|6" />
+  <i3dMapping id="round30mlh" node="0>0|5|3|0|7" />
+  <i3dMapping id="loadCommand" node="0>0|5|3|1" />
+  <i3dMapping id="loadCommandVis" node="0>0|5|3|1|0" />
+  <i3dMapping id="loadCommandMetal" node="0>0|5|3|1|0|0" />
+  <i3dMapping id="loadCommandRubber" node="0>0|5|3|1|0|1" />
+  <i3dMapping id="loadCommandDecal" node="0>0|5|3|1|0|2" />
+  <i3dMapping id="mirrorLeftWingExterior_2" node="0>0|5|3|1|0|3" />
+  <i3dMapping id="tankOpt" node="0>0|5|3|2" />
+  <i3dMapping id="tankOptMetal" node="0>0|5|3|2|0" />
+  <i3dMapping id="tankOptPlastic" node="0>0|5|3|2|1" />
+  <i3dMapping id="frontJoint" node="0>0|5|3|3" />
+  <i3dMapping id="hoses" node="0>0|5|3|4" />
+  <i3dMapping id="Joint_10" node="0>0|5|4" />
+  <i3dMapping id="Hose" node="0>0|6" />
+  <i3dMapping id="autoAimFillTargetNode" node="0>0|7" />
+  <i3dMapping id="fillUnit" node="0>0|8" />
+  <i3dMapping id="exactFillRootNode" node="0>0|8|0" />
+  <i3dMapping id="dischargeTrigger" node="0>0|8|1" />
+</i3dMappings>
+	
+</vehicle>

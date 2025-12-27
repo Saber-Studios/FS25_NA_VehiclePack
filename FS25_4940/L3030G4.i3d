@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="L3030G4.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="13" filename="$data/shared/assets/lights/lizard/sideMarker23Orange_emissive.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/sideMarker23Orange_normal.png"/>
+    <File fileId="4" filename="$data/shared/assets/lights/lizard/sideMarker23Orange_vmask.png"/>
+    <File fileId="16" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="20" filename="$data/shared/default_normal.dds"/>
+    <File fileId="21" filename="$data/shared/default_specular.dds"/>
+    <File fileId="36" filename="$data/shared/default_vmask.dds"/>
+    <File fileId="39" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.dds"/>
+    <File fileId="38" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.dds"/>
+    <File fileId="37" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.dds"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/metallic/clear_specular.dds"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.png"/>
+    <File fileId="33" filename="$data/shared/detailLibrary/metallic/rough_specular.png"/>
+    <File fileId="25" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="24" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png"/>
+    <File fileId="29" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="28" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="43" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png"/>
+    <File fileId="42" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png"/>
+    <File fileId="32" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="31" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="30" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.dds"/>
+    <File fileId="34" filename="textures/4940Decals_difuse.dds"/>
+    <File fileId="35" filename="textures/4940Decals_normal.dds"/>
+    <File fileId="22" filename="textures/L3030G4_normal.dds"/>
+    <File fileId="23" filename="textures/L3030G4_specular.dds"/>
+    <File fileId="18" filename="textures/sideMarker23Red_emissive.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="clearPlastic_glassClear03_mat" materialId="5" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="16"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <Custommap name="lightsIntensity" fileId="13"/>
+      <CustomParameter name="colorScale" value="1 0.25 0"/>
+      <CustomParameter name="clearCoatIntensity" value="1"/>
+    </Material>
+    <Material name="clearPlastic_glassClear03Red_mat" materialId="6" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="16"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="17"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <Custommap name="lightsIntensity" fileId="18"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+      <CustomParameter name="clearCoatIntensity" value="1"/>
+    </Material>
+    <Material name="default_mat" materialId="7">
+    </Material>
+    <Material name="L3030G4_decals" materialId="8" customShaderId="5">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+      <Custommap name="detailSpecular" fileId="37"/>
+      <Custommap name="detailNormal" fileId="38"/>
+      <Custommap name="detailDiffuse" fileId="39"/>
+    </Material>
+    <Material name="L3030G4_metalPainted_mat" materialId="9" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+    </Material>
+    <Material name="L3030G4_metalPaintedBlack_mat" materialId="10" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="L3030G4_metalSilverRough_mat" materialId="11" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="33"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+    </Material>
+    <Material name="L3030G4_metalSilverScratched_mat" materialId="12" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="24"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="25"/>
+    </Material>
+    <Material name="L3030G4_plasticPaintedBlack_mat" materialId="13" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="28"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="L3030G4_reflectorOrange_mat" materialId="14" diffuseColor="1 0.533333 0 1" specularColor="0.501961 1 0.501961" customShaderId="5">
+      <Custommap name="detailSpecular" fileId="42"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="43"/>
+      <CustomParameter name="colorScale" value="1.1 0.185 0"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="L3030G4_reflectorRed_mat" materialId="15" diffuseColor="1 0.0941177 0 1" specularColor="0.501961 1 0.501961" customShaderId="5">
+      <Custommap name="detailSpecular" fileId="42"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="43"/>
+      <CustomParameter name="colorScale" value="0.634 0 0"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="L3030G4_rubber_mat" materialId="16" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="detailSpecular" fileId="30"/>
+      <Custommap name="detailNormal" fileId="31"/>
+      <Custommap name="detailDiffuse" fileId="32"/>
+      <CustomParameter name="colorScale" value="0.01 0.01 0.01"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="lambert1" materialId="17" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="orangeLights_mat" materialId="18" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+    </Material>
+    <Material name="sideMarker23Orange_chrome_mat" materialId="19" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <Custommap name="lightsIntensity" fileId="13"/>
+    </Material>
+    <Material name="sideMarker23Orange_plasticGraniteGrainSmallBlack_mat" materialId="20" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="14"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="15"/>
+      <Custommap name="lightsIntensity" fileId="13"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="L3030G4.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="L3030G4_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17">
+      <TransformGroup name="L3030G4_vis" nodeId="46">
+        <TransformGroup name="attacher_joint" translation="0 1.9 0" nodeId="47"/>
+        <TransformGroup name="lights" nodeId="48">
+          <TransformGroup name="staticLights" nodeId="49">
+            <TransformGroup name="leftBlink" nodeId="50">
+              <Shape name="sideMarker23Orange" translation="1.51719 2.45371 -2.30567" rotation="-90 -0 0" scale="1.41838 1.35646 1.59459" shapeId="2" clipDistance="75" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="19,20">
+                <Shape name="blinkerLeft" translation="0 0.014592 0" shapeId="3" clipDistance="75" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="rightBlink" nodeId="53">
+              <Shape name="sideMarker23Orange" translation="-1.551 2.45371 -2.30567" rotation="-90 -0 0" scale="1.41838 1.35646 1.59459" shapeId="2" clipDistance="75" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="19,20">
+                <Shape name="blinkerRight" translation="0 0.014592 0" shapeId="3" clipDistance="75" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="5"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="rearRed" nodeId="56">
+              <Shape name="sideMarker23Orange" translation="1.17154 2.45371 -2.30567" rotation="-90 -0 0" scale="1.41838 1.35646 1.59459" shapeId="2" clipDistance="75" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="19,20">
+                <Shape name="rearBreakVisLeft" translation="0 0.014592 0" shapeId="3" clipDistance="75" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="sideMarker23Orange" translation="-1.209 2.45371 -2.30567" rotation="-90 -0 0" scale="1.41838 1.35646 1.59459" shapeId="2" clipDistance="75" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="19,20">
+                <Shape name="rearBreakVisRight" translation="0 0.014592 0" shapeId="3" clipDistance="75" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="innerLights" nodeId="61">
+            <Shape name="innerBlinkLights" shapeId="4" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="18"/>
+            <Shape name="innerBreakLights" shapeId="5" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="18"/>
+          </TransformGroup>
+          <Light name="turnLightLeftBack" translation="1.522 2.435 -2.354" rotation="-15 -5 -4.9886e-17" clipDistance="75" nodeId="64" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+          <Light name="turnLightRightBack" translation="-1.522 2.435 -2.354" rotation="-15 5 -4.9886e-17" clipDistance="75" nodeId="65" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+          <Light name="backLightsHigh1" translation="1.1714 2.435 -2.354" rotation="-15 0 4.23084e-16" clipDistance="75" nodeId="66" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="130" dropOff="2">
+            <Light name="backLightsHigh2" translation="-2.38539 -5.68434e-16 -1.13687e-15" clipDistance="75" nodeId="67" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="130" dropOff="2"/>
+          </Light>
+        </TransformGroup>
+        <TransformGroup name="movingParts" nodeId="68">
+          <Shape name="spinnerLeft" translation="0.321488 1.78668 -3.04239" shapeId="6" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="spinnerRight" translation="-0.346711 1.78668 -3.04239" shapeId="7" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="hidralulic" nodeId="71"/>
+        <TransformGroup name="fillUnit" nodeId="72">
+          <TransformGroup name="unloadInfo" translation="0 1.8785 -3.01507" nodeId="73"/>
+          <Shape name="fillVolume" shapeId="8" clipDistance="300" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+          <Shape name="exactFillRootNode" translation="0 3.71984 -0.845923" shapeId="9" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+          <TransformGroup name="autoAimFillTargetNode" translation="0 2.82502 -0.87292" nodeId="76"/>
+        </TransformGroup>
+        <TransformGroup name="workArea" nodeId="77">
+          <TransformGroup name="areaStart" translation="0 0 -3.45" nodeId="78"/>
+          <TransformGroup name="areaWidth" translation="16 0 -12" nodeId="79"/>
+          <TransformGroup name="areaHeight" translation="-16 0 -12" nodeId="80"/>
+          <TransformGroup name="areaStart_Lime" translation="0 0 -3.45" nodeId="81"/>
+          <TransformGroup name="areaWidth_Lime" translation="12 0 -12" nodeId="82"/>
+          <TransformGroup name="areaHeight_Lime" translation="-12 0 -12" nodeId="83"/>
+        </TransformGroup>
+        <TransformGroup name="effects" nodeId="84">
+          <TransformGroup name="effectNode" translation="0 1.71144 -2.93825" nodeId="85"/>
+          <TransformGroup name="effectNodeSmallLime" translation="0 1.73766 -3.52375" nodeId="86"/>
+          <Shape name="effectNodeSmallLimeParticleSmoke" translation="0 1.86724 -3.24526" rotation="2 0 0" scale="1.6 1 1" shapeId="10" clipDistance="100" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="17"/>
+          <Shape name="effectUnloadLeft" translation="-0.226 2.231 -2.931" scale="1 0.72 0.72" shapeId="11" clipDistance="100" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="effectUnloadRight" translation="0.195602 2.231 -2.931" scale="1 0.72 0.72" shapeId="12" clipDistance="100" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="configurations" nodeId="90">
+          <TransformGroup name="drybox" nodeId="91">
+            <Shape name="dryboxVis" shapeId="13" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="9,12,13,16,11"/>
+            <Shape name="decalsGen" shapeId="14" clipDistance="50" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="reflexDecal" shapeId="15" clipDistance="50" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="15,14"/>
+          </TransformGroup>
+          <TransformGroup name="decals" nodeId="95">
+            <Shape name="decalsNL" shapeId="16" visibility="false" clipDistance="100" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            <Shape name="decalsJD" shapeId="17" clipDistance="100" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          </TransformGroup>
+          <TransformGroup name="bigTriangle" translation="0 2.37522 -3.45863" rotation="90 0 0" nodeId="98"/>
+        </TransformGroup>
+        <TransformGroup name="ai" nodeId="99">
+          <TransformGroup name="aiMarker" translation="0 0 -3.39935" nodeId="100">
+            <TransformGroup name="aiMarkerLeft" translation="16 0 -7" nodeId="101"/>
+            <TransformGroup name="aiMarkerRight" translation="-16 0 -7" nodeId="102"/>
+            <TransformGroup name="aiMarkerBack" translation="0 0 -8.5" nodeId="103"/>
+            <TransformGroup name="aiMarkerLeft_Lime" translation="12 0 -7" nodeId="104"/>
+            <TransformGroup name="aiMarkerRight_Lime" translation="-12 0 -7" nodeId="105"/>
+            <TransformGroup name="aiMarkerBack_Lime" translation="0 0 -8.5" nodeId="106"/>
+          </TransformGroup>
+          <TransformGroup name="aiSize" translation="0 0 -3.39935" nodeId="107">
+            <TransformGroup name="sizeLeft" translation="3.4 0 4.25" nodeId="108"/>
+            <TransformGroup name="sizeRight" translation="-3.4 0 4.25" nodeId="109"/>
+            <TransformGroup name="sizeBack" translation="0 0 -0.5" nodeId="110"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="supportGroup" translation="0 -0.217 0" nodeId="111">
+          <Shape name="base_support" translation="0 0.217 0" shapeId="18" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="16,10,12">
+            <Shape name="supportVis" shapeId="19" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          </Shape>
+          <TransformGroup name="supportCOL" translation="0 0.1 0" nodeId="114">
+            <Shape name="leg_COL" translation="-3.248 0.388 0.502" shapeId="20" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="115" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="leg_COL2" translation="3.248 0.388 0.502" shapeId="21" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="leg_COL3" translation="3.248 0.388 -1.926" shapeId="22" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+            <Shape name="leg_COL4" translation="-3.248 0.388 -1.926" shapeId="23" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="aiCollisionNode" nodeId="119"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

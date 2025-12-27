@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Saber Studios</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon_4940.dds</iconFilename>
+	<multiplayer supported="true" />
+	
+	<title>
+        <en>John Deere 4940 Self-Propelled THQ Sprayer</en>
+        <de>John Deere 4940 Selbstfahrende THQ Spritze</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[
+John Deere 4940 Self-Propelled Sprayer
+
+“S.M.A.R.T.” has a whole new meaning at John Deere.
+It stands for “Spray More Acres in Reduced Time.”
+
+Model: 4940 Self-Propelled Sprayer 
+Max speed: 52 km/h
+Price: $195.000
+Power: 340 HP
+Drive: Full-time 4WD
+Fuel tank capacity: 587 Liters / 155 gal
+Tank Capacity: 4542 Liters / 1200 gal
+Boom: 120 ft / 36.5 meter
+Spray speed range: 0-35 km/h 0-20 mph
+Boom Price: $84.990
+Drybox Price: $48.000
+
+Features:
+- Drybox
+- 120-ft boom
+- StarFire 3000 option
+- 4-wheel independent dynamic suspension
+- Entrance animation: Ladder and Steering Wheel
+- Joystick animation: Forward, Neutral/Park and Reverse
+- Monitors with realistic animations: Speed, hours, hectares worked, etc.
+- Support for Drybox and 120-ft boom coupling
+- Direct Injecton option (120-ft boom)
+- Load Command System option (120-ft boom)
+- GreenStar 3 Monitor with Spray Star and Spread Star
+- Tires RowCrop / LSW
+- Fenders options
+- Beacon options
+- Support to the Manure System for resilient loading
+]]>
+</en>
+<de>
+<![CDATA[
+John Deere 4940 Selbstfahrende Spritze
+
+"S.M.A.R.T." hat bei John Deere eine ganz neue Bedeutung.
+Es steht für "Spray More Acres in Reduced Time".
+
+Modell: 4940 Selbstfahrende Spritze 
+Höchstgeschwindigkeit: 52 km/h
+Preis: €195.000
+Leistung: 340 PS
+Antrieb: Allradantrieb (4WD)
+Kraftstofftankinhalt: 587 Liter / 155 gal
+Tankinhalt: 4542 Liter / 1200 gal
+Ausleger: 120 Fuß / 36.5 Meter
+Bereich der Sprühgeschwindigkeit: 0-32 km/h 0-20 mph
+Ausleger Preis: €84.990
+Tankinhalt Preis: €48.000
+
+Merkmale:
+- Trockenkasten
+- 120-Fuß-Ausleger
+- Option StarFire 3000
+- Dynamische 4-Rad-Einzelradaufhängung
+- Einstiegs-Animation: Leiter und Lenkrad
+- Joystick-Animation: Vorwärts, Neutral/Park und Rückwärts
+- Monitore mit realistischen Animationen: Geschwindigkeit, Stunden, bearbeitete Hektar, etc.
+- Unterstützung für Drybox und 120-Fuß-Auslegerkupplung
+- Option Direkteinspritzung (120-Fuß-Ausleger)
+- Option Load Command System (120-Fuß-Gestänge)
+- GreenStar 3 Monitor mit Spray Star und Spread Star
+- Bereifung RowCrop / LSW
+- Fender Optionen
+- Beacon-Optionen
+- Unterstützung des Güllesystems für elastisches Laden
+]]>
+</de>
+	</description>
+	
+	<l10n>
+	  
+	  <text name="configuration_FR">
+		  <en>480/80R50</en><de>480/80R50</de><fr>480/80R50</fr>
+	  </text>
+	  <text name="configuration_FRDR">
+		  <en>Rear Dual 480/80R50</en><de>Hinten Dual 480/80R50</de><fr>Rear Dual 480/80R50</fr>
+	  </text>
+	  <text name="configuration_FRDF">
+		  <en>Dual 480/80R50</en><de>Dual 480/80R50</de><fr>Dual 480/80R50</fr>
+	  </text>
+
+	  <!-- wheels michelin -->
+	  
+	  <text name="configuration_ML">
+		  <en>480/80R50</en><de>480/80R50</de><fr>480/80R50</fr>
+	  </text>
+	  <text name="configuration_MLDR">
+          <en>Rear Dual 480/80R50</en><de>Hinten Dual 480/80R50</de><fr>Rear Dual 480/80R50</fr>
+      </text>
+	  <text name="configuration_MLDF">
+		  <en>Dual 480/80R50</en><de>Dual 480/80R50</de><fr>Dual 480/80R50</fr>
+	  </text>
+	  <text name="configuration_MW">
+		  <en>650/65R42</en><de>650/65R42</de><fr>650/65R42</fr>
+	  </text>
+	  
+	   <!-- wheels mitas -->
+	  
+	  <text name="configuration_MT">
+		  <en>710/65R46</en><de>710/65R46</de><fr>710/65R46</fr>
+	  </text>
+	  
+	  
+	  <text name="configuration_GY">
+		  <en>LSW 710/65R46</en><de>LSW 710/65R46</de><fr>LSW 710/65R46</fr>
+	  </text>
+	  <text name="configuration_GYL">
+		  <en>LSW 800/55R46</en><de>LSW 800/55R46</de><fr>LSW 800/55R46</fr>
+	  </text>
+
+	<!-- fenders-->	
+	   <text name="configuration_fenders">
+          <en>Fenders</en><de>Kotflügel</de><fr>Fenders</fr>
+       </text>
+	
+	<!-- starfire-->
+	  <text name="configuration_starfire">
+		  <en>StarFire 3000</en><de>StarFire 3000</de><fr>StarFire 3000</fr>
+	  </text>
+
+	<!-- extras-->
+      <text name="configuration_command">
+		  <en>Load Command System</en><de>Load Command System</de><fr>Load Command System</fr>
+	  </text>
+	  
+	  <text name="configuration_tank2">
+		  <en>Direct Injection 170 Gal</en><de>Direct Injection 170 Gal</de><fr>Direct Injection 170 Gal</fr>
+	  </text>
+	  
+	  <!-- monitor-->
+	  <text name="configuration_monitor">
+		  <en>GrenStar 3 Software</en><de>GrenStar 3 Software</de><fr>GrenStar 3 Software</fr>
+	  </text>
+	  
+	  <text name="configuration_SprayStar">
+		  <en>Spray Star</en><de>Spray Star</de><fr>Spray Star</fr>
+	  </text>
+	  
+	  <text name="configuration_SpreadStar">
+		  <en>Spread Star</en><de>Spread Star</de><fr>Spread Star</fr>
+	  </text>
+	  
+	  <!-- numbers-->	
+		<text name="configuration_numbers">
+		  <en>Numbers</en><de>Zahlen</de><fr>Nombres</fr>
+		</text>
+		
+		<text name="configuration_1"><en>1</en><de>1</de></text><fr>1</fr>
+		<text name="configuration_2"><en>2</en><de>2</de></text><fr>2</fr>
+		<text name="configuration_3"><en>3</en><de>3</de></text><fr>3</fr>
+		<text name="configuration_4"><en>4</en><de>4</de></text><fr>4</fr>
+		<text name="configuration_5"><en>5</en><de>5</de></text><fr>5</fr>
+		<text name="configuration_6"><en>6</en><de>6</de></text><fr>6</fr>
+		<text name="configuration_7"><en>7</en><de>7</de></text><fr>7</fr>
+		<text name="configuration_8"><en>8</en><de>8</de></text><fr>8</fr>
+		<text name="configuration_9"><en>9</en><de>9</de></text><fr>9</fr>
+		<text name="configuration_10"><en>10</en><de>10</de></text><fr>10</fr>
+		<text name="configuration_11"><en>11</en><de>11</de></text><fr>11</fr>
+		<text name="configuration_12"><en>12</en><de>12</de></text><fr>12</fr>
+		<text name="configuration_13"><en>13</en><de>13</de></text><fr>13</fr>
+		<text name="configuration_14"><en>14</en><de>14</de></text><fr>14</fr>
+		<text name="configuration_15"><en>15</en><de>15</de></text><fr>15</fr>
+		<text name="configuration_16"><en>16</en><de>16</de></text><fr>16</fr>
+		<text name="configuration_17"><en>17</en><de>17</de></text><fr>17</fr>
+		<text name="configuration_18"><en>18</en><de>18</de></text><fr>18</fr>
+		<text name="configuration_19"><en>19</en><de>19</de></text><fr>19</fr>
+		<text name="configuration_20"><en>20</en><de>20</de></text><fr>20</fr>
+		<text name="configuration_21"><en>21</en><de>21</de></text><fr>21</fr>
+		<text name="configuration_22"><en>22</en><de>22</de></text><fr>22</fr>
+		<text name="configuration_23"><en>23</en><de>23</de></text><fr>23</fr>
+		<text name="configuration_24"><en>24</en><de>24</de></text><fr>24</fr>
+		<text name="configuration_25"><en>25</en><de>25</de></text><fr>25</fr>
+
+		<!-- Windows -->
+		<text name="configuration_gray"><en>25%</en><de>25%</de></text>
+		<text name="configuration_dark"><en>50%</en><de>50%</de></text>
+		<text name="configuration_darker"><en>75%</en><de>75%</de></text>
+
+	</l10n>	
+	
+    <storeItems>
+        <storeItem xmlFilename="4940.xml"/>
+		<storeItem xmlFilename="L3030G4.xml"/>
+		<storeItem xmlFilename="120ft.xml"/>
+    </storeItems>
+</modDesc>
