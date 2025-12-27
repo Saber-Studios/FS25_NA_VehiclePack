@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="69" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_DashboardLive/shader/minimap.xml"/>
-    <File fileId="65" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JohnDeere_6R_Series/utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
-    <File fileId="63" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JohnDeere_6R_Series/utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
-    <File fileId="64" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JohnDeere_6R_Series/utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
+    <File fileId="69" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="65" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
+    <File fileId="63" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
+    <File fileId="64" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
     <File fileId="76" filename="../shared/starFire7000Black.i3d"/>
     <File fileId="86" filename="../textures/Decals_diffuse_Black_edit.png"/>
     <File fileId="91" filename="../textures/decals_pack.png"/>
