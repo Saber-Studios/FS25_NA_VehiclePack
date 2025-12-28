@@ -57,8 +57,54 @@ Changelog Version 1.0.0.2:
     <iconFilename>icon_series7810.dds</iconFilename>
 
     <multiplayer supported="true"/>
-
+	<l10n>
+        <text name="configuration_cam">
+			<en>Camera (MB-DLC)</en>
+			<de>Kamera (MB-DLC)</de>
+		</text>   
+        <text name="input_AXIS_SCREEN_CAM_1"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_1">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="input_AXIS_SCREEN_CAM_2"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_2">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="configuration_valueNo_MB_DLC">
+            <en>MB-DLC NO</en>	    
+            <de>MB-DLC Nein</de>  
+        </text>
+	</l10n>
     <storeItems>
         <storeItem xmlFilename="series7810.xml"/>
     </storeItems>
+	
+	    <actions>
+    		<action name="AXIS_SCREEN_CAM" axisType="FULL"/>
+            <action name="AXIS_SCREEN_Group" axisType="FULL"/>
+    	</actions>
+    
+    	<inputBinding>
+    		<actionBinding action="AXIS_SCREEN_CAM" >
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_Y" inputComponent="+" axisComponent="+" index="3"/>
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_Y" inputComponent="-" axisComponent="-" index="3"/>
+    			<binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_2+" inputComponent="+" axisComponent="+" />
+                <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_2-" inputComponent="-" axisComponent="-" />
+    		</actionBinding>
+            <actionBinding action="AXIS_SCREEN_Group" >
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_X" inputComponent="+" axisComponent="+" index="3"/>
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_X" inputComponent="-" axisComponent="-" index="3"/>
+    			<binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_1+" inputComponent="+" axisComponent="+" />
+                <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_1-" inputComponent="-" axisComponent="-" />
+    		</actionBinding>
+    	</inputBinding>
+	
 </modDesc>
