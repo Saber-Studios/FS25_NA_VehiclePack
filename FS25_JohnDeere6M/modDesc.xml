@@ -118,10 +118,6 @@ Changelog V1.0.0.1
     <iconFilename>icon_series6M.dds</iconFilename>
 	<multiplayer supported="true" />
 	<l10n>
-		<text name="configuration_decal">
-			<en>Decal</en>
-			<de>Aufkleber</de>
-		</text>
         <text name="configuration_cam">
 			<en>Camera (MB-DLC)</en>
 			<de>Kamera (MB-DLC)</de>
@@ -146,14 +142,6 @@ Changelog V1.0.0.1
             <en>MB-DLC NO</en>	    
             <de>MB-DLC Nein</de>  
         </text>
-        <text name="actionIC_beaconLightsOn"> 
-            <en>IC: Beaconlights on</en> 
-            <de>IC: Rundumleuchten anschalten</de> 
-        </text>
-        <text name="actionIC_beaconLightsOff"> 
-            <en>IC: Beaconlight off</en>
-            <de>IC: Rundumleuchten ausschalten</de>
-        </text>   
 	</l10n>
 	<vehicleTypes>
         <type name="Serie6M" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
