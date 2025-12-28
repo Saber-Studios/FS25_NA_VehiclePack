@@ -60,6 +60,32 @@ Changelog 1.0.0.8:
 	</description>
 	<iconFilename>store/icon_3650.dds</iconFilename>
 	<multiplayer supported="true"/>
+	<l10n>
+        <text name="configuration_cam">
+			<en>Camera (MB-DLC)</en>
+			<de>Kamera (MB-DLC)</de>
+		</text>   
+        <text name="input_AXIS_SCREEN_CAM_1"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_1">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="input_AXIS_SCREEN_CAM_2"> 
+            <en>Switch screen</en>
+            <de>Display Umschalten</de> 
+        </text>
+        <text name="input_AXIS_SCREEN_Group_2">
+            <en>Switch screen</en>	    
+            <de>Display Umschalten</de>  
+        </text>
+        <text name="configuration_valueNo_MB_DLC">
+            <en>MB-DLC NO</en>	    
+            <de>MB-DLC Nein</de>  
+        </text>
+	</l10n>
 	<brands>
 		<brand name="JOHNDEERE" title="John Deere" />
 	</brands>

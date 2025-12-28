@@ -6,33 +6,14 @@
   </Asset>
 
   <Files>
-    <File fileId="57" filename="../FS25_DashboardLive/shader/minimap.xml"/>
-    <File fileId="77" filename="series5MAlpha_diffuse.png"/>
-    <File fileId="78" filename="series5MAlpha_normal.png"/>
-    <File fileId="79" filename="series5MAlpha_vmask.png"/>
-    <File fileId="2" filename="series5MDecals_diffuse.png"/>
-    <File fileId="3" filename="series5MDecals_normal.png"/>
-    <File fileId="87" filename="series5MGrid_diffuse.png"/>
-    <File fileId="89" filename="series5MGrid_vmask.png"/>
-    <File fileId="68" filename="series5MHoses_vmask.png"/>
-    <File fileId="35" filename="series5MInteriorDecals_diffuse.png"/>
-    <File fileId="38" filename="series5MInterior_normal.png"/>
-    <File fileId="39" filename="series5MInterior_vmask.png"/>
-    <File fileId="59" filename="series5MLight_normal.dds"/>
-    <File fileId="60" filename="series5MLight_vmask.png"/>
-    <File fileId="14" filename="series5M_normal.png"/>
-    <File fileId="4" filename="series5M_vmask.png"/>
-    <File fileId="75" filename="series6M_normal.dds"/>
-    <File fileId="76" filename="series6M_vmask.dds"/>
-    <File fileId="52" filename="utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
-    <File fileId="50" filename="utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
-    <File fileId="51" filename="utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
     <File fileId="46" filename="$data/shaders/glowShader.xml"/>
-    <File fileId="71" filename="$data/shaders/mirrorShader.xml"/>
+    <File fileId="62" filename="$data/shaders/mirrorShader.xml"/>
     <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="80" filename="$data/shared/assets/lights/lizard/frontLight17_emissive.dds"/>
-    <File fileId="63" filename="$data/shared/assets/lights/lizard/rearLight05_emissive.dds"/>
-    <File fileId="65" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="66" filename="$data/shared/assets/camera_01_normal.png"/>
+    <File fileId="67" filename="$data/shared/assets/camera_01_vmask.png"/>
+    <File fileId="89" filename="$data/shared/assets/lights/lizard/frontLight17_emissive.dds"/>
+    <File fileId="74" filename="$data/shared/assets/lights/lizard/rearLight05_emissive.dds"/>
+    <File fileId="76" filename="$data/shared/clearPlastic_diffuse.dds"/>
     <File fileId="34" filename="$data/shared/connectionHoses/hosesPipes_vmask.png"/>
     <File fileId="27" filename="$data/shared/default_normal.png"/>
     <File fileId="36" filename="$data/shared/default_specular.dds"/>
@@ -46,21 +27,21 @@
     <File fileId="37" filename="$data/shared/detailLibrary/calibrated/grainSmall_specular.png"/>
     <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
     <File fileId="20" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
-    <File fileId="64" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
-    <File fileId="84" filename="$data/shared/detailLibrary/metallic/glass/glassClear01_specular.png"/>
-    <File fileId="82" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.dds"/>
-    <File fileId="66" filename="$data/shared/detailLibrary/metallic/glass/glassHeadlight_specular.png"/>
-    <File fileId="85" filename="$data/shared/detailLibrary/metallic/rough_specular.png"/>
+    <File fileId="75" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="92" filename="$data/shared/detailLibrary/metallic/glass/glassClear01_specular.png"/>
+    <File fileId="90" filename="$data/shared/detailLibrary/metallic/glass/glassClear03_specular.dds"/>
+    <File fileId="77" filename="$data/shared/detailLibrary/metallic/glass/glassHeadlight_specular.png"/>
+    <File fileId="93" filename="$data/shared/detailLibrary/metallic/rough_specular.png"/>
     <File fileId="8" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
     <File fileId="6" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
     <File fileId="22" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
     <File fileId="21" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
-    <File fileId="92" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_diffuse.png"/>
-    <File fileId="91" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_normal.png"/>
-    <File fileId="90" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_specular.png"/>
-    <File fileId="74" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_diffuse.png"/>
-    <File fileId="73" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png"/>
-    <File fileId="72" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png"/>
+    <File fileId="100" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_diffuse.png"/>
+    <File fileId="99" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_normal.png"/>
+    <File fileId="98" filename="$data/shared/detailLibrary/metallic/steelTreadPlate_specular.png"/>
+    <File fileId="83" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_diffuse.png"/>
+    <File fileId="82" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png"/>
+    <File fileId="81" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png"/>
     <File fileId="42" filename="$data/shared/detailLibrary/nonMetallic/leather/leather1_diffuse.png"/>
     <File fileId="41" filename="$data/shared/detailLibrary/nonMetallic/leather/leather1_normal.png"/>
     <File fileId="40" filename="$data/shared/detailLibrary/nonMetallic/leather/leather1_specular.png"/>
@@ -73,26 +54,70 @@
     <File fileId="23" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png"/>
     <File fileId="26" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
     <File fileId="25" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
-    <File fileId="62" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png"/>
-    <File fileId="61" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png"/>
+    <File fileId="73" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png"/>
+    <File fileId="72" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png"/>
     <File fileId="31" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
-    <File fileId="94" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.dds"/>
+    <File fileId="102" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.dds"/>
     <File fileId="30" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
     <File fileId="29" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
     <File fileId="54" filename="$data/shared/rasterPattern_diffuse.dds"/>
     <File fileId="13" filename="$data/shared/white_diffuse.dds"/>
-    <File fileId="67" filename="$data/shared/window02_diffuse.dds"/>
-    <File fileId="81" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="83" filename="$data/shared/window_vmask.dds"/>
-    <File fileId="88" filename="$data/vehicles/fendt/mt1100/mt1100Grill_normal.png"/>
-    <File fileId="86" filename="$data/vehicles/johnDeere/series6R/series6RLights_emissive.dds"/>
+    <File fileId="78" filename="$data/shared/window02_diffuse.dds"/>
+    <File fileId="68" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="91" filename="$data/shared/window_vmask.dds"/>
+    <File fileId="96" filename="$data/vehicles/fendt/mt1100/mt1100Grill_normal.png"/>
+    <File fileId="94" filename="$data/vehicles/johnDeere/series6R/series6RLights_emissive.dds"/>
     <File fileId="48" filename="$data/vehicles/johnDeere/series6R/series6R_normal.dds"/>
     <File fileId="49" filename="$data/vehicles/johnDeere/series6R/series6R_vmask.dds"/>
     <File fileId="28" filename="$data/vehicles/krone/bigM450/bigM450Lights2_vmask.dds"/>
+    <File fileId="65" filename="$data/vehicles/volvo/shared/display/display_diffuse.png"/>
+    <File fileId="58" filename="$data/vehicles/volvo/shared/display/display_normal.png"/>
+    <File fileId="59" filename="$data/vehicles/volvo/shared/display/display_vmask.png"/>
+    <File fileId="57" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="86" filename="series5MAlpha_diffuse.png"/>
+    <File fileId="87" filename="series5MAlpha_normal.png"/>
+    <File fileId="88" filename="series5MAlpha_vmask.png"/>
+    <File fileId="2" filename="series5MDecals_diffuse.png"/>
+    <File fileId="3" filename="series5MDecals_normal.png"/>
+    <File fileId="95" filename="series5MGrid_diffuse.png"/>
+    <File fileId="97" filename="series5MGrid_vmask.png"/>
+    <File fileId="79" filename="series5MHoses_vmask.png"/>
+    <File fileId="35" filename="series5MInteriorDecals_diffuse.png"/>
+    <File fileId="38" filename="series5MInterior_normal.png"/>
+    <File fileId="39" filename="series5MInterior_vmask.png"/>
+    <File fileId="70" filename="series5MLight_normal.dds"/>
+    <File fileId="71" filename="series5MLight_vmask.png"/>
+    <File fileId="14" filename="series5M_normal.png"/>
+    <File fileId="4" filename="series5M_vmask.png"/>
+    <File fileId="84" filename="series6M_normal.dds"/>
+    <File fileId="85" filename="series6M_vmask.dds"/>
+    <File fileId="52" filename="utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
+    <File fileId="50" filename="utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
+    <File fileId="51" filename="utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
+    <File fileId="64" filename="utils/camera/texturen/display_no_diffuse.dds"/>
+    <File fileId="60" filename="utils/camera/texturen/display_off_diffuse.dds"/>
   </Files>
 
 
   <Materials>
+    <Material name="camera_01_metalPainted_mat" materialId="980" alphaBlending="true" customShaderId="5">
+      <Texture fileId="68"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="camera_01_metalPaintedBlack_mat" materialId="981" customShaderId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="66"/>
+      <Glossmap fileId="67"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
     <Material name="cci1200_display_mat" materialId="5" customShaderId="5">
       <Texture fileId="52"/>
       <Normalmap fileId="27"/>
@@ -135,6 +160,15 @@
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="22"/>
     </Material>
+    <Material name="display_plasticPaintedBlack_mat" materialId="844" customShaderId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="58"/>
+      <Glossmap fileId="59"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="26"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
     <Material name="hosesPipes_mat" materialId="10" customShaderId="5">
       <Texture fileId="13"/>
       <Normalmap fileId="27"/>
@@ -145,18 +179,18 @@
       <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
     </Material>
     <Material name="justFarling_Grid_metalPaintedBlackMat" materialId="11" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
-      <Texture fileId="87"/>
-      <Normalmap fileId="88"/>
-      <Glossmap fileId="89"/>
+      <Texture fileId="95"/>
+      <Normalmap fileId="96"/>
+      <Glossmap fileId="97"/>
       <Custommap name="detailSpecular" fileId="32"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="33"/>
       <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
     </Material>
     <Material name="justFarming_Alpha_metalPaintedBlackMat" materialId="12" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
-      <Texture fileId="77"/>
-      <Normalmap fileId="78"/>
-      <Glossmap fileId="79"/>
+      <Texture fileId="86"/>
+      <Normalmap fileId="87"/>
+      <Glossmap fileId="88"/>
       <Custommap name="detailSpecular" fileId="32"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="33"/>
@@ -226,7 +260,7 @@
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="4"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
     </Material>
@@ -245,52 +279,52 @@
     </Material>
     <Material name="justFarming_Fan_plasticGraniteGrainSmallBlackMat" materialId="21" customShaderId="5">
       <Texture fileId="13"/>
-      <Normalmap fileId="75"/>
-      <Glossmap fileId="76"/>
+      <Normalmap fileId="84"/>
+      <Glossmap fileId="85"/>
       <Custommap name="detailSpecular" fileId="23"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="24"/>
       <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
     </Material>
     <Material name="justFarming_Front_glassHeadlightMat" materialId="22" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="81"/>
-      <Normalmap fileId="60"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="82"/>
+      <Texture fileId="68"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="90"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="80"/>
+      <Custommap name="lightsIntensity" fileId="89"/>
       <CustomParameter name="smoothnessScale" value="0.94"/>
       <CustomParameter name="metalnessScale" value="0.4"/>
     </Material>
     <Material name="justFarming_Front_glassHeadlightMat" materialId="23" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="81"/>
-      <Normalmap fileId="60"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="82"/>
+      <Texture fileId="68"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="90"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="86"/>
+      <Custommap name="lightsIntensity" fileId="94"/>
       <CustomParameter name="smoothnessScale" value="0.94"/>
       <CustomParameter name="metalnessScale" value="0.4"/>
     </Material>
     <Material name="justFarming_FrontLight17_chromeMat" materialId="24" customShaderId="5" customShaderVariation="staticLight">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="80"/>
+      <Custommap name="lightsIntensity" fileId="89"/>
     </Material>
     <Material name="justFarming_FrontLight_chromeMat" materialId="25" customShaderId="5" customShaderVariation="staticLight">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="86"/>
+      <Custommap name="lightsIntensity" fileId="94"/>
     </Material>
     <Material name="justFarming_FrontLoader_rubberBlackHosesMat" materialId="26" customShaderId="5">
       <Texture fileId="13"/>
@@ -303,10 +337,10 @@
       <CustomParameter name="porosity" value="0.5"/>
     </Material>
     <Material name="justFarming_FrontVisuel_glassHeadlightMat" materialId="27" customShaderId="5">
-      <Texture fileId="81"/>
-      <Normalmap fileId="60"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="82"/>
+      <Texture fileId="68"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="90"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
       <CustomParameter name="smoothnessScale" value="0.94"/>
@@ -325,7 +359,7 @@
       <Texture fileId="13"/>
       <Normalmap fileId="38"/>
       <Glossmap fileId="39"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
     </Material>
@@ -341,9 +375,9 @@
       <Texture fileId="13"/>
       <Normalmap fileId="38"/>
       <Glossmap fileId="39"/>
-      <Custommap name="detailSpecular" fileId="72"/>
-      <Custommap name="detailNormal" fileId="73"/>
-      <Custommap name="detailDiffuse" fileId="74"/>
+      <Custommap name="detailSpecular" fileId="81"/>
+      <Custommap name="detailNormal" fileId="82"/>
+      <Custommap name="detailDiffuse" fileId="83"/>
       <CustomParameter name="colorScale" value="0.386 0.296 0.227"/>
       <CustomParameter name="porosity" value="1"/>
     </Material>
@@ -569,56 +603,56 @@
     </Material>
     <Material name="justFarming_RearLights_Orange" materialId="57" customShaderId="5" customShaderVariation="staticLight">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="63"/>
+      <Custommap name="lightsIntensity" fileId="74"/>
       <CustomParameter name="colorScale" value="0.799 0.156 0.008"/>
     </Material>
     <Material name="justFarming_RearLights_OrangeGlassHeadlightMat" materialId="58" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="67"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="66"/>
+      <Texture fileId="78"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="77"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="63"/>
+      <Custommap name="lightsIntensity" fileId="74"/>
       <CustomParameter name="colorScale" value="0.499 0.156 0.008"/>
       <CustomParameter name="smoothnessScale" value="0.94"/>
       <CustomParameter name="metalnessScale" value="0.4"/>
     </Material>
     <Material name="justFarming_RearLights_Red01" materialId="59" customShaderId="5" customShaderVariation="staticLight">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="61"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="72"/>
       <Custommap name="detailNormal" fileId="7"/>
-      <Custommap name="detailDiffuse" fileId="62"/>
-      <Custommap name="lightsIntensity" fileId="63"/>
+      <Custommap name="detailDiffuse" fileId="73"/>
+      <Custommap name="lightsIntensity" fileId="74"/>
       <CustomParameter name="colorScale" value="0.634 0 0"/>
       <CustomParameter name="clearCoatIntensity" value="0.25"/>
       <CustomParameter name="clearCoatSmoothness" value="1"/>
     </Material>
     <Material name="justFarming_RearLights_Red02" materialId="60" customShaderId="5" customShaderVariation="staticLight">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="64"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="75"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="63"/>
+      <Custommap name="lightsIntensity" fileId="74"/>
       <CustomParameter name="colorScale" value="1 0 0"/>
     </Material>
     <Material name="justFarming_RearLights_RedglassHeadlightMat" materialId="61" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
-      <Texture fileId="65"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
-      <Custommap name="detailSpecular" fileId="66"/>
+      <Texture fileId="76"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
+      <Custommap name="detailSpecular" fileId="77"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
-      <Custommap name="lightsIntensity" fileId="63"/>
+      <Custommap name="lightsIntensity" fileId="74"/>
       <CustomParameter name="colorScale" value="0.1 0 0"/>
       <CustomParameter name="smoothnessScale" value="0.94"/>
       <CustomParameter name="metalnessScale" value="0.4"/>
@@ -636,7 +670,7 @@
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="4"/>
-      <Custommap name="detailSpecular" fileId="85"/>
+      <Custommap name="detailSpecular" fileId="93"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
       <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
@@ -663,14 +697,14 @@
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="4"/>
-      <Custommap name="detailSpecular" fileId="90"/>
-      <Custommap name="detailNormal" fileId="91"/>
-      <Custommap name="detailDiffuse" fileId="92"/>
+      <Custommap name="detailSpecular" fileId="98"/>
+      <Custommap name="detailNormal" fileId="99"/>
+      <Custommap name="detailDiffuse" fileId="100"/>
     </Material>
     <Material name="justFarming_VisuelLights_plasticGraniteGrainSmallBlackMat" materialId="67" customShaderId="5">
       <Texture fileId="13"/>
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
+      <Normalmap fileId="70"/>
+      <Glossmap fileId="71"/>
       <Custommap name="detailSpecular" fileId="23"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="24"/>
@@ -678,17 +712,17 @@
     </Material>
     <Material name="justFarming_VisuelLights_silverScratchedMat" materialId="68" customShaderId="5">
       <Texture fileId="13"/>
-      <Normalmap fileId="75"/>
-      <Glossmap fileId="60"/>
+      <Normalmap fileId="84"/>
+      <Glossmap fileId="71"/>
       <Custommap name="detailSpecular" fileId="21"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="22"/>
     </Material>
     <Material name="justFarming_Window_glassClear01Mat" materialId="69" alphaBlending="true" customShaderId="5">
-      <Texture fileId="81"/>
+      <Texture fileId="68"/>
       <Normalmap fileId="27"/>
-      <Glossmap fileId="83"/>
-      <Custommap name="detailSpecular" fileId="84"/>
+      <Glossmap fileId="91"/>
+      <Custommap name="detailSpecular" fileId="92"/>
       <Custommap name="detailNormal" fileId="7"/>
       <Custommap name="detailDiffuse" fileId="20"/>
     </Material>
@@ -712,8 +746,74 @@
     </Material>
     <Material name="miniMap" materialId="73" diffuseColor="1 1 1 1" customShaderId="57">
     </Material>
-    <Material name="mirror_mat" materialId="74" diffuseColor="0 0 0 1" specularColor="0 1 1" customShaderId="71">
+    <Material name="mirror_mat" materialId="74" diffuseColor="0 0 0 1" specularColor="0 1 1" customShaderId="62">
       <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="845" customShaderId="5">
+      <Texture fileId="64"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="53"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="846" customShaderId="5">
+      <Texture fileId="60"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="53"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="847" diffuseColor="0 0 0 1" specularColor="0.501961 1 0" customShaderId="62" customShaderVariation="useCustomReflectionCamera">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="848" diffuseColor="1 1 1 1" specularColor="0.501961 1 0" customShaderId="62" customShaderVariation="useCustomReflectionCamera">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+    <Material name="Screen_metalPaintedBlack_mat" materialId="849" diffuseColor="1 1 1 1" customShaderId="5">
+      <Normalmap fileId="58"/>
+      <Glossmap fileId="59"/>
+      <Custommap name="detailSpecular" fileId="32"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="33"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_plasticPaintedBlack2_mat" materialId="850" customShaderId="5">
+      <Texture fileId="65"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="53"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="26"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_plasticPaintedBlack2_mat" materialId="851" customShaderId="5">
+      <Texture fileId="60"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="53"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="26"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_plasticPaintedBlack2_mat" materialId="852" diffuseColor="1 1 1 1" customShaderId="5">
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="53"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="26"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_rubberBlack_mat" materialId="853" customShaderId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="58"/>
+      <Glossmap fileId="59"/>
+      <Custommap name="detailSpecular" fileId="29"/>
+      <Custommap name="detailNormal" fileId="30"/>
+      <Custommap name="detailDiffuse" fileId="31"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+      <CustomParameter name="porosity" value="0.5"/>
     </Material>
     <Material name="series5MDecals2_mat3" materialId="75" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
       <Texture fileId="2"/>
@@ -767,7 +867,7 @@
     <Material name="series5MHoses_mat" materialId="81" customShaderId="5">
       <Texture fileId="13"/>
       <Normalmap fileId="27"/>
-      <Glossmap fileId="68"/>
+      <Glossmap fileId="79"/>
       <Custommap name="detailSpecular" fileId="29"/>
       <Custommap name="detailNormal" fileId="30"/>
       <Custommap name="detailDiffuse" fileId="31"/>
@@ -779,7 +879,7 @@
       <Glossmap fileId="39"/>
       <Custommap name="detailSpecular" fileId="29"/>
       <Custommap name="detailNormal" fileId="30"/>
-      <Custommap name="detailDiffuse" fileId="94"/>
+      <Custommap name="detailDiffuse" fileId="102"/>
       <CustomParameter name="colorScale" value="0.15 0.11 0.08"/>
       <CustomParameter name="porosity" value="0.5"/>
     </Material>
@@ -1191,13 +1291,69 @@
                 </Shape>
               </Shape>
             </Shape>
+            <Shape name="Display" translation="0.336627 2.32067 -0.420851" scale="0.717576 0.717576 0.717576" shapeId="76" nodeId="866" castsShadows="true" receiveShadows="true" materialIds="853,844,849">
+              <Shape name="off" translation="-1.16527e-05 -0.0150198 0.037" shapeId="77" clipDistance="50" nodeId="867" castsShadows="true" receiveShadows="true" materialIds="851,846"/>
+              <TransformGroup name="Monitor_off" translation="-0.275155 -0.219034 0.37417" nodeId="868">
+                <TransformGroup name="transform" translation="-0.428889 0.0353017 0.210107" visibility="false" nodeId="869">
+                  <TransformGroup name="transform" translation="5.96046e-08 0 0.001" visibility="false" nodeId="870">
+                    <TransformGroup name="transform" translation="-5.96046e-08 0 -0.00100005" nodeId="871">
+                      <Shape name="Cam10" translation="5.96046e-08 -2.38419e-07 0.00300008" shapeId="78" nodeId="872" castsShadows="true" receiveShadows="true" materialIds="848"/>
+                      <Camera name="camera" translation="-0.467456 1.07752 1.10439" nodeId="873" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.428889 0.0353017 0.210107" visibility="false" nodeId="874">
+                  <TransformGroup name="transform" translation="0 0 0.001" visibility="false" nodeId="875">
+                    <TransformGroup name="transform" nodeId="876">
+                      <Shape name="Cam2" shapeId="79" nodeId="877" castsShadows="true" receiveShadows="true" materialIds="847"/>
+                      <Camera name="camera_fink" translation="-0.218675 -0.0840944 -2.83347" nodeId="878" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.428889 0.0353017 0.210107" visibility="false" nodeId="879">
+                  <TransformGroup name="transform" translation="5.96046e-08 0 0.001" visibility="false" nodeId="880">
+                    <TransformGroup name="transform" nodeId="881">
+                      <Shape name="Cam2" translation="-8.9407e-08 0 -5.96046e-08" shapeId="80" nodeId="882" castsShadows="true" receiveShadows="true" materialIds="847"/>
+                      <Camera name="camera" translation="-0.467456 1.07752 1.10339" nodeId="883" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.428889 0.0353017 0.210107" visibility="false" nodeId="884">
+                  <TransformGroup name="transform" translation="0 0 0.001" visibility="false" nodeId="885">
+                    <TransformGroup name="transform" nodeId="886">
+                      <Shape name="Cam20" shapeId="81" nodeId="887" castsShadows="true" receiveShadows="true" materialIds="848"/>
+                      <Camera name="camera" translation="-0.467456 1.07752 1.10339" nodeId="888" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.428889 0.0353017 0.210107" visibility="false" nodeId="889">
+                  <TransformGroup name="transform" translation="5.96046e-08 0 0.001" visibility="false" nodeId="890">
+                    <TransformGroup name="transform" nodeId="891">
+                      <Shape name="Cam10" translation="2.98023e-08 0 -0.00100011" shapeId="82" nodeId="892" castsShadows="true" receiveShadows="true" materialIds="848"/>
+                      <Camera name="camera" translation="-0.467456 1.07752 1.10339" nodeId="893" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape name="no_cam" translation="-0.429519 0.0346522 0.211304" shapeId="83" clipDistance="50" nodeId="894" castsShadows="true" receiveShadows="true" materialIds="852,845"/>
+              </TransformGroup>
+              <Shape name="Frame" translation="-1.19209e-06 -0.0150164 0.0394997" shapeId="84" nodeId="895" castsShadows="true" receiveShadows="true" materialIds="850"/>
+              <TransformGroup name="IC_CAM" translation="0.00958374 -0.118657 -0.0331915" rotation="165.544 15.4183 -4.98531" nodeId="896"/>
+              <TransformGroup name="IC_Group" translation="-0.0877922 -0.110163 -0.00623435" rotation="165.544 15.4183 -4.98531" nodeId="897"/>
+            </Shape>
+            <Shape name="camera_01" translation="-0.057979 2.41245 -1.70833" rotation="90 -0 0" shapeId="85" clipDistance="300" nodeId="986" castsShadows="true" receiveShadows="true" materialIds="981">
+              <Shape name="rotPart" translation="-0.000144 -0.067945 0.000328" rotation="52.2317 -0 0" shapeId="86" clipDistance="300" nodeId="987" castsShadows="true" receiveShadows="true" materialIds="981">
+                <Shape name="glass" translation="-1.2e-05 0.000163 0.030086" shapeId="87" clipDistance="75" nodeId="988" castsShadows="true" receiveShadows="true" materialIds="980">
+                  <Camera name="camera" translation="0.000156745 -0.0164936 -0.0634297" rotation="-180 9.59103e-06 -1.86693e-05" nodeId="989" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+                </Shape>
+              </Shape>
+            </Shape>
           </TransformGroup>
           <TransformGroup name="levers" translation="0.114159 -1.00355 0.113111" nodeId="560">
             <TransformGroup name="leverGearSelectorRot" translation="-0.343562 1.22135 -0.830073" rotation="-78.9033 -10.6198 0" nodeId="561">
               <TransformGroup name="leverGearSelector" translation="0 0 -0.128" nodeId="562">
                 <TransformGroup name="playerRightHandTargetGearSelector" translation="-0.007244 -0.014047 0.417822" rotation="72.0738 -19.339 76.2531" nodeId="563"/>
-                <Shape name="leverGearSelector" shapeId="76" nodeId="564" castsShadows="true" receiveShadows="true" materialIds="40,37,35">
-                  <Shape name="leverGearSelector_decals" shapeId="77" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="46"/>
+                <Shape name="leverGearSelector" shapeId="88" nodeId="564" castsShadows="true" receiveShadows="true" materialIds="40,37,35">
+                  <Shape name="leverGearSelector_decals" shapeId="89" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="46"/>
                 </Shape>
                 <TransformGroup name="MoveBone" rotation="2.50448e-06 -0 0" nodeId="566"/>
               </TransformGroup>
@@ -1205,34 +1361,34 @@
             <TransformGroup name="leverGroupSelectorRot" translation="-0.332423 1.17409 -1.01049" rotation="130.532 -81.9053 146.885" nodeId="567">
               <TransformGroup name="leverGroupSelector" translation="0 0 -0.066" rotation="0 2.56132e-06 -4.69575e-06" nodeId="568">
                 <TransformGroup name="MoveBone" translation="-1.49012e-08 1.49012e-08 0" rotation="3.04157e-06 -0 -8.53774e-07" nodeId="569"/>
-                <Shape name="leverGroupSelector" shapeId="78" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="35,40,37"/>
+                <Shape name="leverGroupSelector" shapeId="90" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="35,40,37"/>
                 <TransformGroup name="playerRightHandTargetGearSelector" translation="0.0200227 -0.000496765 0.273853" rotation="90.6038 10.4626 -172.465" nodeId="571"/>
               </TransformGroup>
             </TransformGroup>
             <TransformGroup name="frontLoaderStick" translation="-0.464 1.198 -0.643" nodeId="572">
               <TransformGroup name="frontLoaderJoystickRot" translation="0.001068 0.252785 0.066617" rotation="-84.0745 56.0251 2.3523" nodeId="573">
                 <TransformGroup name="frontLoaderJoystick" nodeId="574">
-                  <Shape name="frontLoaderJoystick_decals" translation="0.083284 -0.052531 0.268235" rotation="0 0 -18.3151" shapeId="79" clipDistance="50" nodeId="575" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="84"/>
+                  <Shape name="frontLoaderJoystick_decals" translation="0.083284 -0.052531 0.268235" rotation="0 0 -18.3151" shapeId="91" clipDistance="50" nodeId="575" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="84"/>
                   <TransformGroup name="playerRightHandTargetFrontLoaderSelector" translation="0.090515 -0.043907 0.23362" rotation="-3.57462 -14.5963 7.7937" nodeId="576"/>
-                  <Shape name="frontLoaderJoystick" shapeId="80" nodeId="577" castsShadows="true" receiveShadows="true" materialIds="37,35,40,38,43"/>
+                  <Shape name="frontLoaderJoystick" shapeId="92" nodeId="577" castsShadows="true" receiveShadows="true" materialIds="37,35,40,38,43"/>
                   <TransformGroup name="MoveBone" rotation="2.50448e-06 -0 0" nodeId="578"/>
                 </TransformGroup>
               </TransformGroup>
-              <Shape name="frontLoaderStick" shapeId="81" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="33,45,35"/>
+              <Shape name="frontLoaderStick" shapeId="93" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="33,45,35"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="pedals" translation="0.114 -1.004 0.113" nodeId="580">
             <TransformGroup name="gasPedal" translation="-0.114 1.004 -0.113" nodeId="581">
               <TransformGroup name="playerRightFootTargetGasRef" translation="-0.27879 0.0114479 -0.255654" rotation="-10.5555 -9.90442 1.83579" nodeId="582"/>
-              <Shape name="gasPedal" shapeId="82" nodeId="583" castsShadows="true" receiveShadows="true" materialIds="40,35"/>
+              <Shape name="gasPedal" shapeId="94" nodeId="583" castsShadows="true" receiveShadows="true" materialIds="40,35"/>
             </TransformGroup>
             <TransformGroup name="brakePedal" translation="-0.157 1.208 -0.209" nodeId="584">
               <TransformGroup name="playerRightFootTargetBrake" translation="-0.041791 -0.225018 -0.224113" rotation="-40.3656 0 0" nodeId="585"/>
-              <Shape name="brakePedal" shapeId="83" nodeId="586" castsShadows="true" receiveShadows="true" materialIds="35,47"/>
+              <Shape name="brakePedal" shapeId="95" nodeId="586" castsShadows="true" receiveShadows="true" materialIds="35,47"/>
             </TransformGroup>
             <TransformGroup name="pedalClutch" translation="0.151 1.228 -0.217" nodeId="587">
               <TransformGroup name="playerLeftFootTargetClutch" translation="0.014833 -0.250345 -0.31994" rotation="-19.9753 -0 0" nodeId="588"/>
-              <Shape name="pedalClutch" shapeId="84" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="35,47"/>
+              <Shape name="pedalClutch" shapeId="96" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="35,47"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="characterTargets" translation="0.114159 -1.00355 0.113111" nodeId="590">
@@ -1244,30 +1400,30 @@
           <TransformGroup name="configurations" translation="0.114 -1.004 0.113" nodeId="595">
             <TransformGroup name="fendersNarrow" visibility="false" nodeId="596">
               <TransformGroup name="staticLights" translation="0 -1.599 0.03" nodeId="597">
-                <Shape name="rearLightFendersNarrowInnerPart_static1" shapeId="85" nodeId="598" castsShadows="true" receiveShadows="true" materialIds="59,60"/>
-                <Shape name="rearLightFendersNarrowGlass_static" shapeId="86" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="61"/>
-                <Shape name="rearLightFendersNarrowInnerPart2_static" shapeId="87" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="57"/>
-                <Shape name="rearLightFendersNarrowGlass2_static" shapeId="88" nodeId="601" castsShadows="true" receiveShadows="true" materialIds="58"/>
+                <Shape name="rearLightFendersNarrowInnerPart_static1" shapeId="97" nodeId="598" castsShadows="true" receiveShadows="true" materialIds="59,60"/>
+                <Shape name="rearLightFendersNarrowGlass_static" shapeId="98" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="61"/>
+                <Shape name="rearLightFendersNarrowInnerPart2_static" shapeId="99" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="57"/>
+                <Shape name="rearLightFendersNarrowGlass2_static" shapeId="100" nodeId="601" castsShadows="true" receiveShadows="true" materialIds="58"/>
               </TransformGroup>
-              <Shape name="fendersNarrowPart1" shapeId="89" nodeId="602" castsShadows="true" receiveShadows="true" materialIds="54,81,17"/>
+              <Shape name="fendersNarrowPart1" shapeId="101" nodeId="602" castsShadows="true" receiveShadows="true" materialIds="54,81,17"/>
             </TransformGroup>
             <TransformGroup name="fendersWide" nodeId="603">
               <TransformGroup name="staticLights" translation="0 -1.599 0.03" nodeId="604">
-                <Shape name="rearLightFendersNarrowInnerPart3_static1" shapeId="90" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="59,60"/>
-                <Shape name="rearLightFendersNarrowGlass_static" shapeId="91" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="61"/>
-                <Shape name="rearLightFendersNarrowInnerPart4_static" shapeId="92" nodeId="607" castsShadows="true" receiveShadows="true" materialIds="57"/>
-                <Shape name="rearLightFendersNarrowGlass4_static" shapeId="93" nodeId="608" castsShadows="true" receiveShadows="true" materialIds="58"/>
+                <Shape name="rearLightFendersNarrowInnerPart3_static1" shapeId="102" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="59,60"/>
+                <Shape name="rearLightFendersNarrowGlass_static" shapeId="103" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="61"/>
+                <Shape name="rearLightFendersNarrowInnerPart4_static" shapeId="104" nodeId="607" castsShadows="true" receiveShadows="true" materialIds="57"/>
+                <Shape name="rearLightFendersNarrowGlass4_static" shapeId="105" nodeId="608" castsShadows="true" receiveShadows="true" materialIds="58"/>
               </TransformGroup>
-              <Shape name="fendersWidePart" shapeId="94" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="54,17,81"/>
+              <Shape name="fendersWidePart" shapeId="106" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="54,17,81"/>
             </TransformGroup>
             <TransformGroup name="topWindow" translation="0 2.471 -0.584" nodeId="610">
-              <Shape name="interiorMirror01" translation="-0.262142 -0.225761 0.149845" rotation="-101.005 -10.8613 0" shapeId="95" clipDistance="300" nodeId="611" castsShadows="true" receiveShadows="true" materialIds="74">
+              <Shape name="interiorMirror01" translation="-0.262142 -0.225761 0.149845" rotation="-101.005 -10.8613 0" shapeId="107" clipDistance="300" nodeId="611" castsShadows="true" receiveShadows="true" materialIds="74">
                 <TransformGroup name="interiorMirror01Ref" translation="-1.54513 9.47006 0.776643" rotation="100.813 -2.06143 10.6662" nodeId="612"/>
               </Shape>
             </TransformGroup>
             <TransformGroup name="box" translation="0.425 0.99 0.216" nodeId="613">
-              <Shape name="box" shapeId="96" nodeId="614" castsShadows="true" receiveShadows="true" materialIds="16,54,64,48"/>
-              <Shape name="box_decals" translation="0.039806 0.191227 -0.065552" shapeId="97" clipDistance="50" nodeId="615" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="80"/>
+              <Shape name="box" shapeId="108" nodeId="614" castsShadows="true" receiveShadows="true" materialIds="16,54,64,48"/>
+              <Shape name="box_decals" translation="0.039806 0.191227 -0.065552" shapeId="109" clipDistance="50" nodeId="615" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="80"/>
             </TransformGroup>
             <TransformGroup name="cropSensor" translation="-0.114159 1.00355 -0.113111" nodeId="616">
               <TransformGroup name="cropSensorTop" translation="0.105842 1.45335 -0.140789" nodeId="617"/>
@@ -1276,18 +1432,18 @@
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="visuals" translation="0.114 -1.004 0.113" nodeId="620">
-            <Shape name="bottomLinkChainLeft_decals" translation="0.530118 0.716558 -1.47283" rotation="26.3622 206.227 0" shapeId="98" clipDistance="50" nodeId="621" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="78">
+            <Shape name="bottomLinkChainLeft_decals" translation="0.530118 0.716558 -1.47283" rotation="26.3622 206.227 0" shapeId="110" clipDistance="50" nodeId="621" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="78">
               <TransformGroup name="bottomLinkSpringLeftRef" translation="-0.004095 0.003113 0.19899" nodeId="622"/>
             </Shape>
-            <Shape name="bottomLinkChainRight_decals" translation="-0.530118 0.716558 -1.47283" rotation="26.3622 153.773 0" shapeId="99" clipDistance="50" nodeId="623" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="78">
+            <Shape name="bottomLinkChainRight_decals" translation="-0.530118 0.716558 -1.47283" rotation="26.3622 153.773 0" shapeId="111" clipDistance="50" nodeId="623" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="78">
               <TransformGroup name="bottomLinkSpringRightRef" translation="0.004095 0.003113 0.19899" nodeId="624"/>
             </Shape>
           </TransformGroup>
           <TransformGroup name="visuel" translation="0.114 0.338 0.083" nodeId="625">
-            <Shape name="cabin" shapeId="100" nodeId="626" castsShadows="true" receiveShadows="true" materialIds="48,54,49,64,62,17"/>
-            <Shape name="toitParts" shapeId="101" nodeId="627" castsShadows="true" receiveShadows="true" materialIds="48,62"/>
-            <Shape name="toitPartsInterior" shapeId="102" nodeId="628" castsShadows="true" receiveShadows="true" materialIds="29,35,37,31,45"/>
-            <Shape name="cabinParts" shapeId="103" nodeId="629" castsShadows="true" receiveShadows="true" materialIds="48"/>
+            <Shape name="cabin" shapeId="112" nodeId="626" castsShadows="true" receiveShadows="true" materialIds="48,54,49,64,62,17"/>
+            <Shape name="toitParts" shapeId="113" nodeId="627" castsShadows="true" receiveShadows="true" materialIds="48,62"/>
+            <Shape name="toitPartsInterior" shapeId="114" nodeId="628" castsShadows="true" receiveShadows="true" materialIds="29,35,37,31,45"/>
+            <Shape name="cabinParts" shapeId="115" nodeId="629" castsShadows="true" receiveShadows="true" materialIds="48"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="ai" translation="0 -1.34123 0.030179" nodeId="630">
@@ -1296,70 +1452,70 @@
         <TransformGroup name="hydraulics" translation="0 -1.34123 0.030179" nodeId="632">
           <TransformGroup name="mainArmHydraulic" translation="0 0.500657 -1.60538" rotation="97.5437 0 180" clipDistance="300" nodeId="633">
             <TransformGroup name="mainArmHydraulicPunch" translation="0 0 0.59006" clipDistance="300" nodeId="634">
-              <Shape name="mainArmHydraulicPunch" translation="0 0 -0.59" shapeId="104" nodeId="635" castsShadows="true" receiveShadows="true" materialIds="13,18"/>
+              <Shape name="mainArmHydraulicPunch" translation="0 0 -0.59" shapeId="116" nodeId="635" castsShadows="true" receiveShadows="true" materialIds="13,18"/>
             </TransformGroup>
-            <Shape name="mainArmHydraulic" shapeId="105" nodeId="636" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="mainArmHydraulic" shapeId="117" nodeId="636" castsShadows="true" receiveShadows="true" materialIds="13"/>
           </TransformGroup>
           <TransformGroup name="mainArm" translation="0 1.00478 -1.53994" rotation="113.26 0 180" clipDistance="300" nodeId="637">
             <TransformGroup name="mainArmPart" translation="-0 0 0.357924" rotation="137.151 0 0" clipDistance="300" nodeId="638">
-              <Shape name="mainArmPart_decals" translation="-0.000414 0.025735 0.187498" rotation="70.4113 180 0" shapeId="106" clipDistance="50" nodeId="639" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
-              <Shape name="mainArmPart" shapeId="107" nodeId="640" castsShadows="true" receiveShadows="true" materialIds="16,64,13"/>
+              <Shape name="mainArmPart_decals" translation="-0.000414 0.025735 0.187498" rotation="70.4113 180 0" shapeId="118" clipDistance="50" nodeId="639" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
+              <Shape name="mainArmPart" shapeId="119" nodeId="640" castsShadows="true" receiveShadows="true" materialIds="16,64,13"/>
             </TransformGroup>
             <TransformGroup name="mainArmHydraulicRef" translation="-0 -0.099365 0.130688" rotation="-15.7164 0 0" nodeId="641"/>
-            <Shape name="mainArm" shapeId="108" nodeId="642" castsShadows="true" receiveShadows="true" materialIds="16,64"/>
+            <Shape name="mainArm" shapeId="120" nodeId="642" castsShadows="true" receiveShadows="true" materialIds="16,64"/>
           </TransformGroup>
           <TransformGroup name="mainArmRefFrame" translation="0 1.00478 -1.53994" rotation="113.26 0 180" nodeId="643"/>
           <TransformGroup name="frontArmHydraulic" translation="-0 0.709245 1.65136" rotation="90.8018 -2e-06 -2e-06" clipDistance="300" nodeId="644">
             <TransformGroup name="frontArmHydraulicPunch" translation="0 0 0.370577" clipDistance="300" nodeId="645">
-              <Shape name="frontArmHydraulicPunch" shapeId="109" nodeId="646" castsShadows="true" receiveShadows="true" materialIds="18,13"/>
+              <Shape name="frontArmHydraulicPunch" shapeId="121" nodeId="646" castsShadows="true" receiveShadows="true" materialIds="18,13"/>
             </TransformGroup>
-            <Shape name="frontArmHydraulic" shapeId="110" nodeId="647" castsShadows="true" receiveShadows="true" materialIds="13,64"/>
+            <Shape name="frontArmHydraulic" shapeId="122" nodeId="647" castsShadows="true" receiveShadows="true" materialIds="13,64"/>
           </TransformGroup>
           <TransformGroup name="bottomLink02" translation="0 0.351679 -1.55699" rotation="147.718 0 180" clipDistance="300" nodeId="648">
-            <Shape name="bottomLinkSpringLeft" translation="-0.384671 0.057853 0.286209" rotation="117.055 -23.2191 -164.275" shapeId="111" clipDistance="300" nodeId="649" castsShadows="true" receiveShadows="true" materialIds="64"/>
-            <Shape name="bottomLinkSpringRight" translation="0.384671 0.057853 0.286209" rotation="117.055 23.2191 164.275" shapeId="112" clipDistance="300" nodeId="650" castsShadows="true" receiveShadows="true" materialIds="64"/>
-            <Shape name="bottomLink02" shapeId="113" nodeId="651" castsShadows="true" receiveShadows="true" materialIds="13,64,18"/>
+            <Shape name="bottomLinkSpringLeft" translation="-0.384671 0.057853 0.286209" rotation="117.055 -23.2191 -164.275" shapeId="123" clipDistance="300" nodeId="649" castsShadows="true" receiveShadows="true" materialIds="64"/>
+            <Shape name="bottomLinkSpringRight" translation="0.384671 0.057853 0.286209" rotation="117.055 23.2191 164.275" shapeId="124" clipDistance="300" nodeId="650" castsShadows="true" receiveShadows="true" materialIds="64"/>
+            <Shape name="bottomLink02" shapeId="125" nodeId="651" castsShadows="true" receiveShadows="true" materialIds="13,64,18"/>
             <TransformGroup name="bottomLinkChainLeft_decalsRef" translation="-0.384671 0.057853 0.286209" rotation="61.5169 21.9388 14.7413" nodeId="652"/>
             <TransformGroup name="bottomLinkChainRight_decalsRef" translation="0.384671 0.057853 0.286209" rotation="61.5169 -21.9388 -14.7413" nodeId="653"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="visuel" translation="0 -1.599 0.03" nodeId="654">
           <TransformGroup name="fanEngineRot" translation="-0.00163437 1.21271 0.864299" nodeId="655">
-            <Shape name="fanEngine" shapeId="114" nodeId="656" castsShadows="true" receiveShadows="true" materialIds="21"/>
+            <Shape name="fanEngine" shapeId="126" nodeId="656" castsShadows="true" receiveShadows="true" materialIds="21"/>
           </TransformGroup>
-          <Shape name="series5M_vis" shapeId="115" nodeId="657" castsShadows="true" receiveShadows="true" materialIds="16,55,13,64,65,50,51,48,56,62,54,15"/>
-          <Shape name="grids" shapeId="116" clipDistance="100" nodeId="658" castsShadows="true" receiveShadows="true" materialIds="12"/>
-          <Shape name="exterior_decals" shapeId="117" clipDistance="50" nodeId="659" castsShadows="true" receiveShadows="true" materialIds="70,71"/>
-          <Shape name="interior_vis" shapeId="118" nodeId="660" castsShadows="true" receiveShadows="true" materialIds="37,32,45,34,43,35,47,33,36,31"/>
-          <Shape name="workLightsVisuel" shapeId="119" nodeId="661" castsShadows="true" receiveShadows="true" materialIds="68,67"/>
-          <Shape name="workLightsBackInnerPart_static" shapeId="120" nodeId="662" castsShadows="true" receiveShadows="true" materialIds="24"/>
-          <Shape name="workLightsBackInnerPart2_static" shapeId="121" nodeId="663" castsShadows="true" receiveShadows="true" materialIds="57"/>
-          <Shape name="workLightsBackInnerGlassPart2_static" shapeId="122" nodeId="664" castsShadows="true" receiveShadows="true" materialIds="58"/>
-          <Shape name="workLights2" shapeId="123" nodeId="665" castsShadows="true" receiveShadows="true" materialIds="24"/>
-          <Shape name="workLights2Glass" shapeId="124" nodeId="666" castsShadows="true" receiveShadows="true" materialIds="22"/>
-          <Shape name="licensePlateLight_static" shapeId="125" nodeId="667" castsShadows="true" receiveShadows="true" materialIds="24"/>
-          <Shape name="licensePlateLightVisuel" shapeId="126" nodeId="668" castsShadows="true" receiveShadows="true" materialIds="27,67"/>
-          <Shape name="manettePtoSupport" shapeId="127" nodeId="669" castsShadows="true" receiveShadows="true" materialIds="35"/>
-          <Shape name="hoses1" shapeId="128" nodeId="670" castsShadows="true" receiveShadows="true" materialIds="28"/>
-          <Shape name="hoses" rotation="90 -0 0" shapeId="129" nodeId="671" castsShadows="true" receiveShadows="true" materialIds="28"/>
-          <Shape name="windowsCabine" shapeId="130" clipDistance="50" nodeId="672" castsShadows="true" receiveShadows="true" materialIds="69"/>
-          <Shape name="windowsCabine2" shapeId="131" clipDistance="50" nodeId="673" castsShadows="true" receiveShadows="true" materialIds="69"/>
-          <Shape name="cabin_decals" shapeId="132" clipDistance="30" nodeId="674" castsShadows="true" receiveShadows="true" materialIds="20"/>
-          <Shape name="interior_decals" shapeId="133" clipDistance="30" nodeId="675" castsShadows="true" receiveShadows="true" materialIds="30"/>
-          <Shape name="fanEngineVisuel" rotation="90 -0 0" shapeId="134" nodeId="676" castsShadows="true" receiveShadows="true" materialIds="21"/>
+          <Shape name="series5M_vis" shapeId="127" nodeId="657" castsShadows="true" receiveShadows="true" materialIds="16,55,13,64,65,50,51,48,56,62,54,15"/>
+          <Shape name="grids" shapeId="128" clipDistance="100" nodeId="658" castsShadows="true" receiveShadows="true" materialIds="12"/>
+          <Shape name="exterior_decals" shapeId="129" clipDistance="50" nodeId="659" castsShadows="true" receiveShadows="true" materialIds="70,71"/>
+          <Shape name="interior_vis" shapeId="130" nodeId="660" castsShadows="true" receiveShadows="true" materialIds="37,32,45,34,43,35,47,33,36,31"/>
+          <Shape name="workLightsVisuel" shapeId="131" nodeId="661" castsShadows="true" receiveShadows="true" materialIds="68,67"/>
+          <Shape name="workLightsBackInnerPart_static" shapeId="132" nodeId="662" castsShadows="true" receiveShadows="true" materialIds="24"/>
+          <Shape name="workLightsBackInnerPart2_static" shapeId="133" nodeId="663" castsShadows="true" receiveShadows="true" materialIds="57"/>
+          <Shape name="workLightsBackInnerGlassPart2_static" shapeId="134" nodeId="664" castsShadows="true" receiveShadows="true" materialIds="58"/>
+          <Shape name="workLights2" shapeId="135" nodeId="665" castsShadows="true" receiveShadows="true" materialIds="24"/>
+          <Shape name="workLights2Glass" shapeId="136" nodeId="666" castsShadows="true" receiveShadows="true" materialIds="22"/>
+          <Shape name="licensePlateLight_static" shapeId="137" nodeId="667" castsShadows="true" receiveShadows="true" materialIds="24"/>
+          <Shape name="licensePlateLightVisuel" shapeId="138" nodeId="668" castsShadows="true" receiveShadows="true" materialIds="27,67"/>
+          <Shape name="manettePtoSupport" shapeId="139" nodeId="669" castsShadows="true" receiveShadows="true" materialIds="35"/>
+          <Shape name="hoses1" shapeId="140" nodeId="670" castsShadows="true" receiveShadows="true" materialIds="28"/>
+          <Shape name="hoses" rotation="90 -0 0" shapeId="141" nodeId="671" castsShadows="true" receiveShadows="true" materialIds="28"/>
+          <Shape name="windowsCabine" shapeId="142" clipDistance="50" nodeId="672" castsShadows="true" receiveShadows="true" materialIds="69"/>
+          <Shape name="windowsCabine2" shapeId="143" clipDistance="50" nodeId="673" castsShadows="true" receiveShadows="true" materialIds="69"/>
+          <Shape name="cabin_decals" shapeId="144" clipDistance="30" nodeId="674" castsShadows="true" receiveShadows="true" materialIds="20"/>
+          <Shape name="interior_decals" shapeId="145" clipDistance="30" nodeId="675" castsShadows="true" receiveShadows="true" materialIds="30"/>
+          <Shape name="fanEngineVisuel" rotation="90 -0 0" shapeId="146" nodeId="676" castsShadows="true" receiveShadows="true" materialIds="21"/>
         </TransformGroup>
         <TransformGroup name="licensePlateBack" translation="-5.38618e-08 1.015 -1.7073" rotation="0 180 0" nodeId="677"/>
         <TransformGroup name="animations" translation="0 -1.599 0.03" nodeId="678">
-          <Shape name="capot" translation="0 1.85261 -0.0285247" shapeId="135" nodeId="679" castsShadows="true" receiveShadows="true" materialIds="17,63,18,54">
+          <Shape name="capot" translation="0 1.85261 -0.0285247" shapeId="147" nodeId="679" castsShadows="true" receiveShadows="true" materialIds="17,63,18,54">
             <TransformGroup name="capotPos1" translation="0 -1.853 0.029" nodeId="680">
               <TransformGroup name="capotPos2" translation="0 1.599 -0.03" nodeId="681">
                 <TransformGroup name="capotPos3" translation="0 -1.341 0.03" nodeId="682">
                   <TransformGroup name="rien" nodeId="683"/>
                   <TransformGroup name="exteriorDecals" translation="0 -0.46213 0" nodeId="684">
-                    <Shape name="motorConfiguration_decal_5090" translation="-0 1.74387 1.03335" shapeId="136" clipDistance="50" nodeId="685" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
-                    <Shape name="motorConfiguration_decal_5100" translation="-0 1.74387 1.03335" shapeId="137" clipDistance="50" nodeId="686" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
-                    <Shape name="motorConfiguration_decal_5115" translation="-2.1e-05 1.74394 1.03243" shapeId="138" clipDistance="50" nodeId="687" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
-                    <Shape name="motorConfiguration_decal_5125" translation="-0 1.74387 1.03335" shapeId="139" clipDistance="50" nodeId="688" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
+                    <Shape name="motorConfiguration_decal_5090" translation="-0 1.74387 1.03335" shapeId="148" clipDistance="50" nodeId="685" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
+                    <Shape name="motorConfiguration_decal_5100" translation="-0 1.74387 1.03335" shapeId="149" clipDistance="50" nodeId="686" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
+                    <Shape name="motorConfiguration_decal_5115" translation="-2.1e-05 1.74394 1.03243" shapeId="150" clipDistance="50" nodeId="687" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
+                    <Shape name="motorConfiguration_decal_5125" translation="-0 1.74387 1.03335" shapeId="151" clipDistance="50" nodeId="688" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="76"/>
                   </TransformGroup>
                 </TransformGroup>
                 <TransformGroup name="lights" translation="0 -1.34123 0.030179" nodeId="689">
@@ -1375,39 +1531,39 @@
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
-              <Shape name="gridsCapot" shapeId="140" clipDistance="100" nodeId="697" castsShadows="true" receiveShadows="true" materialIds="12"/>
-              <Shape name="exterior_decals_Capot" shapeId="141" clipDistance="100" nodeId="698" castsShadows="true" receiveShadows="true" materialIds="70"/>
-              <Shape name="capotLights" rotation="90 -0 0" shapeId="142" nodeId="699" castsShadows="true" receiveShadows="true" materialIds="25"/>
-              <Shape name="capotLights_Glass" rotation="90 -0 0" shapeId="143" nodeId="700" castsShadows="true" receiveShadows="true" materialIds="23"/>
-              <Shape name="gridHood" shapeId="144" nodeId="701" castsShadows="true" receiveShadows="true" materialIds="11"/>
+              <Shape name="gridsCapot" shapeId="152" clipDistance="100" nodeId="697" castsShadows="true" receiveShadows="true" materialIds="12"/>
+              <Shape name="exterior_decals_Capot" shapeId="153" clipDistance="100" nodeId="698" castsShadows="true" receiveShadows="true" materialIds="70"/>
+              <Shape name="capotLights" rotation="90 -0 0" shapeId="154" nodeId="699" castsShadows="true" receiveShadows="true" materialIds="25"/>
+              <Shape name="capotLights_Glass" rotation="90 -0 0" shapeId="155" nodeId="700" castsShadows="true" receiveShadows="true" materialIds="23"/>
+              <Shape name="gridHood" shapeId="156" nodeId="701" castsShadows="true" receiveShadows="true" materialIds="11"/>
             </TransformGroup>
             <TransformGroup name="out" translation="0.26227 -0.7902 1.54067" rotation="9.40243 78.8241 -3.64256" nodeId="702"/>
           </Shape>
-          <Shape name="ptoArriere" translation="0.000320047 0.837955 -1.74909" shapeId="145" nodeId="703" castsShadows="true" receiveShadows="true" materialIds="66"/>
-          <Shape name="ptoAvant" translation="0.000320052 0.748281 1.59097" shapeId="146" nodeId="704" castsShadows="true" receiveShadows="true" materialIds="66"/>
+          <Shape name="ptoArriere" translation="0.000320047 0.837955 -1.74909" shapeId="157" nodeId="703" castsShadows="true" receiveShadows="true" materialIds="66"/>
+          <Shape name="ptoAvant" translation="0.000320052 0.748281 1.59097" shapeId="158" nodeId="704" castsShadows="true" receiveShadows="true" materialIds="66"/>
           <TransformGroup name="manetteRelevageArriere01Rot" translation="-0.632362 1.77676 -0.82849" rotation="29.4856 -22.53 -26.3404" nodeId="705">
-            <Shape name="manetteRelevageArriere01" rotation="0 -0 8.53774e-07" shapeId="147" nodeId="706" castsShadows="true" receiveShadows="true" materialIds="32,35,44">
+            <Shape name="manetteRelevageArriere01" rotation="0 -0 8.53774e-07" shapeId="159" nodeId="706" castsShadows="true" receiveShadows="true" materialIds="32,35,44">
               <TransformGroup name="playerRightHandTarget_MRAV" translation="-0.0333649 0.188535 -0.0557797" rotation="-99.6743 74.1037 -71.0361" nodeId="707"/>
             </Shape>
           </TransformGroup>
           <TransformGroup name="manetteRelevageArriereRot" translation="-0.592154 1.75615 -0.81001" rotation="29.4856 -22.53 -26.3404" nodeId="708">
-            <Shape name="manetteRelevageArriere" rotation="0 -0 8.53774e-07" shapeId="148" nodeId="709" castsShadows="true" receiveShadows="true" materialIds="35,44,39">
+            <Shape name="manetteRelevageArriere" rotation="0 -0 8.53774e-07" shapeId="160" nodeId="709" castsShadows="true" receiveShadows="true" materialIds="35,44,39">
               <TransformGroup name="playerRightHandTarget_MRARR" translation="-0.000905638 0.194839 -0.0577814" rotation="-81.8517 58.8699 -78.9998" nodeId="710"/>
             </Shape>
           </TransformGroup>
           <TransformGroup name="manetteRelevageRot" translation="-0.548569 1.74372 -0.786374" rotation="29.4856 -22.53 -26.3404" nodeId="711">
-            <Shape name="manetteRelevage" shapeId="149" nodeId="712" castsShadows="true" receiveShadows="true" materialIds="42,35,44"/>
+            <Shape name="manetteRelevage" shapeId="161" nodeId="712" castsShadows="true" receiveShadows="true" materialIds="42,35,44"/>
           </TransformGroup>
           <TransformGroup name="manetteCruiseControlRot" translation="-0.478235 1.75405 -0.926436" rotation="21.2742 -23.1454 -11.5163" nodeId="713">
-            <Shape name="manetteCruiseControl" rotation="-39 -0 0" shapeId="150" nodeId="714" castsShadows="true" receiveShadows="true" materialIds="40"/>
+            <Shape name="manetteCruiseControl" rotation="-39 -0 0" shapeId="162" nodeId="714" castsShadows="true" receiveShadows="true" materialIds="40"/>
           </TransformGroup>
           <TransformGroup name="manettePtoAVRot" translation="-0.618976 1.82544 -1.13695" rotation="0 30.2281 0" nodeId="715">
-            <Shape name="manettePtoAV" rotation="8.53774e-06 -1.02453e-05 0" shapeId="151" nodeId="716" castsShadows="true" receiveShadows="true" materialIds="35,43"/>
+            <Shape name="manettePtoAV" rotation="8.53774e-06 -1.02453e-05 0" shapeId="163" nodeId="716" castsShadows="true" receiveShadows="true" materialIds="35,43"/>
           </TransformGroup>
           <TransformGroup name="lunetteArriereRot" translation="7.45058e-09 2.549 -1.496" nodeId="717">
             <TransformGroup name="lunetteArriere" nodeId="718">
               <TransformGroup name="lunetteArriereManetteRot" translation="0.000125244 -0.716191 -0.089099" rotation="8.26804 -0 0" nodeId="719">
-                <Shape name="lunetteArriereManette" rotation="-5.76297e-06 -9.39151e-06 0" shapeId="152" nodeId="720" castsShadows="true" receiveShadows="true" materialIds="37"/>
+                <Shape name="lunetteArriereManette" rotation="-5.76297e-06 -9.39151e-06 0" shapeId="164" nodeId="720" castsShadows="true" receiveShadows="true" materialIds="37"/>
               </TransformGroup>
               <TransformGroup name="RefGauche" translation="-0.363857 -0.261098 0.0338465" rotation="-76.8881 -0.482657 0.494769" nodeId="721"/>
               <TransformGroup name="RefDroite" translation="0.364 -0.261098 0.0338465" rotation="-76.8881 0.483 -0.495" nodeId="722"/>
@@ -1417,7 +1573,7 @@
                     <TransformGroup name="pos4" translation="0.114 -1.004 0.113" nodeId="726">
                       <TransformGroup name="wiperBackRot" translation="0.208814 2.1328 -1.51827" rotation="170.149 -0.06999 180" nodeId="727">
                         <TransformGroup name="wiperBack" clipDistance="300" nodeId="728">
-                          <Shape name="wiperBack" shapeId="153" nodeId="729" castsShadows="true" receiveShadows="true" materialIds="54,62"/>
+                          <Shape name="wiperBack" shapeId="165" nodeId="729" castsShadows="true" receiveShadows="true" materialIds="54,62"/>
                           <TransformGroup name="MoveBone" translation="0.161 0 0.044" rotation="2.50448e-06 -0 0" nodeId="730"/>
                         </TransformGroup>
                       </TransformGroup>
@@ -1425,52 +1581,52 @@
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
-              <Shape name="lunetteArriere" shapeId="154" nodeId="731" castsShadows="true" receiveShadows="true" materialIds="54,62,48"/>
-              <Shape name="lunetteArriere_INT" shapeId="155" nodeId="732" castsShadows="true" receiveShadows="true" materialIds="37,35,45"/>
-              <Shape name="windowsBack" shapeId="156" nodeId="733" castsShadows="true" receiveShadows="true" materialIds="69"/>
+              <Shape name="lunetteArriere" shapeId="166" nodeId="731" castsShadows="true" receiveShadows="true" materialIds="54,62,48"/>
+              <Shape name="lunetteArriere_INT" shapeId="167" nodeId="732" castsShadows="true" receiveShadows="true" materialIds="37,35,45"/>
+              <Shape name="windowsBack" shapeId="168" nodeId="733" castsShadows="true" receiveShadows="true" materialIds="69"/>
               <TransformGroup name="Bone" rotation="2.50448e-06 -0 0" nodeId="734"/>
               <TransformGroup name="in" translation="-0.277748 -0.367172 0.0165055" rotation="0 -0 -26.3415" nodeId="735"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="lunetteArriereCylinderGaucheRot" translation="-0.359423 1.9099 -1.55507" rotation="13.7856 -0.161593 0.658575" nodeId="736">
             <TransformGroup name="lunetteArriereCylinderGaucheRot2" rotation="-90 -0 -2.66804e-08" nodeId="737">
-              <Shape name="lunetteArriereCylinderGauche" shapeId="157" nodeId="738" castsShadows="true" receiveShadows="true" materialIds="35,29">
+              <Shape name="lunetteArriereCylinderGauche" shapeId="169" nodeId="738" castsShadows="true" receiveShadows="true" materialIds="35,29">
                 <TransformGroup name="lunetteArriereCylinderGauchePunich" translation="-3.54042e-10 -1.10504e-08 0.39" nodeId="739">
-                  <Shape name="lunetteArriereCylinderGauchePunich" shapeId="158" nodeId="740" castsShadows="true" receiveShadows="true" materialIds="35"/>
+                  <Shape name="lunetteArriereCylinderGauchePunich" shapeId="170" nodeId="740" castsShadows="true" receiveShadows="true" materialIds="35"/>
                 </TransformGroup>
               </Shape>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="lunetteArriereCylinderDroiteRot" translation="0.359 1.9099 -1.55507" rotation="13.7856 0.162 -0.659" nodeId="741">
             <TransformGroup name="lunetteArriereCylinderDroiteRot2" rotation="-90 -0 -2.66804e-08" nodeId="742">
-              <Shape name="lunetteArriereCylinderDroite" shapeId="157" nodeId="743" castsShadows="true" receiveShadows="true" materialIds="35,29">
+              <Shape name="lunetteArriereCylinderDroite" shapeId="169" nodeId="743" castsShadows="true" receiveShadows="true" materialIds="35,29">
                 <TransformGroup name="lunetteArriereCylinderDroitePunich" translation="-3.54042e-10 -1.10504e-08 0.39" nodeId="744">
-                  <Shape name="lunetteArriereCylinderDroitePunich" shapeId="158" nodeId="745" castsShadows="true" receiveShadows="true" materialIds="35"/>
+                  <Shape name="lunetteArriereCylinderDroitePunich" shapeId="170" nodeId="745" castsShadows="true" receiveShadows="true" materialIds="35"/>
                 </TransformGroup>
               </Shape>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="toitRot" translation="-3.72529e-09 2.71739 -0.320037" nodeId="746">
-            <Shape name="toitManettePart01" translation="2.38005e-09 -0.0311444 -0.437897" shapeId="159" nodeId="747" castsShadows="true" receiveShadows="true" materialIds="33,32"/>
-            <Shape name="toit" shapeId="160" nodeId="748" castsShadows="true" receiveShadows="true" materialIds="48,62,54"/>
-            <Shape name="toitPartsExt" shapeId="161" nodeId="749" castsShadows="true" receiveShadows="true" materialIds="35"/>
-            <Shape name="topWindow" shapeId="162" clipDistance="50" nodeId="750" castsShadows="true" receiveShadows="true" materialIds="69"/>
+            <Shape name="toitManettePart01" translation="2.38005e-09 -0.0311444 -0.437897" shapeId="171" nodeId="747" castsShadows="true" receiveShadows="true" materialIds="33,32"/>
+            <Shape name="toit" shapeId="172" nodeId="748" castsShadows="true" receiveShadows="true" materialIds="48,62,54"/>
+            <Shape name="toitPartsExt" shapeId="173" nodeId="749" castsShadows="true" receiveShadows="true" materialIds="35"/>
+            <Shape name="topWindow" shapeId="174" clipDistance="50" nodeId="750" castsShadows="true" receiveShadows="true" materialIds="69"/>
           </TransformGroup>
           <TransformGroup name="porteGaucheRot" translation="0.839603 1.79695 -0.902668" rotation="-0.677323 0.111025 9.1644" nodeId="751">
             <TransformGroup name="porteGauche" rotation="-2.33854e-06 0 -0.000106871" nodeId="752">
               <TransformGroup name="ref_PG" translation="-0.123924 -0.0350647 0.0848172" rotation="-180 16.8402 180" nodeId="753"/>
-              <Shape name="porteGauche" shapeId="163" nodeId="754" castsShadows="true" receiveShadows="true" materialIds="54,62,64,48"/>
-              <Shape name="porteGauche_INT" shapeId="164" nodeId="755" castsShadows="true" receiveShadows="true" materialIds="47,45,37,42,35"/>
-              <Shape name="windowsDoorLeft" shapeId="165" clipDistance="50" nodeId="756" castsShadows="true" receiveShadows="true" materialIds="69"/>
+              <Shape name="porteGauche" shapeId="175" nodeId="754" castsShadows="true" receiveShadows="true" materialIds="54,62,64,48"/>
+              <Shape name="porteGauche_INT" shapeId="176" nodeId="755" castsShadows="true" receiveShadows="true" materialIds="47,45,37,42,35"/>
+              <Shape name="windowsDoorLeft" shapeId="177" clipDistance="50" nodeId="756" castsShadows="true" receiveShadows="true" materialIds="69"/>
               <TransformGroup name="in" translation="-0.24428 -0.0728219 0.579146" rotation="180 -80.2094 180" nodeId="757"/>
               <TransformGroup name="out" translation="-0.15822 -0.147984 0.672073" rotation="2.86324e-06 90 -8.39319" nodeId="758"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="porteGaucheCylinderRot" translation="0.707732 1.62365 -0.668784" rotation="-50.6224 0.0313186 -7.49133" nodeId="759">
             <TransformGroup name="porteGaucheCylinderRot2" rotation="-90 -2.15778e-05 1.03053e-06" nodeId="760">
-              <Shape name="porteGaucheCylinder" shapeId="166" nodeId="761" castsShadows="true" receiveShadows="true" materialIds="35,29">
+              <Shape name="porteGaucheCylinder" shapeId="178" nodeId="761" castsShadows="true" receiveShadows="true" materialIds="35,29">
                 <TransformGroup name="porteGaucheCylinderPunich" translation="4.52709e-09 1.33368e-08 0.191" nodeId="762">
-                  <Shape name="porteGaucheCylinderPunich" shapeId="167" nodeId="763" castsShadows="true" receiveShadows="true" materialIds="35"/>
+                  <Shape name="porteGaucheCylinderPunich" shapeId="179" nodeId="763" castsShadows="true" receiveShadows="true" materialIds="35"/>
                 </TransformGroup>
               </Shape>
             </TransformGroup>
@@ -1478,43 +1634,43 @@
           <TransformGroup name="porteDroiteRot" translation="-0.839603 1.79695 -0.902668" rotation="-0.677323 -0.111025 -9.16441" nodeId="764">
             <TransformGroup name="porteDroite" rotation="-2.42437e-05 0 0.000329012" nodeId="765">
               <TransformGroup name="ref_PG" translation="0.124 -0.0350647 0.0848172" rotation="180 -16.84 180" nodeId="766"/>
-              <Shape name="porteDroite" shapeId="168" nodeId="767" castsShadows="true" receiveShadows="true" materialIds="48,62,64,54"/>
-              <Shape name="porteDroite_INT" shapeId="169" nodeId="768" castsShadows="true" receiveShadows="true" materialIds="35,45,37,42,47"/>
-              <Shape name="windowsDoorRight" shapeId="170" clipDistance="50" nodeId="769" castsShadows="true" receiveShadows="true" materialIds="69"/>
+              <Shape name="porteDroite" shapeId="180" nodeId="767" castsShadows="true" receiveShadows="true" materialIds="48,62,64,54"/>
+              <Shape name="porteDroite_INT" shapeId="181" nodeId="768" castsShadows="true" receiveShadows="true" materialIds="35,45,37,42,47"/>
+              <Shape name="windowsDoorRight" shapeId="182" clipDistance="50" nodeId="769" castsShadows="true" receiveShadows="true" materialIds="69"/>
               <TransformGroup name="in" translation="0.244 -0.0728219 0.579146" rotation="180 80.209 180" nodeId="770"/>
               <TransformGroup name="out" translation="0.158 -0.147984 0.672073" rotation="2.86324e-06 -90 8.393" nodeId="771"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="porteDroiteCylinderRot" translation="-0.708 1.62365 -0.668784" rotation="-50.6224 -0.031 7.491" nodeId="772">
             <TransformGroup name="porteDroiteCylinderRot2" rotation="-90 -2.15778e-05 1.03053e-06" nodeId="773">
-              <Shape name="porteDroiteCylinder" shapeId="166" nodeId="774" castsShadows="true" receiveShadows="true" materialIds="35,29">
+              <Shape name="porteDroiteCylinder" shapeId="178" nodeId="774" castsShadows="true" receiveShadows="true" materialIds="35,29">
                 <TransformGroup name="porteDroiteCylinderPunich" translation="4.52709e-09 1.33368e-08 0.191" nodeId="775">
-                  <Shape name="porteDroiteCylinderPunich" shapeId="171" nodeId="776" castsShadows="true" receiveShadows="true" materialIds="35"/>
+                  <Shape name="porteDroiteCylinderPunich" shapeId="183" nodeId="776" castsShadows="true" receiveShadows="true" materialIds="35"/>
                 </TransformGroup>
               </Shape>
             </TransformGroup>
           </TransformGroup>
-          <Shape name="freinAmain" translation="0.329392 1.60868 -1.31639" rotation="-30 -0 0" shapeId="172" nodeId="777" castsShadows="true" receiveShadows="true" materialIds="35,40">
+          <Shape name="freinAmain" translation="0.329392 1.60868 -1.31639" rotation="-30 -0 0" shapeId="184" nodeId="777" castsShadows="true" receiveShadows="true" materialIds="35,40">
             <TransformGroup name="playerLeftHandTargetFreinAmain" translation="0.0327334 0.0124573 0.438503" rotation="90.0001 -39.5341 -90.0001" nodeId="778"/>
           </Shape>
           <TransformGroup name="retroviseursDRot" translation="-0.681 2.488 -0.147" rotation="-19.584 -1.431 -4.014" nodeId="779">
             <TransformGroup name="retroviseursD" rotation="0.000162679 0 0.000111842" nodeId="780">
-              <Shape name="retroviseursD" shapeId="173" nodeId="781" castsShadows="true" receiveShadows="true" materialIds="54,48,18"/>
-              <Shape name="mirrorRightUpper" translation="-0.36862 -0.206571 0.159718" rotation="-71.1368 -18.9211 -3.05702" shapeId="174" clipDistance="300" nodeId="782" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="retroviseursD" shapeId="185" nodeId="781" castsShadows="true" receiveShadows="true" materialIds="54,48,18"/>
+              <Shape name="mirrorRightUpper" translation="-0.36862 -0.206571 0.159718" rotation="-71.1368 -18.9211 -3.05702" shapeId="186" clipDistance="300" nodeId="782" castsShadows="true" receiveShadows="true" materialIds="74"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="retroviseursGRot" translation="0.681 2.488 -0.147" rotation="-19.584 1.43404 4.0126" nodeId="783">
             <TransformGroup name="retroviseursG" nodeId="784">
-              <Shape name="retroviseursG" shapeId="175" nodeId="785" castsShadows="true" receiveShadows="true" materialIds="18,54,48"/>
-              <Shape name="mirrorLeftUpper" translation="0.368401 -0.209771 0.158583" rotation="-70.6966 18.921 3.057" shapeId="176" clipDistance="300" nodeId="786" castsShadows="true" receiveShadows="true" materialIds="74"/>
+              <Shape name="retroviseursG" shapeId="187" nodeId="785" castsShadows="true" receiveShadows="true" materialIds="18,54,48"/>
+              <Shape name="mirrorLeftUpper" translation="0.368401 -0.209771 0.158583" rotation="-70.6966 18.921 3.057" shapeId="188" clipDistance="300" nodeId="786" castsShadows="true" receiveShadows="true" materialIds="74"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="ic_Toit_Out" translation="0 2.63684 -0.438497" rotation="152.698 -0 0" nodeId="787"/>
         </TransformGroup>
         <TransformGroup name="fillUnit" translation="0 -1.599 0" nodeId="788">
-          <Shape name="exactFillRootNodeFuel" translation="0.712296 1.17094 0.028005" shapeId="177" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="789" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72"/>
+          <Shape name="exactFillRootNodeFuel" translation="0.712296 1.17094 0.028005" shapeId="189" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="789" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72"/>
         </TransformGroup>
-        <Shape name="interactiveTrigger" translation="0 -1.67428 0" scale="1 1 1.13863" shapeId="178" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="790" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="86"/>
+        <Shape name="interactiveTrigger" translation="0 -1.67428 0" scale="1 1 1.13863" shapeId="190" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="790" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="86"/>
         <TransformGroup name="frontLoaderJoystickBone" rotation="2.50448e-06 -0 0" nodeId="791"/>
         <TransformGroup name="VolantBone" rotation="2.50448e-06 -0 0" nodeId="792"/>
         <TransformGroup name="rubberPartsLeverGearSelectorBone" rotation="2.50448e-06 -0 0" nodeId="793"/>
@@ -1522,29 +1678,29 @@
         <TransformGroup name="rubberPartsSeatBone" rotation="2.50448e-06 -0 0" nodeId="795"/>
       </TransformGroup>
       <TransformGroup name="collisions" translation="0 0.258 0" nodeId="796">
-        <Shape name="colPart" translation="0 1.6618 -0.872102" shapeId="179" visibility="false" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="797" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72"/>
+        <Shape name="colPart" translation="0 1.6618 -0.872102" shapeId="191" visibility="false" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="797" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72"/>
       </TransformGroup>
       <TransformGroup name="skinnedMeshes" translation="0 0.258 0" nodeId="798">
-        <Shape name="rubberPartsFrontloader" shapeId="180" nodeId="799" castsShadows="true" receiveShadows="true" skinBindNodeIds="791 578" materialIds="82"/>
-        <Shape name="rubberPartsVolant" shapeId="181" nodeId="800" castsShadows="true" receiveShadows="true" skinBindNodeIds="792 450" materialIds="82"/>
-        <Shape name="rubberPartsDirectionStick" shapeId="182" nodeId="801" castsShadows="true" receiveShadows="true" skinBindNodeIds="473 460" materialIds="82"/>
-        <Shape name="rubberPartsTurnLightStick" shapeId="183" nodeId="802" castsShadows="true" receiveShadows="true" skinBindNodeIds="474 472" materialIds="82"/>
-        <Shape name="rubberPartsLeverGearSelector" shapeId="184" nodeId="803" castsShadows="true" receiveShadows="true" skinBindNodeIds="793 566" materialIds="82"/>
-        <Shape name="rubberPartsLeverGroupSelector" shapeId="185" nodeId="804" castsShadows="true" receiveShadows="true" skinBindNodeIds="794 569" materialIds="82"/>
-        <Shape name="rubberPartsSeat" shapeId="186" nodeId="805" castsShadows="true" receiveShadows="true" skinBindNodeIds="795 436" materialIds="82"/>
-        <Shape name="hoses1WiperBack" shapeId="187" nodeId="806" castsShadows="true" receiveShadows="true" skinBindNodeIds="734 730" materialIds="28"/>
+        <Shape name="rubberPartsFrontloader" shapeId="192" nodeId="799" castsShadows="true" receiveShadows="true" skinBindNodeIds="791 578" materialIds="82"/>
+        <Shape name="rubberPartsVolant" shapeId="193" nodeId="800" castsShadows="true" receiveShadows="true" skinBindNodeIds="792 450" materialIds="82"/>
+        <Shape name="rubberPartsDirectionStick" shapeId="194" nodeId="801" castsShadows="true" receiveShadows="true" skinBindNodeIds="473 460" materialIds="82"/>
+        <Shape name="rubberPartsTurnLightStick" shapeId="195" nodeId="802" castsShadows="true" receiveShadows="true" skinBindNodeIds="474 472" materialIds="82"/>
+        <Shape name="rubberPartsLeverGearSelector" shapeId="196" nodeId="803" castsShadows="true" receiveShadows="true" skinBindNodeIds="793 566" materialIds="82"/>
+        <Shape name="rubberPartsLeverGroupSelector" shapeId="197" nodeId="804" castsShadows="true" receiveShadows="true" skinBindNodeIds="794 569" materialIds="82"/>
+        <Shape name="rubberPartsSeat" shapeId="198" nodeId="805" castsShadows="true" receiveShadows="true" skinBindNodeIds="795 436" materialIds="82"/>
+        <Shape name="hoses1WiperBack" shapeId="199" nodeId="806" castsShadows="true" receiveShadows="true" skinBindNodeIds="734 730" materialIds="28"/>
       </TransformGroup>
     </Shape>
-    <Shape name="series5M_axis_component2" translation="0 0.618542 0.957074" shapeId="188" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="807" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72">
+    <Shape name="series5M_axis_component2" translation="0 0.618542 0.957074" shapeId="200" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="807" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="72">
       <TransformGroup name="axis" translation="0 0.009 -0.022" nodeId="808">
         <TransformGroup name="ptoPart01" translation="0.685 0 0.034" nodeId="809">
-          <Shape name="ptoPart01" shapeId="189" nodeId="810" castsShadows="true" receiveShadows="true" materialIds="16"/>
+          <Shape name="ptoPart01" shapeId="201" nodeId="810" castsShadows="true" receiveShadows="true" materialIds="16"/>
         </TransformGroup>
         <TransformGroup name="ptoPart02" translation="-0.685 0 0.034" nodeId="811">
-          <Shape name="ptoPart02" shapeId="190" nodeId="812" castsShadows="true" receiveShadows="true" materialIds="16"/>
+          <Shape name="ptoPart02" shapeId="202" nodeId="812" castsShadows="true" receiveShadows="true" materialIds="16"/>
         </TransformGroup>
-        <Shape name="axis_decals" translation="0.051088 -0.021749 0.006462" shapeId="191" clipDistance="50" nodeId="813" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
-        <Shape name="axis" shapeId="192" nodeId="814" castsShadows="true" receiveShadows="true" materialIds="16"/>
+        <Shape name="axis_decals" translation="0.051088 -0.021749 0.006462" shapeId="203" clipDistance="50" nodeId="813" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
+        <Shape name="axis" shapeId="204" nodeId="814" castsShadows="true" receiveShadows="true" materialIds="16"/>
       </TransformGroup>
       <TransformGroup name="axisFrontLeftRot" translation="0.682848 -0.09678 0.016662" rotation="-4.42308 0.831 7.15827" nodeId="815">
         <TransformGroup name="axisFrontLeft" rotation="-0 2e-06 0" clipDistance="300" nodeId="816">
@@ -1553,15 +1709,15 @@
           </TransformGroup>
           <TransformGroup name="fenderLeftRot" translation="0.007325 0.286445 0.003668" rotation="-179.216 -54.1017 179.051" nodeId="819">
             <TransformGroup name="fenderLeft" translation="0 -0.011 0" nodeId="820">
-              <Shape name="fenderLeft_decals" translation="-0.280681 0.296052 0.023215" rotation="-90 0 0" shapeId="193" clipDistance="50" nodeId="821" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="79"/>
-              <Shape name="fenderLeft" shapeId="194" nodeId="822" castsShadows="true" receiveShadows="true" materialIds="48,62,13,54,64"/>
+              <Shape name="fenderLeft_decals" translation="-0.280681 0.296052 0.023215" rotation="-90 0 0" shapeId="205" clipDistance="50" nodeId="821" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="79"/>
+              <Shape name="fenderLeft" shapeId="206" nodeId="822" castsShadows="true" receiveShadows="true" materialIds="48,62,13,54,64"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="steeringBarLeft" translation="-0.022 0.228 -0.139" rotation="42.349 -82.701 -45.01" nodeId="823">
-            <Shape name="steeringBarLeft" rotation="0.625908 2.55446 0.0979432" shapeId="195" nodeId="824" castsShadows="true" receiveShadows="true" materialIds="13,62"/>
+            <Shape name="steeringBarLeft" rotation="0.625908 2.55446 0.0979432" shapeId="207" nodeId="824" castsShadows="true" receiveShadows="true" materialIds="13,62"/>
           </TransformGroup>
-          <Shape name="axisFrontLeft_decals" translation="0.036862 0.100038 0.004018" rotation="4.49213 -0.271323 -7.201" shapeId="196" clipDistance="50" nodeId="825" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
-          <Shape name="axisFrontLeft" shapeId="197" nodeId="826" castsShadows="true" receiveShadows="true" materialIds="16,64,14"/>
+          <Shape name="axisFrontLeft_decals" translation="0.036862 0.100038 0.004018" rotation="4.49213 -0.271323 -7.201" shapeId="208" clipDistance="50" nodeId="825" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
+          <Shape name="axisFrontLeft" shapeId="209" nodeId="826" castsShadows="true" receiveShadows="true" materialIds="16,64,14"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="axisFrontRightRot" translation="-0.682848 -0.09678 0.016662" rotation="-4.42308 -0.830951 -7.15827" nodeId="827">
@@ -1571,24 +1727,24 @@
           </TransformGroup>
           <TransformGroup name="fenderRightRot" translation="-0.007325 0.286445 0.003668" rotation="0.709952 134.548 2.60197" nodeId="831">
             <TransformGroup name="fenderRight" nodeId="832">
-              <Shape name="fenderRight_decals" translation="0.220647 0.262014 0.166452" rotation="-90 0 0" shapeId="198" clipDistance="50" nodeId="833" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="79"/>
-              <Shape name="fenderRight" shapeId="199" nodeId="834" castsShadows="true" receiveShadows="true" materialIds="48,62,13,54,64"/>
+              <Shape name="fenderRight_decals" translation="0.220647 0.262014 0.166452" rotation="-90 0 0" shapeId="210" clipDistance="50" nodeId="833" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="79"/>
+              <Shape name="fenderRight" shapeId="211" nodeId="834" castsShadows="true" receiveShadows="true" materialIds="48,62,13,54,64"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="steeringBarRight" translation="0.022 0.228 -0.139" rotation="42.349 82.701 45.01" nodeId="835">
-            <Shape name="steeringBarRight" rotation="5.31715 -2.21588 -0.0806922" shapeId="200" nodeId="836" castsShadows="true" receiveShadows="true" materialIds="13,62"/>
+            <Shape name="steeringBarRight" rotation="5.31715 -2.21588 -0.0806922" shapeId="212" nodeId="836" castsShadows="true" receiveShadows="true" materialIds="13,62"/>
           </TransformGroup>
-          <Shape name="axisFrontRight_decals" translation="-0.036862 0.100038 0.004018" rotation="4.49214 0.271375 7.201" shapeId="201" clipDistance="50" nodeId="837" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
-          <Shape name="axisFrontRight" shapeId="202" nodeId="838" castsShadows="true" receiveShadows="true" materialIds="16,64,14"/>
+          <Shape name="axisFrontRight_decals" translation="-0.036862 0.100038 0.004018" rotation="4.49214 0.271375 7.201" shapeId="213" clipDistance="50" nodeId="837" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="75"/>
+          <Shape name="axisFrontRight" shapeId="214" nodeId="838" castsShadows="true" receiveShadows="true" materialIds="16,64,14"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="steeringBar" translation="-0 0.095262 -0.108696" clipDistance="300" nodeId="839">
         <TransformGroup name="steeringBarLeftRef" translation="0.365853 0 -0.002121" rotation="4.29265 -83.9684 0" nodeId="840"/>
         <TransformGroup name="steeringBarRightRef" translation="-0.365853 0 -0.002121" rotation="4.29265 83.9684 0" nodeId="841"/>
-        <Shape name="steeringBar" rotation="90 -0 0" shapeId="203" nodeId="842" castsShadows="true" receiveShadows="true" materialIds="13,18,62"/>
+        <Shape name="steeringBar" rotation="90 -0 0" shapeId="215" nodeId="842" castsShadows="true" receiveShadows="true" materialIds="13,18,62"/>
       </TransformGroup>
     </Shape>
-    <Camera name="work" translation="0.275572 2.17695 -0.484774" rotation="136.681 -11.8567 -180" nodeId="843" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+    <Camera name="work" translation="-0.0253954 2.35059 -2.19147" rotation="179.996 -6.11157 180" nodeId="843" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
   </Scene>
 
   <UserAttributes>

@@ -166,5 +166,23 @@ Changelog V1.0.0.1
     </storeItems>
 
 
-
+    <actions>
+    		<action name="AXIS_SCREEN_CAM" axisType="FULL"/>
+            <action name="AXIS_SCREEN_Group" axisType="FULL"/>
+    	</actions>
+    
+    	<inputBinding>
+    		<actionBinding action="AXIS_SCREEN_CAM" >
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_Y" inputComponent="+" axisComponent="+" index="3"/>
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_Y" inputComponent="-" axisComponent="-" index="3"/>
+    			<binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_2+" inputComponent="+" axisComponent="+" />
+                <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_2-" inputComponent="-" axisComponent="-" />
+    		</actionBinding>
+            <actionBinding action="AXIS_SCREEN_Group" >
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_X" inputComponent="+" axisComponent="+" index="3"/>
+                <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_MIDDLE AXIS_X" inputComponent="-" axisComponent="-" index="3"/>
+    			<binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_1+" inputComponent="+" axisComponent="+" />
+                <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 AXIS_1-" inputComponent="-" axisComponent="-" />
+    		</actionBinding>
+    	</inputBinding>
 </modDesc>

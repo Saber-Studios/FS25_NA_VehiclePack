@@ -802,8 +802,8 @@
             <mirror node="mirrorDecal05" prio="2" />
 			
 			<!-- cameras -->
-			<mirror node="cameraDisplay01" prio="2" cameraNode="reversCamera01" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/> 
-            <mirror node="cameraDisplay02" prio="2" cameraNode="Cam_funk_front" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/> 
+			<mirror node="cameraDisplay01" prio="2" cameraNode="reversCamera01" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/>
+            <mirror node="cameraDisplay02" prio="2" cameraNode="Cam_funk_front" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/>
             <mirror node="cameraDisplay03" prio="2" cameraNode="Cam_funk_front_2" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/>
             <mirror node="cameraDisplay04" prio="2" cameraNode="Cam_funk_rear_2" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/>
             <mirror node="cameraDisplay05" prio="2" cameraNode="Cam_funk_rear_work_2" cameraFovY="90" reflectionScale="1" nightReflectionScale="1" aspectRatio="1"/>
@@ -912,7 +912,7 @@
 			<dashboard displayType="TEXT" valueType="cruiseControl" node="0>0|8|7|2|0|2|0|3" textColor="0 0 0 0" textSize="0.0045" textMask="00.0" textAlignment="CENTER" font="GENERIC" groups="MOTOR_RUNNING"/>
 			
 			<!-- cameras -->
-			<dashboard displayType="VISIBILITY" valueType="directionBackward"  node="cameraDisplay01_off" groups="MOTOR_ACTIVE"/> 
+			<dashboard displayType="VISIBILITY" valueType="directionBackward"  node="cameraDisplay01_off" groups="MOTOR_ACTIVE"/>
 
         </dashboards>
     </drivable>
@@ -940,19 +940,19 @@
 
 		<!-- cameras -->
 		<animation name="Workcam03_back">
-            <part node="cameraDisplay05_off_off" startVisibility="true" endVisibility="false" startTime="0.0" endTime="0.001"/> 
+            <part node="cameraDisplay05_off_off" startVisibility="true" endVisibility="false" startTime="0.0" endTime="0.001"/>
             <part node="cameraDisplay04_off_off" startVisibility="false" endVisibility="true" startTime="0.0" endTime="0.001"/>
             <part node="cameraDisplay03_off_off" startVisibility="true" endVisibility="false" startTime="0.0" endTime="0.001"/>
             <part node="cameraDisplay02_off_off" startVisibility="false" endVisibility="true" startTime="0.0" endTime="0.001"/>
-        </animation> 
-        
+        </animation>
+
         <animation name="Workcamfront_back">
                <part node="cameraDisplay02_off" startVisibility="true" endVisibility="false" startTime="0.0" endTime="0.001"/>
                <part node="cameraDisplay05_off" startVisibility="false" endVisibility="true" startTime="0.0" endTime="0.001"/>
                <part node="cameraDisplay03_off" startVisibility="true" endVisibility="false" startTime="0.0" endTime="0.001"/>
                <part node="cameraDisplay04_off" startVisibility="false" endVisibility="true" startTime="0.0" endTime="0.001"/>
         </animation>
-        
+
 		<animation name="SiegePassangerPart01">
 			<part node="SiegePassangerPart01" startTime="0" endTime="1" startRot="0 69 0" endRot="0 0 0" />
             <part node="SiegePassangerPart02" startTime="1" endTime="2" startRot="0 -145 0" endRot="0 0 0" />
@@ -1060,14 +1060,17 @@
 					<interactiveControl posText="CAM 2" negText="CAM 1">
 						<clickPoint node="IC_CAM" size="0.02" type="INDOOR" iconType="CROSS" alignToCamera="false" />
 						<animation name="Workcam03_back" speedScale="1.0" initTime="0.0" />
-                        <dependingMovingTool isInactive="true" node="0>0|8|4|12|0|0|0|0|1|4|0"/> 
+						<!-- camera cameraDisplay05_off -->
+                        <dependingMovingTool isInactive="true" node="0>0|8|4|12|0|0|0|1|4|0"/>
 					</interactiveControl>
-                    
+
                     <interactiveControl posText="Front" negText="Back">
 						<clickPoint node="IC_Group" size="0.02" type="INDOOR" iconType="CROSS" alignToCamera="false" />
 						<animation name="Workcamfront_back" speedScale="1.0" initTime="0.0" />
-                        <dependingMovingTool isInactive="true" node="0>0|8|4|12|0|0|0|0|1|3|0"/>
+						<!-- camera cameraDisplay04_off -->
+                        <dependingMovingTool isInactive="true" node="0>0|8|4|12|0|0|0|1|3|0"/>
 					</interactiveControl>
+					
                 </interactiveControls>
             </interactiveControlConfiguration>
 
@@ -1083,37 +1086,36 @@
             </foldingConfiguration>
         </foldingConfigurations>
     </foldable>
-	
-	    <configurationSets name="MB DLC">
-        <configurationSet name="$l10n_configuration_valueNo_MB_DLC">
-            <configuration name="design3" index="1"/>
-            
-            <configuration name="cylindered" index="1"/>
-        </configurationSet>
-        <configurationSet name="MB-DLC MC">
-            <configuration name="design3" index="2"/>
-            <configuration name="cylindered" index="2"/>
-        </configurationSet>
-        <configurationSet name="MB-DLC IC (PC)">
-            <configuration name="design3" index="3"/>
-            <configuration name="cylindered" index="1"/>
-        </configurationSet>
-        
-     </configurationSets>
+		<!-- cameras -->
+	<configurationSets name="MB DLC">
+		<configurationSet name="$l10n_configuration_valueNo_MB_DLC">
+			<configuration name="design3" index="1"/>
+			<configuration name="cylindered" index="1"/>
+		</configurationSet>
+	<configurationSet name="MB-DLC MC">
+		<configuration name="design3" index="2"/>
+		<configuration name="cylindered" index="2"/>
+	</configurationSet>
+	<configurationSet name="MB-DLC IC (PC)">
+		<configuration name="design3" index="3"/>
+		<configuration name="cylindered" index="1"/>
+	</configurationSet>		
+    </configurationSets>
 
-     <design3Configurations title="$l10n_configuration_cam" >
-        <design3Configuration name="$l10n_configuration_valueNo" price="0">
-            <objectChange node="Cam" visibilityActive="false" />
-        </design3Configuration>
-        <design3Configuration name="$l10n_configuration_valueYes" price="200">
-            <objectChange node="Cam" visibilityActive="true" />
-            <objectChange node="IC_CAM" visibilityActive="false" />
-            <objectChange node="IC_Group" visibilityActive="false" />
-        </design3Configuration>
-        <design3Configuration name="$l10n_configuration_valueYes" price="200">
-            <objectChange node="Cam" visibilityActive="true" />
-        </design3Configuration>
-    </design3Configurations> 
+    <design3Configurations title="$l10n_configuration_cam" >
+		<design3Configuration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="Cam" visibilityActive="false" />
+		</design3Configuration>
+		<design3Configuration name="$l10n_configuration_valueYes" price="200">
+			<objectChange node="Cam" visibilityActive="true" />
+			<objectChange node="IC_CAM" visibilityActive="false" />
+			<objectChange node="IC_Group" visibilityActive="false" />
+		</design3Configuration>
+		<design3Configuration name="$l10n_configuration_valueYes" price="200">
+			<objectChange node="Cam" visibilityActive="true" />
+		</design3Configuration>
+    </design3Configurations>
+	<!-- cameras -->
 
     <cylindered>
         <movingTools>
@@ -1176,21 +1178,23 @@
         </movingTools>
 
 		<!-- cameras -->
-		<cylinderedConfigurations>    
+		<cylinderedConfigurations>
         <cylinderedConfiguration/>
-        <cylinderedConfiguration>     
-            <movingTools> 
-            <movingTool  node="0>0|8|4|12|0|0|0|1|4|0">
+        <cylinderedConfiguration>
+            <movingTools>
+			<!-- camera cameraDisplay05_off_off -->
+            <movingTool  node="0>0|8|4|12|0|0|0|1|4">
                 <controls  axis="AXIS_SCREEN_CAM" invertAxis="true" mouseSpeedFactor="10.0" iconName="TOP_DOOR_ROTATE"/>
-                <animation animSpeed="10000" animAcceleration="100000" animName="Workcam03_back" />        
-            </movingTool> 
-            <movingTool  node="0>0|8|4|12|0|0|0|1|3|0">
-                <controls   axis="AXIS_SCREEN_Group" invertAxis="true" mouseSpeedFactor="10.0" iconName="TOP_DOOR_ROTATE"/>
-                <animation animSpeed="10000" animAcceleration="100000" animName="Workcamfront_back" />        
+                <animation animSpeed="10000" animAcceleration="100000" animName="Workcam03_back" />
             </movingTool>
-            </movingTools> 
-        </cylinderedConfiguration>    
-        </cylinderedConfigurations> 
+			<!-- camera cameraDisplay04_off_off -->
+            <movingTool  node="0>0|8|4|12|0|0|0|1|3">
+                <controls   axis="AXIS_SCREEN_Group" invertAxis="true" mouseSpeedFactor="10.0" iconName="TOP_DOOR_ROTATE"/>
+                <animation animSpeed="10000" animAcceleration="100000" animName="Workcamfront_back" />
+            </movingTool>
+            </movingTools>
+        </cylinderedConfiguration>
+        </cylinderedConfigurations>
 
         <movingParts>
 
@@ -1308,24 +1312,24 @@
 		<!-- cameras -->
 		
 		<customHose  node="Cam_funk_Ref_front" type="Camera_data" attacherJointIndices="1 2 3 4 5 6 8 9 10 11 12">
-            <objectChange node="cameraDisplay02_off_attach" visibilityActive="true" visibilityInactive="false"/><!-- 
+            <objectChange node="cameraDisplay02_off_attach" visibilityActive="true" visibilityInactive="false"/><!--
             <objectChange node="cameraDisplay02_off_off" visibilityActive="true" visibilityInactive="false"/> -->
-        </customHose> 
-         
-        <customHose  node="reversCamera01" type="Camera_data_rear" attacherJointIndices="1 2 3 4 5"> 
+        </customHose>
+
+        <customHose  node="reversCamera01" type="Camera_data_rear" attacherJointIndices="1 2 3 4 5">
             <objectChange node="cameraDisplay01_off_off" visibilityActive="true" visibilityInactive="true"/>
         </customHose>
-        <customHose  node="Cam_funk_Ref_rear_2" type="Camera_data_rear_work" attacherJointIndices="1 2 3 4 5"> 
-            <objectChange node="cameraDisplay04_off_attach" visibilityActive="true" visibilityInactive="false"/> <!-- 
+        <customHose  node="Cam_funk_Ref_rear_2" type="Camera_data_rear_work" attacherJointIndices="1 2 3 4 5">
+            <objectChange node="cameraDisplay04_off_attach" visibilityActive="true" visibilityInactive="false"/> <!--
             <objectChange node="cameraDisplay04_off_off" visibilityActive="true" visibilityInactive="false"/> -->
         </customHose>
         <customHose  node="Cam_funk_Ref_rear_work_2" type="Camera_data_rear_work_2" attacherJointIndices="1 2 3 4 5">
-            <objectChange node="cameraDisplay05_off_attach" visibilityActive="true" visibilityInactive="false"/> <!-- 
+            <objectChange node="cameraDisplay05_off_attach" visibilityActive="true" visibilityInactive="false"/> <!--
             <objectChange node="cameraDisplay05_off_off" visibilityActive="true" visibilityInactive="false"/> -->
         </customHose>
-       
-        <customHose  node="Cam_funk_Ref_front_2" type="Camera_data_front_2" attacherJointIndices="1 2 3 4 5 6 8 9 10 11 12">  
-            <objectChange node="cameraDisplay03_off_attach" visibilityActive="true" visibilityInactive="false"/> <!-- 
+
+        <customHose  node="Cam_funk_Ref_front_2" type="Camera_data_front_2" attacherJointIndices="1 2 3 4 5 6 8 9 10 11 12">
+            <objectChange node="cameraDisplay03_off_attach" visibilityActive="true" visibilityInactive="false"/> <!--
             <objectChange node="cameraDisplay03_off_off" visibilityActive="true" visibilityInactive="false"/>  -->
         </customHose>
 		
@@ -1423,7 +1427,7 @@
 		<wetnessIgnoreNode node="off_cam"/>
         <wetnessIgnoreNode node="no_cam"/>
     </washable>
-    
+
     <i3dMappings>
         <i3dMapping id="series6M_main_component1" node="0>" />
         <i3dMapping id="series6M_vis" node="0>0" />
@@ -1547,34 +1551,34 @@
         <i3dMapping id="dbl_compass" node="0>0|8|4|11|0|0|0|1|0"/>
 		<i3dMapping id="dbl_position" node="0>0|8|4|11|0|0|0|1|1"/>
 		<!-- cameras -->		
-		<i3dMapping id="Display"                         node="0>0|8|4|12|0|0|0"/> 
-		<i3dMapping id="cameraDisplay01_off_off"         node="0>0|8|4|12|0|0|0|1|0"/> 
-        <i3dMapping id="cameraDisplay01_off"             node="0>0|8|4|12|0|0|0|1|0|0"/> 
-        <i3dMapping id="cameraDisplay01_off_attach"      node="0>0|8|4|12|0|0|0|1|0|0|0"/> 
-        <i3dMapping id="cameraDisplay01"                 node="0>0|8|4|12|0|0|0|1|0|0|0|0"/>  
-        <i3dMapping id="cameraDisplay02_off_off"         node="0>0|8|4|12|0|0|0|1|1" /> 
+		<i3dMapping id="Display"                         node="0>0|8|4|12|0|0|0"/>
+		<i3dMapping id="cameraDisplay01_off_off"         node="0>0|8|4|12|0|0|0|1|0"/>
+        <i3dMapping id="cameraDisplay01_off"             node="0>0|8|4|12|0|0|0|1|0|0"/>
+        <i3dMapping id="cameraDisplay01_off_attach"      node="0>0|8|4|12|0|0|0|1|0|0|0"/>
+        <i3dMapping id="cameraDisplay01"                 node="0>0|8|4|12|0|0|0|1|0|0|0|0"/>
+        <i3dMapping id="cameraDisplay02_off_off"         node="0>0|8|4|12|0|0|0|1|1" />
         <i3dMapping id="cameraDisplay02_off"             node="0>0|8|4|12|0|0|0|1|1|0" />
         <i3dMapping id="cameraDisplay02_off_attach"      node="0>0|8|4|12|0|0|0|1|1|0|0" />
         <i3dMapping id="cameraDisplay02"                 node="0>0|8|4|12|0|0|0|1|1|0|0|0" />
-        <i3dMapping id="Cam_funk_front"                  node="0>0|8|4|12|0|0|0|1|1|0|0|1" />    
+        <i3dMapping id="Cam_funk_front"                  node="0>0|8|4|12|0|0|0|1|1|0|0|1" />
         <i3dMapping id="Cam_funk_Ref_front"              node="0>0|8|4|12|0|0|0|1|1|0|0|1" />
         <i3dMapping id="cameraDisplay03_off_off"         node="0>0|8|4|12|0|0|0|1|2" />
         <i3dMapping id="cameraDisplay03_off"             node="0>0|8|4|12|0|0|0|1|2|0" />
         <i3dMapping id="cameraDisplay03_off_attach"      node="0>0|8|4|12|0|0|0|1|2|0|0" />
         <i3dMapping id="cameraDisplay03"                 node="0>0|8|4|12|0|0|0|1|2|0|0|0" />
-        <i3dMapping id="Cam_funk_front_2"                node="0>0|8|4|12|0|0|0|1|2|0|0|1" />    
+        <i3dMapping id="Cam_funk_front_2"                node="0>0|8|4|12|0|0|0|1|2|0|0|1" />
         <i3dMapping id="Cam_funk_Ref_front_2"            node="0>0|8|4|12|0|0|0|1|2|0|0|1" />
         <i3dMapping id="cameraDisplay04_off_off"         node="0>0|8|4|12|0|0|0|1|3" />
         <i3dMapping id="cameraDisplay04_off"             node="0>0|8|4|12|0|0|0|1|3|0" />
         <i3dMapping id="cameraDisplay04_off_attach"      node="0>0|8|4|12|0|0|0|1|3|0|0" />
         <i3dMapping id="cameraDisplay04"                 node="0>0|8|4|12|0|0|0|1|3|0|0|0" />
-        <i3dMapping id="Cam_funk_rear_2"                 node="0>0|8|4|12|0|0|0|1|3|0|0|1" />    
+        <i3dMapping id="Cam_funk_rear_2"                 node="0>0|8|4|12|0|0|0|1|3|0|0|1" />
         <i3dMapping id="Cam_funk_Ref_rear_2"             node="0>0|8|4|12|0|0|0|1|3|0|0|1" />
         <i3dMapping id="cameraDisplay05_off_off"         node="0>0|8|4|12|0|0|0|1|4" />
         <i3dMapping id="cameraDisplay05_off"             node="0>0|8|4|12|0|0|0|1|4|0" />
         <i3dMapping id="cameraDisplay05_off_attach"      node="0>0|8|4|12|0|0|0|1|4|0|0" />
         <i3dMapping id="cameraDisplay05"                 node="0>0|8|4|12|0|0|0|1|4|0|0|0" />
-        <i3dMapping id="Cam_funk_rear_work_2"            node="0>0|8|4|12|0|0|0|1|4|0|0|1" />    
+        <i3dMapping id="Cam_funk_rear_work_2"            node="0>0|8|4|12|0|0|0|1|4|0|0|1" />
         <i3dMapping id="Cam_funk_Ref_rear_work_2"        node="0>0|8|4|12|0|0|0|1|4|0|0|1" />
         <i3dMapping id="no_cam"                          node="0>0|8|4|12|0|0|0|1|5" />
         <i3dMapping id="off_cam"                         node="0>0|8|4|12|0|0|0|0" />
