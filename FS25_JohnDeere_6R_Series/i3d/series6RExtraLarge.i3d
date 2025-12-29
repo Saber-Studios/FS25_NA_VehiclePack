@@ -107,8 +107,8 @@
     <File fileId="71" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
     <File fileId="69" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
     <File fileId="70" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
-    <File fileId="82" filename="../utils/camera/texturen/display_no_diffuse.dds"/>
-    <File fileId="78" filename="../utils/camera/texturen/display_off_diffuse.dds"/>
+    <File fileId="82" filename="../../../My Games/FarmingSimulator2025/mods/FS25_JohnDeere_6R_Series/utils/camera/texturen/display_no_diffuse.dds"/>
+    <File fileId="78" filename="../../../My Games/FarmingSimulator2025/mods/FS25_JohnDeere_6R_Series/utils/camera/texturen/display_off_diffuse.dds"/>
   </Files>
 
 
@@ -2828,7 +2828,7 @@
         </TransformGroup>
       </TransformGroup>
     </Shape>
-    <Camera name="work" translation="0.323742 3.29805 -2.75351" rotation="173.356 11.0714 180" nodeId="1285" fov="60" nearClip="0.01" farClip="1000" orthographicHeight="1"/>
+    <Camera name="work" translation="0.0058378 3.02223 -0.78084" rotation="171.523 -0.158574 180" nodeId="1285" fov="60" nearClip="0.01" farClip="1000" orthographicHeight="1"/>
   </Scene>
 
   <UserAttributes>
