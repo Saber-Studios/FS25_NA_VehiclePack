@@ -94,8 +94,8 @@
     <File fileId="56" filename="../utils/matrix/textures/decals.dds"/>
     <File fileId="55" filename="../utils/matrix/textures/def_vmask.dds"/>
     <File fileId="54" filename="../utils/matrix/textures/normal.dds"/>
-    <File fileId="63" filename="../../../My Games/FarmingSimulator2025/mods/FS25_Johndeere_7r/utils/camera/texturen/display_no_diffuse.dds"/>
-    <File fileId="60" filename="../../../My Games/FarmingSimulator2025/mods/FS25_Johndeere_7r/utils/camera/texturen/display_off_diffuse.dds"/>
+    <File fileId="63" filename="../utils/camera/texturen/display_no_diffuse.dds"/>
+    <File fileId="60" filename="../utils/camera/texturen/display_off_diffuse.dds"/>
   </Files>
 
 
