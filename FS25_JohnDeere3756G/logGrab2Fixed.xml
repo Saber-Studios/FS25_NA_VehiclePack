@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="jd3756glogGrab">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+			<en>Log Grapple (Fixed)</en>
+			<de>Holzgreifer (Fest)</de>
+		</name>
+        <specs>
+            <combination filterCategory="forestryExcavators"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_frontloaderLogFork</function>
+        </functions>
+        <image>store_logGrab2Fixed.png</image>
+        <price>15000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>forestryExcavatorTools</category>	
+        <shopTranslationOffset>0 0.2 0</shopTranslationOffset>
+		<shopLoadingDelay initial="0.1"/>
+		<shopHeight>2.5</shopHeight>
+        <vertexBufferMemoryUsage>496896</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>153088</indexBufferMemoryUsage>
+        <textureMemoryUsage>720896</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+   <base>
+        <typeDesc>$l10n_typeDesc_wheelLoaderTool</typeDesc>
+        <filename>logGrab2Fixed.i3d</filename>
+        <size width="2.2" length="0.8" height="2.3" heightOffset="0.02"/>
+		<components>
+            <component centerOfMass="0 1.8 0"  	solverIterationCount="20" mass="1000" />
+            <component centerOfMass="0 0 0" 	solverIterationCount="20" mass="1400" />
+            <component centerOfMass="0 0 0"     solverIterationCount="40" mass="600" />
+            <component centerOfMass="0 0 0"     solverIterationCount="40" mass="600" />
+            <joint component1="1" component2="2" node="clawRotJoint" nodeActor1="clawJointActorRot" enableCollision="false" transLimitSpring="60000 60000 60000" transLimitDamping="100 100 100" rotLimitSpring="60000 0 60000" rotLimitDamping="100 0 100"/>
+            <joint component1="2" component2="3" node="clawJointLeft"  enableCollision="false" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000000 1000000 2000" rotLimitDamping="0 0 100" otLimitForceLimit="-1 -1 250" />
+            <joint component1="2" component2="4" node="clawJointRight" enableCollision="false" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000000 1000000 2000" rotLimitDamping="0 0 100" otLimitForceLimit="-1 -1 250" />
+            <collisionPair component1="3" component2="4" enabled="false" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />       
+    </base>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="wheelLoader" orceSelectionOnAttach="false">
+                <subType name="excavatorFastCoupler" showWarning="true"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+		<support animationName="moveSupport" />
+    </attachable>
+	<dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicConnector01" filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicConnector02" filename="$data/shared/connectionHoses/connectors.i3d" />
+    </dynamicallyLoadedParts>
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="CABLE_BUNDLE" node="hydraulicOut" length="3.5" diameter="0.06" straighteningFactor="2" isTwoPointHose="true">
+            <objectChange node="detachedHoses" visibilityActive="false" visibilityInactive="true"/>
+			<objectChange node="attachedHoses" visibilityActive="true" visibilityInactive="false"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="CABLE_BUNDLE" node="hydraulicIn" length="3.5" diameter="0.06" straighteningFactor="2" isTwoPointHose="true">
+        </hose>
+	<!-- log grab hydraulic hoses -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|2|1"  length="0.5" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BUNDLE" node="1>0|4|0" straighteningFactor="0.5"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|2|2"  length="0.5" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BUNDLE" node="1>0|4|1" straighteningFactor="0.5"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|1"  length="0.5" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BUNDLE" node="1>0|4|2" straighteningFactor="0.5"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|2"  length="0.5" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BUNDLE" node="1>0|4|3" straighteningFactor="0.5"/>
+        </localHose>
+    </connectionHoses>
+	<animations>
+        <animation name="moveSupport">
+            <part node="2>1|0|0" startTime="0.0" endTime="0.1" startTrans="0 0 0" endTrans="0.3 0 0" />
+            <part node="2>1|0|1" startTime="0.0" endTime="0.1" startTrans="0 0 0" endTrans="-0.3 0 0"/>
+            <part node="3>1|0|0" startTime="0.0" endTime="0.1" startTrans="0 0 0" endTrans="0.3 0 0"/>
+            <part node="3>1|0|1" startTime="0.0" endTime="0.1" startTrans="0 0 0" endTrans="-0.3 0 0"/>
+			<part componentIndex="2" startTime="0" endTime="0.1" startCenterOfMass="0 -0.2 0" endCenterOfMass="0 -2 0"/>
+			<sound template="headerAttach01" startTime="0.05" direction="-1"  innerRadius="1" volumeScale="1" pitchScale="0.8" linkNode="logGrab_component1"/>
+            <sound template="clackVar6"        startTime="0.01" direction="-1"  innerRadius="1" volumeScale="5" pitchScale="0.7" linkNode="logGrab_component1"/>
+        </animation>
+		<animation name="grappleRotationLock">
+            <part componentJointIndex="1" startTime="0" endTime="0.1" startRotMinLimit="0 0 0" startRotMaxLimit="0 0 0" endRotMinLimit="0 720 0" endRotMaxLimit="0 0 0"/>
+        </animation>
+    </animations>
+	<turnOnVehicle turnOnText="$l10n_deactivateGrappleRotation" turnOffText="$l10n_activateGrappleRotation" oggleButton="IMPLEMENT_EXTRA2">
+        <turnedAnimation name="grappleRotationLock" turnOnSpeedScale="1" />
+    </turnOnVehicle>
+    <cylindered>
+        <movingTools>
+			<movingTool node="clawJointActorRot" playSound="true" isConsumingPower="true" requiredAnimation="grappleRotationLock" requiredAnimationMinTime="0" requiredAnimationMaxTime="0">
+                <controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="1" iconName="GRABBER_ROTATE_Y" />
+                <rotation rotSpeed="-60" rotAcceleration="200" rotationAxis="2"/>
+                <componentJoint index="1" anchorActor="1"/>
+            </movingTool>
+			<movingTool node="clawJointRight" playSound="true" isConsumingPower="true">
+				<controls axis="AXIS_CRANE_TOOL" invertAxis="false" mouseSpeedFactor="1" iconName="GRABBER_OPEN_CLOSE"/>
+				<rotation rotSpeed="-50" rotAcceleration="600" rotMin="-9" rotMax="65" rotationAxis="3"/>
+				<componentJoint index="3" anchorActor="0"/>
+				<dependentMovingTool node="clawJointLeft" speedScale="1" />
+			</movingTool>
+			<movingTool node="clawJointLeft" playSound="true">
+				<rotation rotSpeed="50" rotAcceleration="600" rotMin="-65" rotMax="9" rotationAxis="3"/>
+				<componentJoint index="2" anchorActor="0"/>
+			</movingTool>
+        </movingTools>
+        <movingParts>
+			<movingPart node="logGrabClawLeft" referencePoint="logGrabClawLeftRef" referenceFrame="logGrabClawLeftRef" limitedAxis="1" isActiveDirty="true" maxUpdateDistance="300">
+                <dependentPart node="logGrabClawRight"/>
+            </movingPart>
+            <movingPart node="logGrabClawRight" referencePoint="logGrabClawRightRef" referenceFrame="logGrabClawRightRef" limitedAxis="1" isActiveDirty="true" maxUpdateDistance="300">
+            </movingPart>
+			<movingPart node="logGrabLeftHydraulic" referencePoint="logGrabLeftHydraulicRef" referenceFrame="logGrabLeftHydraulicRef" isActiveDirty="true" maxUpdateDistance="300" limitedAxis="1">
+                <translatingPart node="logGrabLeftHydraulicPunch"/>
+            </movingPart>
+			<movingPart node="logGrabRightHydraulic" referencePoint="logGrabRightHydraulicRef" referenceFrame="logGrabRightHydraulicRef" isActiveDirty="true" maxUpdateDistance="300" limitedAxis="1">
+                <translatingPart node="logGrabRightHydraulicPunch"/>
+            </movingPart>
+        </movingParts>
+	    <sounds>
+			<actionSound template="hydraulicOpen05"  	pitchScale="1.1" volumeScale="3" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="clawJointActorRot"     fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="clackVar6"           pitchScale="0.7" volumeScale="2" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointActorRot" />
+            <actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointActorRot" />
+			
+			<actionSound template="hydraulicOpen04"    	pitchScale="1.4" volumeScale="4" 	linkNode="clawJointRight" 		actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="clawJointRight"     	fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="clackVar6"           pitchScale="0.7" volumeScale="2" 	linkNode="clawJointRight" 		actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointRight" />
+            <actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 	linkNode="clawJointRight" 		actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointRight" />
+	   </sounds>
+	</cylindered>
+	<logGrab>
+        <grab jointNode="logGrab_component2" jointRoot="logGrab_component2" lockAllAxis="true">
+            <trigger node="logGrabTrigger"/>
+            <claw componentJointIndex="3" axis="3" rotationOffsetThreshold="3" rotationOffsetInverted="true" rotationOffsetTime="1000">
+            </claw>
+            <claw componentJointIndex="2" axis="3" rotationOffsetThreshold="3" rotationOffsetInverted="false" rotationOffsetTime="1000">
+            </claw>
+            <treeDetection node="treeDetectionNode" sizeY="1.7" sizeZ="1.1"/>
+        </grab>
+    </logGrab>
+	<tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" rootNode="logGrab_component2" jointNode="logGrab_component2" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="-0.6" defaultOffsetSide="0.1" defaultHeight="2" interactionRadius="1.5" totalInteractionRadius="6.5" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="beltStart" endNode="beltEnd" offsetLeft="0.95"/>
+                    <sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+    <ai>
+        <agentAttachment width="2.2" length="0.8" height="2.3" heightOffset="-0.15"/>
+    </ai>
+	<foliageBending>
+		<bendingNode minX="-0.7" maxX="0.7" minZ="-0.4" maxZ="0.4" yOffset="-1.55" node="logGrab_component2"/>
+    </foliageBending>
+	<baseColorConfigurations useDefaultColors="true" defaultColorIndex="0">
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_BLACK2" name="$l10n_uiColor_johnDeereBlack2"/>
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_YELLOW2" name="$l10n_uiColor_johnDeereYellow2"/>
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_GREEN2" name="$l10n_uiColor_johnDeereGreen2"/>
+        <material materialSlotName="metalGrappleSlot"/>
+    </baseColorConfigurations>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+	<i3dMappings>
+		<i3dMapping id="logGrab_component1"                         node="0>" />
+		<i3dMapping id="logGrab_component2"                         node="1>" />
+		<i3dMapping id="attacherJoint"                      node="0>1|0" />
+		<i3dMapping id="hydraulicOut"                             node="0>1|2" />
+		<i3dMapping id="hydraulicIn"                              node="0>1|1" />
+		<i3dMapping id="clawRotJoint"                       node="0>2" />
+		<i3dMapping id="clawJointActorRot"                 node="1>1|0" />
+		<i3dMapping id="clawJointLeft"                      node="1>1|1" />
+		<i3dMapping id="clawJointRight"                     node="1>1|2" />
+		<i3dMapping id="logGrabTrigger"                     node="1>1|3" />
+		<i3dMapping id="treeDetectionNode"                     node="1>1|4" /> 
+		<i3dMapping id="logGrabClawLeft" node="1>0|0" />
+		<i3dMapping id="logGrabClawRight" node="1>0|1" />
+		<i3dMapping id="logGrabClawLeftRef" node="2>0" />
+		<i3dMapping id="logGrabClawRightRef" node="3>0" />
+		<i3dMapping id="logGrabLeftHydraulic" node="1>0|2" />
+		<i3dMapping id="logGrabLeftHydraulicPunch" node="1>0|2|0" />
+		<i3dMapping id="logGrabLeftHydraulicRef" node="1>0|0|0" />
+		<i3dMapping id="logGrabRightHydraulic" node="1>0|3" />
+		<i3dMapping id="logGrabRightHydraulicPunch" node="1>0|3|0" />
+		<i3dMapping id="logGrabRightHydraulicRef" node="1>0|1|0" />
+		<i3dMapping id="detachedHoses" node="0>1|3" />
+		<i3dMapping id="attachedHoses" node="0>1|4" />
+		<i3dMapping id="hydraulicConnector01" node="0>1|3|0" />
+		<i3dMapping id="hydraulicConnector02" node="0>1|3|1" />
+		<i3dMapping id="tensionBelts" node="1>1|5" />
+        <i3dMapping id="beltStart" node="1>1|5|0" />
+        <i3dMapping id="beltEnd" node="1>1|5|0|0" />
+        <i3dMapping id="beltActivationTrigger" node="1>1|5|1" />
+	</i3dMappings>
+</vehicle>

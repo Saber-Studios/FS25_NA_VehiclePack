@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="101">
+    <author>kenny456</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere 3756G</en>
+    </title>
+<description>
+<en>
+<![CDATA[
+This pack contains 2 versions of John Deere excavator and 4 log grapples. You can choose from 2 basic configurations in the shop: Mounted log grapple or attacher.
+Both can attach all atachments included in my Excavator Attachments mod (https://www.farming-simulator.com/mod.php?mod_id=311962). Live heel version can attach dangle attachments only.
+
+John Deere 3756G / John Deere 3756G Live Heel
+Shop category: Excavators
+Price:   310000 / 320000 $
+Power:   340 hp
+Max. speed:  10 kph
+Configurations:
+- Design
+- Tinted windows
+- Outdoor camera target (chassis or cab)
+- Beacons
+- Body color
+- Tracks color
+- Grapple color
+
+Log Grapples (Fixed or dangle)
+Shop category: Excavator Tools
+Price:  15000 / 16000 $
+Configurations:
+- Color
+
+For better stability when handling the trees with live heel, you can lock it to the arm (red area shows up at locking point). Be sure to unlock it before touching anything with the tree.
+
+Default controls:
+Toggle grapple rotation (manual or free) - IMPLEMENT_EXTRA (key B)
+Lock tree to the heel - IMPLEMENT_EXTRA4 (key Z)
+Activate / deactivate fast coupler or heel auto tilt - IMPLEMENT_EXTRA3 (key Y)
+Lower cab - LOWER_IMPLEMENT (key V)
+]]>
+</en>
+<de>
+<![CDATA[
+Dieses Paket enthält 2 Versionen des John Deere-Baggers und 4 Holzgreifer. Im Shop stehen zwei Grundkonfigurationen zur Auswahl: Anbau-Holzgreifer oder Anbaugerät.
+Beide können alle Anbaugeräte aus meinem Baggeranbaugeräte-Mod (https://www.farming-simulator.com/mod.php?mod_id=311962) anbauen. Die Live-Heel-Version kann nur baumelnde Anbaugeräte anbauen.
+
+John Deere 3756G / John Deere 3756G Live Heel
+Shop-Kategorie: Bagger
+Preis: 310.000 / 320.000 €
+Leistung: 340 PS
+Max. Geschwindigkeit: 10 km/h
+Konfigurationen:
+- Design
+- Getönte Scheiben
+- Außenkameraziel (Fahrgestell oder Fahrerhaus)
+- Rundumleuchten
+- Aufbaufarbe
+- Kettenfarbe
+- Greiferfarbe
+
+Holzgreifer (fest oder hängend)
+Shop-Kategorie: Baggerwerkzeuge
+Preis: 15.000 / 16.000 €
+Konfigurationen:
+- Farbe
+
+Für bessere Stabilität beim Umgang mit Bäumen mit beweglicher Ferse können Sie diese am Arm arretieren (roter Bereich am Arretierpunkt). Entriegeln Sie die Arretiervorrichtung unbedingt, bevor Sie den Baum berühren.
+
+Standardsteuerung:
+Greiferdrehung umschalten (manuell oder frei) - IMPLEMENT_EXTRA (Taste B)
+Lock Tree an der Ferse - IMPLEMENT_EXTRA4 (Taste Z)
+Schnellwechsler oder automatische Fersenneigung aktivieren/deaktivieren - IMPLEMENT_EXTRA3 (Taste Y)
+Kabine absenken - LOWER_IMPLEMENT (Taste V)
+]]>
+</de>
+<fr>
+<![CDATA[
+Ce pack contient 2 versions de l'excavatrice John Deere et 4 grappins à grumes. Vous pouvez choisir entre deux configurations de base dans la boutique : grappin à grumes monté ou grappin à grumes.
+Les deux versions permettent d'installer tous les accessoires inclus dans mon mod « Accessoires pour pelle » (https://www.farming-simulator.com/mod.php?mod_id=311962). La version à talon mobile ne permet d'installer que des accessoires suspendus.
+
+John Deere 3756G / John Deere 3756G à talon mobile
+Catégorie de la boutique : Pelles
+Prix : 310 000 $ / 320 000 €
+Puissance : 340 ch
+Puissance max. Vitesse : 10 km/h
+Configurations :
+- Design
+- Vitres teintées
+- Cible de caméra extérieure (châssis ou cabine)
+- Gyrophare
+- Couleur de la carrosserie
+- Couleur des chenilles
+- Couleur du grappin
+
+Grappins à grumes (fixes ou suspendus)
+Catégorie : Outils pour excavatrices
+Prix : 15 000 $ / 16 000 €
+Configurations :
+- Couleur
+
+Pour une meilleure stabilité lors de la manutention des arbres avec le talon mobile, vous pouvez le verrouiller au bras (une zone rouge apparaît au point de verrouillage). Assurez-vous de le déverrouiller avant tout contact avec l'arbre.
+
+Commandes par défaut :
+Activation/désactivation de la rotation du grappin (manuelle ou libre) - IMPLEMENT_EXTRA (touche B)
+Verrouiller l'arbre au talon - IMPLEMENT_EXTRA4 (touche Z)
+Activation/désactivation de l'attache rapide ou de l'inclinaison automatique du talon - IMPLEMENT_EXTRA3 (touche Y)
+Abaisser la cabine - LOWER_IMPLEMENT (touche V)
+]]>
+</fr>
+</description>
+    <iconFilename>icon_johnDeere3756G.png</iconFilename>
+	<multiplayer supported="true"/>
+	<vehicleTypes>
+        <type name="jd3756gHeel" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="foldable" />
+			<specialization name="logGrab" />
+			<specialization name="tensionBelts" />
+			<specialization name="powerConsumer" />
+        </type>
+        <type name="jd3756gHeelLogGrapple" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="foldable" />
+			<specialization name="logGrab" />
+			<specialization name="tensionBelts" />
+			<specialization name="powerConsumer" />
+        </type>
+		<type name="jd3756glogGrab" parent="logGrab" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="tensionBelts" />
+			<specialization name="turnOnVehicle" />
+        </type>
+    </vehicleTypes>
+	<materialTemplates>
+		<template name="JOHNDEERE_BLACK2" brand="JOHNDEERE" title="l10n_ui_colorBlack" colorScale="0.02 0.025 0.03"/>
+		<template name="JOHNDEERE_GREEN2" brand="JOHNDEERE" title="l10n_ui_colorGreen" colorScale="0 0.15 0"/>
+		<template name="JOHNDEERE_YELLOW2" brand="JOHNDEERE" title="l10n_ui_colorYellow" colorScale="0.6 0.4 0"/>
+    </materialTemplates>
+	<l10n>
+		<text name="uiColor_johnDeereBlack2">
+			<en>John Deere Black</en>
+			<de>John Deere Schwarz</de>
+		</text>
+		<text name="uiColor_johnDeereYellow2">
+			<en>John Deere Yellow</en>
+			<de>John Deere Gelb</de>
+		</text>
+		<text name="uiColor_johnDeereGreen2">
+			<en>John Deere Green</en>
+			<de>John Deere Grün</de>
+		</text>
+		<text name="grappleColor">
+			<en>Grapple color</en>
+			<de>Greiferfarbe</de>
+		</text>
+		<text name="mainColor2">
+			<en>Main Color 2</en>
+			<de>Hauptfarbe 2</de>
+		</text>
+		<text name="tracksColor">
+			<en>Tracks Color</en>
+			<de>Spurenfarbe</de>
+		</text>
+		<text name="deactivateGrappleRotation">
+			<en>Toggle grapple rotation: Manual</en>
+			<de>Greiferrotation umschalten: Manuell</de>
+		</text>
+		<text name="activateGrappleRotation">
+			<en>Toggle grapple rotatiton: Free</en>
+			<de>Greiferrotation umschalten: Frei</de>
+		</text>
+		<text name="activateHeelAutoTilt">
+			<en>Activate heel auto tilt</en>
+			<de>Automatische Fersenneigung aktivieren</de>
+		</text>
+		<text name="deactivateHeelAutoTilt">
+			<en>Deactivate heel auto tilt</en>
+			<de>Automatische Fersenneigung deaktivieren</de>
+		</text>
+		<text name="activateFastCouplerAutoTilt">
+			<en>Activate fast coupler auto tilt</en>
+			<de>Aktivieren Sie die automatische Neigung der Schnellkupplung</de>
+		</text>
+		<text name="deactivateFastCouplerAutoTilt">
+			<en>Deactivate fast coupler auto tilt</en>
+			<de>Deaktivieren der automatischen Neigung des Schnellwechslers</de>
+		</text>
+		<text name="action_foldCab">
+			<en>Fold cab</en>
+			<de>Klappkabine</de>
+		</text>
+		<text name="action_unfoldCab">
+			<en>Unfold cab</en>
+			<de>Kabine aufklappen</de>
+		</text>
+		<text name="action_lockTree">
+			<en>Lock tree to the arm</en>
+			<de>Baum am Arm befestigen</de>
+		</text>
+		<text name="action_unlockTree">
+			<en>Unlock tree from the arm</en>
+			<de>Baum vom Arm lösen</de>
+		</text>
+		<text name="configuration_dangleAttacher">
+			<en>Dangle attacher</en>
+			<de>Hängende Befestigung</de>
+		</text>
+		<text name="configuration_cameraTarget">
+			<en>Outdoor camera target</en>
+			<de>Ziel der Außenkamera</de>
+		</text>
+		<text name="configuration_cameraChassis">
+			<en>Chassis</en>
+			<de>Chassis</de>
+		</text>
+		<text name="configuration_cameraBody">
+			<en>Cab</en>
+			<de>Kabine</de>
+		</text>
+		<text name="function_jd3756G">
+			<en>This excavator can be used for various work.</en>
+			<de>Dieser Bagger kann für verschiedene Arbeiten eingesetzt werden.</de>
+		</text>
+	</l10n>
+    <storeItems>
+		<storeItem xmlFilename="jd3756GHeel.xml"/>
+		<storeItem xmlFilename="jd3756G.xml"/>
+		<storeItem xmlFilename="logGrab.xml"/>
+		<storeItem xmlFilename="logGrabFixed.xml"/>
+		<storeItem xmlFilename="logGrab2.xml"/>
+		<storeItem xmlFilename="logGrab2Fixed.xml"/>
+    </storeItems>
+	<jointTypes>
+        <jointType name="dangleAttacher"/>
+    </jointTypes>
+</modDesc>
