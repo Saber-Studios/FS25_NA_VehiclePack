@@ -254,7 +254,9 @@
 			<dashboard displayType="EMITTER" valueType="beaconLight" node="beaconLightDecal" 				intensity="0.3" lightTypes="0" groups="MOTOR_ACTIVE"/>
 			<dashboard displayType="EMITTER" valueType="lightState" node="needleTemperature"         		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="lightState" node="needleFuel"                		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
-			<ashboard displayType="EMITTER" valueType="lightState" node="displayInterior"           		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="displayInterior"           		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
+            <!-- camera -->
+            <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </lights>
     <powerConsumer ptoRpm="300" neededMinPtoPower="5" neededMaxPtoPower="40" useTurnOnState="false"/>
@@ -395,6 +397,10 @@
 		</localHose>
 	</connectionHoses>
 	<enterable isTabbable="true">
+        <mirrors>
+            <!-- camera -->
+            <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+        </mirrors>
         <enterReferenceNode node="jd3756G_component1"/>
         <exitPoint node="exitPoint"/>
         <cameras>
@@ -812,11 +818,16 @@
         <groups>
             <group name="MOTOR_STARTING" isMotorStarting="true"/>
             <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+            <!-- camera -->
+            <group name="WORKING"    isMotorRunning="true"/>
         </groups>
 		<default>
             <dashboard displayType="EMITTER" node="displayInterior" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
             <dashboard displayType="EMITTER" node="needleFuel" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
             <dashboard displayType="EMITTER" node="needleTemperature" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
+            <!-- camera -->
+            <dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+            <dashboard displayType="VISIBILITY" node="cameraDisplayRoot" groups="WORKING" />
         </default>
     </dashboard>
 	<suspensions>
@@ -1054,5 +1065,17 @@
         <i3dMapping id="beltStart" node="3>10|0" />
         <i3dMapping id="beltEnd" node="3>10|0|0" />
         <i3dMapping id="beltActivationTrigger" node="3>10|1" />
+
+        <i3dMapping id="rearCamera" node="1>0|4|0|10"/>
+        <i3dMapping id="boxRoot" node="1>0|4|0|10|0"/>
+        <i3dMapping id="box" node="1>0|4|0|10|0|0"/>
+        <i3dMapping id="preloadScreen" node="1>0|4|0|10|0|1"/>
+        <i3dMapping id="cameraDecals" node="1>0|4|0|10|0|2"/>
+        <i3dMapping id="cameraDisplayRoot" node="1>0|4|0|10|0|3"/>
+        <i3dMapping id="rearCamera_display" node="1>0|4|0|10|0|3|0"/>
+        <i3dMapping id="camera_01" node="1>0|4|0|11"/>
+        <i3dMapping id="rotPart" node="1>0|4|0|11|0"/>
+        <i3dMapping id="glass" node="1>0|4|0|11|0|0"/>
+        <i3dMapping id="rearCamera_camera" node="1>0|4|0|11|0|0|0"/>
 	</i3dMappings>
 </vehicle>
