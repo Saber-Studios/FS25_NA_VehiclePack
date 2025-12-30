@@ -1158,6 +1158,8 @@
             <beaconLight node="beaconLight16_01" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" realLight="0>0|3|2|0" />
             <beaconLight node="beaconLight16_02" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" />
             <beaconLight node="beaconLight16_03" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" />
+            <!-- camera -->>
+            <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </beaconLights>
 
         <dashboards>
@@ -1228,6 +1230,9 @@
             <mirror node="mirrorLeft02" prio="2" />
             <mirror node="mirrorRight01" prio="1" />
             <mirror node="mirrorRight02" prio="2" />
+            <!-- cameras -->
+            <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+            <mirror node="pipeoutCamera_display" cameraNode="pipeoutCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
         </mirrors>
     </enterable>
 
@@ -1327,6 +1332,8 @@
 
         <dashboards>
             <dashboard displayType="ROT" valueType="decelerationAxis" node="pedalBrake" minRot="0 0 0" maxRot="15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <!-- cameras -->
+            <dashboard displayType="VISIBILITY" valueType="directionBackward"  node="rearcameraDisplayRoot" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </drivable>
 
@@ -2351,6 +2358,8 @@
             <group name="MOTOR_RUNNING" electronicsRunning="true"/>
             <group name="BACK_ATTACHMENT" attacherJointIndices="2"/>
             <group name="LIGHT_ENABLED" lightTypes="0"/>
+            <!-- cameras -->
+            <group name="WORKING"    isMotorRunning="true"/>
         </groups>
 
         <default>
@@ -2361,6 +2370,9 @@
 			
 			<dashboard displayType="VISIBILITY" node="0>0|7|4|6" groups="MOTOR_ACTIVE" />
 			<dashboard displayType="VISIBILITY" node="0>0|7|1|0|0|0|4" groups="MOTOR_ACTIVE" />
+            <!-- cameras -->
+            <dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+            <dashboard displayType="VISIBILITY" node="cameraDisplayRoot" groups="WORKING" />
         </default>
 
         <compounds>
@@ -3019,5 +3031,22 @@
         <i3dMapping id="steeringBarBack" node="1>0|2" />
         <i3dMapping id="steeringBarBackLeftRef" node="1>0|2|0" />
         <i3dMapping id="steeringBarBackRightRef" node="1>0|2|1" />
+        <i3dMapping id="camera_02" node="0>0|6|2|0|0|0|0|0|0|0|0|5"/>
+        <i3dMapping id="rotPart" node="0>0|6|2|0|0|0|0|0|0|0|0|5|0"/>
+        <i3dMapping id="glass" node="0>0|6|2|0|0|0|0|0|0|0|0|5|0|0"/>
+        <i3dMapping id="pipeoutCamera_camera" node="0>0|6|2|0|0|0|0|0|0|0|0|5|0|0|0"/>
+        <i3dMapping id="rearCamera" node="0>0|7|4|4|3"/>
+        <i3dMapping id="boxRoot" node="0>0|7|4|4|3|0"/>
+        <i3dMapping id="box" node="0>0|7|4|4|3|0|0"/>
+        <i3dMapping id="preloadScreen" node="0>0|7|4|4|3|0|1"/>
+        <i3dMapping id="cameraDecals" node="0>0|7|4|4|3|0|2"/>
+        <i3dMapping id="rearcameraDisplayRoot" node="0>0|7|4|4|3|0|3"/>
+        <i3dMapping id="rearCamera_display" node="0>0|7|4|4|3|0|3|0"/>
+        <i3dMapping id="pipeoutDisplayRoot" node="0>0|7|4|4|3|0|4"/>
+        <i3dMapping id="pipeoutCamera_display" node="0>0|7|4|4|3|0|4|0"/>
+        <i3dMapping id="camera_01" node="0>0|7|4|7"/>
+        <i3dMapping id="rotPart_duplicateName_01" node="0>0|7|4|7|0"/>
+        <i3dMapping id="glass_duplicateName_01" node="0>0|7|4|7|0|0"/>
+        <i3dMapping id="rearCamera_camera" node="0>0|7|4|7|0|0|0"/>
     </i3dMappings>
 </vehicle>
