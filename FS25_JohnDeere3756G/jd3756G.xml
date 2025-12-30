@@ -401,7 +401,12 @@
 		</localHose>
 	</connectionHoses>
 	<enterable isTabbable="true">
-		
+	
+		<mirrors>
+		<!-- camera -->
+           <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+		</mirrors>
+	
         <enterReferenceNode node="jd3756G_component1"/>
         <exitPoint node="exitPoint"/>
         <cameras>
@@ -429,12 +434,6 @@
 			<dashboard displayType="TEXT" valueType="operatingTime" node="numbersOperatingTime" textColor="1 1 1 1" textSize="0.005" textMask="0000.0" font="GENERIC" emissiveScale="0.2" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </enterable>
-	
-	<mirrors>
-		<!-- camera -->
-           <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
-		</mirrors>
-	
 	<motorized>
         <consumerConfigurations>
             <consumerConfiguration>
