@@ -1158,8 +1158,6 @@
             <beaconLight node="beaconLight16_01" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" realLight="0>0|3|2|0" />
             <beaconLight node="beaconLight16_02" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" />
             <beaconLight node="beaconLight16_03" filename="$data/shared/assets/beaconLights/lizard/beaconLight16.xml" useRealLights="false" />
-            <!-- camera -->>
-            <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </beaconLights>
 
         <dashboards>
@@ -1171,6 +1169,8 @@
             <dashboard displayType="EMITTER" valueType="lightState" node="dotWorkLightBack_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" lightTypes="1" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="lightState" node="dotWorkLightFront_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" lightTypes="2" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="beaconLight" node="dotBeaconLight_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" groups="MOTOR_ACTIVE"/>
+            <!-- camera -->>
+            <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </lights>
 
