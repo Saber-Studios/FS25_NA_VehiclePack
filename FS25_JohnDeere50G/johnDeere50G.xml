@@ -400,6 +400,7 @@
         <speedRotatingPart node="wr6"  wheelIndex="2" wheelScale="1"/>		
     </speedRotatingParts>		
 
+
     <lights>
         <sharedLight linkNode="hellaWorkingLightSquare_01" lightTypes="1" filename="$data/shared/assets/lights/hella/hellaWorkingLight05.xml">
             <rotationNode name="rotationNode1" rotation="10 0 0" />
@@ -435,7 +436,9 @@
         <dashboards>
 			<dashboard displayType="EMITTER" valueType="lightState" node="Iconservice7" baseColor="GREY" emitColor="GREEN" intensity="1" lightTypes="1" excludedLightTypes="3" groups="MOTOR_ACTIVE"/>
 			<dashboard displayType="EMITTER" valueType="lightState" node="dashboardOn"                                     intensity="0.3" lightTypes="0 1 2 3" groups="MOTOR_ACTIVE"/>	
-<!-- 		<dashboard displayType="EMITTER" valueType="lightState" node="dashboard"                                       intensity="0.3" lightTypes="0 1 2 3" groups="MOTOR_ACTIVE"/> -->			
+<!-- 		<dashboard displayType="EMITTER" valueType="lightState" node="dashboard"                                       intensity="0.3" lightTypes="0 1 2 3" groups="MOTOR_ACTIVE"/> -->
+			<!-- cameras -->
+			<dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
 		</dashboards>
     </lights>
 
@@ -464,6 +467,12 @@
     </connectionHoses>
 
     <enterable isTabbable="true" >
+	
+		<mirrors>
+		<!-- camera -->
+           <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+		</mirrors>
+		
         <enterReferenceNode node="JD50G_main_componen1" />
         <exitPoint node="exitPoint" />
 
@@ -628,6 +637,8 @@
 
 	<powerConsumer ptoRpm="350" neededMinPtoPower="5" neededMaxPtoPower="5"/>	
 
+	
+
     <cylindered>
         <movingTools>
             <movingTool node="body" playSound="true" isConsumingPower="true">
@@ -694,7 +705,7 @@
             <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="20" maxRot="-20" axis="AXIS_CRANE_ARM2" doInterpolation="true" groups="MOTOR_ACTIVE"/> 
             <dashboard displayType="ROT" valueType="movingTool" node="joystickRight"  rotAxis="2" minRot="10" maxRot="-15" axis="AXIS_CRANE_ARM4"  doInterpolation="true" groups="MOTOR_ACTIVE"/>
         </dashboards>
-    </cylindered>
+    </cylindered>	
 
     <suspensions>
         <suspension node="seat"              weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" />
@@ -734,6 +745,8 @@
             <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
             <group name="FRONT_ATTACHMENT" attacherJointIndices="2 5"/>
             <group name="BACK_ATTACHMENT"  attacherJointIndices="1 3 4"/>
+			<!-- camera -->
+			<group name="WORKING"    isMotorRunning="true"/>
         </groups>
 
         <default>
@@ -746,7 +759,11 @@
 			<dashboard displayType="EMITTER" node="Iconservice9"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_ACTIVE" />
 			<dashboard displayType="EMITTER" node="LowSpeedDecals"   baseColor="GREY"   emitColor="GREEN" intensity="0.5" groups="MOTOR_ACTIVE" />
 			<dashboard displayType="EMITTER" node="FastSpeedDecals"  baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_ACTIVE" />			
-        </default>
+			<!-- camera -->
+			<dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+			<dashboard displayType="VISIBILITY" node="cameraDisplayRoot" groups="WORKING" />
+		
+		</default>
     </dashboard>
 	
     <ai>
@@ -1013,6 +1030,19 @@
 	  <i3dMapping id="TwinComponent" node="1>" />
 	  <i3dMapping id="wheelComponentL" node="1>0" />
 	  <i3dMapping id="wheelComponentR" node="1>1" />
+		<!--camera -->
+		    <i3dMapping id="rearCamera" node="0>1|2|3|5"/>
+    <i3dMapping id="boxRoot" node="0>1|2|3|5|0"/>
+    <i3dMapping id="box" node="0>1|2|3|5|0|0"/>
+    <i3dMapping id="preloadScreen" node="0>1|2|3|5|0|1"/>
+    <i3dMapping id="cameraDecals" node="0>1|2|3|5|0|2"/>
+    <i3dMapping id="cameraDisplayRoot" node="0>1|2|3|5|0|3"/>
+    <i3dMapping id="rearCamera_display" node="0>1|2|3|5|0|3|0"/>
+    <i3dMapping id="camera_01" node="0>1|2|3|6"/>
+    <i3dMapping id="rotPart" node="0>1|2|3|6|0"/>
+    <i3dMapping id="glass" node="0>1|2|3|6|0|0"/>
+    <i3dMapping id="rearCamera_camera" node="0>1|2|3|6|0|0|0"/>
+	  
 	</i3dMappings>
 
 </vehicle>
