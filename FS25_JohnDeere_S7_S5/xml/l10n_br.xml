@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+		<text name="balaoInvertida" text="Balão e traseira invertida" />
+		<text name="duplaInvertida" text="Dupla e traseira invertida" />
+		<text name="transporte" text="Transporte" />
+		<text name="transporteInvertida" text="Transporte e traseira invertida" />
+		<text name="69metrosdobravel" text="7 metros dobravel" />
+		<text name="79metrosdobravel" text="7.9 metros dobravel" />
+		<text name="87metrosdobravel" text="8.7 metros dobravel" />
+		<text name="61metros" text="6.1 metros" />
+		<text name="69metros" text="7 metros" />
+		<text name="79metros" text="7.9 metros" />
+		<text name="87metros" text="8.7 metros" />
+		<text name="graneleiro" text="Graneleiro" />
+		<text name="8800Litros" text="8800 litros" />
+		<text name="8800Litrosarcos" text="8800 litros com arcos" />
+		<text name="8800Litroslona" text="8800 litros com lona" />	
+		<text name="10600Litros" text="10600 litros" />
+		<text name="10600Litrosarcos" text="10600 litros com arcos" />
+		<text name="10600Litroslona" text="10600 litros com lona" />	
+		<text name="12500Litros" text="12500 litros" />
+		<text name="12500Litrosarcos" text="12500 litros com arcos" />
+		<text name="12500Litroslona" text="12500 litros com lona" />	
+		<text name="17500Litros" text="17500 litros" />
+		<text name="14800Litros" text="14800 litros" />
+		<text name="14800Litrosarcos" text="14800 litros com arcos" />
+		<text name="14800Litroslona" text="14800 litros com lona" />
+		<text name="19800Litros" text="19800 litros" />
+		<text name="14100Litros" text="14100 litros" />
+		<text name="sinalizacoes" text="Sinalizações" />
+		<text name="modelo1" text="Modelo 1" />
+		<text name="modelo2" text="Modelo 2" />
+		<text name="modelo3" text="Modelo 3" />
+		<text name="modelo4" text="Modelo 4" />
+		<text name="janelas" text="Janelas" />
+		<text name="fume1" text="Fumê 1" />
+		<text name="fume2" text="Fumê 2" />
+		<text name="fume3" text="Fumê 3" />
+		<text name="farolBaixoCabine" text="Farol inferior da cabine" />
+		<text name="sinalizacaoFrontal" text="Sinalização frontal e traseira" />
+		<text name="refletores" text="Refletores dianteiros" />
+		<text name="placaoversize" text="Placa oversize traseira" />
+		<text name="refletoresplacaoversize" text="Refletores + placa oversize" />
+		<text name="escapamento" text="Escapamento" />
+		<text name="escapamentoTraseiro" text="Escapamento traseiro" />
+		<text name="larguraeixo" text="Largura do eixo traseiro" />
+		<text name="largura1" text="Largura 1" />
+		<text name="largura2" text="Largura 2" />
+		<text name="largura3" text="Largura 3" />
+		<text name="largura4" text="Largura 4" />
+		<text name="largura5" text="Largura 5" />
+		<text name="largura6" text="Largura 6" />
+		<text name="picador" text="Picador" />
+		<text name="adesivosVelocidade" text="Adesivos de velocidade" />
+		<text name="espelhosExtras" text="Espelhos extras" />
+		<text name="sensorCabine" text="Sensores da cabine" />
+		<text name="faroldacabine" text="Farol da cabine" />
+		<text name="farolDuploRedondo" text="Farol duplo redondo" />
+		<text name="farolRetangular" text="Faraol retangular" />
+		<text name="antenaGPS" text="Antena de GPS" />
+		<text name="integrada" text="Integrada a cabine" />
+		<text name="triangulotraseiro" text="Triângulo traseiro" />
+		<text name="refletorTraseiro" text="Refletores traseiros" />
+		<text name="lonaGraneleiro" text="Lona do graneleiro" />
+		<text name="canoportaescada" text="Cano - porta - escada" />
+		<text name="tampas" text="Tampas" />
+		<text name="bancosinalizacaoDireita" text="Bancos - sinalização direita" />
+	</texts>
+</l10n>

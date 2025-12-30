@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="balaoInvertida" text="Globo y trasera invertida" />
+        <text name="duplaInvertida" text="Doble y trasera invertida" />
+        <text name="transporte" text="Transporte" />
+        <text name="transporteInvertida" text="Transporte y trasera invertida" />
+        <text name="69metrosdobravel" text="7 metros plegable" />
+        <text name="79metrosdobravel" text="7,9 metros plegable" />
+        <text name="87metrosdobravel" text="8,7 metros plegable" />
+        <text name="61metros" text="6,1 metros" />
+        <text name="69metros" text="7 metros" />
+        <text name="79metros" text="7,9 metros" />
+        <text name="87metros" text="8,7 metros" />
+        <text name="graneleiro" text="Tolva" />
+        <text name="8800Litros" text="8800 litros" />
+        <text name="8800Litrosarcos" text="8800 litros con arcos" />
+        <text name="8800Litroslona" text="8800 litros con lona" />
+        <text name="10600Litros" text="10600 litros" />
+        <text name="10600Litrosarcos" text="10600 litros con arcos" />
+        <text name="10600Litroslona" text="10600 litros con lona" />
+        <text name="12500Litros" text="12500 litros" />
+        <text name="12500Litrosarcos" text="12500 litros con arcos" />
+        <text name="12500Litroslona" text="12500 litros con lona" />
+        <text name="17500Litros" text="17500 litros" />
+        <text name="14800Litros" text="14800 litros" />
+        <text name="14800Litrosarcos" text="14800 litros con arcos" />
+        <text name="14800Litroslona" text="14800 litros con lona" />
+        <text name="19800Litros" text="19800 litros" />
+        <text name="14100Litros" text="14100 litros" />
+        <text name="sinalizacoes" text="Señalizaciones" />
+        <text name="modelo1" text="Modelo 1" />
+        <text name="modelo2" text="Modelo 2" />
+        <text name="modelo3" text="Modelo 3" />
+        <text name="modelo4" text="Modelo 4" />
+        <text name="janelas" text="Ventanas" />
+        <text name="fume1" text="Polarizado 1" />
+        <text name="fume2" text="Polarizado 2" />
+        <text name="fume3" text="Polarizado 3" />
+        <text name="farolBaixoCabine" text="Faro inferior de la cabina" />
+        <text name="sinalizacaoFrontal" text="Señalización frontal y trasera" />
+        <text name="refletores" text="Reflectores frontales" />
+        <text name="placaoversize" text="Placa oversize trasera" />
+        <text name="refletoresplacaoversize" text="Reflectores + placa oversize" />
+        <text name="escapamento" text="Escape" />
+        <text name="escapamentoTraseiro" text="Escape trasero" />
+        <text name="larguraeixo" text="Ancho del eje trasero" />
+        <text name="largura1" text="Ancho 1" />
+        <text name="largura2" text="Ancho 2" />
+        <text name="largura3" text="Ancho 3" />
+        <text name="largura4" text="Ancho 4" />
+        <text name="largura5" text="Ancho 5" />
+        <text name="largura6" text="Ancho 6" />
+        <text name="picador" text="Picador" />
+        <text name="adesivosVelocidade" text="Pegatinas de velocidad" />
+        <text name="espelhosExtras" text="Espejos extra" />
+        <text name="sensorCabine" text="Sensores de la cabina" />
+        <text name="faroldacabine" text="Faro de la cabina" />
+        <text name="farolDuploRedondo" text="Faro doble redondo" />
+        <text name="farolRetangular" text="Faro rectangular" />
+        <text name="antenaGPS" text="Antena GPS" />
+        <text name="integrada" text="Integrada en la cabina" />
+        <text name="triangulotraseiro" text="Triángulo trasero" />
+        <text name="refletorTraseiro" text="Reflectores traseros" />
+        <text name="lonaGraneleiro" text="Lona de la tolva" />
+		<text name="canoportaescada" text="Tubo - puerta - escalera" />
+        <text name="tampas" text="Tapas" />
+        <text name="bancosinalizacaoDireita" text="Asientos - señalización derecha" />
+    </texts>
+</l10n>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineLarge" file="vehicles/johnDeere/t560/sounds/t560_loop.gls" volumeScale="1.4"/>
+            <motor template="indoorCabinRumble" linkNodeOffset="-0.7 3.3 2.5" pitchScale="0.9" />
+            <motor template="indoorCabinRumble" linkNodeOffset="0.7 3.3 2.5" pitchScale="1.1" />
+            <motor template="cabinHarvester01" linkNodeOffset="0.7 3.3 2.5" pitchScale="1.1"  volumeScale="0.7"/>
+            <motor template="cabinHarvester01" linkNodeOffset="-0.7 3.3 2.5" pitchScale="0.9" volumeScale="0.7"/>
+            <motor template="transmissionHarvester01" pitchScale="0.9" volumeScale="0.8" linkNodeOffset="1.2 1.4 2.0" />
+            <motor template="transmissionHarvester01" pitchScale="1.1" volumeScale="0.8" linkNodeOffset="-1.2 1.4 2.0"/>
+            <reverseDrive template="reverseBeep01" />
+            <motor file="$data/vehicles/johnDeere/seriesS7/sounds/seriesX9_cabinBeep.wav" innerRadius="1.0" outerRadius="10.0" loops="1" linkNodeOffset="0 3 3" supportsReverb="false" isLocalSound="true">
+                <volume indoor="1.0" outdoor="0.0" />
+            </motor>
+        </sounds>
+    </motorized>
+
+    <enterable>
+        <sounds>
+            <rain template="rainInVehicle"  linkNodeOffset="0 2.5 -0.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </rain>
+
+            <hail template="hailInVehicle"  linkNodeOffset="0 2.5 -0.5" volumeScale="1.5">
+                <loopSynthesisRpm>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="42.0" modifiedValue="1" />
+                </loopSynthesisRpm>
+                <volume>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.2" />
+                </volume>
+
+                <pitch>
+                    <modifier type="SPEED" value="0" modifiedValue="1" />
+                    <modifier type="SPEED" value="25" modifiedValue="1" />
+                    <modifier type="SPEED" value="42" modifiedValue="1.0" />
+                </pitch>
+            </hail>
+        </sounds>
+    </enterable>
+
+    <lights>
+        <sounds>
+            <toggleLights template="switch01"  />
+            <turnLight template="switchTurnlight"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <hydraulic template="hydraulicOpen04" linkNode="attacherJointCutter" volumeScale="2"/>
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="waterSplash01" linkNode="attacherJointCutter"/>
+        </sounds>
+    </drivable>
+
+    <combine>
+        <sounds>
+            <chopperWork template="harvesterChopper"   linkNode="strawChopper"/>
+            <chopStraw   template="chopStrawDischarge" linkNode="strawChopper"/>
+            <dropStraw   template="dropStrawDischarge" linkNode="strawChopper"/>
+            <fill template="grainLargeFill" volumeScale="0.3" linkNode="grainTankAuger"/>
+        </sounds>
+    </combine>
+
+        <turnOnVehicle>
+            <sounds>
+                <start template="combineThreshingSystemStart" volumeScale="0.25"/>
+                <work template="combineThreshingSystemLoop"   volumeScale="0.25"/>
+                <stop template="combineThreshingSystemStop"   volumeScale="0.25"/>
+            </sounds>
+        </turnOnVehicle>
+
+    <ai>
+        <automaticSteering>
+            <sounds>
+                <engage template="gpsEngageJohnDeere"/>
+                <disengage template="gpsDisengageJohnDeere"/>
+                <lineEnd template="gpsLineEndJohnDeere"/>
+            </sounds>
+        </automaticSteering>
+    </ai>
+
+    <honk>
+        <sound template="honkJohnDeereHarvester" />
+    </honk>
+</sounds>

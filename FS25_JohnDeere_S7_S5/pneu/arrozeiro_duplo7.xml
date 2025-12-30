@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <metadata brand="CONTINENTAL" name="Tractor85" category="TRACTOR" />
+    <default>
+        <physics radius="1.006" visualOffset="0.005" width="0.52" mass="0.321" tireType="mud" frictionScale="1.60" maxLongStiffness="10.5" maxLatStiffness="125" maxLatStiffnessLoad="2" />
+        <tire filename="pneu/pneu.i3d" nodeLeft="1|7" nodeRight="1|7" maxDeformation="0.0871" tireTrackAtlasIndex="0" hasMudMesh="true" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="21 42.4" />
+        <innerRim filename="pneu/pneu.i3d" nodeLeft="0|4" nodeRight="0|5" widthAndDiam="31 33" offset="0.065"/>
+    </default>
+    <configurations>
+        <configuration id="duplaDentro" >
+            <innerRim filename="pneu/pneu.i3d" nodeLeft="0|4" nodeRight="0|5" widthAndDiam="31 33" offset="0.065"/>
+        </configuration>
+		<configuration id="duplaFora" >
+            <innerRim filename="pneu/pneu.i3d" nodeLeft="0|0" nodeRight="0|1" widthAndDiam="31 33" offset="-0.065"/>
+        </configuration>
+    </configurations>
+</wheel>

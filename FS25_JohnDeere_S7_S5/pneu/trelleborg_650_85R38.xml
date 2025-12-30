@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <metadata brand="TRELLEBORG" name="TM900" category="TRACTOR" />
+    <default>
+        <physics radius="1.03" visualOffset="0.005" width="0.65" mass="0.398" tireType="mud" frictionScale="1.60" maxLongStiffness="11" maxLatStiffness="130" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM900/650_85R38.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.1075" tireTrackAtlasIndex="0" hasMudMesh="true" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="23 38" />
+        <innerRim filename="pneu/pneu.i3d" nodeLeft="0|2" nodeRight="0|3" widthAndDiam="31 30" offset="0.08"/>
+    </default>
+    <configurations>
+        <configuration id="duplaDentro" >
+            <innerRim filename="pneu/pneu.i3d" nodeLeft="0|4" nodeRight="0|5" widthAndDiam="31 30" offset="0.15"/>
+        </configuration>
+		<configuration id="duplaFora" >
+            <innerRim filename="pneu/pneu.i3d" nodeLeft="0|0" nodeRight="0|1" widthAndDiam="31 30" offset="-0.15"/>
+        </configuration>
+    </configurations>
+</wheel>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <metadata brand="MICHELIN" name="CEREXBIB" category="HARVESTER" />
+    <default>
+        <physics radius="0.9522" visualOffset="0.005" width="0.8" mass="0.369" tireType="mud" frictionScale="1.60" maxLongStiffness="12.5" maxLatStiffness="145" maxLatStiffnessLoad="2" />
+        <tire filename="pneu/pneu.i3d" nodeLeft="1|4" nodeRight="1|4" maxDeformation="0.1027" tireTrackAtlasIndex="0" hasMudMesh="true" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="30 33" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="30 33" />
+    </default>
+</wheel>

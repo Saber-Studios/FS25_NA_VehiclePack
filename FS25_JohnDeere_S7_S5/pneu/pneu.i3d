@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pneu.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="20" filename="$data/shaders/tireMudShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="1" filename="$data/shared/default_diffuse.dds"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/clear_diffuse.dds"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="10" filename="$data/shared/detailLibrary/nonMetallic/dirt_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/dirt_specular.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/nonMetallic/mud_normal.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.dds"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="13" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="21" filename="../texturas/pneuArrozeiro.dds"/>
+    <File fileId="22" filename="../texturas/pneuArrozeiro_vmask.dds"/>
+    <File fileId="2" filename="../texturas/aroDuplagem_normal.dds"/>
+    <File fileId="3" filename="../texturas/aroDuplagem_vmaks.dds"/>
+    <File fileId="14" filename="../texturas/lizardMB39_withDetails_normal.dds"/>
+    <File fileId="15" filename="../texturas/lizardMB39_withDetails_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="aroCor" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="1 0.742 0"/>
+    </Material>
+    <Material name="arrozeiro_mat" materialId="6" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Texture fileId="1"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="17"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+      <CustomParameter name="colorScale" value="0.016 0.016 0.016"/>
+      <CustomParameter name="porosity" value="0.5"/>
+      <CustomParameter name="morphPos" value="-0.567 -1.029 0.5 0.1"/>
+    </Material>
+    <Material name="mb39_tires_mat" materialId="7" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="17"/>
+      <Custommap name="detailDiffuse" fileId="18"/>
+      <CustomParameter name="porosity" value="0.5"/>
+      <CustomParameter name="morphPos" value="-0.383 -0.614 0.53 0.056"/>
+    </Material>
+    <Material name="mud_mat" materialId="8" customShaderId="20">
+      <Texture fileId="10"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="morphPos" value="-1.11 -0.85 0.5 0.04"/>
+    </Material>
+    <Material name="mud_mat" materialId="9" customShaderId="20">
+      <Texture fileId="10"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="morphPos" value="-0.414 -0.743 0.5 0.1"/>
+    </Material>
+    <Material name="silverScratchedMat" materialId="10" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="12"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pneu.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="aros" nodeId="28">
+      <Shape name="aroDuplagemDentroE" shapeId="1" clipDistance="300" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="aroDuplagemDentroD" shapeId="2" clipDistance="300" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <Shape name="aroDuplagemForaE" shapeId="3" clipDistance="300" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="5,10"/>
+      <Shape name="aroDuplagemForaD" shapeId="4" clipDistance="300" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5,10"/>
+      <Shape name="aroTransporteE" shapeId="5" clipDistance="300" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="5,10"/>
+      <Shape name="aroTransporteD" shapeId="6" clipDistance="300" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5,10"/>
+    </TransformGroup>
+    <TransformGroup name="pneu" nodeId="35">
+      <Shape name="MB39__28_1R30" shapeId="7" clipDistance="300" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="mudMesh" translation="0 0 -8.95e-07" scale="0.907625 1.11871 1.11871" shapeId="8" clipDistance="35" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="MB39__28_1R30" shapeId="9" clipDistance="300" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="mudMesh" translation="0 0 -9.308e-07" scale="0.94393 1.16346 1.16346" shapeId="8" clipDistance="35" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </Shape>
+      <Shape name="traseiroMenor" shapeId="10" clipDistance="300" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="1.11482 0.886729 0.886729" shapeId="11" clipDistance="35" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="traseiroMaior" shapeId="12" clipDistance="300" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="1.16783 0.932018 0.932018" shapeId="11" clipDistance="35" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="pneuBalaoS5" shapeId="13" clipDistance="300" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="1.28605 1.08701 1.08701" shapeId="11" clipDistance="35" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="pneuDuploS5" shapeId="14" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="0.820974 1.07396 1.07396" shapeId="11" clipDistance="35" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="pneuBalaoS7" shapeId="15" clipDistance="300" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="1.35422 1.14462 1.14462" shapeId="11" clipDistance="35" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="pneuDuploS7" shapeId="16" clipDistance="300" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="0.864485 1.13088 1.13088" shapeId="11" clipDistance="35" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+      <Shape name="pneuDuploS7" shapeId="17" clipDistance="300" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="mudMesh" scale="0.966831 1.13088 1.13088" shapeId="11" clipDistance="35" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

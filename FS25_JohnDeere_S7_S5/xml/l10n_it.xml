@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="balaoInvertida" text="Pallone e posteriore invertito" />
+        <text name="duplaInvertida" text="Doppia e posteriore invertito" />
+        <text name="transporte" text="Trasporto" />
+        <text name="transporteInvertida" text="Trasporto e posteriore invertito" />
+        <text name="69metrosdobravel" text="7 metri pieghevole" />
+        <text name="79metrosdobravel" text="7,9 metri pieghevole" />
+        <text name="87metrosdobravel" text="8,7 metri pieghevole" />
+        <text name="61metros" text="6,1 metri" />
+        <text name="69metros" text="7 metri" />
+        <text name="79metros" text="7,9 metri" />
+        <text name="87metros" text="8,7 metri" />
+        <text name="graneleiro" text="Rimorchio granaglie" />
+        <text name="8800Litros" text="8800 litri" />
+        <text name="8800Litrosarcos" text="8800 litri con archi" />
+        <text name="8800Litroslona" text="8800 litri con telo" />
+        <text name="10600Litros" text="10600 litri" />
+        <text name="10600Litrosarcos" text="10600 litri con archi" />
+        <text name="10600Litroslona" text="10600 litri con telo" />
+        <text name="12500Litros" text="12500 litri" />
+        <text name="12500Litrosarcos" text="12500 litri con archi" />
+        <text name="12500Litroslona" text="12500 litri con telo" />
+        <text name="17500Litros" text="17500 litri" />
+        <text name="14800Litros" text="14800 litri" />
+        <text name="14800Litrosarcos" text="14800 litri con archi" />
+        <text name="14800Litroslona" text="14800 litri con telo" />
+        <text name="19800Litros" text="19800 litri" />
+        <text name="14100Litros" text="14100 litri" />
+        <text name="sinalizacoes" text="Segnalazioni" />
+        <text name="modelo1" text="Modello 1" />
+        <text name="modelo2" text="Modello 2" />
+        <text name="modelo3" text="Modello 3" />
+        <text name="modelo4" text="Modello 4" />
+        <text name="janelas" text="Finestre" />
+        <text name="fume1" text="Fumé 1" />
+        <text name="fume2" text="Fumé 2" />
+        <text name="fume3" text="Fumé 3" />
+        <text name="farolBaixoCabine" text="Faro inferiore della cabina" />
+        <text name="sinalizacaoFrontal" text="Segnalazione anteriore e posteriore" />
+        <text name="refletores" text="Riflettori anteriori" />
+        <text name="placaoversize" text="Targa oversize posteriore" />
+        <text name="refletoresplacaoversize" text="Riflettori + targa oversize" />
+        <text name="escapamento" text="Scarico" />
+        <text name="escapamentoTraseiro" text="Scarico posteriore" />
+        <text name="larguraeixo" text="Larghezza dell’assale posteriore" />
+        <text name="largura1" text="Larghezza 1" />
+        <text name="largura2" text="Larghezza 2" />
+        <text name="largura3" text="Larghezza 3" />
+        <text name="largura4" text="Larghezza 4" />
+        <text name="largura5" text="Larghezza 5" />
+        <text name="largura6" text="Larghezza 6" />
+        <text name="picador" text="Trituratore" />
+        <text name="adesivosVelocidade" text="Adesivi di velocità" />
+        <text name="espelhosExtras" text="Specchietti aggiuntivi" />
+        <text name="sensorCabine" text="Sensori della cabina" />
+        <text name="faroldacabine" text="Faro della cabina" />
+        <text name="farolDuploRedondo" text="Faro rotondo doppio" />
+        <text name="farolRetangular" text="Faro rettangolare" />
+        <text name="antenaGPS" text="Antenna GPS" />
+        <text name="integrada" text="Integrata nella cabina" />
+        <text name="triangulotraseiro" text="Triangolo posteriore" />
+        <text name="refletorTraseiro" text="Riflettori posteriori" />
+        <text name="lonaGraneleiro" text="Telo del rimorchio granaglie" />
+		<text name="canoportaescada" text="Tubo - porta - scala" />
+        <text name="tampas" text="Coperchi" />
+        <text name="bancosinalizacaoDireita" text="Sedili - segnalazione destra" />
+    </texts>
+</l10n>
