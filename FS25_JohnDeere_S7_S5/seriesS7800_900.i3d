@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="80" filename="../FS25_JohnDeere3756G/utils/rearcamera/textures/cameraDecals preloadScreen.dds"/>
+    <File fileId="80" filename="utils/rearcamera/textures/cameraDecals preloadScreen.dds"/>
     <File fileId="28" filename="texturas/seriesS7Decals_diffuse.dds"/>
     <File fileId="3" filename="texturas/seriesS7_normal.dds"/>
     <File fileId="4" filename="texturas/seriesS7_vmask.dds"/>
