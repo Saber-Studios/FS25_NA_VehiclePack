@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="jd3756gHeelLogGrapple" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>3756G Fast Coupler</en>
+            <de>3756G Schneller Koppler</de>
+		</name>
+        <specs>
+            <power>340</power>
+            <maxSpeed>10</maxSpeed>
+			<combination filterCategory="forestryExcavatorTools"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_jd3756G</function>
+        </functions>
+        <image>store_jd3756G.png</image>
+        <price>310000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>forestryExcavators</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <vertexBufferMemoryUsage>4035072</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1155072</indexBufferMemoryUsage>
+        <textureMemoryUsage>7864320</textureMemoryUsage>
+        <audioMemoryUsage>347114</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_tractor</typeDesc>
+        <filename>jd3756G.i3d</filename>
+        <sounds filename="sounds/jd3756G.xml"/>
+        <size width="3.7" length="10.8" lengthOffset="1.8" height="7.9"/>
+		<componentConfigurations>
+            <!-- grapple -->
+            <componentConfiguration name="1" numComponents="6">
+				<component index="1" centerOfMass="0 0.5 0" solverIterationCount="40" mass="25000"/>
+				<component index="2" centerOfMass="0 2 -1" solverIterationCount="20" mass="15000"/>
+				<component index="3" centerOfMass="0 0 0" solverIterationCount="20" mass="1000"/>
+				<component index="4" centerOfMass="0 0 0" solverIterationCount="20" mass="1400"/>
+				<component index="5" centerOfMass="0 0 0" solverIterationCount="20" mass="600"/>
+				<component index="6" centerOfMass="0 0 0" solverIterationCount="20" mass="600"/>
+				<joint component1="1" component2="2" node="componentJointBody" rotLimit="0 0 0" otLimitSpring="70000000 70000000 70000000" transLimit="0 0 0" transLimitSpring="100000 100000 100000" />
+				<joint component1="1" component2="3" node="componentJointWeight" rotLimit="0 0 0" transLimit="0 0 0" />
+	<joint component1="2" component2="4" node="clawColJoint" nodeActor1="clawJointActor" rotLimit="0 50 90" rotLimitSpring="0 1 1" rotLimitDamping="0 10 10" transLimitSpring="60000 60000 60000" transLimitDamping="100 100 100" maxRotDriveForce="0.5 0.5 0.5" rotDriveVelocity="0 0 0" zRotationNode="zRot"/>
+				<joint component1="4" component2="5" node="clawJointLeft" 	rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000000 1000000 2000" rotLimitDamping="0 0 30"/>
+				<joint component1="4" component2="6" node="clawJointRight" 	rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000000 1000000 2000" rotLimitDamping="0 0 30"/>
+				<collisionPair component1="2" component2="3" enabled="false" />
+				<collisionPair component1="5" component2="6" enabled="false" />
+            </componentConfiguration>
+            <!-- fast coupler -->
+            <componentConfiguration name="2" numComponents="3">
+				<component index="1" centerOfMass="0 0.5 0" solverIterationCount="40" mass="25000"/>
+				<component index="2" centerOfMass="0 2 -1" solverIterationCount="20" mass="15000"/>
+				<component index="3" centerOfMass="0 0 0" solverIterationCount="20" mass="1000"/>
+				<joint component1="1" component2="2" node="componentJointBody" rotLimit="0 0 0" otLimitSpring="70000000 70000000 70000000" transLimit="0 0 0" transLimitSpring="100000 100000 100000" />
+				<joint component1="1" component2="3" node="componentJointWeight" rotLimit="0 0 0" transLimit="0 0 0" />
+				<collisionPair component1="2" component2="3" enabled="false" />
+            </componentConfiguration>
+        </componentConfigurations>
+        <schemaOverlay attacherJointPosition="0 0" name="VEHICLE"/>
+        <mapHotspot type="TRACTOR"/>
+    </base>
+	<configurationSets title="$l10n_shop_configuration">
+        <configurationSet name="$l10n_configuration_grapple">
+            <configuration name="animation"                 index="1"/>
+            <configuration name="component"                 index="1"/>
+            <configuration name="cylindered"                index="1"/>
+            <configuration name="design"                  	index="1"/>
+			<configuration name="logGrab"             		index="1"/>
+			<configuration name="vehicleType"             	index="1"/>
+			<configuration name="tensionBelts"             	index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_configuration_fastCoupler" isDefault="true">
+            <configuration name="animation"                 index="2"/>
+            <configuration name="component"                 index="2"/>
+            <configuration name="cylindered"                index="2"/>
+            <configuration name="design"                  	index="2"/>
+            <configuration name="logGrab"                  	index="2"/>
+			<configuration name="vehicleType"             	index="2"/>
+			<configuration name="tensionBelts"             	index="2"/>
+        </configurationSet>
+    </configurationSets>
+	<vehicleTypeConfigurations>
+        <vehicleTypeConfiguration vehicleType="jd3756gHeelLogGrapple" />
+        <vehicleTypeConfiguration vehicleType="jd3756gHeel" />
+    </vehicleTypeConfigurations>
+	<designConfigurations>
+        <designConfiguration price="10000">			<!-- grapple -->
+			<objectChange node="clawJoint1" 				visibilityActive="true" 	visibilityInactive="false" />
+			<objectChange node="configAttacher" 			visibilityActive="false" 	visibilityInactive="true" />
+			<objectChange node="configGrapple" 				visibilityActive="true" 	visibilityInactive="false" />
+			<foliageBendingModifier index="6" 				isActive="false"/>
+        </designConfiguration>
+        <designConfiguration price="0">				<!-- fast coupler -->
+			<objectChange node="clawJoint1" 				visibilityActive="false" 	visibilityInactive="true" />
+			<objectChange node="configAttacher" 			visibilityActive="true" 	visibilityInactive="false" />
+			<objectChange node="configGrapple" 				visibilityActive="false" 	visibilityInactive="true" />
+			<foliageBendingModifier index="5" 				isActive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+	<design3Configurations title="$l10n_configuration_windows">
+        <design3Configuration name="$l10n_configuration_valueDefault" price="0"/>
+        <design3Configuration name="$l10n_configuration_valueTinted" price="500">
+            <material materialSlotName="windowInside_mat">
+                <textures diffuse="$data/shared/windowLightDark_diffuse.png"/>
+            </material>
+            <material materialSlotName="windowOutside_mat">
+                <textures diffuse="$data/shared/windowDark_diffuse.png"/>
+            </material>
+        </design3Configuration>
+    </design3Configurations>
+	<design4Configurations title="$l10n_configuration_beacon" isYesNoOption="true">
+        <design4Configuration name="$l10n_configuration_valueNo" price="0" isDefault="true">
+            <objectChange node="beaconLightLeft" visibilityActive="false" />
+            <objectChange node="beaconLightRight" visibilityActive="false" />
+        </design4Configuration>
+        <design4Configuration name="$l10n_configuration_valueYes" price="500">
+            <objectChange node="beaconLightLeft" visibilityActive="true" />
+            <objectChange node="beaconLightRight" visibilityActive="true" />
+        </design4Configuration>
+    </design4Configurations>
+	<design5Configurations title="$l10n_configuration_cameraTarget" isYesNoOption="true">
+        <design5Configuration name="$l10n_configuration_cameraChassis" isDefault="true">
+            <objectChange node="outdoorCameraTarget" parentNodeActive="jd3756G_component1" />
+        </design5Configuration>
+        <design5Configuration name="$l10n_configuration_cameraBody">
+            <objectChange node="outdoorCameraTarget" parentNodeActive="jd3756G_component2" />
+        </design5Configuration>
+    </design5Configurations>
+	<dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="extinguisher" filename="$data/shared/assets/extinguisher.i3d"/>
+    </dynamicallyLoadedParts>
+    <wheels>
+		<wheelConfigurations>
+		    <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD" saveId="LIZARD_DEFAULT">
+                <wheels autoRotateBackSpeed="3.0" speedDependentRotateBack="false">
+                    <wheel isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.8" repr="wheelLeft01"  width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                        <tire tireTrackAtlasIndex="5"/>
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="1" restLoad="4.6" repr="wheelLeft02"  width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="1" restLoad="5.3" repr="wheelLeft03"  width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="6.1" repr="wheelLeft04"  width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                        <tire tireTrackAtlasIndex="5"/>
+                    </wheel>
+                    <wheel isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.8" repr="wheelRight01" width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                        <tire tireTrackAtlasIndex="5"/>
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="1" restLoad="4.6" repr="wheelRight02" width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="1" restLoad="5.3" repr="wheelRight03" width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                    </wheel>
+                    <wheel isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="6.1" repr="wheelRight04" width="0.65" radius="0.5" forcePointRatio="0.3" showSteeringAngle="false" initialCompression="10" suspTravel="0.1" spring="350" damper="250" transRatio="1.0" frictionScale="4" mass="1" supportsWheelSink="false" />
+                        <tire tireTrackAtlasIndex="5"/>
+                    </wheel>
+                </wheels>
+				<crawlers>
+					<crawler filename="tracks/jd3756GCrawler.xml" linkNode="crawlerNodeLeft"  wheelIndices="1 2 3 4" isLeft="true" />
+                    <crawler filename="tracks/jd3756GCrawler.xml" linkNode="crawlerNodeRight" wheelIndices="5 6 7 8" isLeft="false" />
+                </crawlers>
+            </wheelConfiguration>
+		</wheelConfigurations>
+		<ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="80" rotMax="80" rotCenter="0 0" />
+        </ackermannSteeringConfigurations>
+    </wheels>
+	<attacherJoints>
+		<attacherJointConfigurations>
+			<attacherJointConfiguration name="$l10n_configuration_valueYes"> 
+				<attacherJoint node="attacherJointFixed" jointType="wheelLoader" disabledByAttacherJoints="2" rootNode="jd3756G_component2" allowsJointLimitMovement="false" allowsLowering="false" rotLimitSpring="7500000 7500000 7500000" rotLimitDamping="5 5 5" transLimitSpring="750000 750000 750000" transLimitDamping="5 5 5" delayedObjectChangesOnAttach="true">
+					<schema position="1 0.5" rotation="0" invertX="true" />
+					<subType name="excavatorFastCoupler"  subTypeShowWarning="true"/>
+					<objectChange node="tensionBelts" 				movingPartUpdateActive="false" movingPartUpdateInactive="true" rotationActive="220 0 0" rotationInactive="0 0 0" visibilityActive="false" visibilityInactive="true" />
+				</attacherJoint>
+				<attacherJoint node="attacherJointDangle" jointType="dangleAttacher" disabledByAttacherJoints="1 3" rootNode="jd3756G_component2" allowsJointLimitMovement="false" allowsLowering="false" rotLimitSpring="7500 7500 7500" rotLimitDamping="5 5 5" transLimitSpring="7500 7500 7500" transLimitDamping="5 5 5" delayedObjectChangesOnAttach="true">
+					<schema position="1 0.5" rotation="0" invertX="true" />
+					<objectChange node="quickHitch" 						visibilityActive="false" visibilityInactive="true"/>
+					<objectChange node="quickHitchHydraulic" 				visibilityActive="false" visibilityInactive="true"/>
+					<objectChange node="quickHitchPart2" 					visibilityActive="false" visibilityInactive="true"/>
+					<objectChange node="1>0|1|0|0|6" 						visibilityActive="false" visibilityInactive="true"/>
+					<objectChange node="quickHitchPhysics" 					rotationActive="-65 0 0" rotationInactive="-40 0 0" />
+					<objectChange node="quickHitchPhysics" 					movingToolRotMaxActive="-65" movingToolRotMinActive="-65" ovingToolRotMaxInactive="360" ovingToolRotMinInactive="-360"/>
+					<objectChange node="quickHitchPhysicsRot" 				rotationActive="0 0 0" rotationInactive="0 0 0" />
+					<objectChange node="quickHitchRot" 						rotationActive="0 0 0" rotationInactive="0 0 0" />
+					<objectChange node="quickHitchPhysicsRot" 				movingPartUpdateActive="false" movingPartUpdateInactive="true"/>
+					<objectChange node="quickHitchRot" 						movingPartUpdateActive="false" movingPartUpdateInactive="true"/>
+					<objectChange node="quickHitchColRot" 					movingPartUpdateActive="true" movingPartUpdateInactive="false" rotationInactive="0 0 0" />
+					<subType name="excavatorFastCoupler"  subTypeShowWarning="true"/>
+					<objectChange node="tensionBelts" 						movingPartUpdateActive="false" movingPartUpdateInactive="true" visibilityActive="false" visibilityInactive="true" />
+				</attacherJoint>
+				<attacherJoint node="bigBagAttacher" jointType="bigBag" disabledByAttacherJoints="2" rootNode="jd3756G_component2" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="5 5 90" upperRotLimit="5 5 90" upperTransLimit="0 0 0" lowerTransLimit="0 0 0" rotLimitSpring="7500 7500 7500" rotLimitDamping="1 1 1" transLimitSpring="7500 7500 7500" transLimitDamping="1 1 1">
+					<schema position="1 0.3" rotation="0" invertX="true" />
+					<objectChange node="tensionBelts" 				movingPartUpdateActive="false" movingPartUpdateInactive="true" rotationActive="220 0 0" rotationInactive="0 0 0" visibilityActive="false" visibilityInactive="true" />
+				</attacherJoint>
+			</attacherJointConfiguration>
+        </attacherJointConfigurations>
+    </attacherJoints>
+	<lights>
+		<states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 2"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+		<sharedLight linkNode="frontLightLeft01" lightTypes="0" filename="$data/shared/assets/lights/lizard/workingLight12.xml" />
+		<sharedLight linkNode="frontLightLeft02" lightTypes="0" filename="$data/shared/assets/lights/lizard/workingLight12.xml" />
+		<sharedLight linkNode="reverseLight" filename="$data/shared/assets/lights/lizard/workingLight11.xml" reverseLight="true">
+			<rotationNode name="rotationNode1" node="0|0" rotation="25 0 0" />
+		</sharedLight>
+		<sharedLight linkNode="sideMarkerOrange01" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+		<sharedLight linkNode="sideMarkerOrange02" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+		<sharedLight linkNode="workingLightFront01" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight09.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-20 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightFront02" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight09.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-20 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightFront03" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight09.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-20 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightFront04" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight09.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-20 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightFront05" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight09.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-20 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightBackLeft" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight12.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-60 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightBackRight" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight12.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="-60 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightBoomLeft" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight12.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="0 0 0" />
+        </sharedLight>
+		<sharedLight linkNode="workingLightBoomRight" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight11.xml">
+            <rotationNode name="rotationNode1" node="0|0" rotation="0 0 0" />
+        </sharedLight>
+		<beaconLights>
+            <beaconLight node="beaconLightLeft" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+            <beaconLight node="beaconLightRight" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+        </beaconLights>
+		<realLights>
+            <low>
+				<light node="frontLightLow"        		lightTypes="0" excludedLightTypes="2 3" />
+				<light node="workLightFrontLow"     	lightTypes="2"/>
+				<light node="workLightBackLow"     		lightTypes="1"/>
+				<light node="workLightArmLow"     		lightTypes="2"/>
+            </low>
+            <high>
+				<light node="frontLightHigh" 			lightTypes="0" excludedLightTypes="2 3"/>
+				<light node="workLightFrontHigh"    	lightTypes="2"/>
+				<light node="workLightBackHigh"    		lightTypes="1"/>
+				<light node="workLightArmHigh"    		lightTypes="2"/>
+				<reverseLight node="reverseLightHigh" />
+            </high>
+        </realLights>
+		<dashboards>
+			<dashboard displayType="EMITTER" valueType="lightState" node="seatGlow_decals"				 	intensity="0.3" lightTypes="0" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="joystickLeftGlow_decals"     		intensity="0.3" lightTypes="0 1" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="joystickRightGlow_decals"    		intensity="0.3" lightTypes="0 1" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="worklightFrontDecal" 				intensity="0.3" lightTypes="2" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="worklightBackDecal" 				intensity="0.3" lightTypes="1" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="beaconLight" node="beaconLightDecal" 				intensity="0.3" lightTypes="0" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="needleTemperature"         		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="needleFuel"                		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
+			<ashboard displayType="EMITTER" valueType="lightState" node="displayInterior"           		lightTypes="0" intensity="0.3" groups="MOTOR_ACTIVE"/>
+			<!-- camera -->
+			<dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </lights>
+    <powerConsumer ptoRpm="300" neededMinPtoPower="25" neededMaxPtoPower="25" useTurnOnState="false"/>
+	<connectionHoses>
+		<target attacherJointIndices="1 2" node="connectionHose1" type="CABLE_BUNDLE" straighteningFactor="1">
+			<objectChange node="connectionHose1" visibilityActive="true" visibilityInactive="false"/>
+		</target>
+		<target attacherJointIndices="1 2" node="connectionHose2" type="CABLE_BUNDLE" straighteningFactor="1">
+			<objectChange node="connectionHose2" visibilityActive="true" visibilityInactive="false"/>
+		</target>
+	<!-- hoses to main arm hydraulic-->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|0"  length="2" diameter="0.05" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|2|1" straighteningFactor="1"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|1"  length="2" diameter="0.05" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|2|2" straighteningFactor="1"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|2"  length="2" diameter="0.05" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|2|3" straighteningFactor="1"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|3"  length="2" diameter="0.05" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|2|4" straighteningFactor="1"/>
+        </localHose>
+	<!-- hoses to main arm -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|4"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|0" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|5"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|1" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|6"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|2" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|7"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|3" straighteningFactor="2"/>
+        </localHose>
+	<!-- hoses to second arm hydra -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|8"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|4" straighteningFactor="2"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|5"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|3|1" straighteningFactor="1.5"/>
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|3|9"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|2|6" straighteningFactor="2"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|7"  length="1.5" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|3|2" straighteningFactor="1.5"/>
+        </localHose>
+		<!-- hoses to second arm -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|8"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="2" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|4|0" straighteningFactor="2.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|9"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="2" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|4|1" straighteningFactor="2.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|10"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="2" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|4|2" straighteningFactor="2.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|2|11"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="2" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|4|3" straighteningFactor="2.5"/>
+		</localHose>
+	<!-- hoses to fast coupler hydra -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|0|6|0"  length="1.5" diameter="0.035" minCenterPointAngle="30" straighteningFactor="1" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|0|3|0|1" straighteningFactor="2"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|0|6|1"  length="1.5" diameter="0.035" minCenterPointAngle="30" straighteningFactor="1" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|0|3|0|2" straighteningFactor="2"/>
+		</localHose>
+	<!-- hoses to head -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|2|0"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|2" straighteningFactor="1.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|2|1"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|3" straighteningFactor="1.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|2|2"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|4" straighteningFactor="1.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|2|3"  length="2" diameter="0.04" minCenterPointAngle="30" straighteningFactor="1.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|5" straighteningFactor="1.5"/>
+		</localHose>
+	<!-- hoses grapple hydraulics -->
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|0|0|0|0|0|2|1"  length="0.5" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|0|4|0" straighteningFactor="0.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|0|0|0|0|0|2|2"  length="1" diameter="0.024" minCenterPointAngle="30" straighteningFactor="1" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|0|4|1" straighteningFactor="1"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|0|0|0|0|0|3|1"  length="1" diameter="0.024" minCenterPointAngle="30" straighteningFactor="0.5" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|0|4|2" straighteningFactor="0.5"/>
+		</localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="1>0|1|0|1|0|0|0|0|0|3|2"  length="1" diameter="0.024" minCenterPointAngle="30" straighteningFactor="1" isTwoPointHose="true"/>
+            <target type="CABLE_BOUNDLE" node="1>0|1|0|1|0|0|0|0|0|4|3" straighteningFactor="1"/>
+		</localHose>
+	</connectionHoses>
+	<enterable isTabbable="true">
+	
+		<mirrors>
+		<!-- camera -->
+           <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+		</mirrors>
+	
+        <enterReferenceNode node="jd3756G_component1"/>
+        <exitPoint node="exitPoint"/>
+        <cameras>
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="5.5" transMax="55" translation="0 0 10" rotation="-18 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-0.9" rotMaxX="0.6" transMin="0" transMax="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox" useWorldXZRotation="false"/>
+			<camera node="toolCamera" rotatable="false" useWorldXZRotation="false" useMirror="false" isInside="false" allowHeadTracking="true" />
+		</cameras>
+		<characterNode node="playerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget"/>
+            <target ikChain="leftFoot" targetNode="playerLeftFootTarget"/>
+            <target ikChain="rightArm" targetNode="playerRightHandTarget" poseId="narrowFingers"/>
+            <target ikChain="leftArm" targetNode="playerLeftHandTarget" poseId="narrowFingers"/>
+        </characterNode>
+		<characterTargetNodeModifier node="playerLeftFootTarget" transitionTime="0.1" >
+            <state node="playerLeftFootTargetGasLeft"   referenceNode="leftTrackPedalRot" irectionReferenceNode="playerLeftFootTargetGasLeftRef" />
+        </characterTargetNodeModifier>
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1" >
+            <state node="playerRightFootTargetGasRight"   referenceNode="rightTrackPedalRot" irectionReferenceNode="playerRightFootTargetGasRightRef" />
+        </characterTargetNodeModifier>
+		<dashboards>
+			<dashboard displayType="TEXT" valueType="operatingTime" node="numbersOperatingTime" textColor="1 1 1 1" textSize="0.005" textMask="0000.0" font="GENERIC" emissiveScale="0.2" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </enterable>
+	<motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillType="diesel" fillUnitIndex="1" usage="110"/> <!-- usage is per hour at max load and max rpm -->
+				<consumer fillUnitIndex="2" usage="3.0" fillType="def" />     <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.6" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.8" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.6" wheelIndex1="5" wheelIndex2="6"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.8" wheelIndex1="7" wheelIndex2="8"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.2" differentialIndex1="1" differentialIndex2="2"/> <!-- left -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.2" differentialIndex1="3" differentialIndex2="4"/> <!-- right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.5" differentialIndex1="5" differentialIndex2="6"/> <!-- left-right -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration hp="340" price="0" consumerConfigurationIndex="1">
+                <motor torqueScale="2.7" minRpm="850" maxRpm="2200" maxForwardSpeed="10" maxBackwardSpeed="10" brakeForce="20" lowBrakeForceScale="0.2" dampingRateScale="1.3">
+                    <torque normRpm="0.45" torque="0.90"/>
+                    <torque normRpm="0.50" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1.00"/>
+                    <torque normRpm="0.72" torque="1.00"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1.00" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="68" maxForwardGearRatio="320" minBackwardGearRatio="68" maxBackwardGearRatio="320" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5"/>
+        </exhaustEffects>
+        <motorStartDuration>3000</motorStartDuration>
+		<dashboards>
+			<dashboard displayType="ROT"  valueType="motorTemperature" node="needleTemperature" minRot="0" maxRot="-90" rotAxis="3" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="rpm"              node="numbersRPM" textColor="JCB_YELLOW1" textSize="0.007" textMask="0000" font="DIGIT" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="motorTemperatureWarning" node="warningTemperature_decals" baseColor="SHARED_BLACK4" intensity="0.2" warningThresholdMin="105" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="SLIDER" valueType="rpm" node="sliderRPM_decals" minValueSlider="0" maxValueSlider="2200" intensity="0.3" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </motorized>
+    <drivable>
+		<idleTurning allowed="true" updateSteeringWheel="false" direction="1" maxSpeed="2" lockDirection="false">
+            <wheel node="wheelLeft01" steeringAngle="-45"/>
+            <wheel node="wheelLeft02" steeringAngle="-30"/>
+            <wheel node="wheelLeft03" steeringAngle="30"/>
+            <wheel node="wheelLeft04" steeringAngle="45"/>
+            <wheel node="wheelRight01" steeringAngle="45" inverted="true"/>
+            <wheel node="wheelRight02" steeringAngle="30" inverted="true"/>
+            <wheel node="wheelRight03" steeringAngle="-30" inverted="true"/>
+            <wheel node="wheelRight04" steeringAngle="-45" inverted="true"/>
+        </idleTurning>
+		<dashboards>
+			<dashboard displayType="ROT"  valueType="combinedPedalLeft"  node="leftTrackPedalRot"  minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+            <dashboard displayType="ROT"  valueType="combinedPedalRight" node="rightTrackPedalRot" minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+			<dashboard displayType="ROT" valueType="combinedPedalRight" node="0>0|3|0|0|0|0|1" minRot="-15 0 0" maxRot="15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ROT" valueType="combinedPedalRight" node="0>0|3|0|0|0|0|2" minRot="15 0 0" maxRot="-15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ROT" valueType="combinedPedalLeft" node="0>0|3|0|0|0|0|3" minRot="-15 0 0" maxRot="15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ROT" valueType="combinedPedalLeft" node="0>0|3|0|0|0|0|4" minRot="15 0 0" maxRot="-15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+	<foldable>
+		<foldingConfigurations>
+			<foldingConfiguration>
+				<foldingParts posDirectionText="$l10n_deactivateFastCouplerAutoTilt" negDirectionText="$l10n_activateFastCouplerAutoTilt" foldInputButton="IMPLEMENT_EXTRA3">
+					<foldingPart animationName="autoTiltToglle" speedScale="1"/>
+				</foldingParts>
+			</foldingConfiguration>
+		</foldingConfigurations>
+    </foldable>
+	<animations>
+		<animationConfigurations>
+            <!-- grapple -->
+            <animationConfiguration name="1">
+				<animation name="grappleRotationLock">
+					<part componentJointIndex="3" startTime="0" endTime="0.1" startRotMinLimit="0 -50 -90" startRotMaxLimit="0 50 90" endRotMinLimit="720 -50 -90" endRotMaxLimit="0 50 90"/>
+				</animation>
+            </animationConfiguration>
+			<!-- dangle attacher -->
+            <animationConfiguration name="2">
+            </animationConfiguration>
+		</animationConfigurations>
+		<animation name="stabilizerColAnim">
+            <part node="stabilizerCol1" startTime="0.0" endTime="5" startTrans="0 0 0" endTrans="0 0.1 0"/>
+        </animation>
+		<animation name="stabilizerColAnim2">
+            <part node="stabilizerCol2" startTime="0.0" endTime="5" startTrans="0 0 0" endTrans="0 0.1 0"/>
+        </animation>
+		<animation name="stabilizerColAnim3">
+            <part node="stabilizerCol3" startTime="0.0" endTime="5" startTrans="0 0 0" endTrans="0 0.1 0"/>
+        </animation>
+		<animation name="stabilizerColAnim4">
+            <part node="stabilizerCol4" startTime="0.0" endTime="5" startTrans="0 0 0" endTrans="0 0.1 0"/>
+        </animation>
+		<animation name="je">
+			<part node="1>0|12" 		startTime="0" 	endTime="1" 	startTrans="3 0 0" endTrans="3 3 0"/>
+        </animation>
+		<animation name="weightUpdate">
+			<part node="0>0|3|0|0|0|0" 	startTime="0.4" 	endTime="0.5" 	startTrans="0 0.3 0" endTrans="0 -0.04 0"/>
+        </animation>
+		<animation name="weightUpdate2">
+            <part componentIndex="3" 	startTime="0" 	endTime="1" 	startMass="1000" endMass="40000"/>
+			<part node="wheels" 		startTime="0" 	endTime="1" 	startTrans="0 -0.01 0" endTrans="0 -0.024 0"/>
+        </animation>
+		<animation name="wiperFrontAnimation">
+            <part node="wiperArm01" startTime="0" endTime="1" startRot="0 0 -11" endRot="0 0 -45" />
+            <part node="wiperArm01" startTime="1" endTime="2" startRot="0 0 -45" endRot="0 0 -79" />
+            <part node="wiperArm02" startTime="0" endTime="1" startRot="0 0 -11" endRot="0 0 -45" />
+            <part node="wiperArm02" startTime="1" endTime="2" startRot="0 0 -45" endRot="0 0 -79" />
+            <part node="wiper"      startTime="0" endTime="1" startRot="4 0 11" endRot="4 0 45" />
+            <part node="wiper"      startTime="1" endTime="2" startRot="4 0 45" endRot="4 0 79" />
+            <sound template="wiper1" startTime="0" endTime="2" direction="1"   volumeScale="1.2" pitchScale="0.7" fadeOut="0.1" linkNode="wiper"/>
+            <sound template="wiper2" startTime="0" endTime="2" direction="-1"  volumeScale="1.2" pitchScale="0.7" fadeOut="0.1" linkNode="wiper"/>
+        </animation>
+		<animation name="cabFolding">
+            <part node="cabRot" 	startTime="0" endTime="4" startRot="0 0 0" endRot="90 0 0" />
+            <sound template="hydraulicOpen04"    	startTime="0"  	endTime="4" 	volumeScale="4" pitchScale="1" linkNode="cabRot" fadeIn="0.1" fadeOut="0.1"/>
+			<sound template="clackVar6"     		startTime="0"  	endTime="0.2" 	direction="-1" volumeScale="1" pitchScale="0.7" linkNode="cabRot"/>
+			<sound template="cylinderPunch"     	startTime="0"	endTime="0.2" 	direction="-1" volumeScale="1" pitchScale="1" linkNode="cabRot"/>
+        </animation>
+		<animation name="autoTiltToglle">
+            <part node="1>0|13" 	startTime="0" endTime="0.1" startRot="0 0 0" endRot="45 0 0" />
+        </animation>
+	</animations>
+	<wipers>
+        <wiper animName="wiperFrontAnimation" >
+            <state animSpeed="2" animPause="2.0" />
+            <state animSpeed="2" animPause="0.0" />
+            <state animSpeed="2.7" animPause="0.0" />
+        </wiper>
+    </wipers>
+	<cylindered loadMovingToolStatesAfterFolding="true" loadMovingToolStatesFoldTime="1">
+		<cylinderedConfigurations>
+            <cylinderedConfiguration name="1">	<!-- grapple -->
+                <movingTools>
+					<movingTool node="clawJointActorRot" playSound="true" isConsumingPower="true" requiredAnimation="grappleRotationLock" requiredAnimationMinTime="0" requiredAnimationMaxTime="0">
+						<controls axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="1" iconName="GRABBER_ROTATE_Y" />
+						<rotation rotSpeed="-60" rotAcceleration="200" rotationAxis="2"/>
+						<componentJoint index="3" anchorActor="1"/>
+					</movingTool>
+					<movingTool node="clawJointRight" playSound="true" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_TOOL" invertAxis="false" mouseSpeedFactor="1" iconName="GRABBER_OPEN_CLOSE"/>
+						<rotation rotSpeed="-50" rotAcceleration="600" rotMin="-5" rotMax="65" rotationAxis="3"/>
+						<componentJoint index="5" anchorActor="0"/>
+						<dependentMovingTool node="clawJointLeft" speedScale="1" />
+					</movingTool>
+					<movingTool node="clawJointLeft" playSound="true">
+						<rotation rotSpeed="50" rotAcceleration="600" rotMin="-65" rotMax="5" rotationAxis="3"/>
+						<componentJoint index="4" anchorActor="0"/>
+					</movingTool>
+                </movingTools>
+                <movingParts>
+					<movingPart node="clawJoint1" referencePoint="grabArmRotRef" referenceFrame="clawJoint01RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="100"/>
+					<movingPart node="clawJoint2" referencePoint="grabArmRotRef" referenceFrame="clawJoint02RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="100"/>
+					<movingPart node="grabYRot" referencePoint="grabYRefFrame" referenceFrame="grabYRefFrame" isActiveDirty="true" limitedAxis="3" maxUpdateDistance="100">
+						<dependentPart node="logGrabClawLeft"/>
+					</movingPart>
+					<movingPart node="logGrabClawLeft" referencePoint="logGrabClawLeftRef" referenceFrame="logGrabClawLeftRef" limitedAxis="1">
+						<dependentPart node="logGrabClawRight"/>
+					</movingPart>
+					<movingPart node="logGrabClawRight" referencePoint="logGrabClawRightRef" referenceFrame="logGrabClawRightRef" limitedAxis="1">
+					</movingPart>
+					<movingPart node="logGrabLeftHydraulic" referencePoint="logGrabLeftHydraulicRef" referenceFrame="logGrabLeftHydraulicRef" isActiveDirty="true" maxUpdateDistance="300" limitedAxis="1">
+						<translatingPart node="logGrabLeftHydraulicPunch"/>
+					</movingPart>
+					<movingPart node="logGrabRightHydraulic" referencePoint="logGrabRightHydraulicRef" referenceFrame="logGrabRightHydraulicRef" isActiveDirty="true" maxUpdateDistance="300" limitedAxis="1">
+						<translatingPart node="logGrabRightHydraulicPunch"/>
+					</movingPart>
+                </movingParts>
+                <sounds>
+					<actionSound template="hydraulicOpen05"  	pitchScale="1.1" volumeScale="3" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="clawJointActorRot"     fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="clackVar6"           pitchScale="0.7" volumeScale="2" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointActorRot" />
+					<actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 	linkNode="clawJointActorRot" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointActorRot" />
+					
+					<actionSound template="hydraulicOpen04"    	pitchScale="1.4" volumeScale="4" 	linkNode="clawJointLeft" 		actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="clawJointLeft"     	fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="clackVar6"           pitchScale="0.7" volumeScale="2" 	linkNode="clawJointLeft" 		actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointLeft" />
+					<actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 	linkNode="clawJointLeft" 		actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="clawJointLeft" />
+                </sounds>
+            </cylinderedConfiguration>
+            <cylinderedConfiguration name="2">	<!-- fast coupler -->
+				<movingTools>
+					<movingTool node="quickHitchPhysics" delayedNode="quickHitch" playSound="true" isConsumingPower="true">
+						<controls axis="AXIS_CRANE_ARM4" invertAxis="true" mouseSpeedFactor="0.6" iconName="CRANE_ARM2_ROTATE_X" />
+						<rotation rotSpeed="40" rotAcceleration="100" rotMax="123" rotMin="-65" startRot="5" />
+						<attacherJoint jointIndices="1 2 3" ignoreWarning="true"/>
+						<dependentPart node="quickHitchColRot" />
+						<dependentPart node="tensionBelts"/>
+					</movingTool>
+					<movingTool node="quickHitch">
+						<dependentPart node="quickHitchPart2"/>
+						<dependentPart node="quickHitchHydraulic"/>
+					</movingTool>
+				</movingTools>
+				<movingParts>
+					<movingPart node="quickHitchPhysicsRot" referenceFrame="componentJointBody" limitedAxis="1" foldMinLimit="0.1" foldMaxLimit="1">
+					<attacherJoint jointIndices="1 2 3" ignoreWarning="true"/>
+					<dependentMovingTool node="quickHitchPhysics" axis="1">
+						<rotationBasedLimits>
+							<limit rotation="-180" rotMin="115" rotMax="300"/>
+							<limit rotation="0" rotMin="-75" rotMax="123"/>
+							<limit rotation="180" rotMin="-250" rotMax="-60"/>
+						</rotationBasedLimits>
+					</dependentMovingTool>
+					</movingPart>
+					<movingPart node="quickHitchRot" referenceFrame="componentJointBody" limitedAxis="1" foldMinLimit="0.1" foldMaxLimit="1">
+						<dependentPart node="quickHitchPart1"/>
+					</movingPart>
+                </movingParts>
+				<sounds>
+					<actionSound template="hydraulicOpen04"    	pitchScale="1.2" volumeScale="4" 		linkNode="quickHitchPhysics" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="quickHitchPhysics"     fadeIn="0.1" fadeOut="0.1"/>
+					<actionSound template="clackVar6"           pitchScale="0.7" volumeScale="4" 		linkNode="quickHitchPhysics" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="quickHitchPhysics" />
+					<actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 		linkNode="quickHitchPhysics" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="quickHitchPhysics" />
+				</sounds>
+			</cylinderedConfiguration>
+        </cylinderedConfigurations>
+		<movingTools powerConsumingActiveTimeOffset="1">
+			<easyArmControl node="scTargetNodeY" targetNodeZ="scTargetNodeZ" rootNode="scRootNode" refNode="scTargetRefNode">
+                <targetMovement speed="1.3" acceleration="50"/>
+                <xRotationNodes>
+                    <xRotationNode1 node="mainArmPhy"/>
+                    <xRotationNode2 node="secondArmPhy"/>
+                </xRotationNodes>
+            </easyArmControl>
+			<movingTool node="scTargetNodeZ" isEasyControlTarget="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_EC_TRANSLATE_Z" />
+            </movingTool>
+            <movingTool node="scTargetNodeY" isEasyControlTarget="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="0.5" iconName="CRANE_EC_TRANSLATE_Y" />
+            </movingTool>
+			<movingTool node="componentJointBody" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM1_ROTATE_Y" />
+                <rotation rotSpeed="30" rotAcceleration="50" rotationAxis="2" />
+				<componentJoint index="1" anchorActor="0" />
+				<componentJoint index="3" anchorActor="0" ignoreWarning="true" />
+				<attacherJoint jointIndices="1 2 3" ignoreWarning="true"/>
+				<dependentPart node="quickHitchPhysicsRot" />
+				<dependentPart node="quickHitchRot" />
+				<dependentPart node="quickHitchColRot" />
+				<dependentPart node="attacherJointDangleRot" />
+            </movingTool>
+            <movingTool node="mainArmPhy" delayedNode="mainArm" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.6" iconName="CRANE_ARM1_ROTATE_X" />
+                <rotation rotSpeed="15" rotAcceleration="60" rotMin="-100" rotMax="20" startRot="-50" rotationAxis="1"/>
+				<componentJoint index="3" anchorActor="0" ignoreWarning="true" />
+				<attacherJoint jointIndices="1 2 3" ignoreWarning="true"/>
+		<ependentMovingTool node="quickHitchPhysics" inRotLimits="-30 -140" axRotLimits="150 6"/>
+				<dependentPart node="quickHitchPhysicsRot" />
+				<dependentPart node="quickHitchColRot" />
+				<dependentPart node="tensionBelts" />
+				<dependentPart node="attacherJointDangleRot" />
+				<dependentPart node="weightUpdatePart" />
+            </movingTool>
+            <movingTool node="secondArmPhy" delayedNode="secondArm" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM3" invertAxis="true" mouseSpeedFactor="0.6" iconName="CRANE_ARM1_ROTATE_X" />
+                <rotation rotSpeed="25" rotAcceleration="60" rotMin="10" rotMax="150" startRot="120" rotationAxis="1"/>
+				<componentJoint index="3" anchorActor="0" ignoreWarning="true" />
+				<attacherJoint jointIndices="1 2 3" ignoreWarning="true"/>
+				<dependentPart node="quickHitchPhysicsRot" />
+				<dependentAnimation name="je" minValue="10" maxValue="142" rotationAxis="1" invert="false"/>
+				<dependentPart node="quickHitchColRot" />
+				<dependentPart node="tensionBelts" />
+				<dependentAnimation name="weightUpdate" minValue="125" maxValue="115" rotationAxis="1" invert="false"/>
+				<dependentPart node="attacherJointDangleRot" />
+				<dependentPart node="weightUpdatePart" />
+            </movingTool>
+			<movingTool node="mainArm">
+				<dependentPart node="mainArmHydraulic"/>
+				<dependentPart node="quickHitchPart2"/>
+				<dependentPart node="quickHitchHydraulic"/>
+				<dependentPart node="quickHitchRot" />
+            </movingTool>
+			<movingTool node="secondArm">
+				<dependentPart node="secondArmHydraulic"/>
+				<dependentPart node="quickHitchPart2"/>
+				<dependentPart node="quickHitchHydraulic"/>
+				<dependentPart node="quickHitchRot" />
+            </movingTool>
+			<movingTool node="wheels" playSound="true" isConsumingPower="false" wheelIndices="1 2 3 4 5 6 7 8">
+            </movingTool>
+			<movingTool node="0>0|3|0|0|0|0|1">
+				<dependentAnimation name="stabilizerColAnim" minValue="0" maxValue="15" rotationAxis="1"/>
+            </movingTool>
+			<movingTool node="0>0|3|0|0|0|0|2">
+				<dependentAnimation name="stabilizerColAnim2" minValue="0" maxValue="15" rotationAxis="1"/>
+            </movingTool>
+			<movingTool node="0>0|3|0|0|0|0|3">
+				<dependentAnimation name="stabilizerColAnim3" minValue="0" maxValue="15" rotationAxis="1"/>
+            </movingTool>
+			<movingTool node="0>0|3|0|0|0|0|4">
+				<dependentAnimation name="stabilizerColAnim4" minValue="0" maxValue="15" rotationAxis="1"/>
+            </movingTool>
+		</movingTools>
+		<movingParts>
+			<movingPart node="mainArmHydraulic" referencePoint="mainArmHydraulicRef" referenceFrame="mainArmHydraulicRef" imitedAxis="3" sActiveDirty="true" axUpdateDistance="300">
+				<translatingPart node="mainArmHydraulicPunch"/>
+			</movingPart>
+			<movingPart node="secondArmHydraulic" referencePoint="secondArmHydraulicRef" referenceFrame="secondArmHydraulicRef" imitedAxis="3" sActiveDirty="true" axUpdateDistance="300">
+				<translatingPart node="secondArmHydraulicPunch"/>
+			</movingPart>
+			<movingPart node="toolCameraRot" referencePoint="toolCameraRef" referenceFrame="0>" invertZ="true" isActiveDirty="true" maxUpdateDistance="300" />
+			<movingPart node="attacherJointDangleRot" referenceFrame="componentJointBody"/>
+			<movingPart node="quickHitchPart2" referencePoint="quickHitchPartRef" localReferencePoint="quickHitchPart1" referenceFrame="quickHitchPart2RefFrame" limitedAxis="1" isActiveDirty="true" maxUpdateDistance="300" >
+                <dependentPart node="quickHitchPart1" />
+			</movingPart>
+			<movingPart node="quickHitchPart1" referencePoint="quickHitchPartRef" referenceFrame="quickHitchPartRef" limitedAxis="1"/>
+			<movingPart node="quickHitchHydraulic" referencePoint="quickHitchHydraulicRef" referenceFrame="quickHitchHydraulicRef" isActiveDirty="true" maxUpdateDistance="300">
+                <translatingPart node="quickHitchHydraulicPunch"/>
+            </movingPart>
+			<movingPart node="weightUpdatePart" referencePoint="weightUpdatePartRef" referenceFrame="weightUpdatePartRef" limitedAxis="1">
+				<dependentAnimation name="weightUpdate2" minValue="-50" maxValue="0" rotationAxis="1" invert="true"/>
+			</movingPart>
+			<movingPart node="quickHitchColRot" referencePoint="quickHitchColRotRef" referenceFrame="quickHitchColRotRef"/>
+			<movingPart node="tensionBelts" referenceFrame="tensionBeltsRef" limitedAxis="1" alignToWorldY="true"/>
+        </movingParts>
+		<sounds>
+			<actionSound template="hydraulicClose03"   	pitchScale="0.7" volumeScale="7" 		linkNode="componentJointBody" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     		nodes="componentJointBody"     fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="clackVar6"           pitchScale="0.7" volumeScale="1.5" 		linkNode="componentJointBody" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" 		nodes="componentJointBody" />
+            <actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 		linkNode="componentJointBody" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" 		nodes="componentJointBody" />
+			
+			<actionSound template="hydraulicOpen04"    	pitchScale="1.1" volumeScale="4" 		linkNode="mainArmPhy" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     		nodes="mainArmPhy"     fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="clackVar6"           pitchScale="0.7" volumeScale="4" 		linkNode="mainArmPhy" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" 		nodes="mainArmPhy" />
+            <actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 		linkNode="mainArmPhy" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" 		nodes="mainArmPhy" />
+			
+			<actionSound template="hydraulicOpen04"    	pitchScale="1.2" volumeScale="4" 		linkNode="secondArmPhy" 	actionNames="TOOL_MOVE_NEG TOOL_MOVE_POS"                     nodes="secondArmPhy"     fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="clackVar6"           pitchScale="0.7" volumeScale="4" 		linkNode="secondArmPhy" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="secondArmPhy" />
+            <actionSound template="cylinderPunch"       pitchScale="1"   volumeScale="1" 		linkNode="secondArmPhy" 	actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="secondArmPhy" />
+		</sounds>
+		<dashboards>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft"  rotAxis="1" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM3" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft"  rotAxis="3" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM"  doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="1" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM2" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM4" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+	</cylindered>
+	<logGrab>
+		<logGrabConfigurations>
+			<logGrabConfiguration>
+				<grab jointNode="jd3756G_component4" jointRoot="jd3756G_component4" lockAllAxis="true" unmountOnTreeCut="true">
+					<trigger node="logGrabTrigger"/>
+					<claw componentJointIndex="4" axis="3" rotationOffsetThreshold="3" rotationOffsetInverted="false" rotationOffsetTime="1000">
+					</claw>
+					<claw componentJointIndex="5" axis="3" rotationOffsetThreshold="3" rotationOffsetInverted="true" rotationOffsetTime="1000">
+					</claw>
+					<treeDetection node="treeDetectionNode" sizeY="1.7" sizeZ="1.2"/>
+				</grab>
+				<grab jointNode="jd3756G_component1" jointRoot="jd3756G_component1" lockAllAxis="true">
+					<trigger node="logGrabTrigger2" />
+					<claw componentJointIndex="1" axis="3" rotationOffsetThreshold="100" rotationOffsetTime="100"/>
+					<treeDetection node="treeDetectionNode2" sizeY="0.1" sizeZ="0.1"/>
+					<clawAnimation name="cabFolding" speedScale="1" lockTime="0.6" initialState="false" inputAction="LOWER_IMPLEMENT" textPos="$l10n_action_foldCab" textNeg="$l10n_action_unfoldCab" foldMinLimit="0" foldMaxLimit="1"/>
+				</grab>
+				<grab jointNode="jd3756G_component1" jointRoot="jd3756G_component1" lockAllAxis="true">
+					<trigger node="logGrabTrigger2" />
+					<claw componentJointIndex="1" axis="3" rotationOffsetThreshold="100" rotationOffsetTime="100"/>
+					<treeDetection node="treeDetectionNode2" sizeY="0.1" sizeZ="0.1"/>
+					<clawAnimation name="grappleRotationLock" speedScale="1" lockTime="0.6" initialState="false" inputAction="IMPLEMENT_EXTRA" textPos="$l10n_deactivateGrappleRotation" textNeg="$l10n_activateGrappleRotation" foldMinLimit="0" foldMaxLimit="1"/>
+				</grab>
+			</logGrabConfiguration>
+			<logGrabConfiguration>
+				<grab jointNode="jd3756G_component1" jointRoot="jd3756G_component1" lockAllAxis="true">
+					<trigger node="logGrabTrigger2" />
+					<claw componentJointIndex="1" axis="3" rotationOffsetThreshold="100" rotationOffsetTime="100"/>
+					<treeDetection node="treeDetectionNode2" sizeY="0.1" sizeZ="0.1"/>
+					<clawAnimation name="cabFolding" speedScale="1" lockTime="0.6" initialState="false" inputAction="LOWER_IMPLEMENT" textPos="$l10n_action_foldCab" textNeg="$l10n_action_unfoldCab" foldMinLimit="0" foldMaxLimit="1"/>
+				</grab>
+			</logGrabConfiguration>
+		</logGrabConfigurations>
+	</logGrab>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration price="0">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="1080">
+						<exactFillRootNode node="exactFillRootNodeFuel" />
+						<dashboard displayType="ROT" valueType="fillLevel" node="needleFuel" minRot="0" maxRot="-90" rotAxis="3" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+						<dashboard displayType="EMITTER" valueType="fillLevelWarning" node="warningFuel_decals" idleValue="-1" baseColor="SHARED_GREY5" emitColor="ORANGE" intensity="0.5" warningThresholdMax="80" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="def" capacity="42">
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="air" capacity="3000">
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	<dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+			<!-- camera -->
+			<group name="WORKING"    isMotorRunning="true"/>
+        </groups>
+		<default>
+            <dashboard displayType="EMITTER" node="displayInterior" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="needleFuel" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
+            <dashboard displayType="EMITTER" node="needleTemperature" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE" />
+			<!-- camera -->
+			<dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+			<dashboard displayType="VISIBILITY" node="cameraDisplayRoot" groups="WORKING" />
+        </default>
+    </dashboard>
+	<suspensions>
+        <suspension node="seat"              weight="150" minTranslation="0 -0.15 0" maxTranslation="0 0.15 0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" startTranslationOffset="0 -0.08 0"/>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />
+    </suspensions>
+	<tensionBelts>
+        <tensionBeltsConfigurations>
+			<tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts2" rootNode="jd3756G_component4" jointNode="jd3756G_component4" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="-0.6" defaultOffsetSide="0.1" defaultHeight="2" interactionRadius="1.5" totalInteractionRadius="6.5" activationTrigger="beltActivationTrigger2">
+                    <tensionBelt startNode="beltStart2" endNode="beltEnd2" offsetLeft="0.95"/>
+                    <sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="beltActivationTrigger" useHooks="false" allowFoldingWhileFasten="false" width="0.06" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="-0.6" defaultOffsetSide="0.1" defaultHeight="2" interactionRadius="1.5" totalInteractionRadius="6.5"  >
+					<tensionBelt startNode="beltStart" endNode="beltEnd" offsetLeft="0">
+					</tensionBelt>
+					<sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+	<tensionBeltObject>
+        <meshNodes>
+            <meshNode node="0>0|13"/>
+            <meshNode node="0>0|14"/>
+            <meshNode node="0>0|15"/>
+            <meshNode node="0>0|16"/>
+            <meshNode node="0>0|17"/>
+            <meshNode node="0>0|18"/>
+        </meshNodes>
+    </tensionBeltObject>
+	<ai>
+        <agent width="3.7" length="10.8" lengthOffset="1.8" height="7.9"/>
+        <collisionTrigger useSize="true"/>
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-1.1" maxX="1.1" minZ="-1.3" maxZ="1.2" yOffset="0.7" node="0>"/>
+        <bendingNode minX="-1.8" maxX="-1" minZ="-2.6" maxZ="2.5" yOffset="0.4" node="0>"/>
+        <bendingNode minX="1" maxX="1.8" minZ="-2.6" maxZ="2.5" yOffset="0.4" node="0>"/>
+        <bendingNode minX="-1.7" maxX="1.7" minZ="-3.5" maxZ="1.4" yOffset="1.4" node="1>"/>
+		<bendingNode minX="-0.9" maxX="0.9" minZ="-0.4" maxZ="0.4" yOffset="-2.6" node="jd3756G_component4"/>
+        <bendingNode minX="-0.35" maxX="0.35"	minZ="-0.5" maxZ="0.4" yOffset="-0.2" node="1>0|0|0|0|0|0|2|0"/>
+    </foliageBending>
+	<baseColorConfigurations useDefaultColors="true" defaultColorIndex="0">
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_GREEN2" name="$l10n_uiColor_johnDeereGreen2"/>
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_BLACK2" name="$l10n_uiColor_johnDeereBlack2"/>
+		<baseColorConfiguration materialTemplateName="JOHNDEERE_YELLOW2" name="$l10n_uiColor_johnDeereYellow2"/>
+        <material materialSlotName="metalGreenSlot"/>
+    </baseColorConfigurations>
+	<designColorConfigurations useDefaultColors="true" defaultColorIndex="0" title="$l10n_mainColor2">
+		<designColorConfiguration materialTemplateName="JOHNDEERE_BLACK2" name="$l10n_uiColor_johnDeereBlack2"/>
+		<designColorConfiguration materialTemplateName="JOHNDEERE_GREEN2" name="$l10n_uiColor_johnDeereGreen2"/>
+		<designColorConfiguration materialTemplateName="JOHNDEERE_YELLOW2" name="$l10n_uiColor_johnDeereYellow2"/>
+        <material materialSlotName="metalGreySlot"/>
+    </designColorConfigurations>
+	<designColor2Configurations useDefaultColors="true" defaultColorIndex="0" title="$l10n_grappleColor">
+		<designColor2Configuration materialTemplateName="JOHNDEERE_BLACK2" name="$l10n_uiColor_johnDeereBlack2"/>
+		<designColor2Configuration materialTemplateName="JOHNDEERE_YELLOW2" name="$l10n_uiColor_johnDeereYellow2"/>
+		<designColor2Configuration materialTemplateName="JOHNDEERE_GREEN2" name="$l10n_uiColor_johnDeereGreen2"/>
+        <material materialSlotName="metalGrappleSlot"/>
+    </designColor2Configurations>
+	<designColor3Configurations useDefaultColors="true" defaultColorIndex="0" title="$l10n_tracksColor">
+		<designColor3Configuration materialTemplateName="JOHNDEERE_BLACK2" name="$l10n_uiColor_johnDeereBlack2"/>
+		<designColor3Configuration materialTemplateName="JOHNDEERE_GREEN2" name="$l10n_uiColor_johnDeereGreen2"/>
+		<designColor3Configuration materialTemplateName="JOHNDEERE_YELLOW2" name="$l10n_uiColor_johnDeereYellow2"/>
+        <material materialSlotName="metalGreyTracksSlot"/>
+    </designColor3Configurations>
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+	<washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2">
+		<wetnessIgnoreNode node="extinguisher"/>
+		<wetnessIgnoreNode node="1>0|4|0|0|0|1|1|0|4"/>
+		<wetnessIgnoreNode node="1>0|4|0|0|0|1|0|0|4"/>
+		<wetnessIgnoreNode node="1>0|4|0|6"/>
+		<wetnessIgnoreNode node="1>0|4|0|9"/>
+	</washable>
+    <i3dMappings>
+		<i3dMapping id="jd3756G_component1" node="0>"/>
+		<i3dMapping id="jd3756G_component2" node="1>"/>
+		<i3dMapping id="jd3756G_component3" node="2>"/>
+		<i3dMapping id="jd3756G_component4" node="3>"/>
+		<i3dMapping id="componentJointBody" node="0>0|2" />
+		<i3dMapping id="componentJointWeight" node="0>0|5" />
+		<i3dMapping id="scTargetNodeY" node="1>0|11|0|0" />
+        <i3dMapping id="scTargetNodeZ" node="1>0|11|0" />
+        <i3dMapping id="scRootNode" node="1>0|11" />
+        <i3dMapping id="scTargetRefNode" node="1>0|0|0|4" />
+		<i3dMapping id="mainArmPhy" node="1>0|0" />
+		<i3dMapping id="secondArmPhy" node="1>0|0|0" />
+		<i3dMapping id="mainArm" node="1>0|1" />
+		<i3dMapping id="secondArm" node="1>0|1|0" />
+		<i3dMapping id="mainArmHydraulic" node="1>0|2" />
+		<i3dMapping id="mainArmHydraulicPunch" node="1>0|2|0" />
+		<i3dMapping id="mainArmHydraulicRef" node="1>0|1|1" />
+		<i3dMapping id="secondArmHydraulic" node="1>0|1|3" />
+		<i3dMapping id="secondArmHydraulicPunch" node="1>0|1|3|0" />
+		<i3dMapping id="secondArmHydraulicRef" node="1>0|1|0|3" />
+		<i3dMapping id="connectionHose1" node="1>0|1|0|0|4"/>
+		<i3dMapping id="connectionHose2" node="1>0|1|0|0|5"/>
+		<i3dMapping id="quickHitchPhysicsRot" node="1>0|0|0|0|0" />
+		<i3dMapping id="quickHitchPhysics" node="1>0|0|0|0|0|0" />
+		<i3dMapping id="quickHitchRot" node="1>0|1|0|0|0|0" />
+		<i3dMapping id="quickHitch" node="1>0|1|0|0|0|0|0" />
+		<i3dMapping id="quickHitchPart2" node="1>0|1|0|0|1" />
+		<i3dMapping id="quickHitchPart1" node="1>0|1|0|0|1|0" />
+		<i3dMapping id="quickHitchPartRef" node="1>0|1|0|0|0|0|0|0" />
+		<i3dMapping id="quickHitchPart2RefFrame" node="1>0|1|0|0|2" />
+		<i3dMapping id="quickHitchHydraulicBase" node="1>0|1|0|0|3" />
+		<i3dMapping id="quickHitchHydraulic" node="1>0|1|0|0|3|0" />
+		<i3dMapping id="quickHitchHydraulicPunch" node="1>0|1|0|0|3|0|0" />
+		<i3dMapping id="quickHitchHydraulicRef" node="1>0|1|0|0|1|1" />
+		<i3dMapping id="quickHitchColRot" node="1>0|0|0|0|0|0|2" />
+		<i3dMapping id="quickHitchColRotRef" node="1>0|0|0|3" />
+		<i3dMapping id="attacherJointFixed" node="1>0|0|0|0|0|0|0" />
+		<i3dMapping id="bigBagAttacher" node="1>0|0|0|0|0|0|1" />
+		<i3dMapping id="tensionBeltsRef" node="1>0|1|0|0|0|0|0|1"/>
+		<i3dMapping id="tensionBelts" node="1>0|1|0|0|0|0|0|1|0"/>
+		<i3dMapping id="beltStart" node="1>0|1|0|0|0|0|0|1|0|0"/>
+		<i3dMapping id="beltEnd" node="1>0|1|0|0|0|0|0|1|0|0|0"/>
+		<i3dMapping id="beltActivationTrigger" node="1>0|1|0|0|0|0|0|1|0|1"/>
+		<i3dMapping id="tensionBelts2" node="3>9" />
+        <i3dMapping id="beltStart2" node="3>9|0" />
+        <i3dMapping id="beltEnd2" node="3>9|0|0" />
+        <i3dMapping id="beltActivationTrigger2" node="3>9|1" />
+		<i3dMapping id="toolCamera" node="1>0|9|0" />
+        <i3dMapping id="toolCameraRot" node="1>0|9" />
+        <i3dMapping id="toolCameraRef" node="1>0|1|0|2" />
+		<i3dMapping id="stabilizerCol1" node="0>0|3" />
+		<i3dMapping id="stabilizerCol2" node="0>0|3|0" />
+		<i3dMapping id="stabilizerCol3" node="0>0|3|0|0" />
+		<i3dMapping id="stabilizerCol4" node="0>0|3|0|0|0" />
+		<i3dMapping id="crawlerNodeLeft" node="0>0|0|1" />
+		<i3dMapping id="crawlerNodeRight" node="0>0|0|2" />
+		<i3dMapping id="wheels" node="0>0|0|0"/>
+		<i3dMapping id="wheelLeft01" node="0>0|0|0|0"/>
+		<i3dMapping id="wheelLeft02" node="0>0|0|0|1"/>
+		<i3dMapping id="wheelLeft03" node="0>0|0|0|2"/>
+		<i3dMapping id="wheelLeft04" node="0>0|0|0|3"/>
+		<i3dMapping id="wheelRight01" node="0>0|0|0|4"/>
+		<i3dMapping id="wheelRight02" node="0>0|0|0|5"/>
+		<i3dMapping id="wheelRight03" node="0>0|0|0|6"/>
+		<i3dMapping id="wheelRight04" node="0>0|0|0|7"/>
+        <i3dMapping id="outdoorCameraTarget" node="0>0|1|0"/>
+        <i3dMapping id="outdoorCamera1" node="0>0|1|0|0"/>
+        <i3dMapping id="indoorCamera1" node="1>0|4|0|0|2"/>
+        <i3dMapping id="cameraRaycastNode1" node="0>0|1|1"/>
+        <i3dMapping id="cameraRaycastNode2" node="0>0|1|2"/>
+        <i3dMapping id="cameraRaycastNode3" node="0>0|1|3"/>
+        <i3dMapping id="shadowFocusBox" node="1>0|4|0|2"/>
+		<i3dMapping id="playerSkin" node="1>0|4|0|0|0|0"/>
+        <i3dMapping id="playerRightHandTarget" node="1>0|4|0|0|0|1|1|0|0"/>
+		<i3dMapping id="playerLeftHandTarget" node="1>0|4|0|0|0|1|0|0|0" />
+		<i3dMapping id="playerLeftFootTarget" node="1>0|4|0|0|1|2|0" />
+        <i3dMapping id="playerRightFootTarget" node="1>0|4|0|0|1|2|1" />
+		<i3dMapping id="leftTrackPedalRot" node="1>0|4|0|0|1|0|0" />
+        <i3dMapping id="playerLeftFootTargetGasLeft" node="1>0|4|0|0|1|0|0|0" />
+				<i3dMapping id="playerLeftFootTargetGasLeftRef" ode="1>0|4|0|0|0|3|0|0|1" />
+        <i3dMapping id="rightTrackPedalRot" node="1>0|4|0|0|1|1|0" />
+        <i3dMapping id="playerRightFootTargetGasRight" node="1>0|4|0|0|1|1|0|0" />
+				<i3dMapping id="playerRightFootTargetGasRightRef" ode="1>0|4|0|0|0|3|1|0|1" />
+		<i3dMapping id="joystickLeft" node="1>0|4|0|0|0|1|0|0"/>
+		<i3dMapping id="joystickRight" node="1>0|4|0|0|0|1|1|0"/>
+		<i3dMapping id="seat" node="1>0|4|0|0|0"/>
+		<i3dMapping id="numbersOperatingTime" node="1>0|4|0|1|0|0" />
+		<i3dMapping id="numbersRPM" node="1>0|4|0|1|0|1" />
+		<i3dMapping id="needleFuel" node="1>0|4|0|1|0|3|0" />
+        <i3dMapping id="needleTemperature" node="1>0|4|0|1|0|2|0" />
+        <i3dMapping id="sliderRPM_decals" node="1>0|4|0|1|0|4" />
+        <i3dMapping id="warningFuel_decals" node="1>0|4|0|1|0|7" />
+        <i3dMapping id="warningTemperature_decals" node="1>0|4|0|1|0|8" />
+        <i3dMapping id="displayInterior" node="1>0|4|0|1|0|6" />
+		<i3dMapping id="worklightFrontDecal"				node="1>0|4|0|0|0|1|3|0" />
+		<i3dMapping id="worklightBackDecal"					node="1>0|4|0|0|0|1|2|0" />
+		<i3dMapping id="beaconLightDecal"					node="1>0|4|0|0|0|1|4|0" />
+		<i3dMapping id="seatGlow_decals"					node="1>0|4|0|0|0|1|5" />
+		<i3dMapping id="joystickLeftGlow_decals"					node="1>0|4|0|0|0|1|0|0|3" />
+		<i3dMapping id="joystickRightGlow_decals"					node="1>0|4|0|0|0|1|1|0|3" />
+		<i3dMapping id="attacherJointDangle" node="1>0|0|0|1|0" />
+		<i3dMapping id="attacherJointDangleRot" node="1>0|0|0|1" />
+		<i3dMapping id="clawJointActorRot"                 node="3>0" />
+		<i3dMapping id="clawJointActor"                 node="3>0|0" />
+		<i3dMapping id="clawJointLeft"                      node="3>1" />
+		<i3dMapping id="clawJointRight"                     node="3>2" />
+		<i3dMapping id="clawColJoint" node="1>0|0|0|5|0" />
+		<i3dMapping id="zRot" node="1>0|0|0|5|0|0" />
+		<i3dMapping id="clawJoint1" node="1>0|1|0|1|0|0" />
+        <i3dMapping id="clawJoint2" node="1>0|1|0|1|0|0|0|0" />
+        <i3dMapping id="grabYRot" node="1>0|1|0|1|0|0|0|0|0" />
+        <i3dMapping id="grabArmRotRef" node="3>3" />
+        <i3dMapping id="clawJoint01RefFrame" node="1>0|1|0|1|1" />
+        <i3dMapping id="clawJoint02RefFrame" node="1>0|1|0|1|1|0" />
+        <i3dMapping id="grabYRefFrame" node="3>4" />
+		<i3dMapping id="logGrabClawLeft" node="1>0|1|0|1|0|0|0|0|0|0" />
+		<i3dMapping id="logGrabClawRight" node="1>0|1|0|1|0|0|0|0|0|1" />
+		<i3dMapping id="logGrabClawLeftRef" node="4>0" />
+		<i3dMapping id="logGrabClawRightRef" node="5>0" />
+		<i3dMapping id="logGrabLeftHydraulic" node="1>0|1|0|1|0|0|0|0|0|2" />
+		<i3dMapping id="logGrabLeftHydraulicPunch" node="1>0|1|0|1|0|0|0|0|0|2|0" />
+		<i3dMapping id="logGrabLeftHydraulicRef" node="1>0|1|0|1|0|0|0|0|0|0|0" />
+		<i3dMapping id="logGrabRightHydraulic" node="1>0|1|0|1|0|0|0|0|0|3" />
+		<i3dMapping id="logGrabRightHydraulicPunch" node="1>0|1|0|1|0|0|0|0|0|3|0" />
+		<i3dMapping id="logGrabRightHydraulicRef" node="1>0|1|0|1|0|0|0|0|0|1|0" />
+		<i3dMapping id="configAttacher" node="1>0|1|0|0" />
+		<i3dMapping id="configGrapple" node="1>0|1|0|1" />
+		<i3dMapping id="wiperArm01" 						node="1>0|4|2|0|0" />
+		<i3dMapping id="wiperArm02" 						node="1>0|4|2|0|1" />
+		<i3dMapping id="wiper" 								node="1>0|4|2|0|0|0" />
+		<i3dMapping id="frontLightLeft01" node="1>0|6|3" />
+		<i3dMapping id="frontLightLeft02" node="1>0|6|4" />
+		<i3dMapping id="workingLightFront01" node="1>0|4|1|7" />
+		<i3dMapping id="workingLightFront02" node="1>0|4|1|8" />
+		<i3dMapping id="workingLightFront03" node="1>0|4|1|9" />
+		<i3dMapping id="workingLightFront04" node="1>0|4|1|10" />
+		<i3dMapping id="workingLightFront05" node="1>0|4|1|11" />
+		<i3dMapping id="workingLightBackLeft" node="1>0|4|1|14" />
+		<i3dMapping id="workingLightBackRight" node="1>0|4|1|15" />
+		<i3dMapping id="workingLightBoomLeft" node="1>0|1|0|5|0" />
+		<i3dMapping id="workingLightBoomRight" node="1>0|1|0|5|1" />
+		<i3dMapping id="frontLightLow" node="1>0|6|5" />
+		<i3dMapping id="frontLightHigh" node="1>0|6|6" />
+		<i3dMapping id="workLightFrontLow" node="1>0|4|1|12" />
+		<i3dMapping id="workLightFrontHigh" node="1>0|4|1|13" />
+		<i3dMapping id="workLightBackLow" node="1>0|4|1|16" />
+		<i3dMapping id="workLightBackHigh" node="1>0|4|1|17" />
+		<i3dMapping id="workLightArmHigh" node="1>0|1|0|5|2" />
+		<i3dMapping id="workLightArmLow" node="1>0|1|0|5|3" />
+		<i3dMapping id="beacons" node="1>0|4|1|18" />
+		<i3dMapping id="beaconLightLeft" node="1>0|4|1|18|0" />
+		<i3dMapping id="beaconLightRight" node="1>0|4|1|18|1" />
+		<i3dMapping id="reverseLight" node="1>0|6|0" />
+		<i3dMapping id="reverseLightHigh" node="1>0|6|1" />
+		<i3dMapping id="sideMarkerOrange01" node="1>0|6|2" />
+		<i3dMapping id="sideMarkerOrange02" node="1>0|6|7" />
+		<i3dMapping id="exhaustParticle" node="1>0|7"/>
+		<i3dMapping id="extinguisher" node="1>0|4|0|5"/>
+		<i3dMapping id="componentJoint1" node="0>0|2" />
+		<i3dMapping id="exitPoint" node="1>0|8"/>
+		<i3dMapping id="aiCollisionNode" node="0>0|4"/>
+        <i3dMapping id="airFilterCleaner" node="0>" />
+        <i3dMapping id="exactFillRootNodeFuel" node="1>0|10" />
+        <i3dMapping id="cabRot" node="1>0|4" />
+		<i3dMapping id="logGrabTrigger" node="3>5" />
+        <i3dMapping id="treeDetectionNode" node="3>6" />
+        <i3dMapping id="logGrabTrigger2" node="0>0|6" />
+        <i3dMapping id="treeDetectionNode2" node="0>0|7" />
+        <i3dMapping id="weightUpdatePart" node="1>0|12|0" />
+        <i3dMapping id="weightUpdatePartRef" node="1>0|0|0|2" />
+		
+		<i3dMapping id="rearCamera" node="1>0|4|0|10"/>
+    <i3dMapping id="boxRoot" node="1>0|4|0|10|0"/>
+    <i3dMapping id="box" node="1>0|4|0|10|0|0"/>
+    <i3dMapping id="preloadScreen" node="1>0|4|0|10|0|1"/>
+    <i3dMapping id="cameraDecals" node="1>0|4|0|10|0|2"/>
+    <i3dMapping id="cameraDisplayRoot" node="1>0|4|0|10|0|3"/>
+    <i3dMapping id="rearCamera_display" node="1>0|4|0|10|0|3|0"/>
+    <i3dMapping id="camera_01" node="1>0|4|0|11"/>
+    <i3dMapping id="rotPart" node="1>0|4|0|11|0"/>
+    <i3dMapping id="glass" node="1>0|4|0|11|0|0"/>
+    <i3dMapping id="rearCamera_camera" node="1>0|4|0|11|0|0|0"/>
+	</i3dMappings>
+</vehicle>

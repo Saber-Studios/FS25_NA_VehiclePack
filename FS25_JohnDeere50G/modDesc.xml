@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="99">
+    <author>Peppe978</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere 50G THQ</en>
+    </title>
+	<description>
+<en><![CDATA[JonhDeere Crawler Compact Excavator with a shovel. Zero-tail-swing design make this compact extra maneuverable and plenty productive in places with tight spaces.
+Price: 65.000$
+Power: 36HP / 26.8kW
+Configuration:
+- 5 Different types of rubber tracks and iron
+
+Universal Bucket:
+Price: 1.500$
+Capacity: 2 m³
+- Bucket color configuration
+]]></en>
+<de><![CDATA[John Deere Raupen-Kompaktbagger mit Schaufel. Die hecklose Bauweise macht diese kompakte Maschine besonders wendig und sehr produktiv an Orten mit wenig Platz.
+Preis: 65.000€
+Leistung: 36PS / 26.8kW
+Konfigurationen:
+- 5 Verschiedene Arten von Gummiketten und Eisen
+
+Universal-Schaufel:
+Preis: 1.500€
+Kapazität: 2 m³
+- Konfiguration der Schaufelfarbe
+]]></de>
+<fr><![CDATA[Pelle Compacte sur chenilles John Deere avec une pelle. La conception sans basculement arrière rend ce compact très maniable et très productif dans les endroits avec des espaces restreints.
+Prix: 65.000€
+Puissance : 36ch / 26.8kW
+Configuration:
+- 5 Différents types de chenilles en caoutchouc et de fer
+
+Seau universel:
+Prix: 1.500€
+Capacité : 2 m³
+- Configuration de la couleur du godet
+]]></fr>
+<it><![CDATA[Escavatore Compatto cingolato John Deere con pala caricatrice. Il design zero-tail-swing rende questo compatto extra manovrabile e molto produttivo in luoghi con spazi ristretti.
+Prezzo: 65.000€
+Potenza : 36cv / 26.8kW
+Configurazione:
+- 5 Diversi tipi di cingoli in gomma e ferro
+
+Benna Universale:
+Prezzo: 1.500€
+Capacità: 2 m³
+- Configurazione del colore della benna
+]]></it>
+	</description>
+	
+    <iconFilename>icon_johnDeere50g.png</iconFilename>
+    <multiplayer supported="true"/>
+
+	<jointTypes>
+		<jointType name="Bucket"/>
+		<jointType name="Grab"/>
+    </jointTypes>
+
+    <vehicleTypes>
+		<type name="JD50G" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="foldable" />
+			<specialization name="dynamicMountAttacher" />
+			<specialization name="fillVolume" />
+			<specialization name="bunkerSiloInteractor" />
+			<specialization name="leveler" />
+			<specialization name="powerConsumer" />
+		</type>	
+    </vehicleTypes>
+	
+	<l10n>
+        <text name="close"><en>Fold Arm</en><de>Arm Einklappen</de><fr>Plier le bras</fr><it>Ripiega Braccio</it></text>
+        <text name="open"><en>Unfold Arm</en><de>Arm Ausklappen</de><fr>Déplier le bras</fr><it>Dispiega Braccio</it></text>
+        <text name="typeDesc_JD50G"><en>Excavator</en><de>Bagger</de><fr>Excavatrice</fr><it>Escavatore</it></text>			
+        <text name="function_Excavator">
+            <it>Questo escavatore cingolato può usare una benna per caricare merci diverse oppure gli accessoricompatibili.</it>
+			<en>This tracked excavator can use a bucket to load different goods or compatible accessories.</en>
+			<de>Dieser Kettenbagger kann mit einer Schaufel verschiedene Güter oder kompatibles laden.</de>
+			<fr>Cette pelle sur chenilles peut utiliser un godet pour charger différents produits ou accessoires compatibles.</fr>
+		</text>	
+		<text name="Crawler"><en>Crawler Tracks</en><de>Raupenfahrwerke</de><it>Cingoli</it><fr>Chenilles</fr></text>
+		<text name="Crawler_A"><en>Track A</en><it>Cingolo A</it><de>Kette A</de><fr>Pister A</fr></text>
+		<text name="Crawler_B"><en>Track B</en><it>Cingolo B</it><de>Kette B</de><fr>Pister B</fr></text>
+		<text name="Crawler_C"><en>Track C</en><it>Cingolo C</it><de>Kette C</de><fr>Pister C</fr></text>
+		<text name="Crawler_D"><en>Track D</en><it>Cingolo D</it><de>Kette D</de><fr>Pister D</fr></text>
+		<text name="Crawler_E"><en>Track E</en><it>Cingolo E</it><de>Kette E</de><fr>Pister E</fr></text>			
+	</l10n>	
+
+	<vehicleSchemaOverlays filename="texture/JD50SchemaOverlays.dds" imageSize="512 256">
+        <overlay name="JD50G_DEFAULT"         uvs="0px 0px 256px 128px"     size="64px 32px"/>
+        <overlay name="JD50G_SELECTED"        uvs="256px 0px 256px 128px"   size="64px 32px"/>
+        <overlay name="JD50G_ON"              uvs="512px 0px 256px 128px"   size="64px 32px"/>
+        <overlay name="JD50G_SELECTED_ON"     uvs="1024px 0px 256px 128px"  size="64px 32px"/>
+    </vehicleSchemaOverlays>	
+	
+    <storeItems>
+        <storeItem xmlFilename="johnDeere50G.xml" rootNode="vehicle"/>
+		<storeItem xmlFilename="bucketJD.xml"/>
+    </storeItems>
+</modDesc>

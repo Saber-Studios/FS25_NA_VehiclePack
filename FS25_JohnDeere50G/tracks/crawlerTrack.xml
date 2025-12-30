@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<crawler>
+    <file name="tracks/trackcrawler.i3d" leftNode="0" rightNode="0"/>
+    <scrollerNodes>
+        <scrollerNode node="0" scrollSpeed="0.095" scrollLength="1" shaderParameterName="scrollPos" shaderParameterComponent="1"/>
+    </scrollerNodes>
+    <rimColorNodes>
+        <rimColorNode node="0" shaderParameter="colorMat0"/>
+    </rimColorNodes>
+</crawler>

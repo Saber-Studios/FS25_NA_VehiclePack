@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="JD50G">
+    <annotation>Attention exclusive model for Farming Simulator, by Peppe978. All Rights Reserved.</annotation>
+    <storeData>
+        <name>50G</name>
+        <specs>
+            <power>36</power>
+            <maxSpeed>10</maxSpeed>
+			<combination xmlFilename="bucketJD.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_Excavator</function>
+        </functions>
+        <image>store_johnDeere50g.png</image>
+        <price>65000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>forestryExcavators</category>
+        <shopTranslationOffset>0 0 -2.5</shopTranslationOffset>
+        <shopHeight>3.5</shopHeight>
+        <vertexBufferMemoryUsage>2105088</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>744704</indexBufferMemoryUsage>
+        <textureMemoryUsage>3276800</textureMemoryUsage>
+        <audioMemoryUsage>1672751</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$typeDesc_JD50G</typeDesc>
+        <filename>johnDeere50G.i3d</filename>
+		<sounds filename="sounds/JohnDeere50G_sounds.xml" volumeFactor="0.67"/>
+		<size width="2.5" length="3.5" height="3.1" lengthOffset="0.2"/>
+        <components>
+            <component centerOfMass="0 0.3 -0.2" solverIterationCount="20" mass="1650"/>
+			<component centerOfMass="0 0 0" solverIterationCount="10" mass="10"/>
+			<joint component1="1" component2="2" node="ComponentJoint" rotLimit="0 0 0" transLimit="0 0 0" breakable="false"/>					
+        </components>
+        <schemaOverlay name="JD50G_DEFAULT" attacherJointPosition="0 0"/>
+    </base>
+
+    <wheels>
+       <wheelConfigurations title="$l10n_Crawler">
+ 			<wheelConfiguration name="$l10n_Crawler_A" price="0">
+			   <wheels speedDependentRotateBack="false">
+				<wheel hasTireTracks="true" hasParticles="true">
+					<physics rotSpeed="-88" restLoad="1.4" repr="wheelBackLeft" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+					<tire tireTrackAtlasIndex="13"/>
+				</wheel>				
+                <wheel hasTireTracks="true" hasParticles="true">
+                     <physics rotSpeed="-88" restLoad="1.4" repr="wheelBackRight" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                      <tire tireTrackAtlasIndex="13"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontLeft"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="13"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontRight"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="13"/>
+                </wheel>	
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL1"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR1"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL2"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR2"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL3"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR3"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL4"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR4"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL5"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR5"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentL" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+               <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentR" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>					
+			</wheels>			
+                <crawlers>
+                    <crawler filename="tracks/rubberTrackJD.xml" linkNode="crawlerDriveNodeLeft1"  wheelIndex="1" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="true"/>
+                    <crawler filename="tracks/rubberTrackJD.xml" linkNode="crawlerDriveNodeRight1" wheelIndex="2" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="false"/>
+                </crawlers>		
+			</wheelConfiguration>
+			
+			<wheelConfiguration name="$l10n_Crawler_B" price="1000">
+			  <wheels speedDependentRotateBack="false">
+				<wheel hasTireTracks="true" hasParticles="true">
+					<physics rotSpeed="-88" restLoad="1.4" repr="wheelBackLeft" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+					<tire tireTrackAtlasIndex="5"/>
+				</wheel>				
+                <wheel hasTireTracks="true" hasParticles="true">
+                     <physics rotSpeed="-88" restLoad="1.4" repr="wheelBackRight" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                      <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontLeft"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontRight"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>	
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL1"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR1"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL2"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR2"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL3"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR3"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL4"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR4"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL5"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR5"  forcePointRatio="0.5" radius="0.04" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentL" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+               <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentR" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>					
+			</wheels>			
+                <crawlers>
+                    <crawler filename="tracks/newTrackJD.xml" linkNode="crawlerDriveNodeLeft3"  wheelIndex="1" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="true"/>
+                    <crawler filename="tracks/newTrackJD.xml" linkNode="crawlerDriveNodeRight3" wheelIndex="2" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="false"/>
+                </crawlers>		
+			</wheelConfiguration>
+			
+			<wheelConfiguration name="$l10n_Crawler_C" price="1500">
+			   <wheels speedDependentRotateBack="false">
+				<wheel hasTireTracks="true" hasParticles="true">
+					<physics rotSpeed="-88" restLoad="1.4" repr="wheelBackLeft" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+					<tire tireTrackAtlasIndex="7"/>
+				</wheel>				
+                <wheel hasTireTracks="true" hasParticles="true">
+                     <physics rotSpeed="-88" restLoad="1.4" repr="wheelBackRight" forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                      <tire tireTrackAtlasIndex="7"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontLeft"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="7"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="88" restLoad="1.4" repr="wheelFrontRight"  forcePointRatio="0.5" radius="0.195" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="100" damper="120" frictionScale="2.5" tireType="crawler" maxWheelSink="0.1"/>
+                    <tire tireTrackAtlasIndex="7"/>
+                </wheel>	
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL1"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR1"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL2"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>				
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR2"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL3"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR3"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL4"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR4"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleL5"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel>
+                    <physics rotSpeed="0" restLoad="1.4" repr="wheelMiddleR5"  forcePointRatio="0.5" radius="0.035" width="0.45" initialCompression="45" suspTravel="0.10" spring="55" damper="50" frictionScale="0.01" tireType="crawler"/>
+                </wheel>
+                <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentL" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+               <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentR" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+			</wheels>		
+                <crawlers>
+                    <crawler filename="tracks/rubberTrack.xml" linkNode="crawlerDriveNodeLeft2"  wheelIndex="1" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="true"/>
+                    <crawler filename="tracks/rubberTrack.xml" linkNode="crawlerDriveNodeRight2" wheelIndex="2" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="false"/>
+                </crawlers>		
+			</wheelConfiguration>
+			
+			<wheelConfiguration name="$l10n_Crawler_D" price="3500">
+			  <wheels speedDependentRotateBack="false" autoRotateBackSpeed="4">
+				<wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+					<physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1" repr="wheelBackLeft" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+					<tire tireTrackAtlasIndex="5"/>
+				</wheel>
+				<wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+					<physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1" repr="wheelBackRight" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+					<tire tireTrackAtlasIndex="5"/>
+				</wheel>
+				
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelFrontLeft" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.2" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelFrontRight" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.2" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL1" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR1" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL2" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR2" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL3" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR3" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL4" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR4" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL5" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR5" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+
+                <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentL" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+               <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentR" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>					
+			</wheels>		
+                <crawlers>
+                    <crawler filename="tracks/crawlerTrack.xml" linkNode="crawlerDriveNodeLeft4"  wheelIndex="1" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="true"/>
+                    <crawler filename="tracks/crawlerTrack.xml" linkNode="crawlerDriveNodeRight4" wheelIndex="2" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="false"/>
+                </crawlers>		
+			</wheelConfiguration>
+			
+			<wheelConfiguration name="$l10n_Crawler_E" price="4500">
+			  <wheels speedDependentRotateBack="false" autoRotateBackSpeed="4">
+				<wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+					<physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1" repr="wheelBackLeft" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+					<tire tireTrackAtlasIndex="5"/>
+				</wheel>
+				<wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+					<physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1" repr="wheelBackRight" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.5" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+					<tire tireTrackAtlasIndex="5"/>
+				</wheel>
+				
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelFrontLeft" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.2" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelFrontRight" showSteeringAngle="false" radius="0.247" width="0.45" mass="0.2" initialCompression="35" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL1" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR1" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL2" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR2" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL3" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR3" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL4" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR4" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleL5" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+                <wheel hasTireTracks="true" hasParticles="true" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelMiddleR5" showSteeringAngle="false" radius="0.08" width="0.45" mass="0.2" initialCompression="15" suspTravel="0.2" spring="120" damper="120" frictionScale="2.5" tireType="crawler"/>
+                    <tire tireTrackAtlasIndex="5"/>
+                </wheel>
+
+                <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentL" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>				
+               <wheel hasTireTracks="false" hasParticles="false" isCareWheel="false">
+                    <physics tipOcclusionAreaGroupId="1" rotSpeed="1" restLoad="1.1"  repr="wheelComponentR" showSteeringAngle="false" radius="0.05" width="0.01" mass="0.01" initialCompression="50" suspTravel="0.2" spring="120" damper="120" yOffset="0.217" frictionScale="2.5" tireType="crawler"/>
+                </wheel>					
+			</wheels>	
+
+                <crawlers>
+                    <crawler filename="tracks/crawlerJDTrack.xml" linkNode="crawlerDriveNodeLeft4"  wheelIndex="1" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="true"/>
+                    <crawler filename="tracks/crawlerJDTrack.xml" linkNode="crawlerDriveNodeRight4" wheelIndex="2" fieldDirtMultiplier="75" streetDirtMultiplier="-150" isLeft="false"/>
+                </crawlers>		
+			</wheelConfiguration>			
+        </wheelConfigurations>
+
+        <ackermannSteeringConfigurations>
+			<ackermannSteering rotSpeed="85" rotMax="90" rotCenterWheel1="1" rotCenterWheel2="2" /> 
+        </ackermannSteeringConfigurations>
+		
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="wlFront"  wheelIndex="1" wheelScale="1"/>
+        <speedRotatingPart node="wlBack"  wheelIndex="1" wheelScale="1"/>
+        <speedRotatingPart node="wl1"  wheelIndex="1" wheelScale="1"/>
+        <speedRotatingPart node="wl2"  wheelIndex="1" wheelScale="1"/>
+        <speedRotatingPart node="wl3"  wheelIndex="1" wheelScale="1"/>
+        <speedRotatingPart node="wl4"  wheelIndex="1" wheelScale="1"/>		
+        <speedRotatingPart node="wl5"  wheelIndex="1" wheelScale="1"/>		
+        <speedRotatingPart node="wl6"  wheelIndex="1" wheelScale="1"/>			
+        <speedRotatingPart node="wrFront"  wheelIndex="2" wheelScale="1"/>
+        <speedRotatingPart node="wrBack"  wheelIndex="2" wheelScale="1"/>
+        <speedRotatingPart node="wr1"  wheelIndex="2" wheelScale="1"/>
+        <speedRotatingPart node="wr2"  wheelIndex="2" wheelScale="1"/>
+        <speedRotatingPart node="wr3"  wheelIndex="2" wheelScale="1"/>
+        <speedRotatingPart node="wr4"  wheelIndex="2" wheelScale="1"/>		
+        <speedRotatingPart node="wr5"  wheelIndex="2" wheelScale="1"/>		
+        <speedRotatingPart node="wr6"  wheelIndex="2" wheelScale="1"/>		
+    </speedRotatingParts>		
+
+
+    <lights>
+        <sharedLight linkNode="hellaWorkingLightSquare_01" lightTypes="1" filename="$data/shared/assets/lights/hella/hellaWorkingLight05.xml">
+            <rotationNode name="rotationNode1" rotation="10 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="hellaWorkingLightSquare_02" lightTypes="2" filename="$data/shared/assets/lights/hella/hellaWorkingLight05.xml">
+            <rotationNode name="rotationNode1" rotation="-20 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="hellaWorkingLightSquare_03" lightTypes="2" filename="$data/shared/assets/lights/hella/hellaWorkingLight05.xml">
+            <rotationNode name="rotationNode1" rotation="-20 0 0" />
+        </sharedLight>
+        <states>
+            <state lightTypes="0" />
+            <state lightTypes="0 1" />
+            <state lightTypes="0 1 2" />
+        </states>
+
+        <realLights>
+            <low>
+                <light node="frontLightLow"         lightTypes="1"/>					
+                <light node="highBeamLow"           lightTypes="2" />
+            </low>
+            <high>
+                <light node="frontLightHigh"        lightTypes="1"/>		
+                <light node="highBeamHigh"          lightTypes="2"/>
+				<light node="dashboardLight"        lightTypes="0" intensity="0.5"/>				
+            </high>
+        </realLights>
+
+        <beaconLights>
+            <beaconLight node="beaconLight1" filename="$data/shared/assets/beaconLights/lizard/beaconLight07.xml" />
+        </beaconLights>
+
+        <dashboards>
+			<dashboard displayType="EMITTER" valueType="lightState" node="Iconservice7" baseColor="GREY" emitColor="GREEN" intensity="1" lightTypes="1" excludedLightTypes="3" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="dashboardOn"                                     intensity="0.3" lightTypes="0 1 2 3" groups="MOTOR_ACTIVE"/>	
+<!-- 		<dashboard displayType="EMITTER" valueType="lightState" node="dashboard"                                       intensity="0.3" lightTypes="0 1 2 3" groups="MOTOR_ACTIVE"/> -->
+			<!-- cameras -->
+			<dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
+		</dashboards>
+    </lights>
+
+    <attacherJoints comboDuration="2">
+        <attacherJoint jointType="Bucket" node="BucketAttacherJoint" nodeVisual="shovel" allowsJointLimitMovement="true" allowsLowering="false" rotLimitSpring="7500 7500 7500" rotLimitDamping="5 5 5" transLimitSpring="7500 7500 7500" transLimitDamping="5 5 5" >
+            <schema position="1.0 0.5" rotation="0" invertX="true" />
+			<objectChange node="GrabAttacherJoint" rotationActive="90 0 90" rotationInactive="-90 -25 -90"/>
+        </attacherJoint>
+		<attacherJoint jointType="Grab" node="GrabAttacherJoint" nodeVisual="shovel" allowsJointLimitMovement="true" allowsLowering="false" rotLimitSpring="7500 7500 7500" rotLimitDamping="1 1 1" transLimitSpring="7500 7500 7500" transLimitDamping="10 10 10" >
+            <schema position="1.0 0.5" rotation="0" invertX="true" />
+			<objectChange node="BucketAttacherJoint" rotationActive="90 0 90" rotationInactive="-90 -25 -90"/>
+        </attacherJoint>			
+        <attacherJoint node="trailerAttacherJoint" jointType="trailer" lowerRotLimit="10 55 50" lowerTransLimit="0 0 0" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="0">
+            <schema position="1 0" rotation="0" invertX="true" />
+        </attacherJoint>
+        <attacherJoint node="trailerAttacherJointLow" jointType="trailerLow" lowerRotLimit="10 55 50" lowerTransLimit="0 0 0" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="0">
+            <schema position="1 0" rotation="0" invertX="true" />
+        </attacherJoint>
+    </attacherJoints>	
+
+    <connectionHoses>
+        <target attacherJointIndices="2" type="hydraulicIn" node="hydraulic01_in"/>
+        <target attacherJointIndices="2" type="hydraulicOut" node="hydraulic01_in"/>
+        <target attacherJointIndices="2" type="hydraulicIn" node="hydraulic02_in"/>
+        <target attacherJointIndices="2" type="hydraulicOut" node="hydraulic02_in"/>			
+    </connectionHoses>
+
+    <enterable isTabbable="true" >
+	
+		<mirrors>
+		<!-- camera -->
+           <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+		</mirrors>
+		
+        <enterReferenceNode node="JD50G_main_componen1" />
+        <exitPoint node="exitPoint" />
+
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="3.5" transMax="40" translation="0 0 5" rotation="-20 180 0" >
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox" />
+        </cameras>		
+
+        <characterNode node="playerSkin" cameraMinDistance="1.5" spineRotation="-90 3 90" >
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget" />
+            <target ikChain="leftFoot"  targetNode="playerLeftFootTarget" />
+            <target ikChain="rightArm"  targetNode="playerRightHandTarget" setDirty="true"/>
+            <target ikChain="leftArm"   targetNode="playerLeftHandTarget" setDirty="true"/>
+        </characterNode>
+		
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.05" >
+            <state node="playerRightFootTargetGas"   referenceNode="accelerator" directionReferenceNode="playerRightFootTargetAccRef" />
+            <state node="playerRightFootTargetDirRef" referenceNode="pedalRight" />
+        </characterTargetNodeModifier>
+
+	    <characterTargetNodeModifier node="playerLeftFootTarget" transitionTime="0.05" >
+            <state node="playerLeftFootTargetDirRef" referenceNode="pedalLeft"/>
+        </characterTargetNodeModifier>
+
+        <dashboards>
+			<dashboard displayType="TEXT" valueType="operatingTime" node="numbersWorkingTime" textColor="0.05 0.05 0.05 1" textSize="0.009" textMask="000000.0" font="DIGIT" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+		
+		<enterAnimation name="enterAnimation"/>				
+    </enterable>
+
+<!-- 	<articulatedAxis componentJointIndex="1" anchorActor="0" rotSpeed="-90" rotMax="90" rotMin="-90" aiRevereserNode="AiReverser" customWheelIndices1="15 16" maxTurningRadius="1.3">
+        <rotatingPart node="leverLeft" negRot="0 0 0" posRot="10 0 0" />
+		<rotatingPart node="leverRight" negRot="10 0 0" posRot="0 0 0" />
+		<rotatingPart node="pedalRight" negRot="10 0 0" posRot="0 0 0" />
+		<rotatingPart node="pedalLeft" negRot="0 0 0" posRot="10 0 0" />
+        <sounds>
+            <steering template="hydraulicOpen02" pitchScale="0.3" linkNodeOffset="0 0.7 1" innerRadius="15" outerRadius="25" fadeIn="0.1" fadeOut="0.1">
+                <volume indoor="0.6" outdoor="0.8"/>
+                <lowpassGain indoor="0.6" outdoor="0.9"/>
+            </steering>
+        </sounds>		
+    </articulatedAxis>	 -->	
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="25"  fillType="diesel" />  <!-- usage is per hour at max load and max rpm -->			
+                <consumer fillUnitIndex="2" usage="13"   fillType="def" />  <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="3" usage="80" fillType="air" permanentConsumption="false" refillLitersPerSecond="100" refillCapacityPercentage="0.5" /> <!-- usage per second at full brake power -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+		
+        <motorConfigurations>
+            <motorConfiguration name="JD50G" hp="36" price="0">
+				<motor torqueScale="0.162" minRpm="850" maxRpm="2100" maxForwardSpeed="10" maxBackwardSpeed="10" brakeForce="2.5" lowBrakeForceScale="0.22" dampingRateScale="0.26">				
+                    <torque normRpm="0.45" torque="0.90"/>
+                    <torque normRpm="0.50" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1.00"/>
+                    <torque normRpm="0.72" torque="1.00"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1.00" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="61" maxForwardGearRatio="320" minBackwardGearRatio="61" maxBackwardGearRatio="320" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+					<differential torqueRatio="0.5" maxSpeedRatio="2.3" wheelIndex1="1" wheelIndex2="2"/>
+					<differential torqueRatio="0.5" maxSpeedRatio="2.3" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="5.2" wheelIndex1="5" wheelIndex2="6" />
+                    <differential torqueRatio="0.5" maxSpeedRatio="5.3" wheelIndex1="7" wheelIndex2="8" />					
+					<differential torqueRatio="0.5" maxSpeedRatio="1.3" differentialIndex1="1" differentialIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.3" differentialIndex1="3" differentialIndex2="4" />
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" differentialIndex1="5" differentialIndex2="6" />					
+                </differentials>				
+            </differentialConfiguration>
+        </differentialConfigurations>		
+
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle1" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 0.08" maxRpmColor="0.01 0.01 0.01 4" minRpmScale="0.05" maxRpmScale="0.5" xzRotationsOffset="50 0" xzRotationsForward="100 0" xzRotationsBackward="-120 0" xzRotationsLeft="-20 100" xzRotationsRight="-20 -100" />
+            <exhaustEffect node="exhaustParticle2" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 2" maxRpmColor="0.01 0.01 0.01 5" minRpmScale="0.05" maxRpmScale="0.5" xzRotationsOffset="50 0" xzRotationsForward="100 0" xzRotationsBackward="-120 0" xzRotationsLeft="-20 100" xzRotationsRight="-20 -100" />
+        </exhaustEffects>
+
+        <motorStartDuration>3500</motorStartDuration>
+
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay" minValueAnim="0" maxValueAnim="2500" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="motorTemperature" animName="loadingBarTemperature" minValueAnim="20" maxValueAnim="120"  groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="motorTemperatureWarning" node="Iconservice8" baseColor="GREY" emitColor="YELLOW" intensity="0.5" warningThresholdMin="90" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ANIMATION" valueType="speed"            animName="speedDisplay"  minValueAnim="0" maxValueAnim="13" groups="MOTOR_ACTIVE"/>			
+        </dashboards>
+    </motorized>
+
+    <drivable>
+        <idleTurning allowed="true" updateSteeringWheel="true" direction="1" maxSpeed="2" lockDirection="false">
+            <wheel node="wheelFrontLeft"  steeringAngle="-45"/>
+            <wheel node="wheelBackLeft"   steeringAngle="45"/>
+            <wheel node="wheelFrontRight" steeringAngle="45" inverted="true"/>
+            <wheel node="wheelBackRight"  steeringAngle="-45" inverted="true"/>
+        </idleTurning>
+        <dashboards>
+			<dashboard displayType="ROT" valueType="accelerationAxis" node="accelerator"  minRot="-25 0 0" maxRot="-5 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>			
+			<dashboard displayType="ROT"  valueType="combinedPedalLeft"  node="pedalLeft"  minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+            <dashboard displayType="ROT"  valueType="combinedPedalRight" node="pedalRight" minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+			<dashboard displayType="ROT"  valueType="combinedPedalLeft"  node="leverLeft"  minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+            <dashboard displayType="ROT"  valueType="combinedPedalRight" node="leverRight" minRot="-10 0 0" maxRot="10 0 0" doInterpolation="true"/>
+        </dashboards>		
+    </drivable>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+				<foldingParts posDirectionText="$l10n_close" negDirectionText="$l10n_open">
+					<foldingPart animationName="RotAxisWork" speedScale="0.8"/>
+				</foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>	
+
+    <animations>
+        <animation name="rpmDisplay">
+			<part node="Iconservice9" startTime="0"  endTime="0.4" visibility="true" />
+			<part node="Iconservice9" startTime="0.4"  endTime="1.0" visibility="false" />
+			<part node="levaOn" startTime="0"  endTime="0.1" startRot="0 0 0" endRot="10 0 0" />			
+        </animation>
+        <animation name="speedDisplay">
+			<part node="LowSpeedDecals" startTime="0.0"  endTime="0.1" visibility="false" />
+			<part node="LowSpeedDecals" startTime="0.11"  endTime="0.6" visibility="true" />
+			<part node="LowSpeedDecals" startTime="0.6"  endTime="1.0" visibility="false" />
+			<part node="FastSpeedDecals" startTime="0"  endTime="0.6" visibility="false" />
+			<part node="FastSpeedDecals" startTime="0.6"  endTime="1.0" visibility="true" />	
+        </animation>		
+        <animation name="loadingBarTemperature">
+			<part node="slider1"  startTime="0" endTime="1" shaderParameter="sliderPos" shaderStartValues="0 0 0 0" shaderEndValues="1.0 0 0 0"/>
+        </animation>
+        <animation name="RotAxisWork">
+            <part node="RotArmAxis" startTime="0" endTime="10" startRot="0 0 0" endRot="0 -90 0"/>
+			<part node="RotArmDummy" startTime="0" endTime="10" startRot="0 0 0" endRot="0 -90 0"/>
+			<sound file="sounds/jd50G_hydraulicArmMove.wav" startTime="0.01" endTime="9.99" volumeScale="2.0" direction="0" fadeIn="0.05" fadeOut="0.05" linkNode="RotArmAxis"/>
+			<sound template="clackVar4" startTime="0.01" direction="1"  volumeScale="3" pitchScale="1.4" />	
+			<sound template="clackVar4" startTime="9.99" direction="1"  volumeScale="3" pitchScale="1.4" />		
+			<sound template="clackVar4" startTime="0.01" direction="-1"  volumeScale="3" pitchScale="1.4" />	
+			<sound template="clackVar4" startTime="9.99" direction="-1"  volumeScale="3" pitchScale="1.4" />					
+        </animation>
+		<animation name="enterAnimation">
+            <part node="door"  startTime="0" endTime="3" startRot="0 0 0" endRot="0 152 0"/>
+			<part node="door"  startTime="3" endTime="6" startRot="0 152 0" endRot="0 0 0"/>
+			<sound template="clackVar6" startTime="0.01" direction="1"  volumeScale="0.6" pitchScale="1.1" />
+			<sound template="clackVar4" startTime="5.99" direction="1"  volumeScale="0.8" pitchScale="0.8" />	
+        </animation>
+		<animation name="loadingBarFuel">
+            <part node="slider2"  startTime="0" endTime="1" shaderParameter="sliderPos" shaderStartValues="0 0 0 0" shaderEndValues="1.0 0 0 0"/>
+        </animation>
+    </animations>
+
+	<powerConsumer ptoRpm="350" neededMinPtoPower="5" neededMaxPtoPower="5"/>	
+
+	
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="body" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM" invertAxis="true" mouseSpeedFactor="0.6" iconName="CRANE_ARM1_ROTATE_Y" />
+                <rotation rotSpeed="40" rotAcceleration="80" rotationAxis="2" />
+				<attacherJoint jointIndices="1 2 3 4" />
+            </movingTool>
+            <movingTool node="mainArmDummy" delayedNode="mainArm" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM1_ROTATE_X" />
+                <rotation rotSpeed="20" rotAcceleration="80" rotMax="0" rotMin="-95" startRot="-52" rotationAxis="1" rotSendNumBits="9" />
+				<dependentPart node="hydraulicMainArm" />
+				<attacherJoint jointIndices="1 2 3 4" />
+            </movingTool>
+            <movingTool node="secondArmDummy" delayedNode="secondArm" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM3" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM2_ROTATE_X" />
+                <rotation rotSpeed="20" rotAcceleration="80" rotMax="180" rotMin="65" startRot="130" rotationAxis="1" rotSendNumBits="10"/>
+                <dependentPart node="armMover" />
+                <dependentPart node="hydraulicSecondArm" />				
+				<attacherJoint jointIndices="1 2 3 4" />
+            </movingTool>
+            <movingTool node="shovelDummy" delayedNode="shovel" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.5" iconName="CRANE_ARM2_TRANSLATE" />
+                <rotation rotSpeed="20" rotAcceleration="90" rotMax="100" rotMin="-10" startRot="45" rotationAxis="1" />
+				<attacherJoint jointIndices="1 2 3 4" />
+            </movingTool>
+            <movingTool node="blade" playSound="true" isConsumingPower="true">
+                <controls axis="AXIS_CRANE_TOOL" invertAxis="false" mouseSpeedFactor="0.5" iconName="GRABBER_ROTATE_Y" />
+                <rotation rotSpeed="-50" rotAcceleration="90" rotMax="25" rotMin="-10" startRot="0" rotationAxis="1" />
+				<dependentPart node="hydraulicShovel" />
+            </movingTool>
+            <movingTool node="RotArmDummy" playSound="true" isConsumingPower="true">
+			<dependentPart node="mainArm" />
+				<dependentPart node="hydraulicAxis" />
+				<attacherJoint jointIndices="1 2 3 4" />
+            </movingTool>				
+        </movingTools>
+
+        <movingParts>
+			<movingPart node="hydraulicMainArm" referencePoint="hydraulicMainArmPunchRef" referenceFrame="hydraulicMainArmPunchRef" isActiveDirty="true" maxUpdateDistance="250">
+                <translatingPart node="hydraulicMainArmPunch" />
+            </movingPart>
+			<movingPart node="hydraulicSecondArm" referencePoint="hydraulicSecondArmPunchRef" referenceFrame="hydraulicSecondArmPunchRef" isActiveDirty="true" maxUpdateDistance="250">
+                <translatingPart node="hydraulicSecondArmPunch" />
+            </movingPart>			
+			<movingPart node="hydraulicThirdArm" referencePoint="hydraulicThirdArmPunchRef" referenceFrame="hydraulicThirdArmPunchRef" isActiveDirty="true" maxUpdateDistance="250">
+                <translatingPart node="hydraulicThirdArmPunch" />
+            </movingPart>
+			<movingPart node="armMover" localReferencePoint="armMoverPart" referencePoint="armMoverPartRef" referenceFrame="armMoverRefFrame" isActiveDirty="true" maxUpdateDistance="250">
+                <dependentPart node="armMoverPart" />
+                <dependentPart node="hydraulicThirdArm" />
+            </movingPart>
+			<movingPart node="armMoverPart" referencePoint="armMoverPartRef" referenceFrame="armMoverPartRef"/>
+			<movingPart node="hydraulicShovel" referencePoint="hydraulicShovelPunchRef" referenceFrame="hydraulicShovelPunchRef" isActiveDirty="true" maxUpdateDistance="250">
+                <translatingPart node="hydraulicShovelPunch" />
+            </movingPart>
+			<movingPart node="hydraulicAxis" referencePoint="hydraulicAxisPunchRef" referenceFrame="hydraulicAxisPunchRef" isActiveDirty="true" maxUpdateDistance="250">
+                <translatingPart node="hydraulicAxisPunch" />
+            </movingPart>			
+        </movingParts>
+
+        <dashboards>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="3" minRot="-20" maxRot="20" axis="AXIS_CRANE_ARM3" doInterpolation="true" groups="MOTOR_ACTIVE"/> 
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft"  rotAxis="2" minRot="-15" maxRot="10" axis="AXIS_CRANE_ARM"  doInterpolation="true" groups="MOTOR_ACTIVE"/> 
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="20" maxRot="-20" axis="AXIS_CRANE_ARM2" doInterpolation="true" groups="MOTOR_ACTIVE"/> 
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight"  rotAxis="2" minRot="10" maxRot="-15" axis="AXIS_CRANE_ARM4"  doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </cylindered>	
+
+    <suspensions>
+        <suspension node="seat"              weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" />
+        <suspension useCharacterTorso="true" weight="90"  minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />
+    </suspensions>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="70" fillTypes="DIESEL" showOnHud="false" showInShop="true" unitTextOverride="$l10n_unit_literShort">
+						<exactFillRootNode node="exactFillRootNodeFuel" />
+                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="loadingBarFuel"/>
+                        <dashboard valueType="fillLevelWarning" displayType="EMITTER" groups="MOTOR_ACTIVE" node="iconFuelDecal" baseColor="GREY" emitColor="RED" intensity="2" warningThresholdMax="50"/>
+                    </fillUnit>
+                    <fillUnit capacity="25" fillTypes="DEF" showOnHud="false" showInShop="true" unitTextOverride="$l10n_unit_literShort"/>
+                    <fillUnit capacity="1000" fillTypes="AIR" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort"/>
+                    <fillUnit capacity="100" fillTypeCategories="bulk windrow" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>	
+
+    <leveler fillUnitIndex="4" maxFillLevelPerMS="30">
+        <levelerNode node="pickUpBlade" width="2.0" zOffset="0.2" minDropWidth="1" maxDropWidth="1.5" minDropDirOffset="0.9" maxDropDirOffset="0.9" minFillLevel="0.85">
+            <smoothing allowed="true" radius="0.5" overlap="1.7" direction="0"/>
+        </levelerNode>
+        <effects>
+            <effectNode effectNode="effectBlade" effectClass="LevelerEffect" materialType="leveler" materialTypeId="1" fadeTime="0.5" speed="-1" maxHeight="1.167" />
+        </effects>
+        <pickUpDirection>1</pickUpDirection>
+    </leveler>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
+            <group name="FRONT_ATTACHMENT" attacherJointIndices="2 5"/>
+            <group name="BACK_ATTACHMENT"  attacherJointIndices="1 3 4"/>
+			<!-- camera -->
+			<group name="WORKING"    isMotorRunning="true"/>
+        </groups>
+
+        <default>
+			<dashboard displayType="EMITTER" node="Iconservice1"     baseColor="GREY"   emitColor="RED"  intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice2"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice3"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice4"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice5"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice6"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_STARTING" />
+			<dashboard displayType="EMITTER" node="Iconservice9"     baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_ACTIVE" />
+			<dashboard displayType="EMITTER" node="LowSpeedDecals"   baseColor="GREY"   emitColor="GREEN" intensity="0.5" groups="MOTOR_ACTIVE" />
+			<dashboard displayType="EMITTER" node="FastSpeedDecals"  baseColor="GREY"   emitColor="RED" intensity="0.5" groups="MOTOR_ACTIVE" />			
+			<!-- camera -->
+			<dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+			<dashboard displayType="VISIBILITY" node="cameraDisplayRoot" groups="WORKING" />
+		
+		</default>
+    </dashboard>
+	
+    <ai>
+        <agent width="2.1" length="4.6" height="2.7" lengthOffset="1.1" frontOffset="2.55" />
+    </ai>	
+
+    <foliageBending>
+		<!--    <bendingNode minX="-0.958" maxX="-0.648" minZ="-1.229" maxZ="1.078" yOffset="-0.3" /> cingoloDX-->
+		<!--	<bendingNode minX="0.648" maxX="0.958" minZ="-1.229" maxZ="1.078" yOffset="-0.3" />  cingoloSX OK-->
+		<bendingNode minX="-0.25" maxX="0.25" minZ="-1.2" maxZ="1.2" yOffset="0" node="crawlerDriveNodeLeft1" />
+		<bendingNode minX="-0.25" maxX="0.25" minZ="-1.2" maxZ="1.2" yOffset="0" node="crawlerDriveNodeRight1" />
+		<bendingNode minX="-0.9" maxX="0.9" minZ="-1.3" maxZ="1.1" yOffset="0.6" node="JD50G_main_componen1" />
+		<bendingNode minX="-1.2" maxX="1.2" minZ="1.2" maxZ="1.65" yOffset="0" node="blade" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+	<i3dMappings>
+	  <i3dMapping id="JD50G_main_componen1" node="0>" />
+	  <i3dMapping id="bodyFrame" node="0>0" />
+	  <i3dMapping id="wheels" node="0>0|0" />
+	  <i3dMapping id="wheelFrontLeft" node="0>0|0|0" />
+	  <i3dMapping id="wheelBackLeft" node="0>0|0|1" />
+	  <i3dMapping id="wheelMiddleL1" node="0>0|0|2" />
+	  <i3dMapping id="wheelMiddleL2" node="0>0|0|3" />
+	  <i3dMapping id="wheelMiddleL3" node="0>0|0|4" />
+	  <i3dMapping id="wheelMiddleL4" node="0>0|0|5" />
+	  <i3dMapping id="wheelMiddleL5" node="0>0|0|6" />
+	  <i3dMapping id="wheelFrontRight" node="0>0|0|7" />
+	  <i3dMapping id="wheelBackRight" node="0>0|0|8" />
+	  <i3dMapping id="wheelMiddleR1" node="0>0|0|9" />
+	  <i3dMapping id="wheelMiddleR2" node="0>0|0|10" />
+	  <i3dMapping id="wheelMiddleR3" node="0>0|0|11" />
+	  <i3dMapping id="wheelMiddleR4" node="0>0|0|12" />
+	  <i3dMapping id="wheelMiddleR5" node="0>0|0|13" />
+	  <i3dMapping id="wheelsLeft" node="0>0|0|14" />
+	  <i3dMapping id="wlFront" node="0>0|0|14|0" />
+	  <i3dMapping id="wlBack" node="0>0|0|14|1" />
+	  <i3dMapping id="wl1" node="0>0|0|14|2" />
+	  <i3dMapping id="wl2" node="0>0|0|14|3" />
+	  <i3dMapping id="wl3" node="0>0|0|14|4" />
+	  <i3dMapping id="wl4" node="0>0|0|14|5" />
+	  <i3dMapping id="wl5" node="0>0|0|14|6" />
+	  <i3dMapping id="wl6" node="0>0|0|14|7" />
+	  <i3dMapping id="crawlerDriveNodeLeft1" node="0>0|0|14|8" />
+	  <i3dMapping id="crawlerDriveNodeLeft2" node="0>0|0|14|9" />
+	  <i3dMapping id="crawlerDriveNodeLeft3" node="0>0|0|14|10" />
+	  <i3dMapping id="crawlerDriveNodeLeft4" node="0>0|0|14|11" />
+	  <i3dMapping id="wheelsRight" node="0>0|0|15" />
+	  <i3dMapping id="wrFront" node="0>0|0|15|0" />
+	  <i3dMapping id="wrBack" node="0>0|0|15|1" />
+	  <i3dMapping id="wr1" node="0>0|0|15|2" />
+	  <i3dMapping id="wr2" node="0>0|0|15|3" />
+	  <i3dMapping id="wr3" node="0>0|0|15|4" />
+	  <i3dMapping id="wr4" node="0>0|0|15|5" />
+	  <i3dMapping id="wr5" node="0>0|0|15|6" />
+	  <i3dMapping id="wr6" node="0>0|0|15|7" />
+	  <i3dMapping id="crawlerDriveNodeRight1" node="0>0|0|15|8" />
+	  <i3dMapping id="crawlerDriveNodeRight2" node="0>0|0|15|9" />
+	  <i3dMapping id="crawlerDriveNodeRight3" node="0>0|0|15|10" />
+	  <i3dMapping id="crawlerDriveNodeRight4" node="0>0|0|15|11" />
+	  <i3dMapping id="hydraulicsFrame" node="0>0|1" />
+	  <i3dMapping id="hydraulicShovel" node="0>0|1|0" />
+	  <i3dMapping id="hydraulicShovelPunch" node="0>0|1|0|0" />
+	  <i3dMapping id="hoseShovelJoint" node="0>0|1|0|1" />
+	  <i3dMapping id="blade" node="0>0|1|1" />
+	  <i3dMapping id="hydraulicShovelPunchRef" node="0>0|1|1|0" />
+	  <i3dMapping id="bendingNodeBlade1" node="0>0|1|1|1" />
+	  <i3dMapping id="bendingNodeBlade2" node="0>0|1|1|2" />
+	  <i3dMapping id="bendingNodeBlade3" node="0>0|1|1|3" />
+	  <i3dMapping id="bendingNodeBlade4" node="0>0|1|1|4" />
+	  <i3dMapping id="collisionArmBlade" node="0>0|1|1|5" />
+	  <i3dMapping id="collisionBladeRight" node="0>0|1|1|6" />
+	  <i3dMapping id="collisionBladeLrft" node="0>0|1|1|7" />
+	  <i3dMapping id="collisionBlade" node="0>0|1|1|8" />
+	  <i3dMapping id="fillUnitBlade" node="0>0|1|1|9" />
+	  <i3dMapping id="pickUpBlade" node="0>0|1|1|9|0" />
+	  <i3dMapping id="effectBlade" node="0>0|1|1|9|1" />
+	  <i3dMapping id="j_hoseShovel" node="0>0|1|2" />
+	  <i3dMapping id="body" node="0>1" />
+	  <i3dMapping id="cameras" node="0>1|0" />
+	  <i3dMapping id="outdoorCameraTarget" node="0>1|0|0" />
+	  <i3dMapping id="outdoorCamera" node="0>1|0|0|0" />
+	  <i3dMapping id="cameraRaycastNode1" node="0>1|0|1" />
+	  <i3dMapping id="cameraRaycastNode2" node="0>1|0|2" />
+	  <i3dMapping id="cameraRaycastNode3" node="0>1|0|3" />
+	  <i3dMapping id="shadowFocusBox" node="0>1|0|4" />
+	  <i3dMapping id="exhaustParticles" node="0>1|1" />
+	  <i3dMapping id="exhaustParticle1" node="0>1|1|0" />
+	  <i3dMapping id="exhaustParticle2" node="0>1|1|1" />
+	  <i3dMapping id="cabin" node="0>1|2" />
+	  <i3dMapping id="steeringBase" node="0>1|2|0" />
+	  <i3dMapping id="lights" node="0>1|2|1" />
+	  <i3dMapping id="sharedLightsCab" node="0>1|2|1|0" />
+	  <i3dMapping id="hellaWorkingLightSquare_01" node="0>1|2|1|0|0" />
+	  <i3dMapping id="defaultLightsCab" node="0>1|2|1|1" />
+	  <i3dMapping id="frontLightLow" node="0>1|2|1|1|0" />
+	  <i3dMapping id="frontLightHigh" node="0>1|2|1|1|1" />
+	  <i3dMapping id="dashboardLight" node="0>1|2|1|1|2" />
+	  <i3dMapping id="backLights" node="0>1|2|1|2" />
+	  <i3dMapping id="backLightsHigh1" node="0>1|2|1|2|0" />
+	  <i3dMapping id="beaconLights" node="0>1|2|1|3" />
+	  <i3dMapping id="beaconLight1" node="0>1|2|1|3|0" />
+	  <i3dMapping id="seat" node="0>1|2|2" />
+	  <i3dMapping id="playerSkin" node="0>1|2|2|0" />
+	  <i3dMapping id="indoorCamera" node="0>1|2|2|1" />
+	  <i3dMapping id="joystickLeft" node="0>1|2|2|2" />
+	  <i3dMapping id="j_joystickRubberLeft" node="0>1|2|2|2|0" />
+	  <i3dMapping id="playerLeftHandTarget" node="0>1|2|2|2|1" />
+	  <i3dMapping id="joystickRight" node="0>1|2|2|3" />
+	  <i3dMapping id="j_joystickRubberRight" node="0>1|2|2|3|0" />
+	  <i3dMapping id="playerRightHandTarget" node="0>1|2|2|3|1" />
+	  <i3dMapping id="j_Seat" node="0>1|2|2|4" />
+	  <i3dMapping id="j_RubberRight" node="0>1|2|2|5" />
+	  <i3dMapping id="j_RubberLeft" node="0>1|2|2|6" />
+	  <i3dMapping id="dashboards" node="0>1|2|3" />
+	  <i3dMapping id="dashboard" node="0>1|2|3|0" />
+	  <i3dMapping id="numbersWorkingTime" node="0>1|2|3|1" />
+	  <i3dMapping id="Iconservices" node="0>1|2|3|2" />
+	  <i3dMapping id="Iconservice1" node="0>1|2|3|2|0" />
+	  <i3dMapping id="Iconservice2" node="0>1|2|3|2|1" />
+	  <i3dMapping id="Iconservice3" node="0>1|2|3|2|2" />
+	  <i3dMapping id="Iconservice4" node="0>1|2|3|2|3" />
+	  <i3dMapping id="Iconservice5" node="0>1|2|3|2|4" />
+	  <i3dMapping id="Iconservice6" node="0>1|2|3|2|5" />
+	  <i3dMapping id="Iconservice7" node="0>1|2|3|2|6" />
+	  <i3dMapping id="Iconservice8" node="0>1|2|3|2|7" />
+	  <i3dMapping id="Iconservice9" node="0>1|2|3|2|8" />
+	  <i3dMapping id="iconFuelDecal" node="0>1|2|3|2|9" />
+	  <i3dMapping id="slider1" node="0>1|2|3|2|10" />
+	  <i3dMapping id="slider2" node="0>1|2|3|2|11" />
+	  <i3dMapping id="LowSpeedDecals" node="0>1|2|3|2|12" />
+	  <i3dMapping id="FastSpeedDecals" node="0>1|2|3|2|13" />
+	  <i3dMapping id="dashboardOn" node="0>1|2|3|3" />
+	  <i3dMapping id="dotWork" node="0>1|2|3|4" />
+	  <i3dMapping id="pedals" node="0>1|2|4" />
+	  <i3dMapping id="acceleratorRot" node="0>1|2|4|0" />
+	  <i3dMapping id="accelerator" node="0>1|2|4|0|0" />
+	  <i3dMapping id="playerRightFootTargetAccRef" node="0>1|2|4|0|0|0" />
+	  <i3dMapping id="pedalRight" node="0>1|2|4|1" />
+	  <i3dMapping id="playerRightFootTargetDirRef" node="0>1|2|4|1|0" />
+	  <i3dMapping id="pedalLeft" node="0>1|2|4|2" />
+	  <i3dMapping id="playerLeftFootTargetDirRef" node="0>1|2|4|2|0" />
+	  <i3dMapping id="levers" node="0>1|2|5" />
+	  <i3dMapping id="leverLeft" node="0>1|2|5|0" />
+	  <i3dMapping id="leverRight" node="0>1|2|5|1" />
+	  <i3dMapping id="levaOn" node="0>1|2|5|2" />
+	  <i3dMapping id="characterTargets" node="0>1|2|6" />
+	  <i3dMapping id="playerRightFootTarget" node="0>1|2|6|0" />
+	  <i3dMapping id="playerLeftFootTarget" node="0>1|2|6|1" />
+	  <i3dMapping id="playerRightFootTargetGas" node="0>1|2|6|2" />
+	  <i3dMapping id="visuals_0" node="0>1|2|7" />
+	  <i3dMapping id="j_boneSeat" node="0>1|2|7|0" />
+	  <i3dMapping id="j_Tube1" node="0>1|2|7|1" />
+	  <i3dMapping id="j_hydraulicAxis" node="0>1|2|7|2" />
+	  <i3dMapping id="hosesCab" node="0>1|2|7|3" />
+	  <i3dMapping id="j_hoses3" node="0>1|2|7|4" />
+	  <i3dMapping id="j_hosesHydMain1" node="0>1|2|7|5" />
+	  <i3dMapping id="exitPoint" node="0>1|3" />
+	  <i3dMapping id="ai" node="0>1|4" />
+	  <i3dMapping id="aiCollisionNode" node="0>1|4|0" />
+	  <i3dMapping id="hydraulics" node="0>1|5" />
+	  <i3dMapping id="hydraulicAxisRot" node="0>1|5|0" />
+	  <i3dMapping id="hydraulicAxis" node="0>1|5|0|0" />
+	  <i3dMapping id="hydraulicAxisPunch" node="0>1|5|0|0|0" />
+	  <i3dMapping id="hydraulicAxis1" node="0>1|5|0|0|1" />
+	  <i3dMapping id="visuals_1" node="0>1|6" />
+	  <i3dMapping id="grid" node="0>1|6|0" />
+	  <i3dMapping id="door" node="0>1|6|1" />
+	  <i3dMapping id="outsidedoorWindows" node="0>1|6|1|0" />
+	  <i3dMapping id="insidedoorWindows" node="0>1|6|1|1" />
+	  <i3dMapping id="decalCab" node="0>1|6|2" />
+	  <i3dMapping id="insideWindows" node="0>1|6|3" />
+	  <i3dMapping id="outsideWindows" node="0>1|6|4" />
+	  <i3dMapping id="interiorPart" node="0>1|6|5" />
+	  <i3dMapping id="warning" node="0>1|6|6" />
+	  <i3dMapping id="movingParts" node="0>1|7" />
+	  <i3dMapping id="RotArmAxis" node="0>1|7|0" />
+	  <i3dMapping id="hydraulicMainArm" node="0>1|7|0|0" />
+	  <i3dMapping id="hydraulicMainArmPunch" node="0>1|7|0|0|0" />
+	  <i3dMapping id="j_hosesHydMainArm2" node="0>1|7|0|0|1" />
+	  <i3dMapping id="hydraulicAxisPunchRef" node="0>1|7|0|1" />
+	  <i3dMapping id="arms" node="0>1|7|0|2" />
+	  <i3dMapping id="mainArm" node="0>1|7|0|2|0" />
+	  <i3dMapping id="secondArm" node="0>1|7|0|2|0|0" />
+	  <i3dMapping id="shovel" node="0>1|7|0|2|0|0|0" />
+	  <i3dMapping id="armMoverPartRef" node="0>1|7|0|2|0|0|0|0" />
+	  <i3dMapping id="adapterAttach" node="0>1|7|0|2|0|0|0|1" />
+	  <i3dMapping id="attacherJoints" node="0>1|7|0|2|0|0|0|1|0" />
+	  <i3dMapping id="trailers" node="0>1|7|0|2|0|0|0|1|0|0" />
+	  <i3dMapping id="trailerAttacherJoint" node="0>1|7|0|2|0|0|0|1|0|0|0" />
+	  <i3dMapping id="trailerAttacherJointLow" node="0>1|7|0|2|0|0|0|1|0|0|1" />
+	  <i3dMapping id="connectionHoses" node="0>1|7|0|2|0|0|0|1|0|1" />
+	  <i3dMapping id="BucketAttacherJoint" node="0>1|7|0|2|0|0|0|1|0|2" />
+	  <i3dMapping id="GrabAttacherJoint" node="0>1|7|0|2|0|0|0|1|0|3" />
+	  <i3dMapping id="collAttacher" node="0>1|7|0|2|0|0|0|1|1" />
+	  <i3dMapping id="hydraulicThirdArm" node="0>1|7|0|2|0|0|1" />
+	  <i3dMapping id="hydraulicThirdArmPunch" node="0>1|7|0|2|0|0|1|0" />
+	  <i3dMapping id="j_hosesHydThird" node="0>1|7|0|2|0|0|1|1" />
+	  <i3dMapping id="armMover" node="0>1|7|0|2|0|0|2" />
+	  <i3dMapping id="armMover1" node="0>1|7|0|2|0|0|2|0" />
+	  <i3dMapping id="armMoverPart" node="0>1|7|0|2|0|0|2|1" />
+	  <i3dMapping id="armMoverPart1" node="0>1|7|0|2|0|0|2|1|0" />
+	  <i3dMapping id="hydraulicThirdArmPunchRef" node="0>1|7|0|2|0|0|2|1|1" />
+	  <i3dMapping id="hydraulicSecondArmPunchRef" node="0>1|7|0|2|0|0|3" />
+	  <i3dMapping id="armMoverRefFrame" node="0>1|7|0|2|0|0|4" />
+	  <i3dMapping id="j_hosesSecondArm" node="0>1|7|0|2|0|0|5" />
+	  <i3dMapping id="hydraulic01_in" node="0>1|7|0|2|0|0|6" />
+	  <i3dMapping id="hydraulic01_out" node="0>1|7|0|2|0|0|7" />
+	  <i3dMapping id="hydraulic02_in" node="0>1|7|0|2|0|0|8" />
+	  <i3dMapping id="hydraulic02_out" node="0>1|7|0|2|0|0|9" />
+	  <i3dMapping id="connectorGrab" node="0>1|7|0|2|0|0|10" />
+	  <i3dMapping id="hydraulicSecondArm" node="0>1|7|0|2|0|1" />
+	  <i3dMapping id="hydraulicSecondArmPunch" node="0>1|7|0|2|0|1|0" />
+	  <i3dMapping id="j_hoseHydSecondArm" node="0>1|7|0|2|0|1|1" />
+	  <i3dMapping id="lightsARM" node="0>1|7|0|2|0|2" />
+	  <i3dMapping id="sharedLightsArm" node="0>1|7|0|2|0|2|0" />
+	  <i3dMapping id="hellaWorkingLightSquare_02" node="0>1|7|0|2|0|2|0|0" />
+	  <i3dMapping id="hellaWorkingLightSquare_03" node="0>1|7|0|2|0|2|0|1" />
+	  <i3dMapping id="defaultLightsArm" node="0>1|7|0|2|0|2|1" />
+	  <i3dMapping id="highBeamLow" node="0>1|7|0|2|0|2|1|0" />
+	  <i3dMapping id="highBeamHigh" node="0>1|7|0|2|0|2|1|1" />
+	  <i3dMapping id="highBeamHigh1" node="0>1|7|0|2|0|2|1|1|0" />
+	  <i3dMapping id="hydraulicMainArmPunchRef" node="0>1|7|0|2|0|3" />
+	  <i3dMapping id="decalMainArm" node="0>1|7|0|2|0|4" />
+	  <i3dMapping id="arm1Hoses" node="0>1|7|0|2|0|5" />
+	  <i3dMapping id="Tube2" node="0>1|7|0|2|0|6" />
+	  <i3dMapping id="j_hosesHyd3" node="0>1|7|0|2|0|7" />
+	  <i3dMapping id="j_hosesHyd2" node="0>1|7|0|2|0|8" />
+	  <i3dMapping id="jointhose4" node="0>1|7|0|2|0|9" />
+	  <i3dMapping id="j_SecondArm" node="0>1|7|0|2|0|10" />
+	  <i3dMapping id="Tube1" node="0>1|7|0|3" />
+	  <i3dMapping id="j_Tube2" node="0>1|7|0|4" />
+	  <i3dMapping id="j_hydhoses3" node="0>1|7|0|5" />
+	  <i3dMapping id="j_hose4" node="0>1|7|0|6" />
+	  <i3dMapping id="j_hosesHydMain2" node="0>1|7|0|7" />
+	  <i3dMapping id="j_hosesHydMainArm1" node="0>1|7|0|8" />
+	  <i3dMapping id="AiReverser" node="0>1|8" />
+	  <i3dMapping id="ComponentJoint" node="0>1|8|0" />
+	  <i3dMapping id="RotArmDummy" node="0>1|9" />
+	  <i3dMapping id="ArmDummy" node="0>1|9|0" />
+	  <i3dMapping id="mainArmDummy" node="0>1|9|0|0" />
+	  <i3dMapping id="secondArmDummy" node="0>1|9|0|0|0" />
+	  <i3dMapping id="shovelDummy" node="0>1|9|0|0|0|0" />
+	  <i3dMapping id="collSeconArm" node="0>1|9|0|0|0|1" />
+	  <i3dMapping id="collMainArm" node="0>1|9|0|0|1" />
+	  <i3dMapping id="exactFillRootNodeFuel" node="0>1|10" />
+	  <i3dMapping id="skinnedMeshes" node="0>2" />
+	  <i3dMapping id="hose2" node="0>2|0" />
+	  <i3dMapping id="hose1" node="0>2|1" />
+	  <i3dMapping id="hoseShovel" node="0>2|2" />
+	  <i3dMapping id="boneSeat" node="0>2|3" />
+	  <i3dMapping id="joystickRubberRight" node="0>2|4" />
+	  <i3dMapping id="joystickRubberLeft" node="0>2|5" />
+	  <i3dMapping id="hosesHydThird" node="0>2|6" />
+	  <i3dMapping id="hosesHydSecondArm" node="0>2|7" />
+	  <i3dMapping id="hoseshydraulicAxis" node="0>2|8" />
+	  <i3dMapping id="hoses" node="0>2|9" />
+	  <i3dMapping id="hose4" node="0>2|10" />
+	  <i3dMapping id="hosesHydMainArm2" node="0>2|11" />
+	  <i3dMapping id="hosesHydMainArm1" node="0>2|12" />
+	  <i3dMapping id="hosesSecondArm" node="0>2|13" />
+	  <i3dMapping id="TwinComponent" node="1>" />
+	  <i3dMapping id="wheelComponentL" node="1>0" />
+	  <i3dMapping id="wheelComponentR" node="1>1" />
+		<!--camera -->
+		    <i3dMapping id="rearCamera" node="0>1|2|3|5"/>
+    <i3dMapping id="boxRoot" node="0>1|2|3|5|0"/>
+    <i3dMapping id="box" node="0>1|2|3|5|0|0"/>
+    <i3dMapping id="preloadScreen" node="0>1|2|3|5|0|1"/>
+    <i3dMapping id="cameraDecals" node="0>1|2|3|5|0|2"/>
+    <i3dMapping id="cameraDisplayRoot" node="0>1|2|3|5|0|3"/>
+    <i3dMapping id="rearCamera_display" node="0>1|2|3|5|0|3|0"/>
+    <i3dMapping id="camera_01" node="0>1|2|3|6"/>
+    <i3dMapping id="rotPart" node="0>1|2|3|6|0"/>
+    <i3dMapping id="glass" node="0>1|2|3|6|0|0"/>
+    <i3dMapping id="rearCamera_camera" node="0>1|2|3|6|0|0|0"/>
+	  
+	</i3dMappings>
+
+</vehicle>
