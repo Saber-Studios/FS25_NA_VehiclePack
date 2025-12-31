@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="101" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Saber Studios</author>
+    <version>1.0.0.1</version>
+    <title>
+        <en>John Deere THQ T560 Pack</en>
+    </title>
+
+    <description>
+<en><![CDATA[
+John Deere T560
+Category: Harvesters
+Price: $285,000
+Power: 387 hp
+Max. speed: 40 kph
+Capacity: 10,000 L
+
+John Deere 625X
+Category: Grain Headers
+Price: $43,000
+Working width: 7.6m
+Working speed: 10 kph
+
+John Deere 608C
+Category: Corn Headers
+Price: $53,000
+Working width: 6.0m
+Working speed: 10 kph
+
+Changelog Version 1.0.0.1:
+- Updated dashboard parameters
+]]></en>
+<de><![CDATA[
+John Deere T560
+Shopkategorie: Mähdrescher
+Preis: 285.000€
+Leistung: 387 PS
+Höchstgeschwindigkeit: 40 km/h
+Kapazität: 10.000 L
+
+John Deere 625X
+Shopkategorie: Getreideschneidwerke
+Preis: 43.000€
+Arbeitsbreite: 7,6m
+Arbeitsgeschwindigkeit: 10 km/h
+
+John Deere 608C
+Shopkategorie: Maispflücker
+Preis: 53.000€
+Arbeitsbreite: 6,0m
+Arbeitsgeschwindigkeit: 10 km/h
+
+Changelog Version 1.0.0.1:
+- Dashboard parameter aktualisiert
+]]></de>
+<fr><![CDATA[
+John Deere T560
+Catégorie: Moissonneuses-batteuses
+Prix: 285 000€
+Puissance: 387 CV
+Vitesse max.: 40 km/h
+Capacité: 10 000 L
+
+John Deere 625X
+Catégorie: Barres de coupe de céréales
+Prix: 43 000€
+Largeur de travail: 7,6m
+Vitesse de travail: 10 km/h
+
+John Deere 608C
+Catégorie: Barres de coupe de maïs
+Prix: 53 000€
+Largeur de travail: 6,0m
+Vitesse de travail: 10 km/h
+
+Changelog Version 1.0.0.1:
+- Paramètres du tableau de bord mis à jour
+]]></fr>
+    </description>
+
+    <iconFilename>icon_johnDeereT560Pack.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="vehicles/johnDeere/t560/t560.xml"/>
+        <storeItem xmlFilename="vehicles/johnDeere/header625X/header625X.xml"/>
+        <storeItem xmlFilename="vehicles/johnDeere/header608C/header608C.xml"/>
+    </storeItems>
+</modDesc>

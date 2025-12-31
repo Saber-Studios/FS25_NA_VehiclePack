@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="balaoInvertida" text="Balloon and inverted rear" />
+        <text name="duplaInvertida" text="Double and inverted rear" />
+        <text name="transporte" text="Transport" />
+        <text name="transporteInvertida" text="Transport and inverted rear" />
+        <text name="69metrosdobravel" text="7 meters foldable" />
+        <text name="79metrosdobravel" text="7.9 meters foldable" />
+        <text name="87metrosdobravel" text="8.7 meters foldable" />
+        <text name="61metros" text="6.1 meters" />
+        <text name="69metros" text="7 meters" />
+        <text name="79metros" text="7.9 meters" />
+        <text name="87metros" text="8.7 meters" />
+        <text name="graneleiro" text="Bulk carrier" />
+        <text name="8800Litros" text="8800 liters" />
+        <text name="8800Litrosarcos" text="8800 liters with arches" />
+        <text name="8800Litroslona" text="8800 liters with tarp" />
+        <text name="10600Litros" text="10600 liters" />
+        <text name="10600Litrosarcos" text="10600 liters with arches" />
+        <text name="10600Litroslona" text="10600 liters with tarp" />
+        <text name="12500Litros" text="12500 liters" />
+        <text name="12500Litrosarcos" text="12500 liters with arches" />
+        <text name="12500Litroslona" text="12500 liters with tarp" />
+        <text name="17500Litros" text="17500 liters" />
+        <text name="14800Litros" text="14800 liters" />
+        <text name="14800Litrosarcos" text="14800 liters with arches" />
+        <text name="14800Litroslona" text="14800 liters with tarp" />
+        <text name="19800Litros" text="19800 liters" />
+        <text name="14100Litros" text="14100 liters" />
+        <text name="sinalizacoes" text="Signage" />
+        <text name="modelo1" text="Model 1" />
+        <text name="modelo2" text="Model 2" />
+        <text name="modelo3" text="Model 3" />
+        <text name="modelo4" text="Model 4" />
+        <text name="janelas" text="Windows" />
+        <text name="fume1" text="Tinted 1" />
+        <text name="fume2" text="Tinted 2" />
+        <text name="fume3" text="Tinted 3" />
+        <text name="farolBaixoCabine" text="Lower cabin headlight" />
+        <text name="sinalizacaoFrontal" text="Front and rear signage" />
+        <text name="refletores" text="Front reflectors" />
+        <text name="placaoversize" text="Rear oversize plate" />
+        <text name="refletoresplacaoversize" text="Reflectors + oversize plate" />
+        <text name="escapamento" text="Exhaust" />
+        <text name="escapamentoTraseiro" text="Rear exhaust" />
+        <text name="larguraeixo" text="Rear axle width" />
+        <text name="largura1" text="Width 1" />
+        <text name="largura2" text="Width 2" />
+        <text name="largura3" text="Width 3" />
+        <text name="largura4" text="Width 4" />
+        <text name="largura5" text="Width 5" />
+        <text name="largura6" text="Width 6" />
+        <text name="picador" text="Chopper" />
+        <text name="adesivosVelocidade" text="Speed stickers" />
+        <text name="espelhosExtras" text="Extra mirrors" />
+        <text name="sensorCabine" text="Cabin sensors" />
+        <text name="faroldacabine" text="Cabin headlight" />
+        <text name="farolDuploRedondo" text="Double round headlight" />
+        <text name="farolRetangular" text="Rectangular headlight" />
+        <text name="antenaGPS" text="GPS antenna" />
+        <text name="integrada" text="Integrated into cabin" />
+        <text name="triangulotraseiro" text="Rear triangle" />
+        <text name="refletorTraseiro" text="Rear reflectors" />
+        <text name="lonaGraneleiro" text="Bulk carrier tarp" />
+		<text name="canoportaescada" text="Pipe - door - ladder" />
+        <text name="tampas" text="Covers" />
+        <text name="bancosinalizacaoDireita" text="Seats - right signaling" />
+    </texts>
+</l10n>

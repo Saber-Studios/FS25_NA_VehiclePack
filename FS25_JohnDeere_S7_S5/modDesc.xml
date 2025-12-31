@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Agro Tonho</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>John Deere S7/S5 THQ</en>
+    </title>
+    <description>
+       <en>
+<![CDATA[The new S5 and S7 Series lines focus on efficiency, refinement, and empowerment. A new harvesting experience that will enable greater operational capacity and grain quality through automation technologies. In this model, you'll find three combines: the S5, S7600-700, and S7800-850-900.
+
+Combine Specifications
+John Deere S5 500
+- Category: Combines
+- Price: $224,000
+- Power: 320 hp
+- Grain capacity: 8,800 and 14,100 liters
+- Maximum speed: 40 kph
+
+John Deere S7 600-700
+- Category: Combines
+- Price: $282,000
+- Power: 382 or 460 hp
+- Grain capacity: 10,600, 12,500, 17,500, or 14,100 liters
+- Maximum speed: 40 kph
+
+John Deere S7 800-850-900
+- Category: Combines
+- Price: $345,000
+- Power: 547, 579, and 625 hp
+- Grain capacity: 12,500, 17,500, 14,800, 19,800, or 14,100 liters
+- Maximum speed: 40 kph
+
+General harvester configurations; options apply to all models
+- Manual animations for the four side covers, door opening with gradual increase in interior sound, discharge spout adjustment, signaling, main ladder, and seat adjustment by adjusting the internal camera
+- Balloon, dual, transport, and track tire options; each brand has two rear tire variations for each option
+- Michelin, Continental, Trelleborg, and Lizard tires, the latter being a rear tire variation and also rice-fed tires
+- Foldable discharge pipe options or Fixed, some models have optional sizes different from others
+- Bulk carrier options that change the load capacity
+- Variations in light signals
+- 4 cabin glass shades
+- Option for lower cabin light
+- Option for feeder signaling and oversize rear sign
+- 3 exhaust models
+- 6 rear axle width adjustment options
+- 3 straw chopper models
+- Option for speed indicator stickers
+- Option for extra mirrors
+- Option for cabin sensors
+- 2 upper cabin light models
+- Integrated GPS antenna or StarFire 7000
+- Option for rear triangle and reflective strips
+- Option for green or black bulk carrier tarpaulin]]>
+        </en>
+        <de>
+<![CDATA[Die neuen Baureihen S5 und S7 legen den Fokus auf Effizienz, Raffinesse und Leistungsstärke. Ein neues Ernteerlebnis, das durch Automatisierungstechnologien eine höhere Betriebskapazität und Getreidequalität ermöglicht. In diesem Modell gibt es drei Mähdrescher: den S5, den S7600-700 und den S7800-850-900.
+
+Mähdrescher-Spezifikationen
+John Deere S5 500
+- Kategorie: Mähdrescher
+- Preis: 224.000 €
+- Leistung: 320 PS
+- Kornkapazität: 8.800 und 14.100 Liter
+- Höchstgeschwindigkeit: 40 km/h
+
+John Deere S7 600-700
+- Kategorie: Mähdrescher
+- Preis: 282.000 €
+- Leistung: 382 oder 460 PS
+- Kornkapazität: 10.600, 12.500, 17.500 oder 14.100 Liter
+- Höchstgeschwindigkeit: 40 km/h
+
+John Deere S7 800-850-900
+- Kategorie: Mähdrescher
+- Preis: 345.000 €
+- Leistung: 547, 579 und 625 PS
+- Kornkapazität: 12.500, 17.500, 14.800, 19.800 oder 14.100 Liter
+- Höchstgeschwindigkeit: 40 km/h
+
+Allgemeine Konfigurationen der Mähdrescher; Optionen gelten für alle Modelle - Manuelle Animationen für die vier Seitenabdeckungen, Türöffnung mit allmählicher Erhöhung des Innenraumsounds, Einstellung der Auswurföffnung, Signalanlage, Hauptleiter und Sitzverstellung durch Einstellen der Innenkamera
+- Optionen für Ballon-, Doppel-, Transport- und Raupenreifen; jede Marke hat zwei Hinterreifenvarianten für jede Option
+- Michelin-, Continental-, Trelleborg- und Lizard-Reifen, wobei letztere eine Hinterreifenvariante und auch Reifen für den Reisanbau sind
+- Optionen für klappbare Entladungsrohre oder feste Entladungsrohre, wobei einige Modelle optionale Größen haben, die sich von anderen unterscheiden - Optionen für Schüttgutbehälter, die die Ladekapazität verändern
+- Variationen bei den Lichtsignalen
+- 4 Kabinenglasfarben
+- Option für eine niedrigere Kabinenbeleuchtung
+- Option für eine Übergröße-Hecktafel
+- Option für Signale für den Einzug und Übergröße-Hecktafel
+- Option für Zuführsignal und Übergröße-Heckschild
+- 3 Auspuffmodelle
+- 6 Optionen für die Einstellung der Hinterachsbreite
+- 3 Strohhäckslermodelle
+- Option für Geschwindigkeitsanzeige-Aufkleber
+- Option für zusätzliche Spiegel
+- Option für Kabinensensoren
+- 2 Modelle für die obere Kabinenbeleuchtung
+- Integrierte GPS-Antenne oder StarFire 7000
+- Option für Heckdreieck und reflektierende Streifen
+- Option für grüne oder schwarze Schüttgut-Plane]]>
+        </de>
+        <br>
+<![CDATA[A nova linha Série S5 e S7 levam em consideração eficiência, aprimoramento e habilitação. Uma nova experiência de colheita que possibilitará maior capacidade operacional e qualidade de grãos por intermédio das tecnologias de automação. Neste mod você encontrará 3 colheitadeiras, a S5, S7600-700 e s7800-850-900
+
+Especificações das colheitadeiras
+John Deere S5 500
+- Categoria: Colheitadeiras
+- Preço: 224000€
+- Potência: 320 CV
+- Capacidade do graneleiro: 8800 e 14100 litros
+- Velocidade máxima: 40 km/h
+
+John Deere S7 600-700
+- Categoria: Colheitadeiras
+- Preço: 282000€
+- Potência: 382 ou 460 CV
+- Capacidade do graneleiro: 10600, 12500, 17500 ou 14100 litros
+- Velocidade máxima: 40 km/h
+
+John Deere S7 800-850-900
+- Categoria: Colheitadeiras
+- Preço: 345000€
+- Potência: 547, 579 e 625 CV
+- Capacidade do graneleiro: 12500, 17500, 14800, 19800 ou 14100 litros
+- Velocidade máxima: 40 km/h
+
+Configurações gerais das colheitadeiras, opcionais valem para todos os modelos
+- Animações manuais das 4 tampas laterais, abertura da porta com aumento gradativo do som no interior, ajusta da bica de descarga, sinalizações, escada principal, e ajuste do banco ajustando a câmera interna
+- Opcionais de pneus balão, duplo, transporte e esteira, cada marca possui duas variações de pneus traseiros para cada opcional
+- Pneus Michelin, Continental, Trelleborg e Lizard, sendo este ultimo como uma variação do pneu traseiro e também pneus arrozeiros
+- Opcionais de canos de descarga dobráveis ou fixos, alguns modelos possuem opcionais de diferentes tamanhos dos outros
+- Opcionais de graneleiros mudando a capacidade da carga
+- Variações de sinalizações luminosas
+- 4 tonalidades dos vidros da cabine
+- Opcional de farol inferior da cabine
+- Opcional de sinalização no alimentador e placa Oversize na traseira
+- 3 modelos de escapamento
+- 6 opções de ajuste da largura do eixo traseiro
+- 3 modelos de picadores de palha
+- Opcional de adesivos indicativos de velocidade
+- Opcional de espelhos extras
+- Opcional dos sensores da cabine
+- Dois modelos de faróis superiores da cabine
+- Antena de GPS integrada ou Star Fire 7000
+- Opcional de triangulo traseiro e faixas refletoras
+- Opcional de cor verde ou preta da lona do graneleiro]]>
+        </br>
+        <fr>
+<![CDATA[Les nouvelles séries S5 et S7 mettent l'accent sur l'efficacité, le raffinement et la puissance. Une nouvelle expérience de récolte qui optimisera la capacité opérationnelle et la qualité du grain grâce aux technologies d'automatisation. Ce modèle comprend trois moissonneuses-batteuses : les S5, S7600-700 et S7800-850-900.
+
+Spécifications de la moissonneuse-batteuse
+John Deere S5 500
+- Catégorie: Moissonneuses-batteuses
+- Prix: 224 000 €
+- Puissance: 320 ch
+- Capacité de chargement: 8 800 et 14 100 litres
+- Vitesse maximale: 40 km/h
+
+John Deere S7 600-700
+- Catégorie: Moissonneuses-batteuses
+- Prix: 282 000 €
+- Puissance: 382 ou 460 ch
+- Capacité de chargement : 10 600, 12 500, 17 500 ou 14 100 litres
+- Vitesse maximale : 40 km/h
+
+John Deere S7 800-850-900
+- Catégorie: Moissonneuses-batteuses
+- Prix: 345 000 €
+- Puissance: 547, 579 et 625 ch
+- Capacité de chargement : 12 500 17 500, 14 800, 19 800 ou 14 100 litres
+- Vitesse maximale: 40 km/h
+
+Configurations générales de la moissonneuse-batteuse ; les options s'appliquent à tous les modèles
+- Animations manuelles pour les quatre capots latéraux, ouverture des portes avec augmentation progressive du bruit intérieur, réglage de la goulotte de déchargement, signalisation, échelle principale et réglage du siège par caméra interne
+- Options de pneus ballon, jumelés, transport et chenilles ; chaque marque propose deux variantes de pneus arrière pour chaque option
+- Pneus Michelin, Continental, Trelleborg et Lizard, ces derniers étant une variante de pneu arrière et également des pneus pour riz
+- Options de tuyau de déchargement pliable ou fixe, certains modèles ayant des tailles différentes
+- Options de vraquier modifiant la capacité de charge
+- Variantes de signaux lumineux
+- 4 pare-soleil de cabine
+- Option d'éclairage inférieur de cabine
+- Option de signalisation d'alimentation et de panneau arrière surdimensionné
+- 3 modèles d'échappement
+- 6 options de réglage de la largeur de l'essieu arrière
+- 3 modèles de broyeurs de paille
+- Autocollants indicateurs de vitesse en option
+- Rétroviseurs supplémentaires en option
+- Capteurs de cabine en option
+- 2 modèles d'éclairage de cabine supérieure
+- Antenne GPS intégrée ou StarFire 7000
+- Triangle arrière et bandes réfléchissantes en option
+- Bâche de vraquier verte ou noire en option]]>
+        </fr>
+        <it>
+<![CDATA[Le nuove linee Serie S5 e S7 si concentrano su efficienza, raffinatezza e potenza. Una nuova esperienza di raccolta che consentirà una maggiore capacità operativa e una migliore qualità del grano grazie alle tecnologie di automazione. In questo modello troverete tre mietitrebbie: S5, S7600-700 e S7800-850-900.
+
+Specifiche della mietitrebbia
+John Deere S5 500
+- Categoria: Mietitrebbie
+- Prezzo: € 224.000
+- Potenza: 320 CV
+- Capacità granella: 8.800 e 14.100 litri
+- Velocità massima: 40 km/h
+
+John Deere S7 600-700
+- Categoria: Mietitrebbie
+- Prezzo: € 282.000
+- Potenza: 382 o 460 CV
+- Capacità granella: 10.600, 12.500, 17.500 o 14.100 litri
+- Velocità massima: 40 km/h
+
+John Deere S7 800-850-900
+- Categoria: Mietitrebbie
+- Prezzo: € 345.000
+- Potenza: 547, 579 e 625 CV
+- Capacità granella: 12.500, 17.500, 14.800, 19.800 o 14.100 litri
+- Velocità massima: 40 km/h
+
+Configurazioni generali della mietitrebbia; le opzioni si applicano a tutti i modelli
+- Animazioni manuali per i quattro cofani laterali, apertura delle portiere con aumento graduale del rumore interno, regolazione del beccuccio di scarico, segnalazione, scala principale e regolazione del sedile tramite la telecamera interna
+- Opzioni di pneumatici a palloncino, doppi, da trasporto e da cingoli; ogni marca offre due varianti di pneumatici posteriori per ciascuna opzione
+- Pneumatici Michelin, Continental, Trelleborg e Lizard, quest'ultimo una variante di pneumatici posteriori e anche pneumatici per alimentazione a riso
+- Opzioni di tubo di scarico pieghevole o fisso, alcuni modelli hanno dimensioni opzionali diverse dagli altri
+- Opzioni per trasporto alla rinfusa che modificano la capacità di carico
+- Variazioni nei segnali luminosi
+- 4 oscuranti per i vetri della cabina
+- Opzione per luce cabina inferiore
+- Opzione per segnalazione di alimentazione e cartello posteriore sovradimensionato
+- 3 modelli di scarico
+- 6 opzioni di regolazione della larghezza dell'assale posteriore
+- 3 modelli di trinciapaglia
+- Opzione per adesivi indicatori di velocità
+- Opzione per specchietti aggiuntivi
+- Opzione per sensori cabina
+- 2 modelli di luci cabina superiori
+- Antenna GPS integrata o StarFire 7000
+- Opzione per triangolo posteriore e strisce riflettenti
+- Opzione per telone verde o nero per trasporto alla rinfusa]]>
+        </it>
+        <es>
+<![CDATA[Las nuevas líneas de las series S5 y S7 se centran en la eficiencia, el refinamiento y la potenciación. Una nueva experiencia de cosecha que permitirá una mayor capacidad operativa y calidad del grano mediante tecnologías de automatización. En este modelo, encontrará tres cosechadoras: la S5, la S7600-700 y la S7800-850-900.
+
+Especificaciones de la cosechadora
+John Deere S5 500
+- Categoría: Cosechadoras
+- Precio: 224.000 €
+- Potencia: 320 CV
+- Capacidad de grano: 8.800 y 14.100 litros
+- Velocidad máxima: 40 km/h
+
+John Deere S7 600-700
+- Categoría: Cosechadoras
+- Precio: 282.000 €
+- Potencia: 382 o 460 CV
+- Capacidad de grano: 10.600, 12.500, 17.500 o 14.100 litros
+- Velocidad máxima: 40 km/h
+
+John Deere S7 800-850-900
+- Categoría: Cosechadoras
+- Precio: 345.000 €
+- Potencia: 547, 579 y 625 CV
+- Capacidad de grano: 12.500 17.500, 14.800, 19.800 o 14.100 litros
+- Velocidad máxima: 40 km/h
+
+Configuraciones generales de la cosechadora; las opciones se aplican a todos los modelos
+- Animaciones manuales para las cuatro cubiertas laterales, apertura de la puerta con aumento gradual del sonido interior, ajuste de la boca de descarga, señalización, escalera principal y ajuste del asiento mediante la cámara interna
+- Opciones de neumáticos de globo, dobles, de transporte y de oruga; cada marca tiene dos variantes de neumáticos traseros para cada opción
+- Neumáticos Michelin, Continental, Trelleborg y Lizard; este último es una variante de neumático trasero y también neumáticos para arroz
+- Opciones de tubo de descarga plegable o fijo; algunos modelos tienen tamaños opcionales diferentes a otros
+- Opciones de granelero que modifican la capacidad de carga
+- Variaciones en las señales luminosas
+- 4 viseras de cabina
+- Opción de luz inferior de cabina
+- Opción de señalización de alimentador y señal trasera de gran tamaño
+- 3 modelos de escape
+- 6 opciones de ajuste del ancho del eje trasero. - 3 modelos de picadora de paja
+- Opción de pegatinas para indicadores de velocidad
+- Opción de espejos adicionales
+- Opción de sensores de cabina
+- 2 modelos de luces superiores de cabina
+- Antena GPS integrada o StarFire 7000
+- Opción de triángulo trasero y bandas reflectantes
+- Opción de lona verde o negra para graneleros]]>
+        </es>
+    </description>
+    <iconFilename>icon_JohnDeere_S7_S5.dds</iconFilename>
+    <multiplayer supported="true" />
+    <storeItems>
+		<storeItem xmlFilename="seriesS5500.xml"/>
+		<storeItem xmlFilename="seriesS7600_700.xml"/>
+		<storeItem xmlFilename="seriesS7800_900.xml"/>
+    </storeItems>
+	
+	<l10n filenamePrefix="xml/l10n"/>
+</modDesc>
