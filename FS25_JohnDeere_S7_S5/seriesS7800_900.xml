@@ -1098,7 +1098,7 @@
             <dashboard displayType="EMITTER" valueType="lightState" node="dotWorkLightBack_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" lightTypes="1" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="lightState" node="dotWorkLightFront_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" lightTypes="2" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="beaconLight" node="dotBeaconLight_decal" baseColor="SHARED_BLACK4" emitColor="JOHNDEERE_ORANGE1" intensity="0.3" groups="MOTOR_ACTIVE"/>
-            <!-- camera -->>
+            <!-- camera -->
             <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </lights>
