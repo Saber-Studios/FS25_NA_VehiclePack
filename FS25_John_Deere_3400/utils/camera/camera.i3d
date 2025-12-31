@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="camera.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="25" filename="$data/shaders/mirrorShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="28" filename="$data/shared/assets/camera_01_normal.png"/>
+    <File fileId="29" filename="$data/shared/assets/camera_01_vmask.png"/>
+    <File fileId="19" filename="$data/shared/default_normal.png"/>
+    <File fileId="20" filename="$data/shared/default_vmask.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="30" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="18" filename="$data/vehicles/volvo/shared/display/display_diffuse.png"/>
+    <File fileId="2" filename="$data/vehicles/volvo/shared/display/display_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/volvo/shared/display/display_vmask.png"/>
+    <File fileId="27" filename="texturen/display_no_diffuse .dds"/>
+    <File fileId="21" filename="texturen/display_off_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="camera_01_metalPainted_mat" materialId="5" alphaBlending="true" customShaderId="4">
+      <Texture fileId="30"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="camera_01_metalPaintedBlack_mat" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="display_plasticPaintedBlack_mat" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="67" customShaderId="4">
+      <Texture fileId="27"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="detailSpecular" fileId="22"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="68" customShaderId="4">
+      <Texture fileId="21"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="detailSpecular" fileId="22"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="69" diffuseColor="0 0 0 1" specularColor="0.501961 1 0" customShaderId="25" customShaderVariation="useCustomReflectionCamera">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+    <Material name="Screen_cam_mat" materialId="70" diffuseColor="1 1 1 1" specularColor="0.501961 1 0" customShaderId="25" customShaderVariation="useCustomReflectionCamera">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+    </Material>
+    <Material name="Screen_metalPaintedBlack_mat" materialId="71" diffuseColor="1 1 1 1" customShaderId="4">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_plasticPaintedBlack2_mat" materialId="72" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_plasticPaintedBlack2_mat" materialId="73" specularColor="0.501961 1 0" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="Screen_rubberBlack_mat" materialId="74" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="15"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.8 0.8 0.8"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="camera.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="Arm" translation="0.497696 1.56913 0.628807" rotation="-179.877 -34.6069 179.88" shapeId="1" nodeId="442" castsShadows="true" receiveShadows="true" materialIds="8,71">
+      <Shape name="Gelenk" translation="0.158702 0.120321 0.160234" rotation="177.504 42.888 179.093" shapeId="2" nodeId="443" castsShadows="true" receiveShadows="true" materialIds="8,71">
+        <Shape name="Display" translation="0.0649998 0.0834488 -0.0907674" rotation="-152.335 -26.1205 -4.64381" shapeId="3" nodeId="444" castsShadows="true" receiveShadows="true" materialIds="74,8,71">
+          <Shape name="off" translation="-1.16676e-05 -0.0150197 0.037" rotation="0 8.53774e-06 2.21981e-05" shapeId="4" clipDistance="50" nodeId="445" castsShadows="true" receiveShadows="true" materialIds="72,68"/>
+          <TransformGroup name="Monitor_off" translation="-1.14441e-05 -0.0150194 0.0379989" rotation="-0.000384198 -0.000221981 -180" visibility="false" nodeId="446">
+            <TransformGroup name="transform" translation="-1.02222e-05 -2.6226e-06 0.00150073" rotation="-2.39057e-05 0.000105868 -180" visibility="false" nodeId="447">
+              <Shape name="Cam10" translation="0 0 -0.001" rotation="0 5.12264e-06 0" shapeId="5" nodeId="448" castsShadows="true" receiveShadows="true" materialIds="70"/>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.02222e-05 -2.6226e-06 0.00150073" rotation="-2.39057e-05 0.000105868 -180" visibility="false" nodeId="449">
+              <Shape name="Cam2" translation="0 0 -0.002" rotation="8.53774e-07 -1.70755e-06 -8.53774e-07" shapeId="6" nodeId="450" castsShadows="true" receiveShadows="true" materialIds="69"/>
+            </TransformGroup>
+            <Shape name="no_cam" translation="-2.98023e-08 0 5.96046e-08" rotation="1.70755e-06 -1.70755e-06 -180" shapeId="4" clipDistance="50" nodeId="451" castsShadows="true" receiveShadows="true" materialIds="73,67"/>
+          </TransformGroup>
+          <Shape name="Frame" translation="-1.2219e-06 -0.0150163 0.0394996" rotation="0.00123968 0.000350047 1.10991e-05" shapeId="7" nodeId="452" castsShadows="true" receiveShadows="true" materialIds="72"/>
+        </Shape>
+      </Shape>
+      <Shape name="camera_01" translation="-1.10827 -0.112717 2.48225" rotation="-90.0666 -34.607 -0.0609224" shapeId="8" clipDistance="300" nodeId="453" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="rotPart" translation="-0.000144 -0.067945 0.000328" rotation="96.8262 -0 0" shapeId="9" clipDistance="300" nodeId="454" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="glass" translation="-1.2e-05 0.000163 0.030086" shapeId="10" clipDistance="75" nodeId="455" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </Shape>
+      </Shape>
+    </Shape>
+    <Camera name="R_camera" translation="4.73692e-09 1.68211 -1.99402" rotation="-15.2223 -0 8.53774e-07" nodeId="456" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1">
+      <TransformGroup name="transform" nodeId="457"/>
+    </Camera>
+    <Camera name="W_camera" translation="-8.46085e-09 2.5678 1.8404" rotation="-11.5925 -0 8.53774e-07" nodeId="458" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1">
+      <TransformGroup name="transform" nodeId="459"/>
+    </Camera>
+  </Scene>
+
+</i3D>

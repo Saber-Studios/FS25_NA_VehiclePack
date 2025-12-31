@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="shovelLevelerJD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_shopItem_telehandlerShovel</name>
+        <specs>
+            <combination xmlFilename="JD3400.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_frontloaderShovel</function>
+        </functions>
+        <image>store_telehandlerShovel.png</image>
+        <price>2200</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>teleLoaderTools</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>249856</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>65024</indexBufferMemoryUsage>
+        <textureMemoryUsage>1179648</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_telehandlerTool</typeDesc>
+        <filename>telehandlerShovel.i3d</filename>
+        <size width="2.7" length="1.65" height="1.3" lengthOffset="-0.08"/>
+        <components maxMass="1200">
+            <component centerOfMass="0 0.1 -0.03" solverIterationCount="10" mass="600" />
+            <component solverIterationCount="10" mass="150" />
+            <joint component1="1" component2="2" node="grabJoint" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="300 0 0" rotLimitDamping="30 0 0" rotLimitForceLimit="10 -1 -1" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="telehandlerJD" />
+        </inputAttacherJoints>
+    </attachable>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="LITER" fillTypeCategories="SHOVEL" capacity="2500" >
+                        <exactFillRootNode node="exactFillRootNode" />
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="SHOVEL" capacity="2500" showInShop="false" showOnHud="false" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" allSidePlanes="false" maxAllowedHeapAngle="30" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <loadInfos>
+            <loadInfo>
+                <node node="fillVolumeLoadNode" width="1.3" length="0.1" />
+            </loadInfo>
+        </loadInfos>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="fillVolumeUnloadNode" width="1.3" length="0.1" />
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeableConfigurations>
+            <dischargeableConfiguration>
+        <dischargeNode node="dischargeNode" fillUnitIndex="1" emptySpeed="2500" >
+            <raycast node="dischargeNode" maxDistance="30" useWorldNegYDirection="true" yOffset="2"/>
+            <info width="2.0" length="1" zOffset="0.5"/>
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="emitterShape" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                    <effectNode effectNode="grainEffect" materialType="unloading" fadeTime="0.5" alignXAxisToWorldY="true" />
+                </effectNode>
+                <effectNode effectNode="smokeEffect" materialType="unloadingSmoke" fadeTime="0.5" />
+            </effects>
+        </dischargeNode>
+            </dischargeableConfiguration>
+            <dischargeableConfiguration>
+        <dischargeNode node="dischargeNode" fillUnitIndex="1" emptySpeed="2500" >
+            <raycast node="dischargeNode" maxDistance="30" useWorldNegYDirection="true" yOffset="2"/>
+            <info width="2.0" length="1" zOffset="0.5"/>
+            <movingToolActivation node="grabJoint" isInverted="true" openFactor="0.4" />
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="emitterShape" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                    <effectNode effectNode="grainEffect" materialType="unloading" fadeTime="0.5" alignXAxisToWorldY="true" />
+                </effectNode>
+                <effectNode effectNode="smokeEffect" materialType="unloadingSmoke" fadeTime="0.5" />
+            </effects>
+        </dischargeNode>
+            </dischargeableConfiguration>
+        </dischargeableConfigurations>
+    </dischargeable>		
+		
+		
+    <shovel>
+        <shovelNode node="pickUpNode" fillUnitIndex="1" loadInfoIndex="1" width="2.8" length="0.5" yOffset="-0.1" needsMovement="true" maxPickupAngle="105"/>
+        <dischargeInfo node="dischargeNode" minSpeedAngle="105" maxSpeedAngle="130" />
+            <movingToolActivation node="grabJoint" isInverted="true" openFactor="0.4" />		
+    </shovel>
+
+    <leveler fillUnitIndex="2" maxFillLevelPerMS="30">
+        <levelerNode node="levelerNode" width="2.8" zOffset="0.9" yOffset="-0.1" minDropWidth="1.5" maxDropWidth="3" minDropDirOffset="1" maxDropDirOffset="1.5" minFillLevel="0.85">
+            <smoothing allowed="true" radius="0.5" overlap="1.7" direction="0"/>
+        </levelerNode>
+
+        <pickUpDirection>1</pickUpDirection>
+    </leveler>
+
+    <suspensions>
+        <suspension node="levelerNode" weight="150" minTranslation="0 -0.5 0.0" maxTranslation="0.0 0.5 0.0" suspensionParametersX="20 4" suspensionParametersY="1 1" suspensionParametersZ="20 4" serverOnly="true"/>
+    </suspensions>
+
+	<configurationSets>
+        <configurationSet name="$l10n_configuration_valueDefault">
+			<configuration name="design"                  index="1"/>	
+			<configuration name="folding"                 index="1"/>	
+            <configuration name="dischargeable" index="1" />		
+        </configurationSet>
+        <configurationSet name="$l10n_shopItem_frontloaderManureGrabFork">
+			<configuration name="design"                  index="2"/>	
+			<configuration name="folding"                 index="2"/>	
+            <configuration name="dischargeable" index="2" />				
+        </configurationSet>
+    </configurationSets>
+	
+	<designConfigurations>
+        <designConfiguration price="0" isDefault="true">
+				<objectChange node="0>3" visibilityActive="false" />	
+			<objectChange node="frontloaderManureGrab_grab_component2" visibilityActive="false"/>
+			<objectChange node="grabColPart01" compoundChildActive="false"/>
+			<objectChange node="1>1|1" compoundChildActive="false"/>					
+			<objectChange node="1>1|2" compoundChildActive="false"/>
+			<objectChange node="1>1|3" compoundChildActive="false"/>	
+			<objectChange node="1>1|4" compoundChildActive="false"/>
+			<objectChange node="1>1|5" compoundChildActive="false"/>				
+        </designConfiguration>
+        <designConfiguration price="0">
+				<objectChange node="0>3" visibilityActive="true" />	
+			<objectChange node="frontloaderManureGrab_grab_component2" visibilityActive="true"/>
+			<objectChange node="grabColPart01" compoundChildActive="true"/>
+			<objectChange node="1>1|1" compoundChildActive="true"/>	
+			<objectChange node="1>1|2" compoundChildActive="true"/>
+			<objectChange node="1>1|3" compoundChildActive="true"/>	
+			<objectChange node="1>1|4" compoundChildActive="true"/>
+			<objectChange node="1>1|5" compoundChildActive="true"/>			
+        </designConfiguration>		
+    </designConfigurations>	
+    <cylindered>
+        <movingTools>
+            <movingTool node="grabJoint" playSound="true" foldingConfigurationIndices="2">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" invertAxis="true" mouseSpeedFactor="0.15" iconName="TOOL_OPEN_CLOSE" />
+                <rotation rotSpeed="200" rotAcceleration="350" rotMax="0" rotMin="-106" />
+                <dependentPart node="0>3|1" />
+                <componentJoint index="1" anchorActor="0" />				
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="grab" referencePoint="grabRef" referenceFrame="grabRef" limitedAxis="1" isActiveDirty="true" maxUpdateDistance="100">
+                <dependentPart node="0>3|1" />
+            </movingPart>		
+            <movingPart node="0>3|1" referencePoint="0>3|0|0" referenceFrame="0>3|0|0" >
+                <translatingPart node="0>3|1|0" />
+            </movingPart>
+        </movingParts>
+
+        <sounds>
+            <actionSound template="hydraulicSmallClose" pitchScale="1.35" volumeScale="2"    linkNode="grabJoint" actionNames="TOOL_MOVE_NEG" nodes="grabJoint" fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="hydraulicClose02"    pitchScale="1.5"  volumeScale="2"    linkNode="grabJoint" actionNames="TOOL_MOVE_POS" nodes="grabJoint" fadeIn="0.1" fadeOut="0.1"/>
+            <actionSound template="metalImpHigh01"      pitchScale="0.84" volumeScale="0.65" linkNode="grabJoint" actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="grabJoint"/>
+            <actionSound template="vibratingImp"        pitchScale="0.9"  volumeScale="0.8"  linkNode="grabJoint" actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="grabJoint"/>
+            <actionSound template="grabImp"             pitchScale="0.9"  volumeScale="0.8"  linkNode="grabJoint" actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="grabJoint"/>
+        </sounds>
+    </cylindered>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+            </foldingConfiguration>				
+            <foldingConfiguration> <!--simple-->			
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>	
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>3|5|0"  length="0.52" diameter="0.022" straighteningFactor="2" isTwoPointHose="true">
+           <objectChange node="0>3|5|0|0" visibilityActive="false" visibilityInactive="true"/>
+           <objectChange node="0>3|5|0|1" visibilityActive="false" visibilityInactive="true"/>		
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>3|5|1" length="0.52" diameter="0.022" straighteningFactor="2" isTwoPointHose="true">
+           <objectChange node="0>3|5|1|1" visibilityActive="false" visibilityInactive="true"/>
+           <objectChange node="0>3|5|1|0" visibilityActive="false" visibilityInactive="true"/>			
+        </hose>
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|4|0" length="0.65" straighteningFactor="0.6" diameter="0.015" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|1|1" straighteningFactor="0.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|4|1" length="0.65" straighteningFactor="0.6" diameter="0.015" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|1|2" straighteningFactor="0.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>	
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|4|2" length="0.65" straighteningFactor="0.6" diameter="0.015" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|1|3" straighteningFactor="0.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|4|3" length="0.65" straighteningFactor="0.6" diameter="0.015" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|1|4" straighteningFactor="0.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>
+		
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|5|0|0" length="1.65" straighteningFactor="1.6" diameter="0.022" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|5|0|1|0|0" straighteningFactor="1.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>
+		<localHose>
+            <hose type="hydraulicIn"  node="0>3|5|1|0" length="1.65" straighteningFactor="1.6" diameter="0.022" adapterType="NONE" isWorldSpaceHose="false" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="0>3|5|1|1|0|0" straighteningFactor="1.6" isWorldSpaceHose="false" isTwoPointHose="true" />
+        </localHose>		
+
+		
+    </connectionHoses>	
+
+    <dynamicMountAttacher node="0>">
+        <fork node="colPartBack01" />
+        <fork node="grabColPart01" />
+        <grab openMountType="TYPE_FORK" closedMountType="TYPE_AUTO_ATTACH_XYZ">
+            <movingToolActivation node="grabJoint" isInverted="true" openFactor="0.4" />
+        </grab>
+    </dynamicMountAttacher>
+
+    <ai>
+        <agentAttachment width="2.8" height="1.5" length="1.5" lengthOffset="0"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-0.7" maxZ="0.7" yOffset="0.02" />
+    </foliageBending>
+    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="JD3400_mat" />
+    </baseColorConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="telehandlerShovel_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="fillVolume" node="0>0|1|0" />
+        <i3dMapping id="fillVolumeLoadNode" node="0>0|1|1" />
+        <i3dMapping id="fillVolumeUnloadNode" node="0>0|1|2" />
+        <i3dMapping id="exactFillRootNode" node="0>0|1|3" />
+        <i3dMapping id="dischargeNode" node="0>0|2" />
+        <i3dMapping id="emitterShape" node="0>0|3" />
+        <i3dMapping id="grainEffect" node="0>0|4|0" />
+        <i3dMapping id="smokeEffect" node="0>0|4|1" />
+        <i3dMapping id="pickUpNode" node="0>0|5" />
+        <i3dMapping id="levelerNode" node="0>0|6" />
+        <i3dMapping id="frontloaderManureGrab_grab_component2" node="1>" />
+        <i3dMapping id="grabRef" node="1>0" />
+        <i3dMapping id="grabColPart01" node="1>1|0" />	
+        <i3dMapping id="grabJoint" node="0>3|2" />	
+        <i3dMapping id="grab" node="0>3|0" />	
+        <i3dMapping id="colPartBack01" node="0>4|0" />		
+    </i3dMappings>
+</vehicle>

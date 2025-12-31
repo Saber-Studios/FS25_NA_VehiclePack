@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Blacksheep Modding</author>
+    <version>1.0.0.1</version>
+    <title>
+        <en>John Deere 3400 Pack</en>
+    </title>
+<description>
+<en>
+<![CDATA[The John Deer 3400 Telehandler (2003 model), with its powerful engine, lifting capacity and manoeuvrability, remains a safe bet in its class.
+Optional rear hitch hooks (for forage wagons or trailers) and a rear 3-point linkage with PTO make this a versatile machine for work on the farm, in the fields or in forestry.
+
+The John Deer 3400's options are rounded off by a range of implements:
+- A bucket with manure grab option.
+- Pallet lifter.
+- A broom that can be fitted to pallet forks for farm maintenance.
+- A 3-point support for handling your mounted cultivation tools (seed drills, cultivators, forestry shredders, vegetable shredders, etc.).
+- A support for handling your cutterbars or pickers without having to use your harvester.
+
+- John Deere 3400
+Category: Telehandlers
+Price: $95,000
+Power: 145 hp
+Max. speed: 40 kph
+Maximum lifting height: 7 m
+
+
+- Bucket (with optional manure grab)
+Category: Telehandler Tools
+Price: 2.200 $
+Capacity: 2500 l
+
+- Pallet fork
+Category: Telehandler Tools
+Price: 2.000 $
+
+- Farm bay V15-3400
+Category: Telehandler Tools
+Price: 650 $
+
+- 3-point support
+Category: Telehandler Tools
+Price: 900 $
+
+Changelog 1.0.0.1 :
+- Fixed size of the upper arm.
+- Front Attacher fixed.
+- Fixed several small adjustment issues
+]]>
+</en>
+<de>
+<![CDATA[Der Teleskoplader John Deer 3400 (Modell 2003) ist mit seiner Motorleistung, seinen Hubkräften und seiner Manövrierfähigkeit nach wie vor eine feste Größe in seiner Klasse.
+Optionale Heckanbauhaken (für Futterplatte oder Anhänger) und ein hinterer Dreipunktanbau mit Zapfwelle machen ihn zu einem vielseitigen Gerät für die Arbeit auf dem Hof, auf dem Feld oder in der Forstwirtschaft.
+
+Anbaugeräte vervollständigen die Optionen des John Deer 3400 :
+- Eine Schaufel mit optionalem Dunggreifer.
+- Ein Palettenheber.
+- Ein Besen, der an die Palettengabel angepasst werden kann, um Ihren Hof zu pflegen.
+- Eine 3-Punkt-Halterung für die Handhabung Ihrer Anbaugeräte (Sämaschinen, Grubber, Forst- oder Vegetationsmulcher usw.).
+- Eine Halterung, mit der Sie Ihre Mähbalken oder Pflücker bedienen können, ohne Ihren Mähdrescher benutzen zu müssen.
+
+- John Deere 3400
+Shopkategorie: Teleskoplader
+Preis: 95.000 €
+Leistung: 145 PS
+Höchstgeschwindigkeit: 40 km/h
+Maximale Hubhöhe: 7 m
+
+- Schaufel (mit optionalem Dunggreifer)
+Preis: 2.200 €
+Fassungsvermögen: 2500 l
+
+- Palettengabelc
+Shopkategorie: Teleskoplader Werkzeuge
+Preis: 2.000 €
+
+- Hofballen
+Shopkategorie: Teleskoplader Werkzeuge
+Preis: 650 €
+
+- 3-Punkt-Halterung
+Shopkategorie: Teleskoplader Werkzeuge
+Preis: 900 €
+
+Changelog 1.0.0.1 :
+- Feste Größe des oberen Arms.
+- Front Attacher behoben.
+- Mehrere kleine Einstellungsprobleme behoben
+]]>
+</de>
+<fr>
+<![CDATA[Le chargeur télescopique John Deer 3400 (modèle 2003), avec la puissance de son moteur, ses capacités de levage, et sa maniabilité, reste une valeur sûre dans sa catégorie.
+En option, des crochets d'attelage arrière (pour plateau fourrager ou remorque) et un attelage 3 points arrière avec prise de force en font un engin polyvalent pour le travail dans la ferme, dans les champs ou pour la sylviculture.
+
+Des outils complètent les options du John Deer 3400 :
+- Un godet avec option grappin à fumier.
+- Un lève palette.
+- Un balai adapatble sur des fourches à palettes pour entretenir votre ferme.
+- Un support 3 points pour manipuler vos outils de culture portés.(semoirs, cultivateurs, broyeurs forestiers ou à vétégaux etc.)
+- Un support pour manipuler vos barres de coupe ou cueilleur sans avoir à utiliser votre moissonneuse.
+
+- John Deere 3400
+Catégorie: Chariots télescopiques
+Prix: 95 000 €
+Puissance: 145 cv
+Vitesse max.: 40 km/h
+Hauteur de levage maxi : 7 m
+
+- Godet (avec option grappin à fumier)
+Catégorie: Équipement pour chariot télescopique
+Prix : 2200 €
+Capacité : 2500 l
+
+- Fourche à palettes
+Catégorie: Équipement pour chariot télescopique
+Prix : 2000 €
+
+- Balai de ferme
+Catégorie: Équipement pour chariot télescopique
+Prix : 650 €
+
+- Support 3 points
+Catégorie: Équipement pour chariot télescopique
+Prix : 900 €
+
+Changelog 1.0.0.1 :
+- Correction de la taille du top arm 3P .
+- Correction de l'attache avant.
+- Correction de plusieurs petits problèmes d'ajustement
+]]>
+</fr>
+</description>
+    <iconFilename>icon_JD3400.dds</iconFilename>
+    <multiplayer supported="true" />
+    <storeItems>
+        <storeItem xmlFilename="JD3400.xml"/>
+        <storeItem xmlFilename="telehandlerFork.xml"/>
+        <storeItem xmlFilename="Sweeper.xml"/>
+        <storeItem xmlFilename="3psupport.xml"/>
+        <storeItem xmlFilename="telehandlerShovel.xml"/>
+    </storeItems>
+<l10n>
+<text name="configuration_Windows"><en>Windows style</en><de>Fenster-Stil</de><fr>Style de vitres</fr></text>
+<text name="configuration_Clean"><en>Clear windows</en><de>Saubere Fenster</de><fr>Vitres claires</fr></text>
+<text name="configuration_Tinted"><en>Tinted windows</en><de>Getönte Fenster</de><fr>Vitres teintées</fr></text>
+<text name="configuration_Grid"><en>Protective grid</en><de>Schutzgitter</de><fr>Grille de protection</fr></text>
+<text name="info_Door"><en>Animation of the %s.</en><de>Animation der %s.</de><fr>Animation de la %s.</fr></text>
+<text name="action_window"><en>(window)</en><de>(Fenster)</de><fr>(fenêtre)</fr></text>
+<text name="action_door"><en>(door)</en><de>(Tür)</de><fr>(porte)</fr></text>
+<text name="action_windowsOpen"><en>Open the window</en><de>Öffnen Sie das Fenster</de><fr>Ouvrir la fenêtre</fr></text>
+<text name="action_windowsClose"><en>Close the window</en><de>Schließen Sie das Fenster</de><fr>Fermer la fenêtre</fr></text>
+<text name="action_doorOpen"><en>Open the door</en><de>Öffnen Sie die Tür</de><fr>Ouvrir la porte</fr></text>
+<text name="action_doorClose"><en>Close the door</en><de>Schließen Sie die Tür</de><fr>Fermer la porte</fr></text>
+<text name="beacons"><en>Beacons</en><de>Rundumleuchten</de><fr>Gyrophares</fr></text>
+<text name="triangle"><en>Warning triangle</en><de>Warndreieck</de><fr>Triangle de signalisation</fr></text>
+<text name="typeDesc_sweeper"><en>Sweeper broom</en><de>Besen schieben</de><fr>Balai pousseur</fr></text>
+<text name="Guides"><en>Guides</en><de>Leitfäden</de><fr>Guides</fr></text>
+<text name="HubColor"><en>Hub Color</en><de>Farbe der Nabe</de><fr>Couleur du moyeu</fr></text>
+<text name="configuration_cam"><en>Camera (MB-DLC)</en><de>Kamera (MB-DLC)</de></text>
+<text name="configuration_valueNo_MB_DLC"><en>MB-DLC NO</en><de>MB-DLC Nein</de>  </text>
+    </l10n>
+    <vehicleTypes>
+		<type name="JD3400" parent="carFillable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        <specialization name="dynamicMountAttacher" />
+		</type>	
+<type name="Sweeper" parent="shovel" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        <specialization name="roller" />
+        <specialization name="groundReference" />
+        <specialization name="workArea" />
+        <specialization name="workParticles" />
+        <specialization name="testAreas" />
+        <specialization name="jigglingParts" />
+        <specialization name="randomlyMovingParts" />
+        <specialization name="variableWorkWidth" />		
+</type>		
+
+    <type name="shovelLevelerJD" parent="dynamicMountAttacherShovel" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        <specialization name="leveler" />
+    </type>
+    </vehicleTypes>	
+
+    <jointTypes>
+        <jointType name="telehandlerJD"/>
+        <jointType name="sweeperJD"/>
+    </jointTypes>
+
+</modDesc>

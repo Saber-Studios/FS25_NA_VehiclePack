@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="Sweeper" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>V15-3400</name>
+        <specs>
+            <workingWidth>2.65</workingWidth>	
+            <combination xmlFilename="telehandlerFork.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_leveler</function>
+        </functions>
+        <image>store_Sweeper.png</image>
+        <price>650</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>teleLoaderTools</category>
+        <shopRotationOffset>-0.005 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>45056</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>10240</indexBufferMemoryUsage>
+        <textureMemoryUsage>1114112</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_sweeper</typeDesc>
+        <filename>Sweeper.i3d</filename>
+        <size width="2.7" length="1.65" height="1.3" lengthOffset="-0.08"/>
+        <speedLimit value="10"/>		
+        <components>
+            <component centerOfMass="0 0.3 0" solverIterationCount="20" mass="200" />
+			<component centerOfMass="0 -0.5 0" mass="4" />	
+			<joint component1="1" component2="2" node="0>2" transLimit="0 0 0.015" transLimitSpring="0 0 4000" transLimitDamping="0 0 0.041" maxTransDriveForce="0 0 0.041" transDriveRotation="0 0 0" transDriveSpring="0 0 0.041" transDriveDamping="0 0 0.041" breakable="false"/>		
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="AttacherJoint" jointType="sweeperJD"/>
+        </inputAttacherJoints>
+    </attachable>
+	<wheels>
+        <wheelConfigurations>
+             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                 <wheels>
+                    <wheel>
+                        <physics rotSpeed="0" restLoad="1.2" repr="0>0|2" frictionScale="0.50" radius="0.05" width="0.1" mass="0.005" initialCompression="30" suspTravel="0.05" spring="10" damper="5" rotationDamping="0.02" isSynchronized="true" versatileYRot="true" maxLatStiffness="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="0" restLoad="1.2" repr="0>0|6" frictionScale="0.50" radius="0.05" width="0.1" mass="0.005" initialCompression="30" suspTravel="0.05" spring="10" damper="5" rotationDamping="0.02" isSynchronized="true" versatileYRot="true" maxLatStiffness="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="0" restLoad="1.2" repr="0>0|7" frictionScale="0.50" radius="0.05" width="0.1" mass="0.005" initialCompression="30" suspTravel="0.05" spring="10" damper="5" rotationDamping="0.02" isSynchronized="true" versatileYRot="true" maxLatStiffness="0"/>
+                    </wheel>
+                    <wheel>
+                        <physics rotSpeed="0" restLoad="1.2" repr="0>0|8" frictionScale="0.50" radius="0.05" width="0.1" mass="0.005" initialCompression="30" suspTravel="0.05" spring="10" damper="5" rotationDamping="0.02" isSynchronized="true" versatileYRot="true" maxLatStiffness="0"/>
+                    </wheel>						
+                 </wheels>
+             </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+		
+	
+    <cylindered>	
+    </cylindered>	
+    <turnOnVehicle turnOffIfNotAllowed="true"/>	
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>0|3|3" threshold="0.10" onlyActiveWhenLowered="false"/>
+    </groundReferenceNodes>	
+	
+	<fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="bulk windrow" capacity="999999999" showOnHud="false" showInShop="false" updateMass="false" fillTypeChangeThreshold="1"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+	<dischargeable stopDischargeOnDeactivate="true" requiresTipOcclusionArea="false">
+        <dischargeNode node="0>0|4" emptySpeed="500" fillUnitIndex="1" canDischargeToGround="false" canDischargeToObject="false" canStartDischargeAutomatically="false" canStartGroundDischargeAutomatically="false">
+            <info width="2" length="1" />
+        </dischargeNode>
+    </dischargeable>
+	
+	<shovel ignoreFillUnitFillType="true" useSpeedLimit="false">
+	    <shovelNode node="0>0|5" fillUnitIndex="1" width="2" length="0.5" needsMovement="false" needsActivation="false" fillLitersPerSecond="500" needsAttacherVehicle="false"/>
+	</shovel>	
+	<workAreas>
+        <workArea type="roller" functionName="processRollerArea" requiresOwnedFarmland="false" disableBackwards="false" requiresGroundContact="true" needsSetIsTurnedOn="false">
+            <area startNode="0>0|3|0" widthNode="0>0|3|1" heightNode="0>0|3|2" />
+            <groundReferenceNode index="1"/>
+            <onlyActiveWhenLowered value="false"/>
+        </workArea>
+    </workAreas>
+
+    <roller onlyActiveWhenLowered="false">
+        <sounds>
+            <work template="meadowRollerWork" volumeScale="1.2"/>
+        </sounds>
+    </roller>
+	<design4Configurations title="$l10n_Guides">
+		<design4Configuration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="0>0|0|0" visibilityActive="false" visibilityInactive="true"/>
+			<objectChange node="0>0|0|1" visibilityActive="false" visibilityInactive="true"/>			
+		</design4Configuration>
+		<design4Configuration name="$l10n_configuration_valueYes" price="50">
+			<objectChange node="0>0|0|0" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="0>0|0|1" visibilityActive="true" visibilityInactive="false"/>			
+		</design4Configuration>
+	</design4Configurations>	
+
+    <ai>
+        <agentAttachment width="2.0" height="1.3" length="0.5" lengthOffset="0"/>
+    </ai>
+	
+    <foliageBending>
+        <bendingNode minX="-1.9" maxX="1.9" minZ="-0.4" maxZ="0.4" yOffset="0.1" />
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>	
+    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="JD3400_mat" />
+    </baseColorConfigurations>
+<i3dMappings>
+		<i3dMapping id="Blade_main_component1" node="0>" />
+		<i3dMapping id="AttacherJoint" node="0>1" />
+        <i3dMapping id="telehandlerFork_vis" node="0>0" />  		
+</i3dMappings>
+
+</vehicle>

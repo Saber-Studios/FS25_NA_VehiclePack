@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implement">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>INTXX/3PTS</name>
+        <specs>
+            <combination xmlFilename="JD3400.xml" />
+        </specs>
+        <image>store_3psupport.dds</image>
+        <price>900</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>teleLoaderTools</category>
+        <shopLoadingDelay initial="0.15"/>
+        <shopTranslationOffset>0 0.105 0</shopTranslationOffset>
+        <shopRotationOffset>0.159 0 0</shopRotationOffset>		
+        <vertexBufferMemoryUsage>92672</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>21504</indexBufferMemoryUsage>
+        <textureMemoryUsage>1114112</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_frontloaderTool</typeDesc>
+        <filename>3psupport.i3d</filename>
+        <size width="2.7" length="1.65" height="1.3" lengthOffset="-0.08"/>
+        <components maxMass="1200">
+            <component centerOfMass="0 0.15 0.048" solverIterationCount="10" mass="1000" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="telehandlerJD" />
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+    </attachable>
+	<animations>
+        	<animation name="moveSupport">
+            		<part node="0>0|3"  startTime="0" duration="0.1" startTrans="0 0 -0.489" endTrans="0 0 0" />
+        	</animation>
+	</animations>
+
+  <attacherJoints>
+                  <attacherJoint node="0>0|5|0" jointType="trailerLow" lowerRotLimit="25 50 50" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+                    <schema position="1 0" rotation="0" invertX="false" />
+            <objectChange node="0>0|1" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="0>0|6" visibilityActive="false" visibilityInactive="true"/>			
+            <objectChange node="0>0|5" visibilityActive="true" visibilityInactive="false"/>		
+            <objectChange node="0>0|4" visibilityActive="false" visibilityInactive="true"/>							
+                </attacherJoint>
+                 <attacherJoint node="0>0|4|0" jointType="trailer" lowerRotLimit="25 50 50" allowsJointLimitMovement="false" comboTime="1" canTurnOnImplement="false">
+                    <schema position="1 0" rotation="0" invertX="false" />
+            <objectChange node="0>0|4" visibilityActive="true" />			
+            <objectChange node="0>0|1" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="0>0|6" visibilityActive="false" visibilityInactive="true"/>						
+                </attacherJoint>
+				
+
+                <attacherJoint node="0>0|2|0|0" allowsJointLimitMovement="false" lowerRotationOffset="-0.16" upperRotationOffset="0.55" moveTime="2.5" comboTime="1">
+                    <distanceToGround lower="0.315" upper="0.64" />
+                    <bottomArm rotationNode="0>0|9|0"  referenceNode="0>0|9|0|0"  zScale="-1" categoryRange="2" defaultCategory="2" />	
+            <topArm baseNode="0>0|1" filename="$data/shared/assets/upperLinks/antonioCarraroSO_45_145.xml" zScale="-1" toggleVisibility="true"/>
+                    <schema position="1 0" rotation="0" invertX="false" />
+                </attacherJoint>			
+        <sounds>
+            <attach template="attach01"/>
+            <hydraulic template="hydraulicOpen01"/>
+        </sounds>
+    </attacherJoints>
+
+    <foliageBending>
+        <bendingNode minX="-0.65" maxX="0.65" minZ="-0.7" maxZ="-0.53" yOffset="0.015" />
+    </foliageBending>
+
+    <ai>
+        <agentAttachment width="1.8" height="1.5" length="1.5" lengthOffset="0"/>
+    </ai>
+    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="JD3400_mat" />
+    </baseColorConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+	
+    <i3dMappings>
+        <i3dMapping id="telehandlerFork_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+    </i3dMappings>	
+</vehicle>
