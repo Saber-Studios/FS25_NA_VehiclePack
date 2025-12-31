@@ -237,6 +237,8 @@
         <dashboards>
             <dashboard displayType="EMITTER" valueType="lightState" node="radioDecal" intensity="0.5" lightTypes="0" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" valueType="lightState" node="interiorDecal5" intensity="0.5" lightTypes="0" groups="MOTOR_ACTIVE"/>
+            <!-- camera -->
+            <dashboard displayType="EMITTER" valueType="lightState" node="cameraDecals"                 lightTypes="0" intensity="0.7" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </lights>
 
@@ -262,6 +264,9 @@
             <mirror node="mirror_decal02" prio="1"/>
             <mirror node="mirror_decal03" prio="2"/>
             <mirror node="mirror_decal04" prio="2"/>
+            <!-- cameras -->
+            <mirror node="rearCamera_display" cameraNode="rearCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
+            <mirror node="pipeoutCamera_display" cameraNode="pipeoutCamera_camera" prio="2" cameraFovY="90" nightReflectionScale="2"/>
         </mirrors>
 
         <characterNode node="playerSkin" cameraMinDistance="0.5">
@@ -356,6 +361,8 @@
 
         <dashboards>
             <dashboard displayType="ROT" valueType="decelerationAxis" node="brakePedal" minRot="0 0 0" maxRot="20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <!-- cameras -->
+            <dashboard displayType="VISIBILITY" valueType="directionBackward"  node="rearcameraDisplayRoot" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </drivable>
 
@@ -721,6 +728,8 @@
         <groups>
             <group name="MOTOR_STARTING" electronicsStarting="true"/>
             <group name="MOTOR_ACTIVE" electronicsStarting="true" electronicsRunning="true"/>
+            <!-- cameras -->
+            <group name="WORKING"    isMotorRunning="true"/>
         </groups>
 
         <default>
@@ -729,6 +738,9 @@
             <dashboard displayType="EMITTER" node="defLoadingBar_decals" intensity="0.5" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" node="tempLoadingBar_decals" intensity="0.5" groups="MOTOR_ACTIVE"/>
             <dashboard displayType="EMITTER" node="rpmLoadingBar_decals" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <!-- cameras -->
+            <dashboard displayType="VISIBILITY" node="preloadScreen" groups="MOTOR_STARTING" />
+            <dashboard displayType="VISIBILITY" node="rearcameraDisplayRoot" groups="WORKING" />
         </default>
     </dashboard>
 
@@ -989,5 +1001,20 @@
         <i3dMapping id="steeringBar" node="1>0|2" />
         <i3dMapping id="steeringBarBackLeftRef" node="1>0|2|0" />
         <i3dMapping id="steeringBarBackRightRef" node="1>0|2|1" />
+
+        <i3dMapping id="pipeoutCamera_camera" node="0>0|6|0|0|6|0"/>
+        <i3dMapping id="rearCamera" node="0>0|8|2|8"/>
+        <i3dMapping id="boxRoot" node="0>0|8|2|8|0"/>
+        <i3dMapping id="box" node="0>0|8|2|8|0|0"/>
+        <i3dMapping id="preloadScreen" node="0>0|8|2|8|0|1"/>
+        <i3dMapping id="cameraDecals" node="0>0|8|2|8|0|2"/>
+        <i3dMapping id="rearcameraDisplayRoot" node="0>0|8|2|8|0|3"/>
+        <i3dMapping id="rearCamera_display" node="0>0|8|2|8|0|3|0"/>
+        <i3dMapping id="pipeoutDisplayRoot" node="0>0|8|2|8|0|4"/>
+        <i3dMapping id="pipeoutCamera_display" node="0>0|8|2|8|0|4|0"/>
+        <i3dMapping id="camera_01" node="0>0|8|2|9"/>
+        <i3dMapping id="rotPart" node="0>0|8|2|9|0"/>
+        <i3dMapping id="glass" node="0>0|8|2|9|0|0"/>
+        <i3dMapping id="rearCamera_camera" node="0>0|8|2|9|0|0|0"/>
     </i3dMappings>
 </vehicle>
