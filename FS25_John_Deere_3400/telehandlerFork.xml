@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implementDynamicMountAttacher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_shopItem_telehandlerFork</name>
+        <specs>
+            <combination xmlFilename="JD3400.xml" />				
+        </specs>
+        <functions>
+            <function>$l10n_function_frontloaderPalletFork</function>
+        </functions>
+        <image>store_TelehandlerFork.png</image>
+        <price>2000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>teleLoaderTools</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>49920</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7168</indexBufferMemoryUsage>
+        <textureMemoryUsage>1114112</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_telehandlerTool</typeDesc>
+        <filename>telehandlerFork.i3d</filename>
+        <size width="2.7" length="1.65" height="1.3" lengthOffset="-0.08"/>
+        <supportsPickUp>false</supportsPickUp>
+        <components maxMass="1000">
+            <component centerOfMass="0 0.1 -0.4" solverIterationCount="10" mass="250" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="telehandlerJD" />
+        </inputAttacherJoints>
+    </attachable>
+
+    <attacherJoints>	
+                <attacherJoint node="0>0|5|2" jointType="sweeperJD" allowsLowering="false">
+            <schema position="1 0" rotation="0" invertX="false"/>	
+            <objectChange node="0>0|5" visibilityActive="true" visibilityInactive="false"/>	
+            <objectChange node="0>0|2" visibilityActive="false" visibilityInactive="true"/>				
+                </attacherJoint>
+    </attacherJoints>				
+    <animations>	
+        <animation name="mainArmMovement">
+            <part node="forkLeft" startTime="0" endTime="0.5" startTrans="-0.18 0 0" endTrans="0.150 0 0" />
+            <part node="forkRight" startTime="0" endTime="0.5" startTrans="0.18 0 0" endTrans="-0.150 0 0" />			
+            <part node="0>0|5" startTime="0" endTime="0.5" startTrans="-0.2 0 0" endTrans="0.2 0 0" />	
+			
+        </animation>
+        </animations>		
+    <cylindered>
+        <movingTools>
+		
+            <movingTool node="forkLeft" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" invertAxis="false" mouseSpeedFactor="1" iconName="WORKING_WIDTH_TRANSLATE_X" />
+                <animation animSpeed="0.2" animAcceleration="0.8" animName="mainArmMovement" animStartTime="0.55"/>
+              <attacherJoint jointIndices="1" />			
+            </movingTool>		
+		
+        </movingTools>
+        <sounds>
+            <actionSound template="metalScrape" volumeScale="0.65" pitchScale="1"   actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="forkLeft" fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="grabImp"     volumeScale="4.8"  pitchScale="1.1" actionNames="TOOL_MOVE_END_NEG_LIMIT TOOL_MOVE_END_POS_LIMIT" nodes="forkLeft" />
+        </sounds>
+    </cylindered>
+
+    <dynamicMountAttacher node="jointNode">
+        <fork node="forkCollision01" />
+        <fork node="forkCollision02" />
+    </dynamicMountAttacher>
+    <ai>
+        <agentAttachment width="1.8" height="1.5" length="1.5" lengthOffset="0"/>
+    </ai>
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltMesh01"/>
+            <meshNode node="tensionBeltMesh02"/>
+            <meshNode node="tensionBeltMesh03"/>
+        </meshNodes>
+    </tensionBeltObject>
+    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="26">
+        <material materialSlotName="JD3400_mat" />
+    </baseColorConfigurations>
+    <foliageBending>
+        <bendingNode minX="-0.65" maxX="0.65" minZ="-0.7" maxZ="-0.53" yOffset="0.015" />
+        <bendingNode minX="-0.07" maxX="0.07" minZ="0.1" maxZ="1.4" yOffset="-0.67" node="forkLeft" />
+        <bendingNode minX="-0.07" maxX="0.07" minZ="0.1" maxZ="1.4" yOffset="-0.67" node="forkRight" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90"  workMultiplier="2" fieldMultiplier="2" washDuration="1"/>
+
+    <i3dMappings>
+        <i3dMapping id="telehandlerFork_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0" />
+        <i3dMapping id="jointNode" node="0>0|1" />
+        <i3dMapping id="forkLeft" node="0>0|2|0|0" />
+        <i3dMapping id="forkRight" node="0>0|2|1|0" />
+        <i3dMapping id="forkCollision01" node="0>0|2|0|0|0" />
+        <i3dMapping id="tensionBeltMesh02" node="0>0|2|0|0|2" />
+        <i3dMapping id="forkCollision02" node="0>0|2|1|0|0" />
+        <i3dMapping id="tensionBeltMesh03" node="0>0|2|1|0|2" />
+        <i3dMapping id="tensionBeltMesh01" node="0>1" />
+    </i3dMappings>
+</vehicle>
