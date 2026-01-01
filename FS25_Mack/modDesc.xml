@@ -57,7 +57,7 @@ Changelog 1.0.0.8:
 -Fahrzeuganpassung
 ]]></de>
 	</description>
-	<iconFilename>store/icon_series9R.dds</iconFilename>
+	<iconFilename>store/icon_anthem.dds</iconFilename>
 	<multiplayer supported="true"/>
 	<brands>
 		<brand name="MACK" title="Mack" />
