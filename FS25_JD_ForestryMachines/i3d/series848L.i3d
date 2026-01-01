@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="67" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_DashboardLive/shader/minimap.xml"/>
-    <File fileId="64" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JD_ForestryMachines/utils/matrix/textures/decals.dds"/>
-    <File fileId="63" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JD_ForestryMachines/utils/matrix/textures/def_vmask.dds"/>
-    <File fileId="62" filename="../../../../../../Desktop/FarmSim Modding/work/FS25_JD_ForestryMachines/utils/matrix/textures/normal.dds"/>
+    <File fileId="67" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="64" filename="../utils/matrix/textures/decals.dds"/>
+    <File fileId="63" filename="../utils/matrix/textures/def_vmask.dds"/>
+    <File fileId="62" filename="../utils/matrix/textures/normal.dds"/>
     <File fileId="5" filename="../textures/series848LNew_vmask.dds"/>
     <File fileId="26" filename="$data/shaders/glowShader.xml"/>
     <File fileId="29" filename="$data/shaders/mirrorShader.xml"/>

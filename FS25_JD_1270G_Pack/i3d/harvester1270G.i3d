@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="75" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="75" filename="../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="23" filename="../textures/HRFF_Bauteile_normal.dds"/>
     <File fileId="24" filename="../textures/HRFF_Bauteile_vmask.dds"/>
     <File fileId="60" filename="../textures/clearWhite_diffuse.dds"/>

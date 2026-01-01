@@ -98,7 +98,7 @@
     <File fileId="83" filename="$data/vehicles/volvo/shared/display/display_diffuse.png"/>
     <File fileId="76" filename="$data/vehicles/volvo/shared/display/display_normal.png"/>
     <File fileId="77" filename="$data/vehicles/volvo/shared/display/display_vmask.png"/>
-    <File fileId="75" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="75" filename="../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="91" filename="../shared/starFire7000Black.i3d"/>
     <File fileId="93" filename="../textures/Decals_diffuse_Black_edit.png"/>
     <File fileId="98" filename="../textures/decals_pack.png"/>
@@ -107,8 +107,8 @@
     <File fileId="71" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
     <File fileId="69" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
     <File fileId="70" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
-    <File fileId="82" filename="../../../My Games/FarmingSimulator2025/mods/FS25_JohnDeere_6R_Series/utils/camera/texturen/display_no_diffuse.dds"/>
-    <File fileId="78" filename="../../../My Games/FarmingSimulator2025/mods/FS25_JohnDeere_6R_Series/utils/camera/texturen/display_off_diffuse.dds"/>
+    <File fileId="82" filename="../utils/camera/texturen/display_no_diffuse.dds"/>
+    <File fileId="78" filename="../utils/camera/texturen/display_off_diffuse.dds"/>
   </Files>
 
 

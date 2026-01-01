@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="61" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="61" filename="../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="56" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
     <File fileId="54" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
     <File fileId="55" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>

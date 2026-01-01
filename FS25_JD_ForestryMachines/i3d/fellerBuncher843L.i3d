@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="73" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="73" filename="../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="4" filename="../textures/fd55_vmaskNew.dds"/>
     <File fileId="23" filename="../textures/fellerBuncher843LExteriorNew_vmask.dds"/>
     <File fileId="70" filename="../utils/matrix/textures/decals.dds"/>

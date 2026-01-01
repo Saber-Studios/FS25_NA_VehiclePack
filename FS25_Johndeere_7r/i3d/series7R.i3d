@@ -101,7 +101,7 @@
     <File fileId="80" filename="$data/vehicles/volvo/shared/display/display_diffuse.png"/>
     <File fileId="75" filename="$data/vehicles/volvo/shared/display/display_normal.png"/>
     <File fileId="76" filename="$data/vehicles/volvo/shared/display/display_vmask.png"/>
-    <File fileId="74" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="74" filename="../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="70" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
     <File fileId="68" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
     <File fileId="69" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>

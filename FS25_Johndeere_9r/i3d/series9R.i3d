@@ -6,10 +6,10 @@
   </Asset>
 
   <Files>
-    <File fileId="50" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
-    <File fileId="46" filename="../utiils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
-    <File fileId="44" filename="../utiils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
-    <File fileId="45" filename="../utiils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
+    <File fileId="50" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="46" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplayDecals_diffuse.dds"/>
+    <File fileId="44" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_normal.dds"/>
+    <File fileId="45" filename="../utils/FS25_CCI1200_prefab/textures/cciDisplay_vmask.dds"/>
     <File fileId="36" filename="$data/shaders/glowShader.xml"/>
     <File fileId="53" filename="$data/shaders/mirrorShader.xml"/>
     <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
