@@ -1,4 +1,4 @@
-name: Zip top-level folders (clean names)
+name: Zip FS25 mods
 
 on:
   workflow_dispatch:
@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create zips (one per top-level folder)
+      - name: Zip FS25 mod folders (correct structure)
         shell: bash
         run: |
           set -euo pipefail
@@ -27,31 +27,41 @@ jobs:
 
           cd "$GITHUB_WORKSPACE"
 
-          # Find immediate subdirectories (top-level folders)
-          while IFS= read -r -d '' dir; do
-            base="$(basename "$dir")"
+          # Loop over top-level directories only
+          for dir in */ ; do
+            base="${dir%/}"
 
-            # Skip folders you don't want packaged
+            # Skip non-mod / internal folders
             case "$base" in
               .git|.github) continue ;;
             esac
 
+            # Only zip real FS mods
+            if [[ ! -f "$base/modDesc.xml" ]]; then
+              echo "Skipping $base (no modDesc.xml)"
+              continue
+            fi
+
             ZIP_NAME="${base}.zip"
-            echo "Zipping folder: $base -> $ZIP_NAME"
+            echo "Zipping FS mod: $ZIP_NAME"
 
-            zip -r "$OUT_DIR/$ZIP_NAME" "$base" \
-              -x "**/.DS_Store" \
-                 "**/Thumbs.db"
+            # Zip the *contents* of the mod folder (no extra folder level)
+            (
+              cd "$base"
+              zip -r "$OUT_DIR/$ZIP_NAME" . \
+                -x "**/.DS_Store" \
+                   "**/Thumbs.db"
+            )
+          done
 
-          done < <(find . -mindepth 1 -maxdepth 1 -type d -print0)
-
-          echo "Created zips:"
+          echo "Final ZIP files:"
           ls -lah "$OUT_DIR"
 
-      - name: Upload zips artifact
+      - name: Upload mod ZIPs
         uses: actions/upload-artifact@v4
         with:
-          name: folder-zips
+          name: fs25-mod-zips
           path: ${{ runner.temp }}/zips/*.zip
           if-no-files-found: error
           retention-days: 7
+
