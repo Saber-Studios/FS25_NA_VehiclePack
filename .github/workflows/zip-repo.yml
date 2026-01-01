@@ -1,36 +1,67 @@
-# This is a basic workflow to help you get started with Actions
+name: Zip FS25 mods
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: read
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  zip:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Zip FS25 mod folders (correct structure)
+        shell: bash
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          set -euo pipefail
+
+          OUT_DIR="$RUNNER_TEMP/zips"
+          mkdir -p "$OUT_DIR"
+
+          cd "$GITHUB_WORKSPACE"
+
+          # Loop over top-level directories only
+          for dir in */ ; do
+            base="${dir%/}"
+
+            # Skip non-mod / internal folders
+            case "$base" in
+              .git|.github) continue ;;
+            esac
+
+            # Only zip real FS mods
+            if [[ ! -f "$base/modDesc.xml" ]]; then
+              echo "Skipping $base (no modDesc.xml)"
+              continue
+            fi
+
+            ZIP_NAME="${base}.zip"
+            echo "Zipping FS mod: $ZIP_NAME"
+
+            # Zip the *contents* of the mod folder (no extra folder level)
+            (
+              cd "$base"
+              zip -r "$OUT_DIR/$ZIP_NAME" . \
+                -x "**/.DS_Store" \
+                   "**/Thumbs.db"
+            )
+          done
+
+          echo "Final ZIP files:"
+          ls -lah "$OUT_DIR"
+
+      - name: Upload mod ZIPs
+        uses: actions/upload-artifact@v4
+        with:
+          name: fs25-mod-zips
+          path: ${{ runner.temp }}/zips/*.zip
+          if-no-files-found: error
+          retention-days: 7
+
