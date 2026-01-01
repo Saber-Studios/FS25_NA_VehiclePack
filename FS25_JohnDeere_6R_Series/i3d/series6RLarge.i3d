@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="69" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="69" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="86" filename="../shared/starFire7000Black.i3d"/>
     <File fileId="96" filename="../textures/Decals_diffuse_Black_edit.png"/>
     <File fileId="101" filename="../textures/decals_pack.png"/>
