@@ -1,16 +1,16 @@
-name: Zip repository
+name: Release zip
 
 on:
   workflow_dispatch:
   push:
-    branches: ["main"]
-  pull_request:
+    tags:
+      - "v*"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  zip:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,26 +21,21 @@ jobs:
         run: |
           set -euo pipefail
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          SHA_SHORT="${GITHUB_SHA:0:7}"
-          ZIP_NAME="${REPO_NAME}-${SHA_SHORT}.zip"
+          REF="${GITHUB_REF_NAME}"
+          ZIP_NAME="${REPO_NAME}-${REF}.zip"
 
           cd "$GITHUB_WORKSPACE"
-
-          # Create zip in temp so it won't get included in itself
           zip -r "$RUNNER_TEMP/$ZIP_NAME" . \
             -x ".git/*" \
                ".github/*" \
                "**/.DS_Store"
 
-          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
           echo "ZIP_PATH=$RUNNER_TEMP/$ZIP_NAME" >> "$GITHUB_ENV"
-          ls -lah "$RUNNER_TEMP"
+          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
 
-      - name: Upload zip artifact
-        uses: actions/upload-artifact@v4
+      - name: Create GitHub Release and upload zip
+        uses: softprops/action-gh-release@v2
         with:
-          name: repo-zip
-          path: ${{ env.ZIP_PATH }}
-          if-no-files-found: error
-          retention-days: 7
+          files: ${{ env.ZIP_PATH }}
+
 
