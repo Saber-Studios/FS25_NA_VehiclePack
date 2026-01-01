@@ -1,41 +1,57 @@
-name: Release zip
+name: Zip top-level folders (clean names)
 
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v*"
+    branches: ["main"]
+  pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  release:
+  zip:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create zip
+      - name: Create zips (one per top-level folder)
         shell: bash
         run: |
           set -euo pipefail
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          REF="${GITHUB_REF_NAME}"
-          ZIP_NAME="${REPO_NAME}-${REF}.zip"
+
+          OUT_DIR="$RUNNER_TEMP/zips"
+          mkdir -p "$OUT_DIR"
 
           cd "$GITHUB_WORKSPACE"
-          zip -r "$RUNNER_TEMP/$ZIP_NAME" . \
-            -x ".git/*" \
-               ".github/*" \
-               "**/.DS_Store"
 
-          echo "ZIP_PATH=$RUNNER_TEMP/$ZIP_NAME" >> "$GITHUB_ENV"
-          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
+          # Find immediate subdirectories (top-level folders)
+          while IFS= read -r -d '' dir; do
+            base="$(basename "$dir")"
 
-      - name: Create GitHub Release and upload zip
-        uses: softprops/action-gh-release@v2
+            # Skip folders you don't want packaged
+            case "$base" in
+              .git|.github) continue ;;
+            esac
+
+            ZIP_NAME="${base}.zip"
+            echo "Zipping folder: $base -> $ZIP_NAME"
+
+            zip -r "$OUT_DIR/$ZIP_NAME" "$base" \
+              -x "**/.DS_Store" \
+                 "**/Thumbs.db"
+
+          done < <(find . -mindepth 1 -maxdepth 1 -type d -print0)
+
+          echo "Created zips:"
+          ls -lah "$OUT_DIR"
+
+      - name: Upload zips artifact
+        uses: actions/upload-artifact@v4
         with:
-          files: ${{ env.ZIP_PATH }}
-
-
+          name: folder-zips
+          path: ${{ runner.temp }}/zips/*.zip
+          if-no-files-found: error
+          retention-days: 7
