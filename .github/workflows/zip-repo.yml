@@ -1,36 +1,46 @@
-# This is a basic workflow to help you get started with Actions
+name: Zip repository
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: read
+
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  zip:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Create zip
+        shell: bash
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          set -euo pipefail
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          SHA_SHORT="${GITHUB_SHA:0:7}"
+          ZIP_NAME="${REPO_NAME}-${SHA_SHORT}.zip"
+
+          cd "$GITHUB_WORKSPACE"
+
+          # Create zip in temp so it won't get included in itself
+          zip -r "$RUNNER_TEMP/$ZIP_NAME" . \
+            -x ".git/*" \
+               ".github/*" \
+               "**/.DS_Store"
+
+          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
+          echo "ZIP_PATH=$RUNNER_TEMP/$ZIP_NAME" >> "$GITHUB_ENV"
+          ls -lah "$RUNNER_TEMP"
+
+      - name: Upload zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-zip
+          path: ${{ env.ZIP_PATH }}
+          if-no-files-found: error
+          retention-days: 7
+
