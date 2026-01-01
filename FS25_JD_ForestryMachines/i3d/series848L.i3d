@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="67" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="67" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="64" filename="../utils/matrix/textures/decals.dds"/>
     <File fileId="63" filename="../utils/matrix/textures/def_vmask.dds"/>
     <File fileId="62" filename="../utils/matrix/textures/normal.dds"/>

@@ -8,7 +8,7 @@
   <Files>
     <File fileId="69" filename="../utils/camera/texturen/display_no_diffuse.dds"/>
     <File fileId="65" filename="../utils/camera/texturen/display_off_diffuse.dds"/>
-    <File fileId="62" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="62" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="79" filename="../shared/starFire7000Black.i3d"/>
     <File fileId="48" filename="../textures/Decals_diffuse_Black_edit.png"/>
     <File fileId="92" filename="../textures/decals_pack.png"/>

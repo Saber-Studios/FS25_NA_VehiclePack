@@ -98,7 +98,7 @@
     <File fileId="83" filename="$data/vehicles/volvo/shared/display/display_diffuse.png"/>
     <File fileId="76" filename="$data/vehicles/volvo/shared/display/display_normal.png"/>
     <File fileId="77" filename="$data/vehicles/volvo/shared/display/display_vmask.png"/>
-    <File fileId="75" filename="../FS25_DashboardLive/shader/minimap.xml"/>
+    <File fileId="75" filename="../../FS25_DashboardLive/shader/minimap.xml"/>
     <File fileId="91" filename="../shared/starFire7000Black.i3d"/>
     <File fileId="93" filename="../textures/Decals_diffuse_Black_edit.png"/>
     <File fileId="98" filename="../textures/decals_pack.png"/>
